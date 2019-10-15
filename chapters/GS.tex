@@ -1,0 +1,135 @@
+% !TeX root = main.tex
+\newcommand{\trait}[1]{
+\vspace{.2cm} #1 \line(1,0){30}
+
+	\begin{tabular}{p{0em}p{0em}p{0em}p{0em}p{0em}p{0em}p{0em}p{0em}p{0em}}
+
+		\ding{108} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109}  \\
+		\ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111}  \\
+	\end{tabular}
+
+}
+
+
+		\newcommand{\shortline}{\line(1,0){22}}	
+		\newcommand{\weeline}{\line(1,0){30} \hspace{.6cm}}
+		\newcommand{\vlongline}{\line(1,0){100}\hspace{0.8cm}}
+		\newcommand{\writeline}{\line(1,0){59}}
+\newcommand{\fiveboxes}{\ding{111}\ding{111}\ding{111}\ding{111}\ding{111}}
+
+	\newcommand{\pageline}{\vspace{1em}
+
+	\line(1,0){550}
+	}
+
+\newcommand{\threeboxes}{\ding{111}\ding{111}\ding{111}}
+\newcommand{\threecircles}{\ding{109}\ding{109}\ding{109}}
+\newcommand{\tenboxes}{	\ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111} & \ding{111}  \\}
+\newcommand{\tencircles}{\ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109} & \ding{109}  \\}
+\newcommand{\attributecircles}{\ding{175}\ding{174}\ding{173}\ding{172}{\Large\ding{109}}\ding{172}\ding{173}\ding{174}\ding{175}}
+\newcommand{\Split}{
+	\line(1,0){120}
+
+	}
+\newcommand{\skill}[1]{#1 & \ding{109} & \ding{109} & \ding{109} \\
+}
+\newcommand{\sskill}[1]{#1 & \ding{109} & \ding{109} & \ding{109}\\
+& \ding{111} & \ding{111} & \ding{111} \\
+}
+
+
+\pagenumbering{gobble}
+
+\begin{tcbposter}[
+  coverage = {
+      spread,
+      %interior style={bottom color=white},
+      watermark text={Describe more. \\ \\ Have fun. \\ \\ \\ Make good art. },
+      watermark color=black!25!white,
+      watermark opacity=0.4
+  },
+  poster   = {showframe=false,columns=11,rows=12},
+  boxes    = {
+      enhanced standard jigsaw,sharp corners=downhill,arc=7mm,boxrule=.6mm,
+      colback=white,opacityback=0.7,colframe=black,
+      title style={left color=black,right color=white},
+      fonttitle=\bfseries
+   }
+]
+
+	%\posterbox[adjusted title=Campaign]{name=pcs,column=4,row=1,span=2,rowspan=2}{}
+
+	\posterbox[adjusted title=Campaign]{name=campaign,column=1,row=1,span=3,rowspan=2}{
+
+		\large
+		Premise:
+
+		Season: 
+
+		Area:
+		
+		}
+
+	\posterbox[adjusted title=Situation]{name=situation,column=4,row=1,span=7,rowspan=2}{}
+
+%---
+
+
+	\posterbox[adjusted title=Player Characters]{name=pcs,column=1,row=3,span=10,rowspan=2}{
+
+		\begin{tabular}{l|l|l|l}
+
+			Player & Character & Concept & Notes \\\hline
+
+		\end{tabular}
+		}
+
+%---
+
+	\posterbox[adjusted title=Encounters]{name=encounters,column=1,row=5,span=5,rowspan=4}{}
+
+%---
+
+	\posterbox[adjusted title=Non Players Characters]{name=npcs,column=6,row=5,span=5,rowspan=4}{}
+
+	\posterbox[adjusted title=Notes]{name=notes,column=1,row=9,span=10,rowspan=3}{}
+
+	%----
+		\newcounter{track}
+		\setcounter{track}{18}
+		\newcommand{\tracker}{\hspace{-0.6cm}\noindent\center\arabic{track}\addtocounter{track}{-1}
+
+		}
+		\posterbox{name=track,column=11,row=1,span=1,rowspan=11.5}{
+			{\large
+
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+			\tracker
+
+
+			}
+
+			}
+
+%----
+
+
+
+\end{tcbposter}
+
