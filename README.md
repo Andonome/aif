@@ -1,8 +1,6 @@
 # Adventures in Fenestra
 This is a campaign setting for the First Blood RPG.  It has mostly-separated sections so that GMs can focus on the bits they want.
 
-...at least it will be once it's done.
-
 Current structure:
 
 ## Games Master Resources
@@ -17,7 +15,8 @@ Current structure:
 - Bestiary, for all your monstrous needs.
 
 ## Side Quests
-Foreshadowing, multiple plot-arcs, and keeping track of the lot over the long term can be difficult.  Side Quests are here to help the GM.
+
+Foreshadowing, multiple plot-arcs, and keeping track of the lot over the long term can be difficult.  Side Quests are here to help the GM and make sure that no GM comes unprepared, even if they haven't actually prepared anything.
 
 The players enter a forest and encounter one of three stories at random: the elven prince, the Spider Queen, or just some random events.  The result is the Spider Queen, so they get part one of that Side Quest.  The next time they're about, they might get part 2, or might have a completely different  story assault them.
 
@@ -37,17 +36,14 @@ Side quests can have attached locations, such as a bandit's hideout.  They do no
 
 # Using the Book
 
-1. Install Latex packages (texlive-most has what you need)
-2. Run `pdflatex main.tex && makeglossaries main && makeindex main.idx`
-3. Repeat last step
-
-If you stick in a new svg file, you'll need the `--enable-shell` command, which is a security risk.  If you don't know how that works, you can just drop me an email and I'll process any images.
+For most poeple, you should just download the pdf.  But if you want to modify it or add to it, you can grab all the documents, zip them, then edit the result on Overleaf, live.  If you want your own, local version, then you'll need to install Latex.  The `texvlive-most` and `inkscape` packages have what you need if you're running Linux, and you can take a look at the autogen script to see how to compile it.
 
 # Joining
 
 The project's still to settle into a coherent shape, so feedback and suggestions on the basic structure's greatfully accepted.  Additionally it'd be great to get:
 
 - Art.
+- Recommendations on wording.
 - Suggestions on cleaning up my code.
 - New side quests.
 - Suggestions on the overall structure of the thing.
