@@ -430,12 +430,17 @@ Here, despite the undead, a shrine rests which was built be \gls{necromancer}'s 
 
 After the bandits leave, \gls{necromancer} sneaks back to his private study, through a stone door, balanced on massive iron hinges.  It contains various hymns to the dead, but his favourite songs are not the prayers to Qualm\"{e}, but song magic.
 
-One song sings of the sacrifice made by Logan to defeat nura, and summons the illusion of an elf to dance to its rhythm\footnote{It holds 10 MP, and is cast with an effective of Intelligence 2.}.  Another is a simple advert for Bob's Crackers, and enchants the first 10 listeners to eat crackers.
+One song sings of the sacrifice made by Logan to defeat nura, and summons the illusion of an elf to dance to its rhythm.\footnote{It holds 10 MP, and is cast with an effective of Intelligence 2.}  Another is a simple advert for Bob's Crackers featuring a singing dog, and enchants the first 10 listeners to eat crackers.
 
 \mapentry{The Prison}
+
 This room once housed people making important decisions.  \Gls{necromancer} now uses it to house prisoners so he can feed off them.  Currently, it contains one terrified farmer called Laith.  He's starving, and petrified, as every day all he can hear are the shambling dead, who sometimes come to knock on the locked door.  \Gls{necromancer}, or course, holds the key.
 
 Picking the lock requires an Intelligence + Larceny roll, TN 7.
+
+\character{Laith}
+
+\humanfarmer
 
 \mapentry{The Watchtower}
 
@@ -457,7 +462,7 @@ If anyone attacks the house, they will be spotted immediately, but have two roun
 \subsection{\Glsentrytext{lostcity}}\label{lostcity}\setcounter{list}{0}
 \begin{boxtext}
 
-The trees here cling to blocks of stone, as if trying to crush the last remnants of civilization.  You sometimes wander for so long wtihout seeing a single brick that you forget you're anywhere but a normal forest, but then another errant stone, or the marble hand of a statue juts up to remind you of the ghosts resting in this place.
+The trees here cling to blocks of stone, as if trying to crush the last remnants of civilization.  You sometimes wander for so long without seeing a single brick that you forget you're anywhere but a normal forest, but then another errant stone, or the marble hand of a statue juts up to remind you of the ghosts resting in this place.
 
 \end{boxtext}
 
@@ -478,8 +483,17 @@ The nearby hidden trapdoor underground cannot be discovered from above -- in fac
 
 All of the trees in this area burst with ripe fruit, but this grove has the best.  This is why it also has all the woodspies; in total around 20 sit in these trees invisibly.  If anyone enters to grab the best fruits, they will see the trees around them mutate, as camouflaged woodspies slowly move to surround them.  Nearby, a pile of dead deer bones is losely hidden under some leaves.\footnote{Remember, woodspies are rather intelligent animals, and know not to leave corpses lying around a trap.}
 
+\monster{30 Woodspies}
+
+\woodspy
+
+The party are unlikely to be in any state to defeat these creatures.  Three arrive per round, so the best anyone can do is flee.
+
 \mapentry{The Mana Lake}
+
 This lake blossoms with magical energies, and regenerates 4 MP per turn to anyone touching its waters.
+
+Two woodspies rest just under the water's surfact, camouflaged to look exactly like the base of the pool.  Anyone getting close must make a Wits + Vigilance roll, TN 10, to spot them.  Failure, of course, means being dragged under water by the first.  Anyone helping must roll or be dragged underwater by the second.
 
 \mapentry{The Old Door}
 
@@ -490,7 +504,7 @@ This lake blossoms with magical energies, and regenerates 4 MP per turn to anyon
 
 	I don't want the expansion either way, but there are wants and then \emph{needs}.  So I've gone around the ground, hundreds of acres, and found something -- a wellspring for magic.  I figured there would be something nearby, so I dug around and soon found this door.
 
-	So obviously, I'm looking for some brave adventurers to go into the door, find out if it contians any evidence of a portal to the Realm of Darkness and Fire where the nura live, and then go and tell people.  You wouldn't happen to have a bard in your party, would you?
+	So obviously, I'm looking for some brave adventurers to go through the door, find out if it contians any evidence of a portal to the Realm of Darkness and Fire where the nura live, and then go and tell people.  You wouldn't happen to have a bard in your party, would you?
 
 	Oh, and in the interest of honesty, I should probably mention you're the third group.
 
@@ -502,7 +516,7 @@ Whatever relationship he may have with the characters, he tries to get them to i
 
 He'll go down with the party if he has to, and if he trusts them, but will not allow himself to be surrounded by people he doesn't trust and could stab him in an instant.
 
-As to the other parties -- the first was four bandits he struck a deal with, and the second was fifteen of the night watch.
+As to the other parties -- the first was four bandits he struck a deal with, and the second was a group of fifteen members of the Night Watch.
 
 \character{\Glsentrytext{forestpriest}}
 
@@ -539,7 +553,11 @@ The undead necromancer\footnote{See page \pageref{undead_ogre}, just below.} fou
 
 Throughout the encounters, the dead chant when not in combat.  If they stand at the other end of a hallway, they chant.  If the characters lock them out of a room, they stand outside and chant while clawing at the door.  And it's never clear what they're meant to be chanting, because the necromancer in the dungeon could never teach them properly.
 
-Characters versed in old languages might make a Wits + Academics roll, TN 13, to understand the words the dead are trying to say.  This is reduced to TN 10 if the characters somehow have the opportunity to hear the giant necromancer himself chant.
+Characters versed in old languages might make a Wits + Academics roll, TN 12, to understand the words the dead are trying to say.  This is reduced to TN 10 if the characters somehow have the opportunity to hear the giant necromancer himself chant.
+
+The words themselves simply mean `open to trade'.
+
+\paragraph{Caveins} present a real danger here.  If the ceiling ever collapses while the characters are inside, the falling rocks from above at first deals $1D6-2$ Damage to everyone in the room, then $1D6$, and so on, increasing by 2 each round, until it's unliveable.
 
 \mapentry{Drowned Hallway}
 
@@ -549,17 +567,25 @@ Before leaving this place, a nuramancer resurrected a number of the dead who had
 
 Of course, with the characters' entrance, the dead rise and attack.  It's been a long time, and their joints are stiff.  The zombies naturally cling together, so a natural ambush forms as the characters may walk past a number of them before they notice the placid bodies on the drowned floor.  The dead will not attack them here, but stay underwater, with a natural fear of the door going above, the light outside, and acting alone.  They are hungry, but know to wait and observe, for a little while.
 
-Once the characters have entered the hallway, or kicked down the door, the trouble starts.  Five zombies rest at the start of the hallway, and another five later on.  A further five at the other end of the hallway will arrive soon enough after that.
+Once the characters have entered the hallway the trouble starts.  Five zombies rest at the start of the hallway, and another five later on.  A further five at the other end of the hallway will arrive three rounds later.
 
-\monster{Zombies}
+\monster{15 Zombies}
 
 \zombie
 
 \mapentry{Equipment Room}
 
+\begin{boxtext}
+	The shelves in this wide room are full of smashed and broken equipment, but it looks generally alchemical.
+\end{boxtext}
+
 The standard alchemist's equipment -- gold dust, rubies, beachwood, chitin, and black soil -- have mostly been removed from the area during the panic when people fled.
 
 Some of those panicked people returned and were dragged back into the portal, only to return as ogres.  Those ogres were resurrected as undead, along with everyone else.
+
+\begin{boxtext}
+	A powerful force grabs your ankle, and squeezes.  A man, taller than any man, stands up and turns you upside down, then pulls you in towards his teeth.
+\end{boxtext}
 
 Characters who scour the room can find rare gems on the ground, although wading through all the sludge will not be pleasant.  This requires a Wits + Survival roll, TN 6.  Each marginal point means 15sp worth of items has been found.
 
@@ -585,10 +611,10 @@ Multiple characters can roll, but each roll destroys the book one margin point a
 
 \begin{enumerate}
 
-	\item{An ancient city map, detailing sites of interest such as a Temple of Qualm\"{e}, which holds beautifully decorated, and unaging corpses (see page \pageref{green_tower}.)}
+	\item{An ancient city map, detailing sites of interest such as a Temple of Qualm\"{e}, which holds beautifully decorated, and unaging corpses (see page \pageref{green_tower})}.
 	\item{A valuable book on Invocation, worth 20sp.}
 	\item{A letter stating that a portal to an unknown labyrinth realm has been opened, and that trade has opened with various dwarves in exchange for food.  It also states which word will activate this portal.}
-	\item{Letters of complaint from the Dean of Conjuration, stating that the Dean of Illusion must tidy his room, and that the rats he's brought in have become so bad that he's ordering no food to be left underground, under any circumstances.}
+	\item{Letters of complaint from the Dean of Conjuration, stating that the Dean of Illusion must tidy his room, and that the rats he's brought in have become so bad that he's ordering no food to be permitted in the area, under any circumstances.}
 	\item{A book by a priest of Qualm\"{e}, detailing various evil spirits.  It mentions the dungeon itself, saying a necromantic spirit is known to inhabit the area.}
 	\item{A valuable book on late-stage Conjuration, worth 100sp, covering the highest level of the Conjuration sphere.}
 	\item{Threatening letters from elves saying to be wary of opening portals.}
@@ -607,15 +633,15 @@ Multiple characters can roll, but each roll destroys the book one margin point a
 
 Three rooms here used to house the various masters of alchemy.  Stairs reached down to a central pillar, then back up.  At the moment this deeper area is filled with water -- the characters must swim to any other doors they want to approach.
 
-Unfortunately, yet another undead ogres sits at the bottom of this black water.  It won't jump up to scare the characters and battle with them , but watches then with shark-like eyes, then if one steps foot into the black water, it simply grabs the foot.
+Unfortunately, yet another undead ogres sits at the bottom of this black water.  It won't jump up to scare the characters and battle with them, but watches then with shark-like eyes, then if one steps foot into the black water, it simply grabs the foot.
 
-This zombified ogre is rather different to the others.  It thinks, plans, and knows how to cast spells.  It contains some unknown spirit, summoned into this unwholesome shell.  It is responsible for devouring the souls of the first group to enter the area, and using their energy to kill and raise the second group.
+This zombified ogre is rather different to the others.  It thinks, plans, and knows how to cast spells.  It contains some unknown spirit, summoned into this unwholesome shell.  It is responsible for devouring the souls of the first group to enter the area, and using their energy to kill and raise the second group as undead.
 
 \character{Undead Ogre Mage}\label{undead_ogre}
 
 \person{6}{-3}{0}{{2}{0}{-5}}{3}{1}{Aggression 2, Academics 2, Ether Lore 3, Medicine 1\Path{Nura}{Metamagic 3, Necromancy 4, Saurecanta 3}}{\longsword}{\mana{6}\addtocounter{xpbonus}{3}}
 
-\paragraph{Room A} used to house the master of Conjuration, who build this portal.  The ogre has kept him around for his own amusement, as a zombie, and hasn't noticed that he has a magical ruby which can transform into any simple substance, as per Conjuration level 1.  The ruby transforms back once the spell has completed.
+\paragraph{Room A} used to house the master of Conjuration, who build this portal.  The ogre has kept him around for his own amusement, as a zombie, and hasn't noticed that he has a magical ruby which can transform into any simple substance, as per Conjuration level 2.  The ruby transforms back once the spell has completed.
 
 \paragraph{Room B} houses nothing but broken furniture and sludge.  The last room, however, is different.
 
@@ -701,7 +727,7 @@ If the characters open the portal, they see a dark room, with a distant light.  
 
 If a single sound is made here, if an item or person drops through the portal and into the far room, the alarm is sounded in the Citadel on the other side.  Ten hobgoblins immediately arrive with a ladder and start making their way up, into the dungeon.  They know the portal can open, and they know they need a password.  They fight, but try to keep the characters alive so that they can learn the magic word which opens the portal.
 
-If the characters drop through the portal, they have a fight on their hands.  After that, immediately roll for an encounter in the citadel.  The characters are five areas away from the Citadel's edge, and each area prompts for a new encounter.  After that, you're on your own -- few parties will be able to make it out alive.
+If the characters drop through the portal, they have a fight on their hands.  After that, immediately roll for an encounter in the citadel.  The characters are five areas away from the Citadel's edge, and each area prompts for a new encounter.  After that, you're on your own -- you'll have to think up some opportunities for the party to make it out alive, and find another portal.
 
 \subsection{The Green Tower}\label{green_tower}\setcounter{list}{0}
 \vspace{-1cm}
