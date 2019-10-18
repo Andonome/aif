@@ -437,11 +437,11 @@
 	}
 
 \newcommand{\dwarventrader}{
-	\person{0}{1}{-1}{{0}{0}{0}}{0}{1}{Crafts 2, Deceit 1}{\shortsword\ifnumcomp{\thechapter}{=}{6}{3D6sp}{\setcounter{gold}{\thepage}\arabic{gold}sp}}{}
+	\person{0}{1}{-1}{{0}{0}{0}}{0}{1}{Crafts 2, Deceit 1}{\shortsword\ifnumcomp{\thechapter}{=}{6}{3D6sp}{\setcounter{gold}{\thepage}, \arabic{gold}sp}}{}
 	}
 %
 \newcommand{\dwarvensoldier}{
-	\person{1}{2}{0}{{0}{0}{-1}}{0}{2}{Crafts 1, Tactics 1}{\greataxe\completeplate}{\knacks{Chosen Enemy: Goblins}}
+	\person{1}{2}{0}{{0}{0}{-1}}{0}{2}{Crafts 1, Tactics 1}{\greataxe, \completeplate}{\knacks{Chosen Enemy: Goblins}}
 	}
 
 \newcommand{\dwarvenrunemaster}{
@@ -502,7 +502,7 @@
 
 \newcommand{\humansoldier}{
 	\random
-	\person{2}{\ifodd\thepage 0 \else 1\fi}{1}{{0}{-1}{0}}{0}{\ifodd\thechapter 2 \else 1\fi}{Beast Ken 1, Survival \ifodd\thechapter 2 \else 1\fi, Tactics 1}{\ifnum\value{age}>8{\greatsword}\else\ifnum\value{age}>4{\longsword}\else{\greataxe}\fi\fi \ifnum\value{age}=3\partialleather\else\partialchain\fi \setcounter{gold}{\thepage}\multiply\value{gold} by \thechapter \divide\value{gold} by 10\addtocounter{gold}{1}\arabic{gold}cp}{}
+	\person{2}{\ifodd\thepage 0 \else 1\fi}{1}{{0}{-1}{0}}{0}{\ifodd\thechapter 2 \else 1\fi}{Beast Ken 1, Survival \ifodd\thechapter 2 \else 1\fi, Tactics 1}{\ifnum\value{age}>8{\greatsword}\else\ifnum\value{age}>4{\longsword}\else{\greataxe}\fi\fi , \ifnum\value{age}=3\partialleather\else\partialchain\fi, \setcounter{gold}{\thepage}\multiply\value{gold} by \thechapter \divide\value{gold} by 10\addtocounter{gold}{1}\arabic{gold}cp}{}
 	}
 
 \newcommand{\humanthief}{
@@ -596,7 +596,7 @@
 	}
 
 \newcommand{\undeadknight}{
-	\person{3}{0}{2}{{0}{0}{-5}}{2}{2}{Aggression 2, Beast Ken 1, Survival 1, Tactics 2, Vigilance 1}{\greatsword dagger, %
+	\person{3}{0}{2}{{0}{0}{-5}}{2}{2}{Aggression 2, Beast Ken 1, Survival 1, Tactics 2, Vigilance 1}{\greatsword, dagger, %
 	\ifnumcomp{\thechapter}{=}{\value{bestiarychapter}}{}{\ifnumcomp{\thechapter}{>}{3}{\multiply\value{gold} by \thepage \ifnumcomp{\value{gold}}{>}{0}{\divide\value{gold} by 1000 \ifnumcomp{\value{list}}{>}{0}{\arabic{list} sp}{\thepage cp in a small pouch}}{ornamental dagger, worth \thepage sp}}{\thepage gp worth of rubies, sewn across the flesh of the entire body.}}}%
 	{}
 	}
