@@ -460,13 +460,13 @@
 	}
 
 \newcommand{\elvenenchanter}{
-	\person{-2}{3}{2}{{3}{3}{3}}{0}{0}{Projectiles 1, Academics 3, EmPathy 3, Deceit 3, Performance 3, Stealth 1, Vigilance 2\Path{Blood}{Enchantment 5, Aldaron 4, Metamagic 4, Fate 3, Forces 2, Polymorph 2, Invocation 1}}{%
+	\person{-2}{3}{2}{{3}{3}{3}}{0}{0}{Projectiles 1, Academics 3, Empathy 3, Deceit 3, Performance 3, Stealth 1, Vigilance 2\Path{Blood}{Enchantment 5, Aldaron 4, Metamagic 4, Fate 3, Forces 2, Polymorph 2, Invocation 1}}{%
 		\ifnumcomp{\thechapter}{=}{\value{bestiarychapter}}{5D6sp worth of jewellery}{\ifnumcomp{\thechapter}{>}{4}{\multiply\value{list} by \thepage \ifnumcomp{\value{list}}{>}{0}{\divide\value{list} by 100 \ifnumcomp{\value{list}}{>}{0}{\arabic{list} sp worth of earrings}{random magical item}}{ornamental dagger, worth \thepage sp}}{\setcounter{gold}{\thechapter}\addtocounter{gold}{1} one necklace worth \arabic{gold} sp}}}%
 		{\mana{6}\addtocounter{xpbonus}{5}}
 	}
 
 \newcommand{\gnome}{
-	\person{-2}{-1}{1}{{1}{0}{0}}{0}{0}{Academics 1, Crafts 1, EmPathy 1, Pickpocketing 1, Stealth 1\Path{Alchemy}{Illusion 2}}{%
+	\person{-2}{-1}{1}{{1}{0}{0}}{0}{0}{Academics 1, Crafts 1, Empathy 1, Pickpocketing 1, Stealth 1\Path{Alchemy}{Illusion 2}}{%
 		\ifnumcomp{\thechapter}{=}{\value{bestiarychapter}}{Promisary note}{\ifnumcomp{\thechapter}{>}{2}{\multiply\value{list} by \thechapter \ifnumcomp{\value{list}}{>}{0}{\divide\value{list} by 500 \ifnumcomp{\value{list}}{>}{0}{Big ruby worth \arabic{list}gp}{Green emerald worth \thepage sp}}{Glimmering diamond worth \thepage gp}}{interesting piece of lizardite.}}}%
 	}
 
@@ -496,7 +496,7 @@
 	}
 
 \newcommand{\humanpriest}{
-	\person{1}{0}{0}{{2}{0}{1}}{0}{\ifnum\value{enc}>3 0 \else 1 \fi}{Academics 2, EmPathy 1}{\quarterstaff}{\mana{2}}
+	\person{1}{0}{0}{{2}{0}{1}}{0}{\ifnum\value{enc}>3 0 \else 1 \fi}{Academics 2, Empathy 1}{\quarterstaff}{\mana{2}}
 	}
 
 \newcommand{\humansoldier}{
