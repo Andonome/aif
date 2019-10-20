@@ -507,12 +507,12 @@
 
 \newcommand{\humanarcher}{
 	\random
-	\person{2}{\ifodd\thepage 0 \else 1\fi}{0}{{0}{-1}{0}}{0}{1}{Projectiles 2, Crafts 1, Survival \ifodd\thechapter 2 \else 1\fi, Tactics 1}{\longbow, dagger, \partialleather}{}
+	\person{2}{1}{\ifodd\thepage 1 \else 2\fi}{{0}{-1}{0}}{0}{1}{Projectiles 2, Crafts 1, Survival \ifodd\thechapter 2 \else 1\fi, Tactics 1}{\longbow, dagger, \partialleather}{}
 	}
 
 \newcommand{\humanthief}{
 	\random
-	\person{1}{\ifodd\thepage 2 \else 1\fi}{1}{{0}{0}{0}}{0}{\ifodd\thechapter 2 \else 1\fi}{Athletics 2, Deceit \ifodd\thepage 2 \else 1\fi, Tactics 1}{\ifnum\value{age}>8{\shortsword dagger}\else\ifnum\value{age}>4{\rapier dagger}\else{\longsword}\fi\fi \ifnum\value{age}=3\partialleather \fi \setcounter{gold}{\thepage}\divide\value{gold} by 4\addtocounter{gold}{3}, \arabic{gold}cp}{}
+	\person{1}{\ifodd\thepage 2 \else 1\fi}{1}{{0}{0}{0}}{0}{\ifodd\thechapter 2 \else 1\fi}{Athletics 2, Deceit \ifodd\thepage 2 \else 1\fi, Tactics 1}{\ifnum\value{age}>8{\shortsword , dagger}\else\ifnum\value{age}>4{\rapier , dagger}\else{\longsword}\fi\fi \ifnum\value{age}=3\partialleather \fi \setcounter{gold}{\thepage}\divide\value{gold} by 4\addtocounter{gold}{3}, \arabic{gold}cp}{}
 	}
 
 \newcommand{\humanalchemist}{
