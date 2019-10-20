@@ -120,6 +120,7 @@
 \newcommand{\quarterstaff}{Quarterstaff\addtocounter{str}{1}\addtocounter{spd}{1}\addtocounter{dex}{2}\renewcommand{\weaponknackone}{\addtocounter{spd}{2}}}
 \newcommand{\greataxe}{Greataxe\addtocounter{str}{3}\addtocounter{spd}{1}\addtocounter{dex}{1}}
 \newcommand{\greatclub}{Greatclub\addtocounter{str}{4}\addtocounter{spd}{1}\addtocounter{dex}{1}}
+\newcommand{\longbow}{Longbow\addtocounter{str}{1}}
 
 \newcommand{\partialleather}{partial leather armour \addtocounter{dr}{3}}
 \newcommand{\partialchain}{partial chain armour \addtocounter{dr}{4}}
@@ -502,6 +503,11 @@
 \newcommand{\humansoldier}{
 	\random
 	\person{2}{\ifodd\thepage 0 \else 1\fi}{1}{{0}{-1}{0}}{0}{\ifodd\thechapter 2 \else 1\fi}{Beast Ken 1, Survival \ifodd\thechapter 2 \else 1\fi, Tactics 1}{\ifnum\value{age}>8{\greatsword}\else\ifnum\value{age}>4{\longsword}\else{\greataxe}\fi\fi , \ifnum\value{age}=3\partialleather\else\partialchain\fi, \setcounter{gold}{\thepage}\multiply\value{gold} by \thechapter \divide\value{gold} by 10\addtocounter{gold}{1}\arabic{gold}cp}{}
+	}
+
+\newcommand{\humanarcher}{
+	\random
+	\person{2}{1}{\ifodd\thepage 1 \else 2\fi}{{0}{-1}{0}}{0}{1}{Projectiles 2, Crafts 1, Survival \ifodd\thechapter 2 \else 1\fi, Tactics 1}{\longbow, dagger, \partialleather}{}
 	}
 
 \newcommand{\humanthief}{
