@@ -480,7 +480,7 @@
 
 \newcommand{\humanfarmer}{
 	\random
-	\person{1}{0}{0}{{0}{-1}{\ifodd \value{age} -1\else1\fi}}{0}{\ifodd\thepage 0\else 1\fi}{Beast Ken 2, Crafts 2, \ifodd\thechapter Empathy 1\fi}{\Dagger \thechapter cp in a purse.}
+	\person{1}{0}{0}{{0}{-1}{\ifodd \value{age} -1\else1\fi}}{0}{\ifodd\thepage 0\else 1\fi}{Beast Ken 2, Crafts 2, \ifodd\thechapter Empathy 1\fi}{\Dagger , \thechapter cp in a purse.}
 	}
 
 \newcommand{\humanmaid}{
@@ -502,7 +502,7 @@
 
 \newcommand{\humansoldier}{
 	\random
-	\person{2}{\ifodd\thepage 0 \else 1\fi}{1}{{0}{-1}{0}}{0}{\ifodd\thechapter 2 \else 1\fi}{Beast Ken 1, Survival \ifodd\thechapter 2 \else 1\fi, Tactics 1}{\ifnum\value{age}>8{\greatsword}\else\ifnum\value{age}>4{\longsword}\else{\greataxe}\fi\fi , \ifnum\value{age}=3\partialleather\else\partialchain\fi, \setcounter{gold}{\thepage}\multiply\value{gold} by \thechapter \divide\value{gold} by 10\addtocounter{gold}{1}\arabic{gold}cp}{}
+	\person{2}{\ifodd\thepage 0 \else 1\fi}{1}{{0}{-1}{0}}{0}{\ifodd\thechapter 2 \else 1\fi}{Beast Ken 1, Survival \ifodd\thechapter 2 \else 1\fi, Tactics 1}{\ifnum\value{age}>8{\greatsword}\else\ifnum\value{age}>4{\longsword}\else{\greataxe}\fi\fi, \ifnum\value{age}=3\partialleather\else\partialchain\fi, \setcounter{gold}{\thepage}\multiply\value{gold} by \thechapter \divide\value{gold} by 10\addtocounter{gold}{1}\arabic{gold}cp}{}
 	}
 
 \newcommand{\humanarcher}{

@@ -3,4 +3,3 @@ pdflatex -shell-escape main.tex
 makeglossaries main
 makeglossaries main.idx
 pdflatex main.tex
-mv main.pdf aif.pdf
