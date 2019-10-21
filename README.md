@@ -1,4 +1,5 @@
 # Adventures in Fenestra
+
 This is a campaign setting for the First Blood RPG.  It has mostly-separated sections so that GMs can focus on the bits they want.
 
 Current structure:
@@ -16,11 +17,13 @@ Current structure:
 
 ## Side Quests
 
-Foreshadowing, multiple plot-arcs, and keeping track of the lot over the long term can be difficult.  Side Quests are here to help the GM and make sure that no GM comes unprepared, even if they haven't actually prepared anything.
+Foreshadowing, multiple plot-arcs, and keeping track of the lot over the long term can be difficult.  Who has time for that with study and a job?  Side Quests are here to help the GM and make sure that no GM comes unprepared, even if they haven't actually prepared anything.
 
-The players enter a forest and encounter one of three stories at random: the elven prince, the spider queen, or just some random events.  The result is the Spider Queen, so they get part one of that Side Quest.  The next time they're about, they might get part 2, or might have a completely different  story assault them.
+The players enter a forest and encounter one of three stories at random: the elven prince, the spider queen, or just disconnected, random events.  The result is the Spider Queen, so they get part one of that Side Quest.  The next time they're in the forest, they might get part 2, or might have a completely different story assault them.
 
-Side Quests can change from one area to the next, so players initially experience an assault of random hooks.  But soon, those hooks start to come together naturally.
+Most are extremely short encounters, but after a few of them are down, a plot begins to emerge.  The players have to leave town on a mission and hear a rustling in the bushes, then start to wonder if it's that spider queen, or the bandits they ran into in the villages, or something new.
+
+Side Quests can be kept for GMing emergencies, slapped onto the side of an overarching plot, or even used as a complete adventure in and of themselves.
 
 # Using the Book
 
