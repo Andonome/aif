@@ -273,6 +273,7 @@ Pick a character who's most likely to go somewhere alone.  If that's not feasabl
 \humanmaid
 
 \character{Steven}
+
 \humanthief
 
 A quick Wits + Empathy check, TN 8, reveals they haven't a clue what they're doing.  Once the non-fight has ended, the characters might ask what these three think they were doing.  They reply that they once worked for a Villagemaster, but Clarisa was accused of stealing tax money.  Robert was set to guard the money after the next round of tax collection, but in the morning, it was all gone.  The next week, all the staff were fired, as their replacements had arrived.
@@ -478,15 +479,25 @@ If that password ever makes its way underground, the town is doomed.  Nura spill
 
 \includesvg{images/Dyson_Logos/town.svg}\label{town_map}
 
+\begin{tcolorbox}[tabularx={cX},arc=1mm]
+
+	Number & Location \\
+	1 & \Glsentrytext{pig}. \\
+	2 & The White Horse Tavern. \\
+	3 & The Citadel of \glsentrytext{townmaster}. \\
+	4 & The Guard Station. \\
+	5 & Bakery entrance to the Lost Library in the sewers. \\
+
+\end{tcolorbox}
+
 \subsection{\Glsentrytext{pig}}
 
 \begin{boxtext}
-	Two men are pummeling each other.  One limps and the other's nose is burst open and streaming down his shirt, but they continue circling like boxers.  Two guards cry out and run forward to stop the public disturbance, and the two men immediately run together into \gls{pig}.  The guards stop at the door, look at each other for a moment, and then back away.
+	Two men are pummeling each other.  One limps and the other's nose is burst open and streaming down his shirt, but they continue circling like boxers.  Two guards cry out and run forward to stop the public disturbance, and the two men immediately run together into \gls{pig}, a disreputable tavern near the city's entrance.  The guards stop at the door, look at each other for a moment, and then back away.
 
 Nobody wants to go to \gls{pig} with unfriendly intentions.
 
 \end{boxtext}
-
  
 % Ventilation shaft [ max strength -2 ]
 % Secret entrance upwards to....
@@ -507,6 +518,8 @@ Nobody wants to go to \gls{pig} with unfriendly intentions.
 
 The cat's name is Bob, and his collar is made from dried, woven daffodil.  The collar is activated by shouting the elvish word for `dragon', at which point Bob will turn into a nura cat until someone says the elvish word for `cat'.
 
+As a result of Bob's collar, elves and people who speak elvish (such as many academics) are not welcome in \gls{pig}.
+
 \monster{Bob}
 
 \nuracat
@@ -523,6 +536,8 @@ The man at the back door is Peter -- one of the local Whiteland nobles. He's had
 
 \Gls{pigowner} has owned the pig since her father forged the inheritence documents, then died of alcohol poisoning shortly afterwards.
 
+\person{1}{2}{-1}{{1}{2}{1}}{0}{1}{Deceit 3, Empathy 1, Tactics 1\knacks{\adrenalinesurge}}{\Dagger, a hidden dagger, and an even more hidden dagger.}{}
+
 \subsubsection{Jane's Room}
 
 
@@ -534,14 +549,12 @@ Jane, priestess of Alass\"{e}, works here as a prostitute and organizes much of 
 
 \character{Jane -- Priestess of Alass\"{e}}
 
-\person{0}{1}{0}{{0}{0}{2}}{0}{0}{Academics 1, Empathy 2, Deceit 1, Larceny 2\Path{Devotion{Alass\"{e}}{Fate 3}}}{\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}{\mana{2}}
+\person{0}{1}{0}{{1}{0}{2}}{0}{0}{Academics 1, Empathy 2, Deceit 1, Larceny 2\Path{Devotion{Alass\"{e} }{Fate 3}}}{\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}{\mana{2}}
 
 
-Under Jane's fortune-telling card table the floorboards are loose, and lead to a new room, muffled by a thick curtain.  The number of people entering here has lead to wild rumours about the number of men Jane satisfies each day, and the number of hours they spend in there.  However, the reality is that almost everyone who enters the room simply wants to go to the secret sidechamber.
-
+Under Jane's fortune-telling card table the floorboards are loose, and lead down to a new room, muffled by a thick curtain.  The number of people entering here has lead to wild rumours about the number of men Jane satisfies each day, and the number of hours they spend in there.  However, the reality is that almost everyone who enters the room simply wants to go to the secret sidechamber.
 
 \subsubsection{Thieves' Den}
-
 
 \begin{boxtext}
 	Three men sit crosslegged on the floor, quietly playing cards.  The second they see you, an additional layer of silence enters the room.
@@ -551,7 +564,7 @@ A number of local thieves know of this secret and secluded room.  It was once a 
 
 \character{Three Cutthroats}
 
-\humansoldier
+\humanthief
 
 \subsubsection{Pantry}
 
@@ -580,7 +593,7 @@ The first character rolls Wits + Vigilance, TN 8.
 	A little river can be heard ahead.  The torchlight shines on a thin but tought rope, stretching across a passage to the right.  The little river flows down steeply, fed by a gushing crack in the wall.  It's not clear if the rope was to server as a poor guard-rail or as a tripwire to send people tumbling down.
 \end{boxtext}
 
-Various little pipes, nooks, and gutters in the city lead underground.  This little drain pops out here, and heads steadily downhill, eventually landin in the Sewers below (see page \pageref{slidein}).
+Various little pipes, nooks, and gutters in the city lead underground.  This little drain pops out here, and heads steadily downhill, eventually landin in the sewers below (see page \pageref{slidein}).
 
 The first member of the party to go down the tunnel rolls to spot the tripwire, and failure means they immediately go tumbling downwards to the sewers.
 
@@ -895,19 +908,18 @@ The books are variously written on History (real and imagined), The Art of Lies 
 
 \end{boxtext}
 
-The room is normal, except for the basket of choice snacks, which is poisoned with an intense laxative.  \Gls{sewerking} suspects one of his men steals food when returning from business in town, so he's left a basket of poisoned food.  Someone can tell it's poisoned with a Wits + Medicine roll, TN 8.  Failure means the character will have a bad night, and gain 3 Fatigue Points.
+The room is normal, except for the basket of choice snacks, which is poisoned with an intense laxative.  \Gls{sewerking} suspects one of his men steals food when returning from business in town, so he's left a basket of poisoned food.  Someone can tell it's poisoned with a Wits + Medicine roll, TN 8.  Failure means the character will have a bad night, and gain 3 Fatigue Points each scene for the rest of the day.\footnote{Feel free to roll for the characters so they're not aware there's a problem.}
 
- 
 \mapentry{The Drowned Hallway}
 
-The tunnels are a little moist.  It's not very noticeable, but bit by bit, the lowest portion of the tunnels have been flooded.  The bandits had already locked up two jails of five undead, but decided to abandon them since the flood.
+This area recently suffered a little flood.  Most of the water has dissipated, but this lower portion of the tunnels remains flooded.  The undead hobgoblins remain locked in their cells underground.
 
 
 \begin{boxtext}
 	Going down the stairs you feel your feet hitting cold water.  It's not clear how far the water goes down, but it's cold.
 \end{boxtext}
 
-The water goes up to the ceiling by the last step, and for four squares after.  Each zombie-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and are blind.
+The water goes up to the ceiling by the last step, and for four squares after.  Each zombie-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and have been blinded by the dark waters.
 
 \mapentry{Ogre Dust}
 
@@ -915,7 +927,7 @@ The water goes up to the ceiling by the last step, and for four squares after.  
 	A little thread pushes against your face, like a steel spiderweb.  A second later, something flutters around your head.  The falling debris feels annoying beyond words, and it's difficult to say why -- you simply feel incredibly irritated, and hungry.  \emph{Extremely} hungry.
 \end{boxtext}
 
-A thin wire was stretched across the floor, leading up to a small stretch of leather, holding snowdrops.  Anyone failing a Wits + Vigilance roll, TN 12 in the twilight, feels the petals fall down.  A moment later, the character's aflicted as per Saurecanta, level 2, and gains +4 Strength at the cost of -5 Charisma.
+A thin wire was stretched across the floor, leading up to a small stretch of leather, holding snowdrops.  Anyone failing a Wits + Vigilance roll, TN 12 in the twilight, feels the petals fall down.  A moment later, the character's aflicted as per Saurecanta, level 2, and gains +4 Strength at the cost of -4 Charisma.
 
 \mapentry{Entrance to the Citadel}
 
@@ -923,7 +935,7 @@ A thin wire was stretched across the floor, leading up to a small stretch of lea
 	The picks and torches on the ground show that someone's been working their way into the ground.  At the moment, the tunnel ends in a dead end.
 \end{boxtext}
  
-The single square of rock ahead is made of fallen debris, so the PCs can move it far easier than most rock walls.  They can make a Strength + Crafts roll, TN 9.  They'll need to accumulate a total margin of 10, whether in one roll, or many, in order to clear the way.
+The single square of rock ahead is made of fallen debris, so the PCs can move it far easier than most rock walls with a Strength + Crafts roll, TN 9.  They'll need to accumulate a total margin of 10, whether in one roll, or many, in order to clear the way.  Each roll takes 1 scene.
 
 \label{pigexit}
 
