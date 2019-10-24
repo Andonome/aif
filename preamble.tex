@@ -209,6 +209,15 @@ Roll & Result \\
 		{\setcounter{age}{\value{random}}}
 }
 
+\newcommand{\randomtwo}{
+	\random
+	\whileboolexpr{
+		test {\ifnumcomp{\value{random}}{>}{2}}
+		}
+		{\addtocounter{random}{-2}}
+		{\setcounter{list}{\value{random}}}
+}
+
 \newcommand{\mapentry}[1]{\addtocounter{list}{1}\subsubsection{\arabic{list}: #1}}
 \newcommand{\li}{\addtocounter{enc}{-1}\arabic{enc}&}
 \newcommand{\lii}{\addtocounter{list}{-1}\arabic{list}&}
