@@ -273,6 +273,7 @@ Pick a character who's most likely to go somewhere alone.  If that's not feasabl
 \humanmaid
 
 \character{Steven}
+
 \humanthief
 
 A quick Wits + Empathy check, TN 8, reveals they haven't a clue what they're doing.  Once the non-fight has ended, the characters might ask what these three think they were doing.  They reply that they once worked for a Villagemaster, but Clarisa was accused of stealing tax money.  Robert was set to guard the money after the next round of tax collection, but in the morning, it was all gone.  The next week, all the staff were fired, as their replacements had arrived.
@@ -478,15 +479,26 @@ If that password ever makes its way underground, the town is doomed.  Nura spill
 
 \includesvg{images/Dyson_Logos/town.svg}\label{town_map}
 
+\begin{tcolorbox}[tabularx={cX},arc=1mm]
+
+	Number & Location \\
+	1 & \Glsentrytext{pig}. \\
+	2 & The White Horse Tavern. \\
+	3 & The Citadel of \glsentrytext{townmaster}. \\
+	4 & The Guard Station. \\
+	5 & Bakery entrance to the Lost Library in the sewers. \\
+
+\end{tcolorbox}
+
 \subsection{\Glsentrytext{pig}}
+\setcounter{list}{0}
 
 \begin{boxtext}
-	Two men are pummeling each other.  One limps and the other's nose is burst open and streaming down his shirt, but they continue circling like boxers.  Two guards cry out and run forward to stop the public disturbance, and the two men immediately run together into \gls{pig}.  The guards stop at the door, look at each other for a moment, and then back away.
+	Two men are pummeling each other.  One limps and the other's nose is burst open and streaming down his shirt, but they continue circling like boxers.  Two guards cry out and run forward to stop the public disturbance, and the two men immediately run together into \gls{pig}, a disreputable tavern near the city's entrance.  The guards stop at the door, look at each other for a moment, and then back away.
 
 Nobody wants to go to \gls{pig} with unfriendly intentions.
 
 \end{boxtext}
-
  
 % Ventilation shaft [ max strength -2 ]
 % Secret entrance upwards to....
@@ -498,7 +510,7 @@ Nobody wants to go to \gls{pig} with unfriendly intentions.
 %%% IMAGE NEEDS ROTADED TO FIT WITH DUNGEON BELOW
 
 
-\subsubsection{Beerhall}
+\mapentry{Beerhall}
 
 \begin{boxtext}
 	Alassean song and cooked pig wafts hits you in the face as soon as the door opens.  With only three tables in the room, people have carved out little seating circles on the ground.  A fat cat with a brown collar sits in the rafters eyes you suspiciously as you struggle through the disorganized crowd to get to the bar.
@@ -507,11 +519,13 @@ Nobody wants to go to \gls{pig} with unfriendly intentions.
 
 The cat's name is Bob, and his collar is made from dried, woven daffodil.  The collar is activated by shouting the elvish word for `dragon', at which point Bob will turn into a nura cat until someone says the elvish word for `cat'.
 
+As a result of Bob's collar, elves and people who speak elvish (such as many academics) are not welcome in \gls{pig}.
+
 \monster{Bob}
 
 \nuracat
 
-\subsubsection{Kitchen}
+\mapentry{Kitchen}
 
 \begin{boxtext}
 	\Gls{pigowner} slams the door at the back of the room hard, blocking the view of the man who was out there.  Nancy tells you to leave, as if she were shooing 
@@ -523,7 +537,9 @@ The man at the back door is Peter -- one of the local Whiteland nobles. He's had
 
 \Gls{pigowner} has owned the pig since her father forged the inheritence documents, then died of alcohol poisoning shortly afterwards.
 
-\subsubsection{Jane's Room}
+\person{1}{2}{-1}{{1}{2}{1}}{0}{1}{Deceit 3, Empathy 1, Tactics 1\knacks{\adrenalinesurge}}{\Dagger, a hidden dagger, and an even more hidden dagger.}{}
+
+\mapentry{Jane's Room}
 
 
 \begin{boxtext}
@@ -534,14 +550,12 @@ Jane, priestess of Alass\"{e}, works here as a prostitute and organizes much of 
 
 \character{Jane -- Priestess of Alass\"{e}}
 
-\person{0}{1}{0}{{0}{0}{2}}{0}{0}{Academics 1, Empathy 2, Deceit 1, Larceny 2\Path{Devotion{Alass\"{e}}{Fate 3}}}{\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}{\mana{2}}
+\person{0}{1}{0}{{1}{0}{2}}{0}{0}{Academics 1, Empathy 2, Deceit 1, Larceny 2\Path{Devotion{Alass\"{e} }{Fate 3}}}{\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}{\mana{2}}
 
 
-Under Jane's fortune-telling card table the floorboards are loose, and lead to a new room, muffled by a thick curtain.  The number of people entering here has lead to wild rumours about the number of men Jane satisfies each day, and the number of hours they spend in there.  However, the reality is that almost everyone who enters the room simply wants to go to the secret sidechamber.
+Under Jane's fortune-telling card table the floorboards are loose, and lead down to a new room, muffled by a thick curtain.  The number of people entering here has lead to wild rumours about the number of men Jane satisfies each day, and the number of hours they spend in there.  However, the reality is that almost everyone who enters the room simply wants to go to the secret sidechamber.
 
-
-\subsubsection{Thieves' Den}
-
+\mapentry{Thieves' Den}
 
 \begin{boxtext}
 	Three men sit crosslegged on the floor, quietly playing cards.  The second they see you, an additional layer of silence enters the room.
@@ -551,50 +565,47 @@ A number of local thieves know of this secret and secluded room.  It was once a 
 
 \character{Three Cutthroats}
 
-\humansoldier
+\humanthief
 
-\subsubsection{Pantry}
+\mapentry{Pantry}
 
-\Gls{pigowner} used to store additional casks of ale, the good wine, and the best salted pork in here.  However, last month she heard a maid screaming and ran down to check on what had happened.  Through the door to the pantry she saw some undead creature chewing the still-living maid's face off, one piece at a time and immediately slammed the door shut.  Her shaking hand locked the door, then she gathered metals from the kitchen to jam into the lock so that it could never be opened again.
+\Gls{pigowner} used to store additional casks of ale, the good wine, and the best salted pork in here.  However, last month she heard a maid screaming and ran down to check on what had happened.  Through the door to the pantry she saw some undead creature chewing the still-living maid's face off chunk by chunk and immediately slammed the door shut.  Her shaking hand locked the door, then she gathered metals from the kitchen to jam into the lock so that it could never be opened again.
 
 The theives who live in the sewers have apologized to \gls{pigowner} for letting the creature escape, but none have volunteered to open the door.  On its way out they could see it was a different sort of undead -- not a regular zombie, but something with a mind, and the ability to plan.
 
-The creature looks like a regular, skinny woman, with long brown hair, dead around six months.  However, the simple shell hosts a powerful necromancer.
+The creature looks like a regular, skinny woman, with long brown hair, dead around six months.  However, the simple shell hosts a powerful necromancer.  Normally, the undead in the tunnels below are made from hobgoblins, but the thieves murdered a woman one night and decided to take her down below.  One of the sentient hobgoblins had enough magical ability to summon a powerful spirit into her.
+
+The creature has already risen the maid from the dead, and has an escape plan.  It will create a magical mist as it hears anyone attempting to enter the door.  Once the door opens, the mist pours out, obscuring all vision, and the zombie-maid will come shambling out.  Anyone attempting to kill the creature inside will probably attack the maid, and in the confusion, the monster from the celler will attempt to stealth its way outside.  In Jane's room, it will cover itself in blankets, posing as an embarrassed man who must leave unseen.  Once on the street, it can find an alley to hide in, and begin its murderous rampage before diving into the river at the first sign of a mob.
 
 \character{Monster in the Celler}
 
 \person{0}{1}{0}{{2}{0}{-5}}{2}{2}{Academics 2, Medicine 1, Stealth 3, Survival 1, Vigilance 3\Path{Devotion}{Aldaron 2, Fate 2, Metamagic 1, Necromancy 2}}{None}{\mana{6}\lockedmana{2}}
 
-The creature has already risen the maid from the dead, and has an escape plan.  It will create a magical mist as it hears anyone attempting to enter the door.  Once the door opens, the mist pours out, obscuring all vision, and the zombie-maid will come shambling out.  Anyone attempting to kill the creature inside should instinctively attack the maid, and in the confusion, the monster from the celler will attempt to stealth its way outside.  In Jane's room, it will cover itself in blankets, posing as an embarrassed man who must leave unseen.  Once on the street, it can find an alley to hide in, and begin its murderous rampage before diving into the river at the first sign of a mob.
-
-
+\monster{Undead Maid}
 
 \person{1}{2}{1}{{2}{1}{0}}{0}{1}{Academics 1, Beast Ken 1, Empathy 2, Deceit 3}{\Dagger, hidden dagger, 5sp}{}
 
-\subsubsection{Runoff}
-
-The first character rolls Wits + Vigilance, TN 8.
-
+\mapentry{Runoff}
 
 \begin{boxtext}
 	A little river can be heard ahead.  The torchlight shines on a thin but tought rope, stretching across a passage to the right.  The little river flows down steeply, fed by a gushing crack in the wall.  It's not clear if the rope was to server as a poor guard-rail or as a tripwire to send people tumbling down.
 \end{boxtext}
 
-Various little pipes, nooks, and gutters in the city lead underground.  This little drain pops out here, and heads steadily downhill, eventually landin in the Sewers below (see page \pageref{slidein}).
+Various little pipes, nooks, and gutters in the city lead underground.  This little drain pops out here, and heads steadily downhill, eventually landin in the sewers below (see page \pageref{slidein}).
 
-The first member of the party to go down the tunnel rolls to spot the tripwire, and failure means they immediately go tumbling downwards to the sewers.
+The first member of the party to go down the tunnel rolls to spot the tripwire (Wits + Vigilance, TN 8), and failure means they immediately go tumbling downwards to the sewers.
 
-\subsubsection{Ventilation Shaft}
+\mapentry{Ventilation Shaft}
 This little tunnel reaches upwards to allow a modicum of fresh air to circulate down in the nasty little dungeon.  Characters with a Strength of 0 or greater are too large to fit through the narrow hole.  It emerges on a street, just below a rich man's house.
 
-\subsubsection{The Temple of War}
+\mapentry{The Temple of War}
 Long ago, the twin temples to Ohta and Qualm\"{e} stood closeby, although the priests always had a respectful distrust of eath other.  They each barred the door from their own side, and allowed it to open only during prearranged meetings.
 
 \Gls{pigowner} has since covered the door with a shrine to Alass\"{e}, along with a large wooden backing which covers the door.  She doesn't want the various thieves who come down here to get the idea that they can raid a sacred temple, as it'll only cause more trouble.
 
-The temple's lowest room is filled with expensive tapestries, swords, axes, and other items, each catalogued according to an extensive system they require to stay legal.  \Gls{king} has very precise rules about the ownership of weapons.
+If the party break in, they find that the temple's lowest room is filled with expensive tapestries, swords, axes, and other items, each catalogued according to an extensive system they require to stay legal.  \Gls{king} has very precise rules about the ownership of weapons.
 
-\subsubsection{The Ossuary}
+\mapentry{The Ossuary}
 The locked door requires an Intelligence + Larceny check, TN 11, to open.
 
 \begin{boxtext}
@@ -603,17 +614,17 @@ The locked door requires an Intelligence + Larceny check, TN 11, to open.
 	Letters in Quenya state ``We bones await yours''.
 \end{boxtext}
 
-The temple of Qualm\"{e} held its fasting chambers here, where men would compete to stay underground and hungry the longest, with the winner receiving accolades, honour, and feasts.  Anyone who died won instantly, and their family received double the normal price money, along with their departed's skull, newly painted with sacred quotations.
+The temple of Qualm\"{e} held its fasting chambers here, where men would compete to stay underground and hungry the longest, with the winner receiving accolades, honour, and feasts.  Anyone who died won instantly, and their family received double the normal prize money, along with their departed's skull, newly painted with sacred quotations.
 
 The total value of the jewels inside here is 350gp.  \Gls{pigowner}, and the bandits know better than to go graverobbing, especially when they are aware the old temple had guardians.
 
-Three men competed and won the right to protect the temple.  They starved themselves into a state of lichdom after being burried alive in one of the walls.  While the hidden room, being covered in bricks is almost impossible to detect (TN 14), they can break those bricks down at any point.
+Three men competed and won the right to protect the temple.  They starved themselves into a state of lichdom after being burried alive in one of the walls.  While the hidden room, being covered in bricks, is almost impossible to detect (Intelligence + Crafts, TN 14), they can break those bricks down at any point.
 
 \character{Three Temple Guardians}
 
 \demilich
 
-\subsubsection{The Descent}
+\mapentry{The Descent}
 This path downwards leads to the thieves' den underground (see page \pageref{pigexit}).
 
 \subsection{\Glsentrytext{whitehorse}}
@@ -623,38 +634,44 @@ This path downwards leads to the thieves' den underground (see page \pageref{pig
 % Separate the upper floor and float it in text below
 %%%%%
 
-\subsubsection{Drinking Hall}
-
+\mapentry{Drinking Hall}
+\setcounter{list}{0}
 
 \begin{boxtext}
 	A large man with a well-greased moustache halts you at the door.
 
 	\begin{quotation}
-		My good gentlemen and excellent ladies, I've been looking all over town for a noble from Whiteland.  Do you know where I might find him?
-	\end{quotation}
 
+		My good gentlemen and excellent ladies, I've been looking all over town for a noble from Whiteland.  Do you know where I might find him?
+
+	\end{quotation}
 
 \end{boxtext}
 
-	Elric wants to know if the characters are loyal to the king -- and all loyal subjects know that there \emph{are} no nobles in Whiteland, because the king has chased them all out.
+Elric wants to know if the characters are loyal to the king -- and all loyal subjects know that there \emph{are} no nobles in Whiteland, because the king has chased them all out for their rebellion.
 
-	\begin{speechtext}
-		You don't know?  Well I have an idea -- if he's around here, he'll be in the jail, which is where riff raff go who go where they're not wanted!  Servants use the sidedoor, so go out to the street you go!
-	\end{speechtext}
+\begin{speechtext}
 
-	If the characters answer correctly, they're let in, but the establishment will be leary of them -- there's no real incentive to make money here, the patrons are a small group of elites, and a few polite traders.
+	You don't know?  Well I have an idea -- if he's around here, he'll be in the jail, which is where riff raff go who go where they're not wanted!  So out you go!
 
-	The hall contains various villagemasters playing games, and half a dozen local guards.
+\end{speechtext}
 
-	\subsubsection{Kitchen}
-	The staff sleep here during long shifts.  The lack of proper ventilation makes the air difficult to breathe.
+If the characters answer correctly, they're let in, but the establishment will be leary of them -- there's no real incentive to make money here, the patrons are a small group of elites, and a few polite traders.
 
-	\subsubsection{The Courtyard}
+The hall contains various villagemasters playing games, and half a dozen local guards.
+
+\mapentry{Kitchen}
+
+The staff sleep here during long shifts.  The lack of proper ventilation makes the air difficult to breathe.
+
+\mapentry{The Courtyard}
 
 \begin{boxtext}
-	\Gls{townmaster} has his legs tied together and is hopping away from a coterie of chuckling men.  A chicken runs out in front of him with a little paper hat.  \Gls{townmaster} lunges forwards and grabs the chicken in his teeth.  As the chicken reaches the peak of its small voice, \gls{townmaster} shakes the chicken back and forth like a rabid dog until the chicken stops clucking.
+
+	\Gls{townmaster} has his legs tied together and is hopping away from a coterie of chuckling men.  A chicken runs out in front of him with a little paper hat.  He lunges forwards and grabs the chicken in his teeth.  As the chicken reaches the peak of its small voice, He shakes the chicken back and forth like a rabid dog until the chicken stops clucking.
 
 	The crowd cheer, and another man steps forward to have his feet bound.
+
 \end{boxtext}
 
 The courtyard usually contains a couple of carriages, and nobles playing ridiculous games.
@@ -666,34 +683,34 @@ Upstairs contains two rooms, a load of equipment for the tavern, sleeping matts 
 The bookshelves contain rather a lot of history books, most focussing upon anti-elven propaganda, such as the time they destroyed the now-lost city.
  
 
-\subsection{The Citadel}
+\subsection{The Citadel}\label{citadel}
 The citadel is massive, and contains various floors.
 
 \begin{enumerate}
 
 	\item{Outsiders}
 		\begin{itemize}
-			\item{Left Wing: Ballroom}
-			\item{Left Wing: Guardroom}
-			\item{Right Wing: Dining Room}
-			\item{Right Wing: Servants' Quarters}
-			\item{Right Wing: Kitchen}
+			\item{Left Wing: Ballroom.}
+			\item{Left Wing: Guardroom.}
+			\item{Right Wing: Dining Room.}
+			\item{Right Wing: Servants' Quarters.}
+			\item{Right Wing: Kitchen.}
 		\end{itemize}
 	\item{Insiders}
 		\begin{itemize}
-			\item{Left Wing: Guest Beds}
-			\item{Left Wing: Study}
-			\item{Right Wing: \Glsentrytext{townmaster}'s Sons' 9 Quarters (a nearby tree stands tall enough to access one room)}
-			\item{Right Wing: Secret Stairway up to the floor above}
-			\item{Right Wing: Winery}
+			\item{Left Wing: Guest Beds.}
+			\item{Left Wing: Study.}
+			\item{Right Wing: \Glsentrytext{townmaster}'s Sons' 9 Quarters (a nearby tree stands tall enough to access one room).}
+			\item{Right Wing: Secret Stairway up to the floor above.}
+			\item{Right Wing: Winery.}
 		\end{itemize}
 
 	\item{Others}
 		\begin{itemize}
-			\item{Left Wing: Jared, the Alchmit's Study}
-			\item{Left Wing: \Glsentrytext{townmaster}'s close servants' quarters}
-			\item{Right Wing: \Glsentrytext{townmaster}'s room}
-			\item{Right Wing: Treasury}
+			\item{Left Wing: Jared, the Alchmit's Study.}
+			\item{Left Wing: \Glsentrytext{townmaster}'s close servants' quarters.}
+			\item{Right Wing: \Glsentrytext{townmaster}'s room.}
+			\item{Right Wing: Treasury.}
 		\end{itemize}
 
 \end{enumerate}
@@ -744,6 +761,7 @@ Some time ago, the guards captured an ogre, and \gls{townmaster} ordered them to
 
 They didn't know what to do about a toilet, and they've never wanted to move the ogre, so the ogres shits in a bucket, and once a day it throws the contents out of the hatch and onto a guard.  This is the only fun the ogre has, and the the biggest irritation the guards have to put up with.
 
+As the chararcters enter the dungeon, they're separated and thrown in with thieves, townsfolks who talked badly about the king, and one indebted trader who can't stop pittying himself.
 
 \begin{enumerate}
 
@@ -767,17 +785,17 @@ They didn't know what to do about a toilet, and they've never wanted to move the
 
 \includesvg{images/Dyson_Logos/sewer.svg}\label{sewer_map}
 
-The old temple of Qualm\"{e} stretched deep underground, and soon after a library was commissioned by local alchemists, which was share a space.  The place held students, priests, alchemists, and a grand library.  However, once the nearby city was destroyed, there was no longer enough money, pilgrims, or students hoping to oneday see the great university of the city to sustain the underground library, or the temple.
+The old temple of Qualm\"{e} stretched deep underground, and soon after it was built, a library was commissioned by local alchemists.  The two shared much of the space for some time.  The place held students, priests, alchemists, and a grand library.  However, once the nearby city was destroyed (now \gls{lostcity}), there was no longer enough money, pilgrims, or students hoping to oneday see the great university of the city to sustain the underground library, or the temple.
 
-A century later, an earthquake destroyed most of the arae, and was left silent.
+A century later, an earthquake destroyed most of the area, and the library has been left in the silent darkness since then.
 
 When the Whiteland nobles, bereft of a home and desperate, found they had this secret space available in \gls{pig}, they dug their way down as quickly as they could.  The nearby sewage stream, heading swiftly underground, made pulling rocks and mud out simple.
 
-The doors are all locked by a single key, and barred from the bandits' side.  Lockpicking them requires an Intelligence + Larceny roll, TN 10 if the bar's down, and TN 14 otherwise.
+\paragraph{The doors} are all locked by a single key, and barred from the bandits' side.  Lockpicking them requires an Intelligence + Larceny roll, TN 10 if the bar's up, and TN 14 otherwise.
 
 %!
 
-\mapentry{Stairway to the Bakers}
+\mapentry{Stairway to the Bakers}\label{bakery_exit}
 This stairway has been dug upwards to a drain just outside of a bakery.  The bandits enter and exit through here.
 
 The staircase has a large barrel sitting at the top, filled with pitch, offal, and mud.  Anyone tipping it over fills the path downward with a slippery material, and moving upwards becomes exceedingly difficult.  Anyone running up rolls Dexterity + Athletics, TN 14.  Every failure margin slows characters by 1 square, and anyone getting 7 or less falls back down the path.  The barrel is heavy enough to cause $1D6-2$ Damage, and avoiding it requires a Wits + Athletics roll, TN 8; stopping the barrel entirely needs a Strength + Athletics roll TN 11.
@@ -797,29 +815,39 @@ Players might be expecting a dramatic fight as an enemy pops out from the alcove
 Observant characters may notice that a single brazier looks different from the rest.  It's from the underground realm through the portal, and raises any dead in the area as zombies.
 
 \mapentry{The Dogs}
+
+
+\begin{boxtext}
+	Just ahead, you can see half a dozen dogs lying on the ground and chained up.  They perk up, pull their chains taught, and sniff the air in front of them.
+\end{boxtext}
+
 The original function of this room's been long forgotten.  Currently various dogs are chained here as an early warning signal.  The dogs have been stolen from the streets, and a number of people would like to see them returned.
 
 The dogs won't sound any alarm until they see the characters -- they're used to people moving about, and generally anticipate being fed when they hear footsteps.  They also don't panic when seeing the undead, as the undead have no interest in attacking them.
+
+\monster{6 Dogs}
+
+\huntingdog
 
 \mapentry{Dead Storage}
 
 
 \begin{boxtext}
-	Ahead is another set of door with those strange dead creatures behind them.  Arms reach out, filling the hallway.
+	Ahead is another alcove with an iron gate in front, holding those strange dead creatures behind them.  Arms reach out, filling the hallway.
 \end{boxtext}
 
 \Gls{patron} has gifted hobgoblin bands to make new tunnels, so the bandits can carve out their own little underground kingdom.  Once the hobgoblins die, they're raised from the dead by the brazier hanging in the old library (page \pageref{oldlibrary}).
 
-Each room holds $1D6+3$ undead hobgoblins.  Each also holds one of the sentient undead who were smuggled into the area.  The sentient ones will not attack first -- they will show restraint, stay behind the other dead, and in general interest themselves with plotting how to get the gate open permanently once \gls{patron} wishes it.
+Each room holds $1D6+3$ undead hobgoblins.  Most also hold one of the sentient undead who were smuggled into the area.  The sentient ones will not attack first -- they will show restraint, stay behind the other dead, and in general interest themselves with plotting how to get the gate open permanently once \gls{patron} wishes it.
 
 \monster{Undead Hobgoblins}
 \zombiehobgoblin
 
-Anyone attempting to move through a hallway filled with these narrow tunnels must roll Speed + Athletics, TN 8 or be grabbed by one, at which point another gets a chance to grab the character.
+Anyone attempting to move through a hallway filled with these narrow tunnels must roll Speed + Athletics, TN 8 or be grabbed by one, at which point another gets a chance to grab the character, and another.  Three can make an attack at any given point once someone is in range.
 
 \character{Sentient Undead Hobgoblins}
 
-\person{2}{-1}{-2}{{1}{0}{-5}}{2}{1}{Aggression 2, Crafts 2, Tactics 1}{None}{}
+\sentientundeadhobgoblin
 
 \mapentry{Magical Item Storage}
 
@@ -828,19 +856,18 @@ Anyone attempting to move through a hallway filled with these narrow tunnels mus
 	The rings of shelves show a strange assortment of items -- jars filled with human teeth, an old brazier, dried snowdrops, and a vial of blood.
 \end{boxtext}
 
-\Glsentrytext{sewerking} stashes most of his prizes in this room on a simple series of shelves.  Each is cast with Intelligence +1, Wits +1.
+\Glsentrytext{sewerking} stashes most of his prizes in this room on a simple series of shelves.  Each is cast with Intelligence +1 and Wits +1.
 
 \begin{enumerate}
 
-	\item{A bag of teeth that turn into anything, as per Conjuration level 2.}
+	\item{A bag of teeth that turn into any simple item, as per Conjuration level 2.}
 	\item{A vial of lamb's blood which makes the user invisible to the dead and immune to fatigue (as per Necromancy level 1).}
 	\item{A pressed Autumnal leaf, which releases 2 mana when destroyed.}
-	\item{An ancient scroll, proclaiming elves the friends of humans, and seven reasons not to worry about nobles being assassinated.  Anyone reading the scroll can raise any creature in the vicinity from the dead, regardless of size, as per the third level of Necromancy.}
-	\item{The Assassination Dagger, which inflicts an additional $1D3+1$ HP Damage with every attack.}
-	\item{Discordant music -- when played it transports the singer to the Realm of Bright Rocks.}
+	\item{An ancient scroll, proclaiming elves the friends of humans, and seven reasons not to worry about nobles being assassinated.  Anyone reading the scroll can raise any creature in the vicinity from the dead, regardless of size, as per the third level of Necromancy.\footnote{This scroll was made by the Saurecanta sphere.}}
+	\item{The Assassination Dagger, which inflicts an additional $1D3+1$ HP Damage with every attack (ignoring all FP).  This ability can be used once per scene.}
 	\item{Magic Mushrooms, enchanted with Saurecanta level 2 to decrease the user's Charisma by 3 and increase Speed by the same ammount.}
-	\item{A slashed painting of a broken castle -- damaging it summons an archmage.}
-	\item{Foul alcohol in a bottle, which makes the imbiber regenerate fatigue if they eat, and otherwise inflicts hunger paints, as per Saurecanta level 1.}
+	\item{A slashed painting of a broken castle -- damaging it summons an archmage (see page \pageref{archmage}.}
+	\item{Foul alcohol in a bottle, which makes the imbiber regenerate fatigue if they eat, and otherwise inflicts hunger paints, as per Saurecanta level 1 (see page \pageref{saurecantaone}).}
 \end{enumerate}
 
 \mapentry{Portal Room}
@@ -849,11 +876,11 @@ Anyone attempting to move through a hallway filled with these narrow tunnels mus
 \begin{boxtext}
 	The grand hall's end glistens with jewels of all colours of the rainbow, arranged around a great stone sphere, with a single concave side facing the room.
 
-	The rest of the massive hallway contains nothing but a couple of ale casks and stools.  Five doors line the far side, and another two doors on the side of the room you came from.
+	The rest of the massive hallway contains nothing but a couple of ale casks and stools.  Five doors line the far side, and another two doors on the side of the room you came from.  The walls are scorched with fire.
 
 \end{boxtext}
 
-A moment later, the characters hear doors moving as the bandits wake up.  Each room contains two.
+A moment later, the characters hear doors moving as the bandits wake up and move from the little rooms they sleep in at the side of the alcove.  Each room contains two.
 
 The portal's command words are nowhere to be found here, but can be researched with an Intelligence + Academics roll, TN 16 (or 10 with a good library).  If opened, a portal opens directly to the Realm of Darkness and Fire (page \pageref{darknessandfire}).
 
@@ -876,26 +903,28 @@ The portal's command words are nowhere to be found here, but can be researched w
 
 Besides the map, the table has an emergency magical item -- an egg, which grants +5 Speed and Strength, but -5 Charisma and Intelligence.  It activates once broken, whether thrown at someone, or broken on purpose.
 
+The books are variously written on History (real and imagined), The Art of Lies (by an elvish author), instructions on hosting a dinner party, and a ledger, detailing library items \gls{sewerking} has sold to \gls{baron},\footnote{Nothing here mentions \glsentrytext{baron} by name.} and various other items which were stolen.
+
 \mapentry{Food Storage}
 
-
 \begin{boxtext}
+
 	Barrel after barrel fill the room, along with the smell of wine, apples, and vinegar.  A little basket of choice snacks sits on top.
+
 \end{boxtext}
 
-The room is normal, except for the basket of choice snacks, which is poisoned with an intense laxative.  \Gls{sewerking} suspects one of his men steals food when returning from business in town, so he's left a basket of poisoned food.  Someone can tell it's poisoned with a Wits + Medicine roll, TN 8.  Failure means the character will have a bad night, and gain 3 Fatigue Points.
+The room is normal, except for the basket of choice snacks, which is poisoned with an intense laxative.  \Gls{sewerking} suspects one of his men steals food when returning from business in town, so he's left a basket of poisoned food.  Someone can tell it's poisoned with a Wits + Medicine roll, TN 8.  Failure means the character will have a bad night, and gain 3 Fatigue Points each scene for the rest of the day.\footnote{Feel free to roll for the characters so they're not aware there's a problem.}
 
- 
 \mapentry{The Drowned Hallway}
 
-The tunnels are a little moist.  It's not very noticeable, but bit by bit, the lowest portion of the tunnels have been flooded.  The bandits had already locked up two jails of five undead, but decided to abandon them since the flood.
+This area recently suffered a little flood.  Most of the water has dissipated, but this lower portion of the tunnels remains flooded.  The undead hobgoblins remain locked in their cells underground.
 
 
 \begin{boxtext}
 	Going down the stairs you feel your feet hitting cold water.  It's not clear how far the water goes down, but it's cold.
 \end{boxtext}
 
-The water goes up to the ceiling by the last step, and for four squares after.  Each zombie-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and are blind.
+The water goes up to the ceiling by the last step, and for four squares after.  Each zombie-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and have been blinded by the dark waters.
 
 \mapentry{Ogre Dust}
 
@@ -903,7 +932,7 @@ The water goes up to the ceiling by the last step, and for four squares after.  
 	A little thread pushes against your face, like a steel spiderweb.  A second later, something flutters around your head.  The falling debris feels annoying beyond words, and it's difficult to say why -- you simply feel incredibly irritated, and hungry.  \emph{Extremely} hungry.
 \end{boxtext}
 
-A thin wire was stretched across the floor, leading up to a small stretch of leather, holding snowdrops.  Anyone failing a Wits + Vigilance roll, TN 12 in the twilight, feels the petals fall down.  A moment later, the character's aflicted as per Saurecanta, level 2, and gains +4 Strength at the cost of -5 Charisma.
+A thin wire was stretched across the floor, leading up to a small stretch of leather, holding snowdrops.  Anyone failing a Wits + Vigilance roll, TN 12 in the twilight, feels the petals fall down.  A moment later, the character's aflicted as per Saurecanta, level 2, and gains +4 Strength at the cost of -4 Charisma.
 
 \mapentry{Entrance to the Citadel}
 
@@ -911,7 +940,7 @@ A thin wire was stretched across the floor, leading up to a small stretch of lea
 	The picks and torches on the ground show that someone's been working their way into the ground.  At the moment, the tunnel ends in a dead end.
 \end{boxtext}
  
-The single square of rock ahead is made of fallen debris, so the PCs can move it far easier than most rock walls.  They can make a Strength + Crafts roll, TN 9.  They'll need to accumulate a total margin of 10, whether in one roll, or many, in order to clear the way.
+The single square of rock ahead is made of fallen debris, so the PCs can move it far easier than most rock walls with a Strength + Crafts roll, TN 9.  They'll need to accumulate a total margin of 10, whether in one roll, or many, in order to clear the way.  Each roll takes 1 scene.
 
 \label{pigexit}
 

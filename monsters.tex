@@ -9,7 +9,6 @@
 \setcounter{bestiarychapter}{0}
 \setcounter{gold}{0}
 \setcounter{enc}{0}
-\setcounter{age}{1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                           _
@@ -24,7 +23,6 @@
 %\__ \ || (_| | |_\__ \
 %|___/\__\__,_|\__|___/
 %
-
 
 \newtoggle{mind}
 \newtoggle{debug}\settoggle{debug}{false}
@@ -415,7 +413,7 @@
 }
 %
 \newcommand{\griffin}{
-	\animal{2}{-2}{2}{2}{0}{2}{Athletics 2, Survival 1\knacks{\charge}}{Flight}
+	\animal{\ifodd\value{page} 2\else 1\fi}{-2}{\ifodd\value{page} 2\else 1\fi}{2}{0}{2}{Athletics 2, Survival 1\knacks{\charge}}{Flight}
 }
 %
 \newcommand{\mouthdigger}{
@@ -424,15 +422,16 @@
 %
 \newcommand{\wolf}{
 	\animal{-1}{-1}{3}{1}{2}{1}{Athletics 2, Survival 1, Tactics 1}{}
-
 }
 
 \newcommand{\woodspy}{
-	\person{2}{4}{2}{{-4}{+2}{-5}}{2}{0}{Athletics 2, Stealth 4, Survival 2, Tactics 2}{None}{}
+	\randomthree
+	\person{\arabic{random}}{4}{2}{{-4}{+2}{-5}}{2}{0}{Athletics 2, Stealth 4, Survival 2, Tactics 2}{None}{}
 }
 
 \newcommand{\basilisk}{
-	\animal{7}{-2}{3}{0}{4}{2}{Projectiles 1, Athletics 2, \abilities{Odour demands Strength check, TN 9. Acidic breath (1D6-2 Damage).}}{}{\knacks{\unstoppable}}
+	\randomthree\addtocounter{age}{5}\randomtwo\addtocounter{list}{1}
+	\animal{\arabic{age}}{-2}{3}{0}{4}{2}{Projectiles 1, Athletics 2, \abilities{Odour demands Strength check, TN 9. Acidic breath (1D6-2 Damage).}}{}{\knacks{\unstoppable}}
 }
 
 %
@@ -444,7 +443,8 @@
 	}
 
 \newcommand{\dwarventrader}{
-	\person{0}{1}{-1}{{0}{0}{0}}{0}{1}{Crafts 2, Deceit 1}{\shortsword\ifnumcomp{\thechapter}{=}{6}{3D6sp}{\setcounter{gold}{\thepage}, \arabic{gold}sp}}{}
+	\randomthree
+	\person{0}{1}{-1}{{\ifnumcomp{\value{random}}{=}{2}{1}{0}}{0}{0}}{0}{1}{Crafts \ifodd\value{page} 1 \else 2\fi, Deceit \ifodd\value{page} 2 \else 1\fi}{\shortsword\ifnumcomp{\thechapter}{=}{6}{3D6sp}{\setcounter{gold}{\thepage}, \arabic{gold}sp}}{}
 	}
 %
 \newcommand{\dwarvensoldier}{
@@ -468,16 +468,16 @@
 	}
 
 \newcommand{\elvenenchanter}{
-	\person{-2}{3}{2}{{3}{3}{3}}{0}{0}{Projectiles 1, Academics 3, Empathy 3, Deceit 3, Performance 3, Stealth 1, Vigilance 2\Path{Blood}{Enchantment 5, Aldaron 4, Metamagic 4, Fate 3, Forces 2, Polymorph 2, Invocation 1}}{%
+	\randomtwo\setcounter{age}{0}\addtocounter{age}{-\value{list}}
+	\person{\arabic{list}}{3}{2}{{3}{3}{3}}{0}{0}{Projectiles 1, Academics 3, Empathy 3, Deceit 3, Performance 3, Stealth 1, Vigilance 2\Path{Blood}{Enchantment 5, Aldaron 4, Metamagic 4, Fate 3, Forces 2, Polymorph 2, Invocation 1}}{%
 		\ifnumcomp{\thechapter}{=}{\value{bestiarychapter}}{5D6sp worth of jewellery}{\ifnumcomp{\thechapter}{>}{4}{\multiply\value{list} by \thepage \ifnumcomp{\value{list}}{>}{0}{\divide\value{list} by 100 \ifnumcomp{\value{list}}{>}{0}{\arabic{list} sp worth of earrings}{random magical item}}{ornamental dagger, worth \thepage sp}}{\setcounter{gold}{\thechapter}\addtocounter{gold}{1} one necklace worth \arabic{gold} sp}}}%
 		{\mana{6}\addtocounter{xpbonus}{5}}
 	}
 
 \newcommand{\gnome}{
-	\person{-2}{-1}{1}{{1}{0}{0}}{0}{0}{Academics 1, Crafts 1, Empathy 1, Pickpocketing 1, Stealth 1\Path{Alchemy}{Illusion 2}}{%
+	\person{-2}{-1}{1}{{1}{0}{0}}{0}{0}{Academics 1, Crafts 1, Empathy 1, Pickpocketing 1, Stealth 1\Path{Alchemy}{Illusion \ifodd\value{chapter} 1\else 2\ifodd\value{page} Invocation 1\fi\fi}}{%
 		\ifnumcomp{\thechapter}{=}{\value{bestiarychapter}}{Promisary note}{\ifnumcomp{\thechapter}{>}{2}{\multiply\value{list} by \thechapter \ifnumcomp{\value{list}}{>}{0}{\divide\value{list} by 500 \ifnumcomp{\value{list}}{>}{0}{Big ruby worth \arabic{list}gp}{Green emerald worth \thepage sp}}{Glimmering diamond worth \thepage gp}}{interesting piece of lizardite.}}}%
 	}
-
 
 \newcommand{\gnomishillusionist}{
 	\person{-3}{-2}{1}{{3}{2}{0}}{0}{0}{Projectiles 1, Academics 3, Crafts 2, Deceit 1,  Stealth 2\Path{Alchemy}{Conjuration 3, Force 2, Illusion 4, Metamagic 2}}{%
@@ -500,7 +500,7 @@
 	}
 
 \newcommand{\humandiplomat}{
-	\person{0}{1}{0}{{1}{0}{1}}{0}{1}{Academics 2, Deceit 2, Empathy 1, Vigilance 2}{\Dagger \setcounter{gold}{\thepage}\addtocounter{gold}{\thechapter}\arabic{gold}cp, \divide\value{gold} by 3 \arabic{gold}sp stored secretly nearby.}
+	\person{0}{1}{0}{{1}{0}{1}}{0}{1}{Academics 2, Deceit 2, Empathy 1, Vigilance 2}{\Dagger, \setcounter{gold}{\thepage}\addtocounter{gold}{\thechapter}\arabic{gold}cp, \divide\value{gold} by 3 \arabic{gold}sp stored secretly nearby.}
 	}
 
 \newcommand{\humanpriest}{
@@ -593,6 +593,11 @@
 \newcommand{\undeadhobgoblin}{
 	\animal{1}{0}{-1}{-3}{2}{2}{}{}{}
 	}
+
+\newcommand{\sentientundeadhobgoblin}{
+	\person{2}{-1}{-2}{{1}{0}{-5}}{2}{1}{Aggression 2, Crafts 2, Tactics 1}{None}{}
+}
+
 
 \newcommand{\ogre}{
 	\randomthree\addtocounter{random}{3}
