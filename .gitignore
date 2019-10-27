@@ -1,4 +1,5 @@
 main.pdf
+*.sty
 *.aux
 *.bbl
 *.blg
