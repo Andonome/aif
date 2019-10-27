@@ -1,6 +1,6 @@
 # Adventures in Fenestra
 
-This is a campaign setting for the First Blood RPG.  It has mostly-separated sections so that GMs can focus on the bits they want.
+This is a campaign setting for the First Blood tabletop RPG.
 
 Current structure:
 
