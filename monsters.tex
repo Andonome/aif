@@ -485,10 +485,8 @@
 		{\mana{6}}
 	}
 
-\newcommand{\humanfarmer}[1]{
-	\random
-	\character{[Farmers]}
-	\person{1}{0}{0}{{0}{-1}{\ifodd \value{age} -1\else1\fi}}{0}{\ifodd\thepage 0\else 1\fi}{Beast Ken 2, Crafts 2, \ifodd\thechapter Empathy 1\fi}{\Dagger , \thechapter cp in a purse.}
+\newcommand{\humanfarmer}{
+	\person{1}{0}{0}{{0}{-1}{\ifodd \value{chapter} -1\else1\fi}}{0}{\ifodd\thepage 0\else 1\fi}{Beast Ken 2, Crafts 2, \ifodd\thechapter Empathy 1\fi}{\Dagger , \thechapter cp in a purse.}
 	}
 
 \newcommand{\humanmaid}{
