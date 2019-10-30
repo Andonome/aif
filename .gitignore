@@ -9,10 +9,8 @@
 *.log
 *.synctex.gz
 *.toc
-* Blood.odt
 *.log
 *.tmp
-.First_Blood.tex.swp
 *swp
 *.acn
 *.acr
