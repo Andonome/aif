@@ -1,4 +1,3 @@
-main.pdf
 *.sty
 *.aux
 *.bbl
@@ -13,10 +12,8 @@ main.pdf
 * Blood.odt
 *.log
 *.tmp
-First_Blood.pdf
 .First_Blood.tex.swp
 *swp
-.no.md
 *.acn
 *.acr
 *.alg
@@ -27,6 +24,6 @@ First_Blood.pdf
 *.ist
 test
 svg-inkscape
-aif.pdf
 *ist
 main.m*
+*pdf
