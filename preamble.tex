@@ -124,10 +124,11 @@
 }
 
 \newcounter{enc}
+	\setcounter{enc}{1}
 \newcounter{list}
+	\setcounter{list}{1}
 \newcounter{spelllevel}
-\setcounter{spelllevel}{0}
-
+	\setcounter{spelllevel}{0}
 
 %%%%%%%%%%%%%%%%%%%% LAYOUT %%%%%%%%%%%%%%%%%%%%
 \makeindex
@@ -191,6 +192,7 @@ Roll & Result \\
 
 %%% Random Number by grabbing last page digit
 \newcounter{random}
+	\setcounter{random}{1}
 
 \newcommand{\random}{
 		\addtocounter{random}{\thepage}

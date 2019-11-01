@@ -462,7 +462,7 @@
 \newcommand{\elf}{
 	\randomthree
 	\setcounter{enc}{1}\addtocounter{enc}{-\value{age}}
-	\person{\value{enc}}{\value{age}}{1}{{\arabic{age}}{2}{1}}{0}{\ifodd\value{list} 1 \else 2 \fi}{\ifodd\thepage\else Projectiles \arabic{age}\fi, Academics \arabic{age}, Athletics 1, \ifodd \thechapter Crafts \arabic{age}\else Performance \arabic{age}\fi, Stealth 1, Survival 2, Vigilance \arabic{age}\Path{Blood \ifodd\thechapter\else \& Song\fi}{\setcounter{list}{\value{age}}\addtocounter{list}{2}Aldaron \arabic{list}, \addtocounter{age}{1}Enchantment \arabic{age}}\addtocounter{age}{-1} \ifodd\thechapter\else Fate \arabic{list}\fi, \ifodd\thepage Polymorph \arabic{age}\else Invocation \arabic{age}\fi}{\ifnumcomp{\value{enc}}{>}{-1}{\rapier dagger, shortbow,}{} %
+	\person{\value{enc}}{\value{age}}{1}{{\arabic{age}}{2}{1}}{0}{\ifodd\value{list}1\else2\fi}{\ifodd\thepage\else Projectiles \arabic{age}\fi, Academics \arabic{age}, Athletics 1, \ifodd \thechapter Crafts \arabic{age}\else Performance \arabic{age}\fi, Stealth 1, Survival 2, Vigilance \arabic{age}\Path{Blood \ifodd\thechapter\else \& Song\fi}{\setcounter{list}{\value{age}}\addtocounter{list}{2}Aldaron \arabic{list}, \addtocounter{age}{1}Enchantment \arabic{age}}\addtocounter{age}{-1} \ifodd\thechapter\else Fate \arabic{list}\fi, \ifodd\thepage Polymorph \arabic{age}\else Invocation \arabic{age}\fi}{\ifnumcomp{\value{enc}}{>}{-1}{\rapier dagger, shortbow,}{} %
 	\ifnumcomp{\thechapter}{=}{\value{bestiarychapter}}{3D6sp worth of jewellery}{\ifnumcomp{\thechapter}{>}{3}{\multiply\value{gold} by \thepage \ifnumcomp{\value{gold}}{>}{100}{\divide\value{gold} by 100 \ifnumcomp{\value{list}}{>}{4}{\arabic{gold} sp worth of earrings and bracelets}{random magical item}}{Ornamental dagger, worth \thepage sp}}{one necklace worth \thechapter sp}}}%
 	{\multiply\value{age} by 2 \mana{\value{age}}}
 	}
@@ -499,11 +499,12 @@
 	}
 
 \newcommand{\humandiplomat}{
-	\person{0}{1}{0}{{1}{0}{1}}{0}{1}{Academics 2, Deceit 2, Empathy 1, Vigilance 2}{\Dagger, \setcounter{gold}{\thepage}\addtocounter{gold}{\thechapter}\arabic{gold}cp, \divide\value{gold} by 3 \arabic{gold}sp stored secretly nearby.}
+	\person{\ifodd\value{page} 0\else 1\fi}{1}{0}{{1}{0}{1}}{0}{1}{Academics 2, Deceit 2, Empathy 1, Vigilance 2}{\Dagger, \setcounter{gold}{\thepage}\addtocounter{gold}{\thechapter}\arabic{gold}cp, \divide\value{gold} by 3 \arabic{gold}sp stored secretly nearby.}
 	}
 
 \newcommand{\humanpriest}{
-	\person{1}{0}{0}{{2}{0}{1}}{0}{\ifnum\value{enc}>3 0 \else 1 \fi}{Academics 2, Empathy 1}{\quarterstaff}{\mana{2}}
+	\randomthree
+	\person{\ifnum\value{list}>5 3\else 0\fi}{0}{0}{{\arabic{age}}{0}{\ifodd\thepage 0\else 1}}{0}{\ifnum\value{enc}>3 0 \else 1 \fi}{Academics \arabic{age}, Empathy \ifnum\value{list}<2 2\else 1\fi\Path{Devotion}{Fate \arabic{age}\ifodd\thepage \else \randomtwo Aldaron \arabic{list}\fi}}{\ifodd\thechapter\quarterstaff\else\Dagger\fi}{\multiply\value{age} by 2\mana{\arabic{age}}}
 	}
 
 \newcommand{\humansoldier}{
