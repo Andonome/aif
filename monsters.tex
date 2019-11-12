@@ -603,15 +603,15 @@
 	\person{\arabic{random}}{0}{1}{{-3}{-2}{-4}}{0}{2}{Beast Ken 2, Crafts 1, Tactics 1}{\greatclub \ifnumcomp{\thechapter}{>}{8}{, \thepage sp}{}}{}
 	}
 
-\newcommand{\zombie}{
+\newcommand{\ghoul}{
 	\animal{2}{-2}{-2}{-2}{2}{2}{}{}{}
 	}
 
-\newcommand{\zombiehobgoblin}{
+\newcommand{\ghoulhobgoblin}{
 	\animal{1}{-2}{-2}{-2}{2}{2}{}{}{}
 	}
 
-\newcommand{\undeadknight}{
+\newcommand{\ghast}{
 	\randomtwo\addtocounter{list}{1}\setcounter{enc}{\value{list}}\addtocounter{list}{-1}
 	\person{\arabic{list}}{2}{0}{{\arabic{list}}{0}{-5}}{2}{2}{Aggression 2, Beast Ken 1, Survival 1, Tactics \arabic{age}, Vigilance 1}{\greatsword, dagger, %
 	\ifnumcomp{\thechapter}{=}{\value{bestiarychapter}}{}{\ifnumcomp{\thechapter}{>}{3}{\multiply\value{gold} by \thepage \ifnumcomp{\value{gold}}{>}{0}{\divide\value{gold} by 1000 \ifnumcomp{\value{list}}{>}{0}{\arabic{list} sp}{\thepage cp in a small pouch}}{ornamental dagger, worth \thepage sp}}{\thepage gp worth of rubies, sewn across the flesh of the entire body.}}}%

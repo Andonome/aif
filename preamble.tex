@@ -3,8 +3,8 @@
 \usepackage{geometry}
 \usepackage{array}
 \usepackage{svg}
-	\svgsetup{width=\textwidth}
 \usepackage{alltt}
+\svgsetup{width=\textwidth}
 \usepackage{tabularx}
 \usepackage{wrapfig}
 \usepackage{float}
@@ -25,7 +25,7 @@
 \usepackage{colortbl}
 \usepackage[poster]{tcolorbox}
 \tcbuselibrary{breakable,raster}
-\tcbset{before upper=\setlength{\parindent}{1em}\everypar{{\setbox0\lastbox}\everypar{}},parbox=true,enhanced,colback=white,breakable,arc=6mm,outer arc=1mm}
+\tcbset{enhanced,colback=white,breakable,arc=6mm,outer arc=1mm}
 
 %%%%%%%%%% Section Headers %%%%%%%%%%
 
@@ -50,8 +50,6 @@
   \selectfont
 }
 
-\dominitoc
-
 %%%%%%%%%% Encounter Numbers
 \newcounter{encnum}
 \setcounter{encnum}{1}
@@ -73,14 +71,14 @@
 {\Huge}
 
 \titleformat{\section}[frame]
-{\normalfont}
+{\needspace{4cm}\normalfont}
 {\filright
 \footnotesize
 \enspace SECTION \thesection\enspace}
 {8pt}
 {\Large\bfseries\filcenter}
 
-%\titleformat{\subsection}{\needspace{2\textheight}\large\bfseries}{}{1em}{}[\titlerule]
+\titleformat{\subsection}{\needspace{4cm}\large\bfseries}{}{1em}{}[\rule{.5\textwidth}{.2pt}]
 %
 %\titleformat{\section}
 %{\needspace{4\textheight}\normalfont\Large\bfseries}{\thesection}
@@ -109,6 +107,15 @@
 %{0pt}{3.25ex plus 1ex minus .2ex}{1em}
 %\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
 
+%%%%% Character Sheet Tracker
+
+		\newcounter{track}
+		\setcounter{track}{18}
+		\newcommand{\tracker}{\center\noindent\arabic{track}\addtocounter{track}{-1}\vspace{.60cm}
+
+		}
+
+
 \newcommand{\character}[1]{\needspace{4em}\vspace{.38cm} \normalsize\bfseries\ding{70} #1 \ding{70}\vspace{.18cm}}
 
 \newcommand{\monster}[1]{\needspace{4em}\vspace{.38cm} \normalsize\bfseries\ding{70} #1 \ding{70}\vspace{.18cm}}
@@ -124,11 +131,10 @@
 }
 
 \newcounter{enc}
-	\setcounter{enc}{1}
 \newcounter{list}
-	\setcounter{list}{1}
 \newcounter{spelllevel}
-	\setcounter{spelllevel}{0}
+\setcounter{spelllevel}{0}
+
 
 %%%%%%%%%%%%%%%%%%%% LAYOUT %%%%%%%%%%%%%%%%%%%%
 \makeindex
@@ -136,7 +142,7 @@
 
 \newcommand{\currentsphere}{magic}
 \newcommand{\sphere}[1]{\setcounter{spelllevel}{0}\renewcommand{\currentsphere}{#1}\index{#1}\section{\currentsphere}}
-\newcommand{\spelllevel}{\addtocounter{spelllevel}{1}\subsection{\currentsphere~ Level \arabic{spelllevel}}}
+\newcommand{\spelllevel}{\addtocounter{spelllevel}{1}\subsection{\currentsphere~ Level \arabic{spelllevel}}\noindent}
 \newcommand{\enhancement}[2]{\paragraph{(#1) #2:}}
 
 \newcommand{\spell}[3]{\subsubsection{#1}
@@ -166,9 +172,9 @@ Roll & Result \\
 {\end{tabular}}
 
 
-\newenvironment{exampletext}{\vspace{.3cm}
+\newenvironment{exampletext}{\needspace{4cm}\vspace{.3cm}
 
-\hrule
+\rule{.9\linewidth}{0.2pt}
 
 \vspace{.3cm}
 
@@ -192,7 +198,6 @@ Roll & Result \\
 
 %%% Random Number by grabbing last page digit
 \newcounter{random}
-	\setcounter{random}{1}
 
 \newcommand{\random}{
 		\addtocounter{random}{\thepage}
@@ -218,7 +223,7 @@ Roll & Result \\
 		test {\ifnumcomp{\value{random}}{>}{2}}
 		}
 		{\addtocounter{random}{-2}}
-		{\setcounter{gold}{\value{random}}}%
+		{\setcounter{list}{\value{random}}}
 }
 
 \newcommand{\mapentry}[1]{\addtocounter{list}{1}\subsubsection{\arabic{list}: #1}}
