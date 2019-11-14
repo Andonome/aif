@@ -17,7 +17,6 @@
 \usepackage{etoolbox}
 \usepackage{float}
 \usepackage{titlesec}
-\usepackage{minitoc}
 \usepackage{needspace}
 \usepackage{tikz}
 \usetikzlibrary{mindmap,trees}
@@ -57,6 +56,12 @@
 \newcommand{\encnum}{\ifnumcomp{\value{encnum}}{=}{1}{$A$}{\arabic{encnum}}\encsymbol\addtocounter{encnum}{1}}
 
 \newcommand{\headingtype}{CHAPTER}
+
+\newcommand{\sidepic}[2]{
+	\needspace{3cm}\begin{wrapfigure}{O}{.#1\textwidth}
+\includegraphics[width=.#1\textwidth]{images/#2}
+\end{wrapfigure}
+}
 
 \colorlet{chapnumcol}{black!55}
 
@@ -111,7 +116,7 @@
 
 		\newcounter{track}
 		\setcounter{track}{18}
-		\newcommand{\tracker}{\center\noindent\arabic{track}\addtocounter{track}{-1}\vspace{.60cm}
+		\newcommand{\tracker}{\center\noindent\arabic{track}\addtocounter{track}{-1}\vspace{.54cm}
 
 		}
 
