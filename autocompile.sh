@@ -1,4 +1,5 @@
 #!/bin/bash
+git status
 git subtree -P config pull ../config master
 git subtree -P config push ../config aif
 pdflatex -shell-escape main.tex
