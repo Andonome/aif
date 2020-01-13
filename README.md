@@ -2,36 +2,33 @@
 
 This is a campaign setting for the First Blood tabletop RPG, including 'Side Quests', a new way to structure or generate a campaign.
 
-Current structure:
+## Side Quests
+
+Foreshadowing, multiple plot-arcs, and keeping track of the lot over the long term can be difficult.  Who has time for that with study and a job?  Side Quests are here to help the GM and make sure that no GM comes unprepared, even if they haven't actually prepared anything.
+
+An individual Side Quest is a simple story in a few parts - the players hear of a mad mage, players encounter a monster made by the mad mage, and finally the players find a village destroyed by the mad mage.
+That last part can be repeated until the characters confront the mage.
+Details of the mad mage's lair will be given, so the players can track her down when ready.
+
+A given area, such as 'the local forests', might have two or three Side Quests, so any time the party enter the local forest, they might become embroiled in a new Side Quest, or might encounter a new part to an existing Side Quest.
+The areas presented here are 'the villages', 'the town', and 'the forest', allowing them to be slotted into almost any existing campaign.
+Characters might even decide to avoid an area for a time, due to the possible danger of encountering a particularly fearsome foe.
+
+Most Side Quests are simple enough, but a few are presented here with a bit more life, such as changing areas.
+What starts as a forest encounter can switch to the centre of town, as the characters discover that the thieves they fought before, drink in a local tavern.
+Some encounters don't happen alone, but add complications to 'whatever the next Side Quest is', meaning two encounters can smash into one, and the party will simply have to figure out how to handle those two encounters at the same time.
 
 ## Games Master Resources
 
 - Magical groves, magical wells, magical items, and magical songs.
-- Random encounters, random starting-backgrounds for PCs, and random assorted other things.
-- Details on the nura - the twisted versions of men and dwarves who emerge from underground and consume everything in the area.
+- Random encounters, random starting-backgrounds for PCs, and other random things.
+- Details on the nura - the twisted versions of men, gnomes and dwarves who emerge from underground and consume everything in the area.
 
 ## Map of the Land
 
 - Details on Fenestra, the land of magical portals.
 - Ethereal lands beyond, where players can get trapped and find strange items.
 - Bestiary, for all your monstrous needs.
-
-## Side Quests
-
-Foreshadowing, multiple plot-arcs, and keeping track of the lot over the long term can be difficult.  Who has time for that with study and a job?  Side Quests are here to help the GM and make sure that no GM comes unprepared, even if they haven't actually prepared anything.
-
-An individual Side Quest is a simple story in a few parts - players hear of a mad mage, players find a monster made by the mad mage, players find a village destroyed by the mad mage.
-That last part can be repeated until the characters confront the mage.
-Details of the mad mage's lair will be given in case the characters want to confront the mage early.
-
-A given area, such as 'the local forests', might have two or three Side Quests, so any time the party enter the local forest, they might become embroiled in a new Side Quest, or might encounter a new part to an existing Side Quest.
-
-Most Side Quests are simple enough, but a few are presented here with a bit more life.
-Some encounters don't happen alone, but add complications to 'whatever the next Side Quest is', meaning two encounters can smash into one, and the party will simply have to figure out how to handle those two encounters at the same time.
-The Quests can also move through areas.
-What starts as a forest encounter can switch to the centre of town, as the characters discover that the thieves they fought drink in a local tavern.
-
-Side Quests can be used as emergency stories for underprepared GMs, but can also become the focus of an entire campaign.
 
 # Using the Book
 
