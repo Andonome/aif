@@ -1,6 +1,6 @@
 # Adventures in Fenestra
 
-This is a campaign setting for the First Blood tabletop RPG.
+This is a campaign setting for the BIND tabletop RPG.
 
 Current structure:
 
