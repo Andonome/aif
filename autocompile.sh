@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ -z $1 ]; then
+if [ ! -z $1 ]; then
 	git status
 	git subtree -P config pull ../config master
 	git subtree -P config push ../config aif
