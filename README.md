@@ -1,3 +1,5 @@
+| [Download](https://gitlab.com/bindrpg/aif/pipelines) |
+
 # Adventures in Fenestra
 
 This is a campaign setting for the BIND tabletop RPG.
