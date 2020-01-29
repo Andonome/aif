@@ -1,7 +1,7 @@
 compile_pdf:
   image: aergus/latex
   script:
-    - apt install -y inkscape
+    - apt-get install -y inkscape
     - pdflatex -shell-escape main.tex
     - makeglossaries main
     - makeindex main.idx
