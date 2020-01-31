@@ -24,7 +24,10 @@ A few Side Quests reference similar events or share histories, creating a semi-c
 
 # Using the Book
 
-For most poeple, you should just download the pdf.  But if you want to modify it or add to it, you can grab all the documents, zip them, then edit the result on Overleaf, live.  If you want your own, local version, then you'll need to install Latex.  The `texlive-most` and `inkscape` packages have what you need if you're running Linux, and you can take a look at the autogen script to see how to compile it.
+For most poeple, you should just download the pdf.
+But if you want to modify it or add to it, you can grab all the documents, zip them, then edit the result on Overleaf, live.
+If you want your own, local version, then you'll need to install Latex.
+The `texlive-most` and `inkscape` packages have what you need if you're running Linux, and you can take a look at the autogen script to see how to compile it.
 
 See the wiki for full details.
 
