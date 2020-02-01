@@ -63,11 +63,11 @@ Wits + Crafts, TN 9, to understand that the tree leads to an underground home.
 \npc{\C}{Chitincrawler}
 \chitincrawler
 
-\NPC{\M}{Krelth: Gnomish Illusionist}{Sly}{Waggles finger}
+\NPC{\M}{\glsentrytext{keras} the Gnomish Illusionist}{Sly}{Waggles finger}
 
 \gnomishillusionist
 
-If rescued, \gls{krelth} is delighted, and gifts the characters a scroll which -- once read aloud -- will cast an illusion of a chitincrawler.  It was studying chitincrawlers for his spells that got him into this mess.
+If rescued, \gls{keras} is delighted, and gifts the characters a scroll which -- once read aloud -- will cast an illusion of a chitincrawler.  It was studying chitincrawlers for his spells that got him into this mess.
 
 \forest{Weather}
 Play this at the same time as the encounter below.  The party are assaulted by weather.  Exactly how this plays out depends upon what type of seaon it is.  See Appendix \ref{astronomy} for more details.
@@ -198,13 +198,17 @@ The two stand in a tasty equilibrium, and the best the characters can do is flee
 
 The woodspies are fat and unconcerned with chasing the characters far.  Once the party flee, only five give chase.
 
+\npc{\G\C}{1,000 Woodspies}
+
+\woodspy
+
 Currently the pit is being used by the nura as a punishment -- they send criminals into the whole to scope out what's happening and find out if it's safe yet.
 
 If the local nura rating ever reaches 7, the nura will raise an army big enough to break out, and drag any woodspies in the area below to become nura themselves.
 
-\npc{\C}{1,000 Woodspies}
+\npc{\G\N}{Nura Woodspies}
 
-\woodspy
+\nurawoodspy
 
 \subsection[\Glsentrytext{spiderqueen}'s Song]{\Glsentrytext{spiderqueen}'s Song}
 
@@ -214,7 +218,9 @@ She has also begun Polymorphing her own body to look progressively more like a c
 \forest{No, Wait, Yes, Um, Wait, No\ldots}\label{spiderqueenssong}
 
 \begin{boxtext}
+
 	You can always tell elven music by a sort of off-beat, where the beat goes wrong in a regular way.  This one is soft and high-pitched, and interrupted by the crackle of branches.  More crackles come from in front.  The setting Sun casts a red shimer over the armoured bodies of a dozen man-sized chitinous, crawling creatures.  The trees drop a small platoon of arachnids, and in a moment a hundred eyes are calculating how you taste.
+
 \end{boxtext}
 
 She sings an illusion of a little gnome sitting on a tree nearby, as if a laughing little illusionist were toying with the characters.  She uses the song to make fake webs if the characters run.
@@ -228,11 +234,13 @@ The PCs roll Wits + Vigilance to understand their environment.
 	9 & On a nearby branch a little gnome sits, quietly giggling to himself, then looks shocked as you spot him. \\
 	11 & The distant song seems to be coming from a single chitincrawler in the distnace, \\
 	12 & though she looks different from the rest. \\
-	13 & Looking past the poor illusionary arachnids in front of you, you notice that the rest are completely and definitively real. \\
+	13 & Looking past the poor chitincrawler illusions in front of you, you notice that the rest are completely and definitively real. \\
+	14 & The little gnome, however, is entirely fake. \\
 
 \end{rollchart}
 
 \begin{itemize}
+
 	\item{If the party turn to run, they run into illusory webbing.}
 
 	\item{On the first round, ten illusory chitincrawlers attack.}
@@ -290,10 +298,12 @@ If the party continue following the tracks, they encounter \gls{spiderqueen}'s l
 \end{boxtext}
 
 If the characters attack, two chitincrawlers move to attack each round, and \gls{spiderqueen} moves out to cast aggressive Polymorph spells, turning them into goats, birds, or other creatures.
+There are thirty chitincrawlers in total.
 
-At the end of this encounter, move it back to the Villages.
+At the end of this encounter, move it back to The Villages.
 
-\NPC{\M}{Gregory}{Suspicious}{Purses lips when thinking}
+\NPC{\M}{Gregory of the Night Guard}{Suspicious}{Purses lips}
+
 \humansoldier
 
 \villages{Quiet Little Hamlet}
@@ -324,6 +334,9 @@ Move this encounter to the Forest once it's done.
 	\includesvg{images/Dyson_Logos/ruined_village.svg}\label{ruined_village_map}\label{ruined_village_map}
 \end{figure}
 
+\npc{\C\G}{Chitincrawlers}
+
+\chitincrawler
 
 \begin{multicols}{2}
 
@@ -333,11 +346,16 @@ Move this encounter to the Forest once it's done.
 	As you nip to the side to take a quick piss, a rustle above you shows that a giant arachnid has suddenly appeared, and looks down at you with dripping fangs.  In the distance, high-pitched snickering can be heard.
 \end{boxtext}
 
-Griggle thinks that it's best to honest, and just approach the party and ask if they would like to fight giant spiders.  However, Holly is the chief illusionist (and her nose is longer than Griggle's), so she says there's no use talking to the party without testing if they really can fight chitincrawlers.  Greg, meanwhile, just wants both of them to stop fighting and make a decision.  He's been depressed ever since their village was eaten by chitincrawlers.
+Three gnomes have been debating about how to approach the party about their plan.
+Griggle thinks that it's best to honest, and just approach the party and ask if they would like to fight giant spiders.
+However, Holly is the chief illusionist, and her nose is longer than Griggle's,\footnote{Gnomes consider this to be a very important point.} so she says there's no use talking to the party without testing if they really can fight chitincrawlers.
+Greg, meanwhile, just wants both of them to stop fighting and make a decision.
+He's been depressed ever since their village was eaten by chitincrawlers.
 
 The final plan is to cast an illusion of a chitincrawler and see how the party react.  If they are hostile and skilled, the gnomes approach and tell them the plan to defeat \gls{spiderqueen}.
 
-Once the illusion of a chitincrawler has been vanquished, the three gnomes step forward.  Griggle begins talking like she's some kind of trader.
+Once the illusion of a chitincrawler has been vanquished, the three gnomes step forward.
+Holly begins talking like she's some kind of trader.
 
 \begin{speechtext}
 
@@ -353,9 +371,10 @@ Once the illusion of a chitincrawler has been vanquished, the three gnomes step 
 
 \end{speechtext}
 
-It's only after the characters emphatically agree that they do want to kill \gls{spiderqueen} that Griggle informs them that she's feeling so generous that she's going to help them for free, and indeed has already laid plans.
+It's only after the characters emphatically agree that they do want to kill \gls{spiderqueen} that Holly informs them that she's feeling so generous that she's going to help them for free, and indeed has already laid plans.
 
 \begin{speechtext}
+
 	It's simple really.  Anyone wandering close to that pit of spiders will be eaten by spiders.  Any large army approaching, and she will flee, with no option to track here whereabouts.  The only way to be rid of her is a fast, decisive attack.  But she has herself covered there too -- not yesterday we spoke to an elf who had spoken to local birds, who informed us that even the tops of the trees there are covered in webs.  Her mobile fortress is impregnable, and hungry, and they will feed again soon.
 
 	However, with our compases and our calculations, we have found a different way.  We know that she rests not a kilometre \emph{that} way, and so half a kilometre that way there is a tunnel which we have almost completed.  Once done, it will open \emph{directly} beneath the very place \gls{spiderqueen} sits.
@@ -399,9 +418,13 @@ Once out, they can shoot at \gls{spiderqueen}, climb the tree, or otherwise atta
 \npc{\C}{Chitincrawlers}
 \chitincrawler
 
-\paragraph{Success} means \gls{spiderqueen} has been killed or quelled.  Once she's damaged and her chitnous children pushed back, she flees to seek new adventures elsewhere, and without killing random villagers.
+\paragraph{Success} means \gls{spiderqueen} has been killed or quelled.
+If she's damaged and her chitnous children pushed back, she flees to seek new adventures elsewhere, and without killing random villagers.
 
-\paragraph{Failure} occurs when the characters fail to damage \gls{spiderqueen} or her children beofre they flee. Things get difficult here.  She attacks neighbouring villages twice, then gains her fifth level of Polymorph, and decides to become an air spirit for a while.  These two attacks play out as above, so she can only be stopped by a full-on assault at her lair, without the aid of a gnomish tunnel.
+\paragraph{Failure} occurs when the characters fail to damage \gls{spiderqueen} or her children before they flee.
+Things get difficult here.
+She attacks neighbouring villages twice, then gains her fifth level of Polymorph, and decides to become an air spirit for a while.
+These two attacks play out as above, so she can only be stopped by a full-on assault at her lair, without the aid of a gnomish tunnel.
 
 \subsection{The Little Prince}\label{littleprince}
 
