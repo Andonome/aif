@@ -495,7 +495,7 @@ This used to be a large chappel with a tended garden.  Paradoxically, an undead 
 
 \begin{multicols}{2}
 
-\NPC{\M\U}{\Glsentrytext{necromancer}, High Priest of Qualm\"{e}}{Arrogant}{Covers mouth}
+\NPC{\M\U}{\Glsentrytext{necromancer}, High Priest of Qualm\"{e}}{Arrogant}{Slack jaw}
 
 \person{0}{1}{0}{{2}{-2}{-4}}{2}{1}{Projectiles 3, Academics 2, Beast Ken 1, Crafts (fletchery) 2, Deceit 1, \\ & Performance 1, Survival 1, Vigilance 3\Path{Devotion (Qualm\"{e})}{Aldaron 2, Fate 2, Metamagic 3, \\& Necromancy 5}}{Hunting Bow ($1D6$ Damage), dagger}{\mana{4}}
 
@@ -515,21 +515,36 @@ Here, despite the undead, a shrine rests which was built be \gls{necromancer}'s 
 
 \mapentry{The Ogre}
 
-\Gls{necromancer}'s prized specimine -- an undead ogre.  \Gls{necromancer} killed the ogre time time ago, and pulled the body back to undeath.
+\Gls{necromancer}'s prized specimine -- an undead ogre.
+\Gls{necromancer} killed the ogre some time ago, and pulled the body back to undeath.
+Since then, \gls{necromancer} has cobbled together leather armour to glad the oversized ghoul in.
+Now he stands humungous and impenetrable.
 
 \npc{\U\N}{Undead Ogre}
 
-\animal{6}{-2}{0}{-4}{2}{2}{Deceit 1}{\greatclub}{}
+\animal{6}% STRENGTH
+{-2}% DEXTERITY
+{0}% SPEED
+{-4}% WITS
+{2}% DR
+{2}% AGGRESSION
+{Deceit 1}% SKILLS
+{\partialleather}% ABILITIES
+{}%
 
 \mapentry{The Secret Study}
 
 After the bandits leave, \gls{necromancer} sneaks back to his private study, through a stone door, balanced on massive iron hinges.  It contains various hymns to the dead, but his favourite songs are not the prayers to Qualm\"{e}, but song magic.
 
-One song sings of the sacrifice made by Logan to defeat nura, and summons the illusion of an elf to dance to its rhythm.\footnote{It holds 10 MP, and is cast with an effective of Intelligence 2.}  Another is a simple advert for Bob's Crackers featuring a singing dog, and enchants the first 10 listeners to eat crackers.
+One song sings of the sacrifice made by Logan to defeat nura, and summons the illusion of an elf to dance to its rhythm.\footnote{It holds 10 MP, and is cast with an effective of Intelligence 2.}
+Another is a simple advert for Bob's Crackers featuring a singing dog.
 
 \mapentry{The Prison}
 
-This room once housed people making important decisions.  \Gls{necromancer} now uses it to house prisoners so he can feed off them.  Currently, it contains one terrified farmer called Laith.  He's starving, and petrified, as every day all he can hear are the shambling dead, who sometimes come to knock on the locked door.  \Gls{necromancer}, or course, holds the key.
+This room once housed people making important decisions.  \Gls{necromancer} now uses it to house prisoners so he can feed off their souls.
+Currently, it contains one terrified farmer called Laith.
+He's starving, and petrified, as every day all he can hear are the shambling dead, who sometimes come to grope at the locked door.
+\Gls{necromancer}, or course, holds the key.
 
 Picking the lock requires an Intelligence + Larceny roll, TN 7.
 
@@ -548,9 +563,12 @@ Various crows come to see \gls{necromancer}, and it's here he keeps a little col
 
 Ironically, no undead remain in the mausoleum.  The grounds remain fit for the living, and a group of bandits have moved into the gardener's old home.
 
-Each of the bandits carries a Ring of Asphyxiation.  The rings are fragile things, carved from skulls of thieves who were hanged for burglary.  They function as per the first level necromancy spell: Feign Death, and allow the thieves to remain invisible to the undead.
+Each of the bandits carries a Ring of Asphyxiation.
+The rings are fragile things, carved from skulls of thieves who were hanged.
+They function as per the first level necromancy spell: Torpor, and allow the thieves to remain invisible to the undead.
 
-If anyone attacks the house, they will be spotted immediately, but have two rounds before the undead arrive.  After that, five ghouls arrive each round to tear apart anyone there.
+If anyone attacks the house, they will be spotted immediately, but have two rounds before the undead arrive.
+After that, five ghouls arrive to tear apart anyone there, then ten, each round.
 
 
 \NPC{\M}{\glsentrytext{banditking}}{Approachable}{Drums fingers}
@@ -561,6 +579,8 @@ Last year, he and his men ambushed some guards working for Redearth and took mag
 \person{2}{2}{0}{{1}{-1}{2}}{0}{3}{Academics 1, Empathy 1, Deceit 3, Survival 3, Tactics 2}{\longsword 5gp wrapped in cotton whool, knife}{}
 
 \npc{\G}{15 Bandits}
+
+The bandits are partly made from young Whiteland nobles, orphans old enough to hold a sword, and a few disposessed villagers who lost their villages to nura raids.
 
 \humansoldier
 
