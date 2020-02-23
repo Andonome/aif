@@ -1,4 +1,9 @@
 #!/bin/sh
+if [ $1 = clean ]; then
+	rm *aux *log main.{i,g}* *toc
+	exit 0
+fi
+
 if [ ! -z $1 ]; then
 	git status
 	git subtree -P config pull ../config master
