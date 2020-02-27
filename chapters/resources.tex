@@ -199,13 +199,13 @@ Nevertheless a few examples sit here for quick reference.
 
 \subsection{Alchemical Items}
 
-\magicitem{Bag of Tricks}{Conjuration 4}{Quick}{Item}{4}{0}{4}
+\magicitem{Bag of Tricks}{Conjuration 4}{Alchemy}{2 scenes}{Poten Greater Item}{+5}{30}
 
 \noindent This gem-studded bag has a tough, silver chord around the top, and won't open more than the width of a man's wrist.  By simply naming an object, people can pull out anything they desire.  Unfortunately, the bag only speaks the gnomish language.
 
 It stores 4 MP, and spends one produce any small, valueless item or substance, with the full use of the fourth level of Conjuration.
 
-\magicitem{Bag of Holding}{Conjuration 5}{Quick}{Item}{3}{1}{0/5}
+\magicitem{Bag of Holding}{Conjuration 5}{Alchemy}{Standing}{Magic Item}{+5}{0/5}
 
 This looks identical to the bag of tricks, but instead of summoning items, it leads to a closet.
 The bag is in fact a magical portal, held permanently open, and allows the owner to deposit and remove items at will.
@@ -214,20 +214,20 @@ Exactly how much space is available depends upon how long the user's arm is.  In
 
 Anyone putting an item into the bag in a hurry must make a Dexterity plus Crafts check at TN 6 or risk dropping the item instead of placing it on one of the dark shelves within.  Alchemists have theorized about whether the bag leads to a bottomless pit in some demonic realm, or simply a larder.  Either way, nobody's arm's long enough to reach the bottom.
 
-\magicitem{The Townmaster's Hat}{Illusion}{Instant}{Item}{2}{-1}{1}
+\magicitem{The Townmaster's Hat}{Illusion}{Alchemy}{Instant}{Item}{4}{1}
 
 \noindent Townmaster James of Whiteland was especially scared of assassination during the time of Rex Dalius, so he commissioned four hats with an illusion, making anyone who put them on look exactly like him.
 He has since died, and the hats have been used by various thieves to disguise their identity.
 
 \subsection{Divine Items}
 
-\magicitem{Arthur the Sleeping Cat}{Sleep}{Normal}{Item}{3}{0}{5}
+\magicitem{Arthur the Sleeping Cat}{Sleep}{Devotion (Laiqu\"{e})}{1 Scene}{Item}{3}{5}
 
 A priest of Laiqu\"{e} once left all her worldly mana to a cat, imbueing it with a single spell.
 The cat can instinctively make animals of any kind fall asleep.
 He sometimes uses this to hunt mice, and sometimes to shut people up who are too loud.
 
-\magicitem{Deck of Cards}{Various}{Instant}{Pocket Spell}{3}{2}{X}\label{deckofmanythings}
+\magicitem{Deck of Cards}{Various}{Devotion (Alass\"{e})}{1 Scene}{Pocket Spells}{3}{Varies}\label{deckofmanythings}
 
 This deck, presumably fashioned by various priests of Alass\"{e}, holds a number of cards.  Once grasbed between \emph{three} or more fingers, the card activates.  If it's held, the target is the caster.  If thrown, the target is whoever the caster throws it at (the caster doesn't need to be a good thrower for the magic to work).
 
@@ -241,7 +241,7 @@ The Deck of Cards resists all magic, including gaining information about it thro
 	\begin{enumerate}
 		\item{Illusion of an ogre appears}
 		\item{Nearby animals gather to the caster -- roll an encounter}
-		\item{Nearest Target becomes insisible}
+		\item{Nearest Target becomes invisible}
 		\item{Nearest Target turns into a chicken}
 		\item{Mist fills the area}
 		\item{Nearest Target turns into a bear}
@@ -257,7 +257,7 @@ The Deck of Cards resists all magic, including gaining information about it thro
 	\end{enumerate}
 \end{tcolorbox}
 
-\magicitem{Spider Arrows}{Transient Web}{Instant}{Pocket Spell}{2}{1}{0}{1}\label{spiderarrows}
+\magicitem{Spider Arrows}{Transient Web}{Devotion (Ohta)}{Instant}{Pocket Spell}{2}{3}\label{spiderarrows}
 
 Back when followers of Ohta still regularly went to wars, they would create these Spider Arrows to make sure their quarry couldn't flee.
 Wherever the arrow lands, it casts a Web spell on the nearest target by turning the surrounding air into a sticky substance.
@@ -269,11 +269,11 @@ Anyone taking an apple from this tree instantly transforms into a bird of some k
 
 The tree regenerates 3 per scene.  Apples taken from the tree keep their magic for up to a week if kept in good condition.
 
-\magicitem{Ring of Asphyxiation}{Torpor}{Instant}{Item}{2}{0}{1}\label{ring_asphyxiation}
+\magicitem{Ring of Asphyxiation}{Torpor}{Devotion (Qualm\"{e})}{Standing}{Item}{2}{1}\label{ring_asphyxiation}
 
 This simple ring, inlaid with bone, act as per the first level of the Necromancy sphere to stop the user feeling the effects of cold or hunger while the ring is worn.
 
-\magicitem{Venomous Seeds}{Plantform, Wind Blast}{Instant, Continuous}{Pocket Spell}{2}{0}{6}
+\magicitem{Venomous Seeds}{Plantform, Wind Blast}{Devotion (Laiqu\"{e})}{Instant, Continuous}{Pocket Spell}{2}{6}
 
 This bag of seeds forms a one-use item.
 Once opened the bag produces the effects of Wind Blast, moving everyone around back by 4 squares minus their Strength Bonus.
@@ -284,7 +284,7 @@ Anyone touching them sickens, gaining 6 Fatigue Points.
 
 \subsection{Runic Items}
 
-\magicitem{The Eternal Warrior's Armour}{Call the Dead}{Instant}{Pocket Spell}{1}{1}{1}
+\magicitem{The Eternal Warrior's Armour}{Call the Dead}{Runes}{1 Scene}{Pocket Spell}{4}{3}
 
 This plate armour, inscribed with necromantic runes, raises the wearer from the dead as a ghoul.  They're typically used by dwarvish suicide squads and worn only after making a solem pledge that the wearer will never stop fighting, even past death.
 
@@ -292,7 +292,7 @@ The breastplate contains two spells -- a second level spell to ensure the wearer
 
 \subsection{Songs}
 
-\magicitem{The Chocking Song}{Reading the Ripples}{Normal}{Item}{2}{4}{3}
+\magicitem{The Chocking Song}{Reading the Ripples}{Song}{Instant}{Magical Item}{2}{2}
 The song of growth is sung by village elders in the Bearded Mountains regions.
 The elders sing only on their own birthday, thanking Laiqu\"{e} for their village's prosperity.
 
@@ -534,7 +534,7 @@ The sword stores 5 MP.
 If it ever inflicts 12 or more Damage on an opponent (before DR is applied), it can errupt with an invocation spell, inflicting an additional $2D6$ Damage which bypasses all DR, including Perfect DR.
 It otherwise functions as a normal great sword.
 
-\magicitem{God Ruiner}{Raging, Internal, Lightning Bolt}{Instant}{Artefact}{2}{0}{5}
+\magicitem{God Ruiner}{Raging, Internal, Lightning Bolt}{Devotion (Ohta)}{Instant}{Magical Item}{5}{5}
 
 }
 
@@ -560,7 +560,7 @@ The GM crafts a dream out of elements and characters from the current adventure 
 \item{You played a fantastic game of dice, and won a magical scroll.
 You just need to read the Quenya written and you can find out what it does.
 
-\magicitem{Portal Scroll}{Unrestrained, Open Teleport}{Normal}{Pocket Spell}{3}{2}{5}
+\magicitem{Portal Scroll}{Unrestrained, Open Teleport}{Alchemy}{2 Scenes}{Pocket Spell}{4}{5}
 
 The scroll takes 5 rounds to speak properly, and opens a doorway to the Realm of Shifting Corridors.\footnote{See page \pageref{shiftingcorridors}.}
 The portal remains open for 2 scenes.
