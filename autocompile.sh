@@ -4,7 +4,7 @@ if [ $1 = clean ]; then
 	exit 0
 fi
 
-if [ ! -z $1 ]; then
+if [ $1 = tree ]; then
 	git status
 	git subtree -P config pull ../config master
 	git subtree -P config push ../config aif
