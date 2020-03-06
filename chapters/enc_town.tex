@@ -1,81 +1,20 @@
 \chapter{Town Encounters}
 
+\printcontents[town]{l}{2}{\section*{Summaries}\setcounter{tocdepth}{3}}
+
 \setcounter{encnum}{1}\renewcommand{\encsymbol}{\ding{169}}
 
-\section{Summaries}
-
-\begin{multicols}{2}
-
-\sidequest{Random Meetings}
-
-Page \pageref{randommeetings}.
-
-\begin{enumerate}
-
-	\item{Someone pickpockets the characters.}
-	\item{\glsentrytext{captain}.}
-	\item{The town is abuzz with talk after a reward is released for answering a riddle.}
-	\item{\ding{106} A small child turns into a nura creature in the middle of the street.}
-	\item{A bard is arrested for singing an old song about nobles gathering armies to defeat nura.}
-	\item{\ding{106} Pickpockets again!}
-	\item{\Glsentrytext{pig} kicks out the hardened alcoholics and the streets are filled with brawls.}
-
-\end{enumerate}
-
-\sidequest{The Lizardite Amulet}
-
-A magical item either holds extreme power, or possibly danger; nobody knows.
-Page \pageref{lizardite}.
-
-\magicitem{The Lizardite Amulet}{Conjuration 5}{Alchemy}{4 Scenes}{Potent, Greater Magical Item}{6}{30}
-
-\begin{enumerate}
-
-	\item{The characters must warn a group they are under attack, and take a replica to them, but attack the characters instead.}
-	\item{A thief steals a book detailing the item's power-word.}
-	\item{(Villages) A rumour spreads that the item's command-word is ``Myriad Fishes''.}
-	\item{When the item returns to town, everyone mobs around it to wish for gold, but this is not the right magical item.}
-	\item{Servants have been fired for stealing money, but it really disappeared because it was conjured from nothing by a mysterious magical item.}
-	\item{(Villages) The characters find an old lady using the item to support her village.}
-\end{enumerate}
-
-\sidequest{The Trouble with Ale}
-
-Two ale guilds try to sabotage each other, and if the characters can't deescalate the feud the town will be left without ale.
-
-\begin{enumerate}
-
-	\item{A drunken knight from the Bearded Mountains starts a fight with the characters, but is actually a local hired to discredit a rival Ale Guild.}
-	\item{Ale explodes and flows down the street as sabatours destroy the stocks of the local Ale Guild.}
-	\item{Nobody in the tavern will let the knights of the Bearded Mountains drink.}
-	\item{\ding{106} The entire city runs out of ale.  Fights break out everywere.}
-
-\end{enumerate}
-
-\sidequest{Sewer Bandits}
-
-Bandits hiding in the sewer are amassing an army of the dead.
-Page \pageref{sewerbandits}.
-
-\begin{enumerate}
-
-	\item{\ding{106} Water around the town goes foul.}
-	\item{\ding{106} Ghouls appear suddenly in town.}
-	\item{\ding{106} Thieves stab \gls{townmaster}, then jump underground to hide.  Mass panic ensues.}
-	\item{\ding{106}\ding{106}  Nura creatures spill from the wells.}
-
-\end{enumerate}
-
-\end{multicols}
-
 \section{Town Encounters}\index{Encounters!Town}
+
 \setcounter{encnum}{1}
 
 \begin{multicols}{2}
 
-\subsection{Random Meetings}\label{randommeetings}
+\resumecontents[town]
 
-\town{Pickpocketed}
+\sidequest{Random Meetings}\label{randommeetings}
+
+\town{Pickpocketed}{Someone has stolen one of the characters' items}
 
 \begin{boxtext}
 
@@ -90,7 +29,7 @@ Gary, local pickpocket, has no excuse except for his young age, and bad luck in 
 \NPC{\M}{Gary}{Arrogant}{Picks nose}
 \humanthief
 
-\town{The Captain}
+\town{The Captain}{\Glsentrytext{captain} jumps into another encounter to help the party}
 
 \NPC{\M}{\Glsentrytext{captain}}{Solemn}{Pitying glances}
 
@@ -99,7 +38,7 @@ Gary, local pickpocket, has no excuse except for his young age, and bad luck in 
 
 \person{1}{2}{0}{{1}{-1}{+1}}{0}{2}{Academics 1, Empathy 2, Stealth 2, Survival 1\knacks{\adrenalinesurge}}{\longsword, dagger, 2sp}{}
 
-\town{The Riddle}
+\town{The Riddle}{\Glsentrytext{college} have raised a bounty on a riddle}
 
 \begin{boxtext}
 Three gods stand in front of you.  One always says the truth, one always lies, and one speaks randomly.  They refuse to speak your language, but they understand what you are saying.  You have three questions to identify each god.
@@ -110,7 +49,7 @@ The town are abuzz with a riddle.  The mage's guild have become tired of only ge
 To answer the riddle correctly, the characters must pose three questions which guarantee they will correctly identify each god -- guessing is not allowed.
 \footnote{This question is mostly here for fun.  Most players will have zero chance of answering this riddle.}
 
-\town{The Nura Child}
+\town{The Nura Child}{A street urchin transforms into a nura creature}
 
 \Gls{sewerthief}, delivering goods on behalf of \gls{townmaster}, was pickpocketed by a street-child.
 The child had pilfered food, enchanted to turn whoever ate it into a nura monster.
@@ -130,7 +69,7 @@ Characters can make a Wits + Medicine roll, TN 9, to notice that this monster is
 If taken alive, James will be able to describe \gls{sewerthief}' face, but couldn't say who he is.
 James has only been a nura for a couple of hours, so if the party know to starve him, he can return to being a normal child before long.
 
-\subsection{Illegal Songs}
+\town{Illegal Songs}{A bard is caught singing about how much better it was before the current \Glsentrytext{king}}
 
 \begin{boxtext}
 	A little crowd have gathered in the sidestreet, occasionally clapping their hands to a beat.  Getting closer, you can hear a mandolin and a soft voice, singing of great heroes fighting back nura hordes coming up from the depth.
@@ -148,7 +87,7 @@ For the rest of the day the entire town is full of talk about how in the old day
 
 If the party do not intervene, \gls{bard} will end up in the cells for six months.
 
-\town{Pickpockets Again!}
+\town{Pickpockets Again!}{Someone else picks a character's pocket}
 
 The player with the highest Academics Skill rolls Wits + Vigilance, TN 8.
 
@@ -166,7 +105,7 @@ If caught, Judith apologizes profusely, and explains her situation.
 
 \humanthief
 
-\town{Streetbrawl}
+\town{Streetbrawl}{The local alcoholics are on the street, and fights are breaking out}
 
 Recently, the \gls{pig}'s decided it's time to redecorate, so all the alcoholics who have been chucked out of every area in the city are out in full swing.
 The rest of the night is full of random brawls with random people.
@@ -190,13 +129,15 @@ If the characters approach \gls{pig}, they hear noises inside as of heavy metalw
 
 If the PCs come to the rescue and don't know about the situation, \gls{pigowner} and the rest tell the PCs that they're as surprised as anyone else that the long, mysterious hallways down there have undead living there.
 
+\resumecontents[villages]
 \sidequest{The Lizardite Amulet}\label{lizardite}
+\stopcontents[villages]
 
 The lizardite amulet summons any item, and is exceptionally powerful as it has 30 MP in total.  It functions as per the third level conjuration sphere.  Unfortunately, it cannot be used unless the user first uses the activation word, and secondly, speaks in Gnomish.\footnote{The amulet was made by a gnomish alchemist, though the college don't like to talk about this fact.}
 
 The amulet was loaned from \gls{college} to \gls{king} for his entertainment, and now has to return.
 
-\town{The Shell Game}
+\town{The Shell Game}{The characters must take a fake magical item so it can be swapped for the real one}
 
 The local Woodspy Bandits have heard that the item is returning to the Shattered Castle, and plan to attack the amulet bearers and steal the amulet.
 \Gls{college} have already heard that news of the item's location has got out, and are aware of bandits coming to take the item.
@@ -291,7 +232,7 @@ Alternatively, they may just wait at the crossroads, in which case the bandits s
 
 \vfill\null
 
-\town{Rumours of Magic}
+\town{Rumours of Magic}{A local thief has stolen a book}
 
 \Gls{townmaster} hired Derek, a local thief, to steal the Book of Ancient Wars, detailing various battles about the time of time of Rex Dalius.\footnote{See page \pageref{h_dalius} for more.}
 The book comes from the restricted works in the Temple of C\'{a}l\"{e} (i.e. the local library).
@@ -314,7 +255,7 @@ If questioned at any point, \gls{townmaster} will have plenty of excuses, and in
 
 Move this encounter to the villages.
 
-\villages{More Rumours of Magic}
+\villages{More Rumours of Magic}{Local villagers think they have figured out the command word for the ammulet}
 
 Whether or not the book survived, one way or another, the item's magical activation word has been discovered\ldots or so the villagers think.
 Specifically, they think the command word ``Saur\"{e}'', will activate the item.
@@ -325,7 +266,7 @@ An Intelligence + Academics roll at TN 7 lets the party know that this is nonsen
 
 Play another encounter immediately.
 
-\town{The Mob}
+\town{The Mob}{The amulet is dropped, and the townsfolk all clambour after it}
 
 The item resurfaces in town, as a guard drops it, and all the townsfolk are ready to trample each other to death for it.
 
@@ -356,7 +297,7 @@ If the players don't intervene, the scene turns into a bloodbath within a couple
 
 Once finally obtained, an Intelligence + Academics roll at TN 10 shows that this is not the real amulet.
 
-\town{They Took Our Jobs!}
+\town{They Took Our Jobs!}{Cutthroats assault the characters, but they have no idea what they're doing, and a strange story}
 
 \begin{speechtext}
 
@@ -382,7 +323,7 @@ The truth of the matter is that the taxes in the local village were being paid w
 
 Move this encounter to the villages.
 
-\villages{The Old Lady}
+\villages{The Old Lady}{A little peasant girl wears fantastic wealth because the amulet has been found by a village woman who uses it to summon gold}
 
 \begin{boxtext}
 	A grubby little girl dances down the road with bear feet, occasionally singing, then stopping.
@@ -407,7 +348,7 @@ Martha agreed, pulled some strings,
 
 \person{-1}{0}{-3}{{1}{0}{1}}{0}{0}{Academics 1, Empathy 2, Medicine 3}{Lizardite amulet, bandages}{}
 
-\villages{Martha Returns}
+\villages{Martha Returns}{The old woman who has the item appears to help the characters}
 
 If the characters left Martha to continue her good work in the villages with the magical item then there's one more part.
 Combine this with the encounter below, and if the characters get into trouble, Martha comes to their aid, along with her sons, Harry and Oscar.
@@ -424,7 +365,7 @@ The local Ale Guild aren't happy, and shenanigans ensue.
 
 \Gls{alemaster}, local Guild Master of town's Ale Guild, dresses his men as Knights\footnote{The term ``Knight'', is used by townsfolk for anyone in armour.  Guilds who travel need a lot of protection, as the roads are dangerous, and they generall count as `knights'.} from the faraway Ale Guild of the Bearded Mountains.  In retaliation, \gls{beardedale}, dignitary to the Bearded Mountains' Ale Guild, destroys much of the local ale stores.
 
-\town{The Drunken Knight}
+\town{The Drunken Knight}{A knight of the local ale guild starts fights while pretending to be from the ale guild of the Bearded Mountains}
 
 This encounter can easily slip into the background -- the knight has no interest in assaulting the players, especially if they look well-armed.
 
@@ -446,7 +387,7 @@ Players may notice he's pretending to be drunk with a Wits + Medicine roll, or n
 
 If questioned, Chris says this is ``just a little joke''.
 
-\town{Ale Explosion}
+\town{Ale Explosion}{Barrels of Ale explode down the street}
 
 Play this encounter at the same time as the one below.
 
@@ -461,7 +402,7 @@ The party can avoid being swept down the street by the storm with a Wits + Athle
 An Intelligence + Vigilance roll, TN 10, will allow the characters to find the children who started the problem, and they will eagerly point to \gls{beardedale}, who currently drinks in \gls{pig}.
 
 
-\town{You Can't Drink Here}
+\town{You Can't Drink Here}{Envoys of the ale guild from the bearded mountains are refused entry to a tavern, and a fight breaks out}
 
 \begin{boxtext}
 	A crowd is vomiting out of a pub, pushing six men out with them\ldots or three men and three dwarves, all heavily armed.  The crowd shout for them to go back to the mountains and that they're not welcome in the area, but a dwarf, covered in metal from head to toe, and wearing the emblam of the Ale Guild from the Bearded Mountains, starts shouting back at them, listing laws concerning public houses and the rights of foreign Guild Captains.
@@ -492,7 +433,7 @@ These two are heavy drinkers, and heavy fighters, but they will stop as soon as 
 
 \paragraph{Conclusion:} If the characters can track down \gls{beardedale} and have him talk with \gls{alemaster} they might be able to make peace between the two groups.  In this case, crisis is averted, and the final part can be discarded.
 
-\town{We're Dry}
+\town{We're Dry}{The town has completely run out of ale as supplies from the Bearded Mountains have run out}
 
 If the party did not manage to avert total disaster in the previous encounter, play this encounter together with the one below.
 
@@ -509,7 +450,7 @@ Meanwhile, townsfolk are drinking more and more unpurified water, all of which h
 \Gls{sewerking} of Whiteland has built an underground lair, and is using it to build a team of bandits.
 Unfortunately, the nura influence below starts to spill upwards.
 
-\town{Bad Water}
+\town{Bad Water}{The town's main spring smells disgusting}
 
 Deep underground, all the changes made in the secret sewer lair have unsettled the earth.
 As a result, the town's water has gone foul.
@@ -524,7 +465,8 @@ As a result, the town's water has gone foul.
 
 Play this encounter at the same time as the one below.
 
-\town{Unexpected Ghouls}
+
+\town{Unexpected Ghouls}{Hobgoblin ghouls from below emerge and attack the town}
 
 Twenty of the undead from the sewer have escaped because the bandits who live down there were simply not careful enough.  If the characters confront the dead head-on, they will have a bad time, six of the town guard are only a few streets away.
 
@@ -549,7 +491,7 @@ The ghouls will be put to the sword one way or another, but the question remains
 
 \undeadhobgoblin
 
-\town{Underground Assassins}
+\town{Underground Assassins}{The bandits in the sewer cut \Glsentrytext{townmaster}'s throat}
 
 \gls{townmaster} recently asked a number of guards about recent nura sightings, and why there was suspicious activity in town, such as the strange Whitelander accent heard in \gls{pig}.
 He got too close, and \gls{sewerking} felt he had to die, so four men were requested to pretend to be drunk while walking down the street, and then suddenly stab him in the neck.
@@ -578,7 +520,7 @@ If they run after the thieves, it's Speed + Athletics.
 
 If \gls{townmaster} survives, he has little idea of what's happening, although an Intelligence + Vigilance roll (TN 10) could reveal what he's been asking about recently.
 
-\town{The Nura Rise}
+\town{The Nura Rise}{The hordes underneath begin to spill above ground}
 
 \Gls{sewerking} was betrayed.  The hobgoblins sent up to work for him from the hell-realm were instructed to grab him and force the password out of him.  He fled immediately, and a number of them stayed to capture his companions.  All the thieves in the sewer were then turned into ogres.
 
@@ -614,6 +556,8 @@ Nura spill from everywhere.
 Raise the local nura rating by 2, and roll for an encounter in every area in the town.
 
 \end{multicols}
+
+\stopcontents[town]
 
 \section{Locations \& People}
 
@@ -1201,4 +1145,6 @@ Each pillar can be used once a day.  They require a short prayer (which takes a 
 \end{enumerate}
 
 \end{multicols}
+
+\stopcontents[town]
 

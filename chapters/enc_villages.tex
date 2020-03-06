@@ -1,105 +1,26 @@
 \chapter{Village Encounters}
 
+\renewcommand{\sqarea}{villages}
+
+\printcontents[villages]{l}{2}{\section*{Summaries}\setcounter{tocdepth}{3}}
+
 \setcounter{encnum}{1}\renewcommand{\encsymbol}{\ding{170}}
-
-\section{Summaries}
-
-\begin{multicols}{2}
-
-\sidequest{Here and No Farther}
-
-\gls{townmaster} wants to expand his domain into a nearby forest, but \gls{forestpriest} has other plans.
-Page \pageref{herenofarther}.
-
-\begin{enumerate}
-
-	\item{\glsentrytext{forestpriest} found a man threatening to rebuild the lost city in the forest, so he turned that man into a deer. This leaves the party with a confused deer.}
-	\item{(Forest) The party stumble across a mason garrison, starting to invade the forest.}
-	\item{(Town) \Glsentrytext{forestpriest} found another man endangering the forest, so he was turned into a sheep in town.}
-	\item{(Town) \glsentrytext{forestpriest} is labelled a criminal and flees.}
-
-\end{enumerate}
-
-\sidequest{The Necromancer's Pets}
-A necromancer slowly builds an army of the dead.
-Page \pageref{necromancerspet}.
-
-\begin{enumerate}
-	\item{A crow raises a body from the dead.}
-	\item{(Forest) The characters are attacked by an undead horde.}
-	\item{A band of traders have been killed, but followers of Qualm\"{e} were left alive.}
-	\item{Night of the dead.}
-	\item{\ding{106} The necromancer assaults a village.}
-\end{enumerate}
-
-\sidequest{Immortal Bandits}
-
-The ``Immortal Bandits'', are lead by \gls{banditking}.
-They carry magical rings which bring them into a state of semi-undead, and live among the dead in a temple owned by a necromancer.
-Their horses are also undead, which allows them to travel farther than any natural army, with less need for rations or rest.
-So far nobody has been able to track them down, but even if they did, their fortress is unassailable, except by a full army.
-
-\Gls{banditking} raids the nearby villages for food to bring to his brother, \gls{sewerking}, and for his personal wealth.
-
-Page \pageref{immortalbandits}.
-
-\begin{enumerate}
-
-	\item{Bandits hide at the side of the road, but don't trouble the characters.}
-	\item{A local village has had all its feast supplies stolen by bandits, and the grave of a dead hero raided.}
-	\item{A local tracker returns as a ghoul, wearing a magical necklace.}
-	\item{A wagon of traders are found stuffed with arrows.}
-	\item{The bandits pick just the right time to attack the characters.}
-	\item{The bandits have been apprehended in town}
-\end{enumerate}
-
-\sidequest{Desperate Measures}
-
-A local Villagemaster and his family have been transformed into nura monsters, and they are eating enough to starve out the local village.
-Page \pageref{desperatemeasures}.
-
-\begin{enumerate}
-
-	\item{\ding{106} Pathetic bandits assault the characters.  They were villagers but have turned to banditry out of hunger.}
-	\item{A wagon with chickens is journeying \emph{from} town.}
-	\item{\ding{106} (Town) A diplomat requests the characters track down a priest to cure a local lord of a curse.}
-	\item{\ding{106} (Town) A town crier says that a bounty has been called on a local lord.}
-
-\end{enumerate}
-
-%\subsection[The Message]{The Message -- \encnum}
-%\gls{nurabaron} has made a deal with a mysterious figure from deep underground.  He wants to raise and army and dispossess the crown.  He has many friends already, but knows he needs to gain assassins and hidden powers if he wants to play this right, so he's bargained for magical items.
-
-%The deal so far is clear -- a limited shipment of food is to be delivered.  Some of it has been delivered already, and the rest is calculated in a book \gls{nurabaron} keeps hidden in his room.
-%
-%Page \pageref{message}.
-%
-%
-%\begin{enumerate}
-%
-%\item{The bandits robbed the courier blind, but his message remains in his hand.} % The message is about receiving a magical item.
-%\item{Someone murdered an entire household, and monsters sit in the atic.}
-%\item{\ding{106}\ding{106}  Villagers have turned into nura monstrocities.}
-%\item{A nobleman insults and taxes the characters.}
-%\item{\ding{106}\ding{106}  Bandits eat a trader's corpse -- all have turned into nura.}
-%
-%\end{enumerate}
-
-\setcounter{encnum}{1}
-
-\end{multicols}
 
 \section{Encounters}\index{Encounters!Villages}
 
 \begin{multicols}{2}
 
-\subsection[Here and No Farther]{Here and No Farther -- \encnum}\label{herenofarther}
+\resumecontents[town]
+\sidequest{Here and No Farther}\label{herenofarther}
+\stopcontents[town]
 
 Centuries ago, men created a logging city, and the elves destroyed it.
 Recently, \gls{townmaster} has decided to reclaim it, though nobody knows exactly where it is.
 He sent a dozen trackers to find the place in the hopes of rebuilding it; but \gls{forestpriest}, doesn't like the situation, and has been turning anyone who finds or hunts for the place, into animals.
 
-\villages{You See a Deer}
+\startcontents[forest]
+\villages{You See a Deer}{A human has been transformed into a deer, and simply stops to stare at the characters}
+\stopcontents[forest]
 
 \begin{boxtext}
 
@@ -123,7 +44,7 @@ The characters may decide to visit \gls{forestpriest} in order to have the spell
 
 Move this encounter to the Forest.
 
-\forest{The Green Tower}
+\forest{The Green Tower}{The party find people setting up a base of operations in the forest}
 
 Deep in the forest, \gls{townmaster} has commissioned masons to start building a single tower from the fallen stone of \gls{lostcity}.
 This is the first forway into the deep wilderness.
@@ -145,7 +66,7 @@ He knows he's meant to keep the place secret, but the masons have no plans to ha
 
 See page \pageref{green_tower} for more details.  Move this encounter to the town.
 
-\town{Rogue Sheep}
+\town{Rogue Sheep}{The party find a person turned into a sheep}
 
 Run this encounter in Town, at the same time as the encounter below it.
 
@@ -165,7 +86,7 @@ The sheep goes into the \gls{pig} because it's the only place of safety he knows
 
 Before the characters can decide what they're doing, start the next town encounter.
 
-\town{\glsentrytext{forestpriest} Exiled}
+\town{\glsentrytext{forestpriest} Exiled}{The town crier announces that \glsentrytext{forestpriest} is a wanted criminal}
 
 \Gls{forestpriest} has been found to be a criminal after \gls{captain} stalked him, and found him turning a mason into a pig.
 The pig ran away, and was murdered and eaten before \gls{captain} could find him, so `cannibalism', has been added to \gls{forestpriest}'s list of charges.
@@ -187,14 +108,16 @@ Elvish characters may have a difficult time with the registrations, since everyo
 
 The criminal of the Whiteland Nobility is someone in hiding, who's come to meet with \gls{banditking} but would rather hang than give up his kin's whereabouts.
 
-\subsection[The Necromancer's Pet]{The Necromancer's Pet}\label{necromancerspet}
+\startcontents[forest]
+\sidequest{The Necromancer's Pets}\label{necromancerspet}
+\stopcontents[forest]
 
 \Gls{necromancer} has lived as the lone guardian of his temple for centureies, and has grown increasingly paranoid, so he wants to gather an army of the dead to guarantee his safety.
 He started by enchanting a bauble which raises people as ghouls, then enchanted crows to place the medalion on the dead to raise them.
 After a century of slowly growing his little dead bettalion, he is ready to assault a full village, and expand it into an army.
 Every villager he kills becomes another soldier for his army of the dead.
 
-\villages{The Crow}
+\villages{The Crow}{A recently fallen corpse is raised from the dead by a bird with a magical amulet}
 
 Play this encounter at the same time as the one below.  If a corpse appears during the encounter, that's where the crow goes.  If no corpses appear, the characters find a trader by the road, robbed by unknown bandits, and the crow on top of his body.
 
@@ -214,7 +137,7 @@ Even if this ghoul doesn't join the characters, \gls{necromancer} has gathered a
 
 This encounter moves to the forest area.
 
-\forest{The Undead Hord}
+\forest{The Undead Hord}{A great load of ghouls have become lost and now wander the forest}
 
 \Gls{necromancer} is not a precise creature, and has misplaced twenty of his ghouls.
 Once they wandered away from th rest of the herd, they broke into the forest to wander some more.
@@ -235,7 +158,7 @@ There is no way to use them to find where the necromancer lives, as they have no
 This encounter then returns to the Villages.
 While these ones have run away, the necromancer has gathered a full army of 100 ghouls.
 
-\villages{The Survivors}
+\villages{The Survivors}{A village has been raided, and only followers of Qualm\"{e} have been spared}
 
 Last night an undead horde pulled apart an entire village.  The undead were directed well by the necromancer, and almost nobody escaped.
 However, four people were evident followers of Qualm\"{e}, god of death.
@@ -257,7 +180,7 @@ Alternatively, researching previous churches to Qualm\"{e} within the area with 
 
 By this time the necromancer has gathered an army of 200 undead.
 
-\villages{Knight of the Dead}
+\villages{Knight of the Dead}{The necromancer makes a full-on assault on a village}
 
 The necromancer has gathered an army of a full 400 undead, and has decided to take most of them to a nearby village.  Most are not under his control -- he uses his Necromancy sphere to control some, and the rest usually follow.
 
@@ -318,7 +241,9 @@ The party can write to \gls{king}, but they will be lucky to receive anything bu
 
 \ghoul
 
-\subsection{Immortal Bandits}\label{immortalbandits}
+\startcontents[town]
+\sidequest{Immortal Bandits}\label{immortalbandits}
+\stopcontents[town]
 
 \Gls{banditking} and his men are a bandit ring with a difference.
 Most bandits have to raid local areas, until trackers in the Night Guard eventually catch and kill them.
@@ -328,7 +253,7 @@ Their undead horses walk slowly, but never tire, so \gls{banditking}'s band can 
 The Immortal Bandits have used their position to raid local areas for food and wealth.
 All of this is eventually brought back to \gls{sewerking} in order to trade more with the nura.
 
-\villages{Hidden Eyes}
+\villages{Hidden Eyes}{Bandits watch the characters from the side of the road silently}
 
 \gls{banditking} and twenty men hide in the dense trees on a hill, a mile away from the road.  They watch, quietly, for traders.  A single man, Engel, sits closer to the road, waiting to call like a pidgeon if someone rich wanders onto the road, or call like a crow if an armoured troop wander along.
 
@@ -349,7 +274,7 @@ If they come for the rest of the bandits, they flee on horseback.
 
 \humansoldier
 
-\villages{The Feast is Cancelled}
+\villages{The Feast is Cancelled}{The Immortal Bandits have raided a village during a wedding}
 
 \begin{boxtext}
 
@@ -366,7 +291,7 @@ If the PCs catch up to them, the bandits run away.
 
 Characters with a good eye (Wits + Crafts, TN 11), can spot that the crow has a medalion around its neck.
 
-\villages{The Dead Tracker}
+\villages{The Dead Tracker}{A member of the Night Guard sent to track down where the dead have come from has returned as a ghoul}
 
 Anderson was hired to track down the bandits.
 However, the Necromancer's pet crow spotted him, and informed the bandit leader, \gls{banditking}.
@@ -381,7 +306,7 @@ The party may notice by his green clothing that he serves in the Night Guard.
 
 If the party enquire with the Night Guard, they will be told where he was wandering to search for \gls{necromancer}, which should help them narrow the necromancer's location down.
 
-\villages{Fallen Traders}
+\villages{Fallen Traders}{A number of traders have fallen to bandits}
 
 \begin{boxtext}
 
@@ -393,9 +318,9 @@ Here the bandits have been again, and removed all the goods they could -- food, 
 
 The Night Guard still look for them, but they appear randomly, and then disappear into the depths of the forest.  This time they've been careless with their tracks.  The party can follow them with a Wits + Survival roll, TN 8, if they have the time and supplies for a two-day journey.
 
-\villages{The Showdown}
+\villages{The Showdown}{The bandits have finally decided to confront the characters}
 
-The immortal bandits were in the area.  They have likely heard of the party by now and decided to follow.  Play the encounter below, and then have the bandits attack right after.
+The Immortal Bandits were in the area.  They have likely heard of the party by now and decided to follow.  Play the encounter below, and then have the bandits attack right after.
 
 \npc{\G}{10 Bandits}
 
@@ -403,7 +328,7 @@ The immortal bandits were in the area.  They have likely heard of the party by n
 
 Move this encounter to town, if the bandits survive.
 
-\town{Bandits Caught}
+\town{Bandits Caught}{The bandits who plagued the countryside have been imprisoned}
 
 \begin{boxtext}
 
@@ -428,7 +353,9 @@ If they do so, ten bandits stage an attack during the night.
 
 \humansoldier
 
+\startcontents[town]
 \sidequest{Desperate Measures}\label{desperatemeasures}
+\stopcontents[town]
 
 \gls{nurabaron} has come under a horrible nura curse, turning him into an ogre.
 He has lost most of his mind, and must eat constantly.
@@ -436,7 +363,7 @@ His servants pity him, and continue to carry out his orders, which mostly includ
 
 As a result of the local starvation, many of the local peasants have turned to banditry.
 
-\villages{Your Money or Please Don't Hurt Me}
+\villages{Your Money or Please Don't Hurt Me}{Villagers from Redfall are so hungry they have turned to banditry, but they're not very good at it}
 
 Bertrand is healthy enough, but the rest of his crew of eight men look nearly emaciated.
 They demand silver, or at least copper, but then quickly settle for any rations the characters might have.
@@ -467,7 +394,7 @@ He won't let them in the keep, but he will promise all he can if the characters 
 
 This encounter then moves to town.
 
-\villages{Wrong Direction Chickens}
+\villages{Wrong Direction Chickens}{A tradesman is taking chickens \emph{from} town}
 
 \Gls{redfall} needs a lot of food to keep \gls{nurabaron}'s family fed, so they have started ordering more food.
 Normally, villages feed the towns, but in this case the town is feeding the village.
@@ -484,7 +411,7 @@ Slip in the fact that a trader is travelling with chickens away from town casual
 If the party notice, they can ask, and he'll tell them he's going to \gls{redfall} because he was paid a lot to do so.
 Otherwise, just leave the clue dangling.
 
-\town{The Nonstarter}
+\town{The Nonstarter}{\Glsentrytext{nurabaron}'s diplomat asks the party to help him}
 
 \begin{boxtext}
 
@@ -522,7 +449,7 @@ If the characters convince Nathaniel that they can cure the baron, one must roll
 
 \humandiplomat
 
-\town{The Town Crier}
+\town{The Town Crier}{\Glsentrytext{nurabaron} has been found out, and everyone in town wants the bounty on his head}
 
 Elliot the crier knows nothing more than he's said.  A number of townsfolk quickly decide to take up arms and slay the local monster, hoping the ransack his house and loot anything of value.
 
@@ -558,9 +485,9 @@ Otherwise, they need to be at the keep to interfere with the growing mob.
 
 \vfill\null
 
-%\subsection[The Message]{The Message}\label{message}
+%\sidequest{The Message}\label{message}
 %
-%\villages{The Dead Courier}
+%\villages{The Dead Courier}{The party find a dead courier on the road with a message}
 %
 %\begin{boxtext}
 %Conversation stops abruptly when you see death on the road ahead.  A caravan of four carts lies dead.  Ten bodies and three horses, all filled with arrows.  Perhaps one hundred arrows in total.  A little at the side of the road, a man lies bleeding from his arm, with a scroll still clutched in his hand.
