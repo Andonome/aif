@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if [ $1 = clean ]; then
 	rm *aux *log main.{i,g}* *toc
 	exit 0
