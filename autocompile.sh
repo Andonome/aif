@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $1 = clean ]; then
-	rm *aux *log main.{i,g}* *toc
+	rm -r *aux *log main.{i,g}* *toc *.ptc *.out svg-inkscape 2>/dev/null
 	exit 0
 fi
 
@@ -11,5 +11,5 @@ if [ $1 = tree ]; then
 fi
 pdflatex -shell-escape main.tex
 makeglossaries main
-makeglossaries main.idx
+makeindex main.idx
 pdflatex main.tex
