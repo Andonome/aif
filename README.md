@@ -4,16 +4,11 @@
 
 This is a campaign setting for the BIND tabletop RPG.
 
-## Side Quests
-
-Eleven Side Quests are presented for three areas: forest, villages, and town.
-You can slot these into an existing campaign if you're low on ideas, or use them as a miniature campaign in their own right.
-A few Side Quests reference similar events or share histories, creating a semi-coherent, but eclectic narrative.
-
 ## Games Master Resources
 
 - Magical groves, magical wells, magical items, and magical songs.
 - Random encounters, random starting-backgrounds for PCs, and other random things.
+- One bestiary, with all the creatures of Fenestra.
 - Details on the nura - the twisted versions of men, gnomes and dwarves who emerge from underground and consume everything in the area.
 
 ## Map of the Land
@@ -22,20 +17,16 @@ A few Side Quests reference similar events or share histories, creating a semi-c
 - Ethereal lands beyond, where players can get trapped and find strange items.
 - Bestiary, for all your monstrous needs.
 
-# Using the Book
+## Side Quests
 
-For most people, you should just download the pdf.
-But if you want to modify it or add to it, you can grab all the documents, zip them, then edit the result on Overleaf, live.
-If you want your own, local version, then you'll need to install Latex.
-The `texlive-most` and `inkscape` packages have what you need if you're running Linux, and you can take a look at the autogen script to see how to compile it.
+Side Quests are a mechanic for presenting open-world adventures.
+These storylines are cut up into small encounters, and wherever the players go, they are confronted by the next part of the story.
 
-See the wiki for full details.
+Unlike traditional adventures, Side Quests always happen *to* the players - they have no impetus to go anywhere.
+Instead, the next part of the story waits for them to arrive, and if they stay put then a different Side Quest rears its head.
 
-# Joining
+A dozen Side Quests are presented for three areas: forest, villages, and town.
+You can slot these into an existing campaign if you're low on ideas, or use them as a miniature campaign in their own right.
+A few Side Quests reference similar events or share histories, creating a semi-coherent, but eclectic narrative.
 
-All welcome.  At present, the project's in particular need of:
-
-- Art.
-- Grammar Nazis
-- Playtesting
-
+![Nura Cat](images/Unknown/wizard_and_cat.jpg)
