@@ -36,11 +36,9 @@ Gary, local pickpocket, has no excuse except for his young age, and bad luck in 
 
 \sqpart{Town}{The Captain}{\Glsentrytext{captain} jumps into another encounter to help the party}
 
-\NPC{\M}{\Glsentrytext{captain}}{Solemn}{Pitying glances}
+\captain
 
 \Gls{captain} is heading home after a long night (if this is the afternoon, it's been a \emph{very} long night).  Play this encounter at the same time as the one below.  If the party are in trouble, he helps.  If they're known thieves, he tries to follow them, then brings guards.
-
-\person{1}{2}{0}{{1}{-1}{+1}}{0}{2}{Academics 1, Empathy 2, Stealth 2, Survival 1\knacks{\adrenalinesurge}}{\longsword, dagger, 2sp}{}
 
 \sqpart{Town}{The Riddle}{\Glsentrytext{college} have raised a bounty on a riddle}
 
@@ -60,7 +58,7 @@ To answer the riddle correctly, the characters must pose three questions which g
 	Getting closer, you can hear a mandolin and a soft voice, singing of great heroes fighting back nura hordes coming up from the depth.
 \end{boxtext}
 
-The singer is \gls{bard}, and he's here to sing the praises of any nobles who might pull together an army to push back the nura, like nobles did in the old days.  However, such an army would be illegal, as only \gls{king} can gather armies, or amass large amounts of weaponry, and so far the area does not have enough of the Night Guard to defend itself from rising levels of nura.
+The singer is \gls{warningbard}, and he's here to sing the praises of any nobles who might pull together an army to push back the nura, like nobles did in the old days.  However, such an army would be illegal, as only \gls{king} can gather armies, or amass large amounts of weaponry, and so far the area does not have enough of the Night Guard to defend itself from rising levels of nura.
 
 \begin{boxtext}
 
@@ -72,7 +70,9 @@ The guards understand who their employer is -- they're loyal to \gls{king} and k
 
 For the rest of the day the entire town is full of talk about how in the old days, the nura were not a threat, because individual lords could pull together the armies they needed to quell nura uprisings.
 
-If the party do not intervene, \gls{bard} will end up in the cells for six months.
+If the party do not intervene, \gls{warningbard} will end up in the cells for six months.
+
+\warningbard
 
 \sqpart{Town}{Pickpocketed Again!}{Someone else picks a character's pocket}
 
@@ -174,23 +174,10 @@ Most of the bandits are ex-soldiers.
 
 \humansoldier
 
-\NPC{\M}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}\label{woodspyleader}
+\woodspyleader
 
 \Gls{woodspyleader} is a massive man, unable to run well, but he rarely needs to.
 If things turn sour, he will flee at the first sign of trouble, taking his men with him.
-
-\person{2}% STRENGTH
-{3}% DEXTERITY
-{-1}% SPEED
-{{0}% INTELLIGENCE
-{1}% WITS
-{0}}% CHARISMA
-{0}% DR
-{2}% COMBAT
-{Academics 1, Deceit 2, Empathy 1, Survival 1}% SKILLS
-{\greataxe}% EQUIPMENT
-{}
-
 
 \paragraph{The Crossroads} have a little tree coverage a stone's throw from the road -- just the place to ambush people coming from the South.
 
@@ -346,7 +333,7 @@ The local Ale Guild aren't happy, and shenanigans ensue.
 
 \Gls{alemaster}, local Guild Master of town's Ale Guild, dresses his men as Knights\footnote{The term ``Knight'', is used by townsfolk for anyone in armour.
 Guilds who travel need a lot of protection, as the roads are dangerous, and they general count as `knights'.} from the faraway Ale Guild of the Bearded Mountains.
-In retaliation, \gls{beardedale}, dignitary to the Bearded Mountains' Ale Guild, destroys much of the local ale stores.
+In retaliation, \gls{beardedalemaster}, dignitary to the Bearded Mountains' Ale Guild, destroys much of the local ale stores.
 
 \sqpart{Town}{The Drunken Knight}{A knight of the local Ale Guild starts fights while pretending to be from the Ale Guild of the Bearded Mountains}
 
@@ -380,9 +367,12 @@ Play this encounter at the same time as the one below.
 
 The party can avoid being swept down the street by the storm with a Wits + Athletics roll, TN 8.
 
-\paragraph{Background:} The local Ale Guild found that the more ale is brewed in a batch, the cheaper it becomes.  They bought a few cheap houses around the city, and build massive barrels to house the ale in.  However, \gls{beardedale} found where they're stored, and paid a few street-rat children to mess the place up.  He never expected them to explode, however.
+\paragraph{Background:} The local Ale Guild found that the more ale is brewed in a batch, the cheaper it becomes.
+They bought a few cheap houses around the city, and build massive barrels to house the ale in.
+However, \gls{beardedalemaster} found where they're stored, and paid a few street-rat children to mess the place up.
+She never expected them to explode, however.
 
-An Intelligence + Vigilance roll, TN 10, will allow the characters to find the children who started the problem, and they will eagerly point to \gls{beardedale}, who currently drinks in \gls{pig}.
+An Intelligence + Vigilance roll, TN 10, will allow the characters to find the children who started the problem, and they will eagerly point to \gls{beardedalemaster}, who currently drinks in \gls{pig}.
 
 
 \sqpart{Town}{You Can't Drink Here}{Envoys of the Ale Guild from the bearded mountains are refused entry to a tavern, and a fight breaks out}
@@ -396,7 +386,8 @@ An Intelligence + Vigilance roll, TN 10, will allow the characters to find the c
 
 A party of three men and three dwarves from the Bearded Mountains are tired from a long day's walk, and need a rest and drink, but the townsfolk think of the Ale Guild from the Bearded Mountains as nothing but troublemakers.
 
-Laxen, dwarvish captain of the group, has had enough of the bickering and feels tough in his full plate armour.  He has no idea that \gls{beardedale} has been pulling stunts, such as destroying the stores of the local Ale Guild.
+Laxen, dwarvish captain of the group, has had enough of the bickering and feels tough in his full plate armour.
+He has no idea that \gls{beardedalemaster} has been pulling stunts, such as destroying the stores of the local Ale Guild.
 
 If the characters do nothing, the crowd at one point pelt Laxen with some old soup, and some local ale.  He waves his axe, and a fight breaks out instantly.  The group then flee the city, and all ale trade with the Bearded Mountains stops.
 
@@ -413,9 +404,10 @@ These two are heavy drinkers, and heavy fighters, but they will stop as soon as 
 
 \humansoldier
 
-\Gls{beardedale} still drinks at \gls{pig}.  
+\Gls{beardedalemaster} still drinks at \gls{pig}.  
 
-\paragraph{Conclusion:} If the characters can track down \gls{beardedale} and have him talk with \gls{alemaster} they might be able to make peace between the two groups.  In this case, crisis is averted, and the final part can be discarded.
+\paragraph{Conclusion:} If the characters can track down \gls{beardedalemaster} and have her talk with \gls{alemaster} they might be able to make peace between the two groups.
+In this case, crisis is averted, and the final part can be discarded.
 
 \sqpart{Town}{\N Dry}{The town has completely run out of ale as supplies from the Bearded Mountains have run out}
 
@@ -564,6 +556,12 @@ Remember that whoever's trying to patch up \gls{captain}'s bleeding neck won't b
 
 \end{tcolorbox}
 
+\sewerthief
+
+\npc{\G}{Four of the Sewer Thieves}
+
+\humanthief
+
 \paragraph{Next:} If the party follow the assassins underground, they run to the nearest entrance -- perhaps the bakers or \gls{pig}.
 Go to page \pageref{sewers}.  Otherwise, this incident will remain a mystery.
 
@@ -694,11 +692,9 @@ The man at the back door is Peter -- one of the local Whiteland nobles. He's had
 
 \end{boxtext}
 
-\NPC{\F}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}
+\pigowner
 
 \Gls{pigowner} has owned the pig since her father forged the inheritance documents, then died of alcohol poisoning shortly afterwards.
-
-\person{1}{2}{-1}{{1}{2}{1}}{0}{1}{Deceit 3, Empathy 1, Tactics 1\knacks{\adrenalinesurge}}{\Dagger, a hidden dagger, and an even more hidden dagger.}{}
 
 \mapentry{Jane's Room}
 \label{priestessjane}
@@ -1179,11 +1175,7 @@ A moment later, the characters hear doors moving as the bandits wake up and move
 
 The portal's command words are nowhere to be found here, but can be researched with an Intelligence + Academics roll, TN 16 (or 10 with a good library).  If opened, a portal opens directly to the Realm of Darkness and Fire (page \pageref{darknessandfire}).
 
-\NPC{\M}{\Glsentrytext{sewerking}}{Alpha male}{Hands on sword}
-
-\person{1}{3}{2}{{1}{-1}{0}}{0}{3}{Academics 1, Beast Ken 1, Crafts 2, Deceit 3, Tactics 2, Vigilance 2\knacks{\adrenalinesurge, Ultimate Coward}}{\longsword, \partialleather, two daggers, 40sp}{}
-
-
+\sewerking
 
 \mapentry{Entrance to the Citadel}
 
