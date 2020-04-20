@@ -146,8 +146,7 @@ Play this encounter at the same time as the one below.  If a corpse appears duri
 
 A moment after the crow has flown away, the corpse animates, and attacks the characters.
 
-\npc{\U}{Ghoul}
-\ghoul
+\ghoul[\npc{\U}{Ghoul}]
 
 Even if this ghoul doesn't join the characters, \gls{necromancer} has gathered an army of 50 ghouls by looting the dead.
 
@@ -252,9 +251,7 @@ The encounter repeats until the party slay \gls{necromancer}.
 The characters can complain to local nobles, but they note that they are not allowed a standing army, so they can do nothing about the situation.
 The party can write to \gls{king}, but they will be lucky to receive anything but stock letters from bureaucrats stating that the situation has complications.
 
-\npc{\G\U}{200 Ghouls}
-
-\ghoul
+\ghoul[\npc{\G\U}{200 Ghouls}]
 
 \resumecontents[Town]
 
@@ -338,9 +335,7 @@ The party may notice by his green clothing that he serves in the Night Guard.
 They can also see an arrow made of crow-feathers, sticking out of his arm.
 This is exactly the same kind of arrow that killed the traders in the first part of this Side Quest.
 
-\npc{\U}{Ghouled Tracker}
-
-\ghoul
+\ghoul[\npc{\U}{Ghouled Tracker}]
 
 If the party enquire with the Night Guard, they will be told where he was wandering to search for \gls{necromancer}, which should help them narrow the necromancer's location down.
 
@@ -352,9 +347,7 @@ Whatever the reason, they follow the characters from a distance, waiting till th
 Roll a regular encounter for the area.
 If nothing comes up, use the encounter below, and if possible have the Immortal Bandits attack just after a fight.
 
-\npc{\G}{10 Bandits}
-
-\humansoldier
+\humansoldier[\npc{\G}{10 Bandits}]
 
 Move this encounter to town, if the bandits survive.
 
@@ -386,9 +379,7 @@ Meanwhile, if \gls{necromancer}'s lair survives, the other bandits await instruc
 The only way for the characters to secure \gls{banditking}'s demise it to watch the guards' station all night.
 If they do so, ten bandits stage an attack during the night.
 
-\npc{\G}{Red Bandits}
-
-\humansoldier
+\humansoldier[\npc{\G}{Red Bandits}]
 
 \resumecontents[Town]
 
@@ -423,8 +414,7 @@ This is the first robbery they've attempted.
 If questioned, they explain that they're really farmers in the nearby town \gls{redfall}, and the local sheriff's been demanding steadily more and more meat and grain as taxes.
 They don't have the strength to go on.
 
-\NPC{\M}{Bertrand}{Pessimistic}{Squints}
-\humansoldier
+\humansoldier[\NPC{\M}{Bertrand}{Pessimistic}{Squints}]
 
 \npc{\G}{Emaciated ``Bandits''}
 \person{1}{-1}{-1}{{0}{-1}{0}}{0}{1}{Beast Ken 2, Crafts 1}{\Dagger, (three have shortbows)}{}
@@ -493,9 +483,7 @@ Once the priest is located, he cannot actually `cast magic' and cure the \gls{nu
 However, \gls{forestpriest} still has a plan -- he will turn \gls{nurabaron} (and possibly his family) into bears, and then have them hibernate.
 If the season is right, or if he can coax the bears into hibernation with frost magics to make a cold room, he will indeed be able to cure the curse.
 
-\NPC{\M}{Nathaniel the Diplomat}{Practical}{Scratches nose}\label{nathaniel}
-
-\humandiplomat
+\humandiplomat[\NPC{\M}{Nathaniel the Diplomat}{Practical}{Scratches nose}\label{nathaniel}]
 
 \sqpart{Town}{\N \N The Town Crier}{\Glsentrytext{nurabaron} has been found out, and everyone in town wants the bounty on his head}
 
@@ -569,9 +557,7 @@ The farmers don't want to kill the characters -- just scare them off; but it wil
 
 The villagers have no idea that \gls{nurabaron} has been tainted with dark magic, they only know they haven't seen him in a long time, and that he has increased taxes, and takes almost all his taxes in food, back to the keep.
 
-\npc{\G}{20 Angry Farmers}
-
-\humanfarmer
+\humanfarmer[\npc{\G}{20 Angry Farmers}]
 
 Once the fight is over, the leader of the group -- Matt -- will come forward, and may even apologize for the misunderstanding if the party have a good explanation as to why they're in \gls{redfall}.
 
@@ -603,9 +589,7 @@ The guards and servants have rationalized this as best they can, and continue to
 
 These towers each have two guards with bows, ready to rain arrows down on any intruders.
 
-\npc{\G}{2 Archers}
-
-\humanarcher
+\humanarcher[\npc{\G}{2 Archers}]
 
 \mapentry{Courtyard}
 
@@ -621,9 +605,7 @@ Small characters (with Strength of 0 or less) can fit through the gap from outsi
 
 One of the horses here was accidentally hit by some of the ogre-dust which affected \gls{nurabaron} and his family.  It ate the others, but despite the men protesting, \gls{nurabaron} has insisted on keeping it alive and very well fed.
 
-\npc{\N\C}{Janus, the Demonic Horse}
-
-\nurahorse
+\nurahorse[\npc{\N\C}{Janus, the Demonic Horse}]
 
 \mapentry{Food Storage}
 
@@ -640,9 +622,7 @@ He doesn't understand his condition, and has no self control.
 This makes him dangerous, so the family have decided to lock him in this little room.
 Characters on the river or anywhere near this room can hear intermittent banging, and infant-like gurgling.
 
-\NPC{\M\N}{Benjie -- ``the Toddler''}{Playful}{Fingers in mouth}
-
-\deephobgoblin
+\deephobgoblin[\NPC{\M\N}{Benjie -- ``the Toddler''}{Playful}{Fingers in mouth}]
 
 \mapentry{The Great Hall}
 
@@ -671,17 +651,13 @@ This powder is not nearly so potent as the charm cast upon \gls{nurabaron} and h
 
 In the upper floor, \gls{nurabaron}'s wife Marjorie stays with her four children -- two boys and two girls.  All are a little too dangerous to be trusted wandering alone, so only one is let out of their room at a time.
 
-\npc{\G\N}{Marjorie \& Her Daughter}
+\ogre[\npc{\G\N\F}{Marjorie \& Her Daughter}]
 
 These two attack fiercely, but retreat if any bargains have been made after a single round.
 
-\ogre
-
-\npc{\G\N}{Richard \& Jim}
+\ogre[\npc{\G\N\M}{Richard \& Jim}]
 
 The two brothers were never good at listening, and will attack with abandon, unless Marjorie is nearby to talk them down.
-
-\ogre
 
 \end{multicols}
 
