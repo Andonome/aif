@@ -31,8 +31,8 @@ The player with the highest Intelligence Bonus makes a Wits + Vigilance roll, TN
 
 Gary, local pickpocket, has no excuse except for his young age, and bad luck in life, though he's 25 and was recently kicked out of an apprenticeship for drinking too heavily on the job.
 
-\NPC{\M}{Gary}{Arrogant}{Picks nose}
-\humanthief
+
+\humanthief[\NPC{\M}{Gary}{Arrogant}{Picks nose}]
 
 \sqpart{Town}{The Captain}{\Glsentrytext{captain} jumps into another encounter to help the party}
 
@@ -88,9 +88,9 @@ This time it's a young woman, down on her luck as her family farm was raided by 
 
 If caught, Judith apologizes profusely, and explains her situation.
 
-\NPC{\F}{Judith}{Fearful}{Messes up her hair}
 
-\humanthief
+
+\humanthief[\NPC{\F}{Judith}{Fearful}{Messes up her hair}]
 
 \resumecontents[Villages]
 \sidequest{The Lizardite Amulet}\label{lizardite}
@@ -162,17 +162,13 @@ At this point the characters can accept or refuse the mission.  If they accept, 
 
 \paragraph{The Amulet Bearers} are five brave members of the Night Guard who have ridden for a long time.  But today, they've decided to go off-road, and rest.  The smoke from their campfire still wanders up into the sky, but they're not moving -- just resting.
 
-\npc{\G}{Five members of the Night Guard}
-
-\humansoldier
+\humansoldier[\npc{\G}{Five members of the Night Guard}]
 
 \paragraph{The Bandits} come behind the players, hoping to lay an ambush at the crossroads.
 
-\npc{\G}{Ten of the Woodspy Bandits}
-
 Most of the bandits are ex-soldiers.
 
-\humansoldier
+\humansoldier[\npc{\G}{Ten of the Woodspy Bandits}]
 
 \woodspyleader
 
@@ -186,8 +182,6 @@ They might go towards the Night Guard, in which case they have a moment to speak
 They players might fight with the Guard, or retreat.
 
 Alternatively, they may just wait at the crossroads, in which case the bandits see them, surround them quietly, then assume they are nothing to do with the Night Guard and wander off quietly\ldots assuming the characters don't spot the abortive ambush.
-
-\vfill\null
 
 \sqpart{Town}{The Book of War}{\Glsentrytext{townmaster} hires a local thief to steal a book to learn of the item's command word}
 
@@ -275,13 +269,13 @@ They contest that they never stole a penny, and have no idea how it vanished.
 
 The truth of the matter is that the taxes in the local village were being paid with false coin -- villagers would use alchemically summoned copper coins to pay their taxes, and the coins would vanish the next day.
 
-\npc{\M\F}{Clarisa and Robert}
 
-\humanthief
 
-\npc{\M}{Steven}
+\humanthief[\npc{\M\F}{Clarisa and Robert}]
 
-\humanthief
+
+
+\humanthief[\npc{\M}{Steven}]
 
 Move this encounter to the villages.
 
@@ -316,9 +310,9 @@ If the characters left Martha to continue her good work in the villages with the
 Combine this with the encounter below, and if the characters get into trouble, Martha comes to their aid, along with her sons, Harry and Oscar.
 If not, leave this encounter till the next time the characters are in trouble in the villages.
 
-\npc{\G\M}{Harry \& Oscar}
 
-\humansoldier
+
+\humansoldier[\npc{\G\M}{Harry \& Oscar}]
 
 \stopcontents[sq]
 
@@ -374,7 +368,6 @@ She never expected them to explode, however.
 
 An Intelligence + Vigilance roll, TN 10, will allow the characters to find the children who started the problem, and they will eagerly point to \gls{beardedalemaster}, who currently drinks in \gls{pig}.
 
-
 \sqpart{Town}{You Can't Drink Here}{Envoys of the Ale Guild from the bearded mountains are refused entry to a tavern, and a fight breaks out}
 
 \begin{boxtext}
@@ -391,18 +384,13 @@ He has no idea that \gls{beardedalemaster} has been pulling stunts, such as dest
 
 If the characters do nothing, the crowd at one point pelt Laxen with some old soup, and some local ale.  He waves his axe, and a fight breaks out instantly.  The group then flee the city, and all ale trade with the Bearded Mountains stops.
 
-\NPC{\M}{Guild Captain Laxen}{Dour}{Strokes beard}
-\dwarvensoldier
-
-\npc{\G}{Mugin \& Thunin}
+\dwarvensoldier[\NPC{\M}{Guild Captain Laxen}{Dour}{Strokes beard}]
 
 These two are heavy drinkers, and heavy fighters, but they will stop as soon as Captain Laxen gives the word.
 
-\dwarventrader
+\dwarventrader[\npc{\G\M}{Mugin \& Thunin}]
 
-\npc{\G}{Joshua, Robert and Rob}
-
-\humansoldier
+\humansoldier[\npc{\G\M\F}{Joshua, Robert and Rob}]
 
 \Gls{beardedalemaster} still drinks at \gls{pig}.  
 
@@ -469,9 +457,9 @@ Curing the child won't be easy, but sufficient research at a Temple to C\'{a}l\"
 
 Raise the local Nura Rating by 1.
 
-\npc{\M}{James, Street-Child}
 
-\deephobgoblin
+
+\deephobgoblin[\npc{\M\N}{James, Street-Child}]
 
 If taken alive, James will be able to describe \gls{sewerthief}' face, but couldn't say who he is.
 James has only been a nura for a couple of hours, so if the party know to starve him, he can return to being a normal child before long.
@@ -493,9 +481,7 @@ Pete doesn't know the group, but he's decided he's going to speak up for them an
 However the PCs react, a fight will break out around them.
 Once the fight's ended, the characters might think they're out of harm's way, but the streets are rampant with trouble.
 
-\npc{\G}{Irate Alcoholics}
-
-\humanfarmer
+\humanfarmer[\npc{\G}{Irate Alcoholics}]
 
 If the characters approach \gls{pig}, they hear noises inside as of heavy metalwork.  The Whiteland thieves in the sewers are fighting back a horde of undead who got free.  Three of them are sentient, and quite capable of spotting and attacking humans wearing magical rings.  The other twelve are only taking orders, but the total gang has proved to be too much for the thieves, who've barricaded the trapdoor down, and are trying to poke spears down.
 
@@ -522,11 +508,11 @@ Twenty of the undead from the sewer have escaped because the bandits who live do
 Any character can summon the nearby guard with a Strength + Empathy roll, TN 7, to shout out loud.
 The guards take 5 rounds to arrive, but every Margin on the roll reduces that time by 1 round, to a minimum of 2 rounds.
 
-\npc{\G\U\N}{20 Undead Hobgoblins}
+
 
 The ghouls will be put to the sword one way or another, but the question remains; what brought them here?
 
-\undeadhobgoblin
+\undeadhobgoblin[\npc{\G\U\N}{20 Undead Hobgoblins}]
 
 Increase the local nura rating by 1.
 
@@ -558,9 +544,9 @@ Remember that whoever's trying to patch up \gls{captain}'s bleeding neck won't b
 
 \sewerthief
 
-\npc{\G}{Four of the Sewer Thieves}
 
-\humanthief
+
+\humanthief[\npc{\G}{Four of the Sewer Thieves}]
 
 \paragraph{Next:} If the party follow the assassins underground, they run to the nearest entrance -- perhaps the bakers or \gls{pig}.
 Go to page \pageref{sewers}.  Otherwise, this incident will remain a mystery.
@@ -579,9 +565,7 @@ Raise the local Nura Rating by 1.
 
 \end{speechtext}
 
-\npc{\G\N}{10 Hobgoblins}
-
-\deephobgoblin
+\deephobgoblin[\npc{\G\N}{10 Hobgoblins}]
 
 If the characters capture \gls{sewerking}, he begins shouting something over and over -- the activation phrase for the portal.\footnote{The activation word is simply elvish for `We are open for trade'.}  Once captured, he knows that he's done for, and may as well give the hobgoblins the password to open the gate they so desire.  If any nura are in earshot, they immediately run to \gls{pig} to go underground and open the gate.
 
@@ -595,9 +579,7 @@ While \gls{sewerking} was sprinting underground, he managed to open one cell wit
 
 \end{itemize}
 
-\npc{\G\N\U}{6 Undead Hobgoblins}
-
-\undeadhobgoblin
+\undeadhobgoblin[\npc{\G\N\U}{6 Undead Hobgoblins}]
 
 If that password ever makes its way underground, the town is doomed.
 Nura spill from everywhere.
@@ -659,7 +641,6 @@ The owner, \gls{pigowner}, keeps the place in order with a mixture of social con
 The place gets lenient treatment from the guards as it's an official Temple of Alass\"{e}, complete with an official priestess.
 The fact that she spends most of her time drunk doesn't detract from her status, or stop the occasional noble asking her to sneak items into the city.
 
-
 \begin{table*}[t]
 
 \includesvg{images/Dyson_Logos/mincing_pig.svg}\label{mincing_pig_map}
@@ -678,9 +659,7 @@ The cat's name is Bob, and his collar is made from dried, woven daffodil.  The c
 
 As a result of Bob's collar, elves and people who speak elvish (such as many academics) are not welcome in \gls{pig}.
 
-\NPC{\N\C}{Bob}{Slick}{Licks Paw}
-
-\nuracat
+\nuracat[\NPC{\N\C}{Bob}{Slick}{Licks Paw}]
 
 \mapentry{Kitchen}
 
@@ -726,9 +705,7 @@ A number of local thieves know of this secret and secluded room.  It was once a 
 	The second they see you, an additional layer of silence enters the room.
 \end{boxtext}
 
-\npc{\G}{Three Cutthroats}
-
-\humanthief
+\humanthief[\npc{\G}{Three Cutthroats}]
 
 \mapentry{\Glsentrytext{pigowner}'s Room}
 
@@ -743,8 +720,6 @@ On its way out they could see it was a different sort of undead -- not a regular
 
 The creature looks like a regular, skinny woman, with long brown hair, dead around six months.  However, the simple shell hosts a powerful necromancer.  Normally, the undead in the tunnels below are made from hobgoblins, but the thieves murdered a woman one night and decided to take her down below.  One of the sentient hobgoblins had enough magical ability to summon a powerful spirit into her.
 
-\vfill\null
-
 \npc{\U}{Monster in the Cellar}
 
 \person{0}{1}{0}{{2}{0}{-5}}{2}{2}{Academics 2, Medicine 1, Stealth 3, Survival 1, Vigilance 3\Path{Devotion}{Aldaron 3, Fate 2, Necromancy 2}}{None}{\mana{6}\lockedmana{2}}
@@ -756,9 +731,7 @@ Anyone attempting to kill the creature inside will probably attack the maid, and
 In Jane's room, it will cover itself in blankets, posing as an embarrassed man who must leave unseen.
 Once on the street, it can find an alley to hide in, and begin its murderous rampage before diving into the river at the first sign of a mob.
 
-\npc{\U\F}{Undead Maid}
-
-\ghoul
+\ghoul[\npc{\U\F}{Undead Maid}]
 
 \mapentry{Runoff}
 
@@ -805,13 +778,13 @@ The temple of Qualm\"{e} held its fasting chambers here, where men would compete
 The total value of the jewels inside here is 350gp.
 \Gls{pigowner}, and the bandits know better than to go grave robbing, especially when they are aware the old temple had guardians.
 
-\npc{\G\U}{Three Temple Guardians}
+
 
 Three men competed and won the right to protect the temple.
 They starved themselves into a state of lichdom after being buried alive in one of the walls.
 While the hidden room, being covered in bricks, is almost impossible to detect (Intelligence + Crafts, TN 14), they can break those bricks down at any point.
 
-\demilich
+\demilich[\npc{\G\U}{Three Temple Guardians}]
 
 \mapentry{The Descent}
 This path downwards leads to the thieves' den underground (see page \pageref{pigexit}).
@@ -824,9 +797,7 @@ Below, in theory, would be an emergency store of weapons which \gls{townmaster} 
 However, over the years, \gls{king} has sent continuously more members of the Night Guard down to take from the store, so now the shelves lie mostly empty.
 The townsfolk are unaware of this change, and Boris, who run the temple, doesn't want to tell anyone, for fear of stoking panic.
 
-\npc{\M}{Boris}
-
-\humanpriest
+\humanpriest[\npc{\M}{Boris}]
 
 \end{multicols}
 
@@ -923,21 +894,17 @@ The citadel is massive, and contains various floors.
 
 \end{enumerate}
 
-\npc{\G}{The Citadel Guards}
-
 The lower floor holds fifteen guards in each wing.
 
-\humansoldier
-
-\npc{\G\M}{\Glsentrytext{townmaster}'s Nine Sons}
+\humansoldier[\npc{\G}{The Citadel Guards}]
 
 The various sons of the townmaster will fight for no more than one round before surrendering, and promising that their father will pay handsomely.
 
-\humandiplomat
+\humandiplomat[\npc{\G\M}{\Glsentrytext{townmaster}'s Nine Sons}]
 
-\NPC{\M}{Jared, the Alchemist}{Caring}{Counts everything at every opportunity}\label{citadel_alchemist}
+\humanalchemist[\NPC{\M}{Jared, the Alchemist}{Caring}{Counts everything at every opportunity}]
 
-\humanalchemist
+\label{citadel_alchemist}
 
 \subsection{The Guard Station}\label{guardstation}
 The grounds are patrolled by a minimum of five guards at any point.
@@ -1007,7 +974,6 @@ As the characters enter the dungeon, they're separated and thrown in with thieve
 
 	\person{7}{0}{1}{{-3}{-2}{-4}}{0}{2}{Beast Ken 2, Crafts 1, Tactics 1}{Nothing}{}
 
-
 \subsection{The Lost Library}\label{sewers}\setcounter{list}{0}
 
 The old temple of Qualm\"{e} stretched deep underground, and soon after it was built, a library was commissioned by local alchemists.
@@ -1056,13 +1022,11 @@ The original function of this room's been long forgotten.  Currently various dog
 
 The dogs won't sound any alarm until they see the characters -- they're used to people moving about, and generally anticipate being fed when they hear footsteps.  They also don't panic when seeing the undead, as the undead have no interest in attacking them.
 
-\npc{\G\C}{6 Dogs}
-
 \Gls{patron} has gifted hobgoblin bands to make new tunnels, so the bandits can carve out their own little underground kingdom.  Once the hobgoblins die, they're raised from the dead by the brazier hanging in the old library (page \pageref{oldlibrary}).
 
 Each room holds $1D6+3$ undead hobgoblins.  Most also hold one of the sentient undead who were smuggled into the area.  The sentient ones will not attack first -- they will show restraint, stay behind the other dead, and in general interest themselves with plotting how to get the gate open permanently once \gls{patron} wishes it.
 
-\huntingdog
+\huntingdog[\npc{\G\C}{6 Dogs}]
 
 \mapentry{Dead Storage}
 
@@ -1074,15 +1038,12 @@ Anyone attempting to move through a hallway filled with these narrow tunnels mus
 
 \end{boxtext}
 
-\npc{\G\N\U}{Undead Hobgoblins}
-\undeadhobgoblin
+\undeadhobgoblin[\npc{\G\N\U}{Undead Hobgoblins}]
 
-\npc{\G\N\U}{Sentient Undead Hobgoblins}
-
-Remember that these undead hobgoblins look like any other - they shamble, their eyes are dead, and they want to kill.
+Remember that these undead hobgoblins look like any other -- they shamble, their eyes are dead, and they want to kill.
 However, they have a mind, and are quite prepared to use it to put people off-guard by playing dumb.
 
-\sentientundeadhobgoblin
+\sentientundeadhobgoblin[\npc{\G\N\U}{Sentient Undead Hobgoblins}]
 
 \mapentry{Magical Item Storage}
 
@@ -1215,9 +1176,7 @@ Outside the town's walls the tunnel ends in a farmhouse.  The thieves rarely use
 Here four of the thieves sit and play simple dice games to pass the time, or occasionally sleep in the foetid straw.
 These are not lost nobles from Whiteland, but opportunists that \gls{sewerking} has taken on board.
 
-\npc{\G}{Four Cutthroats}
-
-\humanthief
+\humanthief[\npc{\G}{Four Cutthroats}]
 
 \mapentry{The Old Temple to Qualm\"{e}}
 

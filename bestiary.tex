@@ -14,8 +14,6 @@ Later in the bestiary sit stranger creatures from other worlds, such as the nura
 
 For our first creature, let's have a proper look at the basilisk.
 
-\npc{\C}{Basilisk}
-
 \basilisk
 
 The title has a little symbol telling you that the Basilisk is an animal.
@@ -45,12 +43,11 @@ These are the creatures one might find on or close to the surface of the land.  
 The wilder regions of Fenestra still see herds of the primitive cow: the auroch.
 They have massive horns and tend to be more aggressive then the farm animals.
 
-\auroch
+\auroch[\npc{\C}{Auroch}]
 
 \paragraph{Ecology:} Across the wild planes stampede droves of wild cows, more primitive and larger than the cows we know today.  Muscular and tall, if ever they stampede nearby there is little to do except climb a tree or hope to run into a house before they arrive.
 
 Aurochs can travel in herds of twenty to over one hundred.  However, in recent years there have been fewer of them as they have been all but hunted to extinction outside Quennome.
-
 
 \begin{boxtext}
 
@@ -136,7 +133,7 @@ Looking up at the treetops, you find a great, black creature descending with eig
 
 The favoured mount of elves, griffins nest in treetops using large branches and leaves.  They hunt deer, badgers, aurochs and anything else they can get their claws into.  They are essentially a winged mammal with an avian face - often described as having the body of a large cat with the head and wings of an eagle, though in reality they are not composed of other creatures but are a thing in their own right.
 
-\griffin
+\griffin[\npc{\C}{Griffin}]
 
 \paragraph{Ecology:} Griffins live in areas of tall trees where they can safely build their nests.  They are excellent climbers, learning first to scurry along trees by digging their sharp claws in and then later to glide in order to swoop down on prey from above.  By the time a griffin has learnt to fly, it can have a wingspan of up to 15 feet.  Griffins like to nest at the edges of forests, allowing them to fly out and catch grazing creatures such as deer on the open planes.  Griffins will often hunt alone, but if a prey is spotted which is too large to catch  they will often hunt together.
 
@@ -170,7 +167,7 @@ Much like badgers they create long, winding Paths of underground homes.  Anyone 
 
 \paragraph{Ecology:} Wolves live everywhere except islands.  In the Winter, many die, and they become rarer, but in Summer they breed and run quickly.  While farmers know them as thieves, the majority of the time, wolves hunt wild animals, like boar or deer.
 
-\wolf
+\wolf[\npc{\C\G}{Wolves}]
 
 \paragraph{Encounters:} During warmer seasons, wolves never attack humans.  Encounters may involve seeing wolves running in the distance, but nothing more.  When food becomes leaner, they become braver and may try to steal a party's food supplies in the night.  During the depths of Winter, wolves can occasionally become hungry enough to attack people, but almost always when those people are alone and have food cooking.
 
@@ -417,7 +414,7 @@ Your standard dwarvish citizen is a gruff male who works with his hands.
 
 Dwarvish soldiers sport proud suits of plate armour, making them nearly impenetrable to normal weapons.
 
-\dwarvensoldier
+\dwarvensoldier[\npc{\M}{Dwarven Soldiers}]
 
 \paragraph{Tactics:} Dwarven  warriors typically adopt the Aggressive Stance and trust to their plate armour to keep them safe in battle.
 They hit hard and accurately, though not always terribly fast as their heavy axes weigh them down.
@@ -484,8 +481,8 @@ When fights break out, most dryads will take some elemental form, or turn into a
 They prefer to summon animals to their aid, or approach lone people, then enchant them to wade into the water where they cannot move so easily.
 
 \label{elf}
-\best[\F\M]{Elven Citizen}
-\elf
+\best[\F\M]{Elven Wanderer}
+\elf[\npc{\M\F}{Elf}]
 
 Elves pick up masses of skills over their long years and tend to view anyone who does not practice various different skills as a child in need of teaching or a dullard in need of ignoring.  While the Skills below are shown at level 1, most elves will master one every couple of centuries.
 
@@ -501,7 +498,7 @@ While elvish blades are sharp, they do not have the strength to damage people we
 
 Elven enchanters have hundreds of years to perfect not only their natural magics but also outside magic Paths -- often the Path of Song.
 
-\elvenenchanter
+\elvenenchanter[\npc{\M\F}{Elven Enchanter}]
 
 \paragraph{Tactics:} Enchanters can grasp at people's minds, confusing people or sending them to sleep with a TN of 13.
 They typically turn groups against each other, converting one side to their service through mental Domination before casting Confusion upon the rest.
@@ -514,7 +511,7 @@ Adventures containing gnolls will almost certainly be martial in nature.  They c
 
 \paragraph{Names:} Thoosh, Ethsh, Glua, Dl\'{i}sh.
 
-\gnollhunter
+\gnollhunter[\npc{\M\F}{Gnoll Hunter}]
 
 \paragraph{Encounters:} Gnoll encounters have to be viewed entirely in terms of the local territories.
 If the territory belongs to the gnolls, they will do as they please to the characters, but are unlikely to be preparing for a fight.
@@ -536,11 +533,11 @@ Women usually take their children out on hunting missions to train them from an 
 \end{boxtext}
 
 \label{gnoll_shaman}
-\best[\F\M]{Gnoll Shaman}
+\best{Gnoll Shaman}
 
 Gnoll shamans typically follow Laiqu\"{e} or Qualm\"{e}.  They are a rarity in any gnoll society but always accorded respect when they are present.  They are not permitted to enter war councils but are also immune to all challenges except from other shamans.
 
-\gnollshaman 
+\gnollshaman[\npc{\F\M}{Gnoll Shaman}]
 
 \begin{boxtext}
 
@@ -571,14 +568,14 @@ Many gnomes few have taken to thievery in human towns where they can dress as ch
 
 A majority of gnomes are farmers, often with a light interest in alchemy and academic literature in general.  Some adventurous (or simply poor) gnomes end up as thieves in large-scale cities.
 
-\gnome
+\gnome[\npc{\M\F}{Gnome}]
 
 \best[\M\F]{Gnomish Illusionist}\index{Illusionist}
 \label{gnomish_illusionist}
 
 Most communities of gnomes hold at least one specialised illusionist.  When not studying they farm, bore people with philosophical questions and smoke extraordinarily long pipes.  On occasion, some will specialise in the invocation sphere in order to hunt animals.
 
-\gnomishillusionist
+\gnomishillusionist[\npc{\M\F}{Gnomish Illusionist}]
 
 \paragraph{Tactics:} Illusion goes \emph{way} beyond casting illusions.
 If people expect an illusionist to be present, illusionists will make a human warrior look like a slightly different human warrior, who looks like an illusion.
@@ -612,14 +609,14 @@ At least half the humans in any given area are farmers.
 Most organised militia are comprised of ex farmers who expect to return to farms, either to their own after sufficient payment or to new farms in conquered territory.
 Humans may not have the greatest empathy with animals, but farmers certainly spend more time around inhuman animals than any other sentient race.
 
-\humantrader
+\humantrader[\npc{\M\F}{Human Trader}]
 
 \best[\M\F]{Human Priest}\label{human_priest}
 
 Human priests might follow any one of the gods.
 For simplicity's sake, a priest of V\'{e}r\"{e} is presented below.
 
-\humanpriest
+\humanpriest[\npc{\M\F}{Human Priest}]
 
 Often a priest will accompany bands of warriors, weather they are going to war or simply moving in to defend a village against a recent threat.
 Any such warriors accompanied by a priest will have a full allotment of Fate Points.
@@ -639,7 +636,7 @@ Traders, meanwhile, will often survive an encounter with bandits if they agree t
 
 \best[\M\F]{Bandits}
 
-\humansoldier
+\humansoldier[\npc{\M\F}{Bandits}]
 
 \vfill\null
 \end{multicols}
@@ -727,7 +724,7 @@ These stretched-out and all-too-human horses have large, sharp teeth which they 
 
 \paragraph{Ecology:} These giant slugs eat constantly - their corrosive slime can eat up whole fields or areas of arable land overnight.
 
-\nuraslug
+\nuraslug[\npc{\C\N}{Nura Slug}]
 
 \label{nura_spider}
 \best{Nura Spider}
@@ -767,7 +764,7 @@ They move together at the speed of lightning and fall upon farms and sometimes e
 Wolves are some of the few nura capable of waiting, if only for some hours.
 If encountered before that time, they stalk, and wait for their prey to become tired.
 
-\nurawolf
+\nurawolf[\npc{\C\N}{Nura Wolf}]
 
 \subsection{Nura Humanoids}
 
@@ -796,7 +793,7 @@ Their underground societies, in the Realm of Darkness and Fire,\footnote{See pag
 
 \label{goblin}
 \best[\F\M\N]{Goblin}
-\goblin
+\goblin[\npc{\F\M\N}{Goblin}]
 
 Goblins are twisted and stretched little versions of gnomes.
 They come in all shapes and shades, including green, long-eared, grey, fat, and skeletal.
@@ -819,24 +816,22 @@ They are well aware that they cannot run away from many creatures, so their best
 
 \end{boxtext}
 
-\subsubsection{Hobgoblins}\label{hobgoblin}
+\best{Hobgoblins}\label{hobgoblin}
 
 Hobgoblins are twisted versions of dwarves, grown as large as a human.
 They have overly long ape-like arms and sloping foreheads.
 They sprint over the land at an incredible rate, and when armies are raised, little can stand against them.
 Often their beards will turn stark white while their skin appears as mottled rocks.
  
-\best[\F\M\N]{Hobgoblin}
-
-\hobgoblin
+\hobgoblin[\npc{\F\M\N}{Hobgoblin}]
 
 \subsubsection{Deep Hobgoblins}\label{deep_hobgoblin}
 
 Hobgoblins deep underground fight, hunt for food, switch tribes, and fight some more.  They cannot make the complex equipment dwarves do, so they have to pick up weapons as they go.
 
-\best[\F\M\N]{Deep Hobgoblin}
+\best{Deep Hobgoblin}
 
-\deephobgoblin
+\deephobgoblin[\npc{\F\M\N}{Deep Hobgoblin}]
 
 \subsubsection{Deep Goblins}\label{deep_goblin}
 
@@ -846,7 +841,7 @@ Some even learn a little necromancy, and raise little armies of the dead.
 
 \best[\F\M\N]{Deep Goblin}
 
-\deepgoblin
+\deepgoblin[\npc{\F\M\N}{Deep Goblin}]
 
 \subsubsection{Goblin Nuramancer}\index{Nuramancer}
 Among the nura, none are very bright, but some rare goblins do learn to cast spells.
@@ -855,7 +850,7 @@ These creatures often specialize in Necromancy, and raise powerful armies of gho
 
 \best[\F\M\N]{Goblin Nuramancer}
 
-\goblinnuramancer
+\goblinnuramancer[\npc{\F\M\N}{Goblin Nuramancer}]
 
 \subsubsection{Undead Goblin}
 
@@ -865,7 +860,7 @@ A goblin soul is just as tasty as any other.
 
 \best[\F\M\N]{Undead Goblin}
 
-\undeadgoblin
+\undeadgoblin[\npc{\F\M\N}{Undead Goblin}]
 
 \label{ogre}
 \best[\F\M\N]{Ogre}
@@ -875,7 +870,7 @@ They become oversized mockeries of people, constantly changing weight and appear
 When they are well fed they grow incredibly obese and start sprouting hair in new places.
 When they starve, they eat away at their own fat, becoming wide-boned skeletal creatures with deep sunken eyes.
 
-\ogre
+\ogre[\npc{\F\M\N}{Ogre}]
 
 \begin{boxtext}
 
@@ -905,7 +900,7 @@ They can take any number of forms and have varied Traits -- the following are pr
 
 \label{ghoul}
 \best[\U]{Ghoul}
-\ghoul
+\ghoul[\npc{\U}{Ghoul}]
 
 Ghouls are the bread and butter of necromancers.
 When they first rise from the dead, they stumble clumsily, and chase after any living humanoid.
@@ -932,7 +927,7 @@ Since the undead are slow, they will generally attack when people are cornered, 
 
 Such creatures are often masterworks created by a necromancer as a personal body-guard or the lead warrior in an army.
 
-\ghast
+\ghast[\npc{\U\E}{Ghast}]
 
 \paragraph{Ecology:} They are fully sentient, but often too intent upon feeding on humanoid souls to do much except obsess over murder.
 Occasionally, one will escape and control its urges enough to find a secluded spot and simply try to exist.
@@ -944,7 +939,7 @@ Sentient undead hunt travellers.  They skulk for so long, watching the lights th
 \paragraph{Encounters:}  It start with a feeling of being watched, and no wanting to leave the campfire.  Then soon after, it usually leaves.  But adventurers too often become vulnerable, and that's what leaves the opening for the creature watching them.
 
 
-\best[\U]{Demilich}\label{demilich}
+\best[\U\E]{Demilich}\label{demilich}
 
 Any necromancer worth their salt eventually joins the dead, but never really dies.  Demiliches are the first stages of a necromancer who ascends to become a machine of pure power, gathering undead forces, powerful spells, and a formidable lair.
 
@@ -976,14 +971,10 @@ Their height is usually between six and ten feet tall.
 
 They are generally quite passive creatures, but have been known to become aggressive, especially when they find anything which is attempting to damage or change their landscape.
 
-\vfill\null\columnbreak
-
 \rockman
 
 \label{archmage}
 \best[\E]{Archmage}
-
-\archmage
 
 Appearing as nothing more than a brain in ectoplasmic gloop, these creatures are well known for their incredible magical abilities.
 They typically ignore anyone or anything around them until attacked, though they have been known to attack individuals within groups for reasons unknown.
@@ -997,6 +988,8 @@ An example set is given, where 6 MP is given up to make themselves into an 18 MP
 This mana stone can also cast a Fireball, dealing $2D6+2$ Damage in a 6 square diameter.
 This leaves 15 MP in one store and a further 10 MP in their natural Mana point pool.
 When threatened, they typically use this natural mana to blow targets apart with invocation spells.
+
+\archmage
 
 \label{lavaman}
 \best[\E]{Lavaman}

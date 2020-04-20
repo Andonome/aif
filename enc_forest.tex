@@ -29,7 +29,6 @@ A chitincrawler pulls up the earth by a tree.  Shrewd characters might spot that
 
 Wits + Crafts, TN 9, to understand that the tree leads to an underground home.
 
-\npc{\C}{Chitincrawler}
 \chitincrawler
 
 \keras
@@ -42,8 +41,6 @@ Play this at the same time as the encounter below.
 The party are assaulted by weather.
 Exactly how this plays out depends upon what type of season it is.
 See Appendix \ref{astronomy} for more details.
-
-\vfill\null
 
 \begin{rollchart}
 
@@ -64,9 +61,7 @@ Aaron, carrying various flowers, and over a hundred eggs, started the day late, 
 
 Combine this encounter with the one below -- the characters will most likely have the added problem of protecting the traders while they have problems in the woods.
 
-\npc{\G\M}{Aaron, Jason, and Steve}
-
-\humantrader
+\humantrader[\npc{\G\M}{Aaron, Jason, and Steve}]
 
 \sqpart{Forest}{The Elven Party}{The party are told to dance, and dance they must}
 
@@ -94,21 +89,13 @@ The characters can roll Wits + Vigilance, TN 8 to see how quickly they find an e
 
 Once the game is up, all the elves come out of hiding and laugh.  They dance, and sing, and feast.  However, the elves get a little too carried away, and eventually enchant the party to continue dancing all night.  The elven illusions make sure that the songs echo long past when the singers have gone for the night, and the characters just continue dancing.
  
-\NPC{\F}{Aiw\"{e}}{Jester}{Looks upwards}
-
-\elf
+\elf[\NPC{\F}{Aiw\"{e}}{Jester}{Looks upwards}]
 
 Aiw\"{e} loves a laugh but never learnt when she's gone too far, and will fashion leaf-crowns for dancing characters, adorning them while they dance.
 
-\columnbreak
+\elf[\NPC{\M}{Taurestel}{Pedagogue}{``For example\ldots''}]
 
-\NPC{\M}{Taurestel}{Pedagogue}{``For example\ldots''}
-
-\elf
-
-\NPC{\F}{Erende}{Curt}{Raises Eyebrow}
-
-\elvenenchanter
+\elvenenchanter[\NPC{\F}{Erende}{Curt}{Raises Eyebrow}]
 
 Ask for a Wits + Academics roll, TN 12.  Each time the party fail, they dance for another scene and lose 3 Fatigue points.  They dance until they pass out or until someone succeeds in the roll.
 
@@ -144,9 +131,7 @@ There are twenty in total around the area, so the characters have little chance 
 
 The gnolls have caught four deer in a trap, eaten one, and cured the meat from the other three.  They are willing to trade.
 
-\npc{\G}{Gnolls}
-
-\gnollhunter
+\gnollhunter[\npc{\G}{Gnolls}]
 
 \sqpart{Forest}{\N The Mouth of Hell}{A thousand woodspies have gathered around a hole which spits goblins}
 
@@ -177,18 +162,14 @@ The two stand in a tasty equilibrium, and the best the characters can do is flee
 
 The woodspies are fat and unconcerned with chasing the characters far.  Once the party flee, only five give chase.
 
-\npc{\G\C}{1,000 Woodspies}
-
-\woodspy
+\woodspy[\npc{\G\C}{1,000 Woodspies}]
 
 Currently the pit is being used by the nura as a punishment -- they send criminals into the whole to scope out what's happening and find out if it's safe yet.
 
 If the local nura rating ever reaches 7, the nura will raise an army big enough to break out, and drag any woodspies in the area below to become nura themselves.
 Raise the local Nura Ratking by 1.
 
-\npc{\G\N}{Nura Woodspies}
-
-\nurawoodspy
+\nurawoodspy[\npc{\G\N}{Nura Woodspies}]
 
 \startcontents[Villages]
 \sidequest{\Glsentrytext{spiderqueen}'s Song}
@@ -239,9 +220,7 @@ The PCs roll Wits + Vigilance to understand their environment.
 
 \end{itemize}
 
-\npc{\C}{Chitincrawlers}
-
-\chitincrawler
+\chitincrawler[\npc{\C\G}{Chitincrawlers}]
 
 Once this encounter ends, move it to the Villages.
 
@@ -269,6 +248,12 @@ This encounter moves back to the Forest once finished.
 
 \sqpart{Villages}{Quiet Little Hamlet}{An entire hamlet has been eaten by chitincrawlers}
 
+\begin{figure*}[t]
+
+	\includesvg{images/Dyson_Logos/ruined_village.svg}\label{ruined_village_map}\label{ruined_village_map}
+
+\end{figure*}
+
 Villages disappear sometimes, especially when they lie close to the great forest.  But this is a little different.  Having \gls{spiderqueen} launch the invasion means that the chitincrawlers haven't left any obvious tracks.  There are no bodies outside, no half-eaten sheep.
 
 \begin{boxtext}
@@ -293,17 +278,7 @@ However, inside each of the four farmhouses, rooms are filled wall-to-wall with 
 
 Move this encounter to the Forest once it's done.
 
-\vfill\null\columnbreak
-
-\begin{figure*}[t]
-
-	\includesvg{images/Dyson_Logos/ruined_village.svg}\label{ruined_village_map}\label{ruined_village_map}
-
-\end{figure*}
-
-\npc{\C\G}{Chitincrawlers}
-
-\chitincrawler
+\chitincrawler[\npc{\C\G}{Chitincrawlers}]
 
 \sqpart{Forest}{The Lone Ranger}{A member of the Night Guard stalks \glsentrytext{spiderqueen}}
 
@@ -328,9 +303,7 @@ There are thirty chitincrawlers in total.
 
 At the end of this encounter, move it back to The Villages.
 
-\NPC{\M}{Gregory of the Night Guard}{Suspicious}{Purses lips}
-
-\humansoldier
+\humansoldier[\NPC{\M}{Gregory of the Night Guard}{Suspicious}{Purses lips}]
 
 \sqpart{Forest}{The Cunning Plan}{Three gnomes have an elaborate plan to catch \glsentrytext{spiderqueen}}
 
@@ -393,24 +366,17 @@ If the characters agree to squeeze through the tunnel, dig the very last few fee
 
 Once out, they can shoot at \gls{spiderqueen}, climb the tree, or otherwise attack her.  Two of the chitincrawlers will arrive to attack each round, but once \gls{spiderqueen} dies, any who have not yet come forward do not attack.
 
-\NPC{\M}{Griggle}{Proud}{Fondles jewels}
+\gnomishillusionist[\NPC{\M}{Griggle}{Proud}{Fondles jewels}]
 
-\gnomishillusionist
+\gnome[\NPC{\F}{Holly}{Inquisitive}{Picks nose}]
 
-\NPC{\F}{Holly}{Inquisitive}{Picks nose}
-
-\gnome
-
-\NPC{\M}{Greg}{Creepy}{Scratches Adams apple}
-
-\gnome
+\gnome[\NPC{\M}{Greg}{Creepy}{Scratches Adams apple}]
 
 \spiderqueen
 
 \Gls{spiderqueen} has spent 4 MP to gain a spider-like body, with +3 Strength and DR 3.
 
-\npc{\C}{Chitincrawlers}
-\chitincrawler
+\chitincrawler[\npc{\C}{Chitincrawlers}]
 
 \paragraph{Success} means \gls{spiderqueen} has been killed or quelled.
 If she's damaged and her chitinous children pushed back, she flees to seek new adventures elsewhere, and without killing random villagers.
@@ -443,9 +409,7 @@ If they join the bandits, the elves will have their vengeance.
 Ten of \gls{banditking}'s men have found a wandering elven prince and intent to take everything he has.
 The prince does have some magical abilities, but not enough to take on all five bandits.
 
-\npc{\G}{Ten Bandits}
-
-\humansoldier
+\humansoldier[\npc{\G}{Ten Bandits}]
 
 \elfprince
 
@@ -457,24 +421,18 @@ Play this encounter at the same time as the one below.  The prince's friends jou
 
 The elves will not approach at first, but attempt to sneak and observe the party for a while.
 
-\NPC{\M}{Sindon}{Lively}{Strokes hair}
-
-\elf
+\elf[\NPC{\M}{Sindon}{Lively}{Strokes hair}]
 
 Sindon has regularly talks with the local bandits, they have no idea how much he resents them.
 When the time is right he hopes to annihilate them, but he's not willing to share their location unless he can share the glory of the attack.
 
-\NPC{\F}{Vanwe}{Dour}{Wipes eyes}
-\elf
+\elf[\NPC{\F}{Vanwe}{Dour}{Wipes eyes}]
 
 Vanwe was in love the \gls{elfprince}, and plans to either aid the characters well, or \emph{really} hurt them, depending upon their previous actions.
 
-
-\NPC{\M}{Neuror}{Jovial}{Spits}\label{neuror}
-
 Neuror is a fierce debater, and a mediocre historian.  Any talk of \gls{lostcity} will pull a very long rant from him about how the entire thing was the fault of humans for messing with dark magics, though he doesn't know any more details than that.
 
-\elf
+\elf[\NPC{\M}{Neuror}{Jovial}{Spits}\label{neuror}]
 
 \end{multicols}
 
@@ -501,9 +459,7 @@ Around the central area wander all the undead \gls{necromancer} has collected (d
 
 A hundred broken arrow parts lie littered around the area, as \gls{necromancer} practices with his bow daily.
 
-\npc{\U}{Ghouls}
-
-\ghoul
+\ghoul[\npc{\U\G}{Ghouls}]
 
 \mapentry{The Hallway}
 
@@ -544,11 +500,9 @@ He's starving, and petrified, as every day all he can hear are the shambling dea
 
 Picking the lock requires an Intelligence + Larceny roll, TN 7.
 
-\NPC{\M}{Laith}{Pessimistic}{Mouthbreather}
-
 Laith can join the characters if given a weapon, but he won't be terribly effective.
 
-\humanfarmer
+\humanfarmer[\NPC{\M}{Laith}{Pessimistic}{Mouthbreather}]
 
 \mapentry{The Watchtower}
 
@@ -572,11 +526,9 @@ After that, five ghouls arrive to tear apart anyone there, then ten, each round.
 \Gls{banditking} was the son of a nobleman in Whiteland, but his family have been killed, so he became an outlaw.
 Last year, he and his men ambushed some guards working for \gls{banditking} and took magical rings from their corpses.
 
-\npc{\G}{15 Bandits}
-
 The bandits are partly made from young Whiteland nobles, orphans old enough to hold a sword, and a few dispossessed villagers who lost their villages to nura raids.
 
-\humansoldier
+\humansoldier[\npc{\G}{15 Bandits}]
 
 \subsection{\Glsentrytext{lostcity}}\label{lostcity}\setcounter{list}{0}
 
@@ -613,11 +565,11 @@ This is why it also has all the woodspies; in total around 20 sit in these trees
 If anyone enters to grab the best fruits, they will see the trees around them mutate, as camouflaged woodspies slowly move to surround them.
 Nearby, a pile of dead deer bones is loosely hidden under some leaves.\footnote{Remember, woodspies are rather intelligent animals, and know not to leave corpses lying around a trap.}
 
-\npc{\G\C}{30 Woodspies}
+
 
 The party are unlikely to be in any state to defeat these creatures.  Three arrive per round, so the best anyone can do is flee.  If the woodspies are not harmed, three will venture outside of the tree cover to attack the party, but will quickly retreat at the first sign of real danger.
 
-\woodspy
+\woodspy[\npc{\G\C}{30 Woodspies}]
 
 \mapentry{The Mana Lake}
 
@@ -712,9 +664,7 @@ Of course, with the characters' entrance, the dead rise and attack.  It's been a
 Once the characters have entered the hallway the trouble starts.  Five ghouls rest at the start of the hallway, and another five later on.  A further five at the other end of the hallway will arrive three rounds later.
 The entire situation makes for the perfect ambush, though the dead have not planned for it.
 
-\npc{\G\U}{15 Ghouls}
-
-\ghoul
+\ghoul[\npc{\G\U}{15 Ghouls}]
 
 \mapentry{Equipment Room}
 
@@ -925,13 +875,9 @@ A portal to the nura lands below sends creatures up, and the undead Golden Pries
 
 The area around the tower contains piles of rock which labourers have collected from the surrounding ruins.  The only door to the tower lies in the outhouse.
 
-\npc{\G\M}{3 Masons}
+\humanfarmer[\npc{\G\M}{3 Masons}]
 
-\humanfarmer
-
-\npc{\G\M}{6 Woodspy Bandits}
-
-\humansoldier
+\humansoldier[\npc{\G\M}{6 Woodspy Bandits}]
 
 \mapentry{Outhouse}
 
@@ -962,6 +908,7 @@ The air down in the tomb has become so dry and foetid, that anyone spending time
 Of course, this can be offset with sufficient rest, but prolonged fighting can be difficult.
 
 \mapentry{The Watcher}
+
 The tomb is guarded by a knight who stands in a side-cupboard, sworn to guard the undead priests.
 He has spent a long time down here, and his body so seized up that he cannot move.
 Sufficient time, however, will allow him to regain the use of his limbs, and open the door.
@@ -996,9 +943,7 @@ If the characters enter with the Torpor spell cast, or rings of asphyxiation,\fo
 
 A long time ago, onlookers came here to gawk at the splendour of a glorious afterlife.  The priests of Qualm\"{e} who gained the highest honours of the temple would remain here to guard it forever.  Each is decked in golden jewellery.
 
-\npc{\G\U}{3 Demiliches}
-
-\demilich
+\demilich[\npc{\G\U}{3 Demiliches}]
 
 The characters cannot tell the difference between the animate demiliches and the corpses unless they note the wounds well.
 
@@ -1023,9 +968,7 @@ See page \pageref{r_hunter}.}
 
 The room also contains 14 undead hobgoblins, standing ready to kill any nura who come up from the tunnel, or just anyone who enters.
 
-\npc{\G\N\U}{14 Undead Hobgoblins}
-
-\undeadhobgoblin
+\undeadhobgoblin[\npc{\G\N\U}{14 Undead Hobgoblins}]
 
 \mapentry{The Abyss}
 
