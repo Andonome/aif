@@ -1,5 +1,7 @@
 \documentclass[a4paper,openany]{book}
 \usepackage{glossaries}
+\usepackage{glossary-mcols}
+
 \input{glossary.tex}
 \input{config/preamble.tex}
 \input{config/monsters.tex}
@@ -68,7 +70,9 @@
 
 \input{appendix.tex}
 
-\printglossary
+\pagebreak[1]
+
+\printglossary[style=mcolindex]
 
 \printindex
 
