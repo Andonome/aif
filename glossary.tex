@@ -116,16 +116,16 @@
 \NPC{\M\U}{\Glsentrytext{necromancer}, High Priest of Qualm\"{e}}{Arrogant}{Slack jaw}
 
 \person{1}% STRENGTH
-{1}% DEXTERITY
+{2}% DEXTERITY
 {0}% SPEED
 {{2}% INTELLIGENCE
-{-2}% WITS
+{1}% WITS
 {-4}}% CHARISMA
 {2}% DR
 {1}% COMBAT
 {Projectiles 3, Academics 2, Beast Ken 1, Crafts (fletchery) 2, Deceit 1, \\ & Performance 1, Survival 1, Vigilance 3
 \knacks{\perfectsneakattack, \snapshot, \mightydraw}
-\Path{Devotion (Qualm\"{e})}{Aldaron 2, Fate 2, Metamagic 3, Necromancy 5}}%SKILLS
+\Path{Devotion (Qualm\"{e})}{Aldaron 3, Fate 2, Metamagic 3, Necromancy 5}}%SKILLS
 {Hunting Bow, dagger}%EQUIPMENT
 {\mana{6}}
 }
@@ -141,7 +141,18 @@
 \newcommand{\forestpriest}{
 \NPC{\M}{\Glsentrytext{forestpriest}}{Precise}{Looks down}
 
-\person{-1}{2}{1}{{2}{3}{2}}{0}{2}{Academics 2, Beast Ken 3, Crafts 1, Deceit 2, Stealth 2, Vigilance 1\Path{Blood}{Aldaron 2, Fate 3, Polymorph 4}}{\rapier}{\mana{4}}
+\person{-1}% STRENGTH
+	{2}% DEXTERITY
+	{1}% SPEED
+	{{2}% INTELLIGENCE
+	{3}% WITS
+	{2}}% CHARISMA
+	{0}% DR
+	{1}% COMBAT
+	{Academics 2, Beast Ken 3, Crafts 1, Deceit 2, Stealth 2, Vigilance 1
+	\Path{Blood}{Aldaron 2, Fate 3, Polymorph 4}}% SKILLS
+	{\quarterstaff, dagger}% EQUIPMENT
+	{\mana{4}}
 }
 
 \newglossaryentry{forestpriest}{
@@ -165,7 +176,7 @@
 \newcommand{\banditking}{
 \NPC{\M}{\glsentrytext{banditking}}{Approachable}{Drums fingers}
 
-\person{2}{2}{0}{{1}{-1}{2}}{0}{3}{Academics 1, Empathy 1, Deceit 3, Survival 3, Tactics 2}{\longsword 5gp wrapped in cotton wool, knife}{}
+\person{2}{2}{0}{{1}{-1}{2}}{0}{3}{Academics 1, Empathy 1, Deceit 3, Survival 3, Tactics 2}{\longsword, 5gp wrapped in cotton wool, knife}{}
 }
 
 \newglossaryentry{banditking}{
