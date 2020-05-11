@@ -2,7 +2,6 @@
 
 \makeglossaries
 
-
 \newcommand{\spiderqueen}{
 \NPC{\F}{\Glsentrytext{spiderqueen}}{Delicate}{Looks upwards}\label{spiderqueen}
 
@@ -41,9 +40,8 @@
 	}
 
 \newcommand{\beardedalemaster}{
-	\NPC{\F}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}
 
-\humandiplomat
+\humandiplomat[\NPC{\F}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}]
 }
 
 \newglossaryentry{beardedalemaster}{
@@ -139,7 +137,7 @@
 \newcommand{\forestpriest}{
 \NPC{\M}{\Glsentrytext{forestpriest}}{Precise}{Looks down}
 
-\person{-1}% STRENGTH
+\person{0}% STRENGTH
 	{2}% DEXTERITY
 	{1}% SPEED
 	{{2}% INTELLIGENCE
