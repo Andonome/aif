@@ -1,4 +1,4 @@
-| [Download](https://gitlab.com/bindrpg/aif/pipelines) |
+| [Download][download]|
 
 # Adventures in Fenestra
 
@@ -30,3 +30,5 @@ You can slot these into an existing campaign if you're low on ideas, or use them
 A few Side Quests reference similar events or share histories, creating a semi-coherent, but eclectic narrative.
 
 ![Nura Cat](images/Unknown/wizard_and_cat.jpg)
+
+[download]: https://gitlab.com/bindrpg/aif/uploads/b9d4e7a6614dceca307dce5056337137/Adventures_in_Fenestra.pdf
