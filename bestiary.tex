@@ -17,8 +17,8 @@ For our first creature, let's have a proper look at the basilisk.
 \basilisk
 
 The title has a little symbol telling you that the Basilisk is an animal.
-Outside the bestiary, these things can provide a creature overview, by showing you if a creature is  nura (\N), or undead (\U).
-Groups always start with \G, while sentient individuals are marked either male (\M), or female (\F).
+Outside the bestiary, these things can provide a creature overview, by showing you if a creature is  nura (\N), or undead (\D).
+Groups always start with \T, while sentient individuals are marked either male (\M), or female (\F).
 
 The section at the bottom is the Derived Attributes -- the final numbers which help you run the game with lightning speed.
 
@@ -43,7 +43,7 @@ These are the creatures one might find on or close to the surface of the land.  
 The wilder regions of Fenestra still see herds of the primitive cow: the auroch.
 They have massive horns and tend to be more aggressive then the farm animals.
 
-\auroch[\npc{\C}{Auroch}]
+\auroch[\npc{\A}{Auroch}]
 
 \paragraph{Ecology:} Across the wild planes stampede droves of wild cows, more primitive and larger than the cows we know today.  Muscular and tall, if ever they stampede nearby there is little to do except climb a tree or hope to run into a house before they arrive.
 
@@ -133,7 +133,7 @@ Looking up at the treetops, you find a great, black creature descending with eig
 
 The favoured mount of elves, griffins nest in treetops using large branches and leaves.  They hunt deer, badgers, aurochs and anything else they can get their claws into.  They are essentially a winged mammal with an avian face - often described as having the body of a large cat with the head and wings of an eagle, though in reality they are not composed of other creatures but are a thing in their own right.
 
-\griffin[\npc{\C}{Griffin}]
+\griffin[\npc{\A}{Griffin}]
 
 \paragraph{Ecology:} Griffins live in areas of tall trees where they can safely build their nests.  They are excellent climbers, learning first to scurry along trees by digging their sharp claws in and then later to glide in order to swoop down on prey from above.  By the time a griffin has learnt to fly, it can have a wingspan of up to 15 feet.  Griffins like to nest at the edges of forests, allowing them to fly out and catch grazing creatures such as deer on the open planes.  Griffins will often hunt alone, but if a prey is spotted which is too large to catch  they will often hunt together.
 
@@ -167,7 +167,7 @@ Much like badgers they create long, winding Paths of underground homes.  Anyone 
 
 \paragraph{Ecology:} Wolves live everywhere except islands.  In the Winter, many die, and they become rarer, but in Summer they breed and run quickly.  While farmers know them as thieves, the majority of the time, wolves hunt wild animals, like boar or deer.
 
-\wolf[\npc{\C\G}{Wolves}]
+\wolf[\npc{\A\T}{Wolves}]
 
 \paragraph{Encounters:} During warmer seasons, wolves never attack humans.  Encounters may involve seeing wolves running in the distance, but nothing more.  When food becomes leaner, they become braver and may try to steal a party's food supplies in the night.  During the depths of Winter, wolves can occasionally become hungry enough to attack people, but almost always when those people are alone and have food cooking.
 
@@ -724,7 +724,7 @@ These stretched-out and all-too-human horses have large, sharp teeth which they 
 
 \paragraph{Ecology:} These giant slugs eat constantly - their corrosive slime can eat up whole fields or areas of arable land overnight.
 
-\nuraslug[\npc{\C\N}{Nura Slug}]
+\nuraslug[\npc{\A\N}{Nura Slug}]
 
 \label{nura_spider}
 \best{Nura Spider}
@@ -764,7 +764,7 @@ They move together at the speed of lightning and fall upon farms and sometimes e
 Wolves are some of the few nura capable of waiting, if only for some hours.
 If encountered before that time, they stalk, and wait for their prey to become tired.
 
-\nurawolf[\npc{\C\N}{Nura Wolf}]
+\nurawolf[\npc{\A\N}{Nura Wolf}]
 
 \subsection{Nura Humanoids}
 
@@ -899,8 +899,8 @@ They exist purely as a result of necromantic spells.
 They can take any number of forms and have varied Traits -- the following are presented just quick reference.
 
 \label{ghoul}
-\best[\U]{Ghoul}
-\ghoul[\npc{\U}{Ghoul}]
+\best[\D]{Ghoul}
+\ghoul[\npc{\D}{Ghoul}]
 
 Ghouls are the bread and butter of necromancers.
 When they first rise from the dead, they stumble clumsily, and chase after any living humanoid.
@@ -923,11 +923,11 @@ Since the undead are slow, they will generally attack when people are cornered, 
 
 \label{ghast}
 
-\best[\U]{Ghast}
+\best[\D]{Ghast}
 
 Such creatures are often masterworks created by a necromancer as a personal body-guard or the lead warrior in an army.
 
-\ghast[\npc{\U\E}{Ghast}]
+\ghast[\npc{\D\E}{Ghast}]
 
 \paragraph{Ecology:} They are fully sentient, but often too intent upon feeding on humanoid souls to do much except obsess over murder.
 Occasionally, one will escape and control its urges enough to find a secluded spot and simply try to exist.
@@ -938,7 +938,7 @@ Sentient undead hunt travellers.  They skulk for so long, watching the lights th
 
 \paragraph{Encounters:}  It start with a feeling of being watched, and no wanting to leave the campfire.  Then soon after, it usually leaves.  But adventurers too often become vulnerable, and that's what leaves the opening for the creature watching them.
 
-\best[\U\E]{Demilich}\label{demilich}
+\best[\D\E]{Demilich}\label{demilich}
 
 Any necromancer worth their salt eventually joins the dead, but never really dies.  Demiliches are the first stages of a necromancer who ascends to become a machine of pure power, gathering undead forces, powerful spells, and a formidable lair.
 
