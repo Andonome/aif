@@ -2,7 +2,7 @@
 
 # Adventures in Fenestra
 
-This is a campaign setting for the BIND tabletop RPG.
+This is a campaign setting for the [BIND] tabletop RPG.
 
 ## Games Master Resources
 
@@ -31,4 +31,5 @@ A few Side Quests reference similar events or share histories, creating a semi-c
 
 ![Nura Cat](images/Unknown/wizard_and_cat.jpg)
 
-[download]: https://gitlab.com/bindrpg/aif/uploads/b9d4e7a6614dceca307dce5056337137/Adventures_in_Fenestra.pdf
+[download]: https://gitlab.com/bindrpg/aif/-/jobs/658923970/artifacts/download
+[BIND]: https://gitlab.com/bindrpg/core/-/jobs/648535695/artifacts/download?file_type=archive
