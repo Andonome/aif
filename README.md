@@ -6,10 +6,10 @@ This is a campaign setting for the [BIND] tabletop RPG.
 
 ## Games Master Resources
 
-- Magical groves, magical wells, magical items, and magical songs.
 - Random encounters, random starting-backgrounds for PCs, and other random things.
 - One bestiary, with all the creatures of Fenestra.
 - Details on the nura - the twisted versions of men, gnomes and dwarves who emerge from underground and consume everything in the area.
+- Magical groves, magical wells, magical items, and magical songs.
 
 ## Map of the Land
 
@@ -20,9 +20,9 @@ This is a campaign setting for the [BIND] tabletop RPG.
 ## Side Quests
 
 Side Quests are a mechanic for presenting open-world adventures.
-These storylines are cut up into small encounters, and wherever the players go, they are confronted by the next part of the story.
+These storylines are cut up into small encounters, and wherever the players go, they are confronted by the next part of a story.
 
-Unlike traditional adventures, Side Quests always happen *to* the players - they have no impetus to go anywhere.
+Unlike traditional adventures, Side Quests always happen *to* the players, so players have no impetus to go anywhere.
 Instead, the next part of the story waits for them to arrive, and if they stay put then a different Side Quest rears its head.
 
 A dozen Side Quests are presented for three areas: forest, villages, and town.
