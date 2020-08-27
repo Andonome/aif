@@ -1,53 +1,35 @@
-These config files make the BIND RPG books look and act the way they do.
+| [Download][download]|
 
-# Usage
+# Adventures in Fenestra
 
-To make a book, put this config folder into the same directory.
+This is a campaign setting for the [BIND] tabletop RPG.
 
-> git subtree add -P config git@gitlab.com:bindrpg/config.git master
+## Games Master Resources
 
-Then copy main.tex into your main folder and make a symbolic link to the `.gitignore` file.
+- Random encounters, random starting-backgrounds for PCs, and other random things.
+- One bestiary, with all the creatures of Fenestra.
+- Details on the nura - the twisted versions of men, gnomes and dwarves who emerge from underground and consume everything in the area.
+- Magical groves, magical wells, magical items, and magical songs.
 
-> cp config/main.tex .
+## Map of the Land
 
-> ln -s config/.gitignore .
+- Details on Fenestra, the land of magical portals.
+- Ethereal lands beyond, where players can get trapped and find strange items.
+- Bestiary, for all your monstrous needs.
 
-Edit 'main.tex', and input your tex files by writing `\include{my_file.tex}.
+## Side Quests
 
-## Creatures
+Side Quests are a mechanic for presenting open-world adventures.
+These storylines are cut up into small encounters, and wherever the players go, they are confronted by the next part of a story.
 
-You can include pseudo-randomo creatures in your adventure by summoning the names from monsters.tex.  For example, to place a random elf in your game, just write `\elf`, and an elf will be magically summoned unto your adventure.   You can give the character a title and name by writing '\npc{symbol}{name}'.  For example:
+Unlike traditional adventures, Side Quests always happen *to* the players, so players have no impetus to go anywhere.
+Instead, the next part of the story waits for them to arrive, and if they stay put then a different Side Quest rears its head.
 
-```
+A dozen Side Quests are presented for three areas: forest, villages, and town.
+You can slot these into an existing campaign if you're low on ideas, or use them as a miniature campaign in their own right.
+A few Side Quests reference similar events or share histories, creating a semi-coherent, but eclectic narrative.
 
-\npc{\M}{Rincewind}
+![Nura Cat](images/Unknown/wizard_and_cat.jpg)
 
-\humanalchemist
-
-```
-
-This would make a heading called **Rincewind** in bold with a male symbol, and provide pseudo-random alchemist-appropriate stats underneath.
-
-| Syntax | Symbol |
-|:---:|:----:|
-| \\M | Male |
-| \\F | Female |
-| \\G | Group |
-| \\U | Undead |
-| \\N | Nura |
-
-For a complete list of all the creatures and characters which can be used, see the 'monsters.tex' file.
-For more details on the syntax, have a look at examples in *Adventures in Fenestra*, or read the git's wiki.
-
-# TeXnical Details
-
-This thing's handled as a subtree in the other documments, so changing it will change all BIND books.
-
-Personally, I keep it in a directory by the others.  This allows you to do:
-
-> git subtree -P config pull ../config master
-
-The configs also have one branch per repo, so when writing Adventures in Fenestra ('aif'), you can do a push to just that branch:
-
-> git subtree -P config push ../config aif
-
+[download]: https://gitlab.com/bindrpg/aif/-/jobs/658923970/artifacts/download
+[BIND]: https://gitlab.com/bindrpg/core/-/jobs/648535695/artifacts/download?file_type=archive

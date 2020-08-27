@@ -2,19 +2,79 @@
 \usepackage{glossaries}
 \usepackage{glossary-mcols}
 
+\input{glossary.tex}
 \input{config/preamble.tex}
 \input{config/monsters.tex}
 
 \settoggle{verbose}{true}
 
 \begin{document}
+\pagenumbering{gobble}
 
-%\pagenumbering{roman}
+\begin{titlepage}
+	\centering
+	\vspace{2cm}
+	{\scshape\Huge\bfseries Adventures in Fenestra\par}
+	\vspace{2cm}
+	\includegraphics[width=0.6\textwidth]{images/Unknown/wizard_and_cat.jpg}\par\vspace{1cm}
+	{\Large A World of Portals\par}
+	\vspace{1.5cm}
+	{\large Last edited \today\par}
+
+\end{titlepage}
 
 \tableofcontents
 
 \pagebreak
 
+\mainmatter
+
+\input{introduction.tex}
+
+\part{Map of the Land}
+
+\input{fenestra.tex}
+
+\input{nura.tex}
+
+\input{ether.tex}
+
+\part{Games Master Resources}
+
+\input{bestiary.tex}
+
+\input{resources.tex}
+
+\part{Side Quests}
+
+\input{enc_intro.tex}
+
+\startcontents[Town]
+\startcontents[Villages]
+\startcontents[Forest]
+\stopcontents[Town]
+\stopcontents[Villages]
+\stopcontents[Forest]
+
+\input{enc_town.tex}
+
+\input{enc_villages.tex}
+
+\input{enc_forest.tex}
+
+\appendix
+
+\appendixpage
+
+\addappheadtotoc
+
+\input{appendix.tex}
+
+\pagebreak[1]
+
+\printglossary[style=mcolindex]
+
+\printindex
 
 \end{document}
 

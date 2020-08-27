@@ -1,0 +1,365 @@
+\makeglossaries
+
+\makeglossaries
+
+\newcommand{\spiderqueen}{
+\NPC{\F}{\Glsentrytext{spiderqueen}}{Delicate}{Looks upwards}{Experience}\label{spiderqueen}
+
+\person{0}% STRENGTH
+	{3}% DEXTERITY
+	{2}% SPEED
+	{{2}% INTELLIGENCE
+	{3}% WITS
+	{-1}}% CHARISMA
+	{3}% DR
+	{1}% COMBAT
+	{Beast Ken 3, Deceit 2, Stealth 3, Survival 3, Tactics 2\Path{Blood \& Song}{Aldaron 3, Metamagic 4, Polymorph 4}}% SKILLS
+	{None}% EQUIPMENT
+	{\mana{6}\addtocounter{strb}{3}\lockedmana{5}\addtocounter{xpbonus}{4}}
+}
+
+\newglossaryentry{spiderqueen}{
+	name={The Spider Queen},
+	text={the Spider Queen},
+	description={is an old elf who collects pet chitincrawlers.  She has also started to shapeshift to look like them}
+	}
+
+\newcommand{\traitor}{
+\NPC{\M}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{Acquisition}
+
+\person{2}{1}{1}{{0}{0}{1}}{0}{2}{Athletics 2, Beast Ken 1, Deceit 1, Larceny 1, Survival 2}{\longsword, \partialchain}{}
+}
+
+\newglossaryentry{traitor}{
+	name={Lieutenant Darren},
+	text={Lieutenant Darren},
+	first={Lieutenant Darren of the Night Guard},
+	description={is an active and ambitious member of the Night Guard, currently working with \glsentrytext{townmaster} in secret, and taking information to the Woodspy Bandits},
+	}
+
+\newcommand{\alemaster}{
+	\humandiplomat[\NPC{\M}{Anatole}{Snippy}{Tongue-in-cheek}{Alass\"e}]
+}
+\newglossaryentry{alemaster}{
+	name={Anatole},
+	text={Anatole},
+	description={is the highest ranking member of the temple of Alass\"{e}, who are synonymous with the Ale Guild in this region},
+	first={Anatole, Master of the Ale Guild}
+	}
+
+\newcommand{\beardedalemaster}{
+
+\humandiplomat[\NPC{\F}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Alass\"e}]
+}
+
+\newglossaryentry{beardedalemaster}{
+	name={Susan},
+	text={Susan},
+	description={is the leader of the Ale Guild in the Bearded Mountains, and became rich selling watered-down dwarvish ale},
+	first={Guildmistress Susan}
+	}
+
+\newcommand{\woodspyleader}{
+\NPC{\M}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}{Ohta}\label{woodspyleader}
+
+\person{4}% STRENGTH
+{2}% DEXTERITY
+{-1}% SPEED
+{{0}% INTELLIGENCE
+{1}% WITS
+{1}}% CHARISMA
+{0}% DR
+{2}% COMBAT
+{Academics 1, Deceit 2, Empathy 1, Survival 1}% SKILLS
+{\longsword, \shield, \completechain, dagger}% EQUIPMENT
+{}
+}
+
+\newglossaryentry{woodspyleader}{
+	name={Brook},
+	text={Brook},
+	description={is the leader of the Woodspy Bandits, and meets with \glsentrytext{traitor} on a semi-regular basis in \glsentrytext{whitehorse}. He always enters battle with a mask over his face, and puts on a faux lower-class accent},
+	first={Woodspy Leader Brook}
+	}
+
+\newcommand{\keras}{
+	\NPC{\M}{\glsentrytext{keras} the Gnomish Illusionist}{Sly}{Waggles finger}{Experience}
+
+	\person{-1}% STRENGTH
+	{2}% DEXTERITY
+	{-1}% SPEED
+	{{3}% INTELLIGENCE
+	{1}% WITS
+	{1}}% CHARISMA
+	{0}% DR
+	{0}% COMBAT
+	{Academics 3, Empathy 2, Stealth 2, Vigilance 2\Path{Alchemy}{Conjuration 2, Illusion 4, Metamagic 3}}% SKILLS
+	{\Dagger, 20gp, crudely drawn maps}% EQUIPMENT
+	{\mana{6}}
+}
+
+\newglossaryentry{keras}{
+	name={Keras},
+	first={Keras Tri\"{e}l},
+	description={is a curious gnomish illusionist, who often gets in trouble studying things he shouldn't}
+	}
+
+\newcommand{\elfprince}{
+\NPC{\M}{\Glsentrytext{elfprince}}{Precise}{Flat palms}{Experience}
+
+	\person{-1}% STRENGTH
+	{2}% DEXTERITY
+	{1}% SPEED
+	{{1}% INTELLIGENCE
+	{3}% WITS
+	{2}}% CHARISMA
+	{0}% DR
+	{1}% COMBAT
+	{Projectiles 2, Academics 2, Beast Ken 1, Empathy 2, Performance 3, Stealth 1, Survival 2, Vigilance 2\Path{Blood}{Aldaron 3, Enchantment 2, Fate 2, Force 1}}% SKILLS
+	{\shortsword, shortbow, dagger, earrings worth 20 sp, necklace worth 2 gp, bracelets each worth 2 sp}% EQUIPMENT
+	{\mana{4}}
+}
+
+\newglossaryentry{elfprince}{
+	name={Prince Arinel},
+	text={Arinel},
+	first={Prince Arinel},
+	description={an elf, famed for his songs}
+	}
+
+\newcommand{\thenecromancer}{
+
+\NPC{\M\D}{\Glsentrytext{necromancer}, High Priest of Qualm\"{e}}{Arrogant}{Slack jaw}{Qualm\"e}
+
+\person{1}% STRENGTH
+{2}% DEXTERITY
+{0}% SPEED
+{{2}% INTELLIGENCE
+{1}% WITS
+{-4}}% CHARISMA
+{2}% DR
+{1}% COMBAT
+{Projectiles 3, Academics 2, Beast Ken 1, Crafts (fletchery) 2, Deceit 1, \\ & Performance 1, Survival 1, Vigilance 3
+\knacks{\snapshot, \mightydraw, \perfectsneakattack}
+\Path{Devotion (Qualm\"{e})}{Aldaron 3, Fate 2, Metamagic 3, Necromancy 5}}%SKILLS
+{Hunting Bow, dagger}%EQUIPMENT
+{\mana{6}\lockedmana{3}}
+}
+
+\newglossaryentry{necromancer}{
+	name={Antonym},
+	first={Antonym, the Fallen Priest of Qualm\"{e}, },
+	description={is a priest of Qualm\"{e}, from the time of Nolan Beard.
+	He has since died, but kept himself alive in order to study Song Magic.
+	Unfortunately, death has robbed him of his voice}
+	}
+
+\newcommand{\forestpriest}{
+\NPC{\M}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{Alass\"e} 
+
+\person{0}% STRENGTH
+	{2}% DEXTERITY
+	{1}% SPEED
+	{{2}% INTELLIGENCE
+	{3}% WITS
+	{2}}% CHARISMA
+	{0}% DR
+	{1}% COMBAT
+	{Academics 2, Beast Ken 3, Crafts 1, Deceit 2, Stealth 2, Vigilance 1
+	\Path{Blood}{Aldaron 2, Fate 3, Polymorph 4}}% SKILLS
+	{\quarterstaff, dagger}% EQUIPMENT
+	{\mana{4}}
+}
+
+\newglossaryentry{forestpriest}{
+	name={Adrian},
+	first={Adrian, high priest of Laiqu\"{e}},
+	text={Adrian},
+	description={is a half-elvish high priest of Laiqu\"e, from the time of Nolan Beard.  He has become irritated at how far men are encroaching into the forest, and hopes to stop them}
+	}
+
+\newcommand{\townmaster}{
+	\humandiplomat[\NPC{\M}{\glsentrytext{townmaster}}{Enthusiastic}{Snorts, loudly}{Acquisition}]
+}
+
+\newglossaryentry{townmaster}{
+	name={Catelina},
+	text={Lord Catelina},
+	first={Townmaster Catelina},
+	description={is the local Town Master, currently attempting to rebuild the \glsentrytext{lostcity} by collecting magical items from the nura}
+	}
+
+\newcommand{\banditking}{
+\NPC{\M}{\glsentrytext{banditking}}{Approachable}{Drums fingers}{Qualm\"e}
+
+\person{3}% STRENGTH
+	{3}% DEXTERITY
+	{0}% SPEED
+	{{1}% INTELLIGENCE
+	{-1}% WITS
+	{2}}% CHARISMA
+	{0}% DR
+	{3}% COMBAT
+	{Academics 1, Empathy 1, Deceit 3, Survival 3, Tactics 2\knacks{\defender, \laststand}}% 
+	{\longsword, \partialchain, 50 sp wrapped in cotton wool, knife}% 
+	{}
+}
+
+\newglossaryentry{banditking}{
+	name={Redclaw},
+	first={Redclaw Whiteland},
+	description={was the child of a noble in Whiteland, but his family were killed by the Rex.  He's lived as a criminal ringleader ever since}
+	}
+
+\newcommand{\sewerking}{
+
+\NPC{\M}{\Glsentrytext{sewerking}}{Alpha male}{Hands on sword}{Experience}
+
+\person{1}% STRENGTH
+	{3}% DEXTERITY
+	{2}% SPEED
+	{{1}% INTELLIGENCE
+	{1}% WITS
+	{1}}% CHARISMA
+	{0}% DR
+	{3}% COMBAT
+	{Academics 1, Beast Ken 1, Crafts 2, Deceit 3, Tactics 2, Vigilance 2\knacks{\adrenalinesurge, \specialist{Speed}{Athletics}, \firststrike}}% SKILLS
+	{\longsword, \partialleather, two daggers, 40sp}% EQUIPMENT
+	{}
+}
+
+\newglossaryentry{sewerking}{
+	name={Areth},
+	first={Areth Whiteland},
+	description={is a Whiteland noble, currently living under the town}
+	}
+
+\newcommand{\sewerthief}{
+	\NPC{\M}{David}{Cheeky}{Grins wide}{Tribe}
+
+	\person{1}% STRENGTH
+{2}% DEXTERITY
+{2}% SPEED
+{{-1}% INTELLIGENCE
+{1}% WITS
+{1}}% CHARISMA
+{0}% DR
+{2}% COMBAT
+{Deceit 2, Larceny 2, Stealth 1, Survival 1, Vigilance 2\knacks{\stunningstrike, \perfectsneakattack}}% SKILLS
+{\shortsword, dagger}% EQUIPMENT
+{}
+}
+
+\newglossaryentry{sewerthief}{
+	name={David},
+	first={David Whiteland},
+	description={misses the comforts of nobility.  He spends a lot of his time running errands through \glsentrytext{pig} and across town, such as delivering cursed magical items to \glsentrytext{banditking}}
+	}
+
+\newcommand{\nurabaron}{
+\NPC{\M\N}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{Tribe}
+
+\person{5}{0}{4}{{-4}{-2}{-4}}{0}{1}{Academics 1, Beast Ken 1, Deceit 2\knacks{\adrenalinesurge}}{\greatsword}{}
+}
+
+\newglossaryentry{nurabaron}{
+	name={Clandon, the Villagemaster},
+	text={Master Clandon},
+	first={Village Master Clandon of Redfall},
+	description={was a jovial and simple Villagemaster until he had an accident with a magical item, and has since turned into an ogre}
+	}
+
+\newcommand{\captain}{
+\NPC{\M}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{Tribe}
+
+\person{1}{2}{0}{{1}{-1}{+1}}{0}{2}{Academics 1, Empathy 2, Stealth 2, Survival 1, Tactics 2\knacks{\adrenalinesurge}}{\longsword, dagger, 2sp}{}
+}
+
+\newglossaryentry{captain}{
+	name={Captain Oscar Quenn},
+	text={Captain Oscar},
+	first={Captain Oscar of the Night Guard},
+	description={is the captain of the Night Guard in town}
+	}
+
+\newglossaryentry{patron}{
+	name={The Patron},
+	text={the Patron},
+	first={the underground Patron},
+	description={a mysterious man who came through the portal under the town, from the Realm of Darkness and Fire.  He has been making deals about magical items, in return for food}
+	}
+
+\newglossaryentry{king}{
+	name={Rex Wyatt Fenestra},
+	text={Rex Wyatt},
+	first={Rex Wyatt Fenestra},
+	description={keeps a tight control over Fenestra through the use of magical portals}
+	}
+
+\newcommand{\pigowner}{
+\NPC{\F}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{Acquisition}
+
+\person{1}{2}{-1}{{1}{2}{1}}{0}{1}{Deceit 3, Empathy 1, Tactics 1\knacks{\adrenalinesurge}}{\Dagger, a hidden dagger, and an even more hidden dagger.}{}
+}
+
+\newglossaryentry{pigowner}{
+	name={Wendy, Owner of \glsentrytext{pig}},
+	text={Wendy Pig},
+	first={Wendy Pig, owner of \glsentrytext{pig}},
+	description={a middle-aged, fierce woman who runs the toughest bar in town}
+	}
+
+\newcommand{\warningbard}{
+	\humanbard[\NPC{\M}{\glsentrytext{warningbard}}{Excited}{Drums Fingertips}{Laiqu\"e}]
+}
+
+\newglossaryentry{warningbard}{
+	name={Roger},
+	text={Roger},
+	first={Roger the bard},
+	description={is a young and headstrong man who writes better than he sings}
+	}
+
+%%%%% Adventures in Fenestra Places
+
+\newglossaryentry{redfall}{
+	name={Redfall},
+	first={Redfall (a village in the North)},
+	description={is rather out-of-the-way village, famed for its red-earth clay and waterfall}
+	}
+
+\newglossaryentry{college}{
+	name={The College of Alchemy},
+	text={the College of Alchemy},
+	first={the College of Alchemy},
+	description={is where all alchemists go for training.  They maintain a complete monopoly on alchemical magic, and all spells must be learned through them or one of their outposts}
+	}
+
+\newglossaryentry{pig}{
+	name={The Mincing Pig},
+	text={the Mincing Pig},
+	first={the Mincing Pig Tavern},
+	description={boasts the reputation as the loudest tavern in town, placed close to the entrance.  Many people don't get farther than `the Pig' when coming to town}
+	}
+
+\newglossaryentry{whitehorse}{
+	name={The White Horse},
+	text={the White Horse},
+	first={the White Horse Inn},
+	description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
+	}
+
+\newglossaryentry{lostcity}{
+	name={The Lost City},
+	text={the Lost City},
+	first={the Lost City},
+	description={is a city where men lived centuries ago.  It is now so destroyed and overgrown that people do not know they have entered until they see some part of an old stone building}
+	}
+
+\newglossaryentry{shatteredcastle}{
+	name={The Shattered Castle},
+	text={the Shattered Castle},
+	description={is where \glsentrytext{king} lives.  It has six sections in six different regions, and each one contains a magical gateway to the hub in Whiteland, so different parts of the  castle exist in different places but the inside of the building functions as a single palace}
+	}
+
+
