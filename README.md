@@ -31,5 +31,5 @@ A few Side Quests reference similar events or share histories, creating a semi-c
 
 ![Nura Cat](images/Unknown/wizard_and_cat.jpg)
 
-[download]: https://gitlab.com/bindrpg/aif/-/jobs/658923970/artifacts/download
+[download]: https://gitlab.com/bindrpg/aif/-/jobs/730230238/artifacts/download
 [BIND]: https://gitlab.com/bindrpg/core/-/jobs/648535695/artifacts/download?file_type=archive
