@@ -4,18 +4,18 @@
 
 This is a campaign setting for the BIND tabletop RPG.
 
+## Map of the Land
+
+- Details on Fenestra, the land of magical portals.
+- Ethereal lands beyond, where players can get trapped and find strange items.
+- Bestiary, for all your monstrous needs.
+
 ## Games Master Resources
 
 - Random encounters, random starting-backgrounds for PCs, and other random things.
 - One bestiary, with all the creatures of Fenestra.
 - Details on the nura - the twisted versions of men, gnomes and dwarves who emerge from underground and consume everything in the area.
 - Magical groves, magical wells, magical items, and magical songs.
-
-## Map of the Land
-
-- Details on Fenestra, the land of magical portals.
-- Ethereal lands beyond, where players can get trapped and find strange items.
-- Bestiary, for all your monstrous needs.
 
 ## Side Quests
 
