@@ -1,4 +1,4 @@
-| [Download][download] | [Core Book][BIND]
+| [Download][download] | [Core Book][BIND] |
 
 # Adventures in Fenestra
 
