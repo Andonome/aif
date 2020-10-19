@@ -245,7 +245,7 @@ Today, she summoned jewels to entertain Emily, a little girl.
 Emily wants to keep the source of her jewels a secret, and the characters have zero chance of bribing her.
 After a day, the jewels vanish into thin air.
 
-\NPC{\F}{Martha the Healer}{Slow}{``Umm\ldots''}{Acquisition}
+\NPC{\F}{Martha the Healer}{Slow}{``Um\ldots''}{Acquisition}
 
 \person{-1}{0}{-3}{{1}{0}{1}}{0}{0}{Academics 1, Empathy 2, Medicine 3}{Lizardite amulet, bandages}{}
 
@@ -265,7 +265,14 @@ If not, leave this encounter till the next time the characters are in trouble in
 
 \startcontents[sq]
 
+\startcontents[Forest]
+\startcontents[Villages]
 \sidequest{Wolf Heads}
+\stopcontents[Forest]
+\stopcontents[Villages]
+
+\sqminitoc
+
 The characters hear of an adventuring party travelling around, and eventually meet them.
 This Side Quest is designed to run in the background, and flavour other encounters.
 \NPC{\F}{Jubilee}{Cheeky}{Thumbs up}{Experience}
@@ -294,6 +301,7 @@ This Side Quest is designed to run in the background, and flavour other encounte
 {\greatsword, \partialchain, dagger, long bow, camping equipment}% EQUIPMENT
 {}
 
+\humansoldier[\npc{\M}{Jason}]
 
 \humanpriest[\NPC{\F}{Amy}{Scornful}{Crossed Arms}{V\'er\"e}]
 
@@ -326,6 +334,35 @@ They are tired, but unwounded, and are up for fun, so they went to a nearby vill
 Wherever the characters are they encounter the Wolf Heads, who then challenge them to arm-wrestling contests, or magical contests.
 The games are mostly in good faith, but if the party have any obviously valuable items, Jubilee will attempt to steal it from them.
 
+\sqpart{Town}% AREA
+{Rumours of Ogres}% NAME
+{The party hear more of the Wolf Heads}% SUMMARY
+
+The characters hear more of the wolf heads, specifically about how they are looking for some abandoned temple to Qualm\"e, which could be the source of so many goblins in the area.
+
+Play this encounter at the same time as the one below.
+
+\sqpart{Forest}% AREA
+{Helping Hands}% NAME
+{The party encounter the Wolf Heads again, who lend a hand}% SUMMARY
+
+The wolf heads come across the party at the same time as another encounter.
+If the party are in trouble, they come to save them.
+If the party aren't, they may just walk together with them for safety.
+
+\sqpart{Villages}% AREA
+{A Cry for Help}% NAME
+{The party find the Wolf Heads attacked by ogres}% SUMMARY
+
+A dozen ogres ambushed the Wolf Heads, and the party heard their cries in the distance.
+By the time the party arrive (assuming they come towards the cries) Bertold is unconscious (-3 HP), and Jubilee is nearly dead (2 HP left).
+
+Ten ogres remain alive.
+Five are focussed on the remaining Wolf Heads, and the other five have decided to wait in the bushes to ambush the party (or if not the bushes, inside nearby houses, or anywhere appropriate).
+
+\ogre[\npc{\T\N}{5 Ogres}]
+
+\ogre[\npc{\T\N}{5 hiding Ogres}]
 
 \stopcontents[sq]
 
