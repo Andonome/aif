@@ -263,18 +263,20 @@ If not, leave this encounter till the next time the characters are in trouble in
 
 \stopcontents[sq]
 
-\startcontents[sq]
-
 \startcontents[Forest]
 \startcontents[Villages]
 \sidequest{Wolf Heads}
 \stopcontents[Forest]
 \stopcontents[Villages]
 
+\startcontents[sq]
+
 \sqminitoc
 
+\noindent
 The characters hear of an adventuring party travelling around, and eventually meet them.
 This Side Quest is designed to run in the background, and flavour other encounters.
+
 \NPC{\F}{Jubilee}{Cheeky}{Thumbs up}{Experience}
 \person{0}% STRENGTH
 {2}% DEXTERITY 
@@ -301,7 +303,18 @@ This Side Quest is designed to run in the background, and flavour other encounte
 {\greatsword, \partialchain, dagger, long bow, camping equipment}% EQUIPMENT
 {}
 
-\humansoldier[\npc{\M}{Jason}]
+\npc{\M}{Lucretius}
+\person{1}% STRENGTH
+{0}% DEXTERITY 
+{-1}% SPEED
+{{2}% INTELLIGENCE
+{0}% WITS
+{0}}% CHARISMA
+{0}% DR
+{0}% COMBAT
+{Projectiles 1, Academics 2, Crafts 1, Survival 1\Path{Alchemy}{Conjuration 3, Invocation 3, Illusion 1}}% SKILLS
+{Mana stone worth 4 MP}% EQUIPMENT
+{\mana{6}\lockedmana{2}}
 
 \humanpriest[\NPC{\F}{Amy}{Scornful}{Crossed Arms}{V\'er\"e}]
 
@@ -314,7 +327,7 @@ The local gossip relates to how the local heroes, known as the \textit{Wolves He
 \begin{enumerate}
 
 	\item{There were around forty goblins.}
-	\item{The Wolf Heads stopped them with grease spells over the walls, so the goblins could not climb properly.}
+	\item{The Wolf Heads stopped them with grease spells over the walls, so the goblins could not climb properly, leaving the archers time to pick off more.}
 	\item{The local village master refused to pay for goblin heads taken, claiming it would be illegal as it would count as him raising his own army.}
 	\item{The party refused to gather payment from the local peasants, but have sworn a blood oath to kill Village Master Solus.}
 \end{enumerate}
