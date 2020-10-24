@@ -2,7 +2,23 @@
 
 # Adventures in Fenestra
 
-This is a campaign setting for the BIND tabletop RPG.
+> The towns are only safe so long as the villages feed them.
+> The villages are only safe due to the patrols, and their outer walls.
+> If we lose another village, the town will fall.
+> When we lose the town, we lose the foundries, and swords.
+> We'll become like the lost city - an abandoned waste where the trees grow over the churches.
+>
+> Or you can fight back, join the Night Guard, join us at the forest's border, fight back against the creatures that steal our sheep and scare our horses, and destroy the villages at the border, or you can stand back and watch the world fall to ruin.
+
+Fenestra considers itself the leader in the civilized world, but the forest is full of dangers, and always threaten to reclaim the land.
+
+The dwarves and gnomes live underground.
+The elves have their magics to deal with the situation.
+Only mankind sits at the precariously beside the menacing nature.
+
+Anyone who has not found a use for themselves can find a use in the Night Guard - the group charged by the Rex to go to the front lines and beat back the forest.
+
+# Resources
 
 ## Map of the Land
 
