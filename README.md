@@ -1,4 +1,4 @@
-| [Download][download] | [Core Book][BIND] |
+| [Download][download] | [Core Book][BIND] | 
 
 # Adventures in Fenestra
 
@@ -47,5 +47,5 @@ A few Side Quests reference similar events or share histories, creating a semi-c
 
 ![Nura Cat](images/Unknown/wizard_and_cat.jpg)
 
-[download]: https://gitlab.com/bindrpg/aif/uploads/82d3ba1c9942d617b37dc5975842417b/aif.pdf
-[BIND]: https://gitlab.com/bindrpg/core/-/jobs/648535695/artifacts/download?file_type=archive
+[download]: https://belgradecats.tk/pdfs/aif.pdf
+[BIND]: https://gitlab.com/bindrpg/core
