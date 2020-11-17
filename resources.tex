@@ -191,17 +191,20 @@ All spells cast count as having an Intelligence Bonus of +3.
 
 \section{Magical Items}
 
+\begin{multicols}{2}
+
+\noindent
 Magical items are fairly formulaic since each path of magic has a limited number of `mana stones' which they can make, and a limited number of spells.
 Nevertheless a few examples sit here for quick reference.
 
-\begin{multicols}{2}
-
 \subsection{Alchemical Items}
 
-\magicitem{Bag of Tricks}{Conjuration 4}{Alchemy}{2 scenes}{Potent Greater Item}{+5}{30}
+\magicitem{Bag of Tricks}{Conjuration 4}{Alchemy}{2 scenes}{Artefact}{+5}{30}
 \index{Magical Items!God Slayer}
 
-\noindent This gem-studded bag has a tough, silver chord around the top, and won't open more than the width of a man's wrist.  By simply naming an object, people can pull out anything they desire.  Unfortunately, the bag only speaks the gnomish language.
+This gem-studded bag has a tough, silver chord around the top, and won't open more than the width of a man's wrist.
+By simply naming an object, people can pull out any number of objects.
+Unfortunately, the bag only speaks the gnomish language.
 
 It stores 4 MP, and spends one produce any small, valueless item or substance, with the full use of the fourth level of Conjuration.
 
@@ -218,11 +221,11 @@ Anyone putting an item into the bag in a hurry must make a Dexterity + Crafts ch
 \magicitem{The Townmaster's Hat}{Illusion}{Alchemy}{3 Scenes}{Item}{4}{1}
 \index{Magical Items!Town Master's Hat}
 
-\noindent Townmaster James of Whiteland was especially scared of assassination during the time of Rex Dalius, so he commissioned four hats with an illusion, making anyone who put them on look exactly like him.
+Townmaster James of Whiteland was especially scared of assassination during the time of Rex Dalius, so he commissioned four hats with an illusion, making anyone who put them on look exactly like him.
 He has since died, and the hats have been used by various thieves to disguise their identity.
 
 \magicitem{Portal Scroll}{Unrestrained, Open Teleport}{Alchemy}{2 Scenes}{Pocket Spell}{4}{5}
-\label{portalscroll}
+\label{portalscroll}%
 \index{Magical Items!Portal Scroll}
 
 The scroll takes 5 rounds to speak properly, and opens a doorway to the Realm of Shifting Corridors.\footnote{See page \pageref{shiftingcorridors}.}
@@ -239,15 +242,7 @@ He sometimes uses this to hunt mice, and sometimes to shut people up who are too
 \magicitem{Deck of Cards}{Various}{Devotion (Alass\"{e})}{1 Scene}{Pocket Spells}{3}{Varies}\label{deckofmanythings}
 \index{Magical Items!Deck of Cards}
 
-This deck, presumably fashioned by various priests of Alass\"{e}, holds a number of cards.
-Once grasped between \emph{three} or more fingers, the card activates.
-If it's held, the target is the caster.
-If thrown, the target is whoever the caster throws it at (the caster doesn't need to be a good thrower for the magic to work).
-
-Each card looks much like a normal playing card, with one non-obvious flaw, such as a joker who's wet himself, or a king who's lost his crown.  The spells are each cast with an effective Intelligence and Wits bonus of +4.  Only a few cards remain.  Once one is pulled, the effects activate immediately and lasts for a full scene.
-
-The Deck of Cards resists all magic, including gaining information about it through Fate.
-
+\begin{figure*}[t!]
 \begin{tcolorbox}
 	\begin{enumerate}
 		\item{Illusion of an ogre appears}
@@ -267,6 +262,16 @@ The Deck of Cards resists all magic, including gaining information about it thro
 		\item{Nearest recently deceased target gets to reroll a Vitality Check at +5.  If none, nearest target gains $2D6+4$ FP and can store an additional 10 FP}
 	\end{enumerate}
 \end{tcolorbox}
+\end{figure*}
+
+This deck, presumably fashioned by various priests of Alass\"{e}, holds a number of cards.
+Once grasped between \emph{three} or more fingers, the card activates.
+If it's held, the target is the caster.
+If thrown, the target is whoever the caster throws it at (the caster doesn't need to be a good thrower for the magic to work).
+
+Each card looks much like a normal playing card, with one non-obvious flaw, such as a joker who's wet himself, or a king who's lost his crown.  The spells are each cast with an effective Intelligence and Wits bonus of +4.  Only a few cards remain.  Once one is pulled, the effects activate immediately and lasts for a full scene.
+
+The Deck of Cards resists all magic, including gaining information about it through Fate.
 
 \magicitem{Spider Arrows}{Transient Web}{Devotion (Ohta)}{Instant}{Pocket Spell}{2}{3}\label{spiderarrows}
 \index{Magical Items!Spider Arrows}
@@ -282,6 +287,17 @@ The target resists with Strength + Athletics, TN 10 or remains caught in the web
 If the sword ever inflicts 12 or more Damage on an opponent (before DR is applied), it can erupt with an invocation spell, inflicting an additional $2D6$ Damage which bypasses all DR, including Perfect DR.
 It otherwise functions as a normal great sword.
 
+\magicitem{Sleeping Dust}{Wide Sleep}{Devotion (Qualm\"e)}{Continuous}{Pocket Spell}{5}{3}
+
+Once this bag of chitincrawler-dust has been opened, sends the nearest four people to sleep.
+Each rolls Wits + Academics at TN 12 to resist.
+
+\magicitem{Taming Flute}{Adararon}{Devotion (Qualm\"e)}{Continuous}{Talisman}{5}{3}
+
+This flute, made of a basilisk's femur, can be played to lull any animal into a state of confusion.
+The creatures takes a Wits + Aggression roll, at TN 12.
+Failure means it loses any chance to act this turn, and the next turn it suffers a -5 penalty to all actions.
+
 \magicitem{The Raven Tree}{Realistic, Trans Species, Empathic Polymorph}{Devotion (Laiqu\"{e})}{Instant}{Talisman}{4}{22}
 
 Anyone taking an apple from this tree instantly transforms into a bird of some kind, unless they are strong enough to overcome the spell.  The magic can rearrange up to 7 Attribute points in order to reduce their Strength to -5, and can add up to 7 points to their Speed to bring them high enough to fly.  Once the spell has completed, the target remains as a bird until sundown.
@@ -293,7 +309,7 @@ The tree regenerates 3 per scene.  Apples taken from the tree keep their magic f
 
 This simple ring, inlaid with bone, act as per the first level of the Necromancy sphere to stop the user feeling the effects of cold or hunger while the ring is worn.
 
-\magicitem{Wild Seeds}{Plantform, Wind Blast}{Devotion (Laiqu\"{e})}{Instant, Continuous}{Pocket Spell}{2}{6}
+\magicitem{Wild Seeds}{Plantform, Wind Blast}{Devotion (Laiqu\"{e})}{Instant, Continuous}{Pocket Spell}{4}{6}
 
 This bag of seeds forms a one-use item.
 Once opened the bag produces the effects of Wind Blast, moving everyone around back by 4 squares minus their Strength Bonus.
@@ -303,6 +319,12 @@ Once the seeds have scattered, if they find any kind of purchase -- whether mud,
 Anyone forcing their way through the thorns gets slowed down by 3 squares each turn, and those without armour gain 4 Fatigue points due to a thousand little cuts.
 
 \subsection{Runic Items}
+
+\magicitem{Ghost Shield}{Dancing Swords}{Runes}{Continuous}{Sentient Talisman}{4}{3}
+
+Once the shield's user is in danger, the shield levitates to protect its owner.
+It has an effective Strength, Dexterity and Speed of 2.
+The shield immediately uses the \textit{Guard} action to protect its owner.
 
 \magicitem{The Eternal Warrior's Armour}{Call the Dead}{Runes}{1 Scene}{Pocket Spell}{4}{3}
 \label{eternalwarriorarmour}
@@ -314,11 +336,11 @@ The breastplate contains two spells -- a second level spell to ensure the wearer
 
 \subsection{Songs}
 
-\magicitem{The Choking Song}{Reading the Ripples}{Song}{Instant}{Talisman}{2}{2}
-\noindent The song of growth is sung by village elders in the Bearded Mountains regions.
-The elders sing only on their own birthday, thanking Laiqu\"{e} for their village's prosperity.
-
 \label{chokingsong}
+\magicitem{The Choking Song}{Reading the Ripples}{Song}{Instant}{Talisman}{2}{17}
+
+The song of growth is sung by village elders in the Bearded Mountains regions.
+The elders sing only on their own birthday, thanking Laiqu\"{e} for their village's prosperity.
 The song is special as it sounds most pleasing when sung by someone devoted to Laiqu\"{e}, or a follower of the Code of Experience.
 Conversely, those following the Code of Acquisition, or who follow Qualm\"{e} or Ohta, reliably choke and cough while attempting the song.
 
@@ -327,7 +349,7 @@ The song holds a total of 17 MP, and needs spend only 1 when sung.
 \magicitem{Medal of Heroism}{Forest's Call}{Song}{Instant}{Talisman}{6}{7}
 \label{medalofheroism}
 
-\noindent The hero sings of the devastation they will unleash upon the local monsters in the forest.
+The hero sings of the devastation they will unleash upon the local monsters in the forest.
 Dangerous creatures then come to attack the hero.
 
 \end{multicols}
