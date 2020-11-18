@@ -27,7 +27,7 @@
 \newcommand{\traitor}{
 \NPC{\M}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{Acquisition}
 
-\person{2}{1}{2}{{1}{0}{1}}{0}{2}{Athletics 2, Beast Ken 1, Deceit 1, Larceny 1, Survival 2\knacks{\adrenalinesurge, \disarm, \Defender, \furiousblows}}{\longsword, \partialchain}{}
+\person{2}{1}{2}{{1}{0}{1}}{0}{2}{Athletics 2, Beast Ken 1, Deceit 1, Larceny 1, Survival 2\knacks{\adrenalinesurge, \disarm, \Defender, \furiousblows}}{\longsword, \partialchain}{\addtocounter{fp}{5}}
 }
 
 \newglossaryentry{traitor}{
@@ -95,7 +95,7 @@
 	{0}% COMBAT
 	{Academics 3, Empathy 2, Stealth 2, Vigilance 2\Path{Alchemy}{Conjuration 2, Illusion 4}}% SKILLS
 	{\Dagger, 20gp, crudely drawn maps}% EQUIPMENT
-	{\mana{6}}
+	{\mana{6}\addtocounter{fp}{10}}
 }
 
 \newglossaryentry{keras}{
@@ -168,7 +168,7 @@
 	{Academics 2, Beast Ken 3, Crafts 1, Deceit 2, Stealth 2, Vigilance 1
 	\Path{Blood}{Aldaron 2, Fate 3, Polymorph 4}}% SKILLS
 	{\quarterstaff, dagger}% EQUIPMENT
-	{\mana{6}}
+	{\mana{6}\addtocounter{fp}{10}}
 }
 
 \newglossaryentry{forestpriest}{
@@ -202,7 +202,7 @@
 	{3}% COMBAT
 	{Academics 1, Empathy 1, Deceit 3, Survival 3, Tactics 2\knacks{\defender, \laststand}}% 
 	{\longsword, \partialchain, 50 sp wrapped in cotton wool, knife}% 
-	{}
+	{\addtocounter{fp}{5}}
 }
 
 \newglossaryentry{banditking}{
@@ -225,7 +225,7 @@
 	{3}% COMBAT
 	{Academics 1, Beast Ken 1, Crafts 2, Deceit 3, Tactics 2, Vigilance 2\knacks{\adrenalinesurge, \specialist{Speed}{Athletics}, \firststrike}}% SKILLS
 	{\longsword, \partialleather, two daggers, 40sp}% EQUIPMENT
-	{}
+	{\addtocounter{fp}{5}}
 }
 
 \newglossaryentry{sewerking}{
@@ -272,7 +272,17 @@
 \newcommand{\captain}{
 \NPC{\M}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{Tribe}
 
-\person{1}{2}{0}{{1}{-1}{+1}}{0}{2}{Academics 1, Empathy 2, Stealth 2, Survival 1, Tactics 2\knacks{\adrenalinesurge}}{\longsword, dagger, 2sp}{}
+\person{1}%STRENGTH
+	{2}% DEXTERITY
+	{0}%  SPEED
+	{{1}% INTELLIGENCE
+	{-1}% WITS
+	{1}}% CHARISMA
+	{0}% DR
+	{2}% COMBAT
+	{Academics 1, Empathy 2, Stealth 2, Survival 1, Tactics 2\knacks{\adrenalinesurge}}% SKILLS
+	{\longsword, dagger, 2sp}% EQUIPMENT
+	{\addtocounter{fp}{5}}
 }
 
 \newglossaryentry{captain}{
@@ -299,7 +309,17 @@
 \newcommand{\pigowner}{
 \NPC{\F}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{Acquisition}
 
-\person{1}{2}{-1}{{1}{2}{1}}{0}{1}{Deceit 3, Empathy 1, Tactics 1\knacks{\adrenalinesurge}}{\Dagger, a hidden dagger, and an even more hidden dagger.}{}
+\person{1}% STRENGTH
+	{2}% DEXTERITY
+	{-1}% SPEED
+	{{1}% INTELLIGENCE
+	{2}% WITS
+	{1}}% CHARISMA
+	{0}% DR
+	{1}% COMBAT
+	{Deceit 3, Empathy 1, Tactics 1\knacks{\adrenalinesurge}}% SKILLS
+	{\Dagger, a hidden dagger, and an even more hidden dagger.}% EQUIPMENT
+	{\addtocounter{fp}{5}}
 }
 
 \newglossaryentry{pigowner}{
