@@ -8,9 +8,9 @@ compile_pdf:
     - makeindex main.idx
     - pdflatex main.tex
     - mv main.pdf aif.pdf
-  except:
-    - dev
+  only:
     - master
+    - run
   artifacts:
     paths:
       - aif.pdf
