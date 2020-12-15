@@ -3,10 +3,7 @@ compile_pdf:
   script:
     - apt-get update -y
     - apt-get install -y inkscape
-    - pdflatex -shell-escape main.tex
-    - makeglossaries main
-    - makeindex main.idx
-    - pdflatex main.tex
+    - make
     - mv main.pdf aif.pdf
   only:
     - master
