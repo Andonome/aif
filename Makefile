@@ -12,4 +12,4 @@ tree:
 	git subtree -P config push ../config master || exit 1
 
 clean:
-	rm -r *.{aux,toc,acn,acr,log,ptc,out,idx,ist,alg,glo} svg-inkscape 2>/dev/null
+	rm -fr *.aux *.toc *.acn *.acr *.log *.ptc *.out *.ind *.ilg *.idx *.ist *.alg *.gls *.glo svg-inkscape/ 2>/dev/null
