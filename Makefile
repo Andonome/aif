@@ -1,15 +1,19 @@
 filename=main
-output: svg-inkscape main.pdf
+branch := $(shell git rev-parse --abbrev-ref HEAD)
+output: svg-inkscape main.pdf 
+	makeindex main.idx
+	makeglossaries main
 	pdflatex ${filename}.tex
 svg-inkscape:
 	pdflatex -shell-escape ${filename}.tex
 main.pdf:
 	pdflatex ${filename}.tex
+resources:
+	pdflatex CS/resources.tex
 tree:
 	[ -e ../config ] || ( echo "You don't have a local config repo" && exit 1 )
 	git status
-	git subtree -P config pull ../config master || exit 1
-	git subtree -P config push ../config master || exit 1
-
+	git subtree -P config pull ../config ${branch}
+	git subtree -P config push ../config ${branch}
 clean:
-	rm -fr *.aux *.toc *.acn *.acr *.log *.ptc *.out *.ind *.ilg *.idx *.ist *.alg *.gls *.glo svg-inkscape/ 2>/dev/null
+	$(RM) *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf
