@@ -131,7 +131,7 @@ bookmarks=true]%
 \newcommand{\headingtype}{CHAPTER}
 
 \newcommand{\sidepic}[2][5]{
-	\needspace{2cm}\begin{wrapfigure}{O}{.#1\linewidth}
+	\needspace{2cm}\begin{wrapfigure}{R}{.#1\linewidth}
 \noindent\includesvg[width=\linewidth]{images/#2}
 \end{wrapfigure}
 }
@@ -324,7 +324,7 @@ Roll & Result \\
 
 \newtcolorbox[use counter=enc, use counter=list]{encounters}[1]{adjusted title=Encounters in #1,arc=1mm,tabularx={XXp{.6\textwidth}},code={\setcounter{enc}{19}\setcounter{list}{18}}}
 
-\newtcolorbox{rollchart}{tabularx={cp{.7\linewidth}},arc=1mm}
+\newtcolorbox{rollchart}{tabularx={p{.3\linewidth}X},arc=1mm}
 
 \newtcolorbox{xpbox}[1]{tabularx={lc},arc=1mm,equal height group=#1}
 
