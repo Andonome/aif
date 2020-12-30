@@ -1,0 +1,2 @@
+*.jpg filter=lfs diff=lfs merge=lfs -text
+images/Unknown/wizard_and_cat.jpg filter=lfs diff=lfs merge=lfs -text
