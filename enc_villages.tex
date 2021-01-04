@@ -285,7 +285,17 @@ They don't have the strength to go on.
 \humansoldier[\NPC{\M}{Bertrand}{Pessimistic}{Squints}{Qualm\"e}]
 
 \npc{\T}{Emaciated ``Bandits''}
-\person{1}{-1}{-1}{{0}{-1}{0}}{0}{1}{Beast Ken 2, Crafts 1}{\Dagger, (three have shortbows)}{}
+\person{1}% STRENGTH
+	{-1}% DEXTERITY
+	{-1}% SPEED
+	{{0}% INTELLIGENCE
+	{-1}% WITS
+	{0}}% CHARISMA
+	{0}% DR
+	{1}% COMBAT
+	{Beast Ken 2, Crafts~1}% SKILLS
+	{\Dagger, (three have shortbows)}% EQUIPMENT
+	{}
 
 \paragraph{If the characters investigate further,}
 they may well end up at Redfall Keep.
@@ -662,7 +672,7 @@ If they come for the rest of the bandits, they flee on horseback.
 {-1}}% CHARISMA
 {1}% DR
 {2}% COMBAT
-{Deceit 1, Survival 2}% SKILLS
+{Deceit~1, Survival~2}% SKILLS
 {\shortsword, dagger, \partialleather, ring of asphyxiation (see page \pageref{ring_asphyxiation}).}% EQUIPMENT
 {}
 
