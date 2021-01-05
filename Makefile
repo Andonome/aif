@@ -1,13 +1,13 @@
 filename=main
 branch := $(shell git rev-parse --abbrev-ref HEAD)
-output: svg-inkscape main.pdf 
-	makeindex main.idx
-	makeglossaries main
+output: ${filename}.pdf 
+
+main.pdf: svg-inkscape
+	makeindex ${filename}.idx
+	makeglossaries ${filename}
 	pdflatex ${filename}.tex
 svg-inkscape:
 	pdflatex -shell-escape ${filename}.tex
-main.pdf:
-	pdflatex ${filename}.tex
 resources:
 	pdflatex CS/resources.tex
 tree:
@@ -16,4 +16,4 @@ tree:
 	git subtree -P config pull ../config ${branch}
 	git subtree -P config push ../config ${branch}
 clean:
-	$(RM) *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf
+	rm -rf *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf svg-inkscape
