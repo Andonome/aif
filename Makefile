@@ -1,6 +1,7 @@
 filename=main
 branch := $(shell git rev-parse --abbrev-ref HEAD)
 output: ${filename}.pdf 
+	pdflatex ${filename}.tex
 
 main.pdf: svg-inkscape
 	makeindex ${filename}.idx
@@ -8,8 +9,6 @@ main.pdf: svg-inkscape
 	pdflatex ${filename}.tex
 svg-inkscape:
 	pdflatex -shell-escape ${filename}.tex
-resources:
-	pdflatex CS/resources.tex
 tree:
 	[ -e ../config ] || ( echo "You don't have a local config repo" && exit 1 )
 	git status
