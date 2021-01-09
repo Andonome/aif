@@ -5,6 +5,9 @@ output: ${filename}.pdf
 	makeglossaries ${filename}
 	pdflatex ${filename}.tex
 ${filename}.pdf: svg-inkscape
+	makeindex ${filename}.idx
+	makeglossaries ${filename}
+	pdflatex ${filename}.tex
 svg-inkscape:
 	pdflatex -shell-escape ${filename}.tex
 tree:
