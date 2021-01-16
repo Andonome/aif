@@ -249,7 +249,17 @@ After a day, the jewels vanish into thin air.
 
 \NPC{\F}{Martha the Healer}{Slow}{``Um\ldots''}{Acquisition}
 
-\person{-1}{0}{-3}{{1}{0}{1}}{0}{0}{Academics 1, Empathy 2, Medicine 3}{Lizardite amulet, bandages}{}
+\person{-1}% STRENGTH
+	{0}% DEXTERITY
+	{-3}% SPEED
+	{{1}% INTELLIGENCE
+	{0}% WITS
+	{1}}% CHARISMA
+	{0}% DR
+	{0}% COMBAT
+	{Academics 1, Empathy 2, Medicine 3}% SKILLS
+	{Lizardite amulet, bandages}% EQUIPMENT
+	{}
 
 \sqpart{Villages}% AREA
 {Martha Returns}% NAME
@@ -936,8 +946,16 @@ However, the reality is that almost everyone who enters the room simply wants to
 
 \NPC{\F}{Jane -- Priestess of Alass\"{e}}{Playing dim}{Humming between sentences}{Alass\"e} 
 
-\person{0}{1}{0}{{1}{0}{2}}{0}{0}{Academics 1, Empathy 2, Deceit 1, Larceny 2\Path{Devotion (Alass\"{e})}{Fate 2}}%
-{\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}%
+\person{0}% STRENGTH
+	{1}% DEXTERITY
+	{0}% SPEED
+	{{1}% INTELLIGENCE
+	{0}% WITS
+	{2}}% CHARISMA
+	{0}% DR
+	{0}% COMBAT
+	{Academics~1, Empathy~2, Deceit~1, Larceny~2\Path{Devotion (Alass\"{e})}{Fate~2}}% SKILLS
+{\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}% EQUIPMENT
 {\mana{2}}
 
 \mapentry{Thieves' Den}
@@ -967,7 +985,17 @@ The creature looks like a regular, skinny woman, with long brown hair, dead arou
 
 \npc{\D}{Monster in the Cellar}
 
-\person{0}{1}{0}{{2}{0}{-5}}{2}{2}{Academics 2, Medicine 1, Stealth 3, Survival 1, Vigilance 3\Path{Devotion}{Aldaron 3, Fate 2, Necromancy 2}}{None}{\mana{6}\lockedmana{2}}
+\person{0}% STRENGTH
+	{1}% DEXTERITY
+	{0}% SPEED
+	{{2}% INTELLIGENCE
+	{0}% WITS
+	{-5}}% CHARISMA
+	{2}% DR
+	{2}% COMBAT
+	{Academics~2, Medicine~1, Stealth~3, Survival~1, Vigilance~3\Path{Devotion}{Aldaron~3, Fate~2, Necromancy~2}}% SKILLS
+	{None}% EQUIPMENT
+	{\mana{6}\lockedmana{2}}
 
 The creature has already risen the maid from the dead, and has an escape plan.
 It will create a magical mist as it hears anyone attempting to enter the door.
@@ -1022,8 +1050,6 @@ The temple of Qualm\"{e} held its fasting chambers here, where men would compete
 
 The total value of the jewels inside here is 350gp.
 \Gls{pigowner}, and the bandits know better than to go grave robbing, especially when they are aware the old temple had guardians.
-
-
 
 Three men competed and won the right to protect the temple.
 They starved themselves into a state of lichdom after being buried alive in one of the walls.
