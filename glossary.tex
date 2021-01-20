@@ -256,7 +256,17 @@
 \newcommand{\nurabaron}{
 \NPC{\M\N}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{Tribe}
 
-\person{5}{0}{4}{{-4}{-2}{-4}}{0}{1}{Academics 1, Beast Ken 1, Deceit 2\knacks{\adrenalinesurge}}{\greatsword}{}
+\person{5}% STRENGTH
+	{0}% DEXTERITY
+	{4}% SPEED
+	{{-4}% INTELLIGENCE
+	{-2}% WITS
+	{-4}}% CHARISMA
+	{0}% DR
+	{1}% COMBAT
+	{Academics~1, Beast~Ken~1, Deceit~2\knacks{\adrenalinesurge}}% SKILLS
+	{\greatsword}% EQUIPMENT
+	{}
 }
 
 \newglossaryentry{nurabaron}{
@@ -277,7 +287,7 @@
 	{1}}% CHARISMA
 	{0}% DR
 	{2}% COMBAT
-	{Academics 1, Empathy 2, Stealth 2, Survival 1, Tactics 2\knacks{\adrenalinesurge}}% SKILLS
+	{Academics~1, Empathy~2, Stealth~2, Survival~1, Tactics~2\knacks{\adrenalinesurge}}% SKILLS
 	{\longsword, dagger, 2sp}% EQUIPMENT
 	{\addtocounter{fp}{5}}
 }
@@ -299,7 +309,17 @@
 \newcommand{\traitor}{
 \NPC{\M}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{Acquisition}
 
-\person{2}{1}{2}{{1}{0}{1}}{0}{2}{Athletics 2, Beast Ken 1, Deceit 1, Larceny 1, Survival 2\knacks{\adrenalinesurge, \disarm, \Defender, \furiousblows}}{\longsword, \partialchain}{\addtocounter{fp}{5}}
+\person{2}% STRENGTH
+	{1}% DEXTERITY
+	{2}% SPEED
+	{{1}% INTELLIGENCE
+	{0}% WITS
+	{1}}% CHARISMA
+	{0}% DR
+	{2}% COMBAT
+	{Athletics~2, Beast~Ken~1, Deceit~1, Larceny~1, Survival~2\knacks{\adrenalinesurge, \disarm, \Defender, \furiousblows}}% SKILLS
+	{\longsword, \partialchain}% EQUIPMENT
+	{\addtocounter{fp}{5}}
 }
 
 \newcommand{\townmaster}{
