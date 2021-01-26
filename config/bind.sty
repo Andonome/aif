@@ -246,6 +246,7 @@ bookmarks=true]%
 \titleformat{\chapter}[display]
 {\bfseries}
 {%
+	\ChapFrame
 	\ifnum\value{pageDarkness}<90
 	\addtocounter{pageDarkness}{10}
 	\fi
@@ -256,7 +257,7 @@ bookmarks=true]%
   \node[minimum width=.25\textwidth, inner sep=-5, outer sep=0, anchor=south west, text width=.25\textwidth, align=left] at (chapname.south east) {\chapnumfont\textcolor{chapnumcol}{\Roman{chapter}}};
 \end{tikzpicture}}
 {0pt}
-{\Huge\FancyFont\ChapFrame}
+{\Huge\FancyFont}
 
 
 \titleformat{\section}[frame]
@@ -441,7 +442,7 @@ Roll & Result \\
 
 %%%%%%%%%%%%%%%%%%% COMMANDS %%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\story}[2]{\needspace{2em}\vspace{.3cm}\noindent\textbf{#2\ldots}\par\noindent Cost: #1\par\noindent}
+\newcommand{\story}[2]{\needspace{4em}\vspace{.3cm}\noindent\textbf{#2\ldots}\par\noindent Cost: #1\par\noindent}
 
 \newcommand{\best}[2][\C]{\npc{#1}{#2}\subsubsection{#2}\index{Antagonists!#2}}
 
