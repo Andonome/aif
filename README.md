@@ -1,3 +1,20 @@
+<!--
+
+# Dependencies:
+
+- git-lfs
+- inkscape (for composing svg images)
+- pdflatex (loads of packages)
+
+# config/
+
+The config directory is a subtree, so don't touch it unless you know what you're doing.
+
+# compiling
+
+> make
+
+-->
 | [Download][download] | [Core Book][BIND] | 
 
 # Adventures in Fenestra
