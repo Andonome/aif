@@ -64,5 +64,5 @@ A few Side Quests reference similar events or share histories, creating a semi-c
 
 ![Nura Cat](images/Unknown/wizard_and_cat.jpg)
 
-[download]: https://belgradecats.tk/share/aif.pdf
-[BIND]: https://belgradecats.tk/BIND/core
+[download]: https://gitlab.com/bindrpg/aif/uploads/ec9c7a7bfc635de7d48789d387605611/Adventures_in_Fenestra.pdf
+[BIND]: https://gitlab.com/bindrpg/core
