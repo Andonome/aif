@@ -200,7 +200,13 @@ Nevertheless a few examples sit here for quick reference.
 
 \subsection{Alchemical Items}
 
-\magicitem{Bag of Tricks}{Conjuration 4}{Alchemy}{2 scenes}{Artefact}{+5}{30}
+\magicitem{Bag of Tricks}% NAME
+	{Conjuration 4}% SPELL
+	{Alchemy}% PATH
+	{5 scenes}% DURATION
+	{Artefact}% TYPE
+	{5}% Potency
+	{30}% MP
 
 This gem-studded bag has a tough, silver chord around the top, and won't open more than the width of a man's wrist.
 By simply naming an object, people can pull out any number of objects.
@@ -208,7 +214,13 @@ Unfortunately, the bag only speaks the gnomish language.
 
 It stores 4 MP, and spends one produce any small, valueless item or substance, with the full use of the fourth level of Conjuration.
 
-\magicitem{Bag of Holding}{Conjuration 5}{Alchemy}{Standing}{Talisman}{+5}{0/5}
+\magicitem{Bag of Holding}% NAME
+	{Conjuration 5}% SPELL
+	{Alchemy}% PATH
+	{Eternal}% DURATION
+	{Eternal Pocket Spell}% TYPE
+	{5}% Potency
+	{0/5}% MP
 
 This looks identical to the bag of tricks, but instead of summoning items, it leads to a closet.
 The bag is in fact a magical portal, held permanently open, and allows the owner to deposit and remove items at will.
@@ -217,26 +229,51 @@ Exactly how much space is available depends upon how long the user's arm is.  In
 
 Anyone putting an item into the bag in a hurry must make a Dexterity + Crafts check at TN 6 or risk dropping the item instead of placing it on one of the dark shelves within.  Alchemists have theorized about whether the bag leads to a bottomless pit in some demonic realm, or simply a larder.  Either way, nobody's arm's long enough to reach the bottom.
 
-\magicitem{The Townmaster's Hat}{Illusion}{Alchemy}{3 Scenes}{Item}{4}{1}
+\magicitem{The Townmaster's Hat}% NAME
+	{Illusion}% SPELL
+	{Alchemy}% PATH
+	{4 Scenes}% DURATION
+	{Item}% TYPE
+	{4}% Potency
+	{1}% MP
 
 Townmaster James of Whiteplains was especially scared of assassination during the time of Rex Dalius, so he commissioned four hats with an illusion, making anyone who put them on look exactly like him.
 He has since died, and the hats have been used by various thieves to disguise their identity.
 
-\magicitem{Portal Scroll}{Unrestrained, Open Teleport}{Alchemy}{2 Scenes}{Pocket Spell}{4}{5}
-\label{portalscroll}%
+\magicitem{Portal Scroll}% NAME
+	{Ranged Clairvoyance, Ranged Teleport}% SPELL
+	{Alchemy}% PATH
+	{2 Scenes}% DURATION
+	{Unending Pocket Spell \& Pocket Spell}% TYPE
+	{2}% Potency
+	{8}% MP
+
+\label{portalscroll}
 
 The scroll takes 5 rounds to speak properly, and opens a doorway to the Realm of Shifting Corridors.\footnote{See page \pageref{shiftingcorridors}.}
 The portal remains open for 2 scenes.
 
 \subsection{Divine Items}
 
-\magicitem{The Sleeping Cat}{Sleep}{Devotion (Laiqu\"{e})}{1 Scene}{Item}{3}{5}
+\magicitem{The Sleeping Cat}% NAME
+	{Sleep}% SPELL
+	{Devotion (Laiqu\"{e})}% PATH
+	{3 Scene}% DURATION
+	{Item}% TYPE
+	{3}% Potency
+	{5}% MP
 
 A priest of Laiqu\"{e} once left all her worldly mana to a cat, imbuing it with a single spell.
 The cat can instinctively make animals of any kind fall asleep.
 He sometimes uses this to hunt mice, and sometimes to shut people up who are too loud.
 
-\magicitem{Deck of Cards}{Various}{Devotion (Alass\"{e})}{1 Scene}{Pocket Spells}{3}{Varies}\label{deckofmanythings}
+\magicitem{Deck of Cards}% NAME
+	{Various}% SPELL
+	{Devotion (Alass\"{e})}% PATH
+	{3 Scene}% DURATION
+	{Many Pocket Spells}% TYPE
+	{3}% Potency
+	{Varies}\label{deckofmanythings}% MP
 
 \begin{figure*}[t!]
 \begin{tcolorbox}
@@ -269,40 +306,83 @@ Each card looks much like a normal playing card, with one non-obvious flaw, such
 
 The Deck of Cards resists all magic, including gaining information about it through Fate.
 
-\magicitem{Spider Arrows}{Transient Web}{Devotion (Ohta)}{Instant}{Pocket Spell}{2}{3}\label{spiderarrows}
+\magicitem{Spider Arrows}% NAME
+	{Transient Web}% SPELL
+	{Devotion (Ohta)}% PATH
+	{Instant}% DURATION
+	{Pocket Spell}% TYPE
+	{2}% Potency
+	{3}
+\label{spiderarrows}% MP
 
 Back when followers of Ohta still regularly went to wars, they would create these Spider Arrows to make sure their quarry couldn't flee.
 Wherever the arrow lands, it casts a Web spell on the nearest target by turning the surrounding air into a sticky substance.
 The target resists with Strength + Athletics, TN 10 or remains caught in the web.
 
-\magicitem{God Slayer}{Raging, Internal, Lightning Bolt}{Devotion (Ohta)}{Instant}{Talisman}{5}{5}
+\magicitem{God Slayer}% NAME
+	{Raging, Internal, Lightning Bolt}% SPELL
+	{Devotion (Ohta)}% PATH
+	{Instant}% DURATION
+	{Talisman}% TYPE
+	{5}% Potency
+	{5}% MP
 \label{godslayer}
 
 If the sword ever inflicts 12 or more Damage on an opponent (before DR is applied), it can erupt with an invocation spell, inflicting an additional $2D6$ Damage which bypasses all DR, including Perfect DR.
 It otherwise functions as a normal great sword.
 
-\magicitem{Sleeping Dust}{Wide Sleep}{Devotion (Qualm\"e)}{Continuous}{Pocket Spell}{5}{3}
+\magicitem{Sleeping Dust}% NAME
+	{Wide Sleep}% SPELL
+	{Devotion (Qualm\"e)}% PATH
+	{Continuous}% DURATION
+	{Pocket Spell}% TYPE
+	{5}% Potency
+	{3}% MP
 
 Once this bag of chitincrawler-dust has been opened, sends the nearest four people to sleep.
 Each rolls Wits + Academics at TN 12 to resist.
 
-\magicitem{Taming Flute}{Adararon}{Devotion (Qualm\"e)}{Continuous}{Talisman}{5}{3}
+\magicitem{Taming Flute}% NAME
+	{Adararon}% SPELL
+	{Devotion (Qualm\"e)}% PATH
+	{Continuous}% DURATION
+	{Talisman}% TYPE
+	{5}% Potency
+	{3}% MP
 
 This flute, made of a basilisk's femur, can be played to lull any animal into a state of confusion.
 The creatures takes a Wits + Aggression roll, at TN 12.
 Failure means it loses any chance to act this turn, and the next turn it suffers a -5 penalty to all actions.
 
-\magicitem{The Raven Tree}{Realistic, Trans Species, Empathic Polymorph}{Devotion (Laiqu\"{e})}{Instant}{Talisman}{4}{22}
+\magicitem{The Raven Tree}% NAME
+	{Realistic, Trans Species, Empathic Polymorph}% SPELL
+	{Devotion (Laiqu\"{e})}% PATH
+	{Instant}% DURATION
+	{Talisman}% TYPE
+	{4}% Potency
+	{22}% MP
 
 Anyone taking an apple from this tree instantly transforms into a bird of some kind, unless they are strong enough to overcome the spell.  The magic can rearrange up to 7 Attribute points in order to reduce their Strength to -5, and can add up to 7 points to their Speed to bring them high enough to fly.  Once the spell has completed, the target remains as a bird until sundown.
 
 The tree regenerates 3 per scene.  Apples taken from the tree keep their magic for up to a week if kept in good condition.
 
-\magicitem{Ring of Asphyxiation}{Torpor}{Devotion (Qualm\"{e})}{Standing}{Item}{2}{1}\label{ring_asphyxiation}
+\magicitem{Ring of Asphyxiation}% NAME
+	{Torpor}% SPELL
+	{Devotion (Qualm\"{e})}% PATH
+	{Standing}% DURATION
+	{Item}% TYPE
+	{2}% Potency
+	{1}\label{ring_asphyxiation}% MP
 
 This simple ring, inlaid with bone, act as per the first level of the Necromancy sphere to stop the user feeling the effects of cold or hunger while the ring is worn.
 
-\magicitem{Wild Seeds}{Plantform, Wind Blast}{Devotion (Laiqu\"{e})}{Instant, Continuous}{Pocket Spell}{4}{6}
+\magicitem{Wild Seeds}% NAME
+	{Plantform, Wind Blast}% SPELL
+	{Devotion (Laiqu\"{e})}% PATH
+	{Instant, 4 scenes}% DURATION
+	{Pocket Spell}% TYPE
+	{4}% Potency
+	{6}% MP
 
 This bag of seeds forms a one-use item.
 Once opened the bag produces the effects of Wind Blast, moving everyone around back by 4 squares minus their Strength Bonus.
@@ -313,13 +393,26 @@ Anyone forcing their way through the thorns gets slowed down by 3 squares each t
 
 \subsection{Runic Items}
 
-\magicitem{Ghost Shield}{Dancing Swords}{Runes}{Continuous}{Sentient Talisman}{4}{3}
+\magicitem{Ghost Shield}% NAME
+	{Dancing Swords}% SPELL
+	{Runes}% PATH
+	{4 Scenes}% DURATION
+	{Sentient Talisman}% TYPE
+	{4}% Potency
+	{3}% MP
 
 Once the shield's user is in danger, the shield levitates to protect its owner.
 It has an effective Strength, Dexterity and Speed of 2.
 The shield immediately uses the \textit{Guard} action to protect its owner.
 
-\magicitem{The Eternal Warrior's Armour}{Call the Dead}{Runes}{1 Scene}{Pocket Spell}{4}{3}
+\magicitem{The Eternal Warrior's Armour}% NAME
+	{Call the Dead}% SPELL
+	{Runes}% PATH
+	{4 Scenes}% DURATION
+	{Pocket Spell}% TYPE
+	{4}% Potency
+	{3}% MP
+
 \label{eternalwarriorarmour}
 
 This plate armour, inscribed with necromantic runes, raises the wearer from the dead as a ghoul.
@@ -330,7 +423,14 @@ The breastplate contains two spells -- a second level spell to ensure the wearer
 \subsection{Songs}
 
 \label{chokingsong}
-\magicitem{The Choking Song}{Reading the Ripples}{Song}{Instant}{Talisman}{2}{17}
+
+\magicitem{The Choking Song}% NAME
+	{Reading the Ripples}% SPELL
+	{Song}% PATH
+	{Instant}% DURATION
+	{Talisman}% TYPE
+	{2}% Potency
+	{17}% MP
 
 The song of growth is sung by village elders in the Shale regions.
 The elders sing only on their own birthday, thanking Laiqu\"{e} for their village's prosperity.
@@ -339,7 +439,14 @@ Conversely, those following the Code of Acquisition, or who follow Qualm\"{e} or
 
 The song holds a total of 17 MP, and needs spend only 1 when sung.
 
-\magicitem{Medal of Heroism}{Forest's Call}{Song}{Instant}{Talisman}{6}{7}
+\magicitem{Medal of Heroism}% NAME
+	{Forest's Call}% SPELL
+	{Song}% PATH
+	{Instant}% DURATION
+	{Talisman}% TYPE
+	{6}% Potency
+	{7}% MP
+
 \label{medalofheroism}
 
 The hero sings of the devastation they will unleash upon the local monsters in the forest.
