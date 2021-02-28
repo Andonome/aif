@@ -38,10 +38,6 @@
 
 \input{resources.tex}
 
-\part{Side Quests}
-
-\input{enc_intro.tex}
-
 \startcontents[Town]
 \startcontents[Villages]
 \startcontents[Forest]
@@ -49,11 +45,19 @@
 \stopcontents[Villages]
 \stopcontents[Forest]
 
+\iftoggle{verbose}{
+
+\part{Side Quests}
+
+\input{enc_intro.tex}
+
 \input{enc_town.tex}
 
 \input{enc_villages.tex}
 
 \input{enc_forest.tex}
+
+}{}
 
 \appendix
 
