@@ -11,6 +11,15 @@ ${filename}.glg: svg-inkscape
 	pdflatex ${filename}.tex
 	makeglossaries ${filename}
 	pdflatex ${filename}.tex
+guide:
+	pdflatex players_guide.tex
+	pdflatex players_guide.tex
+	pdflatex players_guide.tex
+	pdflatex players_guide.tex
+all:
+	make clean
+	make guide
+	make
 tree:
 	[ -e ../config ] || ( echo "You don't have a local config repo" && exit 1 )
 	git status

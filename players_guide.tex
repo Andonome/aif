@@ -1,0 +1,36 @@
+\documentclass[a4paper,openany]{book}
+
+\usepackage{config/bind}
+\usepackage{config/monsters}
+\input{glossary.tex}
+
+\title{Adventures in Fenestra}
+
+\settoggle{verbose}{true}
+\newtoggle{players}
+\settoggle{players}{false}
+\externalReferent{core}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\frontpage{Adventures in Fenestra}%
+	{A World of Portals}%
+	{images/Unknown/wizard_and_cat.jpg}
+
+\tableofcontents
+
+\mainmatter
+
+\input{fenestra.tex}
+
+\input{history.tex}
+
+\input{nightguard.tex}
+
+\input{astronomy.tex}
+
+\printindex
+
+\end{document}
+
