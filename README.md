@@ -15,7 +15,7 @@ The config directory is a subtree, so don't touch it unless you know what you're
 > make
 
 -->
-| [Download][download] | [Core Book][BIND] | 
+| [Download][download] | [Core Book][BIND] | [Player's Guide][guide]
 
 # Adventures in Fenestra
 
@@ -66,3 +66,4 @@ A few Side Quests reference similar events or share histories, creating a semi-c
 
 [download]: https://gitlab.com/bindrpg/aif/uploads/ec9c7a7bfc635de7d48789d387605611/Adventures_in_Fenestra.pdf
 [BIND]: https://gitlab.com/bindrpg/core
+[guide]: https://gitlab.com/bindrpg/aif/uploads/dff6febd06f95a70089a7211115ce4bb/players_guide.pdf
