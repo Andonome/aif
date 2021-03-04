@@ -3,7 +3,7 @@ compile_pdf:
   script:
     - apt-get update -y
     - apt-get install -y inkscape
-    - make
+    - make all
     - mv main.pdf aif.pdf
   only:
     - master
@@ -11,3 +11,4 @@ compile_pdf:
   artifacts:
     paths:
       - aif.pdf
+      - players_guide.pdf
