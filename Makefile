@@ -13,6 +13,7 @@ ${filename}.glg: svg-inkscape
 	pdflatex ${filename}.tex
 guide:
 	pdflatex players_guide.tex
+	makeindex players_guide.idx
 	pdflatex players_guide.tex
 	pdflatex players_guide.tex
 	pdflatex players_guide.tex
