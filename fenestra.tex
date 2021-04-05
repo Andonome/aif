@@ -289,9 +289,9 @@ Anyone unable to find proper work, goes to work in \gls{nightguard}.
 Fenestra contains seven regions, each of which have a slightly different ecology and different populations.
 
 The human-populated areas tend to defend themselves and drive out dangers and monsters, but wander too far between settlements, or make a journey into a forest, and you may find a nasty creature, random traders, or even a mana lake.%
-\iftoggle{players}{%
+\iftoggle{players}{}{%
 \footnote{See page \pageref{mana_lake}.}
-}{}
+}
 
 Each region has a set of standard encounters for times when players wander into less populated and more dangerous areas.  These encounters aren't necessarily there for combat.  If players spot wolves, the pack may simply stalk them with a mind to steal food.  Alternatively, the players may wander into a pack of wolves mid-hunt, bringing down a deer.  An encounter with griffins need not be violent -- they could simply see a nest in the distance, and make the decision to steer clear.
 
@@ -368,7 +368,7 @@ So far, they have been unable to create another portal.
 The skills to do so are rare, coming along perhaps once in a generation of alchemists.
 But once the Coastal College succeed in creating a portal, this alternative college may turn into the seventh wing of \gls{shatteredcastle}.
 
-\iftoggle{players}{
+\iftoggle{players}{}{
 \begin{encounters}{Liberty}
 
 	Forest & Road & Result \\\hline
@@ -383,7 +383,7 @@ But once the Coastal College succeed in creating a portal, this alternative coll
 	& \lii $4D6+4$ Human traders (page \pageref{human_trader}). \\
 
 \end{encounters}
-}{}
+}
 
 \subsubsection{Seasonal Encounters}
 
@@ -425,7 +425,7 @@ Travelling in these storms slows everyone, and an increase in Fatigue of 3 point
 Many think this is due to long-frozen areas becoming unfrozen, releasing a number of corpses who were previously encased in ice.
 Roll $2D6$ for the number of ghouls encountered.
 
-\iftoggle{players}{
+\iftoggle{players}{}{
 \begin{encounters}{Eastlake}
 
 	Wastes & Lakeside & Result \\\hline
@@ -439,7 +439,7 @@ Roll $2D6$ for the number of ghouls encountered.
 	& \lii $1D6+3$ Human traders (page \pageref{human_trader}). \\
 
 \end{encounters}
-}{}
+}
 
 \subsection{Mt Arthur}\index{Mt Arthur}
 
@@ -485,7 +485,7 @@ The TN for Hunting also increases by 4 as the local wildlife suffers from the fu
 \paragraph{Warm} times bring out woodspies which, while rare in Mt Arthur, multiply a lot in the heat.
 Roll $1D6$ for the number encountered.
 
-\iftoggle{players}{
+\iftoggle{players}{}{
 \begin{encounters}{Mt Arthur}
 
 	Forest & Roads & Result \\\hline
@@ -499,7 +499,7 @@ Roll $1D6$ for the number encountered.
 	& \lii $4D6$ Human traders (page \pageref{human_trader}). \\
 
 \end{encounters}
-}{}
+}
 
 \subsection{The Pebbles}\index{Pebbles}
 
@@ -530,7 +530,7 @@ The inhabitants of the Pebbles are adept at preparing for such times, and have a
 The storms encountered during these times can wreck any boat.
 \paragraph{Warm} weather is muggy and humid, inflicting an additional 3 Fatigue Points per day's travel.
 
-\iftoggle{players}{
+\iftoggle{players}{}{
 \begin{encounters}{the Pebbles}
 
 	Sea & Land & Result \\\hline
@@ -544,7 +544,7 @@ The storms encountered during these times can wreck any boat.
 	& \lii Mouthdigger. \\
 
 \end{encounters}
-}{}
+}
 
 \subsection{Quennome}\index{Quennome}
 
@@ -599,7 +599,7 @@ Those rolling a successful Intelligence + Survival roll, TN 7, can lower their F
 Those failing the roll are poisoned, gaining $1D6$ Fatigue Points.
 Unfortunately the warm weather also brings out plenty of Woodspies -- roll $2D6$ for each encounter.
 
-\iftoggle{players}{
+\iftoggle{players}{}{
 \begin{encounters}{Quennome}
 
 	Forest & Lakeside & Result \\\hline
@@ -615,7 +615,7 @@ Unfortunately the warm weather also brings out plenty of Woodspies -- roll $2D6$
 	& \lii $3D6$ Heavily armed human traders. \\
 
 \end{encounters}
-}{}
+}
 
 \subsection{Shale}\index{Shale}
 
@@ -655,7 +655,7 @@ Underground populations only inhabit more stable areas, but those above ground c
 
 \label{bearded_encounters}
 
-\iftoggle{players}{
+\iftoggle{players}{}{
 \begin{encounters}{the Shale}
 
 	Tunnels & Plains & Result \\\hline
@@ -672,7 +672,7 @@ Underground populations only inhabit more stable areas, but those above ground c
 	& \lii  $3D6-2$ human traders (page \pageref{human_trader}). \\
 
 \end{encounters}
-}{}
+}
 
 \subsubsection{The Shattered Dungeon Wing}
 
@@ -715,7 +715,7 @@ Those wishing to travel to Whiteplains must go by foot.
 
 Various rumours exist of secret portals within the Heart which lead to other locations, such the South Kingdom, or strange lands beyond.
 
-\iftoggle{players}{
+\iftoggle{players}{}{
 \begin{encounters}{Whiteplains}
 
 	South & North & Result \\\hline
@@ -728,7 +728,7 @@ Various rumours exist of secret portals within the Heart which lead to other loc
 	& \lii $3D6-2$ Human Traders. \\
 
 \end{encounters}
-}{}
+}
 
 \subsubsection{Seasonal Encounters}
 
@@ -742,10 +742,10 @@ Travelling during one of these snowstorms inflicts an additional 5 Fatigue Point
 
 When wandering in the South, the melting snow can reveal strange portals to magical lands.
 
-\iftoggle{players}{
+\iftoggle{players}{}{
 These inexplicable magical portals appear around Whiteplains to the land of Shifting Corridors.\footnote{See page \pageref{shiftingcorridors}.}
 Roll on the encounter table for the Realm of Shifting Corridors, and if the result can `pop out' at the party, it will.
-}{}
+}
 
 \subsubsection{\Glsentrytext{nightguard}}
 
