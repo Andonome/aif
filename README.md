@@ -14,8 +14,12 @@ The config directory is a subtree, so don't touch it unless you know what you're
 
 > make
 
+# optional
+
+Clone the core book into the same directory, and aif will automatically reference the rules there with page numbers and such.
+
 -->
-| [Download][download] | [Core Book][BIND] | [Player's Guide][guide]
+| [Download][download] | [Core Book][BIND] | [Player's Guide][guide] |
 
 # Adventures in Fenestra
 
@@ -60,7 +64,7 @@ Instead, the next part of the story waits for them to arrive, and if they stay p
 
 A dozen Side Quests are presented for three areas: forest, villages, and town.
 You can slot these into an existing campaign if you're low on ideas, or use them as a miniature campaign in their own right.
-A few Side Quests reference similar events or share histories, creating a semi-coherent, but eclectic narrative.
+A few Side Quests reference similar events or share histories, creating a semi-coherent, eclectic narrative.
 
 ![Nura Cat](images/Unknown/wizard_and_cat.jpg)
 
