@@ -20,6 +20,7 @@ guide:
 all:
 	make clean
 	make guide
+	rm -fr svg-inkscape
 	make
 tree:
 	[ -e ../config ] || ( echo "You don't have a local config repo" && exit 1 )
