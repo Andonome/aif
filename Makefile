@@ -12,7 +12,7 @@ ${filename}.glg: svg-inkscape
 	makeglossaries ${filename}
 	pdflatex ${filename}.tex
 guide:
-	pdflatex players_guide.tex
+	pdflatex -shell-escape players_guide.tex
 	makeindex players_guide.idx
 	pdflatex players_guide.tex
 	pdflatex players_guide.tex
