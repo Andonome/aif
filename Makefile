@@ -18,10 +18,8 @@ guide:
 	pdflatex players_guide.tex
 	pdflatex players_guide.tex
 all:
-	make clean
-	make guide
-	rm -fr svg-inkscape
 	make
+	make guide
 tree:
 	[ -e ../config ] || ( echo "You don't have a local config repo" && exit 1 )
 	git status
