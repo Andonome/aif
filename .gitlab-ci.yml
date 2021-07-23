@@ -12,3 +12,4 @@ compile_pdf:
     paths:
       - aif.pdf
       - players_guide.pdf
+      - art.pdf

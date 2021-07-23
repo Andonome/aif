@@ -17,9 +17,12 @@ guide:
 	pdflatex players_guide.tex
 	pdflatex players_guide.tex
 	pdflatex players_guide.tex
+creds:
+	cd images && pandoc artists.md -o ../art.pdf
 all:
 	make
 	make guide
+	make creds
 tree:
 	[ -e ../config ] || ( echo "You don't have a local config repo" && exit 1 )
 	git status
