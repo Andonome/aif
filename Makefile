@@ -22,7 +22,6 @@ creds:
 all:
 	make
 	make guide
-	make creds
 tree:
 	[ -e ../config ] || ( echo "You don't have a local config repo" && exit 1 )
 	git status
