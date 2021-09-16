@@ -529,7 +529,11 @@ If the player rolls twice and achieves two re-rolls, they may find their parents
 Grandparents, god parents and adopted parents all count as parents; other examples may have to be modified to retain consistency.
 No more than three starting conditions should be applied, no matter how many times the player achieves a reroll.
 
-	If two players obtain the same result, they share the same background, as per the Story, `It'll be just like the old days'.  If their parents were both killed in the same event then they are from the same village or perhaps siblings.  They might both have worked on a similar job or share a magical item which they found at the same time.
+\iftoggle{core}{%
+	If two players obtain the same result, they share the same background, as per, \nameref{sharedstories}.\footnote{See the core book, page \pageref{sharedstories}.}
+	If their parents were both killed in the same event then they are from the same village or perhaps siblings.
+	They might both have worked on a similar job or share a magical item which they found at the same time.
+}{}
 
 \setcounter{list}{0}
 \begin{list}{\addtocounter{list}{1}\textbf{\arabic{list}:}}{\raggedleft}
@@ -748,7 +752,7 @@ You must land the killing blow in order to take this XP.
 
 	\item
 	Born during the holy day of V\'{e}r\"{e}, you are known to be true to your word and are known by all the priesthood of V\'{e}r\"{e}, who are always only too happy to help out where they can.
-	You can spend 1 Story Point every second story to introduce a priest of V\'{e}r\"{e}, as per the story `There is a man whom they call \ldots'.
+	Any time you introduce an NPC with Story Points, they can gain magical abilities for free, as long as they are a priest of V\'er\"e.
 
 	\item
 	Born during the festival of Laiqu\"{e}, you have always had a natural affinity with animals.
