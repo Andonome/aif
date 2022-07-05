@@ -1,0 +1,22 @@
+\chapter{Experience Rewards}
+
+\begin{multicols}{2}
+
+\noindent When making antagonists with pen and paper, I'd recommend eyeballing the XP, as enforcing a procedure can turn into a pain.
+
+However, if you're interested in how I've arrived at the XP values here, they are as follows:
+
+Additional points are added for anything which aids these basic Attributes, such as weapons' damage increase, or knacks.
+
+The broad idea is that XP should be proportional to how much of a challenge an antagonist presents.
+Additionally, some stats work better together than others.
+A creature which can reliably hit people but cannot do much damage is less of a threat than a creature which can strike well \emph{and} deal a lot of Damage.
+The three attacking stats -- the creature's final \textit{Strike} score, Damage, and Initiative, are multiplied together, as are the defensive stats -- HP, DR, and Evasion.
+The result is that if a creature has a lot of HP, adding some more DR will increase the challenge considerably, but adding more Damage will not make the creature much more dangerous if it cannot hit properly.
+
+\end{multicols}
+
+\begin{equation}
+\frac{(( Strike + 8 ) \times ( Initiative + 5) \times ( Damage + 5 ) ) + ( ( TN -2 ) \times ( DR + 2 ) \times ( HP )) - 350}{120}
+\end{equation}
+
