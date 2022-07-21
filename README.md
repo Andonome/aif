@@ -19,7 +19,11 @@ The config directory is a subtree, so don't touch it unless you know what you're
 Clone the core book into the same directory, and aif will automatically reference the rules there with page numbers and such.
 
 -->
-| [Download][download] | [Core Book][BIND] | [Player's Guide][guide] |
+
+| Downloads                  | Related Books                  |
+|:---------------------------|:-------------------------------|
+| [Campaign World][aif]      | [Core book][core]              |
+| [Players' Guide][guide]    | [Oneshot Adventure][oneshot]   |
 
 # Adventures in Fenestra
 
@@ -68,6 +72,7 @@ A few Side Quests reference similar events or share histories, creating a semi-c
 
 ![Nura Cat](images/Unknown/wizard_and_cat.jpg)
 
-[download]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/aif.pdf?job=compile_pdf
-[BIND]: https://gitlab.com/bindrpg/core
+[aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/aif.pdf?job=compile_pdf
+[core]: https://gitlab.com/bindrpg/core
+[oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/horde_escape_oneshot.pdf?job=compile_pdf
 [guide]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/players_guide.pdf?job=compile_pdf
