@@ -1,0 +1,691 @@
+\section{Locations in Town}
+
+\begin{multicols}{2}
+
+\toppic{Dyson_Logos/town}{\label{town_map}}
+
+\begin{table*}[t]
+
+\begin{rollchart}
+
+	Number & Location \\\hline
+	1 & \Glsentrytext{pig}. \\
+	2 & The White Horse Tavern. \\
+	3 & The Citadel of \glsentrytext{townmaster}. \\
+	4 & The Guard Station. \\
+	5 & Butchers' entrance to the Lost Library in the sewers. \\
+	6 & Temple of Ohta. \\
+
+\end{rollchart}
+
+\end{table*}
+
+\noindent \Gls{town} is a lifeless and lawless area.
+People enter it to sell, and the most fearful of people prefer to stay inside its walls, make a meagre living, and generally go hungry rather than face the creatures outside.
+Those who eat well are the nobles, direct servants of the nobles, and any of the Guard corrupt enough to bend a few laws (so almost all of them).
+
+While there isn't a legal difference between the guards in the city and \gls{nightguard} outside, the difference is palatable.
+Those inside are used to being heavy handed or violent with people, but they're terrified of the monsters outside, or anything unnatural.
+Most have some distant family connection to \gls{townmaster}, ensuring their intense loyalty.
+
+Those living in the town generally have some trade, such as iron-working, or making mead.
+Almost everyone works for one of the major guilds.
+Those on the lower rungs of the guilds live a tense life, always worried about being relieved of their duties, which would then force them into the \gls{nightguard}, outside the city walls.
+
+\subsection{\Glsentrytext{pig}}
+
+\setcounter{list}{0}
+
+\begin{boxtext}
+
+	Two men are pummelling each other in front of the pub's door.
+	 One limps and the other's nose is burst open and streaming down his shirt, but they continue circling like boxers.
+	 Two guards cry out and run forward to stop the public disturbance, and the two men immediately run together into \gls{pig}, a disreputable tavern near the city's entrance.
+	 The guards stop at the door, look at each other for a moment, and then back away.
+
+Nobody wants to go to \gls{pig} with unfriendly intentions.
+
+\end{boxtext}
+ 
+The roughest and oldest pub in \gls{town} sits just across from one of the major entrances, enticing traders in with the promise of the latest news and cheap ale.
+
+The owner, \gls{pigowner}, keeps the place in order with a mixture of social contacts with the roughest characters in \gls{town}, and occasional sudden violence.
+
+The place gets lenient treatment from the guards as it's an official Temple of Alass\"{e}, complete with an official priestess.
+The fact that she spends most of her time drunk doesn't detract from her status, or stop the occasional noble asking her to sneak items into the city.
+
+\toppic{Dyson_Logos/mincing_pig}{\label{mincing_pig_map}}
+
+\mapentry{Beerhall}
+
+\begin{boxtext}
+
+	Alassean song and cooked pig wafts hits you in the face as soon as the door opens.  With only three tables in the room, people have carved out little seating circles on the ground.  A fat cat with a brown collar sits in the rafters eyes you suspiciously as you struggle through the disorganized crowd to get to the bar.
+
+\end{boxtext}
+
+The cat's name is Bob, and his collar is made from dried, woven daffodil.  The collar is activated by shouting the elvish word for `dragon', at which point Bob will turn into a nura cat until someone says the elvish word for `cat'.
+
+As a result of Bob's collar, elves and people who speak elvish (such as many academics) are not welcome in \gls{pig}.
+
+\nuracat[\NPC{\N\A}{Bob}{Slick}{Licks Paw}{Experience}]
+
+\mapentry{Kitchen}
+
+The man at the back door is Peter -- one of the local Whiteplains nobles. He's had to take to theft and occasionally spies on people to survive, like so many other dispossessed nobles.  Nobody can know that he lives below -- he just came by to grab a meal before heading back out to become a labourer for \gls{townmaster} so the underground bandits can keep an eye on what he's doing.
+
+\begin{boxtext}
+
+	\Gls{pigowner} slams the door at the back of the room hard, blocking the view of the man who was out there.  Nancy tells you to leave, as if she were shooing 
+
+\end{boxtext}
+
+\pigowner
+
+\Gls{pigowner} has owned the pig since her father forged the inheritance documents, then died of alcohol poisoning shortly afterwards.
+
+\mapentry{Jane's Room}
+\label{priestessjane}
+
+Jane, priestess of Alass\"{e}, works here as a prostitute and organizes much of the cash inflow of other prostitutes.  She has a lot of respect and time for what the dispossessed nobles of Whiteplains want to achieve, though she doesn't know the details, and has no idea that the undead are wandering around below.
+
+\begin{boxtext}
+
+	Perfumes and sex fill your noses.  The wide room practically begs for shoes to be removed as it's filled with pillows, throws, and blankets.  The only raised platform is a table strewn with fortune-telling cards, where Jane sits with a headband made of gold.
+
+\end{boxtext}
+
+Under Jane's fortune-telling card table the floorboards are loose, and lead down to a new room, muffled by a thick curtain.
+The number of people entering here has lead to wild rumours about the number of men Jane satisfies each day, and the number of hours they spend in there.
+However, the reality is that almost everyone who enters the room simply wants to go to the secret side chamber.
+
+\NPC{\F}{Jane -- Priestess of Alass\"{e}}{Playing dim}{Humming between sentences}{Alass\"e} 
+
+\person{0}% STRENGTH
+	{1}% DEXTERITY
+	{0}% SPEED
+	{{1}% INTELLIGENCE
+	{0}% WITS
+	{2}}% CHARISMA
+	{0}% DR
+	{0}% COMBAT
+	{Academics~1, Empathy~2, Deceit~1, Larceny~2
+	\Path{Devotion (Alass\"{e})}{\fate~2}}% SKILLS
+{\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}% EQUIPMENT
+{}
+
+\mapentry{Thieves' Den}
+
+A number of local thieves know of this secret and secluded room.  It was once a side-chamber in a temple to Qualm\"{e} and Ohta, but now houses only ruffians who want to speak about good places to steal, or shady opportunities for extortion.
+
+\begin{boxtext}
+	Three men sit cross-legged on the floor, quietly playing cards.
+	The second they see you, an additional layer of silence enters the room.
+\end{boxtext}
+
+\humanthief[\npc{\T}{Three Cutthroats}]
+
+\mapentry{\Glsentrytext{pigowner}'s Room}
+
+\Gls{pigowner} lives in a mess of old notes about what she owes to whom, chests of illegal weapons\footnote{Weapons are not illegal but stockpiling more weapons than an individual can use \emph{is}.} hidden under various clothes (shortswords mostly), and various expensive alcohols, along with poisons, all lying about without labels.
+
+\mapentry{Pantry}
+\label{pig_pantry}
+
+\Gls{pigowner} used to store additional casks of ale, the good wine, and the best salted pork in here.  However, last month she heard a maid screaming and ran down to check on what had happened.  Through the door to the pantry she saw some undead creature chewing the still-living maid's face off chunk by chunk and immediately slammed the door shut.  Her shaking hand locked the door, then she gathered metals from the kitchen to jam into the lock so that it could never be opened again.
+
+The thieves who live in the sewers have apologized to \gls{pigowner} for letting the creature escape, but none have volunteered to open the door.
+On its way out they could see it was a different sort of undead -- not a regular ghoul, but something with a mind, and the ability to plan.
+
+The creature looks like a regular, skinny woman, with long brown hair, dead around six months.  However, the simple shell hosts a powerful necromancer.  Normally, the undead in the tunnels below are made from hobgoblins, but the thieves murdered a woman one night and decided to take her down below.  One of the sentient hobgoblins had enough magical ability to summon a powerful spirit into her.
+
+\npc{\D}{Monster in the Cellar}
+
+\person{0}% STRENGTH
+	{1}% DEXTERITY
+	{0}% SPEED
+	{{2}% INTELLIGENCE
+	{0}% WITS
+	{-5}}% CHARISMA
+	{2}% DR
+	{2}% COMBAT
+	{Academics~2, Medicine~1, Stealth~3, Survival~1, Vigilance~3
+	\Path{Devotion}{\aldaron~3, \fate~2, \necromancy~2}}% SKILLS
+	{None}% EQUIPMENT
+	{\lockedmana{2}}
+
+The creature has already risen the maid from the dead, and has an escape plan.
+It will create a magical mist as it hears anyone attempting to enter the door.
+Once the door opens, the mist pours out, obscuring all vision, and the ghoul-maid will come shambling out.
+Anyone attempting to kill the creature inside will probably attack the maid, and in the confusion, the monster from the cellar will attempt to stealth its way outside.
+In Jane's room, it will cover itself in blankets, posing as an embarrassed man who must leave unseen.
+Once on the street, it can find an alley to hide in, and begin its murderous rampage before diving into the river at the first sign of a mob.
+
+\ghoul[\npc{\D\F}{Undead Maid}]
+
+\mapentry{Runoff}
+
+Various little pipes, nooks, and gutters in the city lead underground.
+This little drain pops out here, and heads steadily downhill, eventually landing in the sewers below (see page \pageref{slidein}).
+
+The first member of the party to go down the tunnel rolls to spot the tripwire (Wits + Vigilance, TN 8), and failure means they immediately go tumbling downwards to the sewers.
+
+\begin{boxtext}
+
+	A little river can be heard ahead.
+	The torchlight shines on a thin but taught rope, stretching across a passage to the right.
+	The little river flows down steeply, fed by a gushing crack in the wall.
+	It's not clear if the rope was to server as a poor guard-rail or as a tripwire to send people tumbling down.
+
+\end{boxtext}
+
+\mapentry{Ventilation Shaft}
+
+This little tunnel reaches upwards to allow a modicum of fresh air to circulate down in the nasty little dungeon.  Characters with a Strength of 0 or greater are too large to fit through the narrow hole.  It emerges on a street, just below a rich man's house.
+
+\mapentry{The Temple of War}
+Long ago, the twin temples to Ohta and Qualm\"{e} stood close by, although the priests always had a respectful distrust of each other.
+They each barred the door from their own side, and allowed it to open only during prearranged meetings.
+
+\Gls{pigowner} has since covered the door with a shrine to Alass\"{e}, along with a large wooden backing which covers the door.  She doesn't want the various thieves who come down here to get the idea that they can raid a sacred temple, as it'll only cause more trouble.
+
+If the party break in, they find that the temple's lowest room is filled with expensive tapestries, swords, axes, and other items, each catalogued according to an extensive system they require to stay legal.  \Gls{king} has very precise rules about the ownership of weapons.
+
+\mapentry{The Ossuary}
+The locked door requires an Intelligence + Larceny check, TN 11, to open.
+
+\begin{boxtext}
+	The door swings inwards to show a full room decorated in bone.
+	Skulls arranged in circles, with shoulder-blades making a decorative backing, little stick-figures carved from femurs, tibulae and fibulae, and pillars, dripping with candle wax, crafted from metal bolts holding up skulls and rib-bones.
+	Among all of them, gold coins sit in eye sockets, and jewels have been wedged into the ribs.
+	A sparkling treasure rests all around the room.
+
+	Letters in Quenya state ``We bones await yours''.
+\end{boxtext}
+
+The temple of Qualm\"{e} held its fasting chambers here, where men would compete to stay underground and hungry the longest, with the winner receiving accolades, honour, and feasts.  Anyone who died won instantly, and their family received double the normal prize money, along with their departed's skull, newly painted with sacred quotations.
+
+The total value of the jewels inside here is 350gp.
+\Gls{pigowner}, and the bandits know better than to go grave robbing, especially when they are aware the old temple had guardians.
+
+Three men competed and won the right to protect the temple.
+They starved themselves into a state of lichdom after being buried alive in one of the walls.
+While the hidden room, being covered in bricks, is almost impossible to detect (Intelligence + Crafts, TN 14), they can break those bricks down at any point.
+
+\demilich[\npc{\T\D}{Three Temple Guardians}]
+
+\mapentry{The Descent}
+This path downwards leads to the thieves' den underground (see page \pageref{pigexit}).
+
+\subsection{The Temple of Ohta}
+
+The temple is a simple one-storey building with a wide area.
+It functions mostly as a gymnasium, as priests of Ohta tend not to give sermons.
+Below, in theory, would be an emergency store of weapons which \gls{townmaster} could use to raise an army if nura or other enemies appeared.
+However, over the years, \gls{king} has sent continuously more members of \gls{nightguard} down to take from the store, so now the shelves lie mostly empty.
+The townsfolk are unaware of this change, and Boris, who run the temple, doesn't want to tell anyone, for fear of stoking panic.
+
+\humanpriest[\npc{\M}{Boris}]
+
+\end{multicols}
+
+	\toppic{Dyson_Logos/white_horse_2}{}
+
+\setcounter{list}{0}
+
+\begin{multicols}{2}
+
+\subsection{\Glsentrytext{whitehorse}}
+
+\mapentry{Drinking Hall}
+
+\begin{boxtext}
+
+	A large man with a well-greased moustache halts you at the door.
+
+	\begin{quotation}
+
+		My good gentlemen and excellent ladies, I've been looking all over town for a noble from Whiteplains.  Do you know where I might find him?
+
+	\end{quotation}
+
+\end{boxtext}
+
+Elric guards the door, and wants to know if the characters are loyal to \gls{king} -- and all loyal subjects know that there \emph{are} no nobles in Whiteplains, because \gls{king} has chased them all out for their rebellion.
+
+\begin{speechtext}
+
+	You don't know?  Well I have an idea -- if he's around here, he'll be in the jail, which is where riff raff go who go where they're not wanted!
+	So out you go!
+
+\end{speechtext}
+
+If the characters answer correctly, they're let in, but the establishment will be leery of them -- there's no real incentive to make money here, the patrons are a small group of elites, and a few polite traders.
+
+The hall contains various villagemasters playing games, and half a dozen local guards.
+
+\mapentry{Kitchen}
+
+The staff sleep here during long shifts.  The lack of proper ventilation makes the air difficult to breathe.
+
+\mapentry{The Courtyard}
+
+\begin{boxtext}
+
+	\Gls{townmaster} has his legs tied together and is hopping away from a coterie of chuckling men.
+	 A chicken runs out in front of him with a little paper hat.
+	 He lunges forwards and grabs the chicken in his teeth.
+	 As the chicken reaches the peak of its small voice, He shakes the chicken back and forth like a rabid dog until the chicken stops clucking.
+
+	The crowd cheer, and another man steps forward to have his feet bound.
+
+\end{boxtext}
+
+The courtyard usually contains a couple of carriages, and nobles playing ridiculous games.
+
+\mapentry{Upstairs}
+
+Upstairs contains two rooms, a load of equipment for the tavern, sleeping mats for favoured servants, and bookshelves.
+
+The bookshelves contain rather a lot of history books, most focussing upon anti-elven propaganda, such as the time they destroyed the now-lost city.
+ 
+\pic{Dyson_Logos/white_horse_1}
+
+\subsection{The Citadel}\label{citadel}
+
+The citadel is massive, and contains various floors.
+
+\begin{enumerate}
+
+	\item{Ground Floor: Outsiders}
+		\begin{itemize}
+			\item{Left Wing: Ballroom.}
+			\item{Left Wing: Guardroom.}
+			\item{Right Wing: Dining Room.}
+			\item{Right Wing: Servants' Quarters.}
+			\item{Right Wing: Kitchen.}
+		\end{itemize}
+	\item{First Floor: Insiders}
+		\begin{itemize}
+			\item{Left Wing: Guest Beds.}
+			\item{Left Wing: Study.}
+			\item{Right Wing: \Glsentrytext{townmaster}'s Sons' 9 Quarters (a nearby tree stands tall enough to access one room).}
+			\item{Right Wing: Secret Stairway up to the floor above.}
+			\item{Right Wing: Winery.}
+		\end{itemize}
+
+	\item{Second Floor: Others}
+		\begin{itemize}
+			\item{Left Wing: Jared, the Alchmist's Study.}
+			\item{Left Wing: \Glsentrytext{townmaster}'s close servants' quarters.}
+			\item{Right Wing: \Glsentrytext{townmaster}'s room.}
+			\item{Right Wing: Treasury.}
+		\end{itemize}
+
+\end{enumerate}
+
+The lower floor holds fifteen guards in each wing.
+
+\humansoldier[\npc{\T}{The Citadel Guards}]
+
+The various sons of the townmaster will fight for no more than one round before surrendering, and promising that their father will pay handsomely.
+
+\humandiplomat[\npc{\T\M}{\Glsentrytext{townmaster}'s Nine Sons}]
+
+\humanalchemist[\NPC{\M}{Jared, the Alchemist}{Caring}{Counts everything at every opportunity}{Acquisition}]
+
+\label{citadel_alchemist}
+
+\townmaster
+
+\subsection{The Guard Station}\label{guardstation}
+The grounds are patrolled by a minimum of five guards at any point.
+\Gls{captain} has an obsession with guards constantly rotating around the premise.
+As a result, they've hidden a stash of whiskey in the bushes at the back, and sometimes have `rounds', while they do the rounds.
+
+The wooden buildings tacked into the outer wall have thin rooves which constantly bend and creak -- walking silently across them is impossible for anything with a total weight of 4 or more.
+
+Inside, \gls{captain} keeps a few magical items stashed away in his own room.
+
+\humansoldier[\npc{\T}{30 Night Guards}]
+
+\magicitem{Scroll of Fire}{Fireball}{Alchemy}{Instant}{Pocket Spell}{4}{4}
+
+Once the words on the scroll are spoken, the scroll is destroyed, and a fireball spanning 5 squares leaps out to deal $2D6$ Damage.
+
+The guard house also contains 10 Spider Arrows and three sets of Eternal Warrior's Armour (see page \pageref{eternalwarriorarmour}).
+
+\begin{enumerate}
+
+	\item{Stables}
+	\item{Storeroom room with handheld weapons, siege weapons, and basically every item listed in the core book}
+	\item{Toilet}
+	\item{Captain's Toilet}
+	\item{\gls{captain}'s Room}
+	\item{Sleeping Quarters}
+	\item{Dressing room, with armour}
+	\item{Lecture Hall (though mostly used as a drinking hall)}
+	\item{Records Room, containing lists of fugitives, laws, tax records (a copy is kept in \gls{townmaster}'s treasury), and and valuable paintings of local nobles}
+	\item{Interrogation room}
+	\item{Shrines to Alass\"{e}, Laiqu\"{e}, Ohta, Qualm\"{e}, and V\'{e}r\"{e}.}
+	\item{Stairway down to the dungeons}
+\end{enumerate}
+
+\pic{Dyson_Logos/guard_station}{\label{dyson:guard}}
+
+\subsubsection{The Dungeon}
+
+Some time ago, the guards captured an ogre, and \gls{townmaster} ordered them to keep it alive so he could better understand the nura, and perhaps to bring it out as a pet one day.  Since then he's forgotten about it, but the guards have to keep feeding it.  Twice a day, they take a cart down the stairs, deal out a small portion to each of the inmates, then place the rest by the great door as a massive, grabbing hand reaches out the shutter and piles the food into its mouth.
+
+\begin{boxtext}
+
+	With a hood shoved over your head, you're taken down a set of stairs, then spun around, then down another, spun around again, then taken down another set of stairs, spun around again, then pushed hard down a long hallway.
+	 The stench of shit fills the room.
+	 You hear a horrible, inhuman, roar, feel something slippery under your feet, then pull right, down the hall, right again and two steps later the bag's pulled from your head, and you see a small pair of eyes in the darkness in front of you as the door slams shut behind you.
+	 The lock clinks shut in the darkness, and the little voice asks ``Hello?''.
+
+\end{boxtext}
+
+\pic{Dyson_Logos/under_station}{\label{dyson:understation}}
+
+They didn't know what to do about a toilet, and they've never wanted to move the ogre, so the ogres shits in a bucket, and once a day it throws the contents out of the hatch and onto a guard.
+This is the only fun the ogre has, and the biggest irritation the guards have to put up with.
+
+As the characters enter the dungeon, they're separated and thrown in with thieves, townsfolk who talked badly about \gls{king}, and one indebted trader who can't stop pitying himself.
+
+\begin{enumerate}
+
+	\item{Food Storage}
+	\item{Drunken guards}
+	\item{Starving prisoners}
+	\item{Empty cell}
+	\item{Fake doors with locks on them}
+	\item{The Ogre}
+
+\end{enumerate}
+
+\npc{\M\N}{The Ogre}
+
+	\person{7}% STRENGTH
+	{0}% DEXTERITY
+	{4}% SPEED
+	{{-3}% INTELLIGENCE
+	{-2}% WITS
+	{-4}}% CHARISMA
+	{0}% DR
+	{2}% COMBAT
+	{Beast~Ken~2, Crafts~1, Tactics~1}% SKILLS
+	{Nothing}% EQUIPMENT
+	{}
+
+\subsection{The Lost Library}\label{sewers}\setcounter{list}{0}
+
+The old temple of Qualm\"{e} stretched deep underground, and soon after it was built, a library was commissioned by local alchemists.
+The two shared much of the space for some time.
+The place held students, priests, alchemists, and a grand library.
+However, once the nearby city was destroyed (now \gls{lostcity}), there was no longer enough money, pilgrims, or students hoping to one day see the great university of the city to sustain the underground library, or the temple.
+
+A century later, an earthquake destroyed most of the area, and the library has been left in the silent darkness since then.
+
+When the Whiteplains nobles, bereft of a home and desperate, found they had this secret space available in \gls{pig}, they dug their way down as quickly as they could.  The nearby sewage stream, heading swiftly underground, made pulling rocks and mud out simple.
+
+\paragraph{The doors} are all locked by a single key, and barred from the bandits' side.
+Lock-picking them requires an Intelligence + Larceny Group Roll, TN 10 if the bar's up, and TN 14 otherwise.
+
+\paragraph{The narrow hallways}
+make longer weapons difficult to use.
+The \textit{Enclosure Rating} here is 4, so anyone using a weapon which requires 6 Initiative will suffer a -2 penalty to attack.%
+\iftoggle{core}{
+	\footnote{See the core rulebook for more on Enclosure Ratings, page \pageref{enclosedcombat}.}
+}{%
+	\footnote{See the core rulebook for more on Enclosure Ratings.}
+}
+
+\toppic{Dyson_Logos/sewer}{\label{sewer_map}}
+
+\mapentry{Stairway to the Butchers}\label{butcher_exit}
+
+This stairway has been dug upwards to a drain just outside of a butchers.
+The bandits enter and exit through here.
+
+\mapentry{The Old Library }\label{oldlibrary}
+
+Players might be expecting a dramatic fight as an enemy pops out from the alcoves.  There isn't one.  The only thing to find here is a single alcove which was dug through, leading to a brutally hacked-out tunnel.
+
+Observant characters may notice that a single brazier looks different from the rest.  It's from the underground realm through the portal, and raises any dead in the area as ghouls.
+
+\begin{boxtext}
+
+	Markings on the walls show where hundreds of bookshelves once provided the entire city knowledge, but not a scrap of paper remains, and the only remaining shelves lie broken on the ground.  High above, the braziers hang inactive between three great stone pillars.  Each wall has four alcoves for specialist books, but now has nothing.
+
+\end{boxtext}
+
+\mapentry{The Dogs}
+
+\begin{boxtext}
+
+	Just ahead, you can see half a dozen dogs lying on the ground and chained up.  They perk up, pull their chains taught, and sniff the air in front of them.
+
+\end{boxtext}
+
+The original function of this room's been long forgotten.  Currently various dogs are chained here as an early warning signal.  The dogs have been stolen from the streets, and a number of people would like to see them returned.
+
+The dogs won't sound any alarm until they see the characters -- they're used to people moving about, and generally anticipate being fed when they hear footsteps.  They also don't panic when seeing the undead, as the undead have no interest in attacking them.
+
+\Gls{patron} has gifted hobgoblin bands to make new tunnels, so the bandits can carve out their own little underground kingdom.  Once the hobgoblins die, they're raised from the dead by the brazier hanging in the old library (page \pageref{oldlibrary}).
+
+Each room holds $1D6+3$ undead hobgoblins.  Most also hold one of the sentient undead who were smuggled into the area.  The sentient ones will not attack first -- they will show restraint, stay behind the other dead, and in general interest themselves with plotting how to get the gate open permanently once \gls{patron} wishes it.
+
+\huntingdog[\npc{\T\A}{6 Dogs}]
+
+\mapentry{Dead Storage}
+
+Anyone attempting to move through a hallway filled with these narrow tunnels must roll Speed + Athletics, TN 8 or be grabbed by one, at which point another gets a chance to grab the character, and another.  Three can make an attack at any given point once someone is in range.
+
+\begin{boxtext}
+
+	Ahead is another alcove with an iron gate in front, holding those strange dead creatures behind them.  Arms reach out, filling the hallway.
+
+\end{boxtext}
+
+\undeadhobgoblin[\npc{\T\N\D}{Undead Hobgoblins}]
+
+Remember that these undead hobgoblins look like any other -- they shamble, their eyes are dead, and they want to kill.
+However, they have a mind, and are quite prepared to use it to put people off-guard by playing dumb.
+
+\sentientundeadhobgoblin[\npc{\T\N\D}{Sentient Undead Hobgoblins}]
+
+\mapentry{Magical Item Storage}
+
+\begin{boxtext}
+
+	The boarded up wall pulls open -- the entire thing was a door made to look like a blocked entrance.  The rings of shelves show a strange assortment of items -- jars filled with human teeth, an old brazier, dried snowdrops, and a vial of blood.
+
+\end{boxtext}
+
+\Glsentrytext{sewerking} stashes most of his prizes in this room on a simple series of shelves.  Each is cast with Intelligence +1 and Wits +1.
+
+\begin{enumerate}
+
+	\item{A bag of teeth that turn into any simple item, as per Conjuration level 3.}
+	\item{A vial of lamb's blood which makes the user invisible to the dead and immune to fatigue, marked "Dead Wine" (as per Necromancy level 1).}
+	\item{A pressed Autumnal leaf, which releases 2 mana when destroyed.}
+	\item{An ancient scroll, proclaiming elves the friends of humans, and seven reasons not to worry about nobles being assassinated.  Anyone reading the scroll can raise any creature in the vicinity from the dead, regardless of size, as per the third level of Necromancy.\footnote{This scroll was made by the Saurecanta sphere.}}
+	\item{The Assassination Dagger, which inflicts an additional $1D3+1$ HP Damage during the round's first attack (ignoring all FP).  This ability can be used once per scene.}
+	\item{Magic Mushrooms, enchanted with Saurecanta level 2 to decrease the user's Intelligence and Charisma by 3 and increase Speed by the same amount.}
+	\item{A slashed painting of a broken castle -- damaging it further summons an archmage (see page \pageref{archmage}.)}
+	\item{Foul alcohol in a bottle, which makes the imbiber regenerate fatigue if they eat, and otherwise inflicts hunger paints, as per Saurecanta level 1 (see page \pageref{saurecantaone}).}
+\end{enumerate}
+
+\mapentry{\Glsentrytext{sewerking}'s Room}
+
+\begin{boxtext}
+	The door opens to a noble's room, bearing a striking contrast to the dungeon around.  The bed's well made, the sheets are silk, and various books sit on shelves.  On the table sits various maps.
+\end{boxtext}
+
+\begin{itemize}
+
+	\item{The city map shows every entry point the bandits can enter the city above, including the theoretical passage the bandits think could be found again under \glsentrytext{townmaster}'s Citadel.}
+
+	\item{A map of the area, outlining \glsentrytext{lostcity}, the portal by \glsentrytext{redfall}, and \gls{necromancer}'s lair.}
+
+	\item{A complete map of the current location -- the Abandoned Library.}
+
+\end{itemize}
+
+Besides the map, the table has an emergency magical item -- an egg, which grants +3 Speed and Strength, but -6 Charisma and Intelligence.
+It activates once broken, whether thrown at someone, or broken on purpose.
+
+The books are variously written on History (real and imagined), The Art of Lies (by an elvish author), instructions on hosting a dinner party, and a ledger, detailing library items \gls{sewerking} has sold to \gls{townmaster},\footnote{Nothing here mentions \glsentrytext{townmaster} by name.} and various other items which were stolen.
+
+\mapentry{Ogre Dust}
+
+A thin wire was stretched across the floor, leading up to a small stretch of leather, holding snowdrops.  Anyone failing a Wits + Vigilance roll, TN 12 in the twilight, feels the petals fall down.  A moment later, the character's afflicted as per Saurecanta, level 2, and gains +4 Strength at the cost of -4 Charisma.
+
+\begin{boxtext}
+
+	A little thread pushes against your face, like a steel spiderweb.
+	A second later, something flutters around your head.
+	The falling debris feels annoying beyond words, and it's difficult to say why -- you simply feel incredibly irritated, and hungry.
+	\emph{Extremely} hungry.
+
+\end{boxtext}
+
+\mapentry{Food Storage}
+
+\begin{boxtext}
+
+	Barrel after barrel fill the room, along with the smell of wine, apples, and vinegar.  A little basket of choice snacks sits on top.
+
+\end{boxtext}
+
+The room is normal, except for the basket of choice snacks, which is poisoned with an intense laxative.
+\Gls{sewerking} suspects one of his men steals food when returning from business in \gls{town}, so he's left a basket of poisoned food.
+Someone can tell it's poisoned with a Wits + Medicine roll, TN 8.
+Failure means the character will have a bad night, and gain 3 Fatigue Points each scene for the rest of the day.%
+\footnote{Feel free to roll for the characters so they're not aware there's a problem.}
+
+\mapentry{The Drowned Hallway}
+
+This area recently suffered a little flood.  Most of the water has dissipated, but this lower portion of the tunnels remains flooded.  The undead hobgoblins remain locked in their cells underground.
+
+
+\begin{boxtext}
+	Going down the stairs you feel your feet hitting cold water.  It's not clear how far the water goes down, but it's cold.
+\end{boxtext}
+
+The water goes up to the ceiling by the last step, and for four squares after.  Each ghoul-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and have been blinded by the dark waters.
+
+\mapentry{Portal Room}
+
+
+\begin{boxtext}
+	The grand hall's end glistens with jewels of all colours of the rainbow, arranged around a great stone sphere, with a single concave side facing the room.
+
+	The rest of the massive hallway contains nothing but a couple of ale casks and stools.  Five doors line the far side, and another two doors on the side of the room you came from.  The walls are scorched with fire.
+
+\end{boxtext}
+
+A moment later, the characters hear doors moving as the bandits wake up and move from the little rooms they sleep in at the side of the alcove.  Each room contains two.
+
+The portal's command words are nowhere to be found here, but can be researched with an Intelligence + Academics roll, TN 16 (or 10 with a good library).  If opened, a portal opens directly to the Realm of Darkness and Fire (page \pageref{darknessandfire}).
+
+\humanthief[\npc{\T}{12 Sewer Bandits}]
+
+\sewerking
+
+\mapentry{Entrance to the Citadel}
+
+\begin{boxtext}
+	The picks and torches on the ground show that someone's been working their way into the ground.  At the moment, the tunnel ends in a dead end.
+\end{boxtext}
+ 
+The single square of rock ahead is made of fallen debris, so the PCs can move it far easier than most rock walls with a Strength + Crafts Group Roll, TN 9.%
+\iftoggle{core}%
+{\footnote{See the core book, page \pageref{grouproll}, for Group Rolls.}}%
+{}
+They'll need to accumulate a total margin of 10, whether in one roll, or many, in order to clear the way.
+Each roll takes 1 scene.
+
+\label{pigexit}
+
+\mapentry{Sewer Entrance}\label{slidein}
+
+This path follows an artificial stream, which goes downhill from \gls{pig}, above.
+The stream continues downwards to an underground area and then goes underground.
+Anyone venturing down here simply dies in the unending blackness.
+
+\mapentry{Entrance to \glsentrytext{pig}}
+
+Up these stairs, characters can reach the bowels of \gls{pig}.
+If they're bursting out to see the place for the first time, people will know they're not regulars and attack.
+Once up, everyone in \gls{pig} will deny any knowledge of the deeper tunnels, and the fact that bandits lived down there.
+
+\mapentry{Exit to the External Farm}
+
+\begin{boxtext}
+
+	The stairs go upwards for some time, and eventually arrive at a room filled with barrels of food, and a trapdoor above.  A man can be heard snoring.
+
+\end{boxtext}
+
+Outside \gls{town}'s walls the tunnel ends in a farmhouse.
+The thieves rarely use farmer Angus's escape route, as they risk compromising their position.
+His house above has several rooms, as he's done rather well for himself, and hopes that once the revolution comes he'll be in an even better position.
+
+\mapentry{Guardroom}
+
+Here four of the thieves sit and play simple dice games to pass the time, or occasionally sleep in the foetid straw.
+These are not lost nobles from Whiteplains, but opportunists that \gls{sewerking} has taken on board.
+
+\humanthief[\npc{\T}{Four Cutthroats}]
+
+\mapentry{The Old Temple to Qualm\"{e}}
+
+There are twelve pillars in total in the room, and each one was formed by members of a family, over the course of generations, donating money to the Temple of Qualm\"{e}.  Those who died in its service had their skulls added to the tower.  It could take two hundred generations to create some of these towers.  Once the tower is completed, the top skull has the family's name carved into the forehead.  Family members
+
+\begin{boxtext}
+
+	The massive room has a strange lack of smell.  Towers of skulls stand in neat piles, each resting in a small pillar.  Some are as tall as a man, others reach nearly to the ceiling.  Each one has writing upon the top skull.
+
+	At the far side of the room is another exit.
+
+\end{boxtext}
+
+There are twelve pillars in total in the room, and each one was formed by members of a family, over the course of generations, donating money to the Temple of Qualm\"{e}.  Those who died in its service had their skulls added to the tower.  It could take two hundred generations to create some of these towers.  The top skull has the family's name carved into the forehead, and speaking the family name along with religious incantations to Qualm\"{e} activates some magical effect.
+
+Each pillar can be used once a day.
+They require a short prayer (which takes a full round to say), and understanding which prayer aligns with which skull requires an Intelligence + Academics Group Roll (the TN depends upon the type of pillar).
+The character requires a Margin of 2 to know what will happen before casting the spell.
+
+\paragraph{Smaller Pillars: (TN 8)}
+
+\begin{enumerate}
+
+	\item{(2) Regenerate $1D6$ FP.}
+	\item{The target loses $1D6$ FP (this family stopped paying temple dues).}
+\end{enumerate}
+
+\paragraph{Larger Pillars: (TN 10)}
+
+\begin{enumerate}
+
+	\item{The room is filled with sweet-smelling mist, as per Aldaron level 2.}
+	\item{The target sees a vision of the future, as per the Fate spell Augury.}
+	\item{Target regenerates $1D6+2$ FP.}
+\end{enumerate}
+
+\paragraph{Towering Pillars: (TN 12)}
+
+\begin{enumerate}
+
+	\item{This one pillar is topped by a trapped spirit, rather than being a simple magical item.  The spirit, once presented with any appropriate token of the dead, will enchant it to be a useful magical item.  The enchantment will come from the Necromancy sphere, and is cast with Intelligence +2 and Wits +2.  The enchantment lasts for a day.}
+	\item{The target regains $1D6+3$ FP.}
+	\item{Any recently deceased target is returned to life, as per Fate level 5.}
+
+\end{enumerate}
+
+\vfill\null
+
+\end{multicols}
+
