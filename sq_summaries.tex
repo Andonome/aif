@@ -1,12 +1,10 @@
 \chapter{Side Quest Summaries}
 \label{sqSummaries}
 
-\printcontents[Town]{l}{2}{\section*{Town}\setcounter{tocdepth}{3}}
-
-\printcontents[Villages]{l}{2}{\section*{Villages}\setcounter{tocdepth}{3}}
-
-\newpage
-\printcontents[Forest]{l}{2}{\section*{Forest}\setcounter{tocdepth}{3}}
+\foreach \x in {Town, Villages, Forest}{
+  \center\subsection*{\x}
+  \printcontents[\x]{l}{2}{\setcounter{tocdepth}{3}}
+}
 
 \vspace{5em}
 \begin{multicols}{2}
@@ -18,4 +16,3 @@ Once the PCs encounter some Side~Quest which combines with another, pick another
 Remember to write a `\ding{51}' in front of the Side Quest encounters which have become available, and `\ding{55}'~out encounters which you've completed.
 
 \end{multicols}
-
