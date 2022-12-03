@@ -17,6 +17,20 @@ Keywords={TTRPG,RPG,roleplaying}
 \settoggle{players}{false}
 \externalReferent{core}
 
+\ifnum\month>9
+  \newcommand\season{Alassea}
+\else
+  \ifnum\month>6
+    \newcommand\season{Atya}
+  \else
+    \ifnum\month>3
+      \newcommand\season{C\'alea}
+    \else
+      \newcommand\season{Qualmea}
+    \fi
+  \fi
+\fi
+
 \begin{document}
 \pagenumbering{gobble}
 
