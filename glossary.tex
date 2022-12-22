@@ -155,7 +155,7 @@
 {1}% COMBAT
 {Projectiles~3, Academics~2, Crafts~(fletchery)~2, Deceit~1, Performance~1, Vigilance~3, Wyldcrafting~1
 \knacks{\snapshot, \mightydraw, \perfectsneakattack}
-\Path{Devotion (Qualm\"{e})}{\aldaron~3, \fate~2, \necromancy~5}}%SKILLS
+\Path{Devotion (Qualm\"{e})}{\aldaron~3, \enchantment~3, \necromancy~5}}%SKILLS
 {Hunting Bow, dagger}%EQUIPMENT
 {\lockedmana{3}}
 }
@@ -198,7 +198,7 @@
 \person{3}% STRENGTH
 	{3}% DEXTERITY
 	{0}% SPEED
-	{{1}% INTELLIGENCE
+	{{0}% INTELLIGENCE
 	{-1}% WITS
 	{2}}% CHARISMA
 	{0}% DR
@@ -219,16 +219,17 @@
 \NPC{\M}{\Glsentrytext{sewerking}}{Alpha male}{Hands on sword}{Experience}
 
 \person{1}% STRENGTH
-	{3}% DEXTERITY
-	{2}% SPEED
-	{{1}% INTELLIGENCE
-	{1}% WITS
+	{0}% DEXTERITY
+	{1}% SPEED
+	{{2}% INTELLIGENCE
+	{0}% WITS
 	{1}}% CHARISMA
 	{0}% DR
-	{3}% COMBAT
-	{Academics~1, Caving~1, Crafts~2, Deceit~3, Tactics~2, Vigilance~2\knacks{\adrenalinesurge, \firststrike}}% SKILLS
-	{\longsword, \partialleather, two daggers, 40sp}% EQUIPMENT
-	{\addtocounter{fp}{5}}
+	{1}% COMBAT
+	{Academics~1, Caving~1, Deceit~3, Seafaring~1, Tactics~2, Vigilance~2
+	\Path{Alchemy \& Nura}{\conjuration~3, \illusion~3, \necromancy~3, \saurecanta~2}}% SKILLS
+	{\shortsword, \partialleather, dagger, 20sp}% EQUIPMENT
+	{\addtocounter{fp}{5}, \lockedmana{8}}
 }
 
 \newglossaryentry{sewerking}{
