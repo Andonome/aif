@@ -12,6 +12,14 @@ It'd be great to get the name back if anyone knows.
 
 ![Studio DA](Studio_DA/woodspy.svg)
 
+![Alhazartfinds](Alhaz/crab.svg)
+
+https://www.fiverr.com/alhazartfinds
+
+Deckydraws: https://www.fiverr.com/deckydraws
+
+![Decky](Decky/ghast.svg)
+
 # Landscapes
 
 Tom Prante and Jaeger made some of their landscape art CC (originally, they were in colour).
