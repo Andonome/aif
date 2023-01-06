@@ -33,7 +33,8 @@
   {3}% DR
   {1}% COMBAT
   {Deceit~2, Stealth~3, Tactics~2, Wyldcrafting~3
-  \Path{Blood \& Song}{\aldaron~3, \polymorph~4}}% SKILLS
+  \knacks{\bloodCaster, \songCaster}
+  \Path{\aldaron~3, \polymorph~4}}% SKILLS
   {None}% EQUIPMENT
   {\addtocounter{strb}{3}\lockedmana{5}\addtocounter{xpbonus}{4}}
 }
@@ -107,7 +108,8 @@
   {0}% DR
   {0}% COMBAT
   {Academics~3, Empathy~2, Stealth~2, Vigilance~2
-  \Path{Alchemy}{\conjuration~2, \illusion~4}}% SKILLS
+  \knacks{\alchemist}
+  \Path{\conjuration~2, \illusion~4}}% SKILLS
   {\Dagger, 20gp, crudely drawn maps}% EQUIPMENT
   {\addtocounter{fp}{10}}
 }
@@ -129,7 +131,9 @@
   {2}}% CHARISMA
   {0}% DR
   {1}% COMBAT
-  {Projectiles~2, Academics~2, Empathy~2, Performance~3, Seafaring 2, Stealth~1, Vigilance~2, Wyldcrafting~2\Path{Blood}{\aldaron~3, \enchantment~2, \fate~2, \force~1}}% SKILLS
+  {Projectiles~2, Academics~2, Empathy~2, Performance~3, Seafaring 2, Stealth~1, Vigilance~2, Wyldcrafting~2
+  \knacks{\bloodCaster}
+  \Path{\aldaron~3, \enchantment~2, \fate~2, \force~1}}% SKILLS
   {\shortsword, shortbow, dagger, earrings worth 20 sp, necklace worth 2 gp, bracelets each worth 2 sp}% EQUIPMENT
   {}
 }
@@ -154,8 +158,8 @@
 {2}% DR
 {1}% COMBAT
 {Projectiles~3, Academics~2, Crafts~(fletchery)~2, Deceit~1, Performance~1, Vigilance~3, Wyldcrafting~1
-\knacks{\snapshot, \mightydraw, \perfectsneakattack}
-\Path{Devotion (Qualm\"{e})}{\aldaron~3, \enchantment~3, \necromancy~5}}%SKILLS
+\knacks{\divineCaster (Qualm\"E), \snapshot, \mightydraw, \perfectsneakattack}
+\Path{\aldaron~3, \enchantment~3, \necromancy~5}}%SKILLS
 {Hunting Bow, dagger}%EQUIPMENT
 {\lockedmana{3}}
 }
@@ -180,7 +184,8 @@
   {0}% DR
   {1}% COMBAT
   {Academics~2, Crafts~1, Deceit~2, Seafaring~1, Stealth~2, Vigilance~1, Wyldcrafting~2
-  \Path{Blood}{\aldaron~2, \fate~3, \polymorph~4}}% SKILLS
+  \knacks{\bloodCaster, \divineCaster (Alass\"e)}
+  \Path{\aldaron~2, \fate~3, \polymorph~4}}% SKILLS
   {\quarterstaff, dagger}% EQUIPMENT
   {\addtocounter{fp}{10}}
 }
@@ -227,7 +232,8 @@
   {0}% DR
   {1}% COMBAT
   {Academics~1, Caving~1, Deceit~3, Seafaring~1, Tactics~2, Vigilance~2
-  \Path{Alchemy \& Nura}{\conjuration~3, \illusion~3, \necromancy~3, \saurecanta~2}}% SKILLS
+  \knacks{\alchemist, \nuraCaster}
+  \Path{\conjuration~3, \illusion~3, \necromancy~3, \saurecanta~2}}% SKILLS
   {\shortsword, \partialleather, dagger, 20sp}% EQUIPMENT
   {\addtocounter{fp}{5}, \lockedmana{8}}
 }
