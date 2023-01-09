@@ -22,7 +22,9 @@ Civil government, insofar as it is instituted for the security of property, is i
 
 \noindent
 The Ale Guild of the Shale%
-\footnote{This organization is also known as the `temple of Alass\"{e}' -- see page \pageref{guilds} for more on divine monopolies.}
+\iftoggle{core}{%
+  \footnote{This organization is also known as the `temple of Alass\"{e}' -- see page \pageref{guilds} for more on divine monopolies.}
+}{}%
 takes dwarvish ale to \gls{town}, then waters it down, and makes an absolute killing in profits.
 The local Ale Guild aren't happy with their profits being cut into, so the two sides sabotage each other and shenanigans ensue.
 
@@ -345,10 +347,7 @@ Getting through the crowd requires a Strength + Empathy roll, TN 10.
 Town guards nearby also want to use the item, so they pull out their swords and prepare to cut down anyone stealing ``\glsentrytext{king}'s property''.
 If the players don't intervene, the scene turns into a bloodbath within a couple of rounds.
 
-Once finally obtained, an Intelligence + Academics Group Roll at TN 10 shows that this is not the real amulet.%
-\iftoggle{core}%
-{\footnote{See the core rules, page \pageref{grouproll}, for Group Rolls.}}%
-{}%
+Once finally obtained, an Intelligence + Academics Group Roll at TN 10 shows that this is not the real amulet.
 
 \sqpart{Town}% AREA
 {They Took Our Jobs!}% NAME
@@ -509,8 +508,8 @@ Play this encounter at the same time as the next Side Quest part, and raise the 
 {Arm Wrestling}% NAME
 {The characters meet the Wolf Heads}% SUMMARY
 
-The Wolf Heads have just encountered ten chitincrawlers, and slain the lot.
-They used a giant web spell, along with a lot of arrow fire.
+The Wolf Heads have just encountered ten chitincrawlers, and slew the lot.
+They used a giant web spell, along with a lot of arrows.
 
 They are tired, but unwounded, and are up for fun, so they went to a nearby village to drink.
 Wherever the characters are they encounter the Wolf Heads, who then challenge them to arm-wrestling contests, or magical contests.
