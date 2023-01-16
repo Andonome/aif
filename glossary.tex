@@ -60,17 +60,29 @@
   description={is the central town where the action takes place}
 }
 
-\newcommand{\alemaster}{
-  \humandiplomat[\NPC{\M}{Anatole}{Snippy}{Tongue-in-cheek}{Alass\"e}]
-}
 \newglossaryentry{alemaster}{
-  name={Anatole},
-  text={Anatole},
-  first={Alemaster Anatole},
-  description={is the highest ranking member of the temple of Alass\"{e}, who are synonymous with the Ale Guild in this region},
-  first={Ale Master Anatole}
+  name={Jane},
+  first={Alemaster Jane},
+  description={is the highest ranking member of the temple of Alass\"{e}, who are synonymous with the Ale Guild}
 }
 
+\newcommand{\alemaster}{
+  \NPC{\F}{\Glsfmttext{alemaster}}{Playing dim}{Humming between sentences}{Alass\"e} 
+
+\person{0}% STRENGTH
+  {1}% DEXTERITY
+  {0}% SPEED
+  {{1}% INTELLIGENCE
+  {0}% WITS
+  {2}}% CHARISMA
+  {0}% DR
+  {0}% COMBAT
+  {Academics~1, Empathy~2, Deceit~1, Larceny~2
+  \Path{Devotion (Alass\"{e})}{\fate~2}}% SKILLS
+  {\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}% EQUIPMENT
+  {}
+
+}
 \newcommand{\beardedalemaster}{
 
 \humandiplomat[\NPC{\F}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Alass\"e}]
@@ -184,7 +196,7 @@
 }
 
 \newcommand{\forestpriest}{
-\NPC{\M}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{Alass\"e} 
+\NPC{\M}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{Laiqu\"e} 
 
 \person{0}% STRENGTH
   {2}% DEXTERITY
@@ -195,7 +207,7 @@
   {0}% DR
   {1}% COMBAT
   {Academics~2, Crafts~1, Deceit~2, Seafaring~1, Stealth~2, Vigilance~1, Wyldcrafting~2
-  \knacks{\bloodCaster, \divineCaster (Alass\"e)}
+  \knacks{\bloodCaster, \divineCaster (Laiqu\"e)}
   \Path{\aldaron~2, \fate~3, \polymorph~4}}% SKILLS
   {\quarterstaff, dagger}% EQUIPMENT
   {\addtocounter{fp}{10}}
