@@ -581,7 +581,18 @@ they can make an Intelligence + Empathy roll, TN 11, to find which direction \gl
 
 Raise the local Nura Rating by 1.
 
-\deephobgoblin[\npc{\M\N}{James, Street-Child}]
+\npc{\M\N}{James, Street-Child}
+\person{3}% STRENGTH
+{1}% DEXTERITY 
+{2}% SPEED
+{{-3}% INTELLIGENCE
+{0}% WITS
+{-3}}% CHARISMA
+{0}% DR
+{0}% COMBAT
+{Projectiles 1, Larceny 1}% SKILLS
+{Whatever he can pick up and throw at you}% EQUIPMENT
+{}
 
 \paragraph{If taken alive,}
 James will be able to describe \gls{sewerthief}' face, but couldn't say who he is.
@@ -591,7 +602,10 @@ James has only been a nura for a couple of hours, so if the party know to starve
 {\N Streetbrawl}% NAME
 {The local alcoholics are on the street, and fights are breaking out}% SUMMARY
 
-Recently, the \gls{pig} has had a problem with the undead nura living underground, and has had to close to deal with the situation.\footnote{See page \pageref{pig_pantry} for details on what happened.}
+\Gls{sewerking} recently learned how to summon more intelligent and powerful undead creatures, but did not manage to control the spirit he pulled into the corpse.
+Havoc broke out, and the \gls{pig} is closed until further notice.
+\footnote{See page \pageref{pig_pantry} for details on what happened.}
+
 As a result, all the alcoholics who have been chucked out of every area in the city are out in full swing.
 The rest of the night is full of random people brawling.
 
@@ -614,20 +628,31 @@ Once the fight's ended, the characters might think they're out of harm's way, bu
 
 \humanfarmer[\npc{\T}{Irate Alcoholics}]
 
-\paragraph{If the characters approach \gls{pig},}
-they hear noises inside as of heavy metalwork.
-The Whiteplains thieves in the sewers are fighting back a horde of undead who got free.
-Three of them are sentient, and quite capable of spotting and attacking humans wearing magical rings.
-The other twelve are only taking orders, but the total gang has proved to be too much for the thieves, who've barricaded the trapdoor down, and are trying to poke spears down.
+The Whiteplains thieves in the sewers have a real fight on their hands, as the ghast freed some of the less intelligent undead, and they don't have enough rings to remain safe from the undead.
 
-\paragraph{If the PCs come to the rescue and don't know about the situation,}
-\gls{pigowner} and the rest tell the PCs that they're as surprised as anyone else that the long, mysterious hallways down there have undead living there.
+\paragraph{If the characters approach \gls{pig},}
+give them a Wits + Vigilance check  to notice the distant sounds of a fight (TN 10 to notice, TN 12 to figure out the sounds come from below the Private Room).
+
+\paragraph{If the PCs come to the rescue,}
+\gls{pigowner} and the rest immediately lie about the situation:
+
+\begin{speechtext}
+  We always used the start of that tunnel to flush away waste underground, and now we find the dead are coming up!
+
+  The underbelly of \gls{town} has been flooded for as long as anyone can remember, so perhaps something nasty lurks down there.
+
+  I'm going to barricade the tunnel, then the door!
+  I won't have this happening again, I can tell you!
+\end{speechtext}
 
 \sqpart{Town}% AREA
-{\N \N Unexpected Ghouls}% NAME
+{\N\N Unexpected Ghouls}% NAME
 {Hobgoblin ghouls from below emerge and attack the town}% SUMMARY
 
-Twenty of the undead from the sewer have escaped because the bandits who live down there were simply not careful enough.  If the characters confront the dead head-on, they will have a bad time, six of the town guard are only a few streets away.
+Twenty of the undead from the sewer have escaped through the butcher's place%
+\footnote{See area 5 on the \gls{town} map.}
+because the bandits who live down there were simply not careful enough.
+If the characters confront the dead head-on, they will have a bad time, six of the town guard are only a few streets away.
 
 \begin{boxtext}
 
@@ -635,9 +660,8 @@ Twenty of the undead from the sewer have escaped because the bandits who live do
   Feet move quickly, and you see three men being pulled to the ground by a silent mob of massive, naked men.
   The mob pulls the men inside but makes no sound, and then the screaming stops.
 
-  Another steps closer, and you can see these are not men, but stinking creatures wearing nothing but long beards.
-  Their ears are pointed, and their bodies covered in warts.
-  Each one has dead, white eyes, or gouged out eye sockets, but they look at you with intense interest, then start to walk towards you.
+  Another steps closer, and you can see these men and women have died and rotted some time ago.
+  Their white eyes look at you with intense interest, then start to walk towards you.
 
   In the far distance, the town guard can be heard shouting to keep the noise down.
 
@@ -646,10 +670,14 @@ Twenty of the undead from the sewer have escaped because the bandits who live do
 Any character can summon the nearby guard with a Strength + Empathy roll, TN 7, to shout out loud.
 The guards take 5 rounds to arrive, but every Margin on the roll reduces that time by 1 round, to a minimum of 2 rounds.
 
+\ghoul[\npc{\T\D}{20 Ghouls}]
+
 \paragraph{At the end of the day,}
 the ghouls will be put to the sword one way or another, but the question remains; what brought them here?
 
-\undeadhobgoblin[\npc{\T\D\N}{20 Undead Hobgoblins}]
+\paragraph{If the party track the ghouls,}
+they won't find the city streets help much, and the bandits in the sewers will start to clear up the butchers as soon as the horde have gone.
+The roll is Wits + Vigilance (TN 14).
 
 Increase the local nura rating by 1.
 
@@ -657,12 +685,13 @@ Increase the local nura rating by 1.
 {\N Underground Assassins}% NAME
 {The bandits in the sewer cut \Glsentrytext{captain}'s throat}% SUMMARY
 
-\Gls{captain} recently asked a number of guards about recent nura sightings, and why there was suspicious activity in \gls{town}, such as the strange Whiteplains accent heard in \gls{pig}.
-He got too close, and \gls{sewerking} felt he had to die, so four men were requested to pretend to be drunk while walking down the street, and then suddenly stab him in the neck.
+\paragraph{Background:}
+\Gls{captain} has been pushing the investigation into the undead and nura sightings in town, so \gls{sewerking} ordered a hit on him, lead by \gls{sewerthief}.
+Five men walked casually about him as he returned home \gls{whitehorse} with his wife, then closed in so one could stab him in the neck.
 
 \begin{boxtext}
 
-  You hear guards shouting ``After them!'', in the distance, and quickly scurrying feet, as a woman shouts for someone to help.
+  You hear guards shouting ``After them!'', in the distance, and quickly scurrying feet, as a woman shouts for someone to help her wounded husband.
 
 \end{boxtext}
 
@@ -671,9 +700,9 @@ they find \gls{captain} with a knife-wound, next to his wife.
 The roll is Wits + Medicine, at TN 9 to save his life.
 
 \paragraph{If they run after the thieves,}
-the make a Group Roll of Speed + Athletics.%
+the PCs make a Group Roll of Speed + Athletics.%
 \iftoggle{core}%
-{\footnote{See the core rules, page \pageref{grouproll}, for Group Rolls.}}%
+  {\footnote{See the core rules, page \pageref{grouproll}, for Group Rolls.}}%
 {}%
 Remember that whoever's trying to patch up \gls{captain}'s bleeding neck won't be able to join the chase.
 
@@ -691,51 +720,13 @@ Remember that whoever's trying to patch up \gls{captain}'s bleeding neck won't b
 
 \humanthief[\npc{\T}{Four of the Sewer Thieves}]
 
-\paragraph{Next:} If the party follow the assassins underground, they run to the nearest entrance -- perhaps the butchers or \gls{pig}.
-Go to page \pageref{sewers}.  Otherwise, this incident will remain a mystery.
+\paragraph{If the party follow the assassins underground,}
+they run to the nearest entrance -- perhaps the butchers or \gls{pig}.
+Go to page \pageref{sewers}.
+Otherwise, this incident will remain a mystery.
 
 If \gls{captain} survives, he has little idea of what's happening, although a little investigation could reveal what he's been asking about recently (Intelligence + Vigilance Teamwork Roll, TN 10).
 Raise the local Nura Rating by 1.
-
-\sqpart{Town}% AREA
-{\N \N The Nura Rise}% NAME
-{The hordes underneath begin to spill above ground}% SUMMARY
-
-\Gls{sewerking} was betrayed.  The hobgoblins sent up to work for him from the hell-realm were instructed to grab him and force the password out of him.  He fled immediately, and a number of them stayed to capture his companions.  All the thieves in the sewer were then turned into ogres.
-
-\begin{speechtext}
-
-  A familiar looking man darts past you.
-  Running after him, or perhaps after you, are ten ugly creatures with clubs, just like the dead creatures you saw before, but this time \emph{alive}.
-
-\end{speechtext}
-
-\deephobgoblin[\npc{\T\N}{10 Hobgoblins}]
-
-If the characters capture \gls{sewerking}, he begins shouting something over and over -- the activation phrase for the portal.\footnote{The activation word is simply elvish for `We are open for trade'.}
-Once captured, he knows that he's done for, and may as well give the nura the password to open the gate they so desire.
-Three ogres are in earshot, and they immediately run to \gls{pig} to go underground and open the gate.
-
-While \gls{sewerking} was sprinting underground, he managed to open one cell with various undead hobgoblins inside, in order to slow the nura horde down.  However, they have now come above ground.  In total, above ground are:
-
-\begin{itemize}
-
-  \item{Two groups of ten hobgoblins.}
-  \item{Three ogres.}
-  \item{Six undead hobgoblins.}
-
-\end{itemize}
-
-\undeadhobgoblin[\npc{\T\N\D}{6 Undead Hobgoblins}]
-
-\ogre[\npc{\N\T}{3 Ogres}]
-
-\paragraph{If that password ever makes its way underground, \gls{town} is doomed.}
-Nura spill from everywhere.
-Raise the local nura rating by 2, and roll for an encounter each time the characters enter a new area, even within \gls{town}.
-The party may find nura spiders, goblins, or any number of other creatures.
-
-\stopcontents[sq]
 
 \sidequest{Random Meetings}\label{randommeetings}
 
