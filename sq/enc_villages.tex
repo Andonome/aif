@@ -484,38 +484,64 @@ Increase the local Nura Rating by 2.
 
 \noindent
 \Gls{necromancer} has lived as the lone priest and guardian of his temple for centuries, and has grown increasingly paranoid, so he wants to gather an army of ghouls to guarantee his safety.
-He started by enchanting a bauble which raises people from the dead, then enchanted crows to place the medallion on the dead to raise them.
-After a century of slowly growing his little dead battalion, he is ready to assault a full village, and expand it into an army.
-Every villager he kills becomes another soldier for his army of the dead.
+\Gls{banditking} has helped by bringing corpses to his keep, so now he has enough to assault full-on villages and expand his army.
 
 If the party ever decide to track \gls{necromancer} down, they will need to make an Intelligence + Academics roll, TN 15 (or TN 10 with access to the library in town).
 
 \sqpart{Villages}% AREA
-{The Crow}% NAME
-{A recently fallen corpse is raised from the dead by a bird with a magical amulet}% SUMMARY
+{Body Bags}% NAME
+{\Glsentrytext{banditking} transports the bodies of his victims to \glsentrytext{necromancer}}% SUMMARY
 
-Play this encounter at the same time as the next on your list.
-If a corpse appears during the encounter, that's where the crow goes.
-If no corpses appear, the characters find a trader by the road, robbed by unknown bandits, and the crow on top of his body.
+\paragraph{Background:}
+\Gls{banditking} killed a caravan of half a dozen traders, stuffed the bodies into one of the carts, and now wants to transport them all back to \gls{necromancer}'s lair for them to be raised from the dead.
 
 \begin{boxtext}
-  A crow lands upon the corpse and stares at the vacant eyeballs, before landing a sturdy peck on the left one.
-
-  A little glimmer around its neck shines.  The crow wears a medallion, and a moment later it takes off, leaving the right eyeball undigested.
-
+  Three wagons approach ahead of you.
+  As they get closer, you notice well-armed traders giving you a friendly wave, and carrying the stink of rotten corpses with them.
 \end{boxtext}
 
-A moment after the crow has flown away, the corpse animates, and attacks the characters.
+\Gls{banditking} speaks with the PCs happily, but only if they stop him.
 
-\ghoul[\npc{\D}{Ghoul}]
+\paragraph{If the PCs ask about the smell,}
+\gls{banditking} tells them he has killed some bandits on the road, and wants to take them in for a reward.
 
-Even if this ghoul doesn't join the characters, \gls{necromancer} has gathered an army of 50 ghouls by looting the dead.
-See page \pageref{ghoulNecklace} for more on the Amulets of Return.
+\paragraph{If anyone mentions that this is not the right way to \gls{town},}
+or points out some other problem with his story, he gives very reasonable answers, concerning drop-off points, proper checks, or contacts he knows who can help embalm the corpses before a longer journey.
+
+\paragraph{Spotting the lies}
+requires a Wits + Empathy roll.
+The basic TN is 12, but you should decrease it by 1 for every oddity the PCs can point out (roll in secret, and keep the roll).
+
+\begin{itemize}
+  \item
+  ``The blood? It's from the fight of course!''
+  \item
+  ``Yea, I know they don't look like warriors.
+  It's because they aren't.
+  Desperate times push people to desperate actions, but we still have to defend ourselves.
+  I know she's still now, but she was as dangerous as a cornered badger, honestly.''
+  \item
+  ``Where are \emph{their} weapons?
+  They were pretty rudimentary -- just crude spears, so we threw them away.
+  They're about half a day's walk back, if you really want some new spears.''
+  \item
+  ``Why do we have bows?
+  To stay safe!
+  Do you have any idea how dangerous travelling is in these parts?''
+\end{itemize}
+
+\banditking
+
+\humanarcher[\npc{\T}{6 Immortal Bandits}]
+
+\paragraph{If the PCs follow the bandits back to \gls{necromancer}'s lair,}
+have them roll Wits + Wyldcrafting, TN 10.
 
 \sqpart{Forest}% AREA
 {The Undead Horde}% NAME
 {Hundreds of ghouls have become lost and now wander the forest}% SUMMARY
 
+\paragraph{Background:}
 \Gls{necromancer} is not a precise creature, and has misplaced twenty of his ghouls.
 Once they wandered away from the rest of the herd, they broke into the forest to wander some more.
 
@@ -529,19 +555,26 @@ Once they wandered away from the rest of the herd, they broke into the forest to
 The party makes a Wits plus Vigilance roll, TN 6, to notice the undead while they are still 10 squares away.
 Each roll on the margin indicates an additional 10 squares to notice the horde, so rolling 10 means 50 squares' distance.
 
-The horde has wandered away from its necromancer, while he was distracted.
-There is no way to use them to find where the necromancer lives, as they have no desire to return to him.
-
+The ghouls spot the PCs from a long distance.
+Such is the nature of undead vision.%
+\iftoggle{core}%
+  {See the core rules, page \pageref{undead}.}
+  {}
 While these ones have run away, the necromancer has gathered a full army of 100 ghouls.
+
+\paragraph{If the PCs flee,}
+they have little trouble, but they should be aware that the horde will eventually find living people to attack.
+
+Whatever they do, the question remains -- where did the dead come from?
 
 \sqpart{Villages}% AREA
 {The Survivors}% NAME
 {A village has been ransacked by ghouls, and only followers of Qualm\"{e} have been spared}% SUMMARY
 
-Last night an undead horde pulled apart an entire village.  The undead were directed well by the necromancer, and almost nobody escaped.
-However, four people were evidently followers of Qualm\"{e}, god of death.
-Two wore medallions to commemorate departed loved ones, and another two gave prayer to the God of Death when the undead came.
-As a result, they were spared.
+\paragraph{Background:}
+Last night, \gls{necromancer} guided his horde quietly past the well-guarded, walled villages around the \gls{edge}, and into a less protected settlement, then let the dead tear apart the living, and rose them from the dead to grow his army.
+
+However, four people were evidently followers of Qualm\"{e}, god of death, as they wore medallions made to show respect to Qualm\"{e}, and hopes that He would guide their ancestors to a peaceful realm in the afterlife.
 
 Rupert, Jake, Sarah and Eliza cannot explain why they were spared -- they only know the undead never touched them while they ate the rest of the village.
 
@@ -551,29 +584,25 @@ Rupert, Jake, Sarah and Eliza cannot explain why they were spared -- they only k
 
 \end{boxtext}
 
-If the characters track the ghouls, they find it rains en route, making tracking more difficult.
+\paragraph{If the characters try to track the ghoulish army,}
+they find it rains en route, making tracking more difficult.
 However, a Wits + Wyldcrafting roll, TN 10, will get them there.
-Alternatively, researching previous churches to Qualm\"{e} within the area with an Intelligence + Academics roll (TN 10) will tell the party where they need to go.
+Alternatively, researching previous old temples to Qualm\"{e} in \gls{town}'s library will give them a rough idea of where they need to search.
+The research requires an Intelligence + Academics roll (TN 10), and hunting the exact location of \gls{necromancer}'s crumbling temple requires a Wits + Wyldcrafting roll (TN 10 again).
 
-By this time the necromancer has gathered an army of 200 undead.
+By this time, \gls{necromancer} has gathered an army of 200 undead.
 
-\sqpart{Villages}% AREA
-{The Callback}% NAME
-{Someone from a previous encounter returns from the dead}% SUMMARY
+\sqpart{Town}% AREA
+{\squash Rumours of a Breach}% NAME
+{\Glsentrytext{necromancer} destroys a village at the \Glsentrytext{edge}}% SUMMARY
 
-\begin{boxtext}
+\paragraph{Background:}
+\Gls{banditking} worries about having a run-in with the \gls{guard}, so he's asked \gls{necromancer} to assault the walled villages around the \gls{edge}.
+Once these go, the \gls{guard} have to rush in to protect the breach, and rebuild the fortifications.
+This means less interference from the \gls{guard}, which leaves the Immortal Bandits free to roam, plunder, and loot.
 
-  You wake through a nasty dream about a crow cawing in your face, although it may really have been a nearby crow.
-
-\end{boxtext}
-
-Look back through the finished encounters in the villages, and pick some event where the players met people -- the more the merrier.
-The Immortal Bandits have met those people on the road and killed them for their wares.
-The necromancer's pet crow has come along after to turn them and used its amulet to turn those NPCs into ghouls.
-\footnote{If the crow died in a previous encounter, then this is a different crow.}
-This could simply be the trader from `Wrong Direction Chickens', or possibly a PC's ally from when Story Points were spent.
-
-\ghoul[\npc{\D\T}{Ghouls}]
+\paragraph{Once the PCs enter \gls{town},}
+everyone around is discussing the recent breach, and whether or not the \gls{town} will soon be devoured as the walled villages fall, and the \gls{edge} closes in around them.
 
 \sqpart{Villages}% AREA
 {The Dead Devour a Village}% NAME
@@ -597,7 +626,8 @@ This could simply be the trader from `Wrong Direction Chickens', or possibly a P
 \end{rollchart}
 \end{figure*}
 
-The necromancer has gathered an army of a full 400 undead, and has decided to take most of them to a nearby village, and kill everyone inside.
+\paragraph{Background:}
+\glsfirst{necromancer} has gathered an army of a full 400 undead, and has decided to take most of them to a nearby village, and kill everyone inside.
 If the characters are nearby a particular village, that's the village he assaults.
 Otherwise, refer to Lakeside village, page \pageref{lakeside}.
 
@@ -610,7 +640,7 @@ Otherwise, refer to Lakeside village, page \pageref{lakeside}.
 His tactics are to create a full ring of undead around the village, and pull it slowly tighter until the entire village is surrounded.
 Once there is nowhere to go, he releases the undead to attack.
 
-The party can make a Wits + Vigilance roll, TN 10, to spot the dead before they attack.
+The party can make a Wits + Vigilance roll (TN 10) to spot the dead before they attack.
 
 \paragraph{Preparation} depends upon a single Tactics roll.
 If the party see the dead a scene before, they can make an Intelligence + Tactics roll, TN 6.
@@ -655,14 +685,12 @@ Use the following as a guide:
 
 \end{rollchart}
 
-Anyone carrying obvious trinkets displaying an allegiance to Qualm\"e may be spared so long as they are not actively attacking the dead.
+Anyone carrying obvious trinkets displaying an allegiance to Qualm\"e may be spared by \gls{necromancer}'s curses, so long as they are not actively attacking the dead.
 
 \paragraph{Cleanup} depends upon the battle's outcome.
 Once the battle's over, the village will most likely be mostly destroyed, and \gls{necromancer}'s army much larger.  The villagers will shake, huddle together, and most consider moving.
 
-The encounter repeats until the party slay \gls{necromancer}.
-The characters can complain to local nobles, but they note that they are not allowed a standing army, so they can do nothing about the situation.
-The party can write to \gls{king}, but they will be lucky to receive anything but stock letters from bureaucrats stating that the situation has complications.
+The encounter repeats every second Village-encounter until the PCs intervene.
 
 \ghoul[\npc{\T\D}{200 Ghouls}]
 
@@ -670,7 +698,7 @@ The party can write to \gls{king}, but they will be lucky to receive anything bu
 
 \stopcontents[sq]
 
-\sidequest{Immortal Bandits}\label{immortalbandits}
+\sidequest{Immortal Bandits}
 
 \stopcontents[Town]
 
@@ -801,8 +829,6 @@ Earlier, \gls{banditking} and his men came, took all the food they could, murder
 
 The bandits are ten miles away, and can still be tracked with a Wits + Wyldcrafting roll at TN 10.
 If the PCs catch up to them, the bandits run away.
-
-Characters with a good eye (Wits + Crafts, TN 11), can spot that the crow has a medallion around its neck.
 
 \sqpart{Villages}% AREA
 {The Dead Tracker}% NAME
