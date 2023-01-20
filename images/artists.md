@@ -18,7 +18,7 @@ https://www.fiverr.com/alhazartfinds
 
 Deckydraws: https://www.fiverr.com/deckydraws
 
-![Decky](Decky/ghast.svg)
+![Decky](Decky/necromancer.svg)
 
 # Landscapes
 
