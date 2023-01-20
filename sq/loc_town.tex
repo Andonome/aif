@@ -459,7 +459,7 @@ Once the waters began to recede into the porous earth, many of the artificial tu
 They dug their way down as quickly as they could, and cemented a stream down into an unending underground hole (area 12).
 Water flows down from the \gls{pig}, and they can easily dispose of any dirt dug up.
 
-\paragraph{The doors} are all locked by a single key, and barred from the bandits' side.
+\paragraph{The doors} are all locked by a single key type of key.
 Lock-picking them requires an Intelligence + Larceny Group Roll, TN 10 if the bar's up, and TN 14 otherwise.
 
 \paragraph{The narrow hallways}
@@ -478,44 +478,76 @@ The \textit{Enclosure Rating} here is 4, so anyone using a weapon which requires
 This stairway has been dug upwards to a drain just outside of a butchers.
 The bandits enter and exit through here.
 
+\mapentry{Dead Cells}
+
+\paragraph{Background:}
+\Gls{sewerking} doesn't have enough space to store his undead pets, so he has his ghouls make these little alcoves.
+Once he has four ghouls, he packs them all together and hammers wooden bars to keep them wandering out.
+He tried making a larger alcove, but the pressure created by random movements broke the bars open; the ghouls can leave any time they have sufficient motivation, the bars just stop them wandering.
+
+The Immortal Bandits wander in and out safely by using their rings of asphyxiation.%
+\footnote{See page \pageref{ring_asphyxiation}.}
+If many need to come in or out, two go through, and one carries two rings back for the next, so one by one a dozen can enter slowly.
+
+\paragraph{When the PCs enter,}
+give the first in the line a Wits + Vigilance roll, TN 16.
+Every 2 margins of failure means the ghouls from a cell burst open (up to the maximum of 7), so rolling a `10' implies that 3 cells have burst open, containing a total of 12 ghouls.
+
+\ghoul[\npc{\T\D}{4 Ghouls}]
+
+\paragraph{If the PCs attempt to simply rush past,}
+have them roll Speed + Athletics (TN 12).
+Again, every 2 margins of failure mean the they have missed the end of the tunnel-section by one cell, so the dead exit and grab them.
+
+\mapentry{Dead Rooms}
+
+\paragraph{Background:}
+\Gls{sewerking} uses these larger alcoves to store individual ghouls before he has enough to stuff into one of the cells (see above). 
+He also keeps the his more dangerous undead experimentations here -- ghasts.
+He can't control them all, so he simply stuffs them in, waiting to use them later.
+
+\begin{boxtext}
+  The hallway ahead has doors on the left and right, each shut with a simple bar across the front.
+  The doors have a tight seal, and no window to give a clue about the contents.
+\end{boxtext}
+
+\paragraph{Anyone knocking off the bar}
+will probably find a nasty surprise.
+Consult the chart (no matter which door the PCs open first, that's the first door).
+
+\begin{rollchart}
+  Door & Contents \\\hline
+  1st & 1 ghast hides behind the door. \\
+  2nd & 3 ghouls jump out. \\
+  3rd & \gls{sewerthief} is taking a nap while he should be working. \\
+  4th & 2 ghasts jump out, and one flees towards \gls{town}, above. \\
+  5th+ & 1 ghast jumps out. \\
+\end{rollchart}
+
+\paragraph{If the PCs listen at the door,}
+they find the dead are silent when not active, and don't respond to noise.
+
+\ghast
+
+\ghoul
+
 \mapentry{The Old Library }\label{oldlibrary}
 
 \begin{boxtext}
 
-  Markings on the walls show where hundreds of bookshelves once provided the entire city knowledge, but not a scrap of paper remains, and the only remaining shelves lie broken on the ground.  High above, the braziers hang inactive between three great stone pillars.  Each wall has four alcoves for specialist books, but now has nothing.
+  Empty stone shelves show where an expansive library once provided the entire city knowledge, but not a scrap of paper remains.
+  Three stone pillars divide the room, each with a brazier hanging in front of them by a chain.
+  The central pillar's brazier is made from a human skull.
 
 \end{boxtext}
 
-Players might be expecting a dramatic fight as an enemy pops out from the alcoves.  There isn't one.  The only thing to find here is a single alcove which was dug through, leading to a brutally hacked-out tunnel.
+\paragraph{Investigating the brazier,}
+shows it contains incense, ready to be lit.
 
-Observant characters may notice that a single brazier looks different from the rest.  It's from the underground realm through the portal, and raises any dead in the area as ghouls.
+\paragraph{If anyone dies in the room,}
+the skull resurrects them as a ghoul.
 
-\mapentry{The Dogs}
-
-\begin{boxtext}
-
-  Just ahead, you can see half a dozen dogs lying on the ground and chained up.  They perk up, pull their chains taught, and sniff the air in front of them.
-
-\end{boxtext}
-
-The original function of this room's been long forgotten.  Currently various dogs are chained here as an early warning signal.  The dogs have been stolen from the streets, and a number of people would like to see them returned.
-
-The dogs won't sound any alarm until they see the characters -- they're used to people moving about, and generally anticipate being fed when they hear footsteps.  They also don't panic when seeing the undead, as the undead have no interest in attacking them.
-
-\huntingdog[\npc{\T\A}{6 Dogs}]
-
-\mapentry{Dead Storage}
-
-Anyone attempting to move through a hallway filled with these narrow tunnels must roll Speed + Athletics, TN 8 or be grabbed by one, at which point another gets a chance to grab the character, and another.
-Three can make an attack at any given point once someone is in range.
-
-\begin{boxtext}
-
-  Ahead is another alcove with an iron gate in front, holding those strange dead creatures behind them.  Arms reach out, filling the hallway.
-
-\end{boxtext}
-
-\ghoul[\npc{\T\D}{Ghouls}]
+\magicitem{Brazier of the Risen Soldiers}{Ghoul Calling}{Devotion (Qualm\"e)}{Instant}{Talisman}{2}{6}
 
 \mapentry{Magical Item Storage}
 
@@ -525,18 +557,22 @@ Three can make an attack at any given point once someone is in range.
 
 \end{boxtext}
 
-\Glsentrytext{sewerking} stashes most of his prizes in this room on a simple series of shelves.  Each is cast with Intelligence +1 and Wits +1.
+\Glsentrytext{sewerking} stashes most of his prizes in this room on a simple series of shelves.
+Each is cast with Intelligence +1 and Wits +1.
 
 \begin{enumerate}
 
-  \item{A bag of teeth that turn into any simple item, as per Conjuration level 3.}
-  \item{A vial of lamb's blood which makes the user invisible to the dead and immune to fatigue, marked "Dead Wine" (as per Necromancy level 1).}
-  \item{A pressed Autumnal leaf, which releases 2 mana when destroyed.}
-  \item{An ancient scroll, proclaiming elves the friends of humans, and seven reasons not to worry about nobles being assassinated.  Anyone reading the scroll can raise any creature in the vicinity from the dead, regardless of size, as per the third level of Necromancy.\footnote{This scroll was made by the Saurecanta sphere.}}
-  \item{The Assassination Dagger, which inflicts an additional $1D3+1$ HP Damage during the round's first attack (ignoring all FP).  This ability can be used once per scene.}
-  \item{Magic Mushrooms, enchanted with Saurecanta level 2 to decrease the user's Intelligence and Charisma by 3 and increase Speed by the same amount.}
-  \item{A slashed painting of a broken castle -- damaging it further summons an archmage (see page \pageref{archmage}.)}
-  \item{Foul alcohol in a bottle, which makes the imbiber regenerate fatigue if they eat, and otherwise inflicts hunger paints, as per Saurecanta level 1 (see page \pageref{saurecantaone}).}
+  \item
+  A vial of lamb's blood which makes the user invisible to the dead and immune to fatigue, marked ``Dead Wine'' (as per the Torpor spell).
+  \item
+  An old scroll, proclaiming elves the friends of humans, and seven reasons not to worry about nobles being assassinated.
+  \item
+  The Assassination Dagger, which inflicts an additional $1D3+1$ HP Damage during the round's first attack (ignoring all FP).
+  This ability can be used once per scene.
+  \item
+  Magic Mushrooms, enchanted with Saurecanta level 2 to decrease the user's Intelligence and Charisma by 3 and increase Speed by the same amount.
+  \item
+  Foul alcohol in a bottle, which makes the imbiber regenerate fatigue if they eat, and otherwise inflicts hunger paints, as per Saurecanta level 1 (see page \pageref{saurecantaone}).
 \end{enumerate}
 
 \mapentry{\Glsentrytext{sewerking}'s Room}
@@ -547,20 +583,20 @@ Three can make an attack at any given point once someone is in range.
 
 \begin{itemize}
 
-  \item{The city map shows every entry point the bandits can enter the city above, including the theoretical passage the bandits think could be found again under \glsentrytext{townmaster}'s Citadel.}
+  \item
+  The city map shows every entry point the bandits can enter the city above, including the theoretical passage the bandits think could be found again under \glsentrytext{townmaster}'s Citadel.
 
-  \item{A map of the area, outlining \glsentrytext{lostcity}, the portal by \glsentrytext{redfall}, and \gls{necromancer}'s lair.}
+  \item
+  A map of the area, outlining \glsentrytext{lostcity}, the portal by \glsentrytext{redfall}, and \gls{necromancer}'s lair.
 
-  \item{A complete map of the current location -- the Abandoned Library.}
+  \item
+  A complete map of the current location
 
 \end{itemize}
 
-Besides the map, the table has an emergency magical item -- an egg, which grants +3 Speed and Strength, but -6 Charisma and Intelligence.
-It activates once broken, whether thrown at someone, or broken on purpose.
+The books are variously written on history (real and imagined), \textit{The Art of Lies} (by an elvish author -- `Erende'), and instructions on hosting a dinner party.
 
-The books are variously written on History (real and imagined), The Art of Lies (by an elvish author), instructions on hosting a dinner party, and a ledger, detailing library items \gls{sewerking} has sold to \gls{townmaster},\footnote{Nothing here mentions \glsentrytext{townmaster} by name.} and various other items which were stolen.
-
-\mapentry{Ogre Dust}
+\mapentry{Ogre Dust Trap}
 
 A thin wire was stretched across the floor, leading up to a small stretch of leather, holding snowdrops.  Anyone failing a Wits + Vigilance roll, TN 12 in the twilight, feels the petals fall down.  A moment later, the character's afflicted as per Saurecanta, level 2, and gains +4 Strength at the cost of -4 Charisma.
 
@@ -598,23 +634,30 @@ This area recently suffered a little flood.  Most of the water has dissipated, b
 
 The water goes up to the ceiling by the last step, and for four squares after.  Each ghoul-stuffed room the characters pass the dead will lash out, with TN 12 to escape the grabbing hands, assuming the characters aren't Keeping Edgy, and have been blinded by the dark waters.
 
-\mapentry{Portal Room}
+\mapentry{Grand Hall}
+\label{underHall}
 
+The thieves feast, plan, and sometimes wrestle here.
 
 \begin{boxtext}
-  The grand hall's end glistens with jewels of all colours of the rainbow, arranged around a great stone sphere, with a single concave side facing the room.
+  Opening the door, soft lantern-light trickles into your eyes.
+  The grand hall has a massive feasting table in the centre, currently occupied by a dozen rushing towards you with weapons drawn.
 
-  The rest of the massive hallway contains nothing but a couple of ale casks and stools.  Five doors line the far side, and another two doors on the side of the room you came from.  The walls are scorched with fire.
-
+  ``The dead are lose!'', they cry, as one man prepares some kind of spell.
 \end{boxtext}
 
-A moment later, the characters hear doors moving as the bandits wake up and move from the little rooms they sleep in at the side of the alcove.  Each room contains two.
+\paragraph{As the PCs enter,}
+\gls{sewerking} begins casting a \textit{Potent Sickness} spell.
+After 3 rounds, he deals 1D6 HP damage to the member of the party with the highest Strength Bonus.
 
-The portal's command words are nowhere to be found here, but can be researched with an Intelligence + Academics roll, TN 16 (or 10 with a good library).  If opened, a portal opens directly to the Realm of Darkness and Fire (page \pageref{darknessandfire}).
+The other bandits rush at them immediately.
+
+\sewerking
 
 \humanthief[\npc{\T}{12 Sewer Bandits}]
 
-\sewerking
+\paragraph{Four rounds later,}
+the cutthroats from room \ref{underGuard} arrive (assuming they weren't killed already).
 
 \mapentry{Entrance to the Citadel}
 \label{citadelTunnel}
@@ -630,37 +673,51 @@ The single square of rock ahead is made of fallen debris, so the PCs can move it
 They'll need to accumulate a total margin of 10, whether in one roll, or many, in order to clear the way.
 Each roll takes 1 scene.
 
-\label{pigexit}
-
 \mapentry{Sewer Entrance}\label{slidein}
 
-This path follows an artificial stream, which goes downhill from \gls{pig}, above.
+\label{pigexit}
+
+This artificial stream loops round from \gls{pig}, above.
 The stream continues downwards to an underground area and then goes underground.
 Anyone venturing down here simply dies in the unending blackness.
 
 \mapentry{Entrance to \glsentrytext{pig}}
 
-Up these stairs, characters can reach the bowels of \gls{pig}.
-If they're bursting out to see the place for the first time, people will know they're not regulars and attack.
-Once up, everyone in \gls{pig} will deny any knowledge of the deeper tunnels, and the fact that bandits lived down there.
+\paragraph{Up these stairs,}
+characters can reach the bowels of \gls{pig}.
+
+\Gls{pigowner} understands what trouble she's in, and immediately accuses the characters of theft and calls on everyone in the room to kill them.
+
+Calming down the patrons requires a Charisma + Empathy roll (TN 10).
+
+\paragraph{If the PCs arrest the patrons of \gls{pig},}
+everyone in \gls{pig} will deny any knowledge of the deeper tunnels, and the fact that bandits lived down there.
 
 \mapentry{Exit to the External Farm}
 \label{farmExit}
 
+\paragraph{Background:}
+Outside \gls{town}'s walls the tunnel ends in a farmhouse.
+The Immortal Bandits use this place to move beyond the walls without worrying about any inspections.
+
+Angus' house above has several rooms, as he's done rather well for himself, and hopes that once the revolution comes he'll be in an even better position.
+
 \begin{boxtext}
 
-  The stairs go upwards for some time, and eventually arrive at a room filled with barrels of food, and a trapdoor above.  A man can be heard snoring.
+  The stairs go upwards for some time, and eventually arrive at a room filled with barrels of food, and a trapdoor above.
+  You can hear a deep snore coming from just beyond the trapdoor.
 
 \end{boxtext}
 
-Outside \gls{town}'s walls the tunnel ends in a farmhouse.
-The thieves rarely use farmer Angus's escape route, as they risk compromising their position.
-His house above has several rooms, as he's done rather well for himself, and hopes that once the revolution comes he'll be in an even better position.
+\humanfarmer[\npc{\M}{Angus}]
 
 \mapentry{Guardroom}
+\label{underGuard}
 
 Here four of the thieves sit and play simple dice games to pass the time, or occasionally sleep in the foetid straw.
-These are not lost nobles from Whiteplains, but opportunists that \gls{sewerking} has taken on board.
+
+\paragraph{If the PCs fight,}
+the cutthroats try to ram them out the door, and run to alert the others in room \ref{underHall}.
 
 \humanthief[\npc{\T}{Four Cutthroats}]
 
@@ -680,10 +737,13 @@ There are twelve pillars in total in the room, and each one was formed by member
 
 \end{boxtext}
 
-There are twelve pillars in total in the room, and each one was formed by members of a family, over the course of generations, donating money to the Temple of Qualm\"{e}.  Those who died in its service had their skulls added to the tower.  It could take two hundred generations to create some of these towers.  The top skull has the family's name carved into the forehead, and speaking the family name along with religious incantations to Qualm\"{e} activates some magical effect.
+There are twelve pillars in total in the room, and each one was formed by members of a family, over the course of generations, donating money to the Temple of Qualm\"{e}.
+Those who died in its service had their skulls added to the tower.
+It could take a dozen generations to create some of these towers.
+The top skull has the family's name carved into the forehead, and speaking the family name along with religious incantations to Qualm\"{e} activates some magical effect.
 
 Each pillar can be used once a day.
-They require a short prayer (which takes a full round to say), and understanding which prayer aligns with which skull requires an Intelligence + Academics Group Roll (the TN depends upon the type of pillar).
+They require a short prayer (which takes some time to complete), and understanding which prayer aligns with which skull requires an Intelligence + Academics Group Roll (the TN depends upon the type of pillar).
 The character requires a Margin of 2 to know what will happen before casting the spell.
 
 \paragraph{Smaller Pillars: (TN 8)}
@@ -712,6 +772,32 @@ The character requires a Margin of 2 to know what will happen before casting the
   \item{Any recently deceased target is returned to life, as per Fate level 5.}
 
 \end{enumerate}
+
+\mapentry{The Guard Dog}
+
+\paragraph{Background:}
+The Immortal Bandits keep one of farmer Angus' dogs chained here at all times (rotating, so they don't get bored).
+
+\begin{boxtext}
+
+  Just ahead, you can see a dog, lying on the ground.
+  It instantly stands up and begins to bark.
+
+\end{boxtext}
+
+\paragraph{If the characters approach,}
+Rover hears them and begins barking.
+If the group remained silent, they can make a Dexterity + Stealth Group Roll (TN 9) to move silently.
+
+\paragraph{If Rover hears them,}
+he begins barking and four of the bandits in room \ref{underHall} (\nameref{underHall}) come to investigate.
+
+They won't poke about long, so the PCs simply need to pick a reasonable hiding place or roll Intelligence + Stealth (TN 8).
+
+\paragraph{If a bandit or a ghast walks by,}
+Rover does nothing -- he got used to the bandits, and even random undead wandering about, and the undead have no interest in animals.
+
+\huntingdog[\npc{\A}{Rover}]
 
 \vfill\null
 
