@@ -7,32 +7,56 @@
 
 \toppic{Dyson_Logos/redfall}{\label{redfall_map}}
 
-\noindent
-Redfall survives on the \gls{edge} with little help from the \gls{guard}, or the \gls{king}.
-The villagers in \gls{redfall} have become tired of armed tax collectors.
-If the characters enter the area, they will find peasants laying an ambush for them.
+\Gls{redfall} lies safely away from the \gls{edge}, and lies close to its guardian keep where the villagers can run if serious trouble rises.
+The people in the area create pottery from the rich clay deposits.
+
+The recent hike in taxes has driven the now-hungry villagers to desperate means.%
+\footnote{See page \pageref{desperatemeasures} for more on \glsfmttext{nurabaron}'s draconic taxes.}
+
+\begin{boxtext}
+  \Gls{redfall} seems peaceful, almost idyllic, as children play next to copse of trees without any fear of beasts waiting for them inside.
+  A few women collect the red earth by the river so they can process it into their famous pottery later.
+  Ahead, the keep stands three stories high.
+\end{boxtext}
+
+\paragraph{When the PCs enter,}
+if they look like like might be officials or soldiers of any type, the villagers act natural at first, but arrange to surround the party at the bridge.
 
 \begin{boxtext}
 
-  As you step onto the bridge, you see a dozen men walking behind you with large bags covering their heads.  In front, another ten gather as well.  Each carry a large sack, then one reaches in and plucks out a rock.
+  As you step onto the bridge, you see a dozen men walking behind you with large bags covering their heads and another sack in their hands.
+  In front, another ten with sacks gather as well.
+  Ahead and behind, they pull the rocks out.
+
+  ``No more taxes!'', they shout.
 
 \end{boxtext}
 
-The farmers don't want to kill the characters -- just scare them off; but it will take some quick talking to stop the stoning before it begins.  The party may roll Wits + Empathy, TN 11.
-If the characters are nearby a particular village, that's the village he assaults.
-Otherwise, refer to Lakeside village, page \pageref{lakeside}.
+\paragraph{If the PCs try to reassure the villagers,}
+have them roll Strength + Empathy (TN 9) to holler their message clearly to everyone present.
 
-The villagers have no idea that \gls{nurabaron} has been tainted with dark magic, they only know they haven't seen him in a long time, and that he has increased taxes, and takes almost all his taxes in food, back to the keep.
+Failure indicates a nasty pelting, although the villagers don't intend to kill the anyone -- just drive them off.
 
-\humanfarmer[\npc{\T}{20 Angry Farmers}]
+\npc{\T}{20 Angry Farmers}
+\person{2}% STRENGTH
+{0}% DEXTERITY 
+{0}% SPEED
+{{0}% INTELLIGENCE
+{-1}% WITS
+{0}}% CHARISMA
+{0}% DR
+{0}% COMBAT
+{Projectiles 1, Crafts~1, Wyldcrafting~1}% SKILLS
+{Sack-of-rocks, face-covering}% EQUIPMENT
+{}
 
-\paragraph{Once the fight is over,}
-the leader of the group -- Matt -- will come forward, and may even apologize for the misunderstanding if the party have a good explanation as to why they're in \gls{redfall}.
+\paragraph{If the PCs ask about the keep,}
+the villagers complain bitterly, but have no idea that \gls{nurabaron} has become a monster.
 
 \paragraph{If the party attempt to persuade the villagers to assault the keep,}
-they can succeed with a Strength + Empathy roll, TN 10
+they can succeed with a Charisma + Tactics roll, TN 10
 (the villagers feel more confident with a strong character leading them).
-Of course the villagers also know that the fortress is armed with archers, and will only agree to enter if the party remove those archers.
+Of course the villagers also know that the fortress is armed with archers, and will only agree to enter if the party have a solid plan concerning the archers.
 
 \paragraph{If the keep ever becomes surrounded by peasants,}
 \gls{nurabaron} will run out to an archer's post with a massive bag of food doused in ogre-dust.
@@ -41,7 +65,7 @@ If the party aren't quick, they'll be in a keep surrounded by ogres.
 There isn't enough food for everyone, so after some turn into ogres, they'll start to eat the others, and many will simply flee.
 This will leave ten ogres who chase the villages, ten more who bang on the gates, and ten who decide to go round the back of the keep to look fruitlessly for alternative entrances.
 
-\subsection*{\glsentrytext{redfall} Keep}
+\subsection{\Glsfmttext{redfall} Keep}
 
 \toppic{Dyson_Logos/redfall_keep}{\label{redfall_keep_map}}
 
@@ -51,7 +75,7 @@ The keep contains a conspiracy: everyone in there knows that they harbour monste
 
 \mapentry{Towers}
 
-Each of the towers has two archers, ready to protect their master, \gls{nurabaron}, as long as nobody gets too close.
+Each of the towers has two archers, ready to protect their patron, \gls{nurabaron}, as long as nobody gets too close.
 
 \humanarcher[\npc{\T}{2 Archers}]
 
@@ -61,7 +85,18 @@ Each of the towers has two archers, ready to protect their master, \gls{nurabaro
 
 \nurahorse[\npc{\N\A}{Janus, the Demonic Horse}]
 
-\deephobgoblin[\NPC{\M\N}{Benjie -- ``the Toddler''}{Playful}{Fingers in mouth}{Tribe}]
+\NPC{\M\N}{Benjie -- ``the Toddler''}{Playful}{Fingers in mouth}{Tribe}
+\person{3}% STRENGTH
+{-1}% DEXTERITY 
+{2}% SPEED
+{{-4}% INTELLIGENCE
+{-4}% WITS
+{-3}}% CHARISMA
+{0}% DR
+{1}% COMBAT
+{}% SKILLS
+{\quarterstaff (\glsentrytext{nurabaron} gave him a stick to `play' with the guards)}% EQUIPMENT
+{}
 
 \end{multicols}
 
@@ -126,10 +161,8 @@ The baron can usually be found dining here, shouting at guards about some imagin
 \mapentry{The Old Storage Shelves}
 
 Here the servants rest.
-The armoury was once staffed by men at arms, but now has nothing but ogre-powder and other magical items from the \textit{nura depths}.
+The armoury was once staffed by men at arms, but now has nothing but ogre-powder and other magical items from \glsentrylong{sewerking}.
 Anyone disturbing the contents of this room must make a Dexterity + Crafts check, TN 7, or risk toppling something and spilling the powder everywhere, which will affect the characters as per the Saurecanta sphere (page \pageref{saurecanta}); specifically, they get +2 to Strength and Speed, but -4 to Intelligence and Charisma.
-This powder is not nearly so potent as the charm cast upon \gls{nurabaron} and his family, so they will recover at the end of the scene if they have not eaten anything.
-\footnote{See page \pageref{nura_recovery} for recovering from nura magic, and page \pageref{ogredust} for details on the `ogre dust'.}
 
 \mapentry{The Hidden Family}
 
