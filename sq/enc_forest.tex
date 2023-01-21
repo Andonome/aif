@@ -18,11 +18,11 @@
 \noindent
 An elf is assaulted by bandits.
 If the characters help, they receive help in return later.
-If they join the bandits, the elves will have their vengeance.
+If they join the bandits and rob the elf, other elves will have their vengeance later.
 
 \sqpart{Forest}% AREA
 {The Elven Prince}% NAME
-{The Immortal Bandits are attacking a rich elf}% SUMMARY
+{The Woodspy Bandits are attacking a rich elf}% SUMMARY
 
 \begin{boxtext}
   A voice in the distant forest cries out.
@@ -34,40 +34,46 @@ If they join the bandits, the elves will have their vengeance.
 
 \end{boxtext}
 
-Ten of \gls{banditking}'s men have found a wandering elven prince and intend to take everything he has.
-The prince does have some magical abilities, but not enough to take on all eight bandits.
-
 \humansoldier[\npc{\T}{Eight Bandits}]
 
 \elfprince
 
 If saved, \gls{elfprince} will promise to repay the characters sometime, but immediately leaves.
+If the elf dies, the party notice a magpie eyeing them (it will later relay the information to other elves).
 
-\sqpart{Forest}% AREA
-{Karma}% NAME
+\sqpart{Villages}% AREA
+{\squash Karma}% NAME
 {Three elves return to repay the characters for their previous actions}% SUMMARY
 
-Play this encounter at the same time as the next Side Quest's encounter.
+Play this encounter at the same time as the next Side Quest.
 The prince's friends journey towards the sea, and they have heard of the characters.
 If they aided \gls{elfprince} before, the troop will aid them in return.
 If the characters harmed \gls{elfprince}, the elven troop will have heard of it from the bandits, or through a sentient bird.
 
 The elves will not approach at first, but attempt to sneak and observe the party for a while.
 
-\elf[\NPC{\M}{Sindon}{Lively}{Strokes hair}{Experience}]
+\paragraph{If the elves want to hurt the PCs,}
+they use their highest level spheres, hopefully while the PCs have already entered combat with someone.
 
-Sindon has regularly talks with the local bandits, they have no idea how much he resents them.
-When the time is right he hopes to annihilate them, but has no current plan.
-He's not willing to share their location unless he can share the glory of the attack.
+\paragraph{If the elves want to help the PCs,}
+they either aid in a battle, or offer a single favour.
+The PCs must ask for the favour immediately, or they will never see the elves again.
+
+\elf[\NPC{\M}{Sindon}{Lively}{Strokes blonde hair}{Experience}]
+
+\paragraph{If the PCs ask about the bandits,}
+Sindon can give them an approximate idea of where the immortal bandits are, as long as they can understand his references (he does not direct them according to which road and villages are near, but by river-currents and tree-types).
+Understanding him requires Intelligence + Wyldcrafting, TN 10.
 
 \elf[\NPC{\F}{Vanwe}{Dour}{Wipes eyes}{Experience}]
 
 Vanwe was in love the \gls{elfprince}, and plans to either aid the characters well, or \emph{really} hurt them, depending upon their previous actions.
 
-Neuror is a fierce debater, and a mediocre historian.  Any talk of \gls{lostcity} will pull a very long rant from him about how the entire thing was the fault of humans for messing with dark magics, though he doesn't know any more details than that.
-
 \elf[\NPC{\M}{Neuror}{Jovial}{Spits}{Tribe}]
 \label{neuror}
+
+\paragraph{If the PCs ask about \gls{lostcity},}
+Neuror begins a repetitive rant about how it was all the humans fault for messing with nura magic, although he doesn't really know many details.
 
 \stopcontents[sq]
 
@@ -94,6 +100,11 @@ Chitincrawlers don't operate during the Winter, so if you run into a Winter seas
 {\Gls{spiderqueen} double-bluffs the party, attacking with illusory chitincrawlers, mixed in with real ones}% SUMMARY
 \label{spiderqueenssong}
 
+\paragraph{Background:}
+\Gls{spiderqueen} wants her chitincrawlers to feed well (on the PCs, since they're here), but doesn't want them to get hurt.
+She begins by casting an illusion of seven chitincrawlers, so the PCs will spot the fakery, and stop trying to resist so the real ones can eat them more easily.
+To complete this illusion, she casts yet another illusion of a gnome sitting in a tree, so the PCs will feel convinced that nothing they see is worrying.
+
 \begin{boxtext}
 
   You can always tell elven music by a sort of off-beat, where the beat goes wrong in a regular way.
@@ -103,8 +114,6 @@ Chitincrawlers don't operate during the Winter, so if you run into a Winter seas
   The trees drop a small platoon of arachnids, and in a moment a hundred eyes are calculating how you taste.
 
 \end{boxtext}
-
-She sings an illusion of a little gnome sitting on a tree nearby, as if a laughing little illusionist were toying with the characters.  She uses the song to make fake webs if the characters run.
 
 The PCs roll Wits + Vigilance to understand their environment.
 
@@ -120,21 +129,18 @@ The PCs roll Wits + Vigilance to understand their environment.
 
 \end{rollchart}
 
-\begin{itemize}
+Ten chitincrawlers attack (3 real, 7 fake).
 
-  \item{If the party turn to run, they run into illusory webbing.}
+\paragraph{If any PC cannot tell the real chitincrawlers from the fakes,}
+they will have real problems in combat as they will expend all their focus on the fake ones (which attack first).
 
-  \item{On the first round, ten illusory chitincrawlers attack.}
+\paragraph{If the kill a chitincrawler,}
+the \gls{spiderqueen} `changes her tune', and sings another song to bring them back to her.
 
-  \item{On the second round, three very real chitincrawlers attack.}
+\paragraph{If the PCs get close to \gls{spiderqueen},}
+she polymorphs into a bird and flies away.
 
-  \item{If provoked or threatened in any way, \gls{spiderqueen} retreats.  If that doesn't work, she transforms into a bird and flies away.}
-
-\end{itemize}
-
-The number of real chitincrawlers is equal to the number of people in the party.
-
-\chitincrawler[\npc{\A\T}{Chitincrawlers}]
+\chitincrawler[\npc{\A\T}{3 Chitincrawlers}]
 
 \sqpart{Villages}% AREA
 {Sheep Stampede}% NAME
@@ -147,8 +153,8 @@ The number of real chitincrawlers is equal to the number of people in the party.
 
 \end{boxtext}
 
-\noindent
-\Gls{spiderqueen} has gathered more chitincrawlers, and she needs to feed them again, so they have laid out their webs.
+\paragraph{Background:}
+\Gls{spiderqueen} has gathered more chitincrawlers, and she needs to feed them again, so they have laid out their webs, and await their dinner.
 
 \begin{boxtext}
 
@@ -156,7 +162,15 @@ The number of real chitincrawlers is equal to the number of people in the party.
 
 \end{boxtext}
 
-The chitincrawlers feed for thirty minutes, then leave.  If the characters catch them before that, they encounters webs, and defensive chitincrawlers, along with chitincrawler illusions.  Four are real, another ten are fake.
+\paragraph{If the PCs do nothing,}
+the chitincrawlers feed for thirty minutes, then leave.
+
+\paragraph{If the characters pursue,}
+they encounters webs (Wits + Vigilance, TN 9 to spot), then see the chitincrawlers feasting on the sheep.
+They will disengage and attack the characters if they take any Damage.
+
+\paragraph{If the players mention specifically to look out for webs,}
+their characters should spot them immediately.
 
 As before, \gls{spiderqueen} waits in the distance, and flees at the first sign of trouble.
 
@@ -168,7 +182,13 @@ As before, \gls{spiderqueen} waits in the distance, and flees at the first sign 
 
 \toppic{Dyson_Logos/ruined_village}{\label{ruined_village_map}}
 
-Villages disappear sometimes, especially when they lie close to the great forest.  But this is a little different.  Having \gls{spiderqueen} launch the invasion means that the chitincrawlers haven't left any obvious tracks.  There are no bodies outside, no half-eaten sheep.
+\paragraph{Background:}
+Most villages in the inner circle, closer to a town, feel safe.
+If woodspies or chitincrawlers attack, they generally engage with earlier, walled towns, rather than those close to the centre of the circle of civilization.
+
+Knowing this, \gls{spiderqueen} coaxed her babies past the dangerous walled towns, full of armoured archers, and brought them to a quiet little hamlet where they could feed safely, and lay lots of eggs.
+
+The plan went perfectly, so she left them to sleep and mate, and plans to return when she has more little babies to bring home with her.
 
 \begin{boxtext}
 
@@ -181,17 +201,24 @@ Villages disappear sometimes, especially when they lie close to the great forest
 However, inside each of the four farmhouses, rooms are filled wall-to-wall with webbing.  Each house contains the same thing:
 
 \begin{enumerate}
-
-  \item{Dead villagers.}
-  \item{Half-dead villagers, waiting to be eaten.}
-  \item{Great sacks of chitincrawler eggs, ready to burst out and feed.}
-  \item{One male and one female chitincrawler.}
+  \item
+  Dead villagers in webs.
+  \item
+  Half-dead villagers in webs, waiting to be eaten.
+  \item
+  Great sacks of chitincrawler eggs, ready to burst out and feed.
+  \item
+  One male and one female chitincrawler.
 \end{enumerate}
 
 \Gls{spiderqueen} herself has since moved away and left her creatures to multiply.
 
 \paragraph{If the party want to leave}
 then they can, without issue.
+
+\paragraph{If the PCs make a lot of noise,}
+all of the male chitincrawlers come out, and pursue.
+The females remain with their eggs.
 
 \chitincrawler[\npc{\A\T}{Male Chitincrawlers}]
 
@@ -201,10 +228,9 @@ then they can, without issue.
 {The Lone Ranger}% NAME
 {A member of the \glsentrytext{guard} stalks \glsentrytext{spiderqueen}}% SUMMARY
 
-The players roll Wits + Wyldcrafting, TN 11.
-If they succeed, they notice Chitincrawler tracks.
-If they avoid the markings, nothing happens.
-If they fail to spot them or follow them, continue:
+\paragraph{Background:}
+Gregory, a scout in the \gls{guard}, went out to track down \gls{spiderqueen}.
+He has succeeded, but won't approach her alone.
 
 \begin{boxtext}
 
@@ -212,49 +238,72 @@ If they fail to spot them or follow them, continue:
 
 \end{boxtext}
 
-Gregory approaches slowly, and explains that he's on a solo mission to track down \gls{spiderqueen}, who has been stealing sheep from local farmers of late.
-He confesses that he's terrified, because he doesn't know when he might suddenly find her lair.
+Gregory approaches slowly, and explains his solo mission to track down \gls{spiderqueen}.
+He confesses he feels scared, and asks the party to come with him (``but quietly.!.'').
 
-If the party continue following the tracks, they encounter \gls{spiderqueen}'s lair.
-Gregory will fight with them if pushed, but would rather return home.
-See page \pageref{spiderqueen}.
-The players may feel they have a duty to attack, but you should impress on them that they have no such duty, given the dangers of the encounter.
-The point of the encounter lies in understanding that not all problems can be solved with violence, and that sometimes the party need to pick which battles to fight, and which to flee from.
+\paragraph{If the party continue following the tracks,}
+they encounter \gls{spiderqueen}'s lair.
 
 \begin{boxtext}
-  In the distance, you see trees covered in webbing.  No clear path presents itself, and shortly after the webs you can see five, then ten, and maybe more chitincrawlers waiting.  A few slowly move down their trees.
+  In the distance, you see trees covered in so much webbing it seems like a fortress of goo.
+  No clear path presents itself, and shortly after the webs you can see five, then ten, arachnid silhouettes.
+  A few move slowly down their trees.
 \end{boxtext}
 
-If the characters attack, two chitincrawlers move to attack each round.
-\Gls{spiderqueen} then moves out to cast aggressive Polymorph spells, turning them into goats, birds, or other creatures.
-There are thirty chitincrawlers in total.
+Having found the location, Gregory only wants to return to \gls{town} and give his report.
 
-If the party attempt to light the forest on fire, they will have a hard time.
+\paragraph{If the PCs fight,}
+the chitincrawlers don't move out quickly -- they feel safer in their lair, but they may come out if fire begins to burn their home.
+
+Twelve chitincrawlers in total remain in the fortress of webs, and two emerge each round.
+\Gls{spiderqueen} then moves out to cast aggressive Polymorph spells, turning them into goats, birds, or other creatures.
+
+\paragraph{If the PCs push for Gregory to join them,}
+someone needs to roll Charisma + Combat, TN 10.
+Whether or not they succeed, Gregory impresses on them that they have no duty to fight.
+
+\humansoldier[\NPC{\M}{Gregory}{Suspicious}{Purses lips}{Tribe}]
+
+\paragraph{If the party attempt to light the forest on fire,}
+they will have a hard time.
 The forest is muggy and damp at the best of times.
-Even in the warmer seasons, lighting a fire requires an Intelligence + Wyldcrafting roll, TN 10.
+Even in the warmer seasons, lighting a fire requires an Intelligence + Wyldcrafting roll, TN 13.
 No fire will spread fast, so the chitincrawlers will still have time to attack.
 
-\humansoldier[\NPC{\M}{Gregory of the \glsentrytext{guard}}{Suspicious}{Purses lips}{Tribe}]
+\sqpart{Town}% AREA
+{\squash The Disappearing Fortress}% NAME
+{The \gls{spiderqueen} has moved her fortress}% SUMMARY
+
+While the next Side Quest plays out, drop the bad news on the PCs -- the \gls{guard} moved out en masse to defeat \gls{spiderqueen}, but by that time she had moved her home and brood elsewhere.
+
+Nobody has any idea where she might build her new home, but they know the walls of civilization cannot take much more.
 
 \sqpart{Forest}% AREA
 {The Cunning Plan}% NAME
 {Three gnomes have an elaborate plan for the party to kill \gls{spiderqueen}}% SUMMARY
 
-\begin{boxtext}
-
-  As you nip to the side to take a quick piss, a rustle above you shows that a giant arachnid has suddenly appeared, and looks down at you with dripping fangs.  In the distance, high-pitched snickering can be heard.
-
-\end{boxtext}
-
+\paragraph{Background:}
 Three gnomes have been debating about how to approach the party about their plan.
 \Gls{keras} thinks that it's best to honest, and just approach the party and ask if they would like to fight giant spiders.
 However, Holly is the chief illusionist, and her nose is longer than \gls{keras}'s,\footnote{Gnomes consider this to be a very important point.} so she says there's no use talking to the party without testing if they really can fight chitincrawlers.
 Greg, meanwhile, just wants both of them to stop fighting and make a decision.
 He's been depressed ever since their village was eaten by chitincrawlers.
 
-The final plan is to cast an illusion of a chitincrawler and see how the party react.  If they are hostile and skilled, the gnomes approach and tell them the plan to defeat \gls{spiderqueen}.
+The final plan is to cast an illusion of a chitincrawler and see how the party react.
+If they appear as skilled warriors, the gnomes approach and tell them the plan to defeat \gls{spiderqueen}.
 
-Once the illusion of a chitincrawler has been vanquished, the three gnomes step forward.
+\begin{boxtext}
+
+  As you nip to the side to take a quick piss, a rustle above you shows that a giant arachnid has suddenly appeared, and looks down at you with dripping fangs.
+  In the distance, high-pitched snickering can be heard.
+
+\end{boxtext}
+
+\paragraph{If the party flee,}
+the encounter ends.
+
+\paragraph{If the illusion of a chitincrawler has been vanquished,}
+the three gnomes step forward.
 Holly begins talking like she's some kind of trader.
 
 \begin{speechtext}
@@ -277,13 +326,19 @@ If the players ask how the gnomes know exactly where she is, they explain they h
 If they ask how the gnomes can be so certain that a half-kilometre tunnel, going somewhere the gnomes have never seen, can be so precisely dug, Gregory shows them his calculations.
 An Intelligence + Academics roll at TN 11 shows that they are correct.
 
-The players should be aware that if they jump out \emph{near} \gls{spiderqueen}, but not quite at her, they will be attacked instantly, and for nothing.  Their only hope is to break out of the earth, kill her in an instant, and hope the chitincrawlers flee once her spell has been broken.
+The players should be aware that if they jump out \emph{near} \gls{spiderqueen}, but not quite at her, they will be attacked instantly, with little hope of survival.
+Their only hope is to break out of the earth, kill her in an instant, and hope the chitincrawlers flee once her spell has been broken.
 
 \begin{speechtext}
 
-  It's simple really.  Anyone wandering close to that pit of spiders will be eaten by spiders.  Any large army approaching, and she will flee, with no option to track here whereabouts.  The only way to be rid of her is a fast, decisive attack.  But she has herself covered there too -- not yesterday we spoke to an elf who had spoken to local birds, who informed us that even the tops of the trees there are covered in webs.  Her mobile fortress is impregnable, and hungry, and they will feed again soon.
+  It's simple really.
+  Anyone wandering close to that pit of spiders will be eaten by spiders.
+  Any large army approaches, and she will flee, with no option to track here whereabouts.
+  The only way to be rid of her is a fast, decisive attack.
+  But she has herself covered there too -- not yesterday we spoke to an elf who had spoken to local birds, who informed us that even the tops of the trees there are covered in webs.
+  Her mobile fortress is impregnable, and hungry, and they will feed again soon.
 
-  However, with our compasses and our calculations, we have found a different way.
+  However, with our compass and our calculations, we have found a different way.
   We know that she rests not a kilometre \emph{that} way, and so half a kilometre that way there is a tunnel which we have almost completed.
   Once done, it will open \emph{directly} beneath the very place \gls{spiderqueen} sits.
 
@@ -291,15 +346,19 @@ The players should be aware that if they jump out \emph{near} \gls{spiderqueen},
 
 \end{speechtext}
 
-If the characters agree to squeeze through the tunnel, dig the very last few feet, then burst out, then each one has to make a Speed + Athletics check at TN 7.  Success indicates that the character can spend 4 Initiative to climb out of the hole.  Failure indicates that the character will not be able to get out of the hole that round, and neither will anyone behind them.
+If the characters agree to squeeze through the tunnel, dig the very last few feet, then burst out, then each one has to make a Speed + Athletics check at TN 7.
+Success indicates that the character can spend 4 Initiative to climb out of the hole.
+Failure indicates that the character will not be able to get out of the hole that round, and neither will anyone behind them.
 
 \begin{boxtext}
 
-  You look up at the wide eyes of \gls{spiderqueen}. She immediately starts climbing higher up the tree, as dozens of chitincrawlers all around race towards you.
+  You look up at the wide eyes of \gls{spiderqueen}.
+  She immediately starts climbing higher up the tree, as dozens of chitincrawlers all around race towards you.
 
 \end{boxtext}
 
-Once out, they can shoot at \gls{spiderqueen}, climb the tree, or otherwise attack her.  Two of the chitincrawlers will arrive to attack each round, but once \gls{spiderqueen} dies, any who have not yet come forward do not attack.
+Once out, they can shoot at \gls{spiderqueen}, climb the tree, or otherwise attack her.
+Two of the chitincrawlers will arrive to attack each round, but once \gls{spiderqueen} dies, any who have not yet come forward do not attack.
 
 \keras
 
@@ -311,7 +370,7 @@ Once out, they can shoot at \gls{spiderqueen}, climb the tree, or otherwise atta
 
 \Gls{spiderqueen} has spent 4 MP to gain a spider-like body, with +3 Strength and DR 3.
 
-\chitincrawler[\npc{\A}{Chitincrawlers}]
+\chitincrawler[\npc{\A\T}{Chitincrawlers}]
 
 \paragraph{Success} means \gls{spiderqueen} has been killed or quelled.
 If she's damaged and her chitinous children pushed back, she flees to seek new adventures elsewhere, and without killing random villagers.
@@ -334,7 +393,26 @@ The deep forest is no place to build relationships or get into prolonged battles
 These disjointed Side Quests don't fit with anything in particular, but exist to provide little clues to other quests, or simple distractions.
 
 \sqpart{Forest}% AREA
-{Just Move Along}% NAME
+{\squash Broken Sword}% NAME
+{One of the characters' weapons breaks}% SUMMARY
+
+\begin{boxtext}
+
+  Your sword plunges into the chitincrawler's face, but as you pull it out, the creature twists its body, and your sword shatters.
+  You pull out the handle with a metal stump, and the next creature attacks.
+
+\end{boxtext}
+
+One of the characters' weapons shatters at just the wrong time.
+The next time any character uses a m\^el\'ee weapon, that weapon shatters unless there is some reason it cannot shatter, such as being a magical item, or a weapon renowned for being of excellent quality.
+If one weapon cannot shatter, move to the next which is used.
+
+This encounter combines with the next Side Quest, so the players will most likely find a weapon shattering during combat.
+This might happen when the character smashes their weapon into an enemy's, or perhaps when stabbing at an enemy so deeply the weapon embeds in a creature's hide, and then snaps off when the weapon is withdrawn.
+
+
+\sqpart{Forest}% AREA
+{The Curious Crawler}% NAME
 {A chitincrawler tries to dig up a little gnome}% SUMMARY
 
 A chitincrawler pulls up the earth beside a tree, as if trying to dig under it.
@@ -345,11 +423,11 @@ The chitincrawler has smelled the gnome cooking food, and has decided to stay up
 \begin{boxtext}
 
   A distant shuffling past some trees starts, then stops, then starts then stops.
-  In the far distance, you see the dim sillhouette of a chitincrawler scratching around the base of a tree, as if trying to dig something up.
+  In the far distance, you see the dim silhouette of a chitincrawler scratching around the base of a tree, as if trying to dig something up.
 
 \end{boxtext}
 
-Wits + Crafts, TN 9, to understand that the tree leads to an underground home.
+Wits + Crafts (TN 9) to understand that the tree leads to an underground home.
 
 \chitincrawler
 
@@ -359,13 +437,13 @@ Wits + Crafts, TN 9, to understand that the tree leads to an underground home.
 \gls{keras} is delighted, and gifts the characters a scroll which -- once read aloud -- will cast an illusion of a chitincrawler.  It was studying chitincrawlers for his spells that got him into this mess.
 
 \sqpart{Forest}% AREA
-{Weather}% NAME
+{\squash Weather}% NAME
 {Seasonally appropriate weather strikes}% SUMMARY
 
 Play this at the same time as the next Side Quest part.
 The party are assaulted by weather.
 Exactly how this plays out depends upon what type of season it is.
-See Appendix \ref{astronomy} for more details.
+See \autoref{astronomy} for more details.
 
 \begin{rollchart}
 
@@ -380,14 +458,14 @@ See Appendix \ref{astronomy} for more details.
 {Random Traders}% NAME
 {Three tradesmen are lost in the forest}% SUMMARY
 
-\begin{boxtext}
-  In the distance, you see a group of a dozen men trying to get their first wagon out of a muddy ditch.  Two more wagons sit behind.
-\end{boxtext}
-
+\paragraph{Background:}
 Aaron, carrying various flowers, and over a hundred eggs, started the day late, and knew that his cargo would be bad before reaching \gls{town}, so he convinced Jason (carrying uncured meats) and Steve (carting blood sausage) to go with him via an old road his grandfather told him about.
 However, the road is completely overgrown, so the traders are now stuck in the woods, and lost.
 
-Combine this encounter with the next Side Quest -- the characters will most likely have the added problem of protecting the traders while they have problems in the woods.
+\begin{boxtext}
+  In the distance, you see a group of a dozen men trying to get their first wagon out of a muddy ditch.
+  Two more wagons sit behind.
+\end{boxtext}
 
 \humantrader[\npc{\T\M}{Aaron, Jason, and Steve}]
 
@@ -426,6 +504,7 @@ The elves hear the characters, and quickly hide as a game.  Those at the farthes
 \begin{boxtext}
 
   The noise of little feet darts around the silent forest, but nobody responds.
+  A feast lies on the blanket.
 
 \end{boxtext}
 
@@ -448,36 +527,21 @@ Aiw\"{e} loves a laugh but never learnt when she's gone too far, and will fashio
 \paragraph{If the characters ever ask about \gls{lostcity},}
 and whether or not elves destroyed it, the elves present say that they were never there, but have heard the story from their elders (see below).
 
-\paragraph{On the other hand, the encounter could turn nasty.}
-If the party immediately respond with arrows, fire or swords, the elves will become dangerous.
-There are twenty in total around the area, so the characters have little chance of any kind of victory.
-
 \paragraph{Once the party is in full swing,}
 ask for a Wits + Academics roll, TN 12.
 Each time the party fail, they dance for another scene and lose 3 Fatigue points.
 They dance until they pass out or until someone succeeds in the roll.
 
-\sqpart{Forest}% AREA
-{Broken Sword}% NAME
-{One of the characters' weapons breaks}% SUMMARY
-
-\begin{boxtext}
-
-  Your sword plunges into the chitincrawler's face, but as you pull it out, the creature twists its body, and your sword shatters.
-  You pull out the handle with a metal stump, and the next creature attacks.
-
-\end{boxtext}
-
-One of the characters' weapons shatters at just the wrong time.
-The next time any character uses a m\^el\'ee weapon, that weapon shatters unless there is some reason it cannot shatter, such as being a magical item, or a weapon renowned for being of excellent quality.
-If one weapon cannot shatter, move to the next which is used.
-
-This encounter combines with the next Side Quest, so the players will most likely find a weapon shattering during combat.
-This might happen when the character smashes their weapon into an enemy's, or perhaps when stabbing at an enemy so deeply the weapon embeds in a creature's hide, and then snaps off when the weapon is withdrawn.
+\paragraph{But if they become violent,}
+Erende responds with a \textit{Fast, Wide, Sleep} spell.
+There are twenty elves, so the characters have little chance of victory.
 
 \sqpart{Forest}% AREA
 {Furry Traders}% NAME
 {Three gnolls are here to trade}% SUMMARY
+
+\paragraph{Background:}
+The gnolls have caught four deer in a trap, eaten one, and cured the meat from the other three.  They are willing to trade.
 
 \begin{boxtext}
 
@@ -486,8 +550,6 @@ This might happen when the character smashes their weapon into an enemy's, or pe
   It's a group of gnolls, carrying large sacks.
 
 \end{boxtext}
-
-The gnolls have caught four deer in a trap, eaten one, and cured the meat from the other three.  They are willing to trade.
 
 \gnollhunter[\npc{\T}{6 Gnolls}]
 
@@ -503,28 +565,35 @@ Some encounters cannot be bested. The only thing for the party to do is take run
 
 \end{boxtext}
 
+\paragraph{Background:}
 An underground kingdom of nura have found a portal to Fenestra, and one might expect hobgoblins and nastier things to pour out and devour people.
 However, the first few were caught by a woodspy, who bred, and started a family, and the same happened to the next few.
-At this point, around 1,000 woodspies live in an entirely unnatural alliance around a single hole in the ground, where their food comes from.
+At this point, around 300 woodspies live in an entirely unnatural (and slightly inbred) alliance around a single hole in the ground, where their food comes from.
+
+On the other side of the portal, the nura have begun using the mysterious hole to dispose of their unwanted.
+Criminals, wounded and useless nura, or just those who annoy everyone, find themselves thrown into the hole.
 
 \begin{boxtext}
 
   Just ahead of you, you see a pit lined with stones, each with expensive gems and covered in alchemical writing, carved into the rock.
   An intense heat emanates from the pit.
 
-  Suddenly, the waxy parts of the trees start to move, revealing itself to be a three-limbed creature, shifting across the bark.  Behind you is another, and another, and then an entire tree pulls itself apart, revealing another two dozen of the shapeshifting creatures.
+  Suddenly, the waxy parts of the trees start to move, revealing itself to be a three-limbed creature, shifting across the bark.
+  Behind you is another, and another, and then an entire tree pulls itself apart, revealing another two dozen of the shape-shifting creatures.
 
 \end{boxtext}
 
-If the woodspies ever leave the area, the nura will have a safe portal to Fenestra, and they will raid the local area.
+\paragraph{If the woodspies ever leave the area,}
+the nura will have a safe portal to Fenestra, and they will raid the local area.
 If the portal ever closes, the woodspies will become ravenous, and invade the local population.
 The two stand in a tasty equilibrium, and the best the characters can do is flee.
 
-The woodspies are fat and unconcerned with chasing the characters far.  Once the party flee, only five give chase.
+The woodspies are fat and unconcerned with chasing the characters far.
 
-\woodspy[\npc{\T\A}{1,000 Woodspies}]
+\woodspy[\npc{\T\A}{300 Woodspies}]
 
-Currently the pit is being used by the nura as a punishment -- they send criminals into the whole to scope out what's happening and find out if it's safe yet.
+\paragraph{Take a pen,}
+and add this nura portal to your map of the area, wherever the PCs have wandered.
 
 \paragraph{If the local nura rating ever reaches 7,}
 the nura will raise an army big enough to break out, and drag any woodspies in the area below to become nura themselves.

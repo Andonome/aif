@@ -40,6 +40,7 @@ He has been turning anyone who finds or hunts for the place into animals.
 \begin{boxtext}
 
   Looking behind you, there's a short, slender man with long, brown, woollen robes coming towards you on horseback.
+  He smiles serenely through the \seasonDesc\ \season n gusts of wind.
 
 \end{boxtext}
 
@@ -72,14 +73,15 @@ he helps, possibly by giving a blessing to the party mid-battle, or possibly by 
 
 \end{boxtext}
 
-Yesterday, Jade the tracker came to \gls{lostcity}, but \gls{forestpriest} didn't like the intrusion, so he turned the intruder into a deer.
-Jade fled instantly.
+\paragraph{Background:}
+Jade, the trader, did the monthly food drop-off for the woodspy bandits, and \gls{forestpriest} saw him, then intervened by turning him into a deer.
 
-If the characters begin to question the odd behaviour of the deer, they can make a Wits + Wyldcrafting Group Roll to notice that something is wrong, TN 10.
+\paragraph{If the characters begin to question the odd behaviour of the deer,}
+they can make a Wits + Wyldcrafting Group Roll to notice that something is wrong, TN 10.
 
 Anyone attempting to dispel the magic must make a Group Roll at TN 12.
 
-\NPC{\M}{Jade the Tracker}{Personable}{Plays with knife}{Tribe}
+\NPC{\M}{Jade the Trader}{Personable}{Ruffles hair}{Tribe}
 \person{1}% STRENGTH
   {1}% DEXTERITY
   {0}% SPEED
@@ -93,7 +95,10 @@ Anyone attempting to dispel the magic must make a Group Roll at TN 12.
   {}
 
 \paragraph{If returned to human form,}
-Jade can instantly identify \gls{forestpriest} as the man who turned him, though in deer form he will have a lot of trouble expressing himself, and can do little more than show distress around the miracle worker.
+Jade can instantly identify \gls{forestpriest} as the man who cast the spell on him, though in deer form he will have a lot of trouble expressing himself, and can do little more than show distress around the priest.
+
+Jade has no idea he works for the woodspy bandits.
+He simply takes orders from \gls{traitor}, and assumes the supplies go to \gls{guard} scouts.
 
 \paragraph{The characters may decide to visit \gls{forestpriest} in order to have the spell lifted,}
 but \gls{forestpriest} simply tells them that this is an ordinary deer, enchanted to think that it is a man.
@@ -102,12 +107,15 @@ Spotting the lie requires a Wits + Empathy Group Roll, TN 11.
 \paragraph{If the party manage to dispel the Polymorph spell,}
 the game is up, and everyone will know about \gls{forestpriest}'s actions, although they will still not know his motives.
 
+\Gls{traitor} will claim all food drop-offs were for \gls{guard} scouts and that he simply forgot the paperwork.
+
 \sqpart{Villages}% AREA
 {The Dead Messenger}% NAME
 {A dead messenger still has his scroll}% SUMMARY
 
-The Immortal Bandits have attacked a caravan and killed everyone, but none of them were literate, so they did not know to take the scroll from the dead messenger's hand.
-The messenger was from \gls{redfall}, and was charged with delivering a message from \gls{traitor} to \gls{townmaster}, about the completion of the tower.
+\paragraph{Background:}
+The Immortal Bandits have attacked a caravan and killed everyone, but none of those present were literate, and did not think about a scroll being useful.
+The messenger was from \gls{redfall}, and was charged with delivering a message to \gls{townmaster} from \gls{nurabaron}.
 
 \begin{boxtext}
 
@@ -121,7 +129,8 @@ The messenger was from \gls{redfall}, and was charged with delivering a message 
 The messenger's name is Tobias of \gls{redfall}.
 As the party arrives, he says ``Take this to the citadel'', then falls silent from blood-loss.
 
-Keeping him alive requires a Wits plus Medicine Group Roll at TN 10, but even if he lives, he's in no state to help with anything.
+\paragraph{Keeping him alive}
+requires a Wits plus Medicine roll at TN 10.
 
 The message has an unknown seal, belonging to no family in the area.
 The characters know that breaking someone else's seal is illegal, but if they do, they find an encrypted message.
@@ -129,28 +138,31 @@ If they pass an Intelligence + Academics roll, TN 9, they find it states:
 
 \begin{speechtext}
 
-  The Green Tower is nearly complete.
+  \Gls{greentower} is nearly complete.
   The men say they can hear noises underground sometimes, so we will have to investigate soon.
 
-  We await your inspection, my liege.
+  Last shipment lost.
+  Please send replacement soon.
 
 \end{speechtext}
 
-\paragraph{If the characters hand the message in,}
-and \gls{townmaster} sees they have broken the seal, he will be livid, and have them arrested.
-If he does not receive the message, he will not approach the Green Tower until he receives another message, much later.
-If he receives the message and believes it to be intact, then he will approach the Green Tower to inspect it.
+\paragraph{If the characters break the seal before handing the message in,} \gls{townmaster} will be livid, and have them arrested.
 
-\paragraph{\Glsentrytext{townmaster}'s Journey}
+\paragraph{If he does not receive the message,}
+he will not approach \gls{greentower} until he receives another message, much later.
+If he receives the message and believes it to be intact, then he will send \gls{alchemist} to \gls{greentower} to inspect its progress.
+
+\paragraph{\Glsentrytext{alchemist}'s Journey}
 begins by going out with ten of the \gls{guard} to the villages to see a festival, then he requests they leave him.
-Soon after, fifteen of the woodspy bandits, dressed as pilgrims of Laiqu\"e will escort him the rest of the way.
+Soon after, ten of the woodspy bandits, dressed as pilgrims of Laiqu\"e will escort him the rest of the way.
 
-If the party attempt to follow him, have them make a Strength + Stealth check to endure the journey without being seen, TN 9.
+If the party attempt to follow \gls{alchemist}, have them make a Strength + Stealth check to endure the journey without being seen, TN 9.
+Failure entails being spotted.
 
-\humanthief[\npc{\T\M}{15 Woodspy Bandits}]
+\humansoldier[\npc{\T}{10 Woodspy Bandits}]
 
 \sqpart{Forest}% AREA
-{The Green Tower}% NAME
+{\Glsfmttext{greentower}}% NAME
 {The Woodspy Bandits are setting up a secret operations base}% SUMMARY
 
 Deep in the forest, \gls{townmaster} has commissioned masons to secretly start building a single tower from the fallen stone of \gls{lostcity}.
@@ -172,8 +184,6 @@ As a result, the group cannot attack the PCs without some way to explain their b
 At this stage it's unlikely that they find the secret portal to catacombs of the old Temple of Qualm\"{e}, as the builders have no idea what lies under their feet.
 However, it is possible for them to discover this information by obtaining old maps of \gls{lostcity}.
 
-\Gls{traitor} has not informed the rest of the \gls{guard}, such as \gls{captain} of his activities, so if he suspects the characters are acquainted with the \gls{guard}, he will remain hidden, or start spinning lies about how the place is top secret business of \gls{king}.
-
 \paragraph{While the party introduce themselves,}
 The tower is assaulted by a basilisk.
 If the characters seek sanctuary in the tower, the workers will let them in, unless there is a good reason not to.
@@ -185,7 +195,18 @@ At this moment, \gls{traitor} realises the illegal swords sit in plain view, whe
 \label{traitor}
 \traitor
 
-\humansoldier[\npc{\T\M}{6 Woodspy Bandits}]
+\npc{\T\M}{6 Woodspy Bandits}
+\person{2}% STRENGTH
+{0}% DEXTERITY 
+{0}% SPEED
+{{0}% INTELLIGENCE
+{-1}% WITS
+{0}}% CHARISMA
+{0}% DR
+{1}% COMBAT
+{Crafts 2, Wyldcrafting~1}% SKILLS
+{\shortsword}% EQUIPMENT
+{}
 
 \basilisk
 
@@ -195,15 +216,21 @@ they can spot these are the same people with a Wits + Empathy Team Roll.%
 {\footnote{See the core rules, page \pageref{teamwork}, for Teamwork Rolls.}}%
 {}
 
-If news of their whereabouts is brought to the \gls{guard},\footnote{See page \pageref{guardstation} for more on the guard station.}
-then the Woodspy Bandits will be chased out of the area, in due time, once all the necessary paperwork has been completed.
-
-The Woodspy Bandits may also recall the characters (with the same roll).
+\paragraph{The Woodspy Bandits may also recall the characters}
+(with the same roll).
 If they do indeed recall who the characters are, they will try to attack by surprise in order to keep the characters from spilling their whereabouts to anyone.
+A slow conspiracy develops within the keep, as each one gets called away to whisper with the others, one by one, until they all agree to let the characters spend the night there, and stab them in their sleep.
+
+\paragraph{If the PCs bring news of \gls{greentower}'s location to the \gls{guard},}
+footnote{See page \pageref{guardstation} for more on the guard station.}
+then the Woodspy Bandits will be chased out of the area, in due time, once all the necessary paperwork has been completed.
 
 \paragraph{If anyone in the party can use mana,}
 they feel magical energy recharging them from below constantly (3 MP per turn).%
 \footnote{See page \pageref{underGreenTower} for details on the tunnels below.}
+
+\paragraph{Take a pen,}
+and add the tower to your map of the area, wherever the party happen to be in the forest.
 
 \sqpart{Town}% AREA
 {Rogue Sheep}% NAME
@@ -233,15 +260,16 @@ Before the characters can decide what they're doing, start the next encounter in
 {\Gls{forestpriest} Exiled}% NAME
 {The town crier announces that \gls{forestpriest} is a wanted criminal}% SUMMARY
 
-\Gls{forestpriest} has been found to be a criminal after \gls{captain} stalked him, and found him turning a mason into a pig.
-The pig ran away, and was murdered and eaten before \gls{captain} could find him, so `cannibalism', has been added to \gls{forestpriest}'s list of charges.
+\Gls{forestpriest} has been found to be a criminal after \gls{captain} stalked him, and found him turning a trader into a goat.
+The goat ran away, and was murdered and eaten before \gls{captain} could find him, so `cannibalism', has been added to \gls{forestpriest}'s list of charges.
 \Gls{forestpriest} has since fled to the deep forest to escape trial.
 
 \begin{speechtext}
 
   Hear, ye! Hear, ye!
 
-  A criminal from the Whiteplains former nobility has been found, and shall be executed tomorrow, noon, together with three thieves and one man who blasphemed the crown.
+  Hell-slugs have been caught roaming (slowly) at the crossroads.
+  Be on the lookout for dangerous creatures, even while travelling close to \gls{town}.
 
   \Gls{forestpriest}, former high priest of Laiqu\"{e}, has been caught using black arts, including cannibalism, and now carries a total reward of 200 silver pieces living, and 300 silver pieces dead.
 
@@ -253,7 +281,8 @@ The pig ran away, and was murdered and eaten before \gls{captain} could find him
 Elvish characters may have a difficult time with the registrations, since everyone in \gls{town} will ask them for documentation in the hopes of turning them in for a reward.
 Even characters who were previously friendly towards party elves begin to view them as a potential source of income.
 
-The criminal of the Whiteplains Nobility is someone in hiding, who's come to meet with \gls{banditking} but would rather hang than give up his kin's whereabouts.
+\paragraph{If the PCs were looking for \gls{forestpriest},}
+their job just got harder.
 
 \stopcontents[sq]
 
@@ -266,27 +295,26 @@ The criminal of the Whiteplains Nobility is someone in hiding, who's come to mee
 \startcontents[sq]
 
 \sqminitoc
+\paragraph{Background:}
+\gls{nurabaron} always enjoyed hosting \gls{townmaster}, and wholeheartedly agreed that local town masters should have their own armies, rather than relying on the \gls{guard}.
+He has more men-at-arms than the law allows, but not by much, and he wants more, both for his own protection, and so he has more people to order about.
+For many seasons, he has worked with \gls{townmaster} to transport food to the woodspy bandits.
 
-\begin{speechtext}
+Trouble struck a couple of days ago%
+\footnote{Or whenever you start this Side Quest.}
+when \gls{sewerking}'s Immortal Bandits followed a trader, and found out about food being dropped in \gls{redfall} for the Woodspy Bandits.
+\Gls{sewerking} visited \gls{nurabaron}, pretending to be a wandering (and illegal) alchemist, and `gifted' him ogre dust, claiming it would make anyone who breathed it in into an unstoppable warrior.
+\Gls{nurabaron} has little idea about how the nura work, so he tried the powder himself, and became a massive, hulking brute, with an insatiable appetite.
 
-  \Gls{nurabaron} had a good relation with the \gls{guard}, and all the hunters in his village provided all manner of information to \gls{townmaster}.
-  He had to go.
+While \gls{sewerking} thought that would finish him, \gls{nurabaron} had plenty of food to hand, so despite his sudden loss in intelligence, he continued being a village master.
+His men felt distressed, but they all knew that if they lost their jobs, they would have to work outside of their comfortable keep, beyond the \glsentrytext{edge}.
 
-  An open attack would have been dangerous, and rather too obvious, so I have occupied him with hunger.
-  With the new magics of the nura, I've made a pocket spell from dandelion seeds, added some other trinkets, and sold the lot to him.
+Since then, \gls{sewerking}'s advisor and seneschal, Nathaniel, has kept the keep running mostly as usual.
+\Gls{nurabaron} insisted on having his family join him, so they have all gorged themselves on food every night.
 
-\end{speechtext}
+Taxes raised, the village's food disappeared (along with any shipments intended for the Woodspy Bandits), and the keep's servants have become steadily more distressed at their master's erratic, ridiculous, and aggressive behaviour.
 
-\noindent
-\Gls{sewerking} has created bags of dandelion seeds which can turn anyone who comes into too-much contact with them into a nura creature.
-He began peddling them, along with other \textit{Pocket Spells}%
-\iftoggle{core}{\footnote{See the core book, page \pageref{pocketSpell}.}}{}
-\gls{nurabaron} has come under a horrible nura curse, turning him and his family into ogres.
-He has lost most of his mind, and must eat constantly.
-His servants pity him, and continue to carry out his orders, which mostly include bringing him more and more food.
-They know that if he's dispossessed, they'll all be out of work, and have to join the \gls{guard}, or worse.
-
-As a result of the local starvation, many of the local peasants have turned to banditry.
+As a result of starvation, many of the local peasants have turned to banditry.
 
 \sqpart{Villages}% AREA
 {\N Bad Bandits}% NAME
@@ -307,7 +335,7 @@ the bandits might shoot, but they're easily intimidated.  If the characters atta
 
 Of course, these aren't proper bandits.
 This is the first robbery they've attempted.
-If questioned, they explain that they're really farmers in the nearby village \gls{redfall}, and the local sheriff's been demanding steadily more and more meat and grain as taxes.
+If pushed, they explain that they're really farmers in the nearby village \gls{redfall}, and the local sheriff's been demanding steadily more and more meat and grain as taxes.
 They don't have the strength to go on.
 
 \humansoldier[\NPC{\M}{Bertrand}{Pessimistic}{Squints}{Qualm\"e}]
@@ -327,7 +355,7 @@ They don't have the strength to go on.
 
 \paragraph{If the characters investigate further,}
 they may well end up at Redfall Keep.
-In that case, have them stopped at the gate, and play out the encounter below with Nathaniel the Diplomat.\footnote{See page \pageref{nonstarter}, ``The Non-Starter''.}
+In that case, have them stopped at the gate, and play out the encounter below with Nathaniel the Diplomat.
 He won't let them in the keep, but he will promise all he can if the characters complete the mission he has for them.
 
 Wherever the party have encountered these bandits, \gls{redfall} Keep is nearby, so if you want to pen a map as you go, at it here.
@@ -358,7 +386,7 @@ Increase the local Nura Rating by 1.
 \resumecontents[Town]
 
 \sqpart{Town}% AREA
-{The Non-Starter}% NAME
+{The Search for \Glsentrytext{forestpriest}}% NAME
 {\Glsentrytext{nurabaron}'s diplomat asks the party to help him}% SUMMARY
 \label{nonstarter}
 
@@ -384,19 +412,21 @@ Once approached, he explains (or if not approached, he approaches the PCs).
 
 \end{speechtext}
 
-\Gls{forestpriest} has gone on a personal pilgrimage some time ago.
-Nobody knows where he is, and the characters have almost no chance of finding him.
-The mission is a non-starter, because \gls{forestpriest} is not an easy character to find, but there's plenty of opportunity to get the characters in more trouble while they're looking.
+\Gls{forestpriest} has gone on a personal pilgrimage some time ago, so finding him will prove a challenge.
 
-\paragraph{If the characters decide to hunt anyway,}
-locating the priest can involve asking around \gls{town} about where he planned to go, researching historical sites of interest, or asking local elves what happened to him.
-No matter what the roll, the TN is 12, but they can re-roll with each new method they think of finding him.
-If the characters journey into the forest and simply hunt for him, they must endure three forest encounter rolls.
-If they want to perform this as a Resting Action, they must endure six forest encounters.
+\paragraph{If the characters ask around,}
+have them roll Charisma + Vigilance, TN 12.
+Success means they have found someone who can tell them that \gls{warningbard} knows him well.
 
-Once \gls{forestpriest} is located, he cannot actually `cast magic' and cure the \gls{nurabaron}, because nura can only be cured through starvation.
-However, \gls{forestpriest} still has a plan -- he will turn \gls{nurabaron} (and possibly his family) into bears, and then have them hibernate.
-If the season is right, or if he can coax the bears into hibernation with frost magics by making a cold room, he will indeed be able to cure the curse.
+If \gls{warningbard} has not yet gone to jail,%
+\footnote{See page \pageref{warningbard}.}
+he will be found singing to earn his keep around various villages.
+
+\paragraph{If the PCs find \gls{forestpriest},}
+he cannot actually `cast magic' and cure the \gls{nurabaron}, because nura can only be cured through starvation.
+However, he still has a plan -- he will turn \gls{nurabaron} (and possibly his family) into bears, and then have them hibernate.
+If the season is not right for hibernation, he can use a frost spell to make a cold room.
+Once a season has passed, the curse will be cured.
 
 \humandiplomat[\NPC{\M}{Nathaniel the Diplomat}{Practical}{Scratches nose}{V\'er\"e}\label{nathaniel}]
 
@@ -432,9 +462,12 @@ Elliot the crier knows nothing more than he's said.  A number of townsfolk quick
 Of course, the only way to put a stop to this is for the characters to find the \gls{forestpriest} and bring him to the keep before the angry mob arrive, convince the mob that they have already cured \gls{nurabaron}, or somehow rush \gls{nurabaron} to safety.
 
 \paragraph{Stalling the impending trouble}
-before it starts with a Charisma + Academics roll, TN 12.
-Otherwise, they need to be at the keep to interfere with the growing mob.
-However this turns out, the crowd cannot be held back for long -- everyone in \gls{town} is now curious about what is happening at \gls{redfall}.
+before it starts could involve extolling laws (Charisma + Academics), pleading (Charisma + Empathy), or anything else.
+However they approach the problem, the TN is 12, but they should get at least three rolls before the townsfolk stop listening.
+
+\paragraph{Journeying to \gls{redfall} before the crowd}
+won't be a problem if they have horses.
+If no horses are present, a few traders will arrive before them, at the very least.
 
 Increase the local Nura Rating by 2.
 
@@ -442,7 +475,7 @@ Increase the local Nura Rating by 2.
 
 \resumecontents[Forest]
 
-\sidequest{The Necromancer's Pets}\label{necromancerspet}
+\sidequest{The Necromancer's Friends}
 
 \stopcontents[Forest]
 
@@ -452,38 +485,64 @@ Increase the local Nura Rating by 2.
 
 \noindent
 \Gls{necromancer} has lived as the lone priest and guardian of his temple for centuries, and has grown increasingly paranoid, so he wants to gather an army of ghouls to guarantee his safety.
-He started by enchanting a bauble which raises people from the dead, then enchanted crows to place the medallion on the dead to raise them.
-After a century of slowly growing his little dead battalion, he is ready to assault a full village, and expand it into an army.
-Every villager he kills becomes another soldier for his army of the dead.
+\Gls{banditking} has helped by bringing corpses to his keep, so now he has enough to assault full-on villages and expand his army.
 
 If the party ever decide to track \gls{necromancer} down, they will need to make an Intelligence + Academics roll, TN 15 (or TN 10 with access to the library in town).
 
 \sqpart{Villages}% AREA
-{The Crow}% NAME
-{A recently fallen corpse is raised from the dead by a bird with a magical amulet}% SUMMARY
+{Body Bags}% NAME
+{\Glsentrytext{banditking} transports the bodies of his victims to \glsentrytext{necromancer}}% SUMMARY
 
-Play this encounter at the same time as the next on your list.
-If a corpse appears during the encounter, that's where the crow goes.
-If no corpses appear, the characters find a trader by the road, robbed by unknown bandits, and the crow on top of his body.
+\paragraph{Background:}
+\Gls{banditking} killed a caravan of half a dozen traders, stuffed the bodies into one of the carts, and now wants to transport them all back to \gls{necromancer}'s lair for them to be raised from the dead.
 
 \begin{boxtext}
-  A crow lands upon the corpse and stares at the vacant eyeballs, before landing a sturdy peck on the left one.
-
-  A little glimmer around its neck shines.  The crow wears a medallion, and a moment later it takes off, leaving the right eyeball undigested.
-
+  Three wagons approach ahead of you.
+  As they get closer, you notice well-armed traders giving you a friendly wave, and carrying the stink of rotten corpses with them.
 \end{boxtext}
 
-A moment after the crow has flown away, the corpse animates, and attacks the characters.
+\Gls{banditking} speaks with the PCs happily, but only if they stop him.
 
-\ghoul[\npc{\D}{Ghoul}]
+\paragraph{If the PCs ask about the smell,}
+\gls{banditking} tells them he has killed some bandits on the road, and wants to take them in for a reward.
 
-Even if this ghoul doesn't join the characters, \gls{necromancer} has gathered an army of 50 ghouls by looting the dead.
-See page \pageref{ghoulNecklace} for more on the Amulets of Return.
+\paragraph{If anyone mentions that this is not the right way to \gls{town},}
+or points out some other problem with his story, he gives very reasonable answers, concerning drop-off points, proper checks, or contacts he knows who can help embalm the corpses before a longer journey.
+
+\paragraph{Spotting the lies}
+requires a Wits + Empathy roll.
+The basic TN is 12, but you should decrease it by 1 for every oddity the PCs can point out (roll in secret, and keep the roll).
+
+\begin{itemize}
+  \item
+  ``The blood? It's from the fight of course!''
+  \item
+  ``Yea, I know they don't look like warriors.
+  It's because they aren't.
+  Desperate times push people to desperate actions, but we still have to defend ourselves.
+  I know she's still now, but she was as dangerous as a cornered badger, honestly.''
+  \item
+  ``Where are \emph{their} weapons?
+  They were pretty rudimentary -- just crude spears, so we threw them away.
+  They're about half a day's walk back, if you really want some new spears.''
+  \item
+  ``Why do we have bows?
+  To stay safe!
+  Do you have any idea how dangerous travelling is in these parts?''
+\end{itemize}
+
+\banditking
+
+\humanarcher[\npc{\T}{6 Immortal Bandits}]
+
+\paragraph{If the PCs follow the bandits back to \gls{necromancer}'s lair,}
+have them roll Wits + Wyldcrafting, TN 10.
 
 \sqpart{Forest}% AREA
 {The Undead Horde}% NAME
 {Hundreds of ghouls have become lost and now wander the forest}% SUMMARY
 
+\paragraph{Background:}
 \Gls{necromancer} is not a precise creature, and has misplaced twenty of his ghouls.
 Once they wandered away from the rest of the herd, they broke into the forest to wander some more.
 
@@ -497,19 +556,26 @@ Once they wandered away from the rest of the herd, they broke into the forest to
 The party makes a Wits plus Vigilance roll, TN 6, to notice the undead while they are still 10 squares away.
 Each roll on the margin indicates an additional 10 squares to notice the horde, so rolling 10 means 50 squares' distance.
 
-The horde has wandered away from its necromancer, while he was distracted.
-There is no way to use them to find where the necromancer lives, as they have no desire to return to him.
-
+The ghouls spot the PCs from a long distance.
+Such is the nature of undead vision.%
+\iftoggle{core}%
+  {See the core rules, page \pageref{undead}.}
+  {}
 While these ones have run away, the necromancer has gathered a full army of 100 ghouls.
+
+\paragraph{If the PCs flee,}
+they have little trouble, but they should be aware that the horde will eventually find living people to attack.
+
+Whatever they do, the question remains -- where did the dead come from?
 
 \sqpart{Villages}% AREA
 {The Survivors}% NAME
 {A village has been ransacked by ghouls, and only followers of Qualm\"{e} have been spared}% SUMMARY
 
-Last night an undead horde pulled apart an entire village.  The undead were directed well by the necromancer, and almost nobody escaped.
-However, four people were evidently followers of Qualm\"{e}, god of death.
-Two wore medallions to commemorate departed loved ones, and another two gave prayer to the God of Death when the undead came.
-As a result, they were spared.
+\paragraph{Background:}
+Last night, \gls{necromancer} guided his horde quietly past the well-guarded, walled villages around the \gls{edge}, and into a less protected settlement, then let the dead tear apart the living, and rose them from the dead to grow his army.
+
+However, four people were evidently followers of Qualm\"{e}, god of death, as they wore medallions made to show respect to Qualm\"{e}, and hopes that He would guide their ancestors to a peaceful realm in the afterlife.
 
 Rupert, Jake, Sarah and Eliza cannot explain why they were spared -- they only know the undead never touched them while they ate the rest of the village.
 
@@ -519,29 +585,28 @@ Rupert, Jake, Sarah and Eliza cannot explain why they were spared -- they only k
 
 \end{boxtext}
 
-If the characters track the ghouls, they find it rains en route, making tracking more difficult.
+\paragraph{If the characters try to track the ghoulish army,}
+they find it rains en route, making tracking more difficult.
 However, a Wits + Wyldcrafting roll, TN 10, will get them there.
-Alternatively, researching previous churches to Qualm\"{e} within the area with an Intelligence + Academics roll (TN 10) will tell the party where they need to go.
+Alternatively, researching previous old temples to Qualm\"{e} in \gls{town}'s library will give them a rough idea of where they need to search.
+The research requires an Intelligence + Academics roll (TN 10), and hunting the exact location of \gls{necromancer}'s crumbling temple requires a Wits + Wyldcrafting roll (TN 10 again).
 
-By this time the necromancer has gathered an army of 200 undead.
+By this time, \gls{necromancer} has gathered an army of 200 undead.
 
-\sqpart{Villages}% AREA
-{The Callback}% NAME
-{Someone from a previous encounter returns from the dead}% SUMMARY
+\sqpart{Town}% AREA
+{\squash Rumours of a Breach}% NAME
+{\Glsentrytext{necromancer} destroys a village at the \Glsentrytext{edge}}% SUMMARY
 
-\begin{boxtext}
+\paragraph{Background:}
+\Gls{banditking} worries about having a run-in with the \gls{guard}, so he's asked \gls{necromancer} to assault the walled villages around the \gls{edge}.
+Once these go, the \gls{guard} have to rush in to protect the breach, and rebuild the fortifications.
+This means less interference from the \gls{guard}, which leaves the Immortal Bandits free to roam, plunder, and loot.
 
-  You wake through a nasty dream about a crow cawing in your face, although it may really have been a nearby crow.
+\paragraph{Once the PCs enter \gls{town},}
+everyone around is discussing the recent breach, and whether or not the \gls{town} will soon be devoured as the walled villages fall, and the \gls{edge} closes in around them.
 
-\end{boxtext}
-
-Look back through the finished encounters in the villages, and pick some event where the players met people -- the more the merrier.
-The Immortal Bandits have met those people on the road and killed them for their wares.
-The necromancer's pet crow has come along after to turn them and used its amulet to turn those NPCs into ghouls.
-\footnote{If the crow died in a previous encounter, then this is a different crow.}
-This could simply be the trader from `Wrong Direction Chickens', or possibly a PC's ally from when Story Points were spent.
-
-\ghoul[\npc{\D\T}{Ghouls}]
+\paragraph{For the next three random encounters,}
+roll for encounters on the roads as if the PCs were in the forest.
 
 \sqpart{Villages}% AREA
 {The Dead Devour a Village}% NAME
@@ -565,7 +630,8 @@ This could simply be the trader from `Wrong Direction Chickens', or possibly a P
 \end{rollchart}
 \end{figure*}
 
-The necromancer has gathered an army of a full 400 undead, and has decided to take most of them to a nearby village, and kill everyone inside.
+\paragraph{Background:}
+\glsfirst{necromancer} has gathered an army of a full 400 undead, and has decided to take most of them to a nearby village, and kill everyone inside.
 If the characters are nearby a particular village, that's the village he assaults.
 Otherwise, refer to Lakeside village, page \pageref{lakeside}.
 
@@ -578,7 +644,7 @@ Otherwise, refer to Lakeside village, page \pageref{lakeside}.
 His tactics are to create a full ring of undead around the village, and pull it slowly tighter until the entire village is surrounded.
 Once there is nowhere to go, he releases the undead to attack.
 
-The party can make a Wits + Vigilance roll, TN 10, to spot the dead before they attack.
+The party can make a Wits + Vigilance roll (TN 10) to spot the dead before they attack.
 
 \paragraph{Preparation} depends upon a single Tactics roll.
 If the party see the dead a scene before, they can make an Intelligence + Tactics roll, TN 6.
@@ -623,14 +689,12 @@ Use the following as a guide:
 
 \end{rollchart}
 
-Anyone carrying obvious trinkets displaying an allegiance to Qualm\"e may be spared so long as they are not actively attacking the dead.
+Anyone carrying obvious trinkets displaying an allegiance to Qualm\"e may be spared by \gls{necromancer}'s curses, so long as they are not actively attacking the dead.
 
 \paragraph{Cleanup} depends upon the battle's outcome.
 Once the battle's over, the village will most likely be mostly destroyed, and \gls{necromancer}'s army much larger.  The villagers will shake, huddle together, and most consider moving.
 
-The encounter repeats until the party slay \gls{necromancer}.
-The characters can complain to local nobles, but they note that they are not allowed a standing army, so they can do nothing about the situation.
-The party can write to \gls{king}, but they will be lucky to receive anything but stock letters from bureaucrats stating that the situation has complications.
+The encounter repeats every second Village-encounter until the PCs intervene.
 
 \ghoul[\npc{\T\D}{200 Ghouls}]
 
@@ -638,7 +702,7 @@ The party can write to \gls{king}, but they will be lucky to receive anything bu
 
 \stopcontents[sq]
 
-\sidequest{Immortal Bandits}\label{immortalbandits}
+\sidequest{Immortal Bandits}
 
 \stopcontents[Town]
 
@@ -647,18 +711,18 @@ The party can write to \gls{king}, but they will be lucky to receive anything bu
 \sqminitoc
 
 \noindent
-\Gls{banditking} and his men are a bandit ring with a difference.
-Most bandits have to raid local areas, until trackers in the \gls{guard} eventually catch and kill them.
-\Gls{banditking} and his team have rings which make them semi-undead, and hide in a lair surrounded by ghouls.
-Their undead horses walk slowly, but never tire, so \gls{banditking}'s band can raid villages for many miles around before retiring to their impregnable keep.%
+The Immortal Bandits are a bandit ring with a difference.
+Their magic rings make them semi-undead, and they sometimes use undead horses, which cannot gallop, but never tire, so they can raid for many miles around their haven.%
 \footnote{See page \pageref{necromancers_lair} for more on their foetid living conditions.}
-
-The Immortal Bandits have used their position to raid local areas for food and wealth.
-All of this is eventually brought back to \gls{sewerking} in order to trade more with the nura.
 
 \sqpart{Villages}% AREA
 {The Deal}% NAME
 {The Immortal Bandits request help}% SUMMARY
+
+\paragraph{Background:}
+The Immortal Bandits have gotten in a fight with the \gls{guard}, and both sides have left in a bad state.
+The Woodspy Bandits heard the battle, came to investigate, then started following them.
+They don't like the idea of two bandit rings in the area, so they plan to follow the Immortal Bandits quietly, and kill them in their sleep.
 
 \begin{boxtext}
 
@@ -666,37 +730,24 @@ All of this is eventually brought back to \gls{sewerking} in order to trade more
 
 \end{boxtext}
 
-\begin{exampletext}
+\Gls{sewerking} has noted he's being followed, so when he sees the party, he acts friendly, pretends to be a member of the Weapons Guild from Whiteplains, and hopes they can travel together until the danger has passed.
+He explains the situation while telling them not to look behind (``the bandits might notice you've spotted them!''), and asks for their help in formulating a plan.
 
-  \Gls{banditking} has killed members of the night guard, and lost half of his men.
-  However, the Woodspy Bandits have found them, and want to follow them.
-
-  Two bandit large groups of bandits cannot exist in the same area, so the Woodspies intend to follow them and kill them once they reach a quieter road.
-
-  \Gls{banditking} has noted he's being followed, so when he sees the party, he tries to travel with them until he can reach safety.
-
-\end{exampletext}
-
-\noindent
-\Gls{banditking} presents his group as a bunch of adventurers who were engaged in a battle with the Woodspy Bandits.
-
-\paragraph{Once the party speak with \gls{banditking},}
-have them roll Wits + Vigilance, TN 7.
-Success means they notice the faraway bandits.
+\paragraph{If the PCs ask more about his background,}
+he tells them his current business is top-secret.
 
 \paragraph{If the party agree to accompany the Immortal Bandits,}
-then \gls{banditking} stays with them for a day, but makes sure they do not follow him all the way to their secret home, and avoids town at all cost in case someone recognizes one of his men.
+then \gls{sewerking} stays with them for a day, but makes sure they do not follow him all the way to their secret home, and avoids town at all cost in case someone recognizes one of his men.
 
 \paragraph{If the party push for a fight,}
 they will have one.
-
-\paragraph{If anyone has Academics,}
-have them roll Wits + Academics, TN 9.
-Success means they have spotted that \gls{banditking} has a Whiteplains accent.
+\iftoggle{core}%
+  {To easily resolve fights between NPCs, see the core rules, page \pageref{npcfights}.}
+  {}
 
 \humansoldier[\npc{\T\M}{6 Immortal Bandits}]
 
-\banditking
+\sewerking
 
 \humansoldier[\npc{\T\M}{12 Woodspy Bandits}]
 
@@ -714,13 +765,13 @@ Here the bandits have been again, and removed all the goods they could -- food, 
 
 The Night Guard still hunt for the Immortal Bandits, but the bandits appear randomly, and then disappear just as quickly into the depths of the forest.
 This time they've been careless with their tracks.
-The party can follow them with a Wits + Wyldcrafting roll, TN 8, if they have the time and supplies for a two-day journey.
+The party can follow them with a Strength + Wyldcrafting roll, TN 8, if they have the time and supplies for a journey of many days.
 
 \sqpart{Villages}% AREA
 {Hidden Eyes}% NAME
 {Bandits watch the characters from the side of the road silently}% SUMMARY
 
-\gls{banditking} and twenty men hide in the dense trees on a hill, a mile away from the road.
+\Gls{banditking} and twenty men hide in the dense trees on a hill, a mile away from the road.
 They watch, quietly, for traders.
 A single man, Engel, sits closer to the road, waiting to call like a pigeon if someone rich wanders onto the road, or call like a crow if an armoured troop wander along.
 
@@ -756,7 +807,10 @@ If they come for the rest of the bandits, they flee on horseback.
 {The Feast is Cancelled}% NAME
 {The Immortal Bandits have raided a village during a wedding}% SUMMARY
 
-Earlier, \gls{banditking} and his men came, took all the food they could, murdered three men who drew swords, then left.
+\paragraph{Background:}
+Jameson has announced that he will track down and personally behead the Immortal Bandits.
+He works in the \gls{guard} as a scout, and enjoys the patronage of his father -- a village master.
+Unfortunately the Immortal Bandits heard of his plans, and know where he lives.
 
 \begin{boxtext}
 
@@ -770,40 +824,60 @@ Earlier, \gls{banditking} and his men came, took all the food they could, murder
 The bandits are ten miles away, and can still be tracked with a Wits + Wyldcrafting roll at TN 10.
 If the PCs catch up to them, the bandits run away.
 
-Characters with a good eye (Wits + Crafts, TN 11), can spot that the crow has a medallion around its neck.
+\paragraph{If anyone asks about why this happened,}
+the villagers all tell them about Jameson's recent bravado.
 
 \sqpart{Villages}% AREA
 {The Dead Tracker}% NAME
 {A member of the \glsentrytext{guard} sent to track down where the dead have come from has returned as a ghoul}% SUMMARY
 
-Anderson was hired to track down the bandits.
-However, the Necromancer's pet crow spotted him, and informed the bandit leader, \gls{banditking}.
-He was caught, and killed, then left for dead; but one of the necromancer's crows found the corpse and turned it into a ghoul.
-Instead of going to the necromancer, he wandered aimlessly.
-
-The party may notice by his green clothing that he serves in the \gls{guard}.
-They can also see an arrow made of crow-feathers, sticking out of his arm.
-This is exactly the same kind of arrow that killed the traders in the first part of this Side Quest -- `Fallen Traders'.
+\paragraph{Background:}
+Anderson -- a scout in the \gls{guard} -- was hired to track down the bandits.
+However, \gls{sewerking} (on one of his rare trips to the temple in the forest) spotted him, cast a spell to turn his sword into stone, then stabbed him. 
+Finally, he raised the corpse from the dead, but this is where things went wrong.
+He failed to control the spirit in the body, so it fled into the empty night.
 
 \ghoul[\npc{\D}{Ghouled Tracker}]
 
-If the party enquire with the \gls{guard}, they will be told where he was wandering to search for \gls{necromancer}, which should help them narrow the necromancer's location down.
+\paragraph{If they try to follow the ghoul's tracks back to where it came from,}
+have them roll Wits + Wyldcrafting (TN 11).
+
+\paragraph{If the party enquire with the \gls{guard},}
+they will be told where Anderson was wandering to search for \gls{necromancer}, which should help them narrow the necromancer's location down.
 
 \sqpart{Villages}% AREA
 {The Showdown}% NAME
-{The bandits have finally decided to confront the characters}% SUMMARY
+{The PCs catch the Immortal Bandits resting}% SUMMARY
 
-The Immortal Bandits have decided to assault the characters.
-Perhaps they have heard of the characters fighting with the bandits in the sewers, or simply think the party have gold.
-Whatever the reason, they follow the characters from a distance, waiting till they run into trouble.
-Roll a regular encounter for the area.
-If nothing comes up, use the encounter below, and if possible have the Immortal Bandits attack just after a fight.
+\paragraph{Background:}
+The Immortal Bandits killed yet another trader, taking his supply of meats, and his corpse.
+But this time, they got sloppy, and left some evidence of their crimes.
+Then they wandered beyond the \gls{edge}, into the deep forest.
+When the light vanished, they thought it was night and lit a fire.
+But outside the forest, the Sun is still setting, so the smoke from their fire can be seen easily from the road.
 
-\humansoldier[\npc{\T}{15 Bandits}]
+Have the party roll Wits + Vigilance.
+
+\paragraph{If they roll 10 or more,}
+they spot a horse's hoof in the bushes, in the distance, a short walk from the road.
+It leads them to a blood-spattered cart, which once carried fresh meats and bread.
+
+\paragraph{If they roll 8 or more,}
+
+\begin{boxtext}
+  By the light of the setting Sun, you see smoke coming out of the forest beyond the \gls{edge}.
+  It looks like someone has a campfire.
+\end{boxtext}
+
+\paragraph{If the PCs follow,}
+it will take them over an hour to walk, but locating the bandits won't be much trouble as long as they don't lose their baring in the dark.
+Request a Wits + Wyldcrafting roll (TN 7).
+
+\humansoldier[\npc{\T}{12 Bandits}]
 
 \banditking
 
-Play the next encounter only if the bandits survive.
+Play the next encounter only if the PCs take \gls{banditking} in alive.
 
 \resumecontents[Town]
 
@@ -813,8 +887,8 @@ Play the next encounter only if the bandits survive.
 
 \stopcontents[Town]
 
-Last night the Immortal Bandits slept on the roadside at the wrong time, and \gls{captain} with a few of his men heard about strangers in the area.
-They awoke to find swords at their throats, and were bound, and taken to prison.
+\paragraph{Background:}
+The PCs have captured \gls{banditking} alive.
 
 \begin{boxtext}
 
@@ -824,7 +898,7 @@ They awoke to find swords at their throats, and were bound, and taken to prison.
 
   Bakers are henceforth forbidden from purchasing the flour of the Quennome region, and any found doing so will be charged with consorting with elves.
 
-  The temple invites any charismatic men or women to aid the festivities, as playwrites and actors are required for the upcoming festivities.
+  The temple of Alass\"e invites any charismatic men or women to aid the festivities, as playwrites and attractive actors are required for the upcoming festivities (not you, Margaret!).
 
 \end{boxtext}
 
@@ -835,17 +909,15 @@ Meanwhile, if \gls{necromancer}'s lair survives, the other bandits await instruc
 The only way for the characters to secure \gls{banditking}'s demise it to watch the guards' station all night.
 If they do so, ten bandits stage an attack during the night.
 
-\paragraph{The Distraction} starts by using ogre dust in three places in town to distract the guards (see page \pageref{ogredust} for Ogre Dust).
+\paragraph{The Distraction} starts by using ogre dust in three places in town to distract the local guards (see page \pageref{ogredust} for Ogre Dust).
 
-\paragraph{The attack}
-begins once there are only ten guards left in the station.
+The attack begins once there are only ten guards left in the station.
 \Glsentrytext{sewerking}'s men arrive, ready to break everyone out underground and take off into the nearest entrance to the sewer.
 
-\humansoldier[\npc{\T\M}{12 Bandits}]
+\humansoldier[\npc{\T}{12 Bandits}]
 
 \stopcontents[sq]
 
 \stopcontents[Villages]
 
 \end{multicols}
-

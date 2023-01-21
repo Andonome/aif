@@ -1,0 +1,62 @@
+\newcounter{temperature}
+
+\ifnum\month=1
+  \newcommand\season{Qualmea}
+  \newcommand\seasonDesc{\ifodd\thepage sharp\else fierce\fi}
+  \setcounter{temperature}{1}
+\fi
+\ifnum\month=2
+  \newcommand\season{Atya}
+  \newcommand\seasonDesc{\ifodd\thepage calm\else pleasant\fi}
+  \setcounter{temperature}{2}
+\fi
+\ifnum\month=3
+  \newcommand\season{Alassea}
+  \newcommand\seasonDesc{\ifodd\thepage frigid\else chilling\fi}
+  \setcounter{temperature}{0}
+\fi
+\ifnum\month=4
+  \newcommand\season{Cantea}
+  \newcommand\seasonDesc{\ifodd\thepage calm\else pleasant\fi}
+  \setcounter{temperature}{2}
+\fi
+\ifnum\month=5
+  \newcommand\season{C\'alea}
+  \newcommand\seasonDesc{\ifodd\thepage humid\else warm\fi}
+  \setcounter{temperature}{3}
+\fi
+\ifnum\month=6
+  \newcommand\season{V\'erea}
+  \newcommand\seasonDesc{\ifodd\thepage calm\else pleasant\fi}
+  \setcounter{temperature}{2}
+\fi
+\ifnum\month=7
+  \newcommand\season{Otsea}
+  \newcommand\seasonDesc{\ifodd\thepage sharp\else fierce\fi}
+  \setcounter{temperature}{1}
+\fi
+\ifnum\month=8
+  \newcommand\season{Toldea}
+  \newcommand\seasonDesc{\ifodd\thepage calm\else pleasant\fi}
+  \setcounter{temperature}{2}
+\fi
+\ifnum\month=9
+  \newcommand\season{Laiquea}
+  \newcommand\seasonDesc{\ifodd\thepage humid\else warm\fi}
+  \setcounter{temperature}{3}
+\fi
+\ifnum\month=10
+  \newcommand\season{Quainea}
+  \newcommand\seasonDesc{\ifodd\thepage calm\else pleasant\fi}
+  \setcounter{temperature}{2}
+\fi
+\ifnum\month=11
+  \newcommand\season{Minquesta}
+  \newcommand\seasonDesc{\ifodd\thepage frigid\else chilling\fi}
+  \setcounter{temperature}{0}
+\fi
+\ifnum\month=12
+  \newcommand\season{Ohta}
+  \newcommand\seasonDesc{\ifodd\thepage calm\else pleasant\fi}
+  \setcounter{temperature}{2}
+\fi

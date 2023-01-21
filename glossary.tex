@@ -4,17 +4,19 @@
 
 \newglossaryentry{outerKingdom}{
   name={The Western Kingdom},
+  sort={Western Kingdom},
   text={the Western Kingdom},
   description={is the nearest kingdom}
 }
 
 \newglossaryentry{edge}{
   name={The Edge},
-  text={the Edge},
-  first={the edge of civilization},
+  sort={Edge},
+  text={Edge},
+  first={the Edge of Civilization},
   description={lies one footstep past the last walled town.
   Beyond this point, only dark forests, empty tundra, and hungry beasts wait.
-  When people travel off-road, or have to push back the walls of the forest to prepare for civilization's expansions, they have gone beyond the edge}
+  When people travel off-road, or have to push back the walls of the forest to prepare for civilization's expansions, they have gone beyond the Edge}
 }
 
 \newglossaryentry{king}{
@@ -25,7 +27,7 @@
 }
 
 \newglossaryentry{guard}{
-  name={The Night Guard},
+  name={Night Guard},
   text={Night Guard},
   description={is the organization, commissioned by \glsentrytext{king}, to look after the realm in lieu of the standing armies which village masters once kept}
 }
@@ -50,6 +52,7 @@
 
 \newglossaryentry{spiderqueen}{
   name={The Spider Queen},
+  sort={Spider Queen},
   text={the Spider Queen},
   description={is an old elf who collects pet chitincrawlers.  She has also started to shapeshift to look like them}
 }
@@ -60,16 +63,29 @@
   description={is the central town where the action takes place}
 }
 
-\newcommand{\alemaster}{
-  \humandiplomat[\NPC{\M}{Anatole}{Snippy}{Tongue-in-cheek}{Alass\"e}]
-}
 \newglossaryentry{alemaster}{
-  name={Anatole},
-  text={Anatole},
-  description={is the highest ranking member of the temple of Alass\"{e}, who are synonymous with the Ale Guild in this region},
-  first={Ale Master Anatole}
+  name={Jane},
+  first={Alemaster Jane},
+  description={is the highest ranking member of the temple of Alass\"{e}, who are synonymous with the Ale Guild}
 }
 
+\newcommand{\alemaster}{
+  \NPC{\F}{\Glsfmttext{alemaster}}{Playing dim}{Humming between sentences}{Alass\"e} 
+
+\person{0}% STRENGTH
+  {1}% DEXTERITY
+  {0}% SPEED
+  {{1}% INTELLIGENCE
+  {0}% WITS
+  {2}}% CHARISMA
+  {0}% DR
+  {0}% COMBAT
+  {Academics~1, Empathy~2, Deceit~1, Larceny~2
+  \Path{Devotion (Alass\"{e})}{\fate~2}}% SKILLS
+  {\Dagger, headband of mist (stores 5 MP, able to fill 2 areas with mist), 10sp worth of bracelets, rings, and necklaces}% EQUIPMENT
+  {}
+
+}
 \newcommand{\beardedalemaster}{
 
 \humandiplomat[\NPC{\F}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Alass\"e}]
@@ -77,6 +93,7 @@
 
 \newglossaryentry{beardedalemaster}{
   name={Susan},
+  first={Ale Master Susan of the Shale},
   text={Susan},
   description={is the leader of the Ale Guild in the Shale, and became rich selling watered-down dwarvish ale},
   first={Guildmistress Susan}
@@ -166,23 +183,22 @@
 {-4}}% CHARISMA
 {2}% DR
 {1}% COMBAT
-{Projectiles~3, Academics~2, Crafts~(fletchery)~2, Deceit~1, Performance~1, Vigilance~3, Wyldcrafting~1
-\knacks{\divineCaster (Qualm\"E), \snapshot, \mightydraw, \perfectsneakattack}
+{Projectiles~3, Academics~2, Crafts~2, Deceit~1, Performance~1, Vigilance~3, Wyldcrafting~1
+\knacks{\divineCaster~(Qualm\"e), \snapshot, \mightydraw, \perfectsneakattack}
 \Path{\aldaron~3, \enchantment~3, \necromancy~5}}%SKILLS
 {Hunting Bow, dagger}%EQUIPMENT
-{\lockedmana{3}}
+{\lockedmana{6}}
 }
 
 \newglossaryentry{necromancer}{
   name={Antonym},
   first={the Undead Priest Antonym},
   description={is a priest of Qualm\"{e}, from the time of Nolan Shale.
-  He has since died, but kept himself alive in order to study Song Magic.
-  Unfortunately, death has robbed him of his voice}
+  He has since died, but kept himself unliving, and remains in his old temple (see page \pageref{necromancers_lair})}
 }
 
 \newcommand{\forestpriest}{
-\NPC{\M}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{Alass\"e} 
+\NPC{\M}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{Laiqu\"e} 
 
 \person{0}% STRENGTH
   {2}% DEXTERITY
@@ -193,8 +209,8 @@
   {0}% DR
   {1}% COMBAT
   {Academics~2, Crafts~1, Deceit~2, Seafaring~1, Stealth~2, Vigilance~1, Wyldcrafting~2
-  \knacks{\bloodCaster, \divineCaster (Alass\"e)}
-  \Path{\aldaron~2, \fate~3, \polymorph~4}}% SKILLS
+  \knacks{\bloodCaster, \divineCaster\ (Laiqu\"e)}
+  \Path{\aldaron~3, \fate~2, \polymorph~4}}% SKILLS
   {\quarterstaff, dagger}% EQUIPMENT
   {\addtocounter{fp}{10}}
 }
@@ -230,7 +246,7 @@
 
 \newcommand{\sewerking}{
 
-\NPC{\M}{\Glsentrytext{sewerking}}{Alpha male}{Hands on sword}{Experience}
+\NPC{\M}{\Glsentrytext{sewerking}}{Benevolent Leader}{Hands on sword}{Experience}
 
 \person{1}% STRENGTH
   {0}% DEXTERITY
@@ -254,7 +270,8 @@
 }
 
 \newcommand{\sewerthief}{
-  \NPC{\M}{David}{Cheeky}{Grins wide}{Tribe}
+  \label{sewerthief}
+  \NPC{\M}{\Glsfmttext{sewerthief}}{Cheeky}{Grins wide}{Tribe}
 
   \person{1}% STRENGTH
 {2}% DEXTERITY
@@ -375,8 +392,7 @@
 \newglossaryentry{pigowner}{
   name={Wendy, Owner of \glsentrytext{pig}},
   text={Wendy Pig},
-  first={Wendy Pig, owner of \glsentrytext{pig}},
-  description={a middle-aged, fierce woman who runs the toughest bar in \glsentrytext{town}}
+  description={is a middle-aged, fierce woman who runs the toughest bar in \glsentrytext{town}. She inherited the bar after her father killed the last owner, forged the ownership deed, then died of alcohol poisoning}
 }
 
 \newcommand{\warningbard}{
@@ -387,7 +403,7 @@
   name={Roger},
   text={Roger},
   first={Roger the bard},
-  description={is a young and headstrong man who writes better than he sings}
+  description={is a young and headstrong bard who writes better than he sings}
 }
 
 %%%%% Adventures in Fenestra Places
@@ -395,18 +411,27 @@
 \newglossaryentry{redfall}{
   name={Redfall},
   first={Redfall Village},
-  description={is rather out-of-the-way village, famed for its red-earth clay and waterfall}
+  description={sits on the \glsentrytext{edge}, full of archers, and famed for its red-earth clay and waterfall}
+}
+
+\newglossaryentry{alchemists}{
+  name={The Alchemists' Guild},
+  sort={Alchemists' Guild},
+  text={the Alchemists' Guild},
+  description={has a royal monopoly on alchemical magic.
+  It also generally refers to the primary location in Eastlake}
 }
 
 \newglossaryentry{college}{
-  name={The College of Alchemy},
-  text={the College of Alchemy},
-  first={the College of Alchemy},
+  name={The University of Alchemy},
+  sort={University of Alchemy},
+  text={the University of Alchemy},
+  first={the University of Alchemy},
   description={is where all alchemists go for training.  They maintain a complete monopoly on alchemical magic, and all spells must be learned through them or one of their outposts}
 }
 
 \newglossaryentry{pig}{
-  name={The Mincing Pig},
+  name={Mincing Pig},
   text={the Mincing Pig},
   first={the Mincing Pig Tavern},
   description={boasts the reputation as the loudest tavern in town, placed close to the entrance.
@@ -414,29 +439,40 @@
 }
 
 \newglossaryentry{whitehorse}{
-  name={The White Horse},
+  name={White Horse Inn},
   text={the White Horse},
   first={the White Horse Inn},
   description={is a serene and esteemed establishment, with a reputation for high-quality clientel}
 }
 
 \newglossaryentry{lostcity}{
-  name={The Lost City},
+  name={Lost City},
   text={the Lost City},
   first={the Lost City},
-  description={is a city where men lived centuries ago.  It is now so destroyed and overgrown that people do not know they have entered until they see some part of an old stone building}
+  description={is a mythical, massive city, which once stretched across the entire area. In fact the area simply contained disconnected towns and villages, and had a lot of stone walls and buildings. A lot of the stone has simply been repurposed for modern buildings}
 }
 
 \newglossaryentry{shatteredcastle}{
   name={The Shattered Castle},
+  sort={Shattered Castle},
   text={the Shattered Castle},
   description={is where \glsentrytext{king} lives.  It has six sections in six different regions, and each one contains a magical gateway to the hub in Whiteplains, so different parts of the  castle exist in different places but the inside of the building functions as a single palace}
 }
 
-
 \newglossaryentry{greentower}{
-  name={The Green Tower},
+  name={Green Tower},
   text={the Green Tower},
   description={was commissioned by \glsentrytext{townmaster} as an outpost to \glsentrytext{lostcity}, where the woodspy bandits stay, lead by \glsentrytext{traitor}}
+}
+
+\newglossaryentry{alchemist}{
+  name={Jared Ventress},
+  text={Jared},
+  first={Jared Ventress},
+  description={works for \glsentrytext{townmaster} in \glsentrytext{town}'s citadel}
+}
+
+\newcommand\citadelAlchemist{
+  \humanalchemist[\NPC{\M}{\Gls{alchemist}, the Alchemist}{Caring}{Counts everything at every opportunity}{Acquisition}]
 }
 
