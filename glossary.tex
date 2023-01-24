@@ -15,6 +15,12 @@
   When people travel off-road, or have to push back the walls of the forest to prepare for civilization's expansions, they have gone beyond the Edge}
 }
 
+\newglossaryentry{ainumar}{
+  name={Ainumar},
+  plural={Ainumari},
+  description={is the nearby planet, commonly supposed to be where the gods live}
+}
+
 \newglossaryentry{king}{
   name={Rex Wyatt Fenestra},
   text={\ifodd\thepage Rex Wyatt\else the Rex\fi},
@@ -29,7 +35,7 @@
 }
 
 \newcommand{\spiderqueen}{
-\NPC{\F}{\Glsentrytext{spiderqueen}}{Delicate}{Looks upwards}{Experience}\label{spiderqueen}
+\NPC{\F\El}{\Glsentrytext{spiderqueen}}{Delicate}{Looks upwards}{Experience}\label{spiderqueen}
 
 \person{0}% STRENGTH
   {3}% DEXTERITY
@@ -66,7 +72,7 @@
 }
 
 \newcommand{\alemaster}{
-  \NPC{\F}{\Glsfmttext{alemaster}}{Playing dim}{Humming between sentences}{Alass\"e} 
+  \NPC{\F\Hu}{\Glsfmttext{alemaster}}{Playing dim}{Humming between sentences}{Alass\"e} 
 
 \person{0}% STRENGTH
   {1}% DEXTERITY
@@ -84,7 +90,7 @@
 }
 \newcommand{\beardedalemaster}{
 
-\humandiplomat[\NPC{\F}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Alass\"e}]
+\humandiplomat[\NPC{\F\Hu}{\glsentrytext{beardedalemaster}}{Inquisitive}{Hands behind her back}{Alass\"e}]
 }
 
 \newglossaryentry{beardedalemaster}{
@@ -96,7 +102,7 @@
 }
 
 \newcommand{\woodspyleader}{
-\NPC{\M}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}{Ohta}\label{woodspyleader}
+\NPC{\M\Hu}{\glsentrytext{woodspyleader}}{Suspicious}{Scratches back of head}{Ohta}\label{woodspyleader}
 
 \person{4}% STRENGTH
 {2}% DEXTERITY
@@ -119,7 +125,7 @@
 }
 
 \newcommand{\keras}{
-  \NPC{\M}{\glsentrytext{keras} the Gnomish Illusionist}{Sly}{Waggles finger}{Experience}
+  \NPC{\Gn\M}{\glsentrytext{keras} the Gnomish Illusionist}{Sly}{Waggles finger}{Experience}
 
   \person{-1}% STRENGTH
   {2}% DEXTERITY
@@ -143,7 +149,7 @@
 }
 
 \newcommand{\elfprince}{
-\NPC{\M}{\Glsentrytext{elfprince}}{Precise}{Flat palms}{Experience}
+\NPC{\M\El}{\Glsentrytext{elfprince}}{Precise}{Flat palms}{Experience}
 
   \person{-1}% STRENGTH
   {2}% DEXTERITY
@@ -194,7 +200,7 @@
 }
 
 \newcommand{\forestpriest}{
-\NPC{\M}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{Laiqu\"e} 
+\NPC{\M\El\Hu}{\Glsentrytext{forestpriest}}{Precise}{Looks down}{Laiqu\"e} 
 
 \person{0}% STRENGTH
   {2}% DEXTERITY
@@ -219,7 +225,7 @@
 }
 
 \newcommand{\banditking}{
-\NPC{\M}{\glsentrytext{banditking}}{Approachable}{Drums fingers}{Qualm\"e}
+\NPC{\M\Hu}{\glsentrytext{banditking}}{Approachable}{Drums fingers}{Qualm\"e}
 
 \person{3}% STRENGTH
   {3}% DEXTERITY
@@ -242,7 +248,7 @@
 
 \newcommand{\sewerking}{
 
-\NPC{\M}{\Glsentrytext{sewerking}}{Benevolent Leader}{Hands on sword}{Experience}
+\NPC{\M\Hu}{\Glsentrytext{sewerking}}{Benevolent Leader}{Hands on sword}{Experience}
 
 \person{1}% STRENGTH
   {0}% DEXTERITY
@@ -267,7 +273,7 @@
 
 \newcommand{\sewerthief}{
   \label{sewerthief}
-  \NPC{\M}{\Glsfmttext{sewerthief}}{Cheeky}{Grins wide}{Tribe}
+  \NPC{\M\Hu}{\Glsfmttext{sewerthief}}{Cheeky}{Grins wide}{Tribe}
 
   \person{1}% STRENGTH
 {2}% DEXTERITY
@@ -290,7 +296,7 @@
 }
 
 \newcommand{\nurabaron}{
-\NPC{\M\N}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{Tribe}
+\NPC{\N\M\Hu}{\glsentrytext{nurabaron}}{Hungry}{Wide eyed}{Tribe}
 
 \person{5}% STRENGTH
   {0}% DEXTERITY
@@ -313,7 +319,7 @@
 }
 
 \newcommand{\captain}{
-\NPC{\M}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{Tribe}
+\NPC{\M\Hu}{\Glsentrytext{captain}}{Solemn}{Pitying glances}{Tribe}
 
 \person{1}%STRENGTH
   {2}% DEXTERITY
@@ -336,7 +342,7 @@
 }
 
 \newcommand{\traitor}{
-\NPC{\M}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{Acquisition}
+\NPC{\M\Hu}{\Glsentrytext{traitor}}{Suspicious}{Grins wide}{Acquisition}
 
 \person{2}% STRENGTH
   {1}% DEXTERITY
@@ -352,7 +358,7 @@
 }
 
 \newcommand{\townmaster}{
-  \humandiplomat[\NPC{\M}{\glsentrytext{townmaster}}{Enthusiastic}{Snorts, loudly}{Acquisition}]
+  \humandiplomat[\NPC{\M\Hu}{\glsentrytext{townmaster}}{Enthusiastic}{Snorts, loudly}{Acquisition}]
 }
 
 \newglossaryentry{townmaster}{
@@ -370,7 +376,7 @@
 }
 
 \newcommand{\pigowner}{
-\NPC{\F}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{Acquisition}
+\NPC{\F\Hu}{\Glsentrytext{pigowner}}{Threatening}{Chin pointed up}{Acquisition}
 
 \person{1}% STRENGTH
   {2}% DEXTERITY
@@ -392,7 +398,7 @@
 }
 
 \newcommand{\warningbard}{
-  \humanbard[\NPC{\M}{\glsentrytext{warningbard}}{Excited}{Drums Fingertips}{Laiqu\"e}]
+  \humanbard[\NPC{\M\Hu}{\glsentrytext{warningbard}}{Excited}{Drums Fingertips}{Laiqu\"e}]
 }
 
 \newglossaryentry{warningbard}{
@@ -469,6 +475,6 @@
 }
 
 \newcommand\citadelAlchemist{
-  \humanalchemist[\NPC{\M}{\Gls{alchemist}, the Alchemist}{Caring}{Counts everything at every opportunity}{Acquisition}]
+  \humanalchemist[\NPC{\M\Hu}{\Gls{alchemist}, the Alchemist}{Caring}{Counts everything at every opportunity}{Acquisition}]
 }
 
