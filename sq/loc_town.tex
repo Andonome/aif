@@ -141,37 +141,144 @@ The guard house also contains 10 Spider Arrows and three sets of Eternal Warrior
   \item{Stairway down to the dungeons}
 \end{enumerate}
 
-\subsubsection{The Dungeon}
+\subsection{The Dungeon}
+\label{stationDungeon}
 
 \paragraph{Background:}
 Some time ago, the guards captured an ogre, and \gls{townmaster} ordered them to keep it alive so he could better understand the nura, and perhaps to bring it out as a pet one day.  Since then he's forgotten about it, but the guards have to keep feeding it.  Twice a day, they take a cart down the stairs, deal out a small portion to each of the inmates, then place the rest by the great door as a massive, grabbing hand reaches out the shutter and piles the food into its mouth.
 
-\begin{boxtext}
+\paragraph{If the PCs enter as prisoners,}
+they will have to think a lot about how to escape -- this won't be easy!
 
-  With a hood shoved over your head, you're taken down a set of stairs, then spun around, then down another, spun around again, then taken down another set of stairs, spun around again, then pushed hard down a long hallway.
-   The stench of shit fills the room.
-   You hear a horrible, inhuman, roar, feel something slippery under your feet, then pull right, down the hall, right again and two steps later the bag's pulled from your head, and you see a small pair of eyes in the darkness in front of you as the door slams shut behind you.
-   The lock clinks shut in the darkness, and the little voice asks ``Hello?''.
+\paragraph{If anyone tries to pick the locks,}
+they will need to craft some make-shift equipment first, and make sure nobody is listening to them.
+The roll is Intelligence + Larceny, TN 12.
 
-\end{boxtext}
+Once one lock has been picked, the characters gains a +1 bonus on every cell in the same row.
 
-They didn't know what to do about a toilet, and they've never wanted to move the ogre, so the ogres shits in a bucket, and once a day it throws the contents out of the hatch and onto a guard.
-This is the only fun the ogre has, and the biggest irritation the guards have to put up with.
+\paragraph{Every day,}
+the guards give them two small meals and empty their bucket.
 
-As the characters enter the dungeon, they're separated and thrown in with thieves, townsfolk who talked badly about \gls{king}, and one indebted trader who can't stop pitying himself.
+The meals are so small that they gain 1 Fatigue Point, daily.
 
-\begin{enumerate}
+\paragraph{On day 2,}
+a scout form the \gls{guard} gets thrown in a cell for dereliction of duty (he living with villagers and sending back false reports).
 
-  \item{Food Storage}
-  \item{Drunken guards}
-  \item{Starving prisoners}
-  \item{Empty cell}
-  \item{Fake doors with locks on them}
-  \item{The Ogre}
+\paragraph{On day 4,}
+\gls{beardedalemaster} lands in a cell for insulting \gls{townmaster} during a meeting.
+She will stay here only one night.
 
-\end{enumerate}
+\mapentry{Storage}
 
-\npc{\M\N}{The Ogre}
+Every day, the guards take the food cart down to the hall, and unload the contents into this room.
+
+\paragraph{The chest}
+contains is an intricate knot, and contains good quality wine.
+The higher ranking guards leave the wine here, and won't tell Elijah how to open it.
+
+\paragraph{If any prisoners listen carefully,}
+they will hear the bottles being deposited while guards talk about the excellent vintage.
+
+\mapentry{Guard Station}
+\label{guardStationRoom}
+
+The guards on \glsentrytext{captain}'s shitlist have to sleep down here.
+Another guard stays in the \nameref{mainPrisonRoom}, room \ref{mainPrisonRoom}, below, so that two remain on shift at all times.
+
+Two keys to the cells (one for the top row of cells, and another for the bottom), hang on the wall, along with another for the ogre (in room \ref{ogreCell}) and a fourth key for the chest in room \ref{thingsRoom}.
+
+\NPC{\F}{Adah the Guard}{Arrogant}{``Ha!, sure''}{Tribe}
+\person{1}% STRENGTH
+{2}% DEXTERITY 
+{0}% SPEED
+{{0}% INTELLIGENCE
+{0}% WITS
+{-1}}% CHARISMA
+{0}% DR
+{2}% COMBAT
+{
+  Deceit 1, Crafts 1
+  \knacks{\brawler, \berserker}
+}% SKILLS
+{\shortsword}% EQUIPMENT
+{}
+
+
+\mapentry{Main Hall}
+\label{mainPrisonRoom}
+
+At least one guard remains here at all times.
+\begin{itemize}
+
+  \item
+  When Adah is on shift, she tells the prisoners to shut up.
+  If they don't, she'll open the doors and bash their heads in.
+  \item
+  When Elijah comes on shift, he tells prisoners to shut up, or tries to get them to sing with him while he drinks.
+  He passes out from drinking too much shortly afterwards.
+  \item
+  When both are up and awake, they play cards together, and he complains that Adah always wins.
+
+\end{itemize}
+
+\humanfarmer[\NPC{\M}{Elijah the Guard}{Hopeful}{Swigs bottle}{Alass\"e}]
+
+\mapentry{The Cells}
+
+\paragraph{The top left cell}
+houses \gls{warningbard} (assuming somoeone arrested him)%
+\footnote{See page \pageref{warningbard}.},
+who sits singing to himself.
+
+\paragraph{The bottom right cell contains Ram,}
+and if anyone speaks hopefully about escape, he tells them what will go wrong with the plan.
+
+If the PCs prove one of his melancholic predictions wrong, he helps them escape.
+
+\NPC{\M}{Ram}{Doomsayer}{Sings `Nobody Knows the Trouble I've seen'}{Qualm\"e}
+\person{1}% STRENGTH
+{0}% DEXTERITY 
+{1}% SPEED
+{{0}% INTELLIGENCE
+{-1}% WITS
+{0}}% CHARISMA
+{0}% DR
+{1}% COMBAT
+{Larceny 1, Stealth 2, Wyldcrafting 1}% SKILLS
+{Nothing}% EQUIPMENT
+{}
+
+\mapentry{The Grate}
+
+Here all the filth and debris collected from the prisons gets thrown in the hole.
+
+\paragraph{Breaking the grate open}
+requires a Strength + Crafts roll (TN 10).
+It leads down to room \ref{pigexit} in \lowercase{\nameref{sewers}} (page \pageref{pigexit}).
+
+\mapentry{Prisoners' Possessions}
+\label{thingsRoom}
+
+\paragraph{The chest}
+contains any valuable items the prisoners carried which might fit inside the chest.
+The key rests in room \ref{guardStationRoom}.
+
+Their other possessions lie scattered across the room, along with some musical instruments.
+
+\mapentry{Ogre's Cell}
+\label{ogreCell}
+
+\paragraph{Background:}
+Laban once wandered the lonely roads as a trader, but then \Gls{sewerking} turned him into an ogre, just to practice his nuramancy sphere.
+
+\paragraph{If anyone asks Laban how he's doing,}
+he starts by saying he's hungry, but can continue the conversation -- he still remembers being a man, but has trouble thinking straight any more.
+
+\paragraph{If anyone stages a breakout,}
+Laban agrees, but immediately stops to eat anything (or anyone) he can.
+Once satiated, he will continue following anyone leading a prison break.
+
+\npc{\M\N}{Laban the Ogre}
 
   \person{7}% STRENGTH
   {0}% DEXTERITY
@@ -184,6 +291,8 @@ As the characters enter the dungeon, they're separated and thrown in with thieve
   {Crafts~1, Tactics~1}% SKILLS
   {Nothing}% EQUIPMENT
   {}
+
+
 
 \widePic[t]{Dyson_Logos/white_horse_2}
 
@@ -443,7 +552,7 @@ If the temple's groundskeeper -- Boris -- ever finds out what happened to the bo
 
 \humanpriest[\npc{\M}{Boris}]
 
-\subsection{The Lost Library}\label{sewers}\setcounter{list}{0}
+\subsection{the Lost Library}\label{sewers}\setcounter{list}{0}
 
 The old temple of Qualm\"{e} stretched deep underground, and soon after it was built, a library was commissioned by local alchemists.
 The two shared much of the space for some time.
@@ -679,7 +788,8 @@ Each roll takes 1 scene.
 
 This artificial stream loops round from \gls{pig}, above.
 The stream continues downwards to an underground area and then goes underground.
-Anyone venturing down here simply dies in the unending blackness.
+Anyone venturing down-river gets swept along, and dies in the unending blackness, unless they make a Dexterity + Caving roll, TN 10, to cling onto the sides.
+PCs can spend 5 FP instead to make the roll automatically.
 
 \mapentry{Entrance to \glsentrytext{pig}}
 
