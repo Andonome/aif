@@ -162,13 +162,14 @@ These regions of outer darkness, placed on maps using guesswork and rumours, for
 
 
 \end{multicols}
+
 \section{Regions}
 \index{Encounters}
 \label{encounters}
 
-\widePic{Tom_Prante/winter}
-
 \begin{multicols}{2}
+
+\widePic{Tom_Prante/winter}
 
 \noindent
 Fenestra contains seven regions, each of which have a slightly different ecology and different populations.
@@ -253,7 +254,23 @@ A grandchild later trained as an alchemist, and opened a portal towards Whitepla
 \footnote{See page \pageref{whiteland_heart}.}
 When \gls{king} took over, this place became just another wing of \gls{shatteredcastle}, so now those wishing to trade with other lands must take boats out and pay a tax to use the road to warmer climates, such as Quennome or Liberty.
 
-\iftoggle{players}{}{
+\iftoggle{players}{
+  \subsubsection{Character Concepts}
+
+  \begin{itemize}
+
+    \item
+    A dilettante gnoll, who has gained too much of a taste for human luxuries to spend his time hunting to trade for a couple of cakes.
+    She wants more.
+    She wants jam, carrots, a fancy hat and a greatsword all of her own.
+    \item
+    A proud alchemist, too eager to talk about being from the place alchemists are trained.
+    He wears no armour and thin clothing, relying on his magic to protect him from harm, and his birthright of cold-endurance to endure the elements.
+    \item
+    A wandering gnome, bent on showing that magic, trickery, and planning make him more of a warrior than large men carrying big sticks.
+
+  \end{itemize}
+}{
 \subsubsection{Seasonal Encounters}
 
 \paragraph{Cold} seasons in Eastlake are terrifying.
@@ -282,11 +299,11 @@ Roll $2D6$ for the number of ghouls encountered.
 }
 
 
+\widePic[t]{Tom_Prante/swamp}
+
 \subsection{Liberty}
 \index{Liberty}
 \index{Dogland}
-
-\widePic[t]{Tom_Prante/swamp}
 
 A generation ago, Liberty was a place with sparse human villages, but no large settlements.
 Almost every village exists by the \gls{edge}, peering out at a hungry, untamed forest.
@@ -308,7 +325,22 @@ So far, they have been unable to create another portal.
 The skills to do so are rare, coming along perhaps once in a generation of alchemists.
 But once the Coastal University succeed in creating a portal, this alternative college may turn into the seventh wing of \gls{shatteredcastle}.
 
-\iftoggle{players}{}{
+\iftoggle{players}{
+  \subsubsection{Character Concepts}
+  \begin{itemize}
+
+    \item
+    A betrayed warrior who did his time in the \gls{guard} already, fighting against the gnolls, but lost all his rewards due to a paperwork error in \gls{shatteredcastle}.
+    He intends to fight the bare minimum, and will take any resources he can from the \gls{guard} stash until he gets back what he owes.
+    \item
+    A deceptive gnoll who, having escaped the wars with the humans, has been given the task of infiltrating and reporting back to his tribe after some years served in the \gls{guard}.
+    \item
+    A wandering orphan, with nowhere to go after the forest ate the road to his village.
+    He assumes they died, but who knows?
+    Either way, without any cash, it's time to join the \gls{guard}.
+
+  \end{itemize}
+}{
 \begin{encounters}{Liberty}
 
   Forest & Road & Result \\\hline
@@ -326,7 +358,9 @@ But once the Coastal University succeed in creating a portal, this alternative c
 \end{encounters}
 }
 
-\iftoggle{players}{}{
+\iftoggle{players}{
+  \subsubsection{Character Concepts}
+}{
 \subsubsection{Seasonal Encounters}
 
 \paragraph{Cold} seasons throw snowstorms and suddenly blocked roads.
@@ -378,40 +412,59 @@ Locals who wander outside often report smelling the sea or feeling frosty air, a
 The inner castle holds a complete barracks, along with multiple martial alchemists, all ready to defend the castle and their Rex.
 Various enchanted items detect any magical items or disguises, and the castle reacts fiercely to non-mundane intruders.
 
-\iftoggle{players}{}{
-\subsubsection{Seasonal Encounters}
+\iftoggle{players}{
 
-\paragraph{Cold} encounters in Mt Arthur bring $3D6$ hungry, and desperate wolves.
-Travelling through the thick snow also adds 2 Fatigue Points to each day of travel.
-\paragraph{Mild} seasons bring out the bears, as they're usually either waking from or preparing for hibernation.
-\paragraph{Stormy} times can suddenly trap people where they are, as a Mt Arthur storm commonly involves one of the mountains to the South belching out thick smoke.
-Staying outdoors inflicts 4 Fatigue Points.
-The TN for Hunting also increases by 4 as the local wildlife suffers from the fumes.
-\paragraph{Warm} times bring out woodspies which, while rare in Mt Arthur, multiply a lot in the heat.
-Roll $1D6$ for the number encountered.
+  \subsubsection{Character Concepts}
+  \begin{itemize}
 
-\begin{encounters}{Mt Arthur}
+    \item
+    An ambitious nobody.
+    Optimism springs eternal, and the reason lies in complete mystery.
+    Her strength is mediocre.
+    Her intelligence is mundane.
+    But her hope is uncrushable.
+    \item
+    An elven academic who ignored his innate, preferring to study at \glsentrytext{college}.
+    His excellent performance at the Guild of Paper concerned so many of the guild leaders that they made him a \glsentrytext{nomad} in the hopes of getting rid of him.
+    \item
+    A tax-dodging dwarf, forced into the \gls{guard} as part of his Queen's debt to \gls{king}.
+    `Such is life'.
 
-  Forest & Roads & Result \\\hline
-  \li & Mana Lake (page \pageref{mana_lake}). \\
-  \li & Basilisk (page \pageref{basilisk}). \\
-  \li & Mouthdigger (page \pageref{mouthdigger}). \\
-  \li \lii $3D6-2$ travelling elves (page \pageref{elf}). \\
-  \li \lii Chitincrawler (page \pageref{chitincrawler}). \\
-  \li \lii Woodspy (page \pageref{woodspy}). \\
-  \li \lii $1D6$ Griffins (page \pageref{griffin}). \\
-  \li & Bear (page \pageref{bear}). \\
-  \li \lii $4D6-2$ Bandits (page \pageref{human_soldier}). \\
-  \li \lii Seasonal Encounter. \\
-  & \lii $3D6-2$ Travelling pilgrims. \\
-  & \lii $4D6$ Human traders (page \pageref{human_trader}). \\
+  \end{itemize}
+}{
+  \begin{encounters}{Mt Arthur}
 
-\end{encounters}
+    Forest & Roads & Result \\\hline
+    \li & Mana Lake (page \pageref{mana_lake}). \\
+    \li & Basilisk (page \pageref{basilisk}). \\
+    \li & Mouthdigger (page \pageref{mouthdigger}). \\
+    \li \lii $3D6-2$ travelling elves (page \pageref{elf}). \\
+    \li \lii Chitincrawler (page \pageref{chitincrawler}). \\
+    \li \lii Woodspy (page \pageref{woodspy}). \\
+    \li \lii $1D6$ Griffins (page \pageref{griffin}). \\
+    \li & Bear (page \pageref{bear}). \\
+    \li \lii $4D6-2$ Bandits (page \pageref{human_soldier}). \\
+    \li \lii Seasonal Encounter. \\
+    & \lii $3D6-2$ Travelling pilgrims. \\
+    & \lii $4D6$ Human traders (page \pageref{human_trader}). \\
+
+  \end{encounters}
+
+  \subsubsection{Seasonal Encounters}
+  \paragraph{Cold} encounters in Mt Arthur bring $3D6$ hungry, and desperate wolves.
+  Travelling through the thick snow also adds 2 Fatigue Points to each day of travel.
+  \paragraph{Mild} seasons bring out the bears, as they're usually either waking from or preparing for hibernation.
+  \paragraph{Stormy} times can suddenly trap people where they are, as a Mt Arthur storm commonly involves one of the mountains to the South belching out thick smoke.
+  Staying outdoors inflicts 4 Fatigue Points.
+  The TN for Hunting also increases by 4 as the local wildlife suffers from the fumes.
+  \paragraph{Warm} times bring out woodspies which, while rare in Mt Arthur, multiply a lot in the heat.
+  Roll $1D6$ for the number encountered.
+
 }
 
-\subsection{The Pebbles}\index{Pebbles}
+\widePic[t]{Tom_Prante/ancient_valley}
 
-\widePic{Tom_Prante/ancient_valley}
+\subsection{The Pebbles}\index{Pebbles}
 
 These little islands had their own group of languages -- very different from any of the various human languages around the mainland of Fenestra.  While they traded with both Fenestra and \gls{outerKingdom}, they were until recent decades, independent.
 They had no lords or armies, but did rally around priests of Ohta in times of war.
@@ -430,7 +483,24 @@ From the outside, this wing appears relatively small.
 Two stories high, it sits on a little island, and does not permit any boats to approach.
 Watchmen patrol the ramparts all day and night, including various dwarves, employed for their superior eyesight at night.
 
-\iftoggle{players}{}{
+\iftoggle{players}{
+  \subsubsection{Character Concepts}
+  \begin{itemize}
+
+  \item
+  A seafaring dwarf loved nothing more than feeling the wind in his beard, but everyone has to grow up sometime.
+  Fearing boredom, he decided to sign up to the \gls{guard} and make his fortune.
+  Perhaps one day he'll save enough to buy an island.
+  \item
+  A scarred pirate who gained his wounds through an innocent misunderstanding.
+  All rumours about the men he murdered are false.
+  `Really they are'.
+  \item
+  An excellent cook who thought they'd let her stay in the barracks after training in the guard, and just let her earn a wage, quietly.
+  Perhaps she can spice up the field rations.
+
+  \end{itemize}
+}{
 \subsubsection{Seasonal Encounters}
 
 \paragraph{Cold} weather can freeze portions of the sea over, creating temporary bridges to nearby islands and grounding boats.
@@ -479,7 +549,24 @@ Various temples to Laiqu\"{e} are erected with stone or wood, and statues create
 The elves of the region find this habit ridiculous.
 The human priests maintain that this practice instils a certain level of respect for the forest in people, which indirectly helps them to survive.
 
-\iftoggle{players}{}{
+\iftoggle{players}{
+  \subsubsection{Character Concepts}
+  \begin{itemize}
+
+    \item
+    A forlorn elf, who wishes she had more of a tight-knit family structure, like humans.
+    Elves just wander away, without even saying `goodbye', and why didn't her parents take better care of her?
+    It's time to make a proper family, or at least some friends, at least before they die, like all humans do before long.
+    \item
+    An impatient sorcerer, who does not want to slowly watch his powers grow over the decades.
+    With only a few years spent in battle, he will return a force to be reckoned with!
+    \ldots but should probably keep his powers hidden, as the \gls{guard} don't really approve of that sort of thing.
+    \item
+    A curious alchemist who wants to know more.
+    He may just be a little gnome, but he plans to hide behind the `big folk' while they fight things, and he should return home with all manner of stories, insights, and maybe a few maps.
+
+  \end{itemize}
+}{
 
 \begin{encounters}{Quennome}
 
@@ -570,7 +657,24 @@ Every so often a corpse will fall into some underground river, providing a feast
 Most mushrooms can grow around oozes, feeding from them, without suffering from their acidic touch.
 Once an area has produced too many mushrooms for an ooze to survive comfortably, it goes searching for a different water source.
 
-\iftoggle{players}{}{
+\iftoggle{players}{
+  \subsubsection{Character Concepts}
+  \begin{itemize}
+
+    \item
+    A lovesick dwarf who could not win the heart of his princess.
+    He intends to bring her a collection of monstrous heads to high that her head will touch the ceiling in the feasting halls of the Shale.
+
+    Of course her chief loves are logistics and gardening, but it's the thought that counts.
+    \item
+    A suspicious child (in fact a clean-shaven gnome), who never speaks about the true extent of his abilities, and joined the guard as an emissary of the Ale Guild with forged paperwork.
+    \item
+    Guard number 46.
+    Just a random guy.
+    `What? Nothing to see here'.
+
+  \end{itemize}
+}{
 \subsubsection{Seasonal Encounters}
 
 \paragraph{Cold} seasons above ground become excruciatingly cold, inflicting an additional 4 Fatigue points per day of travel.
@@ -642,7 +746,22 @@ Those wishing to travel to Whiteplains must go by foot.
 
 Various rumours exist of secret portals within the Heart which lead to other locations, such \gls{outerKingdom}, or strange lands beyond.
 
-\iftoggle{players}{}{
+\iftoggle{players}{
+  \begin{itemize}
+
+    \item
+    A lost noble, who once stood to inherit an estate until \gls{king} put all the nobility to death.
+    So far none of the guard have noticed her accent.
+    So far\ldots
+    \item
+    A loyal subject of \gls{king}, intent on proving his worth in the glorious \gls{guard}.
+    With enough hard work, anyone can live a worthy life.
+    \item
+    A thieving orphan, who was caught stealing far too much.
+    He escaped the noose by convincing his local village master that he would do honest work in the \gls{guard}.
+
+  \end{itemize}
+}{
 \begin{encounters}{Whiteplains}
 
   South & North & Result \\\hline
@@ -675,7 +794,7 @@ These inexplicable magical portals appear around Whiteplains to the land of Shif
 Roll on the encounter table for the Realm of Shifting Corridors, and if the result can `pop out' at the party, it will.
 }
 
-\subsubsection{The \Glsentrytext{guard}}
+\subsubsection{The \Glsentrytext{guard} Weathering Halls}
 
 New guards always train in Whiteplains.
 They consider this their basic right of passage.
