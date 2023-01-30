@@ -115,7 +115,21 @@ Inside, \gls{captain} keeps a few magical items stashed away in his own room.
 
 \magicitem{Scroll of Fire}{Fireball}{Alchemy}{Instant}{Pocket Spell}{4}{4}
 
-\pic{Dyson_Logos/guard_station}{\label{dyson:guard}}
+\smolMapPic[\Large]{Dyson_Logos/guard_station}{
+  \ref{stationStables}/42/15,
+  \ref{stationStorage}/81/427,
+  \ref{stationStorage}/54/11,
+  \ref{stationToilet}/63/11,
+  \ref{stationCaptainToilet}/895/427,
+  \ref{stationCaptainRoom}/85/59,
+  \ref{stationSleep}/86/14,
+  \ref{stationDressing}/30/11,
+  \ref{stationLecture}/86/81,
+  \ref{stationRecords}/37/41,
+  \ref{stationInterrogation}/285/57,
+  \ref{stationShrine}/44/65,
+  \ref{stationStairs}/53/41,
+}
 
 \humansoldier[\npc{\T\E\Hu}{30 \gls{guard}}]
 
@@ -123,22 +137,54 @@ Once the words on the scroll are spoken, the scroll is destroyed, and a fireball
 
 The guard house also contains 10 Spider Arrows and three sets of Eternal Warrior's Armour (see page \pageref{eternalwarriorarmour}).
 
-\widePic{Daniel_Walthall/prison}
+\mapPic{b}{Daniel_Walthall/prison}{
+  \ref{dunStorage}/21/77,
+  \ref{guardStationRoom}/21/23,
+  \ref{mainPrisonRoom}/56/50,
+  \ref{dunCells}/71/79,
+  \ref{dunCells}/71/21,
+  \ref{dunGrate}/88/50,
+  \ref{thingsRoom}/88/79,
+  \ref{ogreCell}/88/21,
+  }
 
 \begin{enumerate}
 
-  \item{Stables}
-  \item{Storeroom room with handheld weapons, siege weapons, and basically every item listed in the core rules}
-  \item{Toilet}
-  \item{Captain's Toilet}
-  \item{\gls{captain}'s Room}
-  \item{Sleeping Quarters}
-  \item{Dressing room, with armour}
-  \item{Lecture Hall (though mostly used as a drinking hall)}
-  \item{Records Room, containing lists of fugitives, laws, tax records (a copy is kept in \gls{townmaster}'s treasury), and and valuable paintings of local nobles}
-  \item{Interrogation room}
-  \item{Shrines to Alass\"{e}, Laiqu\"{e}, Ohta, Qualm\"{e}, and V\'{e}r\"{e}.}
-  \item{Stairway down to the dungeons}
+  \item
+  Stables\label{stationStables}
+  \item
+  Storeroom room with handheld weapons, siege weapons, and basically every item listed in the core rules
+  \label{stationStorage}
+  \item
+  Toilet
+  \label{stationToilet}
+  \item
+  Captain's Toilet
+  \label{stationCaptainToilet}
+  \item
+  \gls{captain}'s Room
+  \label{stationCaptainRoom}
+  \item
+  Sleeping Quarters
+  \label{stationSleep}
+  \item
+  Dressing room, with armour
+  \label{stationDressing}
+  \item
+  Lecture Hall (though mostly used as a drinking hall)
+  \label{stationLecture}
+  \item
+  Records Room, containing lists of fugitives, laws, tax records (a copy is kept in \gls{townmaster}'s treasury), and valuable paintings of local nobles
+  \label{stationRecords}
+  \item
+  Interrogation room
+  \label{stationInterrogation}
+  \item
+  Shrines to Alass\"{e}, Laiqu\"{e}, Ohta, Qualm\"{e}, and V\'{e}r\"{e}.
+  \label{stationShrine}
+  \item
+  Stairway down to the dungeons
+  \label{stationStairs}
 \end{enumerate}
 
 \subsection{The Dungeon}
