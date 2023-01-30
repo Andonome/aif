@@ -430,13 +430,29 @@ The fact that she spends most of her time drunk doesn't detract from her status,
 Currently, \gls{pig} allows a few of the Immortal Bandits to stay under the bar, as they help her move things in and out of town without going through the \gls{guard} at the gates.%
 \footnote{See page \pageref{farmExit} for the exterior route.}
 
-\widePic{Dyson_Logos/mincing_pig}
+\mapPic{b}{Dyson_Logos/mincing_pig}{
+  \ref{pigHall}/11/46,
+  \ref{pigKitch}/10/73,
+  \ref{pigPrivate}/24/73,
+  \ref{pigDen}/35/81,
+  \ref{pigRoom}/42/89,
+  \ref{pig_pantry}/35/98,
+  \ref{runoff}/37/33,
+  \ref{pigShaft}/52/58,
+  \ref{pigTemple}/74/73,
+  \huge\ref{pigDogs}/84/33,
+  \ref{pigDown}/87/01,
+}
+
+\mapentry{Outside Street}
+\label{pigStreet}
 
 \mapentry{Beerhall}
+\label{pigHall}
 
 \begin{boxtext}
 
-  Alassean song and cooked pig wafts hits you in the face as soon as the door opens.
+  Alassean song and roasted pig wafts hits you in the face as soon as the door opens.
   With only three tables in the room, people have carved out little seating circles on the ground.
   A fat cat with a brown collar sits in the rafters and eyes you suspiciously as you struggle through the disorganized crowd to get to the bar.
 
@@ -453,6 +469,7 @@ When in nura-form, these are his stats:
 \nuracat[\NPC{\N\A}{Bob}{Slick}{Licks Paw}{Experience}]
 
 \mapentry{Kitchen}
+\label{pigKitch}
 
 People cook here, mostly.
 
@@ -489,6 +506,7 @@ However, the reality is that almost everyone who enters the room simply wants to
 \alemaster
 
 \mapentry{Thieves' Den}
+\label{pigDen}
 
 \paragraph{Background:}
 Priests of Qualm\"{e} once lived, studied and prayed in these rooms before an underground flood made the place unlivable.
@@ -504,6 +522,7 @@ A number of local thieves know of this secret and secluded room.
 \humanthief[\npc{\T\E\Hu}{Three Cutthroats}]
 
 \mapentry{\Glsentrytext{pigowner}'s Room}
+\label{pigRoom}
 
 \Gls{pigowner} lives in a mess of old notes about what she owes to whom, chests of illegal weapons%
 \footnote{Weapons are not illegal but stockpiling more weapons than an individual can use \emph{is}.}
@@ -566,10 +585,12 @@ The first member of the party to go down the tunnel rolls to spot the tripwire (
 \end{boxtext}
 
 \mapentry{Ventilation Shaft}
+\label{pigShaft}
 
 This little tunnel reaches upwards to allow a modicum of fresh air to circulate down in the nasty little dungeon.  Characters with a Strength of 0 or greater are too large to fit through the narrow hole.  It emerges on a street, just below a rich man's house.
 
 \mapentry{The Temple of Qualm\"e}
+\label{pigTemple}
 
 \paragraph{Background:}
 When the Immortal Bandits cleared this hallway, they found an entrance to the Temple of Qualm\"e.
@@ -584,6 +605,7 @@ The bandits can now sneak in here every could of nights with a fake corpse-bag, 
 The bandits then take the real corpses down to the underbelly, where \gls{sewerking} can resurrect them from the dead.
 
 \mapentry{Sleeping Dogs}
+\label{pigDogs}
 
 When not getting up to no good, the Immortal Bandits sleep in these little alcove-bedrooms.
 Each one has little more than blankets and clothing hooks.
@@ -601,7 +623,8 @@ the ghast jumps out at them.
 \ghast
 
 \mapentry{The Descent}
-This path downwards leads to the thieves' den underground (see page \pageref{pigexit}).
+\label{pigDown}
+This path downwards leads to the thieves' den underground (see page \pageref{sewerPigWalk}).
 
 \subsection{The Temple of Qualm\"e}
 
@@ -639,7 +662,31 @@ The \textit{Enclosure Rating} here is 4, so anyone using a weapon which requires
   \footnote{See the core rulebook for more on Enclosure Ratings.}
 }
 
-\widePic[t]{Dyson_Logos/sewer}
+\mapPic{t}{Dyson_Logos/sewer}{
+  \ref{butcher_exit}/20/95,
+  \ref{sewerCells}/21/75,
+  \ref{sewerLockup}/09/41,
+  \ref{sewerLockup}/37/03,
+  \ref{oldlibrary}/28/49,
+  \ref{sewerArtefacts}/87/63,
+  \Large\ref{sewerKingRoom}/71/51,
+  \Large\ref{sewerDust}/70/33,
+  \ref{sewerWaterHall}/48/36,
+  \ref{sewerLockup}/61/42,
+  \ref{sewerCells}/51/06,
+  \Large\ref{sewerFood}/70/69,
+  \ref{underHall}/77/27,
+  \ref{citadelTunnel}/11/13,
+  \ref{sewerCells}/21/16,
+  \ref{sewerPigWalk}/85/80,
+  \ref{sewerPig}/92/74,
+  \ref{farmExit}/71/97,
+  \Large\ref{sewerDust}/49/76,
+  \large\ref{underGuard}/63/87,
+  \ref{sewerCells}/43/79,
+  \ref{sewerShrine}/56/77,
+  \Large\ref{sewerDog}/33/66,
+}
 
 \mapentry{Stairway to the Butchers}\label{butcher_exit}
 
@@ -647,6 +694,7 @@ This stairway has been dug upwards to a drain just outside of a butchers.
 The bandits enter and exit through here.
 
 \mapentry{Dead Cells}
+\label{sewerCells}
 
 \paragraph{Background:}
 \Gls{sewerking} doesn't have enough space to store his undead pets, so he has his ghouls make these little alcoves.
@@ -668,6 +716,7 @@ have them roll Speed + Athletics (TN 12).
 Again, every 2 margins of failure mean that they have missed the end of the tunnel-section by one cell, so the dead exit and grab them.
 
 \mapentry{Dead Rooms}
+\label{sewerLockup}
 
 \paragraph{Background:}
 \Gls{sewerking} uses these larger alcoves to store individual ghouls before he has enough to stuff into one of the cells (see above). 
@@ -718,6 +767,7 @@ the skull resurrects them as a ghoul.
 \magicitem{Brazier of the Risen Soldiers}{Ghoul Calling}{Devotion (Qualm\"e)}{Instant}{Talisman}{2}{6}
 
 \mapentry{Magical Item Storage}
+\label{sewerArtefacts}
 
 \begin{boxtext}
 
@@ -744,6 +794,7 @@ Each is cast with Intelligence +1 and Wits +1.
 \end{enumerate}
 
 \mapentry{\Glsentrytext{sewerking}'s Room}
+\label{sewerKingRoom}
 
 \begin{boxtext}
   The door opens to a noble's room, bearing a striking contrast to the dungeon around.  The bed's well made, the sheets are silk, and various books sit on shelves.  On the table sits various maps.
@@ -765,6 +816,7 @@ Each is cast with Intelligence +1 and Wits +1.
 The books are variously written on history (real and imagined), \textit{The Art of Lies} (by an elvish author -- `Erende'), and instructions on hosting a dinner party.
 
 \mapentry{Ogre Dust Trap}
+\label{sewerDust}
 
 A thin wire was stretched across the floor, leading up to a small stretch of leather, holding snowdrops.  Anyone failing a Wits + Vigilance roll, TN 12 in the twilight, feels the petals fall down.  A moment later, the character's afflicted as per Saurecanta, level 2, and gains +4 Strength at the cost of -4 Charisma.
 
@@ -778,6 +830,7 @@ A thin wire was stretched across the floor, leading up to a small stretch of lea
 \end{boxtext}
 
 \mapentry{Food Storage}
+\label{sewerFood}
 
 \begin{boxtext}
 
@@ -792,6 +845,7 @@ Failure means the character will have a bad night, and gain 3 Fatigue Points eac
 \footnote{Feel free to roll for the characters so they're not aware there's a problem.}
 
 \mapentry{The Drowned Hallway}
+\label{sewerWaterHall}
 
 This area recently suffered a little flood.  Most of the water has dissipated, but this lower portion of the tunnels remains flooded.  The undead hobgoblins remain locked in their cells underground.
 
@@ -842,8 +896,7 @@ They'll need to accumulate a total margin of 10, whether in one roll, or many, i
 Each roll takes 1 scene.
 
 \mapentry{Sewer Entrance}\label{slidein}
-
-\label{pigexit}
+\label{sewerPig}
 
 This artificial stream loops round from \gls{pig}, above.
 The stream continues downwards to an underground area and then goes underground.
@@ -851,6 +904,7 @@ Anyone venturing down-river gets swept along, and dies in the unending blackness
 PCs can spend 5 FP instead to make the roll automatically.
 
 \mapentry{Entrance to \glsentrytext{pig}}
+\label{sewerPigWalk}
 
 \paragraph{Up these stairs,}
 characters can reach the bowels of \gls{pig}.
@@ -891,6 +945,7 @@ the cutthroats try to ram them out the door, and run to alert the others in room
 \humanthief[\npc{\T\E\Hu}{Four Cutthroats}]
 
 \mapentry{The Old Shrine to Qualm\"{e}}
+\label{sewerShrine}
 
 \begin{boxtext}
   Letters in Elvish above the doors state ``We bones await yours''.
@@ -943,6 +998,7 @@ The character requires a Margin of 2 to know what will happen before casting the
 \end{enumerate}
 
 \mapentry{The Guard Dog}
+\label{sewerDog}
 
 \paragraph{Background:}
 The Immortal Bandits keep one of farmer Angus' dogs chained here at all times (rotating, so they don't get bored).
