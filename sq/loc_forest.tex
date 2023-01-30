@@ -649,9 +649,26 @@ But probably not.
 
 \subsection{\Glsfmttext{greentower}}
 \label{green_tower}
-\setcounter{list}{0}
 
-\widePic[t]{Dyson_Logos/green_tower}
+\mapPic[\Large]{t}{Dyson_Logos/green_tower}{
+  \ref{greenGrounds}/62/55,
+  \ref{greenConservatory}/26/35,
+  \ref{green1}/10/35,
+  \ref{green2}/23/85,
+  \ref{green3}/84/84,
+  \ref{greenTop}/90/24,
+  \ref{underGreenTower}/01/35,
+}
+
+\mapPic{b}{Dyson_Logos/green_secret}{
+  \ref{underGreenTower}/13/50,
+  \ref{underWatcher}/14/04,
+  \ref{underPriests}/265/54,
+  \ref{underDoors}/45/40,
+  \ref{underSideRoom}/56/72,
+  \ref{underSpiral}/89/43,
+  \rotatebox{25}{\nameref{Abyss}}/67/49,
+}
 
 A Temple of Qualm\"{e} once stood here, but was destroyed with the rest of \gls{lostcity}.
 Now \gls{townmaster} has sent masons (members of the Woodspy Bandits), to build a base of operations for him to begin rebuilding the old human city.
@@ -660,6 +677,7 @@ However, everyone building here is unaware that the lower parts of the temple ar
 A portal to the nura lands below sends creatures up, and the undead Golden Priests of Qualm\"{e} have been pushing them back repeatedly over the long years.
 
 \mapentry{Outer Grounds}
+\label{greenGrounds}
 
 The area around the tower contains piles of rock which labourers have collected from the surrounding ruins.
 
@@ -675,19 +693,23 @@ The rock has a Weight Rating of 8, so a total Strength of +4 is required to lift
 \humanfarmer[\npc{\T\M\Hu}{6 Masons}]
 
 \mapentry{Conservatory}
+\label{greenConservatory}
 
 Overnight, the labouring equipment rests here.
 The lock is a simple knot tied on the inside, and anyone slipping a knife inside can get in (Intelligence + Larceny, TN 5).
 
 \mapentry{First Floor}
+\label{green1}
 
 Basic straw-stuffed beds, clothes, and some bows lie here.
 
 \mapentry{Second Floor}
+\label{green2}
 
 The men sleep here, though it's eventually planned as a station for lower-level archers.
 
 \mapentry{Third Floor}
+\label{green3}
 
 The top floor provides a place for \gls{traitor}, overseer of the operation, to get a good look at the surrounding area.
 This is also where he keeps a stockpile of weapons:
@@ -699,6 +721,14 @@ This is also where he keeps a stockpile of weapons:
   \item{50 suits of partial leather armour}
 
 \end{itemize}
+
+\mapentry{Top Floor}
+\label{greenTop}
+
+This green roof meshes with the local trees for some distance around, but like any other camouflage, it seems obvious once you look at it.
+
+From the top of the roof, anyone can see for miles around.
+They can't see people or creatures sneaking about, but they can see basilisks and groups of men without fail, even by moonlight.
 
 \mapentry{The Stairs}
 \label{underGreenTower}
@@ -718,6 +748,7 @@ The stairs and all hallways here have an \textit{Enclosure Rating} of 5, meaning
 Daggers and shortswords are fine, but longswords and war axes will suffer.
 
 \mapentry{The Watcher}
+\label{underWatcher}
 
 \paragraph{Background:}
 The tomb is guarded by a knight who stands in a side-cupboard, sworn to guard the undead priests.
@@ -755,6 +786,7 @@ If the characters enter with the Torpor spell cast, or rings of asphyxiation,\fo
   {}
 
 \mapentry{Hall of the Golden Priests}
+\label{underPriests}
 
 \paragraph{Background:}
 A long time ago, onlookers came here to gawk at the splendour of a glorious afterlife.
@@ -776,6 +808,7 @@ Each is decked in golden jewellery.
 the demiliches cast hostile spells at them.
 
 \mapentry{The Exposed Doors}
+\label{underDoors}
 
 \paragraph{Background:}
 When the priests were placed in this room, they ordered secret tunnels be made in the side to store their wealth in secret.
@@ -785,6 +818,7 @@ The two tunnels stand exposed, their doors ripped down from years of underground
 Primitive spears litter the area.
 
 \mapentry{Side Room}
+\label{underSideRoom}
 
 \paragraph{Background:}
 The natural tunnel was further excavated in order to horde the priests' treasures.
@@ -795,10 +829,27 @@ The room also contains 14 undead hobgoblins, standing ready to kill any nura who
 
 \undeadhobgoblin[\npc{\T\N\D}{14 Undead Hobgoblins}]
 
-\mapentry{The Abyss}
+\mapentry{The Downward Spiral}
+\label{underSpiral}
 
-Characters entering this area feel a warm breeze coming from the abyss, and intense magical energies.
-The abyss itself is a third-level mana lake, constantly radiating magical energy.%
+\paragraph{If the party venture down,}
+they find four more undead hobgoblins in the tunnel.
+Their job is to open the door and jump on any nura climbing up.
+
+\begin{exampletext}
+
+  Throughout the long years, the golden priests directed the stupid undead to dig and dig into the hillside.
+  They looped round, and dug into the tunnel, then fashioned a door from the broken wood from previous battles.
+
+Any nura digging upwards can now be attacked by the undead, who hurl themselves down to attach anything climbing up, before one of the golden priests shut the door again.
+While several nura would normally burst through any door, opening a stuck door while climbing can be almost impossible.
+
+\end{exampletext}
+
+\mapentry{The Abyss}
+\label{Abyss}
+
+Characters entering this area feel a warm breeze coming from the abyss, and intense magical energies.  The abyss itself is a third-level mana lake, constantly radiating magical energy.%
 \footnote{See page \pageref{mana_lake} for more on mana lakes.}
 
 \begin{exampletext}
@@ -825,22 +876,6 @@ This repeats every few years.
 
 So far, two of the golden priests have met their final end.
 Their remains have been placed back in their chambers by the others.
-
-\end{exampletext}
-
-\mapentry{The Downward Spiral}
-
-\paragraph{If the party venture down,}
-they find four more undead hobgoblins in the tunnel.
-Their job is to open the door and jump on any nura climbing up.
-
-\begin{exampletext}
-
-  Throughout the long years, the golden priests directed the stupid undead to dig and dig into the hillside.
-  They looped round, and dug into the tunnel, then fashioned a door from the broken wood from previous battles.
-
-Any nura digging upwards can now be attacked by the undead, who hurl themselves down to attach anything climbing up, before one of the golden priests shut the door again.
-While several nura would normally burst through any door, opening a stuck door while climbing can be almost impossible.
 
 \end{exampletext}
 
