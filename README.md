@@ -48,7 +48,7 @@ Anyone who has not found a use for themselves can find a use in the Night Guard 
 ## Map of the Land
 
 - Details on Fenestra, the land of magical portals.
-- Ethereal lands beyond, where players can get trapped and find strange items.
+- Strange realms, accessible only through magical portals, where players can get trapped and find strange items.
 - Bestiary, for all your monstrous needs.
 
 ## Games Master Resources
