@@ -4,7 +4,22 @@
 
 \begin{multicols}{2}
 
-\mapPic[\large]{t}{Irina/greylands}{Redfall/45/55,Greytown/56/61,Lakeside/83/52,crossroads/70/67}
+\ifodd\day{r3}
+  \setcounter{gold}{85}
+\else
+  \setcounter{gold}{35}
+\fi
+
+\mapPic[\large]{t}{Irina/greylands}{
+  \rule[.3em]{.16\textwidth}{2pt}/86/04,
+  \Large 10 miles/86/08,
+  \N\normalsize\glsentrytext{redfall}/46/55,
+  \N\nameref{lostcity}/\arabic{gold}/96,
+  \Glsentrytext{town}/56/61,
+  \rotatebox{-16}{\D\nameref{necromancers_lair}}/25/12,
+  \rotatebox{55}{\normalsize\nameref{lakeside}}/90/52,
+  \rotatebox{10}{\normalsize crossroads}/70/67,
+}
 
 \noindent
 Trouble has arrived at \gls{town}, as two great organizations begin their grab for power.
