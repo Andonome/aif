@@ -13,6 +13,9 @@ ${filename}.glg: svg-inkscape
 	pdflatex ${filename}.tex
 	makeglossaries ${filename}
 	pdflatex ${filename}.tex
+handouts:
+	pdflatex -shell-escape handouts.tex
+	pdflatex handouts.tex
 guide:
 	pdflatex -shell-escape players_guide.tex
 	makeindex players_guide.idx
@@ -24,5 +27,6 @@ creds:
 all:
 	make
 	make guide
+	make handouts
 clean:
 	rm -fr *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf sq/*aux svg-inkscape
