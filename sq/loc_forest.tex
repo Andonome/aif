@@ -649,14 +649,17 @@ But probably not.
   \ref{underDoors}/45/40,
   \ref{underSideRoom}/56/72,
   \ref{underSpiral}/89/43,
-  \rotatebox{25}{\nameref{Abyss}}/67/49,
+  \rotatebox{25}{\ref{Abyss}: \nameref{Abyss}}/67/49,
 }
 
-A Temple of Qualm\"{e} once stood here, but was destroyed with the rest of \gls{lostcity}.
+A Temple of Ohta once stood here, but was destroyed with the rest of \gls{lostcity}.
 Now \gls{townmaster} has sent masons (members of the Woodspy Bandits), to build a base of operations for him to begin rebuilding the old human city.
 
 However, everyone building here is unaware that the lower parts of the temple are still active.
-A portal to the nura lands below sends creatures up, and the undead Golden Priests of Qualm\"{e} have been pushing them back repeatedly over the long years.
+While \gls{lostcity} still stood, the priests of Ohta wanted to make their own trade-routes with the nura realm, but eventually fell to war, just like everyone else.
+The priests of Qualm\"e (who were close with the temple's priests) volunteered to remain, and suppress the horde which came up from below.
+
+The priests still fight -- every few years the nura make some attempt to journey up through the eternally-open portal, and the golden priests of Qualm\"e push them back, to protect a civilization they have no idea has fallen.
 
 \mapentry[greenGrounds]{Outer Grounds}
 
@@ -667,7 +670,7 @@ they noticed immediately that there is a magical hum of energy in the area.
 Everyone here regenerates 3 MP per scene.
 
 The source is a mana lake, slightly underground.
-Any mage can easily locate where the energy is strongest by simply wandering about, and eventually identifying a large rock which blocks the path underground (and has done, for decades).
+Any spell-caster with depleted mana can easily locate where the energy is strongest by simply wandering about, and eventually identifying a large rock which blocks the path underground (and has done, for decades).
 The rock has a Weight Rating of 8, so a total Strength of +4 is required to lift it.%
 \footnote{Of course another option is a lot of time, digging, or the proper use of a lever with an Intelligence + Crafts roll (TN 8).}
 
@@ -717,33 +720,36 @@ Each of the three staircases require a different roll.
 Characters can get a bonus for proper equipment, such as rope.
 
 The air down in the tomb has become so dry and foetid, that anyone spending time there gains 2 Fatigue Points per scene.
-Of course, this can be offset with sufficient rest (or just leaving the place to air out for a while).
+Of course, this can be offset with sufficient rest (or just leaving the place to air out for a few days).
 
-The stairs and all hallways here have an \textit{Enclosure Rating} of 5, meaning that any weapon which requires more than 5 Initiative to use gains a -1 penalty to hit with.
-Daggers and shortswords are fine, but longswords and war axes will suffer.
+The stairs and all hallways here are rather narrow, making weapons difficult to swing.%
+\footnote{%
+  \iftoggle{core}%
+  {\nameref{enclosedcombat}.}%
+  {See the Core rules on Enclosed Spaces.}%
+}
 
 \mapentry[underWatcher]{The Watcher}
 
 \paragraph{Background:}
-The tomb is guarded by a knight who stands in a side-cupboard, sworn to guard the undead priests.
+The tomb is guarded by a knight who stands in a side-cupboard, sworn to guard the golden priests.
 He has spent a long time down here in the dry air, and his body so seized up that he cannot move.
 Sufficient time, however, will allow him to regain the use of his limbs, and open the door.
 
 \begin{boxtext}
 
-  You swing the door open to find a highly decorated corpse with a pendant to the god of dead, made of gold, with bone strung along the copper thread.
+  You swing the door open to find a highly decorated corpse with a pendant to Qualm\"e, made of gold, with bone strung along the copper thread.
   The clothes look like they were once silk, and the helmet's leather covering seems to be a human face, stretched out and tanned.
 
 \end{boxtext}
 
 \paragraph{If the PCs stab the corpse,}
 they can kill it.
-More likely, they will not realize it is sentient, and leave it alone.
 A moment after they leave it, Jabril animates and comes to kill them.
 He is intelligent enough to know to sneak.
 His use of a shortsword also means he will not gain any penalty from the narrow hallway.
 
-If the characters enter with the Torpor spell cast, or rings of asphyxiation,\footnote{See page \pageref{ring_asphyxiation}.} they will be able to pass Jabril and the Golden Priests invisibly, so long as they do not linger too close to any of them.
+If the characters enter with the Torpor spell cast, or rings of asphyxiation, they will be able to pass Jabril and the Golden Priests invisibly, so long as they do not linger too close to any of them.
 
 \npc{\M\D}{Jabril, the Undead Watchman}
 
@@ -754,8 +760,8 @@ If the characters enter with the Torpor spell cast, or rings of asphyxiation,\fo
   {0}% WITS
   {-5}}% CHARISMA
   {2}% DR
-  {2}% COMBAT
-  {Aggression~2, Stealth~2, Tactics~2, Vigilance~1}% SKILLS
+  {3}% COMBAT
+  {Academics~1, Stealth~2, Tactics~2, Vigilance~1}% SKILLS
   {\shortsword, \completeplate, 200sp worth of jewellery}% EQUIPMENT
   {}
 
@@ -775,7 +781,11 @@ Each is decked in golden jewellery.
 
 \end{boxtext}
 
-\demilich[\npc{\T\D}{3 Demiliches}]
+\demilich[\npc{\D\F}{Demilich Delilah}]
+
+\demilich[\npc{\D\M}{Demilich Jonah}]
+
+\demilich[\npc{\D\F}{Demilich Tamar}]
 
 \paragraph{Once the PCs enter,}
 the demiliches cast hostile spells at them.
@@ -783,17 +793,15 @@ the demiliches cast hostile spells at them.
 \mapentry[underDoors]{The Exposed Doors}
 
 \paragraph{Background:}
-When the priests were placed in this room, they ordered secret tunnels be made in the side to store their wealth in secret.
-The tunnel then collapsed, killing the workers (as the priests knew would happen), and all the workers were given an honourable burial.
-
-The two tunnels stand exposed, their doors ripped down from years of underground war.
+These openings once had doors to hide the secret items of the Temple of Ohta, but the doors have since shattered and broken from centuries of warfare.
 Primitive spears litter the area.
 
 \mapentry[underSideRoom]{Side Room}
 
 \paragraph{Background:}
 The natural tunnel was further excavated in order to horde the priests' treasures.
-At present, this room contains 1,488cp, \thepage sp and \arabic{list} gp, all held in a small chest at the side of the room.\footnote{The coins date the room to the year of Rex Hunter.
+At present, this room contains \lootMedium, \lootBig, and \lootMagic, all held in a small chest at the side of the room.%
+\footnote{The coins date the room to the year of Rex Hunter.
 See page \pageref{r_hunter}.}
 
 The room also contains 14 undead hobgoblins, standing ready to kill any nura who come up from the tunnel, or just anyone who enters.
@@ -802,9 +810,11 @@ The room also contains 14 undead hobgoblins, standing ready to kill any nura who
 
 \mapentry[underSpiral]{The Downward Spiral}
 
-\paragraph{If the party venture down,}
+\paragraph{If the troupe venture down the hallway,}
 they find four more undead hobgoblins in the tunnel.
-Their job is to open the door and jump on any nura climbing up.
+Their job is to open the door and jump on any nura climbing up, but they will attack anyone on sight.
+
+\undeadhobgoblin[\npc{\T\N\D}{4 Undead Hobgoblins}]
 
 \begin{exampletext}
 
@@ -818,34 +828,66 @@ While several nura would normally burst through any door, opening a stuck door w
 
 \mapentry[Abyss]{The Abyss}
 
-Characters entering this area feel a warm breeze coming from the abyss, and intense magical energies.  The abyss itself is a third-level mana lake, constantly radiating magical energy.%
+Characters entering this area feel a warm breeze coming from the abyss, and intense magical energies.
+The abyss itself is a third-level mana lake, constantly radiating magical energy.%
 \footnote{See page \pageref{mana_lake} for more on mana lakes.}
+
+\paragraph{If they somehow get down the hole,}
+they will find a skull embedded in the wall -- the head of a devout warrior.
+His head -- carved with the story of his victories -- functions as a permanently-open magical doorway.
+
+\magicitem{The Portal Summoner}% NAME
+  {Gate}% SPELL
+  {Devotion (Ohta)}% PATH
+  {continuous}% DURATION
+  {Artefact}% TYPE
+  {3}% Potency
+  {5}% MP
+
+\paragraph{Destroying the Portal Summoner}
+is easy if one can get close enough.
+However, getting close to it will almost certainly alert the nura below, in their citadel.
+At this point, heavily armoured hobgoblins will attempt to climb up to stop the vandalism.
+
+\hobgoblin
 
 \begin{exampletext}
 
-When the tunnel collapsed, part of the ground collapsed too.
-The hole does not stop -- it just keeps going down and down, and eventually reaches the Realm of Darkness and Fire.\footnote{See page \pageref{darknessandfire}.}
+  The priests of Ohta who opened the door to the Realm of Darkness and Fire%
+  \footnote{See page \pageref{darknessandfire} for more on that realm.}
+ were not stupid.
+ They created the door through a magical artefact and placed that artefact down a deep chasm, so they could better defend their location in case of attack.
+  What they had not counted on was the sheer number of nura who could climb up from below.
+  They clamoured up in their hundreds, with spiked gloves to climb more easily up the soft cavernous walls.
 
-It wasn't long before the nura came up from below.
-At first, they had gold to trade.
-Soon after, they brought magical scrolls from an unnamed patron, which detailed how to gain control over the nura, or destroy one's enemies.
+  When the nura turned against the city, the two portals spewed hobgoblins, ogres, and the like, at the same time.
+  The priests argued, and considered caving the entire temple in.
+  They prayed to Ohta, and saw a vision of the temple's destruction, with a hole which sucked in more and more earth, getting wider and wider, until nura filled the land.
 
-When the nura turned against the city, the two portals spewed hobgoblins, ogres, and the like, at the same time.
-The priests argued, and considered caving the entire temple in.
-They prayed to Qualm\"{e}, and saw a vision of the temple's destruction, with a hole which sucked in more and more earth, getting wider and wider, until nura filled the land.
-They decided instead to remain, and guard the tunnel.
-They had their servants wrap them in cloth while warriors fought against the nura.
-They each took vows to never eat, open their eyes, or listen to music again.
-All five became demiliches, sworn to serve their temple forever.
+  At this point, the priests of Qualm\"e decided to take over, and remain, guarding the temple forever.
+  They had their servants wrap them in cloth while warriors fought against the nura.
+  They each took vows to never eat, open their eyes, or listen to music again.
+  All five became demiliches, sworn to serve their temple forever.
 
-As the nura came up, the golden priests killed them with magic, then raised the bodies from the dead to fight against more nura.
-This has left the situation in a stalemate.
-Nura come up from the tunnel, they die, the golden priests raise them as ghouls to fight until all nura lie dead.
-This repeats every few years.
+  As the nura came up, the golden priests killed them with magic, then raised the bodies from the dead to fight against more nura.
+  This has left the situation in a stalemate.
+  Nura come up from the tunnel, they die, the golden priests raise them as ghouls to fight until all nura lie dead.
+  This repeats every few years.
 
-So far, two of the golden priests have met their final end.
-Their remains have been placed back in their chambers by the others.
+  So far, two of the golden priests have met their final end.
+  Their remains have been placed back in their chambers by the others.
+
+  Throughout these centuries, barely a dozen goblins have managed to escape and get into the lands above, and almost all died of starvation before finding anywhere above.
 
 \end{exampletext}
+
+\paragraph{If the troupe attempt to understand this area,}
+they will no doubt find it confusing -- as well they should.
+They will not find communication with the gold priests easy.
+However, the demiliches are willing to communicate, and one can send telepathic thoughts with the Enchantment sphere.
+
+\paragraph{If two of the golden priests die,}
+the nura kill the other and break out.
+Raise the local nura rating by 3.
 
 \end{multicols}
