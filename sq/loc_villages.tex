@@ -68,13 +68,20 @@ This will leave ten ogres who chase the villages, ten more who bang on the gates
 
 \mapPic{t}{Dyson_Logos/redfall_keep}{
   \huge\ref{redTower}/05/68,
-  \huge\ref{redTower}/05/08,
-  \ref{redYard}/30/50,
+  \Large\rotatebox{0}{\nameref{redTower}}/05/80,
+  \huge\rotatebox{-45}{\nameref{redYard}}/34/50,
+  \ref{redYard}/28/46,
+  \Large\rotatebox{-45}{\nameref{redToilet}}/52/26,
   \huge\ref{redToilet}/545/34,
-  \ref{redKitchen}/31/75,
-  \ref{redServants}/41/75,
+  \Large\nameref{redKitchen}/31/79,
+  \ref{redKitchen}/30/75,
+  \Large\rotatebox{-45}{\nameref{redServants}}/43/75,
+  \ref{redServants}/41/73,
   \huge\ref{redChild}/84/19,
-  \ref{redSmolYard}/63/36,
+  \Large\rotatebox{45}{\nameref{redChild}}/84/28,
+  \Large\rotatebox{45}{\nameref{redSmolYard}}/75/34,
+  \ref{redSmolYard}/65/36,
+  \huge\nameref{redHall}/63/93,
   \ref{redHall}/63/75,
 }
 
@@ -108,7 +115,7 @@ Each of the towers has two archers, ready to protect their patron, \gls{nurabaro
 \boxPair[b]{
   \nurabaron
 }{
-  \ogre[\npc{\T\N\F}{Marjorie \& Her Daughter}]
+  \ogre[\npc{\T\N\F}{Marjorie \& Beth}]
 }
 
 \mapentry[redYard]{Courtyard}
@@ -138,17 +145,23 @@ He doesn't understand his condition, and has no self control.
 This makes him dangerous, so the family have decided to lock him in this little room.
 Characters on the river or anywhere near this room can hear intermittent banging, and infant-like gurgling.
 
-\mapentry[redSmolYard]{The Smaller Courtyard}
+\mapentry[redSmolYard]{Small Courtyard}
 
 This area holds a thin, thatched root, and plenty of space for games without getting wet.
 It's used as a common area by the servants.
 
-\smolMapPic{Dyson_Logos/redfall_top}{
-  \ref{redFamily}/175/20,
-  \ref{redStorage}/74/20,
+\boxPair{
+  \smolMapPic{Dyson_Logos/redfall_top}{
+    \Large\rotatebox{-90}{\nameref{redFamily}}/07/38,
+    \ref{redFamily}/175/20,
+    \Large\rotatebox{-45}{\nameref{redStorage}}/67/44,
+    \ref{redStorage}/74/20,
+  }
+}{
+  \ogre[\npc{\T\N\M}{Richard \& Jim}]
 }
 
-\mapentry[redHall]{The Great Hall}
+\mapentry[redHall]{Great Hall}
 
 \begin{boxtext}
 
@@ -162,27 +175,29 @@ The hallways contains a long, messy dining table, covered in scraps of bones fro
 
 The baron can usually be found dining here, shouting at guards about some imagined insult, or just terrifying people for the fun of it.  Nathaniel, his trusted advisor, is the only one who can calm him down when he gets into a rage.
 
-\mapentry[redStorage]{The Old Storage Shelves}
+\mapPic{t}{Dyson_Logos/lakeside}{
+  \rotatebox{-40}{\nameref{lakeSquare}}/51/45,
+  \ref{lakeSquare}/46/43,
+  \rotatebox{-40}{\nameref{lakeTemple}}/78/81,
+  \ref{lakeTemple}/70/79,
+  \rotatebox{40}{\nameref{lakeDocks}}/16/68,
+  \ref{lakeDocks}/21/63,
+}
+
+\mapentry[redStorage]{Old Storage Shelves}
 
 Here the servants rest.
 The armoury was once staffed by men at arms, but now has nothing but ogre-powder and other magical items from \glsentrylong{sewerking}.
 Anyone disturbing the contents of this room must make a Dexterity + Crafts check, TN 7, or risk toppling something and spilling the powder everywhere, which will affect the characters as per the Saurecanta sphere (page \pageref{saurecanta}); specifically, they get +2 to Strength and Speed, but -4 to Intelligence and Charisma.
 
-\mapentry[redFamily]{The Hidden Family}
+\mapentry[redFamily]{Hidden Family}
 
-In the upper floor, \gls{nurabaron}'s wife Marjorie stays with her four children -- two boys and two girls.  All are a little too dangerous to be trusted wandering alone, so only one is let out of their room at a time.
+In the upper floor, \gls{nurabaron}'s wife Marjorie stays with three of her children -- two boys and a girl.
+All are a little too dangerous to be trusted wandering alone, so only one is let out of their room at a time.
 
 These two attack fiercely, but retreat if any bargains have been made after a single round.
 
-\ogre[\npc{\T\N\M}{Richard \& Jim}]
-
 The two brothers were never good at listening, and will attack with abandon, unless Marjorie is nearby to talk them down.
-
-\mapPic{t}{Dyson_Logos/lakeside}{
-  \ref{lakeSquare}/47/47,
-  \ref{lakeTemple}/71/81,
-  \ref{lakeDocks}/16/64,
-}
 
 \boxPair[t]{
   \humandiplomat[\npc{\M\Hu}{Guildmaster Solus}]
