@@ -311,7 +311,7 @@ Their greatest strength is that, while lying mostly underground, they are almost
 
 Much like badgers they create long, winding Paths of underground homes.  Anyone with a Strength greater than 1 is too wide to fit into such narrow passages.
 
-\paragraph{Encounters:} There is only one way a mouthdigger attacks -- by surprise.  They dig into a bush, build a warren, clean up the surrounding area so nobody can see the entrance, then jump out of the bush and bite for \addtocounter{strb}{-5}\calculatedamage{\arabic{strb}} Damage.  If unsuccessful, the mouthdigger typically crawls back into its hole.
+\paragraph{Encounters:} There is only one way a mouthdigger attacks -- by surprise.  They dig into a bush, build a warren, clean up the surrounding area so nobody can see the entrance, then jump out of the bush and bite for \addtocounter{strb}{-5}\calculatedamage{strb} Damage.  If unsuccessful, the mouthdigger typically crawls back into its hole.
 
 \begin{itemize}
 
@@ -450,13 +450,12 @@ Oozes are mobile, gelatinous, blobs with about the same level of intelligence as
 \paragraph{Natural Abilities:} Young oozes are generally partially transparent, especially when hungry; spotting them requires a Wits plus Vigilance action, against their Wits + Stealth.
 Older oozes are hardier, and larger, but less good at hiding.
 
-Some ooze also have the Projectiles Skill, indicating they can shoot acid up to 10 squares away.
+Some ooze also have the Projectiles Skill, indicating they can shoot acid up to 5 squares away.
 
 In combat oozes always slither blindly at people, shifting about randomly so as not to be hit, and wrestling with their targets.
-Every 2 Initiative points of contact causes 1 Damage due to their acidic bodies.
-At the start of a new round, oozes immediately begin inflicting Damage if they have grappled someone, even if their Initiative has not yet come up; this Damage ignores all armour except Perfect armour.
-Oozes are huge, and can cover up to two squares at once, attacking everyone inside those squares at the same time.
-Oozes also heal 1 HP per round by melding back together.
+Once a target is grappled, the ooze inflicts damage equal to its Strength immediately, and again at the start of each turn.
+
+Larger oozes also heal 1 HP per round by melding back together, but can only regenerate half their HP this way before they need to feed.
 Their forms can still be bruised, and sufficient separation will kill them forever.
 
 An ooze's greatest weakness is fire.
