@@ -319,6 +319,35 @@ If they trade, they tend to do so using the Polymorph sphere, to make themselves
 
 \widePic[t]{Tom_Prante/swamp}
 
+\iftoggle{players}{}{
+
+  \begin{figure*}[b]
+  \begin{nametable}[c||L|L|LLLL|L|L,fontupper=\footnotesize,]{Encounter in Liberty}
+
+    & \textbf{Villages} & \textbf{Villages, Edge} & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest}  & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest} & \textbf{Edge, Forest} & \textbf{Forest} \\
+  \hline
+  \textbf{Rolls} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} \\
+  \hline
+  \hline
+  \textbf{8} & Villagers celebrating a local festival & Swamp & Lightning Storm & Earthquake & Hurricane & Mouthdigger & Woodspies mating & Forest Fire \\
+  \hline
+  \textbf{7} & Flood & Heatwave & High Humidity & Rain & Basilisk & Woodspy & Chitincrawler & Basilisk \\
+  \hline
+  \textbf{6} & \glspl{guard} & \glspl{guard} & Woodspy & Gnoll Raiders & Rain & Bear & Woodspy & Dragon \\
+  \hline
+  \textbf{5} & Noble Caravan & Rain & Bandits & Wolves & Lightning Storm & Chitincrawler & Deer & Mana Lake \\
+  \textbf{4} & Villager Funeral & Sword Guild Nomads selling swords & Storm & Bear & Wolves & Mouthdigger & Basilisk & Basilisk \\
+  \textbf{3} & Villagers selling meat & \glspl{guard} & \gls{guard} Scouts & Refugees from destroyed village & Brigands & Gnoll Raiders & Gnoll Raiders & Aurochs \\
+  \hline
+  \textbf{2} & Pilgrims & Alchemist with entourage & Gnoll Guild Slavers with captives  & Bandits & Mouthdigger & Griffins & Boar & Griffin \\
+  \hline
+  \textbf{1} & Bard & Dwarven Traders & Gnoll Guild Slavers with captives & Griffin & Bandits & Gnomes & Griffins & Aurochs \\
+  \hline
+  \textbf{0} & Begging Villagers & Bandits & Snowfall & Hail & Hungry Wolves & Gnoll Raiders & Boar & Hibernating Chitincrawlers \\
+  \end{nametable}
+  \end{figure*}
+}
+
 \subsection{Liberty}
 \index{Liberty}
 \index{Dogland}
@@ -358,40 +387,7 @@ But once the Coastal University succeed in creating a portal, this alternative c
     Either way, without any cash, it's time to join the \gls{guard}.
 
   \end{itemize}
-}{
-\begin{encounters}{Liberty}
-
-  Forest & Road & Result \\\hline
-  \li & Mana lake (page \pageref{mana_lake}). \\ 
-  \li & $2D6+3$ Gnoll raiders with $2D6-4$ hunting dogs (page \pageref{gnoll_hunter}). \\ 
-  \li & Swamp. \\ 
-  \li \lii Woodspy (page \pageref{woodspy}). \\ 
-  \li \lii Basilisk (page \pageref{basilisk}). \\ 
-  \li \lii Chitincrawler (page \pageref{chitincrawler}). \\ 
-  \li \lii Mouthdigger (page \pageref{mouthdigger}). \\ 
-  \li \lii $1D6+4$ Wolves (page \pageref{wolf}).  \\
-  \li \lii Seasonal Encounter. \\
-  & \lii $4D6+4$ Human traders (page \pageref{human_trader}). \\
-
-\end{encounters}
-}
-
-\iftoggle{players}{
-  \subsubsection{Character Concepts}
-}{
-\subsubsection{Seasonal Encounters}
-
-\paragraph{Cold} seasons throw snowstorms and suddenly blocked roads.
-Wandering outdoors inflicts an additional 4 Fatigue points each day.
-\paragraph{Mild} seasons seem to really encourage the local Woodspy population.
-The party encounter $1D3$ woodspies.
-\paragraph{Stormy} seasons don't adversely affect the populated areas, except for the occasional earthquake.
-The forests, on the other hand, can suffer from sudden wildfires, filling the area with smoke, inflicting 2 Fatigue each round.
-\paragraph{Warm} seasons are no problem in the deep forest, due to the heavy foliage providing shade.
-However, the open road inflicts an additional 3 Fatigue Points per day of travel.
-In either case, the characters encounter $1D6$ woodspies.
-
-}
+}{}
 
 \subsubsection{Swamps}
 
@@ -417,15 +413,15 @@ Failure indicates the party are lost, and trapped by marooning.
   \hline
   \textbf{7} & Flood & Heatwave & High Humidity & Rain & Chitincrawler & Woodspy & Chitincrawler Eggsack & Basilisk \\
   \hline
-  \textbf{6} & \glspl{guard} & \glspl{guard} & Woodspy & Elves & Rain & Bear & Woodspy & Chitincrawler \\
+  \textbf{6} & Noble Caravan & \glspl{guard} & Woodspy & Elves & Rain & Bear & Woodspy & Chitincrawler \\
   \hline
-  \textbf{5} & Noble Caravan & Ale Guild Nomads selling flour & Bandits & Wolves & Lightning Storm & Chitincrawler & Deer & Mana Lake \\
+  \textbf{5} & \glspl{guard} & Ale Guild Nomads selling flour & Bandits & Wolves & Lightning Storm & Chitincrawler & Deer & Mana Lake \\
   \textbf{4} & Villager Funeral & Paper Guild Nomads selling books & Wind & Bear & Wolves & Mouthdigger & Basilisk & Basilisk \\
   \textbf{3} & Villagers selling wool & \glspl{guard} & \gls{guard} Scouts & Refugees from destroyed village & Brigands & Gnolls & Brigands & Elves \\
   \hline
   \textbf{2} & Pilgrims & Priest of Laique & Breeze & Bandits & Mouthdigger & Griffins & Boar & Griffin \\
   \hline
-  \textbf{1} & Bard & Dwarven Traders & Sword Guild Traders & Griffin & Bandits & Gnomes & Griffins & Aurochs \\
+  \textbf{1} & Bard & Escaped Gnoll Slaves & Sword Guild Traders & Griffin & Bandits & Griffins & Deer & Aurochs \\
   \hline
   \textbf{0} & Begging Villagers & Bandits & Snowfall & Hail & Hungry Wolves & Snowstorm & Boar & Hibernating Chitincrawlers \\
   \end{nametable}
