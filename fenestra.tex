@@ -173,6 +173,32 @@ These regions of outer darkness, placed on maps using guesswork and rumours, for
 
 \widePic{Tom_Prante/winter}
 
+\iftoggle{players}{}{
+  \begin{figure*}[t]
+  \begin{nametable}[c||L|L|LLLL|L|L,fontupper=\small,]{Encounters in Eastlake}
+  & \textbf{Villages} & \textbf{Villages, Edge} & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest}  & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest} & \textbf{Edge} & \textbf{Forest} \\
+  \hline
+  \textbf{Rolls} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} \\
+  \hline
+  \hline
+  \textbf{8} & Villagers & Alchemists practising Invocation & Lightning Storm & Earthquake & Hurricane & Ghast & 6 Ghouls  & Deer \\
+  \hline
+  \textbf{7} & Flood & Woodspies & Heavy mist & Rain & Mouthdigger & 2 Ghasts & Bear & Demilich \\
+  \hline
+  \textbf{6} & 12 \glspl{guard} & 6 \glspl{guard} & Rain & Heavy Hail & Woodspy & 6 Snow Elves & Auroch stampede & 10 Ghouls \\
+  \textbf{5} & Noble Caravan & Fisherman & 10 Bandits & 8 Wolves & Lightning Storm & Gnolls & Deer & Mana Lake with $1D6$ practising alchemists \\
+  \textbf{4} & Villager funeral & Bow Sellers & Biting Wind & Bear & Wolves & Snow Elf disguised as a human & 8 Ghouls & 4 Griffins \\
+  \textbf{3} & Paper Guild Caravan & 20 \glspl{guard} & 4 Brigands & 4 Refugees from Fallen Village & Snowstorm & 8 Brigands & Dryad eating brigands & Gnoll Hunters \\
+  \hline
+  \textbf{2} & Vegetable Traders & Pilgrims & Breeze & 10 Bandits & Griffin & Apprentice alchemists up to no good & Boar & Wild Horses \\
+  \hline
+  \textbf{1} & Villager Wedding & Dwarves & 4 Gnoll Dog Sellers & Snow Elves riding griffins above & 7 Bandits & 8 Gnomish Crossbow Traders & Griffin & Grazing Aurochs \\
+  \hline
+  \textbf{0} & Begging Villagers & Snowstorm (roads closed) & Lakes and Rivers Freeze & Heavy Hail & 4 Hungry Wolves & Snowstorm & Mist & Deer \\
+  \end{nametable}
+  \end{figure*}
+}
+
 \noindent
 Fenestra contains seven regions, each of which have a slightly different ecology and different populations.
 
@@ -288,33 +314,7 @@ If they trade, they tend to do so using the Polymorph sphere, to make themselves
     A wandering gnome, bent on showing that magic, trickery, and planning make him more of a warrior than large men carrying big sticks.
 
   \end{itemize}
-}{
-\subsubsection{Seasonal Encounters}
-
-\paragraph{Cold} seasons in Eastlake are terrifying.
-Hungry wolves become common; roll $2D6 + 2$ for the number.
-Travelling through the cold also inflicts an additional 4 Fatigue Points per day.
-\paragraph{Mild} seasons are still snowy in the North of Eastlake, but much of the ice retreats, bringing increased bear activity as they are usually coming out of or going into a state of hibernation.
-\paragraph{Stormy} times bring flooding, lightning, and increased snowstorms.
-Travelling in these storms slows everyone, and an increase in Fatigue of 3 points per day's travel.
-\paragraph{Warm} seasons are accompanied by an increase in the local undead.
-Many think this is due to long-frozen areas becoming unfrozen, releasing a number of corpses who were previously encased in ice.
-Roll $2D6$ for the number of ghouls encountered.
-
-\begin{encounters}{Eastlake}
-
-  Wastes & Lakeside & Result \\\hline
-  \lii & A discarded magical item, left in the wastes, perhaps next to some alchemist's body. \\
-  \lii & $3D3-2$ Ghasts (page \pageref{ghast}). \\
-  \lii & $4D6-3$ Gnolls. \\
-  \lii \li $2D6$ ghouls (page \pageref{ghoul}). \\
-  \lii \li Snowstorm. \\
-  \lii \li Seasonal Encounter. \\
-  \lii \li $3D6\times3$ Aurochs (page \pageref{auroch}). \\
-  & \li $1D6+3$ Human traders (page \pageref{human_trader}). \\
-
-\end{encounters}
-}
+}{}
 
 
 \widePic[t]{Tom_Prante/swamp}
@@ -402,6 +402,35 @@ Any journey across one requires an Intelligence + Wyldcrafting roll, TN 10.
 Failure indicates the party are lost, and trapped by marooning.
 
 \subsection{Mt Arthur}\index{Mt Arthur}
+
+\iftoggle{players}{}{
+
+  \begin{figure*}[t]
+  \begin{nametable}[c||L|L|LLLL|L|L,fontupper=\footnotesize,]{Encounter in Mt Arthur}
+
+    & \textbf{Villages} & \textbf{Villages, Edge} & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest}  & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest} & \textbf{Edge, Forest} & \textbf{Forest} \\
+  \hline
+  \textbf{Rolls} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} \\
+  \hline
+  \hline
+  \textbf{8} & Villagers celebrating a local festival & Sulphur Winds & Lightning Storm & Earthquake & Hurricane & Mouthdigger & Woodspies mating & Forest Fire \\
+  \hline
+  \textbf{7} & Flood & Heatwave & High Humidity & Rain & Chitincrawler & Woodspy & Chitincrawler Eggsack & Basilisk \\
+  \hline
+  \textbf{6} & \glspl{guard} & \glspl{guard} & Woodspy & Elves & Rain & Bear & Woodspy & Chitincrawler \\
+  \hline
+  \textbf{5} & Noble Caravan & Ale Guild Nomads selling flour & Bandits & Wolves & Lightning Storm & Chitincrawler & Deer & Mana Lake \\
+  \textbf{4} & Villager Funeral & Paper Guild Nomads selling books & Wind & Bear & Wolves & Mouthdigger & Basilisk & Basilisk \\
+  \textbf{3} & Villagers selling wool & \glspl{guard} & \gls{guard} Scouts & Refugees from destroyed village & Brigands & Gnolls & Brigands & Elves \\
+  \hline
+  \textbf{2} & Pilgrims & Priest of Laique & Breeze & Bandits & Mouthdigger & Griffins & Boar & Griffin \\
+  \hline
+  \textbf{1} & Bard & Dwarven Traders & Sword Guild Traders & Griffin & Bandits & Gnomes & Griffins & Aurochs \\
+  \hline
+  \textbf{0} & Begging Villagers & Bandits & Snowfall & Hail & Hungry Wolves & Snowstorm & Boar & Hibernating Chitincrawlers \\
+  \end{nametable}
+  \end{figure*}
+}
 
 \widePic{Johan_Jaeger/mountain_river}
 
