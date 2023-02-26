@@ -507,7 +507,37 @@ Various enchanted items detect any magical items or disguises, and the castle re
 
 \widePic[t]{Tom_Prante/ancient_valley}
 
-\subsection{The Pebbles}\index{Pebbles}
+\iftoggle{players}{}{
+
+  \begin{figure*}[t!]
+  \begin{nametable}[c||LLLL|L|LL,fontupper=\footnotesize,]{Encounter in the Pebbles}
+
+    & \textbf{Villages} & \textbf{Villages} & \textbf{Villages} & \textbf{Villages}  & \textbf{Villages, Sea} & \textbf{Sea} & \textbf{Sea} \\
+  \hline
+  \textbf{Rolls} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5, 6} & \textbf{7, 8} & \textbf{9, 10} \\
+  \hline
+  \hline
+  \textbf{8} & Villagers celebrating a local festival & Griffins & Woodspy & Earthquake & Hurricane & Tidal Wave & Lost man adrift \\
+  \hline
+  \textbf{7} & Drunken Fishermen & Heatwave & Elf & Village song contest & Mist & Pleasant Breeze & Storm \\
+  \hline
+  \textbf{6} & Gnomish Alchemist & \glspl{guard} & Mouthdigger & Elves & Rain & Trading vessel & Regal Boat \\
+  \hline
+  \textbf{5} & \glspl{guard} & Ale Guild Nomads selling flour & Bandits & Gnomes selling alchemy spells & Lightning Storm & Pirates & Dolphins \\
+  \textbf{4} & Villager Funeral & Paper Guild Nomads selling books & Wind & Goat farmer & Rain & Sharks & Orcas \\
+  \textbf{3} & Villagers selling warm clothing & \glspl{guard} & \gls{guard} Scouts & Goat farmer & Brigands & Reefs & Trading vessel \\
+  \hline
+  \textbf{2} & Pilgrims & Priest of Laique & Storm & Mouthdigger & Mouthdigger & Griffins & Sharks \\
+  \hline
+  \textbf{1} & Bard & Villagers who want a boat ride home & Ale Guild Nomads & Bandits & Griffin & Pirates & Floating ice-blocks \\
+  \hline
+  \textbf{0} & Hailstorm & Bandits & & Hail & Snowfall & Snowstorm & Hailstorm \\
+  \end{nametable}
+  \end{figure*}
+}
+
+\subsection{The Pebbles}
+\index{Pebbles Islands}
 
 These little islands had their own group of languages -- very different from any of the various human languages around the mainland of Fenestra.  While they traded with both Fenestra and \gls{outerKingdom}, they were until recent decades, independent.
 They had no lords or armies, but did rally around priests of Ohta in times of war.
@@ -531,7 +561,7 @@ Watchmen patrol the ramparts all day and night, including various dwarves, emplo
   \begin{itemize}
 
   \item
-  A seafaring dwarf loved nothing more than feeling the wind in his beard, but everyone has to grow up sometime.
+  A seafaring dwarf who loved nothing more than feeling the wind in his beard, but everyone has to grow up sometime.
   Fearing boredom, he decided to sign up to the \gls{guard} and make his fortune.
   Perhaps one day he'll save enough to buy an island.
   \item
@@ -543,32 +573,7 @@ Watchmen patrol the ramparts all day and night, including various dwarves, emplo
   Perhaps she can spice up the field rations.
 
   \end{itemize}
-}{
-\subsubsection{Seasonal Encounters}
-
-\paragraph{Cold} weather can freeze portions of the sea over, creating temporary bridges to nearby islands and grounding boats.
-The inhabitants of the Pebbles are adept at preparing for such times, and have about a hundred well-known recipes for salted and smoked fish.
-\paragraph{Mild} seasons in the Pebbles are probably the best place in Fenestra, with just enough wind to get somewhere, and no special dangers.
-\paragraph{Stormy} weather grounds all but the bravest sailors.
-The storms encountered during these times can wreck any boat.
-\paragraph{Warm} weather is muggy and humid, inflicting an additional 3 Fatigue Points per day's travel.
-
-\begin{encounters}{the Pebbles}
-
-  Sea & Land & Result \\\hline
-  \li & Pirates. \\
-  \li \lii Raging Storm. \\
-  \li \lii Mild Storm. \\
-  \li \lii Seasonal Encounter. \\
-  \li & Trading vessel. \\
-  & \lii $2D3-1$ Griffins. \\
-  & \lii $4D6$ Human Traders. \\
-  & \lii $1D2$ Woodspies. \\
-  & \lii Gnomish Illusionist. \\
-  & \lii Mouthdigger. \\
-
-\end{encounters}
-}
+}{}
 
 \subsection{Quennome}\index{Quennome}
 
