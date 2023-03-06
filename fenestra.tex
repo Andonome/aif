@@ -163,7 +163,6 @@ The continent remains wild, and only little blotches of civilization exist, with
 
 These regions of outer darkness, placed on maps using guesswork and rumours, form the larger part of the world.
 
-
 \end{multicols}
 
 \section{Regions}
@@ -176,25 +175,97 @@ These regions of outer darkness, placed on maps using guesswork and rumours, for
 \iftoggle{players}{}{
   \begin{figure*}[t!]
   \begin{nametable}[c||L|L|LLLL|L|L,fontupper=\small,]{Encounters in Eastlake}
-  & \textbf{Villages} & \textbf{Villages, Edge} & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest}  & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest} & \textbf{Edge} & \textbf{Forest} \\
+  & \textbf{Villages} & \textbf{Villages, Edge} & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest} & \textbf{Villages, Edge, Forest} & \textbf{Edge} & \textbf{Forest} \\
   \hline
   \textbf{Rolls} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} \\
   \hline
   \hline
-  \textbf{8} & Villagers & Alchemists practising Invocation & Lightning Storm & Earthquake & Hurricane & Ghast & 6 Ghouls  & Deer \\
+  \textbf{8} &
+    \E\ $1D6$ Woodspies mating &
+    \Hu\ $1D6$ Alchemists practising Invocation &
+    Lightning Storm &
+    Earthquake &
+    Hurricane &
+    \D\ Ghast &
+    \D\ $1D6$ Ghouls &
+    Deer \\
   \hline
-  \textbf{7} & Flood & Woodspies & Heavy mist & Rain & Mouthdigger & 2 Ghasts & Bear & Demilich \\
+  \textbf{7} &
+    Flood &
+    \E\ Woodspy &
+    Heavy mist &
+    Rain &
+    \A\ Mouthdigger &
+    \D\E\ $1D6$ Ghasts &
+    \A\ Bear &
+    \D\ Demilich \\
   \hline
-  \textbf{6} & 12 \glspl{guard} & 6 \glspl{guard} & Rain & Heavy Hail & Woodspy & 6 Snow Elves & Auroch stampede & 10 Ghouls \\
-  \textbf{5} & Noble Caravan & Fisherman & 10 Bandits & 8 Wolves & Lightning Storm & Gnolls & Deer & Mana Lake with $1D6$ practising alchemists \\
-  \textbf{4} & Villager Funeral & Bow Sellers & Biting Wind & Bear & Wolves & Snow Elf disguised as a human & 8 Ghouls & 4 Griffins \\
-  \textbf{3} & Paper Guild Caravan & 20 \glspl{guard} & 4 Brigands & 4 Refugees from Fallen Village & Snowstorm & 8 Brigands & Dryad eating brigands & Gnoll Hunters \\
+  \textbf{6} &
+    \Hu\ $1D6$ \glspl{guard} &
+    \Hu\ $1D6+4$ \glspl{guard} &
+    Rain &
+    Heavy Hail &
+    \E\ Woodspy &
+    \El\ $1D6+3$ Snow Elves &
+    \A\ Auroch stampede &
+    \D\ $1D6$ Ghouls \\
+  \textbf{5} &
+    \Hu\ Noble Caravan, $1D6+10$ \gls{guard} &
+    \Hu\ $1D6$ Fishermen &
+    \Hu\ $1D6+6$ Bandits &
+    \A\ $1D6+6$ Wolves &
+    Lightning Storm &
+    \Nl\ $1D6+4$ Gnolls &
+    \A\ $1D6$ Deer &
+    \Hu\ Mana Lake with $1D6$ practising alchemists \\
+  \textbf{4} &
+    \Hu\ $1D6$ Villager Funeral &
+    \Hu\ $1D6$ Bow Sellers &
+    Biting Wind &
+    \A\ Bear &
+    \A\ Wolves &
+    \El\ Snow Elf disguised as a human &
+    \D\ $1D6$ Ghouls &
+    \A\ Griffin \\
+  \textbf{3} &
+    \Hu\ Paper Guild Caravan &
+    \Hu\ $1D6+8$ \glspl{guard} &
+    \Hu\ $1D6+4$ Brigands &
+    \Hu\ $1D6\times 3$ Refugees from Fallen Village &
+    Snowstorm &
+    \Hu\ $1D6+5$ Brigands &
+    \El\ Dryad eating brigands &
+    \Nl\A\ $1D6+6$ Gnoll Hunters, $2D6$ dogs \\
   \hline
-  \textbf{2} & Vegetable Traders & Pilgrims & Breeze & 10 Bandits & Griffin & Apprentice alchemists up to no good & Boar & Wild Horses \\
+  \textbf{2} &
+    \Hu\ $1D6 \times 2$ Vegetable Traders &
+    \Hu\ $1D6\times 3$ Pilgrims &
+    Breeze &
+    \Hu\ $1D6+8$ Bandits &
+    \A\ $1D6$ Griffins &
+    \Hu\ $1D6$ Apprentice Alchemists up to no good &
+    \A\ Boar &
+    \A\ Wild Horses Herd \\
   \hline
-  \textbf{1} & Villager Wedding & Dwarves & 4 Gnoll Dog Sellers & Snow Elves riding griffins above & 7 Bandits & 8 Gnomish Crossbow Traders & Griffin & Grazing Aurochs \\
+  \textbf{1} &
+    \Hu\ Villager Wedding &
+    \Dw\ $1D6+6$ Sword Guild \Glspl{nomad} &
+    \Nl\ $1D6+4$ Dog Sellers, ($\times 2$ dogs) &
+    \El\A\ $1D6$ Snow Elves riding Griffins above &
+    \Hu\ $1D6+7$ Bandits &
+    \Gn\ $1D6+3$ Crossbow Traders &
+    \A\ $1D6$ Griffins &
+    \A\ Grazing Aurochs \\
   \hline
-  \textbf{0} & Begging Villagers & Snowstorm (roads closed) & Lakes and Rivers Freeze & Heavy Hail & 4 Hungry Wolves & Snowstorm & Mist & Deer \\
+  \textbf{0} &
+    \Hu\ $1D6$ Begging Villagers &
+    Snowstorm (roads closed) &
+    Lakes and Rivers Freeze &
+    Heavy Hail &
+    \A\ $1D6$ Hungry Wolves &
+    Snowstorm &
+    Mist &
+    \A\ Deer \\
   \end{nametable}
   \end{figure*}
 }
@@ -488,21 +559,84 @@ Various enchanted items detect any magical items or disguises, and the castle re
   \textbf{Rolls} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5, 6} & \textbf{7, 8} & \textbf{9, 10} \\
   \hline
   \hline
-  \textbf{8} & Villagers celebrating a local festival & Griffins & Woodspy & Earthquake & Hurricane & Tidal Wave & Lost man adrift \\
+  \textbf{8} &
+    \Hu\ Villagers celebrating a local festival &
+    \A\ Griffin &
+    \E\ $1D6$ Woodspies mating &
+    Earthquake &
+    Hurricane &
+    Tidal Wave &
+    \Hu\ $1D6$ Lost men adrift \\
   \hline
-  \textbf{7} & Drunken Fishermen & Heatwave & Elf & Village song contest & Mist & Pleasant Breeze & Storm \\
+  \textbf{7} &
+    \Hu\ $1D6$ Drunken Fishermen &
+    Heatwave &
+    \El\ $1D6$ Elves &
+    \Hu\ Village song contest &
+    Mist &
+    Pleasant Breeze &
+    Storm \\
   \hline
-  \textbf{6} & Gnomish Alchemist & \glspl{guard} & Mouthdigger & Elves & Rain & Trading vessel & Regal Boat \\
+  \textbf{6} &
+    \Gn\ Gnomish Alchemist &
+    \Hu\ $1D6$ \glspl{guard} &
+    \A\ $1D6$ Mouthdigger &
+    \El\ $1D6$ Elves &
+    Rain &
+    \Hu\ Trading vessel &
+    \Hu\ Regal Boat \\
   \hline
-  \textbf{5} & \glspl{guard} & Ale Guild Nomads selling flour & Bandits & Gnomes selling alchemy spells & Lightning Storm & Pirates & Dolphins \\
-  \textbf{4} & Villager Funeral & Paper Guild Nomads selling books & Wind & Goat farmer & Rain & Sharks & Orcas \\
-  \textbf{3} & Villagers selling warm clothing & \glspl{guard} & \gls{guard} Scouts & Goat farmer & Brigands & Reefs & Trading vessel \\
+  \textbf{5} &
+    \glspl{guard} &
+    \Hu\ $1D6\times 3$ Ale Guild Nomads selling flour &
+    \Hu\ $1D6+8$ Bandits &
+    \Gn\ $1D6$ Gnomes selling alchemy spells &
+    Lightning Storm &
+    \Hu\ $1D6\times 2 + 8$ Pirates &
+    \A\ $1D6$ Dolphins \\
+  \textbf{4} &
+    \Hu\ Villager Funeral &
+    \Gn\ $1D6+3$ Paper Guild Nomads selling books &
+    Wind &
+    \Hu\ $1D6$ Goat farmer &
+    Rain &
+    \A\ $1D6$ Sharks &
+    \A\ $1D6$ Orcas \\
+  \textbf{3} &
+    \Hu\ $1D6$ Villagers selling warm clothing &
+    \Hu\ $1D6+5$ \glspl{guard} &
+    \Hu\ $1D6$ \gls{guard} Scouts &
+    \Hu\ $1D6$ Goat farmers &
+    \Hu\ $1D6 \times 3$ Brigands &
+    Reefs &
+    \Hu\ Trading vessel \\
   \hline
-  \textbf{2} & Pilgrims & Priest of Laique & Storm & Mouthdigger & Mouthdigger & Griffins & Sharks \\
+  \textbf{2} &
+    \Hu\ $1D6+6$ Pilgrims &
+    Priest of Laique &
+    Storm &
+    \A\ Mouthdigger &
+    \A\ Mouthdigger &
+    \A\ $1D6$ Griffins &
+    \A\ $1D6$ Sharks \\
   \hline
-  \textbf{1} & Bard & Villagers who want a boat ride home & Ale Guild Nomads & Bandits & Griffin & Pirates & Floating ice-blocks \\
+  \textbf{1} &
+    \Hu\ $1D6$ Bards &
+    \Hu\ $1D6\times 3$ Villagers who want a boat ride home &
+    \Hu\ $1D6$ Ale Guild \Glspl{nomad} &
+    \Hu\ $1D6+8$ Bandits &
+    \A\ $1D6$ Griffins &
+    \Hu\ $1D6+12$ Pirates &
+    Floating ice-blocks \\
   \hline
-  \textbf{0} & Hailstorm & Bandits & & Hail & Snowfall & Snowstorm & Hailstorm \\
+  \textbf{0} &
+    Hailstorm &
+    \Hu\ $1D6+4$ Bandits &
+    \El\ Curious Dryad &
+    Hail &
+    Snowfall &
+    Snowstorm &
+    Hailstorm \\
   \end{nametable}
   \end{figure*}
 }
