@@ -6,12 +6,11 @@ compile_pdf:
     - git submodule update --init
     - git submodule foreach git lfs pull
     - make all
-    - mv main.pdf aif.pdf
   only:
     - master
     - run
   artifacts:
     paths:
-      - aif.pdf
+      - Adventures_in_Fenestra.pdf
       - players_guide.pdf
       - handouts.pdf

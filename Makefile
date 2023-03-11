@@ -1,32 +1,36 @@
-filename=main
-branch := $(shell git rev-parse --abbrev-ref HEAD)
-output: ${filename}.pdf
-${filename}.pdf: ${filename}.ind ${filename}.glg
-svg-inkscape: config/bind.sty
-	pdflatex -shell-escape ${filename}.tex
+output: Adventures_in_Fenestra.pdf
+
+Adventures_in_Fenestra.pdf: main.pdf
+	mv main.pdf Adventures_in_Fenestra.pdf
+
+main.pdf: main.aux
+	pdflatex main.tex
+main.aux: svg-inkscape
+	pdflatex main.tex
+	makeglossaries main
+svg-inkscape: config/bind.sty images
+	pdflatex -shell-escape main.tex
+	pdflatex main.tex
+
 config/bind.sty:
 	git submodule update --init
-${filename}.ind: svg-inkscape sq ${filename}.idx $(wildcard *.tex)
-	pdflatex ${filename}.tex
-	makeindex ${filename}.idx
-${filename}.glg: svg-inkscape
-	pdflatex ${filename}.tex
-	makeglossaries ${filename}
-	pdflatex ${filename}.tex
-handouts:
+
+handouts: handouts.pdf
+handouts.pdf:
 	pdflatex -shell-escape handouts.tex
 	pdflatex handouts.tex
-guide:
+
+guide: players_guide.pdf fenestra.tex nightguard.tex astronomy.tex history.tex players_guide.tex
+	pdflatex players_guide.tex
+players_guide.pdf:
 	pdflatex -shell-escape players_guide.tex
-	makeindex players_guide.idx
 	pdflatex players_guide.tex
 	pdflatex players_guide.tex
-	pdflatex players_guide.tex
+
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
-all:
-	make
-	make guide
-	make handouts
+
+all: Adventures_in_Fenestra.pdf guide handouts
+
 clean:
-	rm -fr *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf sq/*aux svg-inkscape
+	rm -fr *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf  *.slg  *.slo  *.sls  sq/*aux svg-inkscape
