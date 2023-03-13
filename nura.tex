@@ -132,7 +132,12 @@ As usual, anyone may spend 5 FP to specify that the spell fails.
 
 \end{multicols}
 
-\section{Nura Magic}\index{Nura!Magic}\index{Saurecanta}\label{saurecanta}
+\section{Nuramancy}
+
+\label{saurecanta}
+\index{Nura!Magic}
+\index{Saurecanta}
+\index{Nuramancy}
 
 \begin{multicols}{2}
 
@@ -168,85 +173,97 @@ Meanwhile, the character can heal a number of Fatigue Points each scene equal to
 Saurecanta spell effects never stack with each other, or with Polymorph -- only the highest bonus counts.
 
 \spelllevel \label{saurecantaone}
-\spell{Hunger Pains}{Continuous}{Medicine}{The target must eat or suffer 1 HP damage per 2 Fatigue Points}
-The target is affected by a ravenous hunger and extreme stomach pains.
-They suffer 1 HP Damage per 2 Fatigue points they currently have -- FP cannot be spent to mitigate this.
 
-Refusing to eat requires a Wits + Academics roll, TN 7 plus the caster's Intelligence + Vigilance.
+\spell{Hunger Pains}{Continuous}{Deceit}{The target must eat or suffer 1 HP damage per 2 Fatigue Points, vs Wits + Empathy}
+
+This spell afflicts the target with a ravenous hunger and extreme stomach pains.
+The target resists with Wits + Empathy roll to avoid giving into the hunger.
+
+If the target succeeds in resisting the hunger (or simply cannot eat), they suffer 1 HP Damage per 2 Fatigue Points they currently have -- FP cannot be spent to mitigate this.
+
+If the target does eat, every full meal eaten heals 1 Fatigue Point.
+
+Targets who give into their hunger but have no rations or other proper food to hand will attempt to eat \emph{anyone} around them, including companions, via the fastest route possible.
+
+The target can spend 5 FP in order to ignore this spell's effects.
 
 \spelllevel
-\spell{Brawnform}{Instant}{Medicine}{The target grows massive, gaining $2 + Int$ points for Strength or Speed}
-The caster pulls out the inner beast in anyone, polluting their soul and improving their body.
 
-The target gains \arabic{spelllevel} points + the caster's Intelligence Bonus to add to Strength or Speed.
+\spell{Brawn-Form}{Instant}{Medicine}{The target grows massive, gaining $Lv$ points in the highest of their Strength or Speed}
+
+The caster pulls out the target's inner beast, polluting their soul and improving their body.
+
+The target slowly gains a number of points added to their Speed or Strength (whichever is higher) equal to the spell's level.
 Each point so gained reduces the target's Intelligence \emph{and} Charisma.
 This Charisma deficit also reduces the target's Fate Points.
 
-The targets gain only 1 Attribute point per round (at the end of each round) as muscle-mass slowly grows, but lose their Charisma instantly.
-Targets who reach 0 Charisma begin to look obviously unnatural.
+These points do not add immediately.
+Instead, the target must each a full meal for every point added (each one further reducing both Intelligence and Charisma).
+Targets who reach 0 Charisma begin to look obviously unnatural, and have trouble speaking.
+
+Intelligence and Charisma penalties cannot go below -5 each, so anyone who cannot `pay' for the Attribute increases by lowering the other Attributes simply stops gaining Attributes.
 
 Characters who gain more than a single point of Strength break out of their armour, taking 1 point of Damage for each level of DR the armour provided.
 
-This spell does not stack.
+This spell does not stack Attribute Bonuses -- casting the spell to increase a target's Strength multiple times will do nothing.
 Only the highest bonus counts.
 
-The power in the spell recedes once the target stops eating.
-Anyone fasting for the same length of time as they have been a nura reverts to their natural form.
-Of course in the case of those who have been nura for a month, a cure becomes impossible.
-In the case of those turned into nura without a viable food source nearby, they simply become racked with hunger.
+\paragraph{Duration}
+is a finicky thing with nuramancy.
+While the spell is instant, the sickness remains in effect as long as the target continues to feed.
+
+\paragraph{To cure the target,}
+they must be made to starve for the same time the spell has been in effect.
 \label{nura_recovery}
 
-\enhancement{1}{Grotesque}{Gain an additional Attribute point}
-The target gains an additional Attribute point, to go towards Strength or Speed, which also lowers both Intelligence and Charisma.
-
-\enhancement{1}{Bestial}{The spell can now target animals}
-
-The spell now allows small animals to grow to being as large as a man.
-Slugs, spiders, crabs, or anything else grow to a dangerous size, and gain the Attributes to match.
-For exact traits from various animals, see the individual bestial entry.
+Of course, those not afflicted by \textit{Hunger Pains} (above) until the end of the scene, at which point the spell's effects dissipate.
 
 \spelllevel
-\spell{Demonic Form}{Instant}{Xenomology}{The caster can use their spheres as permanent abilities}
 
-This functions as above, plus the ability to grant innate abilities.  The caster can implant a spell inside any nura creature at the cost of a number of ability points equal to the spell's level.  The creature gains a number of natural Mana Points equal to the spell's level, which can only be spent on these in-built nura spells.
+\spell{Ultra-Form}{Instant}{Caving}{The target gains Lv bonus to the lower of Strength/ Speed}
 
-\begin{exampletext}
+The nura ultra-form functions exactly the same as Brawn-Form (above), but raises the \emph{lower} of the target's Strength or Speed.
+As before, this increase must be paid for in \emph{both} Charisma and Intelligence, neither of which can reduce to less than -5.
 
-For example, one nuramancer has Intelligence +2, Saurecanta 5 and Invocation 3.
-He turns a nearby dog into a rabid hell-hound which shoots fireballs.
-The dog's Strength is -2 and its speed is +2.
-The nuramancer has 7 points to spend in total.
-The first is used to bring the dog's Strength up to 0.
-Three more points are used to grant the dog a third-level Invocation spell -- it can now bark fire at its opponents, dealing $2D6+2$ Damage (as per the nuramancer's would-be Damage for the spell).
-The last three points are used to bring the dog's Strength up to +3.
+\spelllevel
 
-The dog now has +3 Strength, +2 Speed, and has 3 MP to cast spells.
+\spell{Hell-Hound}{Instant}{Caving/ Seafaring/ Wyldcrafting}{An animal becomes monstrous, and has Lv + Int points divided between Strength and Speed}
 
-\end{exampletext}
+This spell targets any animal, making it grow monstrously large.
+Wolves turn into hyperactive hell-hounds, horses become strange, twisted things with muscular torsos, and long, spider-like legs, and even common slugs can gain grow to monstrous size.
 
-Creatures can regenerate up to three of their internal MP only by gorging upon food.  A complete meal is equal to 1MP.
+Land-creatures (such as deer) require the Wyldcrafting Skill, sea-creatures use the Seafaring Skill, et c.
+
+Firstly, if the animal's Strength or Speed were below 0, they raise to 0.
+Secondly, the animal gains a number of points to divide between Strength and Speed equal to the spell's level plus the caster's Intelligence Bonus.
 
 \end{multicols}
 
 \section{Cursed Items}
-\index{Cursed Items}
+\index{Saurecanta Items}
 
 \begin{multicols}{2}
 
-\magicitem{Ogre Dust}{Brawnform}{Saurecanta}{1 Scene}{Pocket Spell}{3}{4}\label{ogredust}
+\magicitem{Birthday Cake}{Ultra-Form}{Saurecanta}{Instant}{Pocket Spell}{3}{3}
+\label{birthdayCake}
+
+This massive cake gifts the target with +2 to Speed or Strength (whichever is lower), and reduces their Intelligence and Charisma by -2.
+
+Of course the target may well stop eating once the spell takes effect, but not notice for a moment (it's a really good cake).
+Of course anyone around them will notice instantly.
+
+\magicitem{Ogre Dust}{Hunger Pains, Brawn-Form}{Saurecanta}{1 Scene}{Pocket Spell}{3}{3}\label{ogredust}
 
 The dust, made from ground poppy-seeds, transforms the target into a nura creature.
-They lose 4 points in Strength and Charisma, while also gaining 4 points in Strength.
-If wearing armour, each point of DR inflicts a single point of Damage.
 
-\magicitem{Spider Skull}{Bestial Brawnform}{Saurecanta}{Instant}{Talisman}{4}{6}\label{spiderskull}
+They are instantly afflicted with both \textit{Hunger Pains} and \textit{Brawn-Form}.
+The target rolls Wits + Empathy, TN 10.
+If they eat, they lose 3 points in Intelligence and Charisma, while also gaining 3 points in Strength or Speed (whichever is higher), over the course of their meals.
+
+\magicitem{Spider Skull}{Brawn-Form}{Saurecanta}{Instant}{Talisman}{4}{6}\label{spiderskull}
 
 This sheep's skull makes an inviting home for any spider, but any spider which inhabits it grows to become a nura spider within three rounds.
+\footnote{See \autopageref{nura_spider}.}
 The item could work on any animal small enough to fit inside and make a home.
-
-\magicitem{Siege Breaker}{Slime}{Saurecanta}{Continuous}{Talisman}{5}{3}
-
-This banner of war, once planted, turns all water, beer, or other drinkable materials in the surrounding 5 areas to slime.
-The banner has been taken underground, but was known to be a potent weapon, which the nura used to poison a town's water supplies from outside.
 
 \end{multicols}
