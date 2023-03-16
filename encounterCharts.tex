@@ -843,3 +843,109 @@
   \end{nametable}
   \end{figure*}
 }
+
+\newcommand\encNura{
+  \begin{figure*}[t!]
+  \iftoggle{bestiarychapter}{
+    \begin{nametable}[c||LLLLLLLL,fontupper=\small,]{Nura Encounters}
+    \textbf{Rolls} & \textbf{< 0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} \\
+  }{
+    \begin{nametable}[c||LLLLLL,fontupper=\small,]{Nura Encounters}
+    \label{encNura}
+    \textbf{Rolls} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\
+  }
+  \hline
+  \hline
+
+  \textbf{6}
+    \iftoggle{bestiarychapter}{
+      & Cliff
+    }{}
+    & \N\A\ Nura Spider
+    & \N\E\D\ Nuramancer with $1D6+6$ Hobgoblins and $1D6$ Ghouls
+    & \N\E\ \iftoggle{bestiarychapter}{Wooden shack town}{Abandoned Village} with $1D6 \times 5$ Goblins
+    & \N\A\ $1D6$ Nura Spiders
+    & \N\E\ Nuramancer with $1D6+6$ Hobgoblins
+    & \N\E\ $1D6$ Nuramancers
+    \iftoggle{bestiarychapter}{
+      & \N\ Mana Sink
+    }{}
+    \\
+  \textbf{5}
+    \iftoggle{bestiarychapter}{
+      & Sheer wall
+    }{}
+    & \N\E\ $1D6+2$ Hobgoblins
+    & \N\E\ $1D6+7$ Hobgoblins
+    & \N\E\ $1D6\times 3$ Hobgoblins
+    & \N\E\ $1D6+7$ Hobgoblins
+    & \N\E\ $2D6\times 2$ Hobgoblins
+    & \N\E\ $2D6 \times 4$ Hobgoblins
+    \iftoggle{bestiarychapter}{
+      & \N\E\ $2D6$ Armoured Hobgoblins
+    }{}
+    \\
+  \textbf{4}
+    \iftoggle{bestiarychapter}{
+      & Sheer wall
+    }{}
+    & \N\E\ $1D6$ Ogres
+    & \N\E\ \iftoggle{bestiarychapter}{Garden guarded by}{Abandoned village with} $1D6 \times 2$ Ogres
+    & \N\E\ $1D6 + 6$ Undead Ogres
+    & \N\E\ $1D6 \times 2$ Ogres
+    & \N\D\ $1D6 + 6$ Undead Ogres
+    & \N\E\ $1D6 \times 3$ Ogres
+    \iftoggle{bestiarychapter}{
+      & \N\E\ $1D6$ Nura Goblins
+    }{}
+    \\
+  \textbf{3}
+    \iftoggle{bestiarychapter}{
+      & Cliff
+    }{}
+    & \N\A\ Nura Cat
+    & \N\A\ Nura Horse
+    & \N\D\ $1D6$ Ghasts
+    & \N\E\D\ Nuramancer leading $1D6 \times 3$ Human Ghouls
+    & \N\D\ $1D6 + 4$ \iftoggle{bestiarychapter}{Hobgoblin}{Human} Ghasts
+    & \N\E\ Lava man
+    \iftoggle{bestiarychapter}{
+      & Crumbling citadel walls
+    }{}
+    \\
+  \textbf{2}
+    \iftoggle{bestiarychapter}{
+      & Sheer Wall
+    }{}
+    & \N\E\ $1D6+6$ Goblins
+    & \N\E\ $1D6+8$ Goblins
+    & \N\D\ $1D6 \times 2$ Undead Hobgoblins
+    & \N\E\ $1D6$ Goblins leading $1D6 \times 2$ Ogres
+    & \N\E\D\ Nuramancer leading $1D6 \times 2+10$ Undead Hobgoblins
+    & \N\E\ $1D6$ Goblins leading $2D6 \times 2$ Ogres
+    \iftoggle{bestiarychapter}{
+      & \N\E\ $4D6$ Ogres repairing a wall
+    }{}
+    \\
+  \textbf{1}
+    \iftoggle{bestiarychapter}{
+      & Magma Stream
+      & Rocky Rain
+      & \N\E\ Lava Man
+      & \N\ Garden
+      & \N\ Acidic Tree
+      & Garden
+      & Garden
+      & \N\E\ $1D6$ Goblin nuramancers
+    }{
+      & \N\A\ $1D6\times 5$ Nura Slugs
+      & \N\A\ $1D6 + 4$ Nura Wolves
+      & \N\E\A\ $1D6 +4$ Goblins riding Nura Wolves
+      & \N\A\ $1D6 + 4$ Nura Horses
+      & \N\D\ $1D6 \times 2$ Human Ghasts
+      & \N\A\E\ $1D6 + 6$ Hobgoblins riding Nura Horses
+    }
+    \\
+  \end{nametable}
+  \end{figure*}
+}
