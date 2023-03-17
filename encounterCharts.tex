@@ -793,51 +793,51 @@
   \hline
   \hline
   \textbf{6}
-  & \textbf{Creature}
+  & \textbf{Creature}, \fbox{Only up $\Uparrow$}
   & Random location $\longleftrightarrow\hspace{-1.2em}\updownarrow$
   & \textbf{Creature}
   & Portal to Nura Realm
+  & Random location $\longleftrightarrow\hspace{-1.2em}\updownarrow$
   & \textbf{Creature}
-  & Open right $\rightarrow$
   \\
   \textbf{5}
-  & \textbf{Creature}
-  & \textbf{Creature} \& sudden shift
-  & Darkness
+  & \textbf{Creature}, Open up $\uparrow$
   & Sudden shift
-  & Darkness
+  & Darkness, \fbox{Only right $\Rightarrow$}
+  & Gem-seam wall, Sudden shift
+  & Gem-seam wall, Darkness
   & \textbf{Creature}
   \\
   \textbf{4}
-  & \textbf{Creature}
+  & Darkness and fungus
   & Slope down
   & \textbf{2 Creatures}
-  & Fungal garden
+  & Fungal~garden, Open~up $\uparrow$
   & \textbf{Creature}
   & Sudden shift
     \\
   \textbf{3}
-  & Slope up
+  & Slope up, Open right $\rightarrow$
   & \E\ Path to top
-  & Slope down
-  & \textbf{Creature}
+  & Slope down, Open right $\rightarrow$
   & Random location $\longleftrightarrow\hspace{-1.2em}\updownarrow$
-  & \fbox{Only up $\Uparrow$}
+  & \textbf{Creature}
+  & \fbox{Only up $\Uparrow$}, \textbf{2~Creatures}
   \\
   \textbf{2}
  & \textbf{Creature}
- & Slope up
- & Sudden shift
- & Darkness and fungus
+ & Slope up, Open~right $\rightarrow$
+ & Sudden shift, Open~up $\uparrow$
+ & \textbf{Creature}
  & \textbf{2 Creatures}
- & Gem-seam wall
+ & Gem-seam wall, Open~right $\rightarrow$
   \\
   \textbf{1}
   & Portal to Desert Realm
   & \textbf{Creature}
-  & \textbf{Open up $\uparrow$}
+  & Open up $\uparrow$
   & Gem-seam wall
-  & \fbox{Only right $\Rightarrow$}
+  & Fungal garden, \fbox{Only right $\Rightarrow$}
   & Darkness
   \\
   \end{nametable}
@@ -850,7 +850,8 @@
 \newcommand\encNura{
   \begin{figure*}[t!]
   \iftoggle{bestiarychapter}{
-    \begin{nametable}[c||Y|YY|YYY|Y|Y,fontupper=\small,]{Nura Encounters}
+    \begin{nametable}[c||Y|YY|YYY|Y|Y,fontupper=\footnotesize,]{Nura Encounters}
+    \label{encNuraBig}
     & \textbf{Dark} & \textbf{Plains} & \textbf{Plains} & \textbf{Plains, Citadel} & \textbf{Plains, Citadel} & \textbf{Plains, Citadel} & \textbf{Plains, Citadel} & \textbf{Citadel} \\
     \textbf{Rolls} & \textbf{< 0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7, 8} \\
   }{
@@ -864,41 +865,49 @@
   \textbf{6}
     \iftoggle{bestiarychapter}{
       & Cliff
+      & \N\A\ Nura Spider %%
+      & \N\E\ Wooden shack town with $1D6 \times 6$ Goblins
     }{
       & \N\E\ $1D6$ Ogres
+      & \N\E\ Abandoned Village with $1D6 \times 5$ Goblins
+      & \N\E\ Nuramancer with $1D6+6$ Hobgoblins %%
     }
-    & \N\A\ $1D6$ Nura Spiders
-    & \N\E\ \iftoggle{bestiarychapter}{Wooden shack town}{Abandoned Village} with $1D6 \times 5$ Goblins
-    & \N\E\ Nuramancer with $1D6+6$ Hobgoblins
+    & \N\E\ Nuramancer with $1D6+6$ Hobgoblins %%
     & \N\E\D\ Nuramancer with $1D6+6$ Hobgoblins and $1D6$ Ghouls
     & \N\E\ $1D6$ Nuramancers
     \iftoggle{bestiarychapter}{
-      & \N\ Goblin bard
+      & \N\ Goblin bard %%
       & \N\ Mana Sink
     }{}
     \\
   \textbf{5}
     \iftoggle{bestiarychapter}{
       & Wall
-    }{}
-    & Rocky Rain
-    & \N\A\ Nura Horse
+      & \N\A\ $1D6$ Nura Spiders
+    }{
+      & \N\E\ Recently transformed ogre
+      & \N\E\ $1D6$ Ogres
+    }
+    & \N\E\ $1D6+8$ Goblins %%
     & \N\E\ $1D6\times 3$ Hobgoblins
     & \N\E\ $1D6+7$ Hobgoblins
     & \N\E\ $2D6\times 2$ Hobgoblins
-    & \N\E\ $2D6 \times 4$ Hobgoblins
     \iftoggle{bestiarychapter}{
+      & \N\E\ $2D6 \times 4$ Hobgoblins %%
       & \N\E\ $2D6$ Armoured Hobgoblins
     }{}
     \\
   \textbf{4}
     \iftoggle{bestiarychapter}{
       & Wall
-    }{}
-    & \N\A\ Nura Spider
-    & \N\E\ \iftoggle{bestiarychapter}{Garden}{Abandoned village with $1D6 \times 2$ Ogres attempting to grow farm}
+      & Rocky Rain
+      & Garden
+    }{
+      & \N\E\ $1D6+2$ Goblins trying to burn a village
+      & \N\E\ Abandoned village with $1D6 \times 2$ Ogres attempting to farm
+    }
     & \N\D\E\ $1D6$ Ogre Ghasts
-    & \N\E\ $1D6 \times 2$ Ogres
+    & \N\E\ $1D6 \times 2$ Ogres %%
     & \N\D\ $1D6 + 6$ Undead Ogres
     & \N\E\ $1D6 \times 3$ Ogres
     \iftoggle{bestiarychapter}{
@@ -909,13 +918,15 @@
     \iftoggle{bestiarychapter}{
       & Cliff
       & Garden
-    }{}
-    & \N\A\ Nura Cat
+      & Garden
+    }{
+      & \N\A\ Nura Cat
+    }
     & \N\E\ $1D6+7$ Hobgoblins
-    & \N\E\ Lava man
     & \N\D\ $1D6 + 4$ Hobgoblin Ghouls
+    & \N\E\ Lava man %%
     \iftoggle{bestiarychapter}{
-      & Portal to the realm of Shifting Corridors
+      & \N\E\ $1D6$ Goblins leading $2D6 \times 2$ Ogres %%
       & Crumbling citadel walls
     }{
       & \N\D\ $1D6$ Ghasts
@@ -925,30 +936,34 @@
   \textbf{2}
     \iftoggle{bestiarychapter}{
       & Wall
-    }{}
-    & \N\E\ $1D6+6$ Goblins
-    & \N\E\ $1D6+8$ Goblins
+      & \N\E\ $1D6+6$ Goblins %%
+    }{
+      & \N\A\ Nura Horse
+      & \N\E\ $2D6$ Goblins chasing livestock
+    }
+    & \N\D\ $1D6 \times 2$ Hobgoblin Ghouls
     & \N\D\ $1D6 \times 2$ Hobgoblin Ghouls
     & \N\E\ $1D6$ Goblins leading $1D6 \times 2$ Ogres
-    & \N\E\D\ Nuramancer leading $1D6 \times 2+10$ Hobgoblin Ghouls
-    & \N\E\ $1D6$ Goblins leading $2D6 \times 2$ Ogres
+    & \N\E\D\ Nuramancer leading $1D6 \times 2+10$ Hobgoblin Ghouls %%
     \iftoggle{bestiarychapter}{
+      & Portal to the realm of Shifting Corridors
       & \N\E\ $4D6$ Ogres repairing a wall
-    }{}
+    }{
+    }
     \\
   \textbf{1}
     \iftoggle{bestiarychapter}{
       & Magma River
       & \N\ Acidic Tree
-      & Garden
-      & \N\E\ $1D6+2$ Hobgoblins
+      & \N\A\ $1D6 + 4$ Nura Wolves %%
+      & \N\E\ $1D6+4$ Hobgoblins
       & \N\ Mana Sink
       & \N\E\ Raiding party
       & \N\E\ Lava Man
       & \N\E\ $1D6$ Goblin nuramancers
     }{
       & \N\A\ $1D6\times 5$ Nura Slugs
-      & \N\A\ $1D6 + 4$ Nura Wolves
+      & \N\A\ Nura Cat
       & \N\E\A\ $1D6 +4$ Goblins riding Nura Wolves
       & \N\A\ $1D6 + 4$ Nura Horses
       & \E\D\ $1D6 \times 2$ Human Ghasts
