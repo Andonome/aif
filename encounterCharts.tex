@@ -750,15 +750,15 @@
     & Crystal flower
     & Stone structure with magical portal to \gls{outerKingdom} desert.
     & \E\ Garden of $2D6$ rockmen, with $2D6$ crystal flowers
-    & $1D6$ serene archmages
+    & \E\ $1D6$ serene archmages
     & \E\ $1D6$ Rockmen
     \\
   \textbf{5}
-    & Stone structure with a magical gate to the Realm of Shifting Corridors
+    & Stone structure
     & Garden of $1D6$ crystal flowers
     & \E\ Curious dragon
     & Portal to Realm of Shifting Corridors
-    & \E\ Aggressive archmage
+    & Roll twice more
     & Stone structure
     \\
   \textbf{3, 4}
@@ -766,10 +766,10 @@
     & \E\ Archmage flying above
     & \E\ Rockman
     & Sandstorm
-    & Roll twice more
+    & \E\ Aggressive archmage
     & Roll twice more
     \\
-  \textbf{1, 2}
+  \textbf{< 2}
   \Repeat{6}{& Nothing}
   \\
   \end{nametable}
@@ -850,7 +850,8 @@
 \newcommand\encNura{
   \begin{figure*}[t!]
   \iftoggle{bestiarychapter}{
-    \begin{nametable}[c||LLLLLLLL,fontupper=\small,]{Nura Encounters}
+    \begin{nametable}[c||Y|YY|YYY|Y|Y,fontupper=\small,]{Nura Encounters}
+    & \textbf{Dark} & \textbf{Plains} & \textbf{Plains} & \textbf{Plains, Citadel} & \textbf{Plains, Citadel} & \textbf{Plains, Citadel} & \textbf{Plains, Citadel} & \textbf{Citadel} \\
     \textbf{Rolls} & \textbf{< 0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7, 8} \\
   }{
     \begin{nametable}[c||LLLLLL,fontupper=\small,]{Nura Encounters}
@@ -864,12 +865,12 @@
     \iftoggle{bestiarychapter}{
       & Cliff
     }{
-      & \N\E\D\ Nuramancer with $1D6+6$ Hobgoblins and $1D6$ Ghouls
+      & \N\E\ $1D6$ Ogres
     }
-    & \N\A\ Nura Spider
-    & \N\E\ \iftoggle{bestiarychapter}{Wooden shack town}{Abandoned Village} with $1D6 \times 5$ Goblins
     & \N\A\ $1D6$ Nura Spiders
+    & \N\E\ \iftoggle{bestiarychapter}{Wooden shack town}{Abandoned Village} with $1D6 \times 5$ Goblins
     & \N\E\ Nuramancer with $1D6+6$ Hobgoblins
+    & \N\E\D\ Nuramancer with $1D6+6$ Hobgoblins and $1D6$ Ghouls
     & \N\E\ $1D6$ Nuramancers
     \iftoggle{bestiarychapter}{
       & \N\ Goblin bard
@@ -880,8 +881,8 @@
     \iftoggle{bestiarychapter}{
       & Wall
     }{}
-    & \N\E\ $1D6+2$ Hobgoblins
-    & \N\E\ $1D6+7$ Hobgoblins
+    & Rocky Rain
+    & \N\A\ Nura Horse
     & \N\E\ $1D6\times 3$ Hobgoblins
     & \N\E\ $1D6+7$ Hobgoblins
     & \N\E\ $2D6\times 2$ Hobgoblins
@@ -894,7 +895,7 @@
     \iftoggle{bestiarychapter}{
       & Wall
     }{}
-    & \N\E\ $1D6$ Ogres
+    & \N\A\ Nura Spider
     & \N\E\ \iftoggle{bestiarychapter}{Garden}{Abandoned village with $1D6 \times 2$ Ogres attempting to grow farm}
     & \N\D\E\ $1D6$ Ogre Ghasts
     & \N\E\ $1D6 \times 2$ Ogres
@@ -907,13 +908,13 @@
   \textbf{3}
     \iftoggle{bestiarychapter}{
       & Cliff
+      & Garden
     }{}
     & \N\A\ Nura Cat
-    & \N\A\ Nura Horse
+    & \N\E\ $1D6+7$ Hobgoblins
     & \N\E\ Lava man
     & \N\D\ $1D6 + 4$ Hobgoblin Ghouls
     \iftoggle{bestiarychapter}{
-      & Garden
       & Portal to the realm of Shifting Corridors
       & Crumbling citadel walls
     }{
@@ -938,11 +939,11 @@
   \textbf{1}
     \iftoggle{bestiarychapter}{
       & Magma River
-      & \N\ Mana Sink
-      & Garden
-      & Rocky Rain
       & \N\ Acidic Tree
-      & Steamfall
+      & Garden
+      & \N\E\ $1D6+2$ Hobgoblins
+      & \N\ Mana Sink
+      & \N\E\ Raiding party
       & \N\E\ Lava Man
       & \N\E\ $1D6$ Goblin nuramancers
     }{
