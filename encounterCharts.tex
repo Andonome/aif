@@ -844,11 +844,14 @@
   \end{figure*}
 }
 
+% A single nura chart is used for above-ground raids, and the nura's homeworld, so blights will gradually change to look like where the nura come from.
+% However, the nura's home need some changes (such as additional areas), so the bestiary toggle serves to show what should only be present with the nura underground.
+
 \newcommand\encNura{
   \begin{figure*}[t!]
   \iftoggle{bestiarychapter}{
     \begin{nametable}[c||LLLLLLLL,fontupper=\small,]{Nura Encounters}
-    \textbf{Rolls} & \textbf{< 0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} \\
+    \textbf{Rolls} & \textbf{< 0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7, 8} \\
   }{
     \begin{nametable}[c||LLLLLL,fontupper=\small,]{Nura Encounters}
     \label{encNura}
@@ -860,20 +863,22 @@
   \textbf{6}
     \iftoggle{bestiarychapter}{
       & Cliff
-    }{}
+    }{
+      & \N\E\D\ Nuramancer with $1D6+6$ Hobgoblins and $1D6$ Ghouls
+    }
     & \N\A\ Nura Spider
-    & \N\E\D\ Nuramancer with $1D6+6$ Hobgoblins and $1D6$ Ghouls
     & \N\E\ \iftoggle{bestiarychapter}{Wooden shack town}{Abandoned Village} with $1D6 \times 5$ Goblins
     & \N\A\ $1D6$ Nura Spiders
     & \N\E\ Nuramancer with $1D6+6$ Hobgoblins
     & \N\E\ $1D6$ Nuramancers
     \iftoggle{bestiarychapter}{
       & \N\ Mana Sink
+      & \N\ Goblin bard
     }{}
     \\
   \textbf{5}
     \iftoggle{bestiarychapter}{
-      & Sheer wall
+      & Wall
     }{}
     & \N\E\ $1D6+2$ Hobgoblins
     & \N\E\ $1D6+7$ Hobgoblins
@@ -887,16 +892,16 @@
     \\
   \textbf{4}
     \iftoggle{bestiarychapter}{
-      & Sheer wall
+      & Wall
     }{}
     & \N\E\ $1D6$ Ogres
-    & \N\E\ \iftoggle{bestiarychapter}{Garden guarded by}{Abandoned village with} $1D6 \times 2$ Ogres
-    & \N\E\ $1D6 + 6$ Undead Ogres
+    & \N\E\ \iftoggle{bestiarychapter}{Garden}{Abandoned village with $1D6 \times 2$ Ogres attempting to grow farm}
+    & \N\D\E\ $1D6$ Ogre Ghasts
     & \N\E\ $1D6 \times 2$ Ogres
     & \N\D\ $1D6 + 6$ Undead Ogres
     & \N\E\ $1D6 \times 3$ Ogres
     \iftoggle{bestiarychapter}{
-      & \N\E\ $1D6$ Nura Goblins
+      & \N\E\ $1D6$ Goblins
     }{}
     \\
   \textbf{3}
@@ -905,23 +910,26 @@
     }{}
     & \N\A\ Nura Cat
     & \N\A\ Nura Horse
-    & \N\D\ $1D6$ Ghasts
-    & \N\E\D\ Nuramancer leading $1D6 \times 3$ Human Ghouls
-    & \N\D\ $1D6 + 4$ \iftoggle{bestiarychapter}{Hobgoblin}{Human} Ghasts
     & \N\E\ Lava man
+    & \N\D\ $1D6 + 4$ \iftoggle{bestiarychapter}{Hobgoblin}{Human} Ghasts
     \iftoggle{bestiarychapter}{
+      & Garden
+      & Portal to the realm of Shifting Corridors
       & Crumbling citadel walls
-    }{}
+    }{
+      & \N\D\ $1D6$ Ghasts
+      & \N\E\D\ Nuramancer leading $1D6 \times 3$ Human Ghouls
+    }
     \\
   \textbf{2}
     \iftoggle{bestiarychapter}{
-      & Sheer Wall
+      & Wall
     }{}
     & \N\E\ $1D6+6$ Goblins
     & \N\E\ $1D6+8$ Goblins
-    & \N\D\ $1D6 \times 2$ Undead Hobgoblins
+    & \N\D\ $1D6 \times 2$ Hobgoblin Ghouls
     & \N\E\ $1D6$ Goblins leading $1D6 \times 2$ Ogres
-    & \N\E\D\ Nuramancer leading $1D6 \times 2+10$ Undead Hobgoblins
+    & \N\E\D\ Nuramancer leading $1D6 \times 2+10$ Hobgoblin Ghouls
     & \N\E\ $1D6$ Goblins leading $2D6 \times 2$ Ogres
     \iftoggle{bestiarychapter}{
       & \N\E\ $4D6$ Ogres repairing a wall
@@ -929,13 +937,13 @@
     \\
   \textbf{1}
     \iftoggle{bestiarychapter}{
-      & Magma Stream
+      & Magma River
+      & \N\ Mana Sink
+      & Garden
       & Rocky Rain
-      & \N\E\ Lava Man
-      & \N\ Garden
       & \N\ Acidic Tree
-      & Garden
-      & Garden
+      & Steamfall
+      & \N\E\ Lava Man
       & \N\E\ $1D6$ Goblin nuramancers
     }{
       & \N\A\ $1D6\times 5$ Nura Slugs
