@@ -8,20 +8,27 @@ However, if you're interested in how I've arrived at the XP values here, they ar
 
 The broad idea is that XP should be proportional to how much of a challenge an antagonist presents.
 Additionally, some stats work better together than others.
-A creature which can reliably hit people but cannot do much damage is less of a threat than a creature which can strike well \emph{and} deal a lot of Damage.
-We calculate attack proficiency by the Damage (from both weapon and Strength), then multiply that by the AP twice.
-Then `heft' (a weapon's AP cost to swing) negates some of the utility of the AP.
+A creature which can reliably hit people but cannot do much damage is less of a threat than a creature which can strike well \emph{and} deal a lot of Damage, so Attack and Damage are multiplied together.
 
-Defence is calculated by multiplying HP by the DR + 3.
-The DR receives this bonus so that it's never 0, and so that it doesn't swing the result too much.
+Spellcasting creatures have their ammunition measured (\glspl{mp}), and if that's higher than their Speed, it gets added instead, and everything summed.
+Creatures which rely on their speed have their weapon's \gls{ap} cost negated before this point.
 
-Finally, with Speed and Strength both taken into account twice already (HP derive from Strength), we add those two together, and multiply the result by the attack bonus +3.
+Finally, the ability to kill a creature relies on hitting it (attack returns!), the \gls{dr}, and \glspl{hp}.
 
-The result is that if a creature has a lot of HP, adding some more DR will increase the challenge considerably, but adding more Damage will not make the creature much more dangerous if it cannot hit properly.
+It's not an impeccable measure, but it's been working well enough so far.
 
 \end{multicols}
 
 \begin{equation}
-\frac{((Damage + 3 \times AP^2 - Heft) + ((DR + 3) * HP) \times (Dex + Combat + 4)) - 100}{160}
+\frac{
+    \begin{array}[b]{lc}
+        & Att \times Dam \\
+      + & \max( (Spd - AP cost), MP )^2 \\
+      + & (Att - 7 + DR) \times HP\\
+      - & 30
+    \end{array}
+  }{
+    13
+  }
 \end{equation}
 
