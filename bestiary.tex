@@ -580,7 +580,7 @@ Destroying it of course just releases more gas, but at least potential victims h
 
 \end{multicols}
 
-\section[Humanoids]{Humanoids \E}
+\section[Sentient Creatures]{Sentient Creatures \E}
 
 \begin{multicols}{2}
 
@@ -712,19 +712,21 @@ Some few can be bargained with, but it's famously difficult to bargain with crea
 \begin{itemize}
 
   \item
-  If any character can be heard singing, it gifts them a spell-song for the remainder of the adventure -- perhaps something which grants Fate Points, or a spell to calm animals.
+  If any character can be heard singing, he gifts them a spell-song for the remainder of the adventure -- perhaps something which grants Fate Points, or a spell to calm animals.
   \item
   The dryad, unhappy with the party encroaching upon his territory, sings a \textit{Forest's Call} spell upon a PC.%
-  \iftoggle{core}{
-  \footnote{\nameref{forestsCall}.  Core rules, page \pageref{forestsCall}.}%
-  }{}
+  \exRef{core}{the core rules}{forestsCall}
   If approached, he flees, but always stays close to the party.
-  Once the forest encounters begin, the dryad begins polymorphing the party into animals.
+  Once the spell takes effect and animals attack the troupe, the dryad begins polymorphing the party into animals.
   \item
   The dryad follows the party through the forest, trying not to be seen.
-  It listens, and judges them, using all the spells it has to gain information about them.
-  If they seem like they're not a threat to the forest, it helps them with any encounters.
+  She listens, and judges them, using all the spells she has to gain information about them.
+  If they seem like they're not a threat to the forest, she helps them with any encounters.
   Otherwise, it uses whatever magics it has to curse them.
+  \item
+  Four bandits camped in a dryad's territory, so she summoned mist around them, and attacked them by surprise.
+
+  The party find her eaten a corpse while her pet bear sits beside her, eating another.
 
 \end{itemize}
 
@@ -790,7 +792,7 @@ Women usually take their children out on hunting missions to train them from an 
 
 \end{boxtext}
 
-\best{Shaman}
+\best[\E\Nl]{Shaman}
 \label{gnoll_shaman}
 
 Gnoll shamans typically follow Laiqu\"{e} or Qualm\"{e}.  They are a rarity in any gnoll society but always accorded respect when they are present.  They are not permitted to enter war councils but are also immune to all challenges except from other shamans.
@@ -906,11 +908,54 @@ The second are the horses.
 Traders, meanwhile, will often survive an encounter with brigands if they agree to abandon what they have and run along the road.
 
 \humansoldier[\npc{\E\Hu}{Brigand}]
+\label{brigand}
 
 Bandits, on the other hand, typically gather as many as they can to attack smaller groups, and extort traders' goods through intimidation.
 At other times, hunger drives them to extremes, and they end up attacking anything that looks like it might carry coin or food in its pockets.
 
 \humanfarmer[\npc{\E\Hu}{Bandit}]
+\label{bandit}
+
+\widePic{loh/dragon}
+
+\subsection[Dragons]{\E\ Dragons}
+\label{dragon}
+
+Dragons can be terrifying and extremely damaging but are generally considered to be divine creatures given their association with the sky.
+When they land on a farm there is precious little anyone can do but let them take it and hope that the dragon falls back into hibernation soon.
+Dragons spend a lot of time in underground realms or far off places inhabited by spirits, demons and semi-divine things of the other side.
+
+Dragons can reach up to sixty feet in length, though a more modest specimen is presented here.
+
+\paragraph{Natural Abilities:}
+Dragons' wings allow them to fly, using the Athletics Skill to move in the air instead of the ground.
+
+\paragraph{Ecology:} Dragons are generally solitary creatures, though people have nightmares of this situation changing constantly.
+Most of the time none are active in Fenestra, though an unknown number are presumed to sleep there in the Liberty region.
+They come from foreign lands and like to create fanciful tales of the places beyond in order to scare knights or irritate academics.
+It is said that older dragons sometimes transform themselves into humans and walk abroad in the land, pretending to be alchemists, bards, nobility or just whatever strikes their fancy.
+Rumours abound of their constant interference in politics among all races, though if half the rumours were true there would be more dragons than horses in Fenestra.
+
+The majority of dragons do not learn humanoid languages, but some few learn dwarvish or elvish.
+This has provided a lot of false hope to those trying to negotiate with dragons.
+
+\begin{boxtext}
+
+  As you start to approach, its golden eyes glitter, and you find yourself paralysed by some unearthly magical force.
+A moment later and fire explodes from its mouth, burning everyone in front of you.
+  A few survive just enough to start crawling away in retreat, while the dragon considers its next move.
+
+\end{boxtext}
+
+\paragraph{Encounters:} Most dragons encountered will be fast asleep.
+Sometimes they rest openly in a forest -- they have the rare claim to power that they can sleep in the open without any real fear from the world.
+In such cases, characters will simply need to retreat quietly.
+
+At other times, dragons may be seen taking back a recent kill -- perhaps a deer or a farmer's sheep.
+A few dragons take people back to their lair in order to learn about recent news or to learn about human languages.
+Once the dragon has learnt what it can, the person is often challenged to a game of riddles for their freedom.  
+
+\dragon
 
 \end{multicols}
 
@@ -1144,8 +1189,6 @@ They are well aware that they cannot run away from many creatures, so their best
 
 \pic{loh/goblin}
 
-\deepgoblin[\npc{\E\N}{Deep Goblin}]
-
 \best[\F\M\N]{Goblin Nuramancer}
 \label{goblinnuramancer}
 
@@ -1155,7 +1198,7 @@ These creatures often specialize in Necromancy, and raise powerful armies of gho
 
 \goblinnuramancer[\npc{\E\N}{Goblin Nuramancer}]
 
-\best{Hobgoblins}\label{hobgoblin}
+\best[\N\E]{Hobgoblins}\label{hobgoblin}
 
 Hobgoblins are twisted versions of dwarves, grown as large as a human.
 They have overly long ape-like arms and sloping foreheads.
@@ -1167,21 +1210,6 @@ Often their beards will turn stark white while their skin appears as mottled roc
 Hobgoblins deep underground fight, hunt for food, switch tribes, and fight some more.  They cannot make the complex equipment dwarves do, so they have to pick up weapons as they go.
 
 \pic{loh/hobgoblin}
-
-\deephobgoblin[\npc{\E\N}{Deep Hobgoblin}]
-\label{deep_hobgoblin}
-
-Deep goblins aren't intelligent creatures, but they're often the smartest creatures around.
-Most form little groups, but the smartest of goblins generally become tactical leaders for goblins or ogres.
-Some even learn a little necromancy, and raise little armies of the dead.
-
-\best[\F\M\N]{Undead Goblin}
-
-Just because a goblin's defeated, doesn't mean it's down.
-Goblin nuramancers will often raise the dead as a battle rages, although this can often go terribly wrong, as the dead don't much care whom they eat.
-A goblin soul is just as tasty as any other.
-
-\undeadgoblin[\npc{\D\N}{Undead Goblin}]
 
 \best[\F\M\N]{Ogre}
 \label{ogre}
@@ -1235,6 +1263,7 @@ They exist purely as a result of necromantic spells.
 They can take any number of forms and have varied Traits -- the following are presented just quick reference.
 
 \best[\D\E]{Demilich}\label{demilich}
+\index{Undead!Demilich}
 
 Any necromancer worth their salt eventually joins the dead, but never really dies.
 Demiliches are the first stages of a lich, as they ascend to become a machine of pure power, gathering undead forces, powerful spells, and a formidable lair.
@@ -1274,6 +1303,8 @@ They occasionally go on missions for more powerful corpses, such as strong human
 
 \best[\D]{Ghoul}
 \label{ghoul}
+\index{Undead!Human}
+
 Ghouls are the bread and butter of necromancers.
 When they first rise from the dead, they stumble clumsily, and chase after any living humanoid.
 With nobody nearby, some just stand there, and most wander aimlessly.
@@ -1300,6 +1331,7 @@ Since the undead are slow, they will generally attack when people are cornered, 
 
 \best[\D]{Ghast}
 \label{ghast}
+\index{Undead!Human Ghast}
 
 Such creatures are often masterworks created by a necromancer as a personal body-guard or the lead warrior in an army.
 
@@ -1332,107 +1364,6 @@ Ghasts under the control of a necromancer can plan admirably, and often pretend 
 
 Independent ghasts tend to stalk prey from afar, and will often not attack adventurers while they are strong.
 Instead, they continue stalking until other problems arise, and go for the kill if the travellers are ever wounded.
-
-\end{multicols}
-
-\section[Outsiders]{Outsiders \E}
-\index{Outsiders}
-\index{Portal Creatures}
-
-\begin{multicols}{2}
-
-\noindent
-These are the strange creatures which live in far away lands.  Only a handful of daring magic users have seen one in person, and only once in a few generations could one ever wander into Fenestra.
-
-\best[\E]{Rockmen}
-\label{rockman}
-
-These normally-gentle creatures seem to be made out of some kind of living rock, and when curled up on the ground can look like nothing but an oddly shaped boulder.
-They mainly enjoy sunbathing and will occasionally wake at the same time as another stone creature to speak with it.
-They cannot identify each other any more than others can, so they often talk to any large rocks in their environment on the basis that you just never know.
-Their language consists of very long sounds, lasting either one or five seconds long.
-A short conversation can last a few days.
-They have an abdomen, between two and eight limbs, and sensory organs, sometimes in a head, other times in a chest area.
-Their height is usually between six and ten feet tall.
-
-They are generally quite passive creatures, but have been known to become aggressive, especially when they find anything which is attempting to damage or change their landscape.
-
-\rockman
-
-\pic{loh/rockman}
-
-\best[\E]{Archmage}
-\label{archmage}
-
-Appearing as nothing more than a brain with tentacles, suspended in ectoplasmic gloop, these creatures are well known for their incredible magical abilities.
-They typically ignore anyone or anything around them until attacked, though they have been known to attack individuals within groups for reasons unknown.
-They attack always with spells -- their knowledge of magic seems unparalleled, although they have never shared it with anyone, as none can speak.
-
-Archmages are incredibly weak, physically, and entirely blind.
-They see only through the use of Force magic, and without their spells have a difficult time moving.
-
-\archmage
-
-\paragraph{Tactics:} Archmages cast standing spells on themselves which allow them to move quickly and protect themselves.
-An example set is given, where some MP is given up to make themselves into a mana stone which can cast both a Mage Armour spell to protect them (which is then kept alive continuously).
-They often cast the Levitation or Dancing Swords spell on themselves in order increase their Dexterity and Speed.
-This mana stone can also cast a Fireball, dealing $2D6+2$ Damage in a 6 square diameter.
-This leaves 15 MP in one store and a further 10 MP in their natural Mana point pool.
-When threatened, they typically use this natural mana to blow targets apart with invocation spells.
-
-\widePic{loh/dragon}
-
-\best[\E]{Dragon}\label{dragon}
-
-Dragons can be terrifying and extremely damaging but are generally considered to be divine creatures given their association with the sky.
-When they land on a farm there is precious little anyone can do but let them take it and hope that the dragon falls back into hibernation soon.
-Dragons spend a lot of time in underground realms or far off places inhabited by spirits, demons and semi-divine things of the other side.
-
-Dragons can reach up to sixty feet in length, though a more modest specimen is presented here.
-
-\paragraph{Natural Abilities:}
-Dragons' wings allow them to fly, using the Athletics Skill to move in the air instead of the ground.
-
-\paragraph{Ecology:} Dragons are generally solitary creatures, though people have nightmares of this situation changing constantly.
-Most of the time none are active in Fenestra, though an unknown number are presumed to sleep there in the Liberty region.
-They come from foreign lands and like to create fanciful tales of the places beyond in order to scare knights or irritate academics.
-It is said that older dragons sometimes transform themselves into humans and walk abroad in the land, pretending to be alchemists, bards, nobility or just whatever strikes their fancy.
-Rumours abound of their constant interference in politics among all races, though if half the rumours were true there would be more dragons than horses in Fenestra.
-
-The majority of dragons do not learn humanoid languages, but some few learn dwarvish or elvish.
-This has provided a lot of false hope to those trying to negotiate with dragons.
-
-\begin{boxtext}
-
-  As you start to approach, its golden eyes glitter, and you find yourself paralysed by some unearthly magical force.
-A moment later and fire explodes from its mouth, burning everyone in front of you.
-  A few survive just enough to start crawling away in retreat, while the dragon considers its next move.
-
-\end{boxtext}
-
-\paragraph{Encounters:} Most dragons encountered will be fast asleep.
-Sometimes they rest openly in a forest -- they have the rare claim to power that they can sleep in the open without any real fear from the world.
-In such cases, characters will simply need to retreat quietly.
-
-At other times, dragons may be seen taking back a recent kill -- perhaps a deer or a farmer's sheep.
-A few dragons take people back to their lair in order to learn about recent news or to learn about human languages.
-Once the dragon has learnt what it can, the person is often challenged to a game of riddles for their freedom.  
-
-\dragon
-
-\best[\E]{Lavaman}
-\label{lavaman}
-
-Composed of hot rocks with patches of pure lava, these creatures are nearly unstoppable opponents.  Not only can they burn people to a cinder by grabbing them, sticking a weapon inside them can be as damaging to the weapon as it can be to the creature.
-
-\paragraph{Natural Abilities:} Lava men are so hot that contact with them, as when grappling, inflicts $1D6$ Damage per round, in addition to any other Damage (this Damage has DR applied to it separately).
-Any weapon causing more than 8 Damage and an odd number of Damage (e.g. 9, 11 or 13 Damage) is stuck inside the creature and each of its stats except Weight reduces by 1.
-For example a longsword inflicting 9 Damage would stick into the creature for a moment and come out melted -- it would thereafter have the stats `Damage +0, Initiative +0, Evasion +2'.
-
-\paragraph{Encounters:} These creatures never suffer from heat, and tend to hide in lava pools, waiting to grab people.
-At other times, they wander rocky areas and find dead ends, then wait until newcomers arrive, and try to chase them down the dead ends.
-
-\lavaman
 
 \end{multicols}
 

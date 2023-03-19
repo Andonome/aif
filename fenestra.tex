@@ -163,7 +163,6 @@ The continent remains wild, and only little blotches of civilization exist, with
 
 These regions of outer darkness, placed on maps using guesswork and rumours, form the larger part of the world.
 
-
 \end{multicols}
 
 \section{Regions}
@@ -171,7 +170,11 @@ These regions of outer darkness, placed on maps using guesswork and rumours, for
 
 \begin{multicols}{2}
 
-\widePic{Tom_Prante/winter}
+\widePic[t]{Tom_Prante/winter}
+
+\iftoggle{players}{}{
+  \encEastlake
+}
 
 \noindent
 Fenestra contains seven regions, each of which have a slightly different ecology and different populations.
@@ -205,6 +208,36 @@ Farther North, snow-elves live in icy caverns or build castles made partly of ic
 They hunt with a combination of spears and enchantments and occasionally battle with gnoll incursions from Whiteplains.
 Humans typically count these areas as beyond the \gls{edge}, despite the elven population.
 
+\iftoggle{players}{
+  \subsubsection{Walking in the Snow}
+  Eastlake's snow is a menace to anyone trying to travel, but it's never worse than when it melts.
+  The warmer seasons bring floods along all rivers, and at the base of every mountain, which just about covers all of Eastlake.
+
+  Throughout the more normal weather, you might be lucky enough to encounter a vegetable trader from some other kingd\ldots er, `region'.
+  Less lucky travellers might be able to trade with one of the local snow elves for whatever they happen to have caught.
+  \emph{Really} unlucky travellers might just be caught by those snow elves.
+  They say the older ones sometimes eat people or dwarves.
+  \footnote{They never eat gnomes. Maybe gnomes taste really bad?}
+
+}{
+  \subsection{Encounters}
+  Despite being a dangerous area, Eastlake's slow climate means danger does not swing around very often.
+
+  \begin{nametable}{General Tempo Chart}
+    \textbf{Roll} & \textbf{Result} \\\hline
+    6 & Encounter, and reroll! \\
+    5 & Encounter. \\
+    4 & 1 day peace. \\
+    3 & 2 days peace. \\
+    2 & 4 days peace. \\
+    1 & 6 days peace. \\
+  \end{nametable}
+
+  \paragraph{Journeys}
+  to the \gls{edge} add +1 to the left-hand die, while excursions into the forest add +2.
+
+}
+
 \subsubsection{Forgotten Temples}
 
 A little farther North still, a handful of those forgotten temples to Qualm\"{e} remain with animate, but non-living priests.
@@ -222,7 +255,7 @@ The elves guard their forests fiercely, partly because fewer trees means fewer a
 
 The four houses -- Alisa, Kisha, Stein and Ventress -- run the college as a union, and have successfully managed to strangle a lot of the realm's alchemical potential.
 Deals with the Crown have been legislated, and mages may no longer swap magic of any kind -- all magical learning must pass through the guild and pay for the privilege.
-Any magic practised or learned outside of the Guild's Monopoly is classified as `black magic', whether this is Nuramancy, rune magic, or simply unregistered alchemy.
+Any alchemy practised or learned outside of the Guild's Monopoly is classified as `black magic'.
 
 Every alchemist must retake their oath each year:
 
@@ -244,11 +277,26 @@ Every alchemist must retake their oath each year:
 
 \end{enumerate}
 
-\subsubsection{Gnolls}
+\subsubsection{Gnoll Territory}
 
 Local tribes have become a little tame after picking up so many human goods.
 Foreigners consider them dangerous, but the local trackers understand that one just needs to know which tribe one is dealing with to predict their behaviour.
 They may all look the same to outsiders, but each tribe is proud of its reputation, whether as honourable traders, or brutal killers.
+
+\subsubsection{Snow Elves}
+\index{Elves!Snow}
+
+The elves of the region -- known for their bleach-pale skin -- hunt with spears and magic.
+Typically they go after aurochs, but they have no problem eating wolves, and some of the older elves have been known to gain a taste for human, gnoll, and dwarven flesh.
+
+Like any other elves, they live below ground, but more often replace the standard glass ceilings with sheets of ice.
+There, in little caves or ice-domes, the elves live, often with a few specialized spell-casters, who provide food for the community.
+
+Their territories encompass wide areas, which they defend fiercely, though not with numbers -- a group of thirty elves may wander and hunt in areas which could house some thousands of humans.
+Humans invaded the area when elven tribes died, leaving a spot open for farmers and fishermen.
+Once a walled village establishes itself, the snow elves leave it alone out of respect for another's territory.
+
+If they trade, they usually make themselves look human with the Polymorph sphere, and cover up their strange accent by pretending to be foreign (which is not entirely untrue).
 
 \subsubsection{Splinter Island}
 
@@ -256,21 +304,6 @@ Splinter Island began life as the home of the king of Eastlake, back when indivi
 A grandchild later trained as an alchemist, and opened a portal towards Whiteplains' central hub.%
 \footnote{See page \pageref{whiteland_heart}.}
 When \gls{king} took over, this place became just another wing of \gls{shatteredcastle}, so now those wishing to trade with other lands must take boats out and pay a tax to use the road to warmer climates, such as Quennome or Liberty.
-
-\subsubsection{Snow Elves}
-\index{Elves!Snow}
-
-The elves of the region -- known for their bleach-pale skin -- hunt with spears and magic.
-Typically they go after aurochs, but they have no problem eating wolves, and some of the older elves have been known to gain a taste for human and dwarvish flesh.
-
-Like any other elves, they live below ground, but more often replace the standard glass ceilings with sheets of ice.
-There in little caves, or ice-domes, the elves live, often with a few specialized spell-casters, who provide food for the community.
-
-Their territories encompass wide areas, which they defend fiercely, though not with numbers -- a group of thirty elves may wander and hunt in areas which could house some thousands of humans.
-Humans invaded the area when elven tribes died, leaving a spot open for farmers and fishermen.
-Once a walled village establishes itself, the snow elves leave it alone out of respect for another's territory.
-
-If they trade, they tend to do so using the Polymorph sphere, to make themselves look human, and simply pretend to be foreign (which is not entirely untrue, in a sense).
 
 \iftoggle{players}{
   \subsubsection{Character Concepts}
@@ -288,47 +321,28 @@ If they trade, they tend to do so using the Polymorph sphere, to make themselves
     A wandering gnome, bent on showing that magic, trickery, and planning make him more of a warrior than large men carrying big sticks.
 
   \end{itemize}
-}{
-\subsubsection{Seasonal Encounters}
+}{}
 
-\paragraph{Cold} seasons in Eastlake are terrifying.
-Hungry wolves become common; roll $2D6 + 2$ for the number.
-Travelling through the cold also inflicts an additional 4 Fatigue Points per day.
-\paragraph{Mild} seasons are still snowy in the North of Eastlake, but much of the ice retreats, bringing increased bear activity as they are usually coming out of or going into a state of hibernation.
-\paragraph{Stormy} times bring flooding, lightning, and increased snowstorms.
-Travelling in these storms slows everyone, and an increase in Fatigue of 3 points per day's travel.
-\paragraph{Warm} seasons are accompanied by an increase in the local undead.
-Many think this is due to long-frozen areas becoming unfrozen, releasing a number of corpses who were previously encased in ice.
-Roll $2D6$ for the number of ghouls encountered.
 
-\begin{encounters}{Eastlake}
+\widePic{Tom_Prante/swamp}
 
-  Wastes & Lakeside & Result \\\hline
-  \lii & A discarded magical item, left in the wastes, perhaps next to some alchemist's body. \\
-  \lii & $3D3-2$ Ghasts (page \pageref{ghast}). \\
-  \lii & $4D6-3$ Gnolls. \\
-  \lii \li $2D6$ ghouls (page \pageref{ghoul}). \\
-  \lii \li Snowstorm. \\
-  \lii \li Seasonal Encounter. \\
-  \lii \li $3D6\times3$ Aurochs (page \pageref{auroch}). \\
-  & \li $1D6+3$ Human traders (page \pageref{human_trader}). \\
-
-\end{encounters}
+\iftoggle{players}{}{
+  \encLiberty
 }
-
-
-\widePic[t]{Tom_Prante/swamp}
 
 \subsection{Liberty}
 \index{Liberty}
 \index{Dogland}
 
-A generation ago, Liberty was a place with sparse human villages, but no large settlements.
-Almost every village exists by the \gls{edge}, peering out at a hungry, untamed forest.
-Elves, gnomes and (mostly) gnolls once inhabited the area.
-War broke, the elves mostly receded, the gnomes left or hid, and the humans enslaved most of the remaining gnolls.
+A generation ago, gnolls ruled Dogland, with only sparse human villages dotted around the outer rim.
+Rex Nolan decided the area would be `civilized', and drafted an army of the \gls{guard}.
+Humanity did badly, but the Rex continued pushing everyone he could until settlements had been established.
 
-Since then the Gnolls Guild has formed (an offshot of the Justice Guild), and worked tirelessly to build new settlements\ldots or at least worked the gnolls tirelessly.
+Since then, the Temple of V\'er\"e have rebranded themselves as `the Justice Guild', and `put the gnolls to work'.
+This alternative guild-branch call themselves `the Gnoll Guild', and use forced Gnoll labour to build new settlements.
+Anyone joining either the Gnoll Guild or serving in the local \gls{guard} received a home in the area.
+To emphasise their newfound freedom, they named the region `Liberty'.
+
 The region has provided excellent logging, and the nearby forests have been tamed fairly quickly.
 However, the danger lurks in the foliage of the deep forest.
 As a result, all human settlements within the region are surrounded by towering wooden walls and manned with archers.
@@ -341,7 +355,18 @@ The Coastal University provides little training to people, so \gls{king} typical
 
 So far, they have been unable to create another portal.
 The skills to do so are rare, coming along perhaps once in a generation of alchemists.
-But once the Coastal University succeed in creating a portal, this alternative college may turn into the seventh wing of \gls{shatteredcastle}.
+But once the Coastal University succeed in creating a portal, this alternative University may turn into the seventh wing of \gls{shatteredcastle}.
+
+\subsection{Encounters}
+Liberty's warm, humid, climate breeds constant danger, but also brings a lot of cheer on the road as plenty of traders travel across the roads constantly.
+
+The \gls{guard} and Justice Guild patrol the areas between villages constantly, as Liberty receives a lot of financial aid from \gls{king} to ensure everyone remains safe, and expands.
+Of course, the \glspl{guard} prefer patrolling the inner areas more than the deep forest, so once travellers take a few steps beyond a known path, and approach the \gls{edge}, they can expect to see a lot more danger, including gnolls who have a serious problem with any humans on their land.
+
+Humanity's constant logging has upset the local ecosystem, and anyone in or around human settlements now experiences sudden floods during the warm and stormy seasons.
+
+Heatwaves also present a major problem for most humans.
+Of course, Liberty
 
 \iftoggle{players}{
   \subsubsection{Character Concepts}
@@ -356,79 +381,71 @@ But once the Coastal University succeed in creating a portal, this alternative c
     A wandering orphan, with nowhere to go after the forest ate the road to his village.
     He assumes they died, but who knows?
     Either way, without any cash, it's time to join the \gls{guard}.
+    \item
+    A loyal gnoll who bought into every piece of human propaganda, and managed to impress a captain of the \gls{guard} enough to buy his freedom.
 
   \end{itemize}
 }{
-\begin{encounters}{Liberty}
 
-  Forest & Road & Result \\\hline
-  \li & Mana lake (page \pageref{mana_lake}). \\ 
-  \li & $2D6+3$ Gnoll raiders with $2D6-4$ hunting dogs (page \pageref{gnoll_hunter}). \\ 
-  \li & Swamp. \\ 
-  \li \lii Woodspy (page \pageref{woodspy}). \\ 
-  \li \lii Basilisk (page \pageref{basilisk}). \\ 
-  \li \lii Chitincrawler (page \pageref{chitincrawler}). \\ 
-  \li \lii Mouthdigger (page \pageref{mouthdigger}). \\ 
-  \li \lii $1D6+4$ Wolves (page \pageref{wolf}).  \\
-  \li \lii Seasonal Encounter. \\
-  & \lii $4D6+4$ Human traders (page \pageref{human_trader}). \\
+  \begin{nametable}{General Tempo Chart}
+    \textbf{Roll} & \textbf{Result} \\\hline
+    6 & Encounter, and reroll! \\
+    5 & Encounter. \\
+    4 & Encounter. \\
+    3 & Encounter. \\
+    2 & 1 days peace. \\
+    1 & 3 days peace. \\
+  \end{nametable}
 
-\end{encounters}
-}
-
-\iftoggle{players}{
-  \subsubsection{Character Concepts}
-}{
-\subsubsection{Seasonal Encounters}
-
-\paragraph{Cold} seasons throw snowstorms and suddenly blocked roads.
-Wandering outdoors inflicts an additional 4 Fatigue points each day.
-\paragraph{Mild} seasons seem to really encourage the local Woodspy population.
-The party encounter $1D3$ woodspies.
-\paragraph{Stormy} seasons don't adversely affect the populated areas, except for the occasional earthquake.
-The forests, on the other hand, can suffer from sudden wildfires, filling the area with smoke, inflicting 2 Fatigue each round.
-\paragraph{Warm} seasons are no problem in the deep forest, due to the heavy foliage providing shade.
-However, the open road inflicts an additional 3 Fatigue Points per day of travel.
-In either case, the characters encounter $1D6$ woodspies.
-
+  \paragraph{Journeys}
+  to the \gls{edge} add +2 to the left-hand die, while excursions into the forest add +3.
 }
 
 \subsubsection{Swamps}
 
-Swamps are a particular hazard within the region.
-Any time the party encounter one, it means they stop, and go the long way around, or move slowly through a dangerous region.
-The one blessing they provide is that few creatures live in them, so there is little chance of being assaulted by anything while rafting across.
+These water-forests are a particular hazard within the region.
+Any time travellers encounter one, they must stop, and go the long way around, or procure a raft or boat, and glide slowly through the tangled mess of tree-roots.
 Any journey across one requires an Intelligence + Wyldcrafting roll, TN 10.
-Failure indicates the party are lost, and trapped by marooning.
+Failure indicates the travellers have become lost.
+
+Any violent encounters in swamps can prove particularly dangerous, as the assaulted travellers will most likely have to defend themself from a raft.
 
 \subsection{Mt Arthur}\index{Mt Arthur}
 
+\iftoggle{players}{}{
+  \encArthur
+}
+
 \widePic{Johan_Jaeger/mountain_river}
 
-Mt Arthur is a thriving region full of towns and villages full of bountiful crops.
+Mt Arthur is a thriving region where towns keep a wide ring of little villages between them and the \gls{edge}.
 Dwarven settlements are dotted about the Southern mountains, acting as a peaceful area for both sides to negotiate and trade, and often imposing little taxes and tribute demands for the freedom to do so.
 
-Far from the dwarves, other areas of the mountains are populated by little elvish communities near the surface, and by many a dwarvish community below.
-The elves tend to operate near the surface and almost always have to find someone else to do their tunnelling for them, while the dwarves build far more elaborate tunnels, often going far to deep to be safe from the things which live below the earth.
+The temples to the gods transformed into guilds first in Mt Arthur, so the local population feel entirely accustomed to the divine monopolies.
+V\'{e}r\"{e} is by far the most popular god within the region, and temples dot the land to him, producing contracts for marriage, business deals and often acting as court-houses when problems between the nobility flare.
 
-V\'{e}r\"{e} is by far the most popular god within the region, and temples dot the land to him, producing contracts for marriage, business deals and often acting as court-houses.
-
-\subsubsection{Storms}
-
-Mt Arthur can suffer storms almost as bad as the Shale region.
-During the stormy seasons lightning and massive amounts of hail are common.
-The Kingsway mountains at the South end of Mt Arthur, dividing the two kingdoms, are rife with volcanic activity, but most of the region is far enough away from the mountains to avoid any problems.
-As a result the stormy seasons can often be cause for celebration as people relish the awesome sight of a releasing volcano.
+The large cities often host blood-sports, sometimes involving people, and always involving captured beasts of some kind.
+Crowds cheers and jeer as griffins, chitincrawlers, and umberhulks tear each other apart.
+They cheer even more when they can see a member of the \gls{guard} doing so in front of them.
+The organizers always cripple the animals in some way, which helps (but never ensures) that civilization wins the fight, and prompts the young people watching to sign up to the \gls{guard}, thinking that they might also kill a beast with the same ease, while earning some money.
 
 \subsubsection{The Citadel}
 
 Mt Arthur's wing of \gls{shatteredcastle} is the only wing placed inside a city - the capital Arthurseat.
 It is also the most popular destination for traders, as Mt Arthur has the highest population of any of the realms.
 
-Locals who wander outside often report smelling the sea or feeling frosty air, and gossip about where they think \gls{king} has gone today, and where today's traders are coming from.
+Locals who wander outside often report smelling the sea or feeling a frosty chill, as a sudden breeze from another wing of \gls{shatteredcastle} weaves out the door.
 
 The inner castle holds a complete barracks, along with multiple martial alchemists, all ready to defend the castle and their Rex.
 Various enchanted items detect any magical items or disguises, and the castle reacts fiercely to non-mundane intruders.
+
+\subsection{Encounters}
+
+Mt Arthur has sprawling, quiet, villages, with wide circles of land, even around the \gls{edge}, but two steps beyond that and the forests turn fierce quickly.
+However, the abundance of game, drives villagers to hunt, and the blood sports in towns drives townsfolk to `chance an arm' in the forest.
+
+Despite the safety of the villages here, when the forest moves in, it moves in quickly.
+Travellers regularly find entire villages abandoned after one too many chitincrawlers stand outside, visibly waiting (just outside of longbow range) for someone to come out.
 
 \iftoggle{players}{
 
@@ -450,48 +467,47 @@ Various enchanted items detect any magical items or disguises, and the castle re
 
   \end{itemize}
 }{
-  \begin{encounters}{Mt Arthur}
 
-    Forest & Roads & Result \\\hline
-    \li & Mana Lake (page \pageref{mana_lake}). \\
-    \li & Basilisk (page \pageref{basilisk}). \\
-    \li & Mouthdigger (page \pageref{mouthdigger}). \\
-    \li \lii $3D6-2$ travelling elves (page \pageref{elf}). \\
-    \li \lii Chitincrawler (page \pageref{chitincrawler}). \\
-    \li \lii Woodspy (page \pageref{woodspy}). \\
-    \li \lii $1D6$ Griffins (page \pageref{griffin}). \\
-    \li & Bear (page \pageref{bear}). \\
-    \li \lii $4D6-2$ Bandits (page \pageref{human_soldier}). \\
-    \li \lii Seasonal Encounter. \\
-    & \lii $3D6-2$ Travelling pilgrims. \\
-    & \lii $4D6$ Human traders (page \pageref{human_trader}). \\
+  \begin{nametable}{Mr Arthur Tempo Chart}
+    \textbf{Roll} & \textbf{Result} \\\hline
+    6 & Encounter, and reroll! \\
+    5 & Encounter. \\
+    4 & Encounter. \\
+    3 & 1 day peace. \\
+    2 & 2 days peace. \\
+    1 & 4 days peace. \\
+  \end{nametable}
 
-  \end{encounters}
-
-  \subsubsection{Seasonal Encounters}
-  \paragraph{Cold} encounters in Mt Arthur bring $3D6$ hungry, and desperate wolves.
-  Travelling through the thick snow also adds 2 Fatigue Points to each day of travel.
-  \paragraph{Mild} seasons bring out the bears, as they're usually either waking from or preparing for hibernation.
-  \paragraph{Stormy} times can suddenly trap people where they are, as a Mt Arthur storm commonly involves one of the mountains to the South belching out thick smoke.
-  Staying outdoors inflicts 4 Fatigue Points.
-  The TN for Hunting also increases by 4 as the local wildlife suffers from the fumes.
-  \paragraph{Warm} times bring out woodspies which, while rare in Mt Arthur, multiply a lot in the heat.
-  Roll $1D6$ for the number encountered.
+  \paragraph{Journeys}
+  to the \gls{edge} add +1 to the left-hand die, while excursions into the forest add +3.
 
 }
 
+\subsubsection{Storms}
+
+Mt Arthur can suffer storms almost as bad as the Shale region.
+During the stormy seasons lightning and massive amounts of hail are common.
+The Kingsway mountains, which divide the two regions, are rife with volcanic activity.
+During the stormy seasons, the sulphurous clouds spill over massive portions of the region, choking everyone in the area who does not hide indoors.
+
 \widePic[t]{Tom_Prante/ancient_valley}
 
-\subsection{The Pebbles}\index{Pebbles}
+\iftoggle{players}{}{
+  \encPebbles
+}
 
-These little islands had their own group of languages -- very different from any of the various human languages around the mainland of Fenestra.  While they traded with both Fenestra and \gls{outerKingdom}, they were until recent decades, independent.
-They had no lords or armies, but did rally around priests of Ohta in times of war.
+\subsection{The Pebbles}
+\index{Pebbles Islands}
 
-Since the Pebbles' annexation with Fenestra, they have had nothing but trouble as their ports were used in wars with \gls{outerKingdom}.
+These little islands had their own group of languages -- very different from any of the various human languages around the mainland of Fenestra.
+They joined Fenestra only a few generations ago, and many still want their old independence.
+However, the old independence meant independence \emph{of each island}, so removing the rule of \gls{king} would involve (at the very least) creating a single rule for all of the islands, which is precisely what the pro-independence movement do not want.
+
+Despite the new governance, the Pebbles continue to trade with the \gls{outerKingdom}, despite the enmity from the recent wars.
 
 They commonly worship Alass\"{e} and have some of the grandest temples build in her honour, full to the brim with beer and joyful songs.
 Many a village here hosts a single `village gnome' -- typically an alchemist who teaches the young people history and sometimes even a little magic.
-Local gnomish communities consider it good practice to create ties to humans, though they do not take anyone back to their own homes, claiming gnomish warrens would be `too short by half' to humans to visit.
+Local gnomish communities consider it good practice to create ties to humans, though they do not take anyone back to their own homes, claiming gnomish warrens would be `too short by half' for humans to visit.
 
 \subsubsection{Reef Wing}
 
@@ -501,12 +517,14 @@ From the outside, this wing appears relatively small.
 Two stories high, it sits on a little island, and does not permit any boats to approach.
 Watchmen patrol the ramparts all day and night, including various dwarves, employed for their superior eyesight at night.
 
+Elves may not serve, nor set foot on \gls{king}'s island, as he fears assassination.
+
 \iftoggle{players}{
   \subsubsection{Character Concepts}
   \begin{itemize}
 
   \item
-  A seafaring dwarf loved nothing more than feeling the wind in his beard, but everyone has to grow up sometime.
+  A seafaring dwarf who loved nothing more than feeling the wind in his beard, but everyone has to grow up sometime.
   Fearing boredom, he decided to sign up to the \gls{guard} and make his fortune.
   Perhaps one day he'll save enough to buy an island.
   \item
@@ -519,30 +537,36 @@ Watchmen patrol the ramparts all day and night, including various dwarves, emplo
 
   \end{itemize}
 }{
-\subsubsection{Seasonal Encounters}
+  \subsection{Encounters}
+  The people in the Pebbles always say, `when it rains, it pours', and indeed problems tend to come together in the Pebbles.
+  Much of this stems from the poor weather upsetting and pushing other factors about.
+  Storms can bring rain, or an opportunity for pirates to strike on the seas while a boat seems distracted mending its sails.
 
-\paragraph{Cold} weather can freeze portions of the sea over, creating temporary bridges to nearby islands and grounding boats.
-The inhabitants of the Pebbles are adept at preparing for such times, and have about a hundred well-known recipes for salted and smoked fish.
-\paragraph{Mild} seasons in the Pebbles are probably the best place in Fenestra, with just enough wind to get somewhere, and no special dangers.
-\paragraph{Stormy} weather grounds all but the bravest sailors.
-The storms encountered during these times can wreck any boat.
-\paragraph{Warm} weather is muggy and humid, inflicting an additional 3 Fatigue Points per day's travel.
+  \begin{nametable}{General Tempo Chart}
+    \textbf{Roll} & \textbf{Result} \\\hline
+    6 & Encounter, and reroll! \\
+    6 & Encounter, and reroll! \\
+    4 & Encounter. \\
+    3 & 1 day peace. \\
+    2 & 3 days peace. \\
+    1 & 6 days peace. \\
+  \end{nametable}
 
-\begin{encounters}{the Pebbles}
 
-  Sea & Land & Result \\\hline
-  \li & Pirates. \\
-  \li \lii Raging Storm. \\
-  \li \lii Mild Storm. \\
-  \li \lii Seasonal Encounter. \\
-  \li & Trading vessel. \\
-  & \lii $2D3-1$ Griffins. \\
-  & \lii $4D6$ Human Traders. \\
-  & \lii $1D2$ Woodspies. \\
-  & \lii Gnomish Illusionist. \\
-  & \lii Mouthdigger. \\
+  \paragraph{Journeys}
+  out to sea add +4 to the left-hand die.
+  The potential encounters here change significantly.
 
-\end{encounters}
+  \subsubsection{Tidal Waves}
+
+  Incoming tidal waves cannot be avoided -- the boat simply has to navigate away before they come.
+  The watchman rolls Wits + Seafaring to get everyone alerted in time (TN 12).
+  Failure indicates that the boat has been destroyed.
+
+}
+
+\iftoggle{players}{}{
+  \encQuennome
 }
 
 \subsection{Quennome}\index{Quennome}
@@ -567,7 +591,19 @@ Various temples to Laiqu\"{e} are erected with stone or wood, and statues create
 The elves of the region find this habit ridiculous.
 The human priests maintain that this practice instils a certain level of respect for the forest in people, which indirectly helps them to survive.
 
+\subsection{Encounters}
+
+Quennome brings unending stimulation to its inhabitants.
+The humans survive through eternal vigilance, and high walls.
+Rivers -- the standard means of travel through Quennome -- bring serious dangerous, but allow for fast travel (at least down river).
+
+When the inhabitants find a lone boat, floating down river, they assume the occupant was grabbed from below by a woodspy.
+People protect themselves through various means, from standard defences like a dagger to stab at any tentacles which reach up from the water, to herbal remedies thrown into the water, can drive the woodspies away.
+
+For most, a journey into the forest approaches suicide, though the older elves and some priests understand enough Aldaron to ensure they can enchant any wild beasts which might otherwise attack them.
+
 \iftoggle{players}{
+
   \subsubsection{Character Concepts}
   \begin{itemize}
 
@@ -586,28 +622,24 @@ The human priests maintain that this practice instils a certain level of respect
   \end{itemize}
 }{
 
-\begin{encounters}{Quennome}
+  \begin{nametable}{General Tempo Chart}
+    \textbf{Roll} & \textbf{Result} \\\hline
+    6 & Encounter, and reroll! \\
+    5 & Encounter. \\
+    4 & Encounter. \\
+    3 & 1 day peace. \\
+    2 & 2 days peace. \\
+    1 & 4 days peace. \\
+  \end{nametable}
 
-  Forest & Lakeside & Result \\\hline
-  \li & Elvish enchanter (page \pageref{elven_enchanter}). \\
-  \li & Mana Lake (page \pageref{mana_lake}). \\
-  \li & Dryad (page \pageref{dryad}). \\
-  \li \lii Basilisk (page \pageref{basilisk}). \\
-  \li \lii $1D6\times 10$ Aurochs (\pageref{auroch}). \\
-  \li \lii Chitincrawler (page \pageref{chitincrawler}). \\
-  \li \lii $1D6+2$ Travelling elves (page \pageref{elf}). \\
-  \li \lii $2D3-1$ Griffins (page \pageref{griffin}). \\
-  \li \lii Heavily armed human traders. \\
-  \li & Boar (page \pageref{boar}). \\
-  \li \lii Bear (page \pageref{bear}). \\
-  & \lii Seasonal Encounter. \\
-\end{encounters}
+  \paragraph{Journeys}
+  on the river add +2 to the left-hand die, while excursions into the forest add +3.
 
 }
 
 \subsubsection{Rivers and Lakes}
 
-Boating is undoubtedly the safest route through Quennome, so leaving the area by going downstream to either Whiteplains or Mt Arthur is fast and reliable, so long as one knows which rivers to avoid.
+Boating is undoubtedly the safest route through Quennome, so leaving the area by going downstream to either Shale or Mt Arthur is fast and reliable, so long as one knows which rivers to avoid.
 
 \subsubsection{The Wooden Wing}
 
@@ -617,38 +649,20 @@ The result is a perpetual stalemate, with the elves not venturing close to \gls{
 The closer a human lives to the Wooden Wing of \gls{shatteredcastle}, the more taxes they will pay to the king.
 Those farther will pay fewer taxes, as fewer tax collectors have the nerve to travel that far out.
 
-\iftoggle{players}{}{
-
-\subsubsection{Seasonal Encounters}
-
-\paragraph{Cold} seasons bring stormy weather and wolves.
-Each day of travel inflicts an additional 3 Fatigue Points, and when this encounter is rolled, the PCs are followed by $3D6$ wolves.
-
-\paragraph{Mild} seasons are relatively safe.
-Have the party encounter a wandering bear.
-
-\paragraph{Stormy} weather can flood places, meaning the rivers become dangerous to navigate by boat, and once-dry land can become a temporary swamp.
-Anyone in a boat rolls Wits + Seafaring, TN 9, or capsizes or otherwise loses control of the vessel.
-Those wandering the forests get the choice of climbing a tree and hoping the waters subside soon, or wading through dank sludge.
-
-If the party remain stationary and are on land, they also encounter $2D6$ woodspies, who never mind the wet weather, and seem to gravitate towards floods.
-
-\paragraph{Warm} times bring an abundance of fruit.
-Those rolling a successful Intelligence + Wyldcrafting roll, TN 7, can lower their Fatigue total by an additional point when resting.
-Those failing the roll are poisoned, gaining $1D6$ Fatigue Points.
-Unfortunately the warm weather also brings out plenty of Woodspies -- roll $2D6$ for each encounter.
-
-}
-
 \subsection{Shale}\index{Shale}
 
 \widePic{Tom_Prante/autumn}
 
+\iftoggle{players}{}{
+  \encShale
+}
+
+\index{Bearded Mountains}
 The Shale is riddled with dwarvish tunnels and occasional little gnomish communities closer to the surface, earning the area the nickname `the Bearded Mountains'.
 It is said that you can travel from anywhere to anywhere in this region via underground passages, if you have a gnomish guide.
 Travelling without such a guide is, of course, likely to ensure a nasty encounter with an umber hulk or acidic ooze.
 Or more likely, someone entering the wrong passage can find any number of the standard cave hazards.
-Slippery mosses can shoot people down a dead-end, with little hope of return; mushroom spores can induce hallucinations; cave-ins can block passages.
+Slippery mosses can throw clumsy travellers down a long tunnel to a dead-end, with little hope of return; mushroom spores can induce hallucinations; cave-ins can block passages.
 
 Farther from the mountains and closer to the sea, seafaring humans live and trade with the Pebbles islands.
 
@@ -675,6 +689,13 @@ Every so often a corpse will fall into some underground river, providing a feast
 Most mushrooms can grow around oozes, feeding from them, without suffering from their acidic touch.
 Once an area has produced too many mushrooms for an ooze to survive comfortably, it goes searching for a different water source.
 
+\subsubsection{The Shattered Dungeon Wing}
+
+\Gls{king}'s castle sits high on a mountain's side, viewing the sea.
+In the far distance, on a clear day, it is possible to see the segment of \gls{shatteredcastle} in the Pebbles.
+The castle's underground sections provides the main point of trade to various dwarvish realms, bringing food and wood.
+This is the main stranglehold \gls{king} has over the dwarves, which then forces them to pay taxes on all goods sold.
+
 \iftoggle{players}{
   \subsubsection{Character Concepts}
   \begin{itemize}
@@ -693,43 +714,34 @@ Once an area has produced too many mushrooms for an ooze to survive comfortably,
 
   \end{itemize}
 }{
-\subsubsection{Seasonal Encounters}
+  \subsection{Encounters}
+  Shale's wide forests, flat planes, and long, deep, tunnels all bring equal chances of someone, or something, colliding with anyone wandering the land.
 
-\paragraph{Cold} seasons above ground become excruciatingly cold, inflicting an additional 4 Fatigue points per day of travel.
-\paragraph{Mild} times see a lot of life running around the plains.
-Reroll twice.
-\paragraph{Stormy} weather brings earthquakes.
-Underground populations only inhabit more stable areas, but those above ground can find that old tunnels to the underground close, and new ones open -- sometimes under their feet.
-\paragraph{Warm} seasons and their abundance of food can tempt the deep umber hulks out into the open.
+  \begin{nametable}{General Tempo Chart}
+    \textbf{Roll} & \textbf{Result} \\\hline
+    6 & Encounter, and reroll! \\
+    5 & Encounter. \\
+    4 & Encounter. \\
+    3 & 1 day peace. \\
+    2 & 3 days peace. \\
+    1 & 3 days peace. \\
+  \end{nametable}
 
-\label{bearded_encounters}
+  \paragraph{Journeys}
+  To to the forest add -2 to the left-hand die, the underground adds +2, and venturing into the \gls{deep} adds +4.
 
-\begin{encounters}{the Shale}
-
-  Tunnels & Plains & Result \\\hline
-  \li &  Mana Lake (page \pageref{mana_lake}). \\
-  \li &  Watcher (page \pageref{watcher}). \\
-  \li &  Umber Hulk (page \pageref{umber_hulk}). \\
-  \li &  $2D6$ Dwarvish bandits (Page \pageref{dwarven_soldier}). \\
-  \li &  $1D6$ Acidic ooze (page \pageref{ooze}). \\
-  \li \lii  $2D6$ gnomish traders (page \pageref{gnomish_citizen}).  \\
-  \li \lii  $3D6$ dwarvish traders (page \pageref{dwarven_trader}). \\
-  & \lii  $3D6+2$ human bandits. (page \pageref{human_soldier})\\
-  & \lii Seasonal Encounter. \\
-  & \lii  $3D3-2$ Griffins. (page \pageref{griffin})\\
-  & \lii  $3D6-2$ human traders (page \pageref{human_trader}). \\
-
-\end{encounters}
 }
 
-\subsubsection{The Shattered Dungeon Wing}
+\subsubsection{Floods}
 
-\Gls{king}'s castle sits high on a mountain's side, viewing the sea.
-In the far distance, on a clear day, it is possible to see the segment of \gls{shatteredcastle} in the Pebbles.
-The castle's underground sections provides the main point of trade to various dwarvish realms, bringing food and wood.
-This is the main stranglehold \gls{king} has over the dwarves, which then forces them to pay taxes on all goods sold.
+When the hot seasons some, and snow melts from the surrounding trees and mountains, or heavy rain falls, floods threaten everyone.
+Humans think they hate flooding, but they know nothing like the cold, impatient feelings of a dwarf with a soaking-wet beard, whose home has filled with water which has nowhere to drain.
 
 \widePic[t]{Tom_Prante/inaok}
+
+\iftoggle{players}{}{
+  \encWhiteplains
+}
 
 \subsection{Whiteplains}\index{Whiteplains}
 
@@ -780,36 +792,24 @@ Various rumours exist of secret portals within the Heart which lead to other loc
 
   \end{itemize}
 }{
-\begin{encounters}{Whiteplains}
+  \subsection{Encounters}
 
-  South & North & Result \\\hline
-  \li &  Labyrinth portal (page \pageref{labyrinth}). \\
-  \li & Mana lake. \\
-  \li & Hunting elves (page \pageref{elf}). \\
-  \li & A hidden human settlement that doesn't like paying taxes. \\
-  \li \lii $2D6$ Gnoll hunters. \\
-  \li \lii Seasonal Encounter. \\
-  & \lii $4D6-3$ Night Guard in training. \\
-  & \lii $3D6-2$ Human Traders. \\
+  Whiteplains has little civilization, or interruption to travellers.
+  For the most part, it is a barren wasteland, populated by sparse herds of aurochs, and the undead.
 
-\end{encounters}
-}
+  \begin{nametable}{General Tempo Chart}
+    \textbf{Roll} & \textbf{Result} \\\hline
+    6 & Encounter, and reroll! \\
+    5 & Encounter. \\
+    4 & 1 day peace. \\
+    3 & 2 days peace. \\
+    2 & 4 days peace. \\
+    1 & 8 days peace. \\
+  \end{nametable}
 
-\iftoggle{players}{}{
-\subsubsection{Seasonal Encounters}
+  \paragraph{Journeys}
+  to the \gls{edge} add +1 to the left-hand die, while excursions into the forest add +2.
 
-\paragraph{Cold} times can bring the worst of snowstorms within Whiteplains.
-Travelling with carts and horses can become impossible, and anyone travelling for a day gains an additional 4 Fatigue Points.
-\paragraph{Mild} times are still cold within Whiteplains, and all travel inflicts an additional 2 Fatigue Points.
-When rolling during the mild seasons, the party encounter a bear.
-\paragraph{Stormy} seasons don't take the snow away, but just add ice.
-Travelling during one of these snowstorms inflicts an additional 5 Fatigue Points per day.
-\paragraph{Warm} seasons see snow melt within the lower regions of Whiteplains, and provides short spell for people to grow vegetables outside.
-
-When wandering in the South, the melting snow can reveal strange portals to magical lands.
-
-These inexplicable magical portals appear around Whiteplains to the land of Shifting Corridors.\footnote{See page \pageref{shiftingcorridors}.}
-Roll on the encounter table for the Realm of Shifting Corridors, and if the result can `pop out' at the party, it will.
 }
 
 \subsubsection{The \Glsentrytext{guard} Weathering Halls}
