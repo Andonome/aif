@@ -1,9 +1,7 @@
-output: Adventures_in_Fenestra.pdf
+output: main.pdf
 
-Adventures_in_Fenestra.pdf: main.pdf
-	mv main.pdf Adventures_in_Fenestra.pdf
 
-main.pdf: main.aux
+main.pdf: main.aux config
 	pdflatex main.tex
 main.aux: svg-inkscape
 	pdflatex main.tex
@@ -30,7 +28,7 @@ players_guide.pdf:
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
 
-all: Adventures_in_Fenestra.pdf guide handouts
+all: main.pdf guide handouts
 
 clean:
 	rm -fr *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf  *.slg  *.slo  *.sls  sq/*aux svg-inkscape
