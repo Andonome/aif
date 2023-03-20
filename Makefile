@@ -1,7 +1,7 @@
 output: main.pdf
 
 
-main.pdf: main.aux config
+main.pdf: main.aux config $(wildcard *tex) sq
 	pdflatex main.tex
 main.aux: svg-inkscape
 	pdflatex main.tex
