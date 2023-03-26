@@ -1,6 +1,7 @@
 output: main.pdf
 
-
+book: main.pdf
+	mv main.pdf Adventures_in_Fenestra.pdf
 main.pdf: main.aux config $(wildcard *tex) sq
 	pdflatex main.tex
 main.aux: svg-inkscape
@@ -28,7 +29,7 @@ players_guide.pdf:
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
 
-all: main.pdf guide handouts
+all: book guide handouts
 
 clean:
 	rm -fr *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf  *.slg  *.slo  *.sls  sq/*aux svg-inkscape
