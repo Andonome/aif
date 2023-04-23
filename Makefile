@@ -14,7 +14,13 @@ svg-inkscape: config/bind.sty images
 config/bind.sty:
 	git submodule update --init
 
-handouts: handouts.pdf
+handouts: handouts.pdf images/extracted/under_lost_city.svg
+images/extracted/under_lost_city.svg: images/extracted
+	inkscape images/Dyson_Logos/under_lost_city.svg --export-id-only --export-id=layer2 -l --export-filename images/extracted/under_lost_city.svg
+
+images/extracted:
+	mkdir -p images/extracted
+
 handouts.pdf:
 	pdflatex -shell-escape handouts.tex
 	pdflatex handouts.tex
