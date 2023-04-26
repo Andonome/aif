@@ -440,7 +440,7 @@ Once a season has passed, the curse will be cured.
 \humandiplomat[\NPC{\M}{Nathaniel the Diplomat}{Practical}{Scratches nose}{V\'er\"e}\label{nathaniel}]
 
 \sqpart{Town}% AREA
-{\N \N The Master's Bounty}% NAME
+{\N \N\ The Master's Bounty}% NAME
 {\Glsentrytext{nurabaron} has been found out, and everyone in \glsfmttext{town} wants the bounty on his head}% SUMMARY
 
 A guard at \gls{redfall} has fled, and informed the whole town that \gls{nurabaron} has turned into an ogre.
@@ -479,6 +479,53 @@ won't be a problem if they have horses.
 If no horses are present, a few traders will arrive before them, at the very least.
 
 Increase the local Nura Rating by 2.
+
+\sqpart{Town}% AREA
+{The Nura Fort}% NAME
+{Redfall becomes a nura fortress}% SUMMARY
+
+If any nura remain alive in Redfall, it becomes a bastion for the nura, and the PCs hear all about what happened in \gls{town}.
+
+If farmers and townsfolk stormed the keep, they tore it apart to gain entry, and the nura inside pulled off bricks to hurl down on their heads.
+\Gls{nurabaron} then turned any remaining servants into more nura, with his supply of ogre dust.
+
+What the villagers don't know is that a nuramancer has arrived as the baron's advisor.
+
+\mapPic{t}{Dyson_Logos/redfall_keep_fallen}{
+  \ref{nuramancer_tower}/50/5,
+  \ref{keep_ogres}/37/71,
+  \ref{keep_patrol}/84/50,
+  \ref{keep_prisoners}/81/16,
+}
+
+\mapentry[keep_ogres]{Philosophical Ogres}
+
+Four ogres discuss if they are men, transformed, or ogres with the stolen memories of humans.
+
+\ogre[\npc{\T\N\Hu}{Four Ogres}]
+
+\mapentry[keep_patrol]{Patrolling Ogre}
+
+A single ogre patrols the keep.
+He will talk with anyone who looks unthreatening, as he has eaten well already.
+Otherwise, he attacks.
+
+If Nathaniel the diplomat survived, this ogre is Nathaniel, and he hates Krela for taking his position as advisor.
+He will help assassinate her, but not if it means putting \gls{nurabaron} in danger.
+
+\ogre[\npc{\N\Hu}{Patrolling Ogre}]
+
+\mapentry[keep_prisoners]{Prisoners}
+
+Four prisoners await death, once the ogres become hungry enough.
+
+\mapentry[nuramancer_tower]{Nuramancer}
+
+The nura goblin advises \gls{nurabaron}, and will use her vantage point to cast offensive spells at anyone attacking the keep.
+
+\goblinnuramancer[\npc{\F\N\Gn}{Krela}]
+
+\nurabaron
 
 \stopcontents[sq]
 
