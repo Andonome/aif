@@ -175,15 +175,6 @@ The hallways contains a long, messy dining table, covered in scraps of bones fro
 
 The baron can usually be found dining here, shouting at guards about some imagined insult, or just terrifying people for the fun of it.  Nathaniel, his trusted advisor, is the only one who can calm him down when he gets into a rage.
 
-\mapPic{t}{Dyson_Logos/lakeside}{
-  \rotatebox{-40}{\nameref{lakeSquare}}/51/45,
-  \ref{lakeSquare}/46/43,
-  \rotatebox{-40}{\nameref{lakeTemple}}/78/81,
-  \ref{lakeTemple}/70/79,
-  \rotatebox{40}{\nameref{lakeDocks}}/16/68,
-  \ref{lakeDocks}/21/63,
-}
-
 \mapentry[redStorage]{Old Storage Shelves}
 
 Here the servants rest.
@@ -199,16 +190,72 @@ These two attack fiercely, but retreat if any bargains have been made after a si
 
 The two brothers were never good at listening, and will attack with abandon, unless Marjorie is nearby to talk them down.
 
+\subsection{Redfall, Fallen}
+\label{redfallFallen}
+
+\mapPic{t}{Dyson_Logos/redfall_keep_fallen}{
+  \ref{nuramancer_tower}/50/5,
+  \ref{keep_ogres}/37/71,
+  \ref{keep_patrol}/84/50,
+  \ref{keep_prisoners}/81/16,
+}
+
+If the citizens of the surrounding lands overrun Redfall (see \autopageref{mastersBounty}, it becomes a hotbed for nura.
+They eat the servants, and soon after Krela, the goblin nuramancer, arrived from one of the open nura portals in the land.
+
+Krela eats well with the ogres, and soon builds up an ogre army.
+The nura begin eating their way through the surrounding villages, while Krela transforms humans into ogres.
+
+The central fort continues amassing arms, and the ogres throw boulders at anyone who comes too close.
+
+\mapentry[keep_ogres]{Philosophical Ogres}
+
+Four ogres discuss if they are men, transformed, or ogres with the stolen memories of humans.
+
+\ogre[\npc{\T\N\Hu}{Four Ogres}]
+
+\mapentry[keep_patrol]{Patrolling Ogre}
+
+A single ogre patrols the keep.
+He will talk with anyone who looks unthreatening, as he has eaten well already.
+Otherwise, he attacks.
+
+If Nathaniel the diplomat survived, this ogre is Nathaniel, and he hates Krela for taking his position as advisor.
+He will help assassinate her, but not if it means putting \gls{nurabaron} in danger.
+
+\ogre[\npc{\N\Hu}{Patrolling Ogre}]
+
+\mapentry[keep_prisoners]{Prisoners}
+
+Four prisoners await death, once the ogres become hungry enough.
+
+\mapentry[nuramancer_tower]{Nuramancer}
+
+The nura goblin advises \gls{nurabaron}, and will use her vantage point to cast offensive spells at anyone attacking the keep.
+
+\goblinnuramancer[\npc{\F\N\Gn}{Krela}]
+
+\nurabaron
+
+\mapPic{b}{Dyson_Logos/lakeside}{
+  \rotatebox{-40}{\nameref{lakeSquare}}/51/45,
+  \ref{lakeSquare}/46/43,
+  \rotatebox{-40}{\nameref{lakeTemple}}/78/81,
+  \ref{lakeTemple}/70/79,
+  \rotatebox{40}{\nameref{lakeDocks}}/16/68,
+  \ref{lakeDocks}/21/63,
+}
+
+\subsection{Lakeside Village}
+\index{Lakeside Village}
+\label{lakeside}
+
 \boxPair[t]{
   \humandiplomat[\npc{\M\Hu}{Guildmaster Solus}]
   \label{solus}
 }{
   \humansoldier[\npc{\T\E\Hu}{Lakeside Soldiers}]
 }
-
-\subsection{Lakeside Village}
-\index{Lakeside Village}
-\label{lakeside}
 
 Lakeside is a small, walled, village near the \gls{edge}, with a large and proud temple to Ohta resting at its side, waiting for battle.
 
