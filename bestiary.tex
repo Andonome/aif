@@ -277,10 +277,17 @@ Griffins will often hunt alone, but if a prey is spotted which is too large to c
   Walking across a mountainous range, a senate of griffins decides to watch the party from afar.
   Once the party pass a difficult section, they swoop down and attempt to grab a party member, pulling them off the side of a ledge, and letting them fall.
   The griffins have no intention of fighting fairly -- they know they just need to pull someone over the edge to kill them.\footnote{You should allow players to spend 5 FP to avoid sudden death from cliff edges.}
-  \item
-  Entering the forest, the characters hear a man say `those look tasty'.
-  Anything they say repeats back to them, interspersed with `those look tasty'.
-  Getting closer, they find a griffin watching from the treetops, mimicking whatever they say.
+  \ifnum\value{temperature}>1
+    \item
+    Two griffins circle above the \glspl{pc} then descend and attack.
+    If any of the \glspl{pc} pass a Wits + Wildcrafting check, \gls{tn} 8, they notice the griffins are defending a nest above.
+    If the \glspl{pc} back off, the griffins leave them alone (they only want to defend their nest).
+  \else
+    \item
+    Entering the forest, the characters hear a man say `those look tasty'.
+    Anything they say repeats back to them, interspersed with `those look tasty'.
+    Getting closer, they find a griffin watching from the treetops, mimicking whatever they say.
+  \fi
   \item
   A griffin nest lies in the treetops.
   A single egg could make a meal for three men.
