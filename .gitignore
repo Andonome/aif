@@ -36,3 +36,5 @@ old
 *.slo
 *.sls
 images/extracted/*
+*.fls
+*latexmk

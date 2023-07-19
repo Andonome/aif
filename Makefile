@@ -1,30 +1,32 @@
-output: main.pdf
+BOOK = $(shell basename "$$(pwd)")
+output: $(BOOK).pdf
 
-book: main.pdf
-	mv main.pdf Adventures_in_Fenestra.pdf
-main.pdf: main.aux config $(wildcard *tex) sq
-	pdflatex main.tex
-main.aux: svg-inkscape
-	pdflatex main.tex
-	makeglossaries main
-svg-inkscape: config/bind.sty images
-	pdflatex -shell-escape main.tex
-	pdflatex main.tex
-
+global: config/bind.sty .switch-gls
+.switch-gls:
+	@touch -r Makefile .switch-gls
 config/bind.sty:
-	git submodule update --init
+	@git submodule update --init
 
-guide: players_guide.pdf fenestra.tex nightguard.tex astronomy.tex history.tex players_guide.tex
-	pdflatex players_guide.tex
+svg-inkscape: | config/bind.sty
+	@pdflatex -shell-escape -jobname $(BOOK) main.tex
+$(BOOK).glo: | svg-inkscape
+	@pdflatex -jobname $(BOOK) main.tex
+$(BOOK).sls: | $(BOOK).glo
+	@makeglossaries $(BOOK)
+$(BOOK).pdf: $(BOOK).sls $(wildcard *.tex) $(wildcard config/*.sty)
+	@pdflatex -jobname $(BOOK) main.tex
+
 players_guide.pdf:
 	pdflatex -shell-escape players_guide.tex
 	pdflatex players_guide.tex
 	pdflatex players_guide.tex
+all: $(BOOK).pdf  players_guide.pdf
+	latexmk -jobname=$(BOOK) -shell-escape -pdf main.tex
 
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
 
-all: book guide
-
 clean:
-	rm -fr *.aux *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf  *.slg  *.slo  *.sls  sq/*aux svg-inkscape
+	rm -fr *.aux *.sls *.slo *.slg *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf sq/*aux svg-inkscape
+
+.PHONY: clean all
