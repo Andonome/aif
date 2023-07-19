@@ -528,12 +528,6 @@ If the player rolls twice and achieves two re-rolls, they may find their parents
 Grandparents, god parents and adopted parents all count as parents; other examples may have to be modified to retain consistency.
 No more than three starting conditions should be applied, no matter how many times the player achieves a re-roll.
 
-\iftoggle{core}{%
-  If two players obtain the same result, they share the same background, as per, `\nameref{sharedstories}'.\footnote{See the core rules, page \pageref{sharedstories}.}
-  If their parents were both killed in the same event then they are from the same village or perhaps siblings.
-  They might both have worked on a similar job or share a magical item which they found at the same time.
-}{}
-
 \setcounter{list}{0}
 \begin{list}{\addtocounter{list}{1}\textbf{\arabic{list}:}}{\raggedleft}
 
@@ -755,7 +749,7 @@ These holy items are worth a lot of gold, and she expects at least 100gp back fr
   The player to your left is your big sibling.
   You look up to them.
   You share all Stories you tell with Story Points,
-  \iftoggle{core}{(see the core rules, page \pageref{sharedstories}.)}{}
+  \exRef{stories}{Stories}{sharedstories}
   but you can \emph{only} spend Story Points immediately after they spend a Story Point, by chiming in with `me too!', or `I also have a fun anecdote about\ldots', or similar.
   }
   \startingCondition{
