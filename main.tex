@@ -21,41 +21,34 @@ Keywords={TTRPG,RPG,roleplaying}
 \input{encounterCharts.tex}
 
 \begin{document}
-\frontmatter
+\frontpage[Fenestra]%
+  {A campaign for BIND}%
 
-\pagenumbering{gobble}
-
-\frontpage{Fenestra}%
-  {A campaign set in the \seasonDesc\ season of \season}%
-  {Unknown/wizard_and_cat}
-
-\tableofcontents
-
-\include{introduction.tex}
+\include{introduction}
 
 \mainmatter
 
-\include{fenestra.tex}
+\include{fenestra}
 
-\include{nura.tex}
+\include{nura}
 
-\include{ether.tex}
+\include{ether}
 
-\include{nura_bestiary.tex}
+\include{nura_bestiary}
 
-\include{resources.tex}
+\include{resources}
 
 \label{lastpage}
 
 \startappendix
 
-\input{astronomy.tex}
+\input{astronomy}
 
-\input{history.tex}
+\input{history}
 
-\input{nightguard.tex}
+\input{nightguard}
 
-\input{xp.tex}
+\input{xp}
 
 \backmatter
 
