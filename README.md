@@ -11,7 +11,7 @@
 | Downloads                  | Related Books                  |
 |:---------------------------|:-------------------------------|
 | [Campaign World][aif]      | [Core book][core]              |
-| [Players' Guide][guide]    | [Oneshot Adventure][oneshot]   |
+| [Handouts][handouts]       | [Oneshot Adventure][oneshot]   |
 
 # Adventures in Fenestra
 
@@ -40,7 +40,7 @@ Anyone who has not found a use for themselves can find a use in the Night Guard 
 
 ![Nura Cat](images/Unknown/wizard_and_cat.jpg)
 
-[aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Adventures_in_Fenestra.pdf?job=compile_pdf
 [core]: https://gitlab.com/bindrpg/core
-[oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/horde_escape_oneshot.pdf?job=compile_pdf
-[guide]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/players_guide.pdf?job=compile_pdf
+[oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/oneshot_horde_escape.pdf?job=build
+[handouts]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/players_guide.pdf?job=build
+[aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/aif.pdf?job=build
