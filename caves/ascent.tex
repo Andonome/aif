@@ -159,11 +159,136 @@ Give the players two false-starts.
 Tell them they see a big patch of ferns in the distance, and ask what they do.
 The third set of ferns contains the cave-mouth.
 
+\begin{boxtext}
+  Pushing back the ferns, you see a hole, and a rock flies at your face.
+\end{boxtext}
+
 \subsubsection{The Rock}
 At the cave-mouth, if any of the goblins see or hear the troupe, they will wait to throw rocks at them.
+
+\goblin[\npc{\N\F}{Goblin}]
+
+The first \gls{pc} will have to roll \roll{Wits}{Athletics}, against the goblin's \roll{Dexterity}{Projectiles} (\tn).
 
 The cave-mouth is a hole in the ground.
 The drop to the ground is the height of two adult humans.%
 \footnote{The goblins emerge by sending one to climb, and then helping the others with a rope.}
+
+\end{multicols}
+
+\section{Inside the Dark Hole}
+
+\begin{multicols}{2}
+
+\subsection{Last of the Sunlight}
+
+\begin{boxtext}
+  You stand in a shaft of Sunlight.
+  Darkness surrounds.
+  The sound of your landing echoes back to you.
+  High-pitched, mocking giggling noises follow it.
+  More rocks follow.
+\end{boxtext}
+
+\sidebox{
+  \begin{boxtable}
+  \textbf{\glsentrytext{tn}} & \textbf{Result} \\
+  \hline
+  10  & 1 rock ($1D6-1$) \\
+  9  & 2 rock ($2D6-2$) \\
+  8  & 3 rock ($3D6-3$) \\
+  7 & 4 rock ($4D6-4$) \\
+  \end{boxtable}
+}
+
+\noindent
+The first \gls{pc} down receives 5 rocks thrown at them, and will have to make a single roll to avoid them with \roll{Dexterity}{Athletics} (\tn[10]).
+Each failure margin means another rock, and each rock means $1D6-1$ Damage.
+
+The \glspl{pc} can only enter one at a time, and the rocks will keep on coming.
+The players will have to decide, one at a time, who goes next into the dark hole.
+
+\goblin[\npc{\T[5]\N}{Goblins}]
+
+\paragraph{Running in the cave}
+demands a \roll{Wits}{Caving} roll (\tn[12]).
+Failure inflicts $1D6$ Damage, plus the character's Speed Bonus (running faster means more Damage).
+
+\subsubsection{Screams Above}
+
+Once most of the \glspl{pc} enter the dark hole, a couple of goblins crawl out of a tiny side-tunnel, and cause trouble at the top.
+They can only squeeze through the tunnel, as they have a Strength Penalty of -1.
+Anything larger than this cannot fit through the narrow tunnel.
+
+\npc{\T[2]\N}{Skinny Goblins}
+\person{-2}% STRENGTH
+{1}% DEXTERITY
+{1}% SPEED
+{{-1}% INTELLIGENCE
+{0}% WITS
+{-2}}% CHARISMA
+{0}% DR
+{1}% COMBAT
+{}% SKILLS
+{\Dagger}% EQUIPMENT
+{
+  \setcounter{Combat}{1}
+  \setcounter{Brawl}{2}
+  \setcounter{Caving}{1}
+  \setcounter{Tactics}{1}
+}
+
+\subsection{The Cave-In}
+
+\subsubsection{Down the Tunnel}
+The second after two characters get down the hole, the goblins flee.
+If the \glspl{pc} don't give chase, they have failed in their mission.
+The goblins will not return to this area for two days, so the \glspl{pc} will eventually have to follow.
+
+\paragraph{If the \glspl{pc} have not a torch,}
+they will spot dry rocks.
+
+\begin{boxtext}
+  The flickering torch illuminates a soaking wet cave, littered with bone-dry rocks of every size.
+\end{boxtext}
+
+The rocks have come from the ceiling.
+The various rocks, shouts, and \ifnum\value{temperature}=1 flooding \else stomps \fi in cavern have begun a cave-in.
+
+\subsubsection{Rocks Fall}
+
+It begins once the troupe have gone 60 steps into the cavern.
+
+\begin{itemize}
+  \item
+  Each round, roll $1D6$ for each \gls{pc}.
+  On the roll of a 1, a rock lands on the \gls{pc}, inflicting $1D6+1$ Damage.
+  \item
+  Every time a rock falls, the threshold for the roll, and Damage, increase by 1.
+  \item
+  The third time someone gets hit by a rock, the roll will increase to a 4 in 6 chance, and inflict $1D6+4 Damage$
+\end{itemize}
+
+Some \glspl{pc} may try to run back to the entrance, but they won't be safe there -- nowhere remains safe except further down the tunnel.
+
+\paragraph{Once the cavern collapses,}
+the dust thrown up inflicts 2 \glspl{fatigue}, each round, until the \glspl{pc} leave the \gls{area}.
+
+\subsection{The Realization}
+
+Give the players a moment to understand what has happened, and make some preparations.
+Describe the scene again.
+
+Do they have any light?
+How many have survived?
+
+Only one path remains\ldots
+
+\paragraph{Digging their way out}
+seems obviously futile -- the characters have a clear view of the debris, and can feel the weight of the rock around them, so no \glspl{fatigue} should be given out for attempting to dig, unless the players insist.
+And in this case, simply keep giving out \glspl{fatigue}, and allow them to remove another small patch of dirt.
+
+\paragraph{If any characters remain above,}
+they will have to find out what happens to them later.
 
 \end{multicols}
