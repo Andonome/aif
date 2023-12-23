@@ -1,6 +1,7 @@
 \documentclass[a4paper,openany]{book}
 
 \usepackage{config/bind}
+
 \input{glossary.tex}
 
 \title{Adventures in Fenestra}
@@ -16,9 +17,8 @@ Keywords={TTRPG,RPG,roleplaying}
 \newtoggle{players}
 \settoggle{players}{false}
 \externalReferent{core}
+\externalReferent{judgement}
 \externalReferent{stories}
-
-\input{encounterCharts.tex}
 
 \begin{document}
 \frontpage[Fenestra]%
@@ -28,28 +28,21 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \mainmatter
 
-\include{fenestra}
+\input{caves/intro.tex}
 
-\include{nura}
-
-\include{ether}
-
-\include{nura_bestiary}
-
-\include{resources}
-
-\label{lastpage}
+\input{caves/ascent.tex}
 
 \startappendix
-
-\input{history}
-
-\input{xp}
 
 \backmatter
 
 \printglossary[
   type=symbols,
+  nonumberlist,
+]
+
+\printglossary[
+  type=people,
   nonumberlist,
 ]
 

@@ -1,0 +1,31 @@
+
+
+\newglossaryentry{redcoin}{
+  name={Redcoin},
+  text={Redcoin},
+  type={people},
+  prefix={\glsentrytext{jotter}\space},
+  description={hurries around every nearby \glsentrytext{bothy}, and impatiently micromanages every \glsentrytext{guard}}
+}
+
+\newcommand\redcoin{
+  \NPC{\M\Hu}{\Glsfmttext{redcoin}}{greasy}{rotates rings}{to hurry up, and finish} 
+
+\person{1}% STRENGTH
+  {0}% DEXTERITY
+  {0}% SPEED
+  {{1}% INTELLIGENCE
+  {0}% WITS
+  {-2}}% CHARISMA
+  {0}% DR
+  {0}% COMBAT
+  {}% SKILLS
+  {\longsword, 2 rings worth 10 \glspl{sp}, wax tablet (for notes)}% EQUIPMENT
+  {
+    \setcounter{Academics}{2}
+    \setcounter{Deceit}{1}
+    \setcounter{Tactics}{1}
+    \setcounter{Wyldcrafting}{1}
+    \setcounter{fp}{5}
+  }
+}

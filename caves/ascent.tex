@@ -1,0 +1,169 @@
+\section{The Ascent}
+
+\begin{multicols}{2}
+
+\subsection[The Hanging Procession]{\gls{justice}~The Hanging Procession~\gls{justice}}
+
+\begin{boxtext}
+  This morning, the \gls{bothy} hosts two traders, a visiting \gls{jotter}, a dozen new recruits, and ten \glspl{sunGuard}.
+  The \glspl{sunGuard} have travelled from a town's \gls{court}, all the way here to hang half the new recruits, for dereliction of duty.
+  You can hear them complaining bitterly about all the muck on their white tabard.
+
+  A shutter on the \gls{bothy}'s upper floor opens, and the \gls{jotter} shouts to you to come up for orders.
+  The rest of the recruits start lazily making their into the \gls{bothy}.
+\end{boxtext}
+
+\Pgls{redcoin} explains the following points:
+
+\begin{itemize}
+  \it
+  \item
+  Goblins have been thieving, looting, and even killing around a number of nearby \glspl{village}.
+  \item
+  Those last recruits went up, but returned as cowards, without a single goblin head to show for their efforts, so the \gls{sunGuard} will take them to the \gls{court} of the nearest town, for justice.
+  \item
+  A \gls{guard} ranger has already found an entrance to the goblins' lair.
+  You must find this spot, enter their cave, kill all of them, and return with their heads.
+  \item
+  Everyone can pick up \ifnum\value{temperature}=0 four \else three \fi days' rations, and this map.
+\end{itemize}
+
+\noindent
+As he explains all this, the \glspl{sunGuard} take the doomed prisoners down, and prepare to leave.
+The \glspl{pc} hear all this from \gls{redcoin}'s office, and witness the rope-bound prisoners from the window.
+
+\humansoldier[\npc{\T[8]\Hu}{\glsentrytext{sunGuard}}]
+
+\paragraph{If the \glspl{pc} argue,}
+\gls{redcoin} will have none of it.
+He's busy, and wants the \glspl{pc} to get going, quickly.
+
+\paragraph{If the \glspl{pc} try to plead for the lives of the ex-\gls{guard} prisoners,}
+nobody will listen.
+
+\paragraph{Asking the prisoners about what happened}
+requires a \roll{Charisma}{Tactics} roll (\tn[8]) (or whatever Skill seems appropriate), to convince the \glspl{sunGuard} to allow the conversation.
+They can tell the \glspl{pc} the following:
+
+\begin{itemize}
+  \it
+  \item
+  The entrance easy.
+  It's a hole in the ground, so bring something to get down with -- a rope, a stake, and a mallet.
+  \item
+  The goblins won't fight, they just run away.
+  \item
+  The darkness in caves isn't like the darkness at night.
+  At night, the sky is dark, but in a cave, the darkness stands right next to you.
+  \item
+  The ground is rough -- you can't run anywhere.
+  That means the goblins can stand back and throw things at you.
+  \item
+  And if you carry a torch, they can see you, but you can't see them.
+  And when you put it out, they can hear you, and you still get hit by rocks.
+  \item
+  Better to die in a town, than down some horrible cave.
+  Better to join \gls{paik} than whatever strange god takes you when goblins eat you.
+\end{itemize}
+
+\paragraph{If the \glspl{pc} ask for more supplies,}
+\gls{redcoin} will give them the following items, with a successful \roll{Charisma}{Tactics} roll.
+
+\redcoin
+
+\begin{itemize}
+  \item
+  1 torch each (\tn[3])
+  \item
+  50' of rope (\tn[4])
+  \ifnum\value{temperature}=0
+    \item
+    Warm clothes (\tn[5])
+  \fi
+  \item
+  Mallet (\tn[6])
+  \item
+  2 torches each (\tn[8])
+  \item
+  One extra day's rations (\tn[10])
+  \item
+  3 torches each (\tn[11])
+  \item
+  2 shortswords (\tn[12])
+  \item
+  A partial chainmail suit (\tn[13])
+\end{itemize}
+
+You can use a single roll, rather than having the \glspl{pc} making loads of dice-rolls.
+
+\subsection{The Road Up}
+
+\subsubsection{Marching}
+The \glspl{pc} will start marching that very morning.
+Have the \glspl{pc} roll \roll{Intelligence}{Wyldcrafting} to co\"{o}rdinate themselves.
+The \gls{tn} is 8 if they have the map, and 9 otherwise.
+Each Margin of failure adds 2 miles to the journey time.%
+\exRef{core}{the Core Rules}{marching}
+
+\subsubsection{Camping}
+By afternoon they will have to make camp.
+Ask them who takes watch, and assign 3 \glspl{fatigue} between whoever keeps watch.
+
+\subsubsection{The Mountain}
+The next day, the troupe will reach the mountain (unless they have become lost).
+As they stop for a rest, part-way up the mountain,
+\ifcase\value{temperature}
+  the skies are clear and the air feels fresh.
+  Snow covers everything.
+  They should each take \pgls{fatigue}, but no other dangers will emerge.
+  \or
+  a hurricane blows fiercely.
+  And in the distance, an umber hulk%
+  \exRef{judgement}{the book of Judgement}{umber_hulk}
+  has already passed by the goblins (and eaten a few), exited the cave, and now stalks the mountainside.
+  It attacks the troupe, with a morale score of 12.
+  The \glspl{pc} will see it coming a long way off.
+
+  \umberhulk
+  \else
+  warm rain falls, and new streams have formed down the mountain.
+  The troupe will know that this means flooding all across the land, but they won't suffer from it at this altitude.
+
+  Unfortunately, all the floods have agitated a nearby hive of stirges.
+  These vicious flying insects, the size of a man's fist, will swarm%
+  \exRef{core}{Core Rules}{swarms}
+  and sting the party, inflicting \glspl{fatigue}.%
+  \exRef{judgement}{Book of Judgement}{stirge}
+
+  \stirgeSwarm
+\fi
+
+If the troupe are still active the next afternoon, roll yet another encounter.%
+\exRef{judgement}{the book of Judgement}{encounters}
+
+Remember to have the players apply \glspl{fatigue}, even if they will just mark them off again a moment later due to resting.
+
+\subsection{The Cave Mouth}
+
+\begin{exampletext}
+  Past boulder leaning on rock.
+  By rotten tree.
+  Up to rock-line.
+  The hole has ferns.
+\end{exampletext}
+
+The directions on the map don't make for easy navigation, but the \glspl{pc} will find their destination eventually.
+
+\subsubsection{Ferns}
+Give the players two false-starts.
+Tell them they see a big patch of ferns in the distance, and ask what they do.
+The third set of ferns contains the cave-mouth.
+
+\subsubsection{The Rock}
+At the cave-mouth, if any of the goblins see or hear the troupe, they will wait to throw rocks at them.
+
+The cave-mouth is a hole in the ground.
+The drop to the ground is the height of two adult humans.%
+\footnote{The goblins emerge by sending one to climb, and then helping the others with a rope.}
+
+\end{multicols}

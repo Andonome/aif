@@ -13,7 +13,7 @@ $(BOOK).glo: | svg-inkscape
 	@pdflatex -jobname $(BOOK) main.tex
 $(BOOK).sls: | $(BOOK).glo
 	@makeglossaries $(BOOK)
-$(BOOK).pdf: $(BOOK).sls $(wildcard *.tex) $(wildcard config/*.sty)
+$(BOOK).pdf: $(BOOK).sls $(wildcard *.tex) caves/ config/
 	@pdflatex -jobname $(BOOK) main.tex
 
 players_guide.pdf:
