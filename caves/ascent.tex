@@ -66,34 +66,38 @@ They can tell the \glspl{pc} the following:
   Better to join \gls{paik} than whatever strange god takes you when goblins eat you.
 \end{itemize}
 
+\sidebox{
+  \begin{boxtable}[lX]
+    \textbf{\glsentrytext{tn}} & \textbf{Equipment} \\
+    \hline
+    \tn[3] & 1 torch each \\
+    \tn[4] & 50' of rope \\
+    \ifnum\value{temperature}=0
+      \tn[5] & Warm clothes \\
+    \fi
+    \tn[6] & Mallet \\
+    \tn[7] & 2 more torches \\
+    \tn[8] & 2 more torches \\
+    \tn[10] & One extra day's rations \\
+    \tn[11] & 3 more torches \\
+    \tn[12] & 2 shortswords \\
+    \tn[13] & 1 partial chainmail suit \\
+  \end{boxtable}
+}
+
 \paragraph{If the \glspl{pc} ask for more supplies,}
 \gls{redcoin} will give them the following items, with a successful \roll{Charisma}{Tactics} roll.
 
-\redcoin
-
-\begin{boxtable}
-  \textbf{\glsentrytext{tn}} & \textbf{Equipment} \\
-  \hline
-  \tn[3] & 1 torch each \\
-  \tn[4] & 50' of rope \\
-  \ifnum\value{temperature}=0
-    \tn[5] & Warm clothes \\
-  \fi
-  \tn[6] & Mallet \\
-  \tn[8] & 2 torches each \\
-  \tn[10] & One extra day's rations \\
-  \tn[11] & 3 torches each \\
-  \tn[12] & 2 shortswords \\
-  \tn[13] & A partial chainmail suit \\
-\end{boxtable}
-
-You can use a single roll, rather than having the \glspl{pc} making loads of dice-rolls.
+You can use a single roll, rather than having the \glspl{pc} making loads of dice-rolls, so the party will be able to ask for anything on their roll, plus anything beneath that \glsentrylong{tn} (including all of those torches).
+However, they will have to ask for an item by name in order to get it.
 
 \paragraph{If anyone asks about the history of the caves,}
 let them make an \roll{Intelligence}{Academics} roll (\tn[12]).
 Success means they know that humans once scouted the area, to check for valuable metals to mine.
 A tie means the character thinks that humans built a copper mine down there, a century ago.%
 \footnote{See `\nameref{caves_history}', \vpageref{caves_history}.}
+
+\redcoin
 
 \subsection{The Road Up}
 
