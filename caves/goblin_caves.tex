@@ -269,12 +269,40 @@ let a character enter the water and then focus on the other characters.
 Let the troupe decide how long they will wait, in the darkness, before someone else enters.
 Of course, once you resolve the first character's actions (the one in the black waters), you may find that the troupe did not in fact wait for an hour.
 
-\mapentry[hypoxia]{Dark Tunnel}
+\mapentry[darkTunnel]{Dark Tunnel}
 
 This narrow tunnel stretches a long way -- around a mile.
-The troupe can walk down it single-file.
+The troupe can walk down it single-file, occasionally crouching.
+
+However, if they have even a single torch lit, the oxygen in the tunnel will deplete, causing hypoxia.%
+\exRef{core}{Core Rules}{hypoxia}
+This will leave the party with a real problem -- tiredness, and hallucinations can follow.
+Since the \glspl{fatigue} gained from hypoxia only last until the characters can breathe again, you should simply raise the \gls{tn} for all rolls secretly, instead of handing out the \glspl{fatigue} to players.
+
+Soon after, the troop may begin to hallucinate figures in the darkness.
+
+\begin{boxtext}
+  You stop for a small breather, then notice little goblinoid silhouettes up ahead or behind.
+\end{boxtext}
+
+That little verbal slip-up -- `ahead or behind' -- should be given with intention.
+The troupe will have trouble remembering which direction they came from and which they were going to.
+If they ask about the odd phrasing, tell them what they're having trouble remembering; otherwise, simply wait until the troupe have dealt with the imaginary goblins, and decide to continue moving.
 
 \mapentry[wormTunnel]{Worm Tunnel}
+
+This tunnel has around a 1 metre diameter, and then becomes progressively smaller.
+It stretches a full twenty paces, so torch light will not show the exit.
+
+Players should roll \roll{Dexterity}{Caving}, at \gls{tn} 7 plus double their Strength score, plus 2 for wearing armour.
+
+\paragraph{Rolling a tie}
+means that the character takes a long time, and gains 2 \glspl{fatigue} from all the shuffling and scrapes.
+
+\paragraph{Rolling a failure}
+means the character has become stuck, has gained 2~\glspl{fatigue}, and will not get out without someone helping to pull them from the other side, with a rope.
+
+Setting up a rope to help them requires another character to make their roll for them again, with +1 to the \glsentrylong{tn}.
 
 \mapentry[umberHulk]{Umber Hulk}
 
@@ -288,6 +316,22 @@ Once the party are up, they steal some eggs, crawl down a small hole, and singin
 \end{speechtext}
 
 \mapentry[blindFish]{Blind Fish}
+
+This long, lazy river has a wicked undercurrent.
+Swimming at the entrance demands a \roll{Strength}{Seafaring} roll (\tn[6]).
+The \gls{tn} increases rapidly, until it reaches 12 at the exit, where the water goes underground.
+
+\paragraph{Rolling a tie}
+means the character can make no progress -- they simply fight against the river's undercurrent, and gain \pgls{fatigue}.
+
+\paragraph{Rolling a failure}
+means the river pulls the character downriver, the \gls{tn} increases by +2, and the character gains \pgls{fatigue} then rolls again.
+
+\paragraph{Examining the river}
+reveals little fish, about the size of a finger.
+
+Any reasonable plan to catch them might work, although making a fire underground safely can prove very difficult.%
+\exRef{core}{Core Rules}{place_fire}
 
 \mapentry[smokePassage]{Smokey Passage}
 
@@ -306,6 +350,16 @@ He holds a map of the cave, created as the previous group came down.
 Glowshrooms live here.
 
 \mapentry[basiliskCave]{Basilisk Cave}
+
+\ifnum\value{temperature}=0
+  Three basilisks have curled up here to hibernate.
+  The stench signals to everyone around that the creatures lie nearby, and every breath when wandering near this alcove will inflict 3~\glspl{fatigue}.
+
+  Awakening the basilisks will almost certainly prove fatal.
+
+  \basilisk[\npc{\T[3]\A}{\arabic{noAppearing} Basilisks}]
+\else
+\fi
 
 \mapentry[sunRoof]{Sun Roof}
 
