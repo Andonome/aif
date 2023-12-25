@@ -1,5 +1,13 @@
 \section{Descent into the Darkness}
 
+\newcommand\fireFuel{%
+  \ifnum\value{temperature}=0%
+    dry leaves%
+  \else%
+    sticks%
+  \fi%
+}
+
 \begin{multicols}{2}
 
 \mapentry[start]{Fresh Hall}
@@ -140,7 +148,7 @@ This will require some careful timekeeping.
 
 \mapentry[forkLeaf]{Fork \& Leaf}
 
-\mapentry[gas]{Gas Chamber}
+\mapentry[gas]{Fire Cavern}
 
 The passage here leads upwards, to a chamber of flammable gas.
 
@@ -318,14 +326,14 @@ Once the party are up, they steal some eggs, crawl down a small hole, and singin
 \mapentry[blindFish]{Blind Fish}
 
 This long, lazy river has a wicked undercurrent.
-Swimming at the entrance demands a \roll{Strength}{Seafaring} roll (\tn[6]).
+
+\paragraph{Swimming at the entrance}
+demands a \roll{Strength}{Seafaring} roll (\tn[6]).
 The \gls{tn} increases rapidly, until it reaches 12 at the exit, where the water goes underground.
 
-\paragraph{Rolling a tie}
-means the character can make no progress -- they simply fight against the river's undercurrent, and gain \pgls{fatigue}.
+Rolling a tie means the character can make no progress -- they simply fight against the river's undercurrent, and gain \pgls{fatigue}.
 
-\paragraph{Rolling a failure}
-means the river pulls the character downriver, the \gls{tn} increases by +2, and the character gains \pgls{fatigue} then rolls again.
+Rolling a failure means the river pulls the character downriver, the \gls{tn} increases by +2, and the character gains \pgls{fatigue} then rolls again.
 
 \paragraph{Examining the river}
 reveals little fish, about the size of a finger.
@@ -335,9 +343,19 @@ Any reasonable plan to catch them might work, although making a fire underground
 
 \mapentry[smokePassage]{Smokey Passage}
 
-The goblins light a fire at the bottom of this long, sloping passage.
+The goblins wait at the bottom of this long passageway, to light a fire with all their \fireFuel, once the troupe descend.
+
+\goblin
+
+\paragraph{If the \glspl{pc} have been creeping quietly,}
+they should make a \roll{Dexterity}{Stealth}, against the goblins' \roll{Wits}{Vigilance}, \tn.
 
 \mapentry[stallagmites]{Stalagmites Point}
+
+\begin{exampletext}
+  The last of the \glspl{guard} died here.
+  The goblins have taken the rope from his satchel, and used it to string him up like a puppet, to entertain themselves.
+\end{exampletext}
 
 \Pgls{guard} corpse hangs here on ropes.
 Goblins above jiggle the ropes, using him like a puppet.
@@ -345,9 +363,49 @@ The players will almost certainly think that this creature is undead.
 
 He holds a map of the cave, created as the previous group came down.
 
+\begin{boxtext}
+  A buzzing in your ear starts to clarify itself.
+  The sound is real, and comes from a head.
+  It sounds like a super high-pitched whistling noise.
+\end{boxtext}
+
+\mapentry[skeinSwarm]{Skein Hole}
+
+Skien are skinny little lizards which live in caves.
+They have no eyes.
+Their little claws grasp grasp smooth rocks like a spider.
+Their skin lets light through, which means that even the smallest glow of light causes them pain.
+
+When skein feel pain, they react violently, in unison.
+
+\skeinSwarm
+
+Swarms ignore Partial armour covering (as they can wriggle across the uncovered parts), but cannot attack anyone in Complete armour at all, unless they achieve a \gls{vitalShot}.%
+\exRef{core}{Core Rules}{swarms}
+
+\paragraph{If the troupe have any source of light,}
+the skein attack whoever has the light, and anyone who attacks them.
+
+\paragraph{If the troupe look around,}
+they will notice large patches of mushrooms growing in this cavern.
+All of them are edible if one can prepare them correctly.
+
+\paragraph{If the \glspl{pc} pick the mushrooms,}
+They will have enough supplies for five meals.
+The cook will need a fire,%
+\exRef{core}{Core Rules}{place_fire}
+and then makes an \roll{Intelligence}{Caving} roll (\tn[10]) to prepare them properly.
+
+Rolling a tie indicates that the chef has failed, but will not poison anyone.
+Failure indicates that the resulting rancid mushroom `stew', will not count as a full meal for anyone, and instead inflict 2~\glspl{fatigue}.
+
 \mapentry[mushrooms]{A Short Cut to Mushrooms}
 
-Glowshrooms live here.
+This passage hosts glowing mushrooms, called `glow shrooms'.%
+\exRef{judgement}{Book of Judgement}{glowshroom}
+Each one gives off light when disturbed in anyway.
+
+A pile of them can be used as lantern light, though they will die within the \gls{interval} someone picks them, so they cannot provide a long-term torch.
 
 \mapentry[basiliskCave]{Basilisk Cave}
 
@@ -356,19 +414,56 @@ Glowshrooms live here.
   The stench signals to everyone around that the creatures lie nearby, and every breath when wandering near this alcove will inflict 3~\glspl{fatigue}.
 
   Awakening the basilisks will almost certainly prove fatal.
+  However, they take 3 rounds to awaken, so the \glspl{pc} may kill all of them before any consequences.
+
+  \begin{boxtext}
+    The matted knot of green flesh ahead sits like so many rocks.
+    You cannot see a head, but you could never mistake that rancid stench -- some number of basilisks lie in a hibernating pile.
+  \end{boxtext}
 
   \basilisk[\npc{\T[3]\A}{\arabic{noAppearing} Basilisks}]
+
+  The troupe will be aware that basilisk hides make some of the best armour, and the entire corpse can fetch a lot of money.
+  Of course, officially speaking, any money the \gls{guard} earn belongs to the Temple of Beasts as a whole.%
+  \exRef{judgement}{Book of Judgement}{god:Sylf}
 \else
+  Basilisks hibernate here over the cold season.
+  Last snowfall, one basilisk did not wake up, and so provided food for the entire caving system.
+
+  A swarm of skein currently feast on the remains of the basilisk corpse.
+  As before, if the \glspl{pc} carry any source of light, they will attack; otherwise, they ignore them.
+
+  \skeinSwarm
+
 \fi
+
+\begin{boxtext}
+  Around the next corner, you see a speck of light in the distance.
+  It looks incredibly bright\ldots
+\end{boxtext}
 
 \mapentry[sunRoof]{Sun Roof}
 
-This semi-false exit floods sunlight into this area.
-Children above look down, but the PCs look like monsters, so the children scream and run away.
+This passage has had a cave-in, and Sunlight floods in through the top.
+Unfortunately it still sits farther underground than a castle.
+
+Climbing the ragged walls begins with an \roll{Intelligence}{Athletics} roll, to understand the best route up.
+A successful roll gives a further +2 Bonus to the main event: a \roll{Speed}{Athletics} check, \tn[14].
+It also lets the player know the \gls{tn}.
+
+A tie means the character figures out this climb will only hurt them before they climb.
+A failed roll means the character suffers $2D6$ Damage.
 
 \mapentry[crackExit]{Crack to Exit}
 
+This sweet-smelling narrow tunnel goes forward and up, and eventually exits to the world above.
+Unfortunately, it will only admit creatures with a Strength Bonus of 0 or less.
+
 \mapentry[windyPassage]{Windy Passage}
 
+The wind coming through this tunnel indicates its invitation to the outside world.
+The troupe can finally move out, and be free of the goblin warrens.
+
+At this point, you might ask how many goblin heads they have obtained\ldots
 
 \end{multicols}
