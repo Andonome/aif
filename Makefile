@@ -16,18 +16,16 @@ $(BOOK).sls: | $(BOOK).glo
 $(BOOK).pdf: $(BOOK).sls $(wildcard *.tex) caves/ config/
 	@pdflatex -jobname $(BOOK) main.tex
 
-players_guide.pdf:
-	pdflatex -shell-escape players_guide.tex
-	pdflatex players_guide.tex
-	pdflatex players_guide.tex
-all: $(BOOK).pdf  players_guide.pdf
+all: $(BOOK).pdf
 	latexmk -jobname=$(BOOK) -shell-escape -pdf main.tex
 
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
 
 clean:
-	rm -fr *.aux *.sls *.slo *.slg *.toc *.acn *.log *.ptc *.out *.idx *.ist *.glo *.glg *.gls *.acr *.alg *.ilg *.ind *.pdf \
+	rm -fr *.aux *.sls *.slo *.slg *.toc *.acn *.log *.ptc *.out *.idx *.ist \
+	*.glg *.gls *.acr *.alg *.ilg *.ind *.pdf \
+	*glo \
 	svg-inkscape \
 	*.fls
 
