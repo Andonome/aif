@@ -5,7 +5,6 @@ variables:
 build:
   image: $LATEX_IMAGE
   script:
-    - git lfs pull
     - make all
   only:
     - master
