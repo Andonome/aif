@@ -9,11 +9,7 @@ config/bind.sty:
 
 svg-inkscape: | config/bind.sty
 	@pdflatex -shell-escape -jobname $(BOOK) main.tex
-$(BOOK).glo: | svg-inkscape
-	@pdflatex -jobname $(BOOK) main.tex
-$(BOOK).sls: | $(BOOK).glo
-	@makeglossaries $(BOOK)
-$(BOOK).pdf: $(BOOK).sls $(wildcard *.tex) caves/ config/
+$(BOOK).pdf: svg-inkscape $(wildcard *.tex) rumours/ caves/ config/
 	@pdflatex -jobname $(BOOK) main.tex
 
 all: $(BOOK).pdf
