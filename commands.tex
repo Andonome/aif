@@ -12,3 +12,12 @@
     \end{boxtable}
   }
 }
+
+\newcommand\fireFuel{%
+  \ifnum\value{temperature}=0%
+    dry leaves%
+  \else%
+    sticks%
+  \fi%
+}
+
