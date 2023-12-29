@@ -35,6 +35,15 @@ Falling down the passage inflicts $1D6-1$ Damage (a helmet provides a maximum of
   A wide shadow indicates a hole in the ground.
 \end{boxtext}
 
+\mapentry[falseExit]{False Exit}
+
+The path travels upwards until reaching Sunlight.
+Unfortunately, the path also exits onto the side of a cliff.
+Climbing down requires a \roll{Dexterity}{Athletics} at \tn[14].%
+\footnote{If a player insists on attempting this check, you should roll for them, and tell them if they succeed or fail.  The other players will only find out if their characters can climb down later -- they should not know their chances of success by looking at the dice.}
+
+Failure means death.
+
 \mapentry[firstBridge]{First Bridge}
 
 \begin{exampletext}
@@ -97,7 +106,7 @@ The troupe can go anywhere, in any direction, but they will find only damp rocks
   \textbf{\glsentrytext{tn}} & \textbf{Result} \\
   \hline
   13  & exit to \gls{area} \ref{secondBridge} (`\nameref{secondBridge}') \\
-  10  & exit to \gls{area} \ref{murderHoles} (`\nameref{murderHoles}') \\
+  10  & exit to \gls{area} \ref{gas} (`\nameref{gas}') \\
   \end{boxtable}
 }
 
@@ -150,7 +159,14 @@ demands a \roll{Speed}{Athletics} roll (\tn[9]).%
 \footnote{Planning cannot help with this roll -- the characters cannot see below well enough to plan.}
 
 \paragraph{Diving down}
-requires a \roll{Dexterity}{Athletics} roll (\tn[10]), but failure only inflicts 1~\glspl{fatigue}.
+requires a \roll{Dexterity}{Athletics} roll (\tn[10]), but failure only inflicts 2~\glspl{fatigue}.
+
+\paragraph{Once in the water,}
+characters float gently downstream.
+One side of the river ends in a wall, the other has a little ledge to grab onto, some distance down.
+
+Going upstream leads to a dead-end as the cavern's ceiling descends to meet the water.
+Characters who attempt to go upstream will have to swim some distance before they find the dead end, and will suffer 3~\glspl{fatigue}.
 
 \mapentry[gas]{Fire Cavern}
 
@@ -315,15 +331,16 @@ means the character has become stuck, has gained 2~\glspl{fatigue}, and will not
 Setting up a rope to help them requires another character to make their roll for them again, with +1 to the \glsentrylong{tn}.
 
 \mapentry[umberHulk]{Umber Hulk}
+% Needs a wide path out.
 
-Once the party are up, they steal some eggs, crawl down a small hole, and singing.
+This giant, beetle-like creature%
+\exRef{judgement}{Judgement}{umber_hulk}
+wanders the caverns, feeding off anything that moves.
+It has laid a large group of eggs, and returns to them periodically, to drop any food on them that it can.
 
-\begin{speechtext}
-  Leviathan, beetle king!
+It will have a hard time attacking the troupe, as it cannot fit through all passages, but the troupe will also have a hard time moving past it.
 
-  \noindent
-  Hunting dun, eggies bring!
-\end{speechtext}
+\umberhulk
 
 \begin{boxtext}
   A wide crack in the ground ahead falls away to reveal a river, almost within touching distance.
@@ -376,6 +393,15 @@ Goblins above jiggle the ropes, using him like a puppet.
 The players will almost certainly think that this creature is undead.
 
 He holds a map of the cave, created as the previous group came down.
+
+Once the troupe proceed through the passage, various goblins drop rocks from above.
+
+\goblin[\npc{\T[3]\N\M}{\arabic{noAppearing} Goblins}]
+
+Each goblin stands next to a massive pile of rocks.
+The rocks deal $1D6+3$ Damage, but they are so heavy that the goblins can only throw one each round.
+
+The characters can evade with a \roll{Dexterity}{Athletics} roll, vs the goblins' \roll{Dexterity}{Projectiles} (\tn).
 
 \begin{boxtext}
   A buzzing in your ear starts to clarify itself.
