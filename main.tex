@@ -27,9 +27,16 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \begin{document}
 \frontpage[Fenestra]%
-  {A campaign for BIND}%
+  {A cavern-romp for BIND}%
 
 \include{introduction}
+
+\printglossary
+
+\printglossary[
+  type=symbols,
+  nonumberlist,
+]
 
 \mainmatter
 
@@ -41,25 +48,18 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \input{caves/goblin_caves.tex}
 
-\chapter{Side Quests}
+%\chapter{Side Quests}
 
-\input{rumours/main.tex}
+%\input{rumours/main.tex}
 
 \startappendix
 
 \backmatter
 
-\printglossary[
-  type=symbols,
-  nonumberlist,
-]
-
-\printglossary[
-  type=people,
-  nonumberlist,
-]
-
-\printglossary
+%\printglossary[
+%  type=people,
+%  nonumberlist,
+%]
 
 \printindex
 
