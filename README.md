@@ -1,7 +1,7 @@
-| Downloads                  | Related Books                  |
-|:---------------------------|:-------------------------------|
-| [Campaign World][aif]      | [Core book][core]              |
-|                            | [Oneshot Adventure][oneshot]   |
+| Links                          | Related Books                  |
+|:-------------------------------|:-------------------------------|
+| [Campaign World][aif]          | [Core book][core]              |
+| [Email an idea][issues email]  | [Oneshot Adventure][oneshot]   |
 
 *Adventures in Fenestra* holds long and short scenarios and Side Quests for the BIND RPG.
 
@@ -27,3 +27,4 @@ For the moment, it only holds half an adventure.
 [core]: https://gitlab.com/bindrpg/core
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/oneshot_horde_escape.pdf?job=build
 [aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/aif.pdf?job=build
+[issues email]: mailto:contact-project+bindrpg-aif-16324948-issue-@incoming.gitlab.com
