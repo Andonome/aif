@@ -6,7 +6,6 @@
   description={leader of the world of fasion among the \glsfmtplural{warden}}
 }
 
-
 \newglossaryentry{redcoin}{
   name={Redcoin},
   text={Redcoin},
@@ -16,23 +15,21 @@
 }
 
 \newcommand\redcoin{
-  \NPC{\M\Hu}{\Glsfmttext{redcoin}}{greasy}{rotates rings}{to hurry up, and finish} 
-
-\person{1}% STRENGTH
-  {0}% DEXTERITY
-  {0}% SPEED
-  {{1}% INTELLIGENCE
-  {0}% WITS
-  {-2}}% CHARISMA
-  {0}% DR
-  {0}% COMBAT
-  {}% SKILLS
-  {\longsword, 2 rings worth 10 \glspl{sp}, wax tablet (for notes)}% EQUIPMENT
-  {
-    \setcounter{Academics}{2}
-    \setcounter{Deceit}{1}
-    \setcounter{Tactics}{1}
-    \setcounter{Wyldcrafting}{1}
-    \setcounter{fp}{5}
-  }
+  \Person{\NPC{\M\Hu}{\Glsfmttext{redcoin}}{greasy}{rotates rings}{to hurry up, and finish} }%
+    {{2}{1}{2}}% BODY
+    {{1}{0}{1}}% MIND
+    {
+        \set{Athletics}{2}
+        \set{Deceit}{1}
+        \set{Larceny}{1}
+        \set{Wyldcrafting}{2}
+        \Dagger
+        \longsword
+        \partialchain
+        \addtocounter{fp}{5}
+        \longsword
+    }% SKILLS
+    {\adrenalinesurge \charge}% KNACKS
+    {2 rings worth 10~\glspl{sp}, wax tablet (for notes)}% EQUIPMENT
+    {}% ABILITIES
 }
