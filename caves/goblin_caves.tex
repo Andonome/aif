@@ -30,10 +30,9 @@ The troupe should roll \roll{Dexterity}{Caving} (\tn[10]).
 A tie means the first person can drop an item instead of taking the fall.
 Falling down the passage inflicts $1D6-1$ Damage (a helmet provides a maximum of \gls{dr} 1, no other armour counts).
 
-\begin{boxtext}
-  Ahead, the tunnel stops sloping, and continues, flat.
-  A wide shadow indicates a hole in the ground.
-\end{boxtext}
+\nextroom[up]{falseExit}.
+
+\nextroom{firstBridge}.
 
 \mapentry[falseExit]{False Exit}
 
@@ -79,6 +78,10 @@ The players can make this a group roll, by having their characters discuss the s
   At the side, a thin rope wraps around a boulder, and droops over the cliff.
 \end{boxtext}
 
+\nextroom{ropeDown}.
+
+\nextroom{gentlePassage}.
+
 \mapentry[ropeDown]{Rope \& Cliff}
 
 This looks like a trap, but it isn't.
@@ -95,6 +98,21 @@ the rope will pull the boulder down on their head.
 
 \paragraph{If the rope takes a combined \gls{weight} of 14 or more,}
 (presumably due to multiple characters climbing down) it will snap.
+
+\nextroom{secondBridge}.
+
+\mapentry[secondBridge]{Second Bridge}
+
+\begin{exampletext}
+  The second old mining bridge has degraded almost as much as the first, and covers a wider area -- a full four \glspl{step} across, and one \gls{step} high.
+\end{exampletext}
+
+Anyone with \gls{weight} 8 or more who steps on it will make it break, and fall into the water below.
+However, the goblins can walk across it, one at a time, without damaging it.
+
+\nextroom{wormTunnel}.
+
+\nextroom{spartanTunnel}.
 
 \mapentry[gentlePassage]{Gentle Passage}
 
@@ -120,6 +138,8 @@ Some characters may reach the other side before this passage collapses.
 If the troupe becomes split, focus on the characters with the longest journey ahead, and resolve their actions as quickly as you can, then check the remaining characters.
 This will require some careful timekeeping.
 
+\nextroom{cliffDive}.
+
 \mapentry[cliffDive]{Cliff Dive}
 
 This passage ends abruptly with a cliff-ledge, with a river a stone's throw below.
@@ -141,6 +161,9 @@ One side of the river ends in a wall, the other has a little ledge to grab onto,
 Going upstream leads to a dead-end as the cavern's ceiling descends to meet the water.
 Characters who attempt to go upstream will have to swim some distance before they find the dead end, and will suffer 3~\glspl{ep}.
 
+\nextroom{waterMaze}, or death down the river.
+
+
 %!
 \mapentry[mudSlide]{Mud Slide}
 
@@ -161,9 +184,11 @@ means the character has become stuck, has gained 2~\glspl{ep}, and will not get 
 
 Setting up a rope to help them requires another character to make their roll for them again, with +1 to the \glsentrylong{tn}.
 
-\mapentry[spartanMaze]{Spartan Tunnel}
+\mapentry[spartanTunnel]{Spartan Tunnel}
 
 This extremely boring tunnel has no goblins, traps, or anything else.
+
+\nextroom{waterMaze}.
 
 \mapentry[waterMaze]{Puddle of Doom}
 
@@ -265,19 +290,12 @@ let a character enter the water and then focus on the other characters.
 Let the troupe decide how long they will wait, in the darkness, before someone else enters.
 Of course, once you resolve the first character's actions (the one in the black waters), you may find that the troupe did not in fact wait for an hour.
 
+\nextroom[up]{hungryHall}.
+
 \mapentry[hungryHall]{Hungry Hall}
 
 This chamber could fit an entire \glsentrytext{village} inside it.
 The troupe can go anywhere, in any direction, but they will find only damp rocks in the darkness unless they search hard.
-
-\sidebox{
-  \begin{boxtable}
-  \textbf{\glsentrytext{tn}} & \textbf{Result} \\
-  \hline
-  13  & exit to \gls{area} \ref{secondBridge} (`\nameref{secondBridge}') \\
-  10  & exit to \gls{area} \ref{gas} (`\nameref{gas}') \\
-  \end{boxtable}
-}
 
 The players should feel aware of their lighting choices.
 Keeping a lit torch means that they can see danger coming, at least a little way off, but it also means that anything in the darkness can see them, while they cannot see it.
@@ -299,11 +317,17 @@ if they are prepared to spend \pgls{interval} doing it carefully.
 
 One exit rests at the height of a man, the others like low on the ground, and can only be accessed by crouching.
 
+\nextroom{gas}.
+
+\nextroom{darkTunnel}.
+
 \mapentry[gas]{Fire Cavern}
 
 The passage here leads upwards, to a chamber of flammable gas.
 
 The party can make a \roll{Wits}{Caving} roll (\tn[13]) to notice the smell before their torches ignite it, dealing $2D6$ Damage to the first half of the characters, and $1D6$ to the second half.
+
+\nextroom{smokePassage}.
 
 \mapentry[darkTunnel]{Dark Tunnel}
 
@@ -323,6 +347,8 @@ That little verbal slip-up -- `ahead or behind' -- should be given with intentio
 The troupe will have trouble remembering which direction they came from and which they were going to.
 If they ask about the odd phrasing, tell them what they're having trouble remembering; otherwise, simply wait until the troupe have dealt with the imaginary goblins, and decide to continue moving.
 
+\nextroom{umberHulk}.
+
 \mapentry[umberHulk]{Umber Hulk}
 % Needs a wide path out.
 
@@ -340,6 +366,8 @@ It will have a hard time attacking the troupe, as it cannot fit through all pass
   It moves silently, and looks the colour of black tea under the torchlight.
 \end{boxtext}
 
+\nextroom{smokePassage}.
+
 \mapentry[smokePassage]{Smokey Passage}
 
 The goblins wait at the bottom of this long passageway, to light a fire with all their \fireFuel, once the troupe descend.
@@ -352,6 +380,8 @@ The goblins wait at the bottom of this long passageway, to light a fire with all
 
 \paragraph{If the \glspl{pc} have been creeping quietly,}
 they should make a \roll{Dexterity}{Stealth}, against the goblins' \roll{Wits}{Vigilance}, \tn.
+
+\nextroom{blindFish}.
 
 \mapentry[blindFish]{Blind Fish}
 
@@ -373,6 +403,8 @@ Any reasonable plan to catch them might work, although making a fire underground
 
 \paragraph{Jumping over}
 demands a \roll{Speed}{Athletics} roll (\tn[12]).
+
+\nextroom{stallagmites}.
 
 \mapentry[stallagmites]{Stalagmites Point}
 
@@ -401,6 +433,10 @@ The characters can evade with a \roll{Dexterity}{Athletics} roll, vs the goblins
   The sound is real, and comes from a head.
   It sounds like a super high-pitched whistling noise.
 \end{boxtext}
+
+\nextroom{skeinSwarm}.
+
+\nextroom{mushroomsTunnel}.
 
 \mapentry[skeinSwarm]{Skein Hole}
 
@@ -432,7 +468,9 @@ and then makes an \roll{Intelligence}{Caving} roll (\tn[10]) to prepare them pro
 Rolling a tie indicates that the chef has failed, but will not poison anyone.
 Failure indicates that the resulting rancid mushroom `stew', will not count as a full meal for anyone, and instead inflict 2~\glspl{ep}.
 
-\mapentry[mushrooms]{A Short Cut to Mushrooms}
+\nextroom{basiliskCave}.
+
+\mapentry[mushroomsTunnel]{A Short Cut to Mushrooms}
 
 This passage hosts glowing mushrooms, called `glow shrooms'.%
 \exRef{judgement}{Book of Judgement}{glowshroom}
@@ -475,6 +513,8 @@ A pile of them can be used as lantern light, though they will die within the \gl
   It looks incredibly bright\ldots
 \end{boxtext}
 
+\nextroom{sunRoof}.
+
 \mapentry[sunRoof]{Sun Roof}
 
 This passage has had a cave-in, and Sunlight floods in through the top.
@@ -487,10 +527,14 @@ It also lets the player know the \gls{tn}.
 A tie means the character figures out this climb will only hurt them before they climb.
 A failed roll means the character suffers $2D6$ Damage.
 
+\nextroom{crackExit}.
+
 \mapentry[crackExit]{Crack to Exit}
 
 This sweet-smelling narrow tunnel goes forward and up, and eventually exits to the world above.
 Unfortunately, it will only admit creatures with a Strength Bonus of 0 or less.
+
+\nextroom{windyPassage}.
 
 \mapentry[windyPassage]{Windy Passage}
 

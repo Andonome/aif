@@ -21,3 +21,12 @@
   \fi%
 }
 
+\newcommand\stateArea[1]{%
+	\vpagerefnearby{#1}{`\nameref{#1}', \vpageref{#1}}{area \vref{#1}, `\nameref{#1}'}%
+}
+
+\newcommand\nextroom[2][down]{%
+	\paragraph{A path ahead leads #1 to}
+	\stateArea{#2}%
+}
+
