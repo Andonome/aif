@@ -375,13 +375,15 @@ they should make a \roll{Dexterity}{Stealth}, against the goblins' \roll{Wits}{V
 
 \mapentry[blindFish]{Blind Fish}
 
-This long, lazy river has a wicked undercurrent.
+A long, lazy, river with a wicked undercurrent cuts across this cavern.
+The \pgls{pc} will need to vault it or swim across.
+Once on the other side, they can use the wooden planks goblins have left on the other side to get across.
+
+One wooden plank is stable, the other has a cut across the middle.
 
 \paragraph{Swimming}
-demands a \roll{Strength}{Seafaring} roll (\tn[5]).
-The \gls{tn} increases rapidly, until it reaches 12 at the exit, where the water goes underground.
-
-Rolling a tie means the character can make no progress -- they simply fight against the river's undercurrent, and gain \pgls{ep}.
+demands a \roll{Strength}{Seafaring} roll (\tn[10]).
+Rolling a tie means the character can make no progress -- they simply fight against the river's undercurrent, gain \pgls{ep}, and roll again.
 
 Rolling a failure means the river pulls the character downriver, the \gls{tn} increases by +2, and the character gains \pgls{ep} then rolls again.
 
@@ -393,53 +395,64 @@ Any reasonable plan to catch them might work, although placing \pgls{caveFire} s
 \paragraph{Jumping over}
 demands a \roll{Speed}{Athletics} roll (\tn[12]).
 
-\nextroom{stallagmites}.
+\nextroom{stalagmites}.
 
-\mapentry[stallagmites]{Stalagmites Point}
+\mapentry[stalagmites]{Stalagmites Point}
 
 \begin{exampletext}
-  The last of the \glspl{guard} died here.
+  The last of the \glspl{guard} from the first troupe died here.
   The goblins have taken the rope from his satchel, and used it to string him up like a puppet, to entertain themselves.
 \end{exampletext}
 
-\Pgls{guard} corpse hangs here on ropes.
-Goblins above jiggle the ropes, using him like a puppet.
-The players will almost certainly think that this creature is undead.
-
-He holds a map of the cave, created as the previous group came down.
-
-Once the troupe proceed through the passage, various goblins drop rocks from above.
-
 \goblin[\npc{\T[3]\N\M}{\arabic{noAppearing} Goblins}]
 
-Each goblin stands next to a massive pile of rocks.
-The rocks deal $1D6+3$ Damage, but they are so heavy that the goblins can only throw one each round.
+\begin{itemize}
+  \item
+  Once the troupe enter, they will see the corpse of the \gls{guard}, and may think he's an undead creature.
+  \item
+  The goblins will then begin to drop massive rocks on the \glspl{pc}' heads (\dmg{7} Damage).
+  \item
+  The characters can evade with a \roll{Dexterity}{Athletics} roll, vs the goblins' \roll{Dexterity}{Projectiles} (\tn).
+  \item
+  The size of the rocks means the goblins can only hold onto them for two \glspl{round}.
+  \item
+  The goblins also need a full two rounds to `reload', as goblins pass rocks from above.
+\end{itemize}
 
-The characters can evade with a \roll{Dexterity}{Athletics} roll, vs the goblins' \roll{Dexterity}{Projectiles} (\tn).
+%! Map 2 Handout
+\paragraph{If the \glspl{pc} examine the \gls{guard} body,}
+they find a map of the cave, created as the previous group came down.
 
-\begin{boxtext}
-  A buzzing in your ear starts to clarify itself.
-  The sound is real, and comes from a head.
-  It sounds like a super high-pitched whistling noise.
-\end{boxtext}
+\paragraph{Retreat is easy,}
+but the troupe have limited supplies.
+The goblins will wait a full two~\glspl{interval} before leaving\ldots silently.
 
-\nextroom{skeinSwarm}.
+\paragraph{Finding the ground exit}
+is difficult, because the stalagmites block the view in every direction.
+The troupe can move through here, each \glspl{pc} must roll \roll{Dexterity}{Athletics} (\tn[10]) to `jump' through.
+Failure means they block the passage -- just for \pgls{round} -- and nobody else can move through until they adjust their position.
 
-\nextroom{mushroomsTunnel}.
+This lower passage leads to 
+\stateArea{skeinSwarm}.
+
+If the troupe run up the little ledge the goblins stand on, it leads to a cavern full of large rocks, then on to
+\stateArea{mushroomsTunnel}.
 
 \mapentry[skeinSwarm]{Skein Hole}
 
-Skein are skinny little lizards which live in caves.
-They have no eyes.
-Their little claws grasp grasp smooth rocks like a spider.
-Their skin lets light through, which means that even the smallest glow of light causes them pain.
+\begin{exampletext}
+  Skein are skinny little lizards which live in caves.
+  They have no eyes.
+  Their little claws grasp grasp smooth rocks like a spider.
+  Their skin lets light through, and even the smallest glow of light causes them pain.
+\end{exampletext}
+
+\paragraph{If the troupe have any source of light,}
+the skein attack whoever has the light, and anyone who attacks them.
 
 When skein feel pain, they react violently, in unison, as \pgls{swarm}.
 
 \skeinSwarm
-
-\paragraph{If the troupe have any source of light,}
-the skein attack whoever has the light, and anyone who attacks them.
 
 \paragraph{If the troupe look around,}
 they will notice large patches of mushrooms growing in this cavern.
@@ -447,7 +460,7 @@ All of them are edible if one can prepare them correctly.
 
 \paragraph{If the \glspl{pc} pick the mushrooms,}
 They will have enough supplies for five meals.
-The cook will need \pgls{caveFire} and then makes an \roll{Intelligence}{Caving} roll (\tn[10]) to prepare them properly.
+The cook will need \pgls{caveFire} and then makes an \roll{Intelligence}{Cultivation} roll (\tn[10]) to prepare them properly.
 
 Rolling a tie indicates that the chef has failed, but will not poison anyone.
 Failure indicates that the resulting rancid mushroom `stew', will not count as a full meal for anyone, and instead inflict 2~\glspl{ep}.
@@ -460,7 +473,7 @@ This passage hosts glowing mushrooms, called `glow shrooms'.%
 \exRef{judgement}{Book of Judgement}{glowshroom}
 Each one gives off light when disturbed in anyway.
 
-A pile of them can be used as lantern light, though they will die within the \gls{interval} someone picks them, so they cannot provide a long-term torch.
+A pile of them can be used as lantern light, though the light will die after \pgls{interval} someone picks them, so they cannot provide a long-term torch.
 
 \mapentry[basiliskCave]{\Glsfmttext{basilisk} Cave}
 
