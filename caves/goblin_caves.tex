@@ -539,4 +539,38 @@ The troupe can finally move out, and be free of the goblin warrens.
 
 At this point, you might ask how many goblin heads they have obtained\ldots
 
+\subsection{Returning Home}
+
+The troupe is now free, and only have the small task of navigating back home, through the dense forest, and a final encounter.
+
+\iftoggle{verbose}{
+  \begin{itemize}
+    \item
+    Is it light outside?
+    \item
+    How many rations do they have left?
+  \end{itemize}
+}{}
+
+\ifcase\value{temperature}
+  A refreshing breeze blows, but in the distance, they can hear howling wolves.
+
+  The wolves arrive after \pgls{interval}, and stalk the troupe for an interval, hoping to steal some food.
+
+  \wolf
+  \or
+  Mist covers the forest, making it nearly impossible to spot the \gls{woodspy} waiting for them to come out of the \nameref{windyPassage}.
+
+  \woodspy
+  \else
+  A storm is brewing above them.
+  Within \pgls{interval}, it will break, inflicting an additional \gls{ep} while travelling.
+
+  Meanwhile, a \gls{crawler} watches them from above (they spot it immediately).
+  If they retreat until the storm breaks, it leaves.
+  But if they wander in the open, it attacks.
+\fi
+
+If the troupe follow the sound of the river, they will eventually find a nearby \gls{village}.
+
 \end{multicols}
