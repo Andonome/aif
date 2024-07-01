@@ -20,9 +20,9 @@ The troupe should roll \roll{Dexterity}{Caving} (\tn[10]).
 A tie means the first person can drop an item instead of taking the fall.
 Falling down the passage inflicts $1D6-1$ Damage (a helmet provides a maximum of \gls{dr} 1, no other armour counts).
 
-\nextroom[up]{falseExit}.
+\wayOut{A path winds slowly up half a mile, to}{falseExit}.
 
-\nextroom{firstBridge}.
+\wayOut{Another leads 1 mile to}{firstBridge}
 
 \mapentry[falseExit]{False Exit}
 
@@ -64,9 +64,9 @@ Ascending requires \tn[12].
 
 The players can make this a group roll, by having their characters discuss the safest route down, if they are prepared to spend \pgls{interval} on the discussion.
 
-\nextroom{ropeDown}.
+\wayOut{Past the bridge, after a mile of fairly smooth cavern floor, the troupe find}{ropeDown}
 
-\nextroom{gentlePassage}.
+\wayOut{Inside the hole under the bridge, a crack reveals}{gentlePassage}
 
 \mapentry[ropeDown]{Rope \& Cliff}
 
@@ -89,7 +89,7 @@ the rope will pull the boulder down on their head.
 \paragraph{If the rope takes a combined \gls{weight} of 14 or more,}
 (presumably due to multiple characters climbing down) it will snap.
 
-\nextroom{secondBridge}.
+\wayOut{The wide cavern at the bottom leads to the}{secondBridge}
 
 \mapentry[secondBridge]{Second Bridge}
 
@@ -100,9 +100,11 @@ the rope will pull the boulder down on their head.
 Anyone with \gls{weight} 8 or more who steps on it will make it break, and fall into the water below.
 However, the goblins can walk across it, one at a time, without damaging it.
 
-\nextroom{wormTunnel}.
+\wayOut{Falling into the river means flowing downstream to meet the riverbank leading to the}{waterMaze}
 
-\nextroom{spartanTunnel}.
+\wayOut{Past the bridge, a slender crack leads to the}{wormTunnel}
+
+\wayOut{Three \glspl{step} later, a small pile of stones and the stench of shit marks the start of the}{standingTunnel}
 
 \mapentry[gentlePassage]{Gentle Passage}
 
@@ -124,11 +126,7 @@ If moving across, the troupe can make a \roll{Dexterity}{Stealth} roll, with a \
 Just like the entrance, if the \glspl{pc} don't spot the danger, the ceiling will collapse on a 1 in 6 chance, which increases every time something falls.
 However, this time the cavern stretches across 60 steps.
 
-Some characters may reach the other side before this passage collapses.
-If the troupe becomes split, focus on the characters with the longest journey ahead, and resolve their actions as quickly as you can, then check the remaining characters.
-This will require some careful timekeeping.
-
-\nextroom{cliffDive}.
+\wayOut{The passage soon becomes more stable soon after, and half a mile later, emerges at the}{cliffDive}
 
 \mapentry[cliffDive]{Cliff Dive}
 
@@ -151,20 +149,14 @@ One side of the river ends in a wall, the other has a little ledge to grab onto,
 Going upstream leads to a dead-end as the cavern's ceiling descends to meet the water.
 Characters who attempt to go upstream will have to swim some distance before they find the dead end, and will suffer 3~\glspl{ep}.
 
-\nextroom{waterMaze}, or death down the river.
-
-
-%!
-\mapentry[mudSlide]{Mud Slide}
-
-The goblins carried some mud here, so that they could leave large, obvious, footprints, upwards to the cavern of the umber hulk (room \ref{umberHulk}).
+\wayOut{The only ways out are back, or down to the river in front of the}{waterMaze}
 
 \mapentry[wormTunnel]{Worm Tunnel}
 
-This tunnel has around a 1 metre diameter, and then becomes progressively smaller.
-It stretches a full twenty paces, so torch light will not show the exit.
+The goblins cannot traverse the \nameref{standingTunnel}, so they must crawl through this passage.
+The \glspl{pc} will probably have a difficult time here, and the goblins know it.
 
-Players should roll \roll{Dexterity}{Caving}, at \gls{tn} 7 plus double their Strength score, plus 2 for wearing armour.
+To squeeze through, the players roll \roll{Dexterity}{Caving}, at \gls{tn} 7 plus double their Strength score, plus 2 for wearing armour.
 
 \paragraph{Rolling a tie}
 means that the character takes a long time, and gains 2 \glspl{ep} from all the shuffling and scrapes.
@@ -174,35 +166,37 @@ means the character has become stuck, has gained 2~\glspl{ep}, and will not get 
 
 Setting up a rope to help them requires another character to make their roll for them again, with +1 to the \glsentrylong{tn}.
 
-\mapentry[spartanTunnel]{Spartan Tunnel}
+\paragraph{Resting}
+requires an \roll{Intelligence}{Caving} roll (\tn[10]), because getting people to a comfortable spot where they can rest, without standing, while clearing the rocks away, won't work.
+Failure means the troupe waste \pgls{interval} trying to relax and eat.
 
-This extremely boring tunnel has no goblins, traps, or anything else.
+\paragraph{Once they near the exit,}
+they must shuffle out slowly, with their head poking out.
+At this point, a goblin lying in wait attacks with an automatic \gls{vitalShot}.
+The only clue about the danger, is the gentle sound of the nearby river.
 
-\nextroom{waterMaze}.
+\goblin[\npc{\N\M}{Goblin}]
 
-\mapentry[waterMaze]{Puddle of Doom}
+\wayOut{The goblin stands in the open, in the same room as the}{waterMaze}
+If a single \glspl{pc} approaches while upright and ready for him, he flees towards the exit there.
 
-This little passage flooded recently.
-The goblins remember which way to go, but the \glspl{pc} have a serious problem on their hands.
-Ahead, they will see only a puddle, and while they can easily find that it covers a passage, mapping that passage will prove difficult.
-In fact, some players may take a while to notice that they will have to map the passage, in one way or another.
+\mapentry[standingTunnel]{Standing Tunnel}
 
-If multiple \glspl{pc} enter, this spells trouble.
-The passage only has enough space for one person, so if they run into trouble, they cannot back up without bumping into everyone behind them.
+\begin{exampletext}
+  The human miners stopped mining slightly beyond this point.
+  Their budgie died in this tunnel, which told them that the tunnel held a lethal gas.
 
-Whoever enters the frigid waters instantly gains \pgls{ep}, and the exertion of swimming (as usual) inflicts another.
+  The next time they returned, they came back with a little wooden box, with the budgie's name -- `Happy' -- carved onto the top, and placed it under a little cairn.
 
-The scene might go like this:
+  When the goblins moved in, they did not understand the significance of the little cairn, so one died in the passage.
+  Since then, they use the tunnel only as a toilet.
+\end{exampletext}
+
+\paragraph{Upon entering the tunnel,}
 
 \begin{itemize}
-  \bf
   \item
-  `Okay, I'll jump in the puddle.'
-  \begin{itemize}
-    \it
-    \item
-    `Do you take your backpack off?'
-  \end{itemize}
+  The smell of goblin-shit will haunt their noses.
   \item
   Any humans in the troupe will instantly spot the pile of rocks, and understand that someone built it like a cairn.
   \item
@@ -331,41 +325,50 @@ The passage only has enough space for one person, so if they run into trouble, t
 \paragraph{Once out of the water and rested,}
 the character can remove all \glspl{ep} from holding their breath in the water, but not the \gls{ep} gained for swimming\ifnum\value{temperature}=2\else, or the \glspl{ep} for entering freezing waters\fi.
 
-\nextroom[up]{hungryHall}.
+\wayOut{Once out the other side, the troupe have entered the}{hungryHall}
 
 \mapentry[hungryHall]{Hungry Hall}
 
-This chamber could fit an entire \glsentrytext{village} inside it.
-The troupe can go anywhere, in any direction, but they will find only damp rocks in the darkness unless they search hard.
+\begin{exampletext}
+  This chamber could fit an entire \glsentrytext{village} inside it, and has plenty of fresh air, but not unlimited air.
+  The goblins understand the cavern's limits well, so the last time that \glspl{guard} entered, they lit a fire, and cooked a body in here, but left before the air became unbreathable.
+\end{exampletext}
 
-The players should feel aware of their lighting choices.
-Keeping a lit torch means that they can see danger coming, at least a little way off, but it also means that anything in the darkness can see them, while they cannot see it.
+The goblins have lit a fire, and within \pgls{interval}, the air will become quietly deadly, inflicting \gls{hypoxia} on anyone in the cavern.
 
-The darkness watches them.
+\begin{boxtext}
+  Emerging from the water, you see a fire burning in the distance.
+  Despite the bright light, you cannot see the ceiling or walls of the cavern -- just the bright light in the centre.
+\end{boxtext}
 
-\paragraph{Lighting \pgls{caveFire}}
+\paragraph{Standing by the \gls{caveFire}}
 will help dry off after the dunk from area \ref{waterMaze}.
 
+Inside the fire sits the charred bones of \pgls{guard}.
+His armour lies nearby, with teeth-marks.
+
 \paragraph{Finding the exits}
-requires a \roll{Speed}{Caving} roll (\tn[9]).
-The troupe can use \pgls{bandAct}.%
-only if they split up.
+requires a \roll{Speed}{Caving} roll at \tn[9].
+The troupe can only use \pgls{bandAct} if they split up.
+r \tn[14] if they put out the fire.
 
 They can also make this \pgls{restingaction} if they are prepared to spend \pgls{interval} doing it carefully.
 
-One exit rests at the height of a man, the others like low on the ground, and can only be accessed by crouching.
+\wayOut{One passage out smells like farts, and leads to the}{gas}
 
-\nextroom{gas}.
+\wayOut{Another, smaller, tunnel leads down to the}{darkTunnel}
+Disturbed rocks show that goblins only take one of these two passages.
 
-\nextroom{darkTunnel}.
+These tunnels have enough good air in them to prevent \gls{hypoxia} getting any worse, but not enough to cure whatever effects have begun.
 
 \mapentry[gas]{Fire Cavern}
 
-The passage here leads upwards, to a chamber of flammable gas.
+The passage here leads upwards, to a chamber where flammable gas seeps in through little air-vents.
 
-The party can make a \roll{Wits}{Caving} roll (\tn[13]) to notice the smell before their torches ignite it, dealing $2D6$ Damage to the first half of the characters, and $1D6$ to the second half.
+The party can make a \roll{Wits}{Caving} roll (\tn[12]) to notice the smell before their torches ignite it, dealing $2D6$ Damage to the first half of the characters, and $1D6$ to the second half.%
+\footnote{Armour with \pgls{covering} of 3 reduces the Damage by half, while armour with \gls{covering} 5 reduces it to a quarter.}
 
-\nextroom{smokePassage}.
+\wayOut{The troupe will exit through a narrow crack, at the}{umberHulk}
 
 \mapentry[darkTunnel]{Dark Tunnel}
 
@@ -385,28 +388,46 @@ That little verbal slip-up -- `ahead or behind' -- should be given with intentio
 The troupe will have trouble remembering which direction they came from and which they were going to.
 If they ask about the odd phrasing, tell them what they're having trouble remembering; otherwise, simply wait until the troupe have dealt with the imaginary goblins, and decide to continue moving.
 
-\nextroom{umberHulk}.
+\wayOut{Below, the \glspl{pc} find new problems, just before reaching the}{smokePassage}
 
 \mapentry[umberHulk]{Umber Hulk}
-% Needs a wide path out.
 
 \begin{exampletext}
   This giant, beetle-like creature%
   \exRef{judgement}{Judgement}{umber_hulk}
-  wanders the caverns, feeding off anything that moves.
-  It has laid a large group of eggs, and returns to them periodically, to drop any food on them that it can.
+  \ifnum\value{temperature}=0
+    lies in hibernation, dreaming of laying eggs and eating goblins.
+  \else
+    wanders the caverns, feeding off anything that moves.
+    It has laid a large group of eggs, and returns to them periodically, to drop any food on them that it can.
+  \fi
 \end{exampletext}
 
-It will have a hard time attacking the troupe, as it cannot fit through all passages, but the troupe will also have a hard time moving past it.
+\paragraph{If the troupe approach from \stateArea{darkTunnel},}
+\ifnum\value{temperature}=0
+  they will encounter the umber hulk by touch.
+
+  \begin{boxtext}
+    Out on the other side, your hand touches a different kind of rock -- completely smooth, and a series of smaller lines coming out of it.
+    The lines below have a shape like exposed tree roots.
+  \end{boxtext}
+
+  The hulk wakes within a couple of \glspl{round}.
+\else
+  the umber hulk will begin sniffing silently and shuffling loudly around the tiny entrance.
+
+  \begin{boxtext}
+    You hear the sound of disturbed rocks ahead, like someone shuffling a cart around a pile of rocks.
+  \end{boxtext}
+\fi
+
+The Umber Hulk will cannot fit through the passage to the \stateArea{darkTunnel}, so the \glspl{pc} can stay safely away from it once they know it exists, but will have a hard time getting past it.
 
 \umberhulk
 
-\begin{boxtext}
-  A wide crack in the ground ahead falls away to reveal a river, almost within touching distance.
-  It moves silently, and looks the colour of black tea under the torchlight.
-\end{boxtext}
-
-\nextroom{smokePassage}.
+\wayOut{The only way out leads to the}{smokePassage}
+After \pgls{interval}, goblins arrive below to set a fire at the \stateArea{darkTunnel}'s exit.
+This will irritate the umber hulk, causing it to chase the goblins, who flee across the river in the \stateArea{blindFish}.
 
 \mapentry[smokePassage]{Smokey Passage}
 
@@ -421,15 +442,28 @@ The goblins wait at the bottom of this long passageway, to light a fire with all
 \paragraph{If the \glspl{pc} have been creeping quietly,}
 they should make a \roll{Dexterity}{Stealth}, against the goblins' \roll{Wits}{Vigilance}, \tn.
 
-\nextroom{blindFish}.
+\paragraph{If the \glspl{pc} head back up,}
+they will receive more and more \glspl{ep} until they die, or try another way.
 
-\mapentry[blindFish]{Blind Fish}
+\paragraph{If the \glspl{pc} want to rush down,}
+they can roll \roll{Speed}{Caving} (\tn[10]) to hold their breath.
+Every Failure Margin inflicts \pgls{ep}, and the same \gls{natural} counts for everyone.
+
+\wayOut{This cavern expands slowly, and soon meets the}{blindFish}.
+
+\mapentry[blindFish]{Blind Fish Rapids}
 
 A long, lazy, river with a wicked undercurrent cuts across this cavern.
-The \pgls{pc} will need to vault it or swim across.
+The \glspl{pc} will need to vault it or swim across.
 Once on the other side, they can use the wooden planks goblins have left on the other side to get across.
 
 One wooden plank is stable, the other has a cut across the middle.
+Using the planks without examining them results in \pgls{pc} falling through the water.
+
+\begin{boxtext}
+  A wide crack in the ground ahead falls away to reveal a river, almost within touching distance.
+  It moves silently, and looks the colour of black tea under the torchlight.
+\end{boxtext}
 
 \paragraph{Swimming}
 demands a \roll{Strength}{Seafaring} roll (\tn[10]).
@@ -444,8 +478,6 @@ Any reasonable plan to catch them might work, although placing \pgls{caveFire} s
 
 \paragraph{Jumping over}
 demands a \roll{Speed}{Athletics} roll (\tn[12]).
-
-\nextroom{stalagmites}.
 
 \mapentry[stalagmites]{Stalagmites Point}
 
@@ -475,18 +507,16 @@ they find a map of the cave, created as the previous group came down.
 
 \paragraph{Retreat is easy,}
 but the troupe have limited supplies.
-The goblins will wait a full two~\glspl{interval} before leaving\ldots silently.
+The goblins will wait a full two~\glspl{interval} before retreating\ldots silently.
 
 \paragraph{Finding the ground exit}
 is difficult, because the stalagmites block the view in every direction.
 The troupe can move through here, each \glspl{pc} must roll \roll{Dexterity}{Athletics} (\tn[10]) to `jump' through.
 Failure means they block the passage -- just for \pgls{round} -- and nobody else can move through until they adjust their position.
 
-This lower passage leads to 
-\stateArea{skeinSwarm}.
+\wayOut{This lower passage leads to the}{skeinSwarm}
 
-If the troupe run up the little ledge the goblins stand on, it leads to a cavern full of large rocks, then on to
-\stateArea{mushroomsTunnel}.
+\wayOut{If the troupe run up the little ledge the goblins stand on, it leads to a cavern full of large rocks, then on to the}{mushroomsTunnel}
 
 \mapentry[skeinSwarm]{Skein Hole}
 
@@ -515,7 +545,7 @@ The cook will need \pgls{caveFire} and then makes an \roll{Intelligence}{Cultiva
 Rolling a tie indicates that the chef has failed, but will not poison anyone.
 Failure indicates that the resulting rancid mushroom `stew', will not count as a full meal for anyone, and instead inflict 2~\glspl{ep}.
 
-\nextroom{basiliskCave}.
+\wayOut{The tunnel continues for a mile, to the}{basiliskCave}
 
 \mapentry[mushroomsTunnel]{A Short Cut to Mushrooms}
 
@@ -524,6 +554,8 @@ This passage hosts glowing mushrooms, called `glow shrooms'.%
 Each one gives off light when disturbed in anyway.
 
 A pile of them can be used as lantern light, though the light will die after \pgls{interval} someone picks them, so they cannot provide a long-term torch.
+
+\wayOut{The tunnel continues for a mile, to the}{sunRoof}
 
 \mapentry[basiliskCave]{\Glsfmttext{basilisk} Cave}
 
@@ -536,7 +568,7 @@ A pile of them can be used as lantern light, though the light will die after \pg
 
   \begin{boxtext}
     The matted knot of green flesh ahead sits like so many rocks.
-    You cannot see a head, but you could never mistake that rancid stench -- some number of \glspl{basilisk} lie in a hibernating pile.
+    You cannot see a head, but you could never mistake that rancid stench -- some number of \glspl{basilisk} lie in a knotted pile.
   \end{boxtext}
 
   \basilisk[\npc{\T[3]\A}{\arabic{noAppearing} \Glsfmttext{basilisk}}]
@@ -559,7 +591,7 @@ A pile of them can be used as lantern light, though the light will die after \pg
   It looks incredibly bright\ldots
 \end{boxtext}
 
-\nextroom{sunRoof}.
+\wayOut{The not-so-distant light is the}{sunRoof}.
 
 \mapentry[sunRoof]{Sun Roof}
 
@@ -573,21 +605,19 @@ It also lets the player know the \gls{tn}.
 A tie means the character figures out this climb will only hurt them before they climb.
 A failed roll means the character suffers $2D6$ Damage.
 
-\nextroom{crackExit}.
+\wayOut{One more mile, and the troupe find the}{crackExit}
 
 \mapentry[crackExit]{Crack to Exit}
 
 This sweet-smelling narrow tunnel goes forward and up, and eventually exits to the world above.
 Unfortunately, it will only admit creatures with a Strength Bonus of 0 or less.
 
-\nextroom{windyPassage}.
+\wayOut{One more mile along is the}{windyPassage}
 
 \mapentry[windyPassage]{Windy Passage}
 
 The wind coming through this tunnel indicates its invitation to the outside world.
 The troupe can finally move out, and be free of the goblin warrens.
-
-At this point, you might ask how many goblin heads they have obtained\ldots
 
 \subsection{Returning Home}
 
@@ -622,5 +652,11 @@ The troupe is now free, and only have the small task of navigating back home, th
 \fi
 
 If the troupe follow the sound of the river, they will eventually find a nearby \gls{village}.
+
+\subsection{Back at the \Glsfmttext{broch}}
+
+Once the troupe return, \gls{redcoin} immediately asks how many goblin heads the troupe have obtained.
+If the troupe have none, one of them will need to roll \roll{Charisma}{Caving} to explain the difficulties (\tn[8]).
+If the roll fails, \gls{redcoin} sends them all to the local \gls{court}, while arranging for more \gls{fodder} to go up the mountain\ldots
 
 \end{multicols}
