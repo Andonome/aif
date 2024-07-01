@@ -20,7 +20,7 @@
   Your mission is to clear out a goblin-warren, half-way up Failpeak Mountain.
   Make sure you kill all of them.
 
-  Everyone can pick up \ifnum\value{temperature}=0 four \else three \fi days' rations, and this map.
+  Everyone can pick up \ifnum\value{temperature}=0 four \else three \fi days' rations, and a torch.
 \end{exampletext}
 
 \noindent
@@ -40,26 +40,27 @@ nobody will listen.
   \begin{boxtable}[lX]
     \textbf{\glsentrytext{tn}} & \textbf{Equipment} \\
     \hline
-    \tn[3] & 1 torch each \\
-    \tn[4] & 50' of rope \\
+    \tn[4] & 50' of rope (only 2 available) \\
     \ifnum\value{temperature}=0
       \tn[5] & Warm clothes \\
     \fi
     \tn[6] & Mallet \\
     \tn[7] & 2 more torches \\
-    \tn[8] & 2 more torches \\
-    \tn[10] & One extra day's rations \\
-    \tn[11] & 3 more torches \\
-    \tn[12] & 2 shortswords \\
-    \tn[13] & 1 partial chainmail suit \\
+    \tn[9] & One extra day's rations \\
+    \tn[10] & partial leather armour \\
+    \tn[11] & 2 more torches \\
+    \tn[12] & shortsword \\
+    \tn[13] & partial chainmail armour \\
   \end{boxtable}
 }
 
 \paragraph{If the \glspl{pc} ask for more supplies,}
 \gls{redcoin} will give them the following items, with a successful \roll{Charisma}{Wyldcrafting} roll.
 
-You can use a single roll, rather than having the \glspl{pc} making loads of dice-rolls, so the party will be able to ask for anything on their roll, plus anything beneath that \glsentrylong{tn} (including all of those torches).
+You can use a single roll, rather than having the \glspl{pc} making loads of dice-rolls, so the party will be able to ask for anything on their roll, plus anything beneath that \glsentrylong{tn} (including all of those torches), and everyone who makes the roll receives the item.
 However, they will have to ask for an item by name in order to get it.
+
+Inform the players that each torch burns for an hour.
 
 \paragraph{Asking the prisoners about what happened}
 requires a \roll{Charisma}{Empathy} roll (\tn[8]) (or whatever Skill seems appropriate), to convince the \glspl{sunGuard} to allow the conversation.
