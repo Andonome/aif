@@ -7,21 +7,26 @@
 \noindent
 
 \renewcommand\csComments{
-  \callout{0,6}{1,-1}{Slope}{}
+  \callout{3,10}{0.1,-0.6}{}{6~\glsentrytext{step} slope to water}
+  \callout{0,6}{1,-1}{2~\glsentrytext{step} slope to ground}{}
   \callout{1,8}{1.5,-5}{}{}
   \callout{1,8}{1.5,-1}{Towers}{2 archers each}
-  \callout[8]{3.5,1}{.7,.5}{The Philosopher}{}
+  \callout[8]{4,0.2}{.7,.8}{The Fisherman}{can cast his rod into the water from here}
   \callout{7.5,0}{0,2.5}{Dining Hall}{}
-  \callout{5.5,9}{0,-2}{Stables}{}
-  \callout{9,9}{0,-2}{Treasury}{$\dicef{6} + 2$ things}
-  \callout[1]{10,4}{0,0}{\outline{F}}{}
+  \callout{8,9}{0,-2}{Stables}{with two mules}
+  \callout[6]{1,1}{2,1.2}{Storage}{with bows, cleaning equipment, and a child's doll}
+  \callout[6]{5,8.5}{-1,-3}{Murder Holes}{let the guards stab into the entrance hall}
+  \callout[7]{12,9}{-2,-1.5}{Slip}{where the boats leave from}
   \callout{18,5}{-2,-2}{Passing room}{}
+  \mapFeature{10,4.2}{F}
   \callout{16,8}{-2,-2}{End Room}{}
 }
 
 \widePic[t]{Dyson_Logos/tower_f}
 
 \humanarcher[\npc{\T[2]\M\Hu}{\arabic{noAppearing} Archers}]
+
+\humansoldier[\npc{\T[2]\Hu}{\arabic{noAppearing} \Glsfmtplural{thane}}]
 
 \renewcommand\csComments{
   \callout{1,8}{1.5,-1}{Archers}{}
@@ -38,7 +43,7 @@
 
 \renewcommand\csComments{
   \callout{1,8}{1.5,-1}{Towers}{}
-  \callout[12]{9,9}{.5,-2}{\Gls{keepWarden}}{Bed in corner.  Three alchemical recipe books.  Cooking equipment.  3 Earth \glspl{ingredient}, 2 Fire \glspl{ingredient}, and 2 Water \glspl{ingredient}}
+  \callout[12]{9,9}{.5,-2}{\Gls{keepWarden}'s}{Bed in corner.  Three alchemical recipe books.  Cooking equipment.  3 Earth \glspl{ingredient}, 2 Fire \glspl{ingredient}, and 2 Water \glspl{ingredient}}
   \callout[5]{16,8}{-2,-2}{3~Archers}{}
 }
 
@@ -51,13 +56,17 @@
 \subsection{The Roots}
 
 \smolMapPic{Dyson_Logos/tower_b1}{
-  \rotatebox{90}{\large\outline{S}}/77/47,
-  \large\outline{F}/47/40,
+  \rotatebox{90}{\large S}/77/48,
+  \large C/44/45,
+  \large F/80/37,
 }
 
 \smolMapPic{Dyson_Logos/tower_b2}{
   \Huge Stuff/62/55,
+  \large C/86/49,
 }
+
+\mapentry[keepBoats]{Boats}
 
 \mapentry[keepLadder]{Ladder Down}
 
