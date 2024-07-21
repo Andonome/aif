@@ -34,6 +34,8 @@ Climbing down requires a \roll{Dexterity}{Athletics} at \tn[14].%
 
 Failure means death.
 
+\null
+
 \pic{cave_2}
 
 \mapentry[firstBridge]{First Bridge}
@@ -101,7 +103,12 @@ the rope will pull the boulder down on their head.
 
 \pic{cave_4}
 
-\widePic{cave_5}
+\mapPic{b}{cave_5}{
+  \ref{secondBridge}/80/40,
+  \ref{cliffDive}/60/85,
+  \ref{wormTunnel}/58/02,
+  \ref{standingTunnel}/00/04,
+}
 
 \mapentry[secondBridge]{Second Bridge}
 
@@ -193,7 +200,12 @@ The only clue about the danger, is the gentle sound of the nearby river.
 \wayOut{The goblin stands in the open, in the same room as the}{waterMaze}
 If a single \glspl{pc} approaches while upright and ready for him, he flees towards the exit there.
 
-\widePic{cave_6}
+\mapPic{b}{cave_6}{
+  \ref{standingTunnel}/95/64,
+  \ref{wormTunnel}/95/21,
+  \ref{standingTunnel}/25/38,
+  \ref{waterMaze}/05/18,
+}
 
 \mapentry[standingTunnel]{Standing Tunnel}
 
@@ -380,7 +392,15 @@ Disturbed rocks show that goblins only take one of these two passages.
 
 These tunnels have enough good air in them to prevent \gls{hypoxia} getting any worse, but not enough to cure whatever effects have begun.
 
-\widePic{cave_7}
+\mapPic{b}{cave_7}{
+  \ref{hungryHall}/38/93,
+  \ref{gas}/28/69,
+  \ref{darkTunnel}/02/70,
+  \ref{umberHulk}/64/11,
+  \ref{smokePassage}/58/68,
+  \ref{blindFish}/76/80,
+  \ref{stalagmites}/90/19,
+}
 
 \mapentry[gas]{Fire Cavern}
 
@@ -472,7 +492,14 @@ Every Failure Margin inflicts \pgls{ep}, and the same \gls{natural} counts for e
 
 \wayOut{This cavern expands slowly, and soon meets the}{blindFish}.
 
-\widePic{cave_8}
+\mapPic{b}{cave_8}{
+  \ref{skeinSwarm}/14/31,
+  \ref{mushroomsTunnel}/25/60,
+  \ref{basiliskCave}/40/30,
+  \ref{sunRoof}/62/55,
+  \ref{crackExit}/80/60,
+  \ref{windyPassage}/90/60,
+}
 
 \mapentry[blindFish]{Blind Fish Rapids}
 
