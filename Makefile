@@ -7,8 +7,13 @@ output: $(BOOK).pdf
 config/vars:
 	@git submodule update --init
 
+config/booklet.pdf:
+	make -C config booklet.pdf
+
 $(BOOK).pdf: $(wildcard *.tex) rumours/ caves/ config/
 	@$(COMPILER) main.tex
+	@pdfunite $(BOOK).pdf config/booklet.pdf /tmp/out.pdf
+	@mv /tmp/out.pdf $(BOOK).pdf
 
 all: $(BOOK).pdf
 
