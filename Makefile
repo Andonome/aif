@@ -10,7 +10,7 @@ config/vars:
 config/booklet.pdf:
 	make -C config booklet.pdf
 
-$(BOOK).pdf: $(wildcard *.tex) rumours/ caves/ config/
+$(BOOK).pdf: $(wildcard *.tex) rumours/ caves/ config/ config/booklet.pdf
 	@$(COMPILER) main.tex
 	@pdfunite $(BOOK).pdf config/booklet.pdf /tmp/out.pdf
 	@mv /tmp/out.pdf $(BOOK).pdf
