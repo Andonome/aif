@@ -1,4 +1,5 @@
 include config/vars
+GOBLINS = The_Goblin_Hole
 
 output: $(BOOK).pdf
 
@@ -12,12 +13,17 @@ config/vars:
 config/booklet.pdf:
 	make -C config booklet.pdf
 
-$(BOOK).pdf: $(DEPS) ex_cs/ rumours/ caves/ config/ | qr.tex
+$(GOBLINS).pdf: $(DEPS) config/booklet.pdf ex_cs/ caves/ | qr.tex
+	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
+	@pdfunite $(GOBLINS).pdf config/booklet.pdf /tmp/out.pdf
+	@mv /tmp/out.pdf $(GOBLINS).pdf
+
+$(BOOK).pdf: $(DEPS) ex_cs/ config/booklet.pdf caves/ | qr.tex
 	@$(COMPILER) main.tex
 	@pdfunite $(BOOK).pdf config/booklet.pdf /tmp/out.pdf
 	@mv /tmp/out.pdf $(BOOK).pdf
 
-all: $(BOOK).pdf
+all: $(BOOK).pdf $(GOBLINS).pdf
 
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
