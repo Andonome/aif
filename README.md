@@ -29,10 +29,8 @@ Eventually, it should hold a litany of small side quests, rumours, and places.
 For the moment, it only holds one mission.
 
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
-[core]: https://gitlab.com/bindrpg/core
-[oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/oneshot_horde_escape.pdf?job=build
-[stories pdf]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/stories.pdf?job=build
-[core pdf]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/core.pdf?job=build
+[oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
+[core]: https://gitlab.com/bindrpg/core/-/jobs/artifacts/master/raw/Core_Rules.pdf?job=build
 [aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Adventures_in_Fenestra.pdf?job=build
 [goblin hole]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/The_Goblin_Hole.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-aif-16324948-issue-@incoming.gitlab.com
