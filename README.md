@@ -1,3 +1,5 @@
+# Adventures in Fenestra
+
 | Links                          | Related Books                  |
 |:-------------------------------|:-------------------------------|
 | [Download][aif]                | [Core book][core]              |
@@ -31,5 +33,6 @@ For the moment, it only holds one mission.
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/oneshot_horde_escape.pdf?job=build
 [stories pdf]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/stories.pdf?job=build
 [core pdf]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/core.pdf?job=build
-[aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/aif.pdf?job=build
+[aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Adventures_in_Fenestra.pdf?job=build
+[goblin hole]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/The_Goblin_Hole.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-aif-16324948-issue-@incoming.gitlab.com
