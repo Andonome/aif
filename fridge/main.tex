@@ -5,19 +5,15 @@
 \input{glossary.tex}
 \input{commands.tex}
 
-\declareSQareas{Town,Roads,Forest}
-
-\title{The Goblin Hole}
+\title{The Town Fridge}
 
 \hypersetup{pdfinfo={
-Title={Adventures in Fenestra},
+Title={The Town Fridge},
 Subject={TTRPG},
 Keywords={TTRPG,RPG,roleplaying}
 }}
 
 \settoggle{verbose}{true}
-\newtoggle{players}
-\settoggle{players}{false}
 \externalReferent{core}
 \externalReferent{judgement}
 \externalReferent{stories}
@@ -25,8 +21,8 @@ Keywords={TTRPG,RPG,roleplaying}
 \iftoggle{core}{\input{../core/commands.tex}}{}
 
 \begin{document}
-\frontpage[The Goblin Hole]%
-  {A Claustrophobic Nightmare with Dice}%
+\frontpage[The Town Fridge]%
+  {Time is Running Out}%
 
 \glsunsetall
 \include{introduction}
@@ -45,31 +41,8 @@ Keywords={TTRPG,RPG,roleplaying}
 \mainmatter
 \glsresetall
 
-\input{fridge/melt.tex}
-
-\input{caves/all.tex}
-
-%\chapter{Side Quests}
-
-%\input{rumours/main.tex}
-
-%\startappendix
-%
-%\backmatter
-
-%\printglossary[
-%  type=people,
-%  nonumberlist,
-%]
-
-%\printindex
+\input{fridge/all.tex}
 
 \backmatter
-
-\cleardoublepage
-
-\input{ex_cs/all.tex}
-
-\input{config/GS.tex}
 
 \end{document}
