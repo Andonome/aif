@@ -13,11 +13,10 @@ You can obtain this book in just 4 steps:
 
 1. Clone this repo.
 1. Install the required packages:
-    * For Debian/ Mint/ Ubuntu: `inkscape`, `make`, `texlive-full`, `git-lfs`, and `latexmk`.
-    * For Arch Linux: `inkscape`, `make`, `texlive-most`, `git-lfs`, and `texlive-binextra`.
-    * For Void Linux: `inkscape`, `make`, `texlive-full`, `git-lfs`, and `texlive-latexmk`.
+    * For Debian/ Mint/ Ubuntu: `apt install inkscape make texlive-full git-lfs latexmk`.
+    * For Arch Linux: `pacman -S inkscape make git git-lfs texlive-binextra texlive-latexextra texlive-fontsrecommended texlive-fontsextra && git lfs install`
+    * For Void Linux: `xbps-install inkscape make texlive-full git-lfs texlive-latexmk`.
 1. Enter the repo, and do `make all`.
-1. Take the resulting pdf to your local, friendly print shop and ask for a print-out.
 
 For full setup instructions, see the [wiki][compiling].
 
