@@ -1,5 +1,3 @@
-\pagebreak[4]
-
 \section{The Guts of the Mountain}
 
 \begin{multicols}{2}
@@ -9,12 +7,6 @@
 The troupe will almost certainly want to stop and rest here for \pgls{interval}.
 The air smells dusty, but fresh enough to rest.
 
-\begin{boxtext}
-  This fresh hall has an ambient drip of water, and moisture everywhere.
-  The ceiling slopes down gently, surrounding the entire passage with a ring of low-hanging darkness.
-  Large, damp, rocks litter the ground in every direction.
-\end{boxtext}
-
 \paragraph{The way out}
 goes down, sharply.
 
@@ -22,11 +14,15 @@ The troupe should roll \roll{Dexterity}{Caving} (\tn[10]).
 A tie means the first person can drop an item instead of taking the fall.
 Falling down the passage inflicts $1D6-1$ Damage (a helmet provides a maximum of \gls{dr} 1, no other armour counts).
 
+\begin{boxtext}
+  This fresh hall has an ambient drip of water, and moisture everywhere.
+  The ceiling slopes down gently, surrounding the entire passage with a ring of low-hanging darkness.
+  Large, damp, rocks litter the ground in every direction.
+\end{boxtext}
+
 \wayOut{A path winds slowly up half a mile, to}{falseExit}.
 
 \wayOut{Another leads 1 mile to}{firstBridge}
-
-\pic{cave_2}
 
 \mapentry[falseExit]{False Exit}
 
@@ -43,6 +39,8 @@ Failure means death.
 }{
   \pic{cave_4}
 }
+
+\pic{cave_2}
 
 \mapentry[firstBridge]{First Bridge}
 
@@ -192,7 +190,7 @@ means the character has become stuck, has gained 2~\glspl{ep}, and will not get 
 
 Setting up a rope to help them requires another character to make their roll for them again, with +1 to the \glsentrylong{tn}.
 
-\mapPic{b}{cave_6}{
+\mapPic{t}{cave_6}{
   \ref{standingTunnel}/95/64,
   \ref{wormTunnel}/95/21,
   \ref{waterMaze}/05/18,
@@ -707,6 +705,8 @@ The troupe is now free, and only have the small task of navigating back home, th
   Meanwhile, a \gls{crawler} watches them from above (they spot it immediately).
   If they retreat until the storm breaks, it leaves.
   But if they wander in the open, it attacks.
+
+  \chitincrawler
 \fi
 
 If the troupe follow the sound of the river, they will eventually find a nearby \gls{village}.
