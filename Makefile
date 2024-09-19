@@ -8,12 +8,13 @@ config/vars:
 config/booklet.pdf:
 	make -C config booklet.pdf
 
-$(DROSS)/$(GOBLINS).pdf: $(DEPS) config/booklet.pdf ex_cs/ caves/ | qr.tex
+$(DROSS)/characters.pdf: $(DEPS) ex_cs/
+	$(COMPILER) -jobname=characters ex_cs/all.tex
+$(DROSS)/$(GOBLINS).pdf: $(DEPS) caves/ | qr.tex
 	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
-	@pdfunite $(DROSS)/$(GOBLINS).pdf config/booklet.pdf /tmp/out.pdf
-	@mv /tmp/out.pdf $(DROSS)/$(GOBLINS).pdf
-$(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf
-	@$(CP) $< $@
+
+$(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/characters.pdf config/booklet.pdf
+	@pdfunite $^ $@
 
 $(DBOOK): $(DEPS) ex_cs/ config/booklet.pdf caves/ | qr.tex
 	@$(COMPILER) main.tex
