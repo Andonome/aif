@@ -1,41 +1,25 @@
-\setcounter{Strength}{1}
-\setcounter{Dexterity}{0}
-\setcounter{Speed}{-1}
-\setcounter{Intelligence}{-3}
-\setcounter{Wits}{-2}
-\setcounter{Charisma}{0}
+\begin{filledCS}%
+  {\composeHumanName}% NAME
+  {Human}% RACE
+  {Wannabe Soldier}% CONCEPT
+  {Conquoror}% CODE
+  {{1}{0}{-1}}% BODY
+  {{-3}{-2}{0}}% MIND
+  {%
+    \setcounter{Athletics}{1}
+    \setcounter{Cultivation}{1}
+    \setcounter{Deceit}{1}
+    \setcounter{Performance}{1}
+    \setcounter{Melee}{1}
+    \setcounter{Brawl}{1}
+    \setcounter{Projectiles}{1}
+  }% SKILLS
+  {}% KNACKS
+  {Helmet worn by \composeHumanName, famed \glsentrytext{guard} \gls{thane}}% EQUIPMENT
+  \longsword
+  \partialleather
+  \renewcommand\rank{Fodder}
+  \renewcommand\characterDebt{100 \glspl{sp}}
 
-\setcounter{Academics}{0}
-\setcounter{Athletics}{1}
-\setcounter{Caving}{0}
-\setcounter{Crafts}{0}
-\setcounter{Cultivation}{1}
-\setcounter{Deceit}{1}
-\setcounter{Empathy}{0}
-\setcounter{Medicine}{0}
-\setcounter{Performance}{1}
-\setcounter{Larceny}{0}
-\setcounter{Seafaring}{0}
-\setcounter{Stealth}{0}
-\setcounter{Vigilance}{0}
-\setcounter{Survival}{0}
+\end{filledCS}
 
-\setcounter{Melee}{1}
-\setcounter{Brawl}{1}
-\setcounter{Projectiles}{1}
-
-\renewcommand\knackOne{}
-\renewcommand\knackTwo{}
-
-\renewcommand\rank{Fodder}
-\renewcommand\characterDebt{100}
-\renewcommand\race{Human}
-\renewcommand\concept{Wannabe Soldier}
-\renewcommand\name{\composeHumanName}
-\renewcommand\code{Conquoror}
-
-\renewcommand\characterWeapon{\longsword}
-\renewcommand\characterArmour{\partialleather}
-\renewcommand\characterEquipment{Helmet worn by \composeHumanName, famed \glsentrytext{guard} warrior.}
-
-\renewcommand\charSpellList{}

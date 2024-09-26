@@ -1,41 +1,27 @@
-\setcounter{Strength}{1}
-\setcounter{Dexterity}{2}
-\setcounter{Speed}{-2}
-\setcounter{Intelligence}{2}
-\setcounter{Wits}{-1}
-\setcounter{Charisma}{-2}
-
-\setcounter{Academics}{1}
-\setcounter{Athletics}{0}
-\setcounter{Caving}{0}
-\setcounter{Crafts}{0}
-\setcounter{Cultivation}{0}
-\setcounter{Deceit}{0}
-\setcounter{Empathy}{1}
-\setcounter{Medicine}{0}
-\setcounter{Performance}{0}
-\setcounter{Larceny}{2}
-\setcounter{Seafaring}{0}
-\setcounter{Stealth}{0}
-\setcounter{Vigilance}{1}
-\setcounter{Survival}{1}
-
-\setcounter{Melee}{0}
-\setcounter{Brawl}{0}
-\setcounter{Projectiles}{1}
-
-\renewcommand\knackOne{\adrenalinesurge}
-\renewcommand\knackTwo{}
-
-\renewcommand\rank{Fodder}
-\renewcommand\characterDebt{100}
-\renewcommand\race{Human}
-\renewcommand\concept{Dishonoured Trader}
-\renewcommand\name{\composeHumanName}
-\renewcommand\code{Tribalist}
-
-\renewcommand\characterWeapon{\maul}
-\renewcommand\characterArmour{\partialleather}
-\renewcommand\characterEquipment{(\textit{Take the last item of the character on your right})}
 
 \renewcommand\charSpellList{}
+\begin{filledCS}%
+  {\composeHumanName}% NAME
+  {Human}% RACE
+  {Dishonoured Trader}% CONCEPT
+  {Tribalist}% CODE
+  {{1}{2}{-2}}% BODY
+  {{2}{-1}{-2}}% MIND
+  {%
+    \setcounter{Academics}{1}
+    \setcounter{Empathy}{1}
+    \setcounter{Larceny}{2}
+    \setcounter{Vigilance}{1}
+    \setcounter{Survival}{1}
+
+    \setcounter{Projectiles}{1}
+    \maul
+    \partialleather
+  }% SKILLS
+  {\adrenalinesurge}% KNACKS
+  {(\textit{Take the last item of the character on your right})}% EQUIPMENT
+  \renewcommand\rank{Fodder}
+  \renewcommand\characterDebt{100 \glspl{sp}}
+
+\end{filledCS}
+

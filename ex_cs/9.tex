@@ -1,58 +1,31 @@
-\setcounter{Strength}{-1}
-\setcounter{Dexterity}{0}
-\setcounter{Speed}{0}
-\setcounter{Intelligence}{0}
-\setcounter{Wits}{-2}
-\setcounter{Charisma}{2}
 
-\setcounter{Academics}{0}
-\setcounter{Athletics}{0}
-\setcounter{Caving}{0}
-\setcounter{Crafts}{0}
-\setcounter{Cultivation}{0}
-\setcounter{Deceit}{0}
-\setcounter{Empathy}{1}
-\setcounter{Medicine}{0}
-\setcounter{Performance}{0}
-\setcounter{Larceny}{0}
-\setcounter{Seafaring}{0}
-\setcounter{Stealth}{0}
-\setcounter{Vigilance}{0}
-\setcounter{Survival}{1}
+\begin{filledCS}%
+  {Finill\"e}% NAME
+  {Elf}% RACE
+  {Happy-Go-Lucky Outcast}% CONCEPT
+  {Chronicler}% CODE
+  {{-1}{0}{0}}% BODY
+  {{0}{-2}{2}}% MIND
+  {%
+    \setcounter{Empathy}{1}
+    \setcounter{Survival}{1}
+    \setcounter{Fire}{1}
+    \setcounter{Air}{2}
+    \Dagger
+  }% SKILLS
+  {}% KNACKS
+  {Five-leafed clover}% EQUIPMENT
+  \renewcommand\rank{Fodder}
+  \renewcommand\characterDebt{100 \glspl{sp}}
 
-\setcounter{Melee}{0}
-\setcounter{Brawl}{0}
-\setcounter{Projectiles}{0}
-\setcounter{Fire}{1}
-\setcounter{Earth}{2}
+  \renewcommand\charSpells{
+    \showSpells{Air2}
+    \showSpells{Air1}
+    \showSpells{Air1}
+    \showSpells{Fire1}
+    \showSpells{Light1}
+    \showSpells{Light1}
+  }
 
-\renewcommand\knackOne{}
-\renewcommand\knackTwo{}
+\end{filledCS}
 
-\renewcommand\rank{Fodder}
-\renewcommand\characterDebt{100}
-\renewcommand\race{Elf}
-\renewcommand\concept{Happy-Go-Lucky Outcast}
-\renewcommand\name{Finill\"e}
-\renewcommand\code{Chronicler}
-
-\renewcommand\characterWeapon{\Dagger}
-\renewcommand\characterArmour{}
-\renewcommand\characterEquipment{Five-leafed clover}
-
-\renewcommand\charSpellList{
-  \subsubsection*{Spells}
-
-  Roll Charisma + \textit{Skill} to cast.
-
-  \begin{multicols}{2}
-  \showSpells{Earth2}
-
-  \showSpells{Earth1}
-
-  \showSpells{Fire1}
-
-  \showSpells{Force1}
-
-  \end{multicols}
-}

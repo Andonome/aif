@@ -1,41 +1,24 @@
-\setcounter{Strength}{1}
-\setcounter{Dexterity}{0}
-\setcounter{Speed}{-1}
-\setcounter{Intelligence}{-1}
-\setcounter{Wits}{1}
-\setcounter{Charisma}{-2}
 
-\setcounter{Academics}{0}
-\setcounter{Athletics}{0}
-\setcounter{Caving}{0}
-\setcounter{Crafts}{0}
-\setcounter{Cultivation}{0}
-\setcounter{Deceit}{0}
-\setcounter{Empathy}{1}
-\setcounter{Medicine}{0}
-\setcounter{Performance}{0}
-\setcounter{Larceny}{2}
-\setcounter{Seafaring}{0}
-\setcounter{Stealth}{1}
-\setcounter{Vigilance}{0}
-\setcounter{Survival}{1}
+\begin{filledCS}%
+  {Tsod}% NAME
+  {Gnoll}% RACE
+  {Tubby Thief}% CONCEPT
+  {Noble}% CODE
+  {{1}{0}{-1}}% BODY
+  {{-1}{1}{-2}}% MIND
+  {%
+    \setcounter{Empathy}{1}
+    \setcounter{Larceny}{2}
+    \setcounter{Stealth}{1}
+    \setcounter{Survival}{1}
+    \setcounter{Melee}{1}
+    \setcounter{Brawl}{1}
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
+    \spear
+  }% SKILLS
+  {}% KNACKS
+  {Bag of shiny rocks, \rations}% EQUIPMENT
 
-\setcounter{Melee}{1}
-\setcounter{Brawl}{1}
-\setcounter{Projectiles}{0}
+\end{filledCS}
 
-\renewcommand\knackOne{}
-\renewcommand\knackTwo{}
-
-\renewcommand\rank{Fodder}
-\renewcommand\characterDebt{100}
-\renewcommand\race{Gnoll}
-\renewcommand\concept{Tubby Thief}
-\renewcommand\name{Tsod}
-\renewcommand\code{Noble}
-
-\renewcommand\characterWeapon{\spear}
-\renewcommand\characterArmour{}
-\renewcommand\characterEquipment{Bag of shiny rocks, \rations}
-
-\renewcommand\charSpellList{}

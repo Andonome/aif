@@ -1,53 +1,29 @@
-\setcounter{Strength}{1}
-\setcounter{Dexterity}{0}
-\setcounter{Speed}{0}
-\setcounter{Intelligence}{0}
-\setcounter{Wits}{2}
-\setcounter{Charisma}{1}
 
-\setcounter{Academics}{1}
-\setcounter{Athletics}{0}
-\setcounter{Caving}{1}
-\setcounter{Crafts}{0}
-\setcounter{Cultivation}{0}
-\setcounter{Deceit}{0}
-\setcounter{Empathy}{2}
-\setcounter{Medicine}{0}
-\setcounter{Performance}{0}
-\setcounter{Larceny}{0}
-\setcounter{Seafaring}{0}
-\setcounter{Stealth}{0}
-\setcounter{Vigilance}{2}
-\setcounter{Survival}{0}
+\begin{filledCS}%
+  {Morgaine Binder}% NAME
+  {Dwarf}% RACE
+  {Dispossessed Noble}% CONCEPT
+  {Noble}% CODE
+  {{1}{0}{0}}% BODY
+  {{0}{2}{1}}% MIND
+  {%
+    \shortsword
+    \partialleather
+    \setcounter{Academics}{1}
+    \setcounter{Caving}{1}
+    \setcounter{Empathy}{2}
+    \setcounter{Vigilance}{2}
+    \setcounter{Fate}{1}
+  }% SKILLS
+  {}% KNACKS
+  {Chalk, 50' of rope, \rations, \rations}% EQUIPMENT
 
-\setcounter{Melee}{0}
-\setcounter{Brawl}{0}
-\setcounter{Fate}{1}
-\setcounter{Projectiles}{0}
+  \renewcommand\rank{Fodder}
+  \renewcommand\characterDebt{100 \glspl{sp}}
+  \renewcommand\charSpells{
+    \showSpells{Fate1}
+    \showSpells{Fate1}
+  }
 
-\renewcommand\knackOne{}
-\renewcommand\knackTwo{}
+\end{filledCS}
 
-\renewcommand\rank{Fodder}
-\renewcommand\characterDebt{100}
-\renewcommand\race{Dwarf}
-\renewcommand\concept{Dispossessed Noble}
-\renewcommand\name{Morgaine Binder}
-\renewcommand\code{Noble}
-
-\renewcommand\characterWeapon{\shortsword}
-\renewcommand\characterArmour{\partialleather}
-\renewcommand\characterEquipment{Chalk, 50' of rope, \rations, \rations}
-
-\renewcommand\charSpellList{
-  \subsubsection*{Spells}
-
-  Roll Charisma + \textit{Skill} to cast.
-
-  \begin{multicols}{2}
-  \showSpells{Fate1}
-
-  \showSpells{Fate1}
-
-  \end{multicols}
-}

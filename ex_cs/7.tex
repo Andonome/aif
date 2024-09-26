@@ -1,41 +1,22 @@
-\setcounter{Strength}{1}
-\setcounter{Dexterity}{0}
-\setcounter{Speed}{0}
-\setcounter{Intelligence}{-1}
-\setcounter{Wits}{-1}
-\setcounter{Charisma}{-3}
 
-\setcounter{Academics}{0}
-\setcounter{Athletics}{1}
-\setcounter{Caving}{0}
-\setcounter{Crafts}{0}
-\setcounter{Cultivation}{0}
-\setcounter{Deceit}{0}
-\setcounter{Empathy}{0}
-\setcounter{Medicine}{0}
-\setcounter{Performance}{0}
-\setcounter{Larceny}{1}
-\setcounter{Seafaring}{0}
-\setcounter{Stealth}{1}
-\setcounter{Vigilance}{0}
-\setcounter{Survival}{0}
+\begin{filledCS}%
+  {\composeHumanName}% NAME
+  {Human}% RACE
+  {Small-town Bully}% CONCEPT
+  {Jester}% CODE
+  {{1}{0}{0}}% BODY
+  {{-1}{-1}{-3}}% MIND
+  {%
+    \setcounter{Athletics}{1}
+    \setcounter{Larceny}{1}
+    \setcounter{Stealth}{1}
+    \setcounter{Brawl}{2}
+    \shortsword
+  }% SKILLS
+  {\adrenalinesurge}% KNACKS
+  {Rusty blade, \rations}% EQUIPMENT
+  \renewcommand\rank{Fodder}
+  \renewcommand\characterDebt{100 \glspl{sp}}
 
-\setcounter{Melee}{0}
-\setcounter{Brawl}{2}
-\setcounter{Projectiles}{0}
+\end{filledCS}
 
-\renewcommand\knackOne{\adrenalinesurge}
-\renewcommand\knackTwo{}
-
-\renewcommand\rank{Fodder}
-\renewcommand\characterDebt{100}
-\renewcommand\race{Human}
-\renewcommand\concept{Small-town Bully}
-\renewcommand\name{\composeHumanName}
-\renewcommand\code{Jester}
-
-\renewcommand\characterWeapon{\shortsword}
-\renewcommand\characterArmour{}
-\renewcommand\characterEquipment{Rusty blade, \rations}
-
-\renewcommand\charSpellList{}

@@ -1,41 +1,26 @@
-\setcounter{Strength}{3}
-\setcounter{Dexterity}{-1}
-\setcounter{Speed}{0}
-\setcounter{Intelligence}{0}
-\setcounter{Wits}{-1}
-\setcounter{Charisma}{0}
 
-\setcounter{Academics}{0}
-\setcounter{Athletics}{1}
-\setcounter{Caving}{0}
-\setcounter{Crafts}{2}
-\setcounter{Cultivation}{1}
-\setcounter{Deceit}{0}
-\setcounter{Empathy}{1}
-\setcounter{Medicine}{0}
-\setcounter{Performance}{0}
-\setcounter{Larceny}{0}
-\setcounter{Seafaring}{0}
-\setcounter{Stealth}{0}
-\setcounter{Vigilance}{0}
-\setcounter{Survival}{1}
+\begin{filledCS}%
+  {\composeHumanName}% NAME
+  {Human}% RACE
+  {Mediocre Fletcher}% CONCEPT
+  {Tribalist}% CODE
+  {{3}{-1}{0}}% BODY
+  {{0}{-1}{0}}% MIND
+  {%
+    \setcounter{Athletics}{1}
+    \setcounter{Crafts}{2}
+    \setcounter{Cultivation}{1}
+    \setcounter{Empathy}{1}
+    \setcounter{Survival}{1}
 
-\setcounter{Melee}{0}
-\setcounter{Brawl}{0}
-\setcounter{Projectiles}{1}
+    \setcounter{Projectiles}{1}
+    \greatsword
+    \partialchain
+  }% SKILLS
+  {\guardian}% KNACKS
+  {Longbow (+3), quarrel of 20 arrows}% EQUIPMENT
+  \renewcommand\rank{Fodder}
+  \renewcommand\characterDebt{100 \glspl{sp}}
 
-\renewcommand\knackOne{\guardian}
-\renewcommand\knackTwo{}
+\end{filledCS}
 
-\renewcommand\rank{Fodder}
-\renewcommand\characterDebt{100}
-\renewcommand\race{Human}
-\renewcommand\concept{Mediocre Fletcher}
-\renewcommand\name{\composeHumanName}
-\renewcommand\code{Tribalist}
-
-\renewcommand\characterWeapon{\greatsword}
-\renewcommand\characterArmour{\partialchain}
-\renewcommand\characterEquipment{Longbow (+3), quarrel of 20 arrows}
-
-\renewcommand\charSpellList{}
