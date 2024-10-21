@@ -11,11 +11,17 @@
 
 \begin{boxtext}
   This morning, Stoatfen \gls{bothy} hosts two traders, \gls{susjot} (a visiting \gls{jotter}), six prisoners, eight \glspl{sunGuard}, and (of course) the \glspl{pc}.
-  The \glspl{sunGuard} have travelled from a town's \gls{court}, all the way here to hang the prisoners, for dereliction of duty.
+  The \glspl{sunGuard} have travelled from a town's \gls{court},
+  \ifnum\value{temperature}=0%
+    through the \gls{snow}
+  \else
+    all the way here
+  \fi%
+  to collect the prisoners for hanging for dereliction of duty.
   You can hear the guards complaining bitterly about all the muck on their white tabards.
 
   A shutter on the \gls{bothy}'s upper floor opens, and the \gls{jotter} shouts to you to come up for orders.
-  The rest of the recruits start lazily making their into the \gls{bothy}.
+  The rest of the recruits start lazily making their way into the \gls{bothy}.
 \end{boxtext}
 
 \Pgls{susjot} explains the mission:
@@ -172,20 +178,35 @@ The directions on the map don't make for easy navigation, but the \glspl{pc} wil
   Past boulder leaning on rock.
   By rotten tree.
   Up to rock-line.
-  The hole has ferns.
+  The hole has
+  \ifnum\value{temperature}=0
+    a spiky bush, frozen solid.
+  \else
+    ferns.
+  \fi
 \end{exampletext}
 
-\subsubsection{Ferns}
+\ifnum\value{temperature}=0
+  \subsubsection{Frosty Bushes}
+\else
+  \subsubsection{Ferns}
+\fi
 give the players two false-starts.
-Tell them they see a big patch of ferns in the distance, and ask what they do.
-The third set of ferns contains the cave-mouth.
+Tell them they see the plant in the distance, and ask what they do.
+The third time really does indicate the cave-mouth.
 
 \begin{boxtext}
-  Pushing back the ferns, you see a hole, and a rock flies at your face.
+  Pushing back the
+  \ifnum\value{temperature}=0%
+    mess of ice and spikes,
+  \else%
+    ferns,
+  \fi%
+  you see a hole, and a rock flies at your face.
 \end{boxtext}
 
 \subsubsection{The Rock}
-is a common goblin pet, as they love to use them as \gls{impromptuThrownWeapons}
+is a common goblin pet, as they love to use them as \glspl{impromptuThrownWeapons}.
 The first \gls{pc} will have to roll \roll{Wits}{Athletics}, against \pgls{tn} of 7 plus the goblin's \roll{Dexterity}{Projectiles}.
 
 The cave-mouth is a hole in the ground.
