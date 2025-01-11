@@ -16,7 +16,7 @@ $(DROSS)/$(GOBLINS).pdf: $(DEPS) caves/ | qr.tex
 $(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/$(BOOK)_characters.pdf config/rules.pdf
 	@pdfunite $^ $@
 
-$(DBOOK): $(DEPS) ex_cs/ config/rules.pdf caves/ | qr.tex
+$(DBOOK): $(DEPS) $(wildcard *.tex) enc/ ex_cs/ config/rules.pdf caves/ | qr.tex
 	@$(COMPILER) main.tex
 	@pdfunite $(DBOOK) config/rules.pdf /tmp/out.pdf
 	@mv /tmp/out.pdf $(DBOOK)
