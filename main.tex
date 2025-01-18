@@ -5,7 +5,7 @@
 \input{glossary.tex}
 \input{commands.tex}
 
-\declareSQareas{Town,Roads,Forest}
+\declareSQareas{Town,Roads,Forest,Mountain}
 
 \title{The Goblin Hole}
 
@@ -47,13 +47,20 @@ Keywords={TTRPG,RPG,roleplaying}
 \mainmatter
 \glsresetall
 
+\chapter{Side Quests}
+
+\begin{multicols}{2}
+
+\input{caves/sq.tex}
+
+\stopcontents[sq]
+\end{multicols}
+
 \input{fridge/melt.tex}
 
-\input{caves/all.tex}
+\input{caves/ascent.tex}
 
-%\chapter{Side Quests}
-
-%\input{rumours/main.tex}
+\input{caves/goblin_caves.tex}
 
 %\startappendix
 %
