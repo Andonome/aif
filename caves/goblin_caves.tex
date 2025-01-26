@@ -109,26 +109,6 @@ the rope will pull the boulder down on their head.
   \ref{standingTunnel}/00/04,
 }
 
-\mapentry[gentlePassage]{Gentle Passage}
-
-This path, like the entrance has had a little cave-in, and will have more if anyone large walks through it.
-The players may spot the danger, or you can give the characters a roll for \gls{gagingCave}.
-
-If moving across, the troupe can make a \roll{Dexterity}{Stealth} roll, with \pgls{tn} equal to their total \gls{weight}.
-
-\begin{boxtext}
-  The path widens, and you can comfortably walk, without ducking.
-  The wet cavern walls stand apart, allowing everyone to walk together, with two or three side-by-side.
-  You step carefully over the little dry stones which cover the floor.
-\end{boxtext}
-
-\caveIn
-
-Just like the entrance, if the \glspl{pc} don't spot the danger, the ceiling will collapse on a 1 in 6 chance, which increases every time something falls.
-However, this time the cavern stretches across 60 steps.
-
-\wayOut{The passage soon becomes more stable, and half a mile later, emerges at the}{cliffDive}
-
 \mapentry[secondBridge]{Second Bridge}
 
 \begin{exampletext}
@@ -143,34 +123,6 @@ However, the goblins can walk across it, one at a time, without damaging it.
 \wayOut{Falling into the river means flowing downstream to meet the riverbank leading to the}{waterMaze}
 
 \wayOut{Three \glspl{step} later, a small pile of stones and the stench of shit marks the start of the}{standingTunnel}
-
-\mapentry[cliffDive]{Cliff Dive}
-
-This passage ends abruptly with a cliff-ledge, with a river a stone's throw below.
-The river has enough depth to let anyone land safely.
-
-The \glspl{pc} will have a difficult decision, since they can't tell if the dive will kill them.
-
-\paragraph{Climbing down}
-demands a \roll{Speed}{Athletics} roll (\tn[9]).%
-\footnote{Planning cannot help with this roll -- the characters cannot see below well enough to plan.}
-
-\paragraph{Diving down}
-requires a \roll{Dexterity}{Athletics} roll (\tn[10]), but failure only inflicts 2~\glspl{ep}.
-
-\paragraph{Once in the water,}
-the river pushes everyone naturally towards a riverbank
-characters float gently downstream.
-One side of the river ends in a wall, the other has a little ledge to grab onto, some distance down.
-
-Going upstream leads to a dead-end as the cavern's ceiling descends to meet the water.
-Characters who attempt to go upstream will have to swim some distance before they find the dead end, and will suffer 3~\glspl{ep}.
-
-\wayOut{The river pushes characters gently to the riverbank, close to the}{waterMaze}
-
-\wayOut{Characters who continue down-river receive a harsh ride down an underwater stream to the}{blindFish}
-
-The river's rapids and rocks demand a \roll{Strength}{Athletics} roll to hold one's breath, or receive 4~\glspl{ep} (\tn[10]); then a \roll{Dexterity}{Caving} roll to avoid $1D6+2$ Damage (\tn[16] if the character is in the dark, which they almost certainly are).
 
 \mapentry[wormTunnel]{Worm Tunnel}
 
@@ -243,6 +195,54 @@ If the players fail to heed the warning signs, any short characters will die fir
 the passage ascends.
 Various twists mean it continues longer than its neighbouring tunnel, making it 2 miles long.
 
+\mapentry[gentlePassage]{Gentle Passage}
+
+This path, like the entrance has had a little cave-in, and will have more if anyone large walks through it.
+The players may spot the danger, or you can give the characters a roll for \gls{gagingCave}.
+
+If moving across, the troupe can make a \roll{Dexterity}{Stealth} roll, with \pgls{tn} equal to their total \gls{weight}.
+
+\begin{boxtext}
+  The path widens, and you can comfortably walk, without ducking.
+  The wet cavern walls stand apart, allowing everyone to walk together, with two or three side-by-side.
+  You step carefully over the little dry stones which cover the floor.
+\end{boxtext}
+
+\caveIn
+
+Just like the entrance, if the \glspl{pc} don't spot the danger, the ceiling will collapse on a 1 in 6 chance, which increases every time something falls.
+However, this time the cavern stretches across 60 steps.
+
+\wayOut{The passage soon becomes more stable, and half a mile later, emerges at the}{cliffDive}
+
+\mapentry[cliffDive]{Cliff Dive}
+
+This passage ends abruptly with a cliff-ledge, with a river a stone's throw below.
+The river has enough depth to let anyone land safely.
+
+The \glspl{pc} will have a difficult decision, since they can't tell if the dive will kill them.
+
+\paragraph{Climbing down}
+demands a \roll{Speed}{Athletics} roll (\tn[9]).%
+\footnote{Planning cannot help with this roll -- the characters cannot see below well enough to plan.}
+
+\paragraph{Diving down}
+requires a \roll{Dexterity}{Athletics} roll (\tn[10]), but failure only inflicts 2~\glspl{ep}.
+
+\paragraph{Once in the water,}
+the river pushes everyone naturally towards a riverbank
+characters float gently downstream.
+One side of the river ends in a wall, the other has a little ledge to grab onto, some distance down.
+
+Going upstream leads to a dead-end as the cavern's ceiling descends to meet the water.
+Characters who attempt to go upstream will have to swim some distance before they find the dead end, and will suffer 3~\glspl{ep}.
+
+\wayOut{The river pushes characters gently to the riverbank, close to the}{waterMaze}
+
+\wayOut{Characters who continue down-river receive a harsh ride down an underwater stream to the}{blindFish}
+
+The river's rapids and rocks demand a \roll{Strength}{Athletics} roll to hold one's breath, or receive 4~\glspl{ep} (\tn[10]); then a \roll{Dexterity}{Caving} roll to avoid $1D6+2$ Damage (\tn[16] if the character is in the dark, which they almost certainly are).
+
 \mapentry[waterMaze]{Puddle of Doom}
 
 \begin{exampletext}
@@ -259,7 +259,7 @@ The players will have to map the passage, in one way or another.
 
 Whoever enters the frigid waters instantly gains \pgls{ep}, and the exertion of swimming (as usual) inflicts another.
 
-\null
+%!\null
 \iftoggle{verbose}{
   The scene might go like this:
   \begin{itemize}%
@@ -409,6 +409,22 @@ The party can make a \roll{Wits}{Caving} roll (\tn[12]) to notice the smell befo
 
 \wayOut{After the gas, the troupe can descend to the}{smokePassage}
 
+\mapentry[smokePassage]{Smokey Passage}
+
+The goblins wait at the bottom of this long passageway, to light a fire with all their \fireFuel, once the troupe descend.
+
+\paragraph{If the \glspl{pc} have been creeping quietly,}
+they should make a \roll{Dexterity}{Stealth}, against the goblins' \roll{Wits}{Vigilance}, \tn.
+
+\paragraph{If the \glspl{pc} head back up,}
+they will receive more and more \glspl{ep} until they die, or try another way.
+
+\paragraph{If the \glspl{pc} want to rush down,}
+they can roll \roll{Speed}{Caving} (\tn[10]) to hold their breath.
+Every Failure Margin inflicts \pgls{ep}, and the same \gls{natural} counts for everyone.
+
+\wayOut{This cavern expands slowly, and soon meets the}{blindFish}.
+
 \mapentry[darkTunnel]{Dark Tunnel}
 
 This narrow tunnel stretches a long way -- around a mile.
@@ -467,22 +483,6 @@ The Umber Hulk will cannot fit through the passage to the \stateArea{darkTunnel}
 
 \wayOut{The only way out leads to the same chamber as the}{smokePassage}
 The goblins there will irritate the umber hulk, causing it to chase the goblins, who flee across the river in the \stateArea{blindFish}.
-
-\mapentry[smokePassage]{Smokey Passage}
-
-The goblins wait at the bottom of this long passageway, to light a fire with all their \fireFuel, once the troupe descend.
-
-\paragraph{If the \glspl{pc} have been creeping quietly,}
-they should make a \roll{Dexterity}{Stealth}, against the goblins' \roll{Wits}{Vigilance}, \tn.
-
-\paragraph{If the \glspl{pc} head back up,}
-they will receive more and more \glspl{ep} until they die, or try another way.
-
-\paragraph{If the \glspl{pc} want to rush down,}
-they can roll \roll{Speed}{Caving} (\tn[10]) to hold their breath.
-Every Failure Margin inflicts \pgls{ep}, and the same \gls{natural} counts for everyone.
-
-\wayOut{This cavern expands slowly, and soon meets the}{blindFish}.
 
 \mapentry[blindFish]{Blind Fish Rapids}
 
@@ -564,6 +564,26 @@ Failure means they block the passage -- just for \pgls{round} -- and nobody else
 
 \wayOut{If the troupe run up the little ledge the goblins stand on, they find a cavern full of large rocks at the top, which goes along for a mile to the}{mushroomsTunnel}
 
+\mapentry[mushroomsTunnel]{Glowing Chamber}
+
+This passage hosts glowing mushrooms, called `\glspl{glowshroom}'.
+Each one gives off light when disturbed in anyway.
+
+A pile of them can be used as lantern light, though the light will die after \pgls{interval} someone picks them, so they cannot provide a long-term torch.
+
+\wayOut{The tunnel continues for a mile, to the}{sunRoof}
+
+\wayOut{Another tunnel leads down through miles of darkness, until it hits the}{goblinHole}.
+
+\mapentry[goblinHole]{Goblin Hole}
+
+The goblins initially emerged from this tunnel, and can retreat through it if all else goes wrong.
+It contains narrow passages and wide passages, and connections to the \gls{deep}.
+It also presents a serious problem for the \glspl{pc}' mission, with very little solution -- the goblins can retreat down here, and the troupe will struggle to follow them.
+
+Far below, a complete society of goblins lives beside volcanic vents, which grow verdant gardens.
+The \glspl{pc} cannot hope to survive down here, and if they spend \pgls{interval} descending, they should figure out that they are going the wrong way.
+
 \mapentry[skeinSwarm]{Skein Hole}
 
 \begin{exampletext}
@@ -590,26 +610,6 @@ Rolling a tie indicates that the chef has failed, but will not poison anyone.
 Failure indicates that the resulting rancid mushroom `stew', will not count as a full meal for anyone, and instead inflict 2~\glspl{ep}.
 
 \wayOut{The tunnel continues for a mile, to the}{basiliskCave}
-
-\mapentry[mushroomsTunnel]{Glowing Chamber}
-
-This passage hosts glowing mushrooms, called `\glspl{glowshroom}'.
-Each one gives off light when disturbed in anyway.
-
-A pile of them can be used as lantern light, though the light will die after \pgls{interval} someone picks them, so they cannot provide a long-term torch.
-
-\wayOut{The tunnel continues for a mile, to the}{sunRoof}
-
-\wayOut{Another tunnel leads down through miles of darkness, until it hits the}{goblinHole}.
-
-\mapentry[goblinHole]{Goblin Hole}
-
-The goblins initially emerged from this tunnel, and can retreat through it if all else goes wrong.
-It contains narrow passages and wide passages, and connections to the \gls{deep}.
-It also presents a serious problem for the \glspl{pc}' mission, with very little solution -- the goblins can retreat down here, and the troupe will struggle to follow them.
-
-Far below, a complete society of goblins lives beside volcanic vents, which grow verdant gardens.
-The \glspl{pc} cannot hope to survive down here, and if they spend \pgls{interval} descending, they should figure out that they are going the wrong way.
 
 \mapentry[basiliskCave]{\Glsfmttext{basilisk} Cave}
 
