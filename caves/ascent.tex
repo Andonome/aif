@@ -269,23 +269,31 @@ The dry rocks on the ground have fallen from the ceiling recently.
 The shouts and \ifnum\value{temperature}=1 flooding \else stomps \fi in the cavern have begun a cave-in.
 
 \subsubsection{Rocks Fall}
-once the troupe have gone 60 steps into the cavern.
+once the troupe have gone 60~\glspl{step} into the cavern.
 They will have to keep running forward to survive.
+\label{caveIn}
 
 \begin{itemize}
   \item
-  Each round, roll $1D6$ for each \gls{pc} who don't run towards the goblins.
-  On the roll of a 1, a rock lands on the \gls{pc}, inflicting $1D6+1$ Damage.
+  Each \gls{round}, have each player roll $1D6$ for each of their characters.
+  On the roll of a 1, a rock lands on the character, inflicting $1D6$ Damage.
   \item
-  Every time a rock falls, the threshold for the roll, and Damage, increase by 1.
+  Any \gls{pc} hit by a rock stops, stunned, and loses all movement for the \gls{round}.
   \item
-    The third time someone gets hit by a rock, the roll will increase to a 4 in 6 chance, and inflict \dmg{8} Damage.
+  Each \gls{round}, the Damage and threshold increase~by~1.
 \end{itemize}
 
 \caveIn
 
-Some \glspl{pc} may try to run back to the entrance, and they may succeed.
-In this case, they will find themselves alone, at night, with a couple of goblins waiting nearby.
+The \glspl{pc} will have to run a further 20~\glspl{step} to reach safety.
+\iftoggle{verbose}{
+  Each \gls{round}, every character receives 3~\glspl{ap} plus their Speed Bonus.
+  Spending \pgls{ap} lets them travel 3~\glspl{step} plus their Athletics~\gls{skill}.%
+  \footnote{Keeping track of all these \glsentrylongpl{ap} generates choices for the players.  If one falls behind, others will have to think about stopping to help them up, or saving themselves.}
+}{}
+
+\paragraph{If any \glspl{pc} flees the 60~\glspl{step} back to the entrance,}
+they will find themselves alone, at night, with a couple of goblins waiting nearby.
 Those goblins will wait for \pgls{interval} for a moment of weakness, but if that does not arrive, they become bored, and head down to the other cave entrance, far down the mountain.
 
 You can leave these \glspl{pc} as wildcards, until the very end of the session, then tell their entire story, just as the troupe begin to exit the mountain, far below (assuming anyone survives).
