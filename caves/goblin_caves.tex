@@ -638,15 +638,15 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
 
 \mapentry[sunRoof]{Sun Roof}
 
-This passage has had a cave-in, and Sunlight floods in through the top.
+This passage has had a cave-in, letting Sunlight \ifnum\value{temperature}=0 and snow \fi flood in through the top.
 Unfortunately it still sits farther underground than a castle.
 
-Climbing the ragged walls begins with an \roll{Intelligence}{Athletics} roll, to understand the best route up.
+Climbing the ragged walls begins with an \roll{Intelligence}{Athletics} roll (\tn[10]), to understand the best route up.
 A successful roll gives a further +2 Bonus to the main event: a \roll{Speed}{Athletics} check, \tn[14].
 It also lets the player know the \gls{tn}.
 
 A tie means the character figures out this climb will only hurt them before they climb.
-A failed roll means the character suffers $2D6$ Damage.
+A failed roll means the character climbs, falls, and suffers $2D6$ Damage.
 
 \wayOut{One more mile, and the troupe find the}{crackExit}
 
@@ -664,7 +664,13 @@ The troupe can finally move out, and be free of the goblin warren.
 
 \subsection{Returning Home}
 
-The troupe is now free, and only have the small task of navigating back home, through the dense forest, and a final encounter.
+The troupe is now free, and only have the small task of navigating back home, through the
+\ifnum\value{temperature}=0
+  snowy
+\else
+  dense 
+\fi
+forest, and a final encounter.
 
 \iftoggle{verbose}{
   \begin{itemize}
