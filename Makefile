@@ -13,6 +13,8 @@ $(DROSS)/$(BOOK)_characters.pdf: $(DEPS) ex_cs/
 $(DROSS)/$(GOBLINS).pdf: $(DEPS) caves/ | qr.tex
 	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
 
+.PHONY: oneshot
+oneshot: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/$(BOOK)_characters.pdf config/rules.pdf
 	@pdfunite $^ $@
 
@@ -21,11 +23,9 @@ $(DBOOK): $(DEPS) $(wildcard *.tex) ex_cs/ config/rules.pdf caves/ | qr.tex
 	@pdfunite $(DBOOK) config/rules.pdf /tmp/out.pdf
 	@mv /tmp/out.pdf $(DBOOK)
 
-all: $(RELEASE) $(GOBLINS).pdf
+targets += $(GOBLINS).pdf
 
+.PHONY: creds
 creds:
 	cd images && pandoc artists.md -o ../art.pdf
 
-.PHONY: all
-clean:
-	$(CLEAN)
