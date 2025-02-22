@@ -8,9 +8,12 @@ config/vars:
 config/rules.pdf:
 	make -C config rules.pdf
 
+DEPS += $(wildcard caves/*.tex)
+DEPS += $(wildcard ex_cs/*.tex)
+
 $(DROSS)/$(BOOK)_characters.pdf: $(DEPS) ex_cs/
 	$(COMPILER) -jobname=$(BOOK)_characters ex_cs/all.tex
-$(DROSS)/$(GOBLINS).pdf: $(DEPS) caves/ | qr.tex
+$(DROSS)/$(GOBLINS).pdf: $(DEPS) qr.tex
 	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
 
 .PHONY: oneshot
