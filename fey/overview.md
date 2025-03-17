@@ -1,3 +1,4 @@
+# Introduction
 
 This oneshot has the players chase a giant snail through two elven territories.
 Each elven territory has elves with radically different philosophies - the first values law and oaths, while the second values free thought and song.
@@ -29,4 +30,14 @@ Or perhaps it's more like a bad programmer, who patches bugs with dirty fixes, a
 
 The PCs have many ways to cause chaos, but must put the chaos aside, and focus on what will stop giant, carnivorous snails from leaving the area (or from existing).
 They must also avoid ecological changes which bring *more* monsters to human lands.
+
+# History
+
+## In the Land of Plenty
+
+- LifeElder loved the little paths snails make, and wanted to walk across them, but she was too big.  To create her roads, she used Life spells to grow the snails to monstrous proportions.  But once they were as big as a house, they just got stuck in the tall trees.
+- To fix the massive snails getting stuck, she gave them acidic vomit, so they could dissolve bushes and trees, burn through chitincrawler webs, and in general move freely.  Unfortunately, they ate all her vegetable patches.
+- To stop the giant snails eating all the vegetables, LifeElder cracked the land, sundering the soil and creating raised plateaus, where she and the other elves could live, cultivating plants.  Meanwhile, the snails remained in the lower regions.  Unfortunately, the elves could not get from one plateau to the other due the tall, sheer walls.
+- LifeElder did not like seeing the elves trapped on different plateaus, like some kind of jail.  She solved the problem by enchanting bean-vines to bridge nearby spaces between the plateaus, creating actual bridges.
+- The bridges have held fine, the elves grow plants and sing songs (and sometimes, *vice versa*) on their plateaus.  And LifeElder feels content that she has solved all the problems with her spells.
 
