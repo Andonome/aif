@@ -61,3 +61,26 @@ The Kingdom of Oaths remained peaceful, until giant snails entered, ate through 
     * Farting is also banned (it makes the goblins giggle more than the knock-knock jokes).
 
 
+
+```
+\spell{Hyalmahta}% Name
+  {Detailed, Devious, Duplicated}% Enhancements
+  {Wax}% Action
+  {Earth, Water}% Spheres
+  {available plant quantities}% Resist with
+  {The caster thinks about past dreams of salad and \arabic{spellTargets} snails in the vicinity begin to eat and grow.
+  Within a few days, they reach the size of a human, and after one \showOnset\ reach the size of a house.
+  Each snail has Strength +5, Speed -3, \gls{dr}~5 (or 10 on the shell), along with the abilities \viscid\ and \acidSpray}% Description
+  {}
+
+\spell{Quamahta}% Name
+  {Detailed, Duplicated}% Enhancements
+  {Warp}% Action
+  {Fate, Water}% Spheres
+  {fullness of snail belly}% Resist with
+  {The caster describes meat-based salads, and \arabic{spellTargets} snails begin to hunt for crawling things in the bushes as much as they do the bushes themselves}% Description
+  {They don't eat people who are not surrounded by bushes (because they expect meat only in regular food).}
+
+```
+
+
