@@ -18,6 +18,16 @@
 {A giant snail blocks the path}
 
 
+(Garden) Disgnome Blooms
+-----
+{The mind-rending plant hides with the tomatoes}
+
+A tiny prick from the needle-tips can slow someone's mental capacity, making them feel like everyone around them is babbling fast-paced nonsense, and makes the day seem to last an hour.
+A number of the elves have been affected, but they blame their headaches and confusion on enchantments or don't even consider the cause.
+
+If the troupe destroy the plants, SnailTamer soon returns to his natural human-paced thinking.
+
+
 (Canals) The Picnic Choir
 -----
 {Elven songs above, but nobody responds}
