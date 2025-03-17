@@ -1,5 +1,3 @@
-
-
 (Some Broch) A Logistical Discussion
 -----
 {A monster approaches a distant bailey, will the troupe make it?}

@@ -73,6 +73,12 @@ The Abjad (the goblin) observes and insists on the following local laws:
 
 Mora
 
+(Ravencops) Away You Go!
+-----
+{A goblin leads a snail away, and into human lands}
+
+Mora shoes snail into human lands.
+
 
 (Oathtower) Meat Salad
 -----
@@ -82,6 +88,10 @@ Mora
 (Ravencops) On the Menu
 -----
 {Another giant snail approaches, but ignores anyone on the road}
+
+(Ravencops) Drums  in the Ice
+-----
+{An elven family make noise underground}
 
 
 (Ravencops) The Unmerry Band
