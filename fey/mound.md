@@ -1,0 +1,10 @@
+# Mound
+
+> So we have a tunnel, which takes you right there, although it did have a problem recently...
+
+- *We had a rat problem,*
+- *so we put a chitincrawler down there,*
+- *but it didn't come out, so we lured this basilisk to use its poisonous breath to kill anything in the hole,*
+- *but the basilisk crawled in once it finished.*
+
+> So...do you think you can help?
