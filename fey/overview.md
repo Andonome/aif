@@ -1,8 +1,47 @@
 # Introduction
 
-This oneshot has the players chase a giant snail through two elven territories.
-Each elven territory has elves with radically different philosophies - the first values law and oaths, while the second values free thought and song.
-But both have the same type of cause - whenever they have a problem, the elder fixes it with a massive spell; the spell creates more problems, and the elder fixes those problems with another spell, and so on, creating a delicate chain of spells, ready to fall.
+> There was an old lady who swallowed a fly,
+> I don't know why she swallowed a fly – perhaps she'll die!
+
+Elves move slowly through the dense forest.
+They don't have the numbers or strength to build a proper road - but they their ways.
+
+> Snails leave little roads...
+> If I grew giant snails, they could forge a road as they move.
+
+Unfortunately, the giant snails could not move through the dense trees.
+
+> I'll grow them differently next time, with acidic vomit to burn away the trees.
+> They only eat plants, and they move slowly, so they won't hurt anyone.
+
+However, the snails proceeded to eat all the food in every garden, leaving the elves with nothing.
+
+> I will ask the earth to rise up around the gardens, creating raised platforms.
+> The giant snails can wander through the little canyons between the gardens, keeping the paths clear, while we enjoy the gardens.
+> Finally, the plan is perfect.
+
+So the elves cultivated their raised gardens, though they had trouble getting down, and soon made a new plan...
+
+> There was an old lady who swallowed a goat;
+> Just opened her throat and swallowed a goat!
+> She swallowed the goat to catch the dog,
+> She swallowed the dog to catch the cat,
+> She swallowed the cat to catch the bird,
+> She swallowed the bird to catch the spider
+> That wriggled and jiggled and tickled inside her,
+> She swallowed the spider to catch the fly;
+> I don't know why she swallowed a fly – perhaps she'll die!
+
+But what happens when the cat dies?
+What does the dog chase, and where does the bird go?
+
+Every spell adds a new problem, and every problem can be fixed with more magic.
+And eventually a giant snail escapes to the human lands, where it becomes the players' problem.
+They journey back to the source, going back down the chain of magical fixes until they reach the source.
+
+And after that, I have no idea what happens.
+Hopefully they won't just fix one random problem, creating a domino-effect throughout the land.
+
 
 The chain of spells follows the pattern of the children's song, *[There Was an Old Lady Who Swallowed a Fly](https://en.wikipedia.org/wiki/There_Was_an_Old_Lady_Who_Swallowed_a_Fly)*.
 Or perhaps it's more like a bad programmer, who patches bugs with dirty fixes, and patches those with more fixes, until nothing can be changed without the entire program collapsing.
