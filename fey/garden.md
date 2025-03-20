@@ -93,3 +93,25 @@ The ranger moves faster now,
 and has been forced into an oath.
 
 
+# The Movements of Monsters
+
+(Canals) Excuse Me!
+-----
+{A giant snail blocks the path}
+
+
+
+(Causeway) Stampede
+-----
+{An auroch stampede passes through}
+
+Elves watch from a garden plateau as aurochs stampede through the causeway.
+Behind them, a chitincrawler chases, but it's losing steam, and soon retreats into the forest.
+
+(Causeway) Slow Wander Home
+-----
+{The aurochs are returning...slowly}
+
+Any sudden movement will prompt the aurochs to begin a stampede away.
+The troupe may prefer to wait, but this will take the rest of the Interval, as the aurochs move slowly, while grazing.
+
