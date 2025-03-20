@@ -51,6 +51,15 @@ Once the combat dies down,
 the jotter appears, and asks the troupe what happened to the ranger.
 Someone needs to find the source of that giant snail, and make sure no more will be coming this way.
 
+If the troupe ask SnailTamer about his plans,
+he says he has a letter for LifeQueen, from MindElder, and must deliver it at once.
+
+> I have to go.  I have this letter for someone.
+
+> Who is it?  She's just a person, like anyone, but she's not into labels.
+
+> I don't call her anything.  Well, maybe I call her 'hi'.
+
 (Canals) Debating Parsnips
 -----
 {SnailTamer meanders home, wondering if he should make parsnip or potato soup}
