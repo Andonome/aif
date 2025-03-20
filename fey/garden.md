@@ -16,11 +16,14 @@
 {The flowers of the garden of light make you float}
 
 Juliet has cultivated these flowers using the Force Sphere.
-They flowers of enlightenment make you light, and let you float.
+The flowers of enlightenment make you light, and let you float; but first they must wilt and go brown.
+The decaying process requires two Intervals of Sunlight, after which someone can eat the plants.
+Doing so reduces their Weight by 5.
 
-(Garden) Mist Below
------
-{The Canals fill with mist, only eyestalks roam above}
+>>>
+A bed of bright-red flowers, with long petals like the floppy ears on a dog.
+It looks like someone made space for them, and spent a lot of time on their soil bed.
+>>>
 
 
 (Garden) Disgnome Blooms
@@ -30,19 +33,37 @@ They flowers of enlightenment make you light, and let you float.
 A tiny prick from the needle-tips can slow someone's mental capacity, making them feel like everyone around them is babbling fast-paced nonsense, and makes the day seem to last an hour.
 A number of the elves have been affected, but they blame their headaches and confusion on enchantments or don't even consider the cause.
 
-If the troupe destroy the plants, SnailTamer soon returns to his natural human-paced thinking.
+If the troupe destroy the plants, SnailTamer soon returns to his natural human-paced thinking (not great, but better than most elves).
 
 (Canals) The Picnic Choir
 -----
-{Elven songs above, but nobody responds}
+{Elven songs descend from the plateau above}
 
+A little group of elves sing, but don't respond to shouts or calls.
+They will, however, respond to someone singing with them.
 
-(Canal) Mist Abounds
+If someone sings well, they will lower the vines of a broken bridge to help them up.
+If they sing poorly, the elves leave silently.
+
+Singing PCs should roll Intelligence + Performance to understand the elven song, and imitate it.
+
+(Garden) Mist Below
 -----
-{The troupe see nothing, but hear something}
+{The Canals fill with mist, only eyestalks roam above}
 
-Check the next Side Quest in the Canal, or even in the Garden.
-What would it sound like, if someone couldn't see it?
+Mist always falls into the canals by the plateau gardens.
+The disorienting environment is quite lethal to newcomers, as people who don't know where the land lies can easily make a misstep, tumbling down the sides.
+
+>>>
+Mist has risen, but is falling into the canals beside the plateau gardens.
+Soon the canals look like fluffy-white rivers.
+A figure in the distance seems to hover between two plateau gardens, but the walking reveals they must be on a vine-bridge which has fallen just below.
+>>>
+
+Fast movements require a Wits + Survival roll (TN 8) to avoid falling into the misty canals below.
+Longer journeys require an Intelligence + Survival roll (TN 10).
+
+The mists fade after an Interval.
 
 (Causeway) Misty Way
 -----
