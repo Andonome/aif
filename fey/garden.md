@@ -106,12 +106,32 @@ Elves are always wrapped up in their own thing; they never pay attention, and sh
 So I'll set an ambush then loose an arrow on whoever crafts these giant snails, or slit his throat.
 >>>
 
-(Ravencops) An Arrow to the Knee
------
-{LifeQueen has cast a spell to shrink the ranger}
+The ranger will leave the PCs, as he does not trust them to stay silent while he plans an ambush for the LifeQueen.
 
-The ranger moves faster now,
-and has been forced into an oath.
+(Garden) Loose Clothing
+-----
+{The ranger's crossbow is found on the ground}
+
+>>>
+You don't get to be centuries old without learning how to spot an ambush.
+As LifeQueen performed one of her standard spells to query the living things in the area, she found the ranger, and guessed the reason for his hiding.
+Her spell has split his limbs into myriad tentacles, leaving his equipment on the ground.
+He slithered away as the spell took hold, confused and dismayed, dropping pieces of his equipment along the way.
+>>>
+
+The find his crossbow and twelve quarrels on the ground, but carrying it sends a clear signal to the elves that they approve of his methods, and makes them dangerous.
+They will suffer a -3 Penalty to social rolls with the elves while the crossbow is visible.
+
+If the PCs follow the trail, have them roll Wits + Survival (TN 10).
+Success means you can skip to the next Segment, below.
+A tie means they succeed, but only after an Interval (and another Segment).
+
+(Canals) Discarded Clothing
+-----
+{Rangers clothes lie discarded on the ground}
+
+The troupe see the last of the ranger's clothing, discarded just before entering the forest.
+Following him further will not be easy; the TN rises to 14.
 
 
 # The Movements of Monsters
@@ -120,7 +140,13 @@ and has been forced into an oath.
 -----
 {A giant snail blocks the path}
 
+'Brownie' the snail grew much bigger than the others, and pregnancy did not help.
+Now when the moves through the canals, she blocks them entirely.
+Anyone walking inside the canals must simply turn back and find another route.
+This may delay the troupe in whatever they wanted to do by an Interval.
 
+If the troupe try to squeeze past her, have them roll Dexterity + Stealth at TN 8.
+Failure inflicts 2D6 Damage as her massive body smooshes them against the canal walls.
 
 (Causeway) Stampede
 -----
