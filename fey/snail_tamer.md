@@ -90,14 +90,31 @@ Pale tendrils push out the door, then have a hard twist down into the earth, lik
 -----
 {SnailTamer to pick a new snail}
 
+SnailTamer needs to pick a new snail so he can get about safely, but he can't decide which snail is best.
+One seems to unbalanced for him to put the wooden carrot-rod onto, another looks 'too old', then the next is pregnant (which will cause problems before long).
+
+If SnailTamer still suffers from the dignome stings,
+the PCs can usher him along with a Charisma + Cultivation roll (TN 10).
+Otherwise, he'll pick a snail within the Interval.
 
 (Causeway) Urgent Delivery
 -----
 {SnailTamer races to deliver latter on back of snail}
 
+LifeQueen was bound to send 'her most reliable messenger', and that's SnailTamer.
+He's not the fastest, or well-spoken, nor is he routinely sure of where he is.
+However, he has delivered two messages, which means his success rate is $2/2$, and 100\%.
+
+So she charged him with delivering the letter to the MindElder, and he's finally en route.
 
 (Oath Tower) The Letter of the Law
 -----
 {SnailTamer wants someone else to deliver the letter, so he can avoid any binding enchantments}
 
+At the tower, SnailTamer has changed his mind about entering, and decided to hide behind his new mount.
+This plan would have worked well, except for the large wooden pole mounted on the snail's back, indicating that it has a rider.
+
+If the PCs agree to deliver the letter,
+SnailTamer hands his satchel, which feels dank and smells musty, as it's full of moss.
+Once opened, the moss is in the shape of the letter 'F' (which is the letter LifeQueen wanted to send).
 
