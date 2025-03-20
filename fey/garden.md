@@ -2,38 +2,18 @@
 -----
 {LifeQueen wanders the canals, all answers seem strange}
 
-> Possessions are just things.  Don't let your things control you - be free!
+> Possessions are just _things_, man.  Don't let your things control you - be free!
 
 > Everything comes, if you wait the right way.
 
-> Endings have nothing to do with what happens, they come from values.
+> Endings have nothing to do with what happens, an ending is ultimately a manifestation of values.
 
-> Order to the spider is chaos to the fly.
+> If it never rained, the plants wouldn't grow.
 
+> Order to the woodspy is chaos to the fey.
 
-(Gardens) Enlightenment
------
-{The flowers of the garden of light make you float}
+> You have this obsession with 'good' and 'bad', but where is this 'good'? What colour is 'bad'?
 
-Juliet has cultivated these flowers using the Force Sphere.
-The flowers of enlightenment make you light, and let you float; but first they must wilt and go brown.
-The decaying process requires two Intervals of Sunlight, after which someone can eat the plants.
-Doing so reduces their Weight by 5.
-
->>>
-A bed of bright-red flowers, with long petals like the floppy ears on a dog.
-It looks like someone made space for them, and spent a lot of time on their soil bed.
->>>
-
-
-(Garden) Disgnome Blooms
------
-{The mind-rending plant hides with the tomatoes}
-
-A tiny prick from the needle-tips can slow someone's mental capacity, making them feel like everyone around them is babbling fast-paced nonsense, and makes the day seem to last an hour.
-A number of the elves have been affected, but they blame their headaches and confusion on enchantments or don't even consider the cause.
-
-If the troupe destroy the plants, SnailTamer soon returns to his natural human-paced thinking (not great, but better than most elves).
 
 (Canals) The Picnic Choir
 -----
@@ -71,10 +51,6 @@ The mists fade after an Interval.
 
 The PCs can see nothing in the causeway, as mist hangs low.
 They may have to make a navigation roll just to move about, and projectiles suffer double the normal range penalties.
-
-(Garden) Disgnome Blooms
------
-{The mind-rending plant hides with the tomatoes}
 
 # The Ranger
 
@@ -155,10 +131,58 @@ Failure inflicts 2D6 Damage as her massive body smooshes them against the canal 
 Elves watch from a garden plateau as aurochs stampede through the causeway.
 Behind them, a chitincrawler chases, but it's losing steam, and soon retreats into the forest.
 
+(Garden) Woodspy Spotted
+-----
+{A woodspy stalks the garden}
+
+Most large animals have trouble reaching up the tall walls to the plateau gardens, but woodspies are clever, and sometimes manage to pull themselves up using a snail, or finding a piece of vine hanging down.
+
+Any elves present will probably spot the creature.
+Either way, it slowly meanders towards an exit path, and waits for someone to pass.
+Once it grabs someone, it pulls them down into the canyon.
+
 (Causeway) Slow Wander Home
 -----
 {The aurochs are returning...slowly}
 
 Any sudden movement will prompt the aurochs to begin a stampede away.
 The troupe may prefer to wait, but this will take the rest of the Interval, as the aurochs move slowly, while grazing.
+
+# The Emerging Landscape
+
+When the story's camera moves West, we see a detailed garden.
+If the camera moves South, it may find a shining lake, surrounded by giant snails.
+When the camera zooms in, it finds the mottled texture of discarded shells and small elven footprints.
+But the camera has been tricked; the landscape is not really full of life, it seems that way because the turf is laid before the camera moves.
+
+Each Segment of this Side Quest shows an area within the garden plateaus, and the segment 'continues' as long as the troupe remain in the Area.
+You should note each piece on the map, so that when the troupe return, they find the same place again.
+
+(Garden) Disgnome Blooms
+-----
+{The mind-rending plant hides with the tomatoes}
+
+A tiny prick from the needle-tips can slow someone's mental capacity, making them feel like everyone around them is babbling fast-paced nonsense, and makes the day seem to last an hour.
+A number of the elves have been affected, but they blame their headaches and confusion on enchantments or don't even consider the cause.
+
+If the troupe destroy the plants, SnailTamer soon returns to his natural human-paced thinking (not great, but better than most elves).
+
+(Gardens) Enlightenment
+-----
+{The flowers of the garden of light make you float}
+
+Juliet has cultivated these flowers using the Force Sphere.
+The flowers of enlightenment make you light, and let you float; but first they must wilt and go brown.
+The decaying process requires two Intervals of Sunlight, after which someone can eat the plants.
+Doing so reduces their Weight by 5.
+
+>>>
+A bed of bright-red flowers, with long petals like the floppy ears on a dog.
+It looks like someone made space for them, and spent a lot of time on their soil bed.
+>>>
+
+
+(Garden) Disgnome Blooms
+-----
+{The mind-rending plant hides with the tomatoes}
 
