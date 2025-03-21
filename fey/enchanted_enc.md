@@ -32,7 +32,7 @@ If the troupe let the situation unfold, the giant snail ignores them, and chases
 
 (Ravencops) Got a Permit, Mate?
 -----
-{An oathkeeper goblin asks the troupe if they have a licence for their weapons}
+{Oathkeeper goblin wants to check troupe's weapon licences}
 
 >>>
 The lack of chitincrawlers and plentiful giant snails soon brought a lot of goblins to the area.
@@ -66,33 +66,70 @@ The Abjad (the goblin) observes and insists on the following local laws:
 -----
 {A goblin aims her bow at a starling for the crime of high-pitched song}
 
-Mora
+Mora has heard a starling sing, and thought to herself 'that's illegal!', then readied her little bow.
+A moment later, the arrow hits, and she finishes the job with a rock, and sucks out the starling's brains.
 
-(Ravencops) Away You Go!
------
-{A goblin leads a snail away, and into human lands}
-
-Mora shoes snail into human lands.
-
+Mora will happily speak with the troupe, in a low-pitched voice (to avoid waking any ogres), but if she sees them doing something criminal (like carrying weapons without a licence) she flees to sound the alarm (but quietly).
 
 (Oathtower) Meat Salad
 -----
 {As a snail approaches the tower, MindElder turns its mind towards thoughts of meaty salad}
 
+A giant snail approaches the Oathtower, along a snail road.
+The PCs probably won't see the snail, unless they're on the road out, but they will certainly see MindElder observing the land from the balcony at the top of the Oathtower, and singing a spell to twist the mind of the snail.
+
+Any characters who understand Elvish
+will understand the song relates to a meat-based salad, and that the snail should add meat to its salad.
+
+(Ravencops) Away You Go!
+-----
+{A goblin leads a snail away, and into human lands}
+
+Mora shoes a snail into a dead-end road.
+She organizes a dozen goblins to spread out, and occasionally stab it (while keeping their distance), in order to hound it to the clearing where  six more goblins wait to plant spears on the road.
+
+The scene proceeds just as the game-mechanics suggest.
+Goblins throwing javelins deal around 1D6-1 to 1D6+1 Damage, and the giant snails have a lot of DR, even in their most vulnerable location.
+Some javelins hit the shell and shatter, others stick into the snail's 'skin' harmlessly, and a few dig into its body enough to inflict a minor wound (perhaps 1 or 2 Damage).
+
+Bringing down the snail will take the entire Interval, as the goblins run away, some double back to collect javelins which fell on the ground, and others run ahead to climb trees and throw javelins from above.
+The goblins have to constantly stop the snail entering the forest.
+
+Once the snail dies,
+the goblins take it apart in three stages.
+
+1. The barbecue, as every goblin feels famished, and must eat immediately.
+1. The dissection, where bloated goblins with pot-bellies cut and cure the snail-meat, then make ropes from its innards.
+1. The great smashing, where they use rocks to crack the shell into smaller dishes, then use the dishes to transport remaining meat back to the Icebox House.
+
+Each stage takes another Interval, so the troupe may see the goblins again if they pass through the area the next day.
 
 (Ravencops) On the Menu
 -----
 {Another giant snail approaches, but ignores anyone on the road}
 
+Another great snail approaches, with its mind focussed on a meaty-salad.
+It ignores anyone on the road.
+It only attacks living things in the bushes where it feeds.
 
-(Ravencops) Drums  in the Ice
------
-{An elven family make noise underground}
+The snail stops here and there, inspecting the bushes, and sometimes vomiting on them as part of its external digestion, but never stays for long.
 
 
 (Ravencops) The Unmerry Band
 -----
 {A dozen goblins walk, every statement brings suspicion of humour}
 
-Grawl, Majiscule, and Brev.
+Grawl, Majiscule, and Brev patrol the land, looking for trouble-makers, mapping new paths the snails have brought, and noting local monsters.
+And as they walk they bicker; Grawl accuses Majiscule of jokes (which MindElder banned, so that the high-pitched goblin laughter would not wake any ogres).
 
+> If we find a snail, we'll need to go back to get the others, and shoe it towards a dead-end.
+
+> What do you mean, 'shoe a snail'?
+
+> Is that a joke?  Are you trying to be funny?
+
+> You said it!  You said we might shoe a snail!  You were making the joke!
+
+> Your face is a joke.  It is a crime, your face.  You have a funny-looking, criminal face.
+
+Majiscule hides his face until nightfall.
