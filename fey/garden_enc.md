@@ -69,6 +69,16 @@ The mists fade after an Interval.
 This time the PCS see LifeQueen standing far above from her garden plateau.
 She asks them about what they've eaten, and what their favourite kind of rain is.
 
+(Garden) Drooping Bean Vines
+-----
+{Bean vines on a tree provide a route down}
+
+The bridge-vines don't always grow into bridges.
+This one just climbed a tree, which is now covered in bean-producing vines.
+
+If the troupe pull the long vines down, they can safely descend to the canal below.
+However, leaving the vines there means creatures below can crawl up; so if the troupe use the vines to descend, the next time they arrive here, they see a chitincrawler ascending to the plateau garden, and assaulting anyone there.
+
 # The Ranger
 
 If the troupe tarry too long, the jotter will send a ranger out to find out what's happening.
