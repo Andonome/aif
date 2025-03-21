@@ -62,11 +62,6 @@ The Abjad (the goblin) observes and insists on the following local laws:
 - No singing out-of-lock.
 
 
-(Oathtower) Groaning Ziggurats
------
-{The troupe must walk quietly and avoid the groaning ziggurats}
-
-
 (Ravencops) Silencing the Starlings
 -----
 {A goblin aims her bow at a starling for the crime of high-pitched song}
@@ -82,12 +77,13 @@ Mora shoes snail into human lands.
 
 (Oathtower) Meat Salad
 -----
-{As a snail approaches the tower, MindElder turns its mind to flesh}
+{As a snail approaches the tower, MindElder turns its mind towards thoughts of meaty salad}
 
 
 (Ravencops) On the Menu
 -----
 {Another giant snail approaches, but ignores anyone on the road}
+
 
 (Ravencops) Drums  in the Ice
 -----

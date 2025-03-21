@@ -2,12 +2,6 @@
 -----
 {Romeo attempts to write a song}
 
-
-(Oathtower) Builderz
------
-{Romeo asks the troupe to deliver a letter}
-
-
 (Garden) Daisy Chain
 -----
 {Juliet makes a daisy chain, until she sees the letter}
