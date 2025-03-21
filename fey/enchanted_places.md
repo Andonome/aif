@@ -1,3 +1,8 @@
+# Must-See Locations in the Enchanted Lands
+
+When the troupe travels, you can put these places on the map.
+
+
 (Oathtower) Groaning Ziggurats
 -----
 {The troupe must walk quietly and avoid the groaning ziggurats}
@@ -29,5 +34,35 @@ Farting is also banned, as it makes the goblins giggle, which then wakes the ogr
 (Quarry) Builderz
 -----
 {Romeo asks the troupe to deliver a letter}
+
+(Causeway) Hidden Stairs
+----------
+{Hidden stairs lead to a garden plateau above}
+
+(Ravencops) The Icebox House
+----------
+{Underground elves live to guard food packed in ice}
+
+Smoke rises from a chimney, which juts out through a tree.
+Thick, glass tiles, a full step wide, pepper the land.
+Three tall trees surround and hide a stone stairway, leading down to a little door.
+Three short taps permits entry.
+
+One elf takes water, and whispers gently until it sleeps, and turns to ice.
+Another prepares a little food, using a rapier's tip as a knife.
+The rest of the rapier remains mounted on the wall, above the fire; but these elves have no use for weapons.
+Harming people causes pain, and they have promised not to harm anyone.
+
+A little goblin sleeps in a hammock, muttering in his sleep.
+'Carapace pies, tentacle-fry...'
+The elves will have something cooked for him by the time he wakes, and then he must fetch more water, using the ornate bucket, carved from carapace, with an abstract map of the land chiselled around its side.
+
+(Ravencops) The House of Grand Stories
+----------
+{Underground elves tell stories of triumph and glory}
+
+Perfect elves tell perfect stories of perfect people.
+The stories rhyme in a precise pattern, and follow the hero's journey exactly.
+However, the characters do no wrong, and have no fights, because fighting hurts people, and they never think about hurting people.
 
 
