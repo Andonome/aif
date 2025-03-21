@@ -17,6 +17,23 @@ A number of the elves have been affected, but they blame their headaches and con
 
 If the troupe destroy the plants, SnailTamer soon returns to his natural human-paced thinking (not great, but better than most elves).
 
+(Canals) The Watering Hole
+-----
+{Snails drink from a slimy pool}
+
+Little rivers gather into a little pool.
+The shallow basin stretches only twenty steps wide, just enough for a few snails at a time.
+They slither around and drink, replenishing their slime.
+
+This leaves the pool filthy, and the elves don't like the grime.
+Carrots, on the other hand, love the water's brine.
+
+The troupe see a thin trickle of water running through their mossy path.
+Following it leads to the watering hole.
+
+Each time the troupe arrive at the watering hole,
+they find 1D6-2 giant snails bathing.
+
 (Gardens) Enlightenment
 -----
 {The flowers of the garden of light make you float}
@@ -34,6 +51,44 @@ It looks like someone made space for them, and spent a lot of time on their soil
 
 (Garden) Disgnome Blooms
 -----
-{The mind-rending plant hides with the tomatoes}
+{More mind-rending plants hide by a carrot-patch}
 
+Long, green plants spring up, indicating massive carrots below.
+The weak elves find pulling them up to be very difficult, and only do so in groups, or by speaking sweetly to the earth, and asking it to let the carrot go.
+
+Disgnome plants hide around the side of the carrot beds.
+Anyone passing through must roll to notice them, or suffer the usual consequences.
+
+(Canals) Guardian Stones
+-----
+{Last hope of the elves: hidden lake uncovered behind seeping-wet wall}
+
+With little clean water left, LifeQueen guarded the last pool of water by summoning stony walls around it.
+Water escapes through little holes at the base, which will give the characters a clue about this hidden lake.
+
+> A shining, tiny, rivulet meanders through the barren, dry canal.
+> It smells and tastes fresh!
+
+Nobody can see the lake from the outside.
+Trees in the plateau gardens merge seamlessly with trees around the lake.
+From a distance, it all looks like a continuous canopy.
+
+If the elves cannot use this lake - due to snail-access, or poisoning, or some other catastrophe - they will find themselves without a good source of water, and LifeQueen will have to stop supporting the snails.
+
+(Garden) The Great Snail Lake
+-----
+{Lake spotted from a garden plateau}
+
+The canyon widens here, and a barren, slimy land (stripped bare by giant snails) holds a great lake in the centre.
+It stretches as far as an arrow's flight, and glistens with a thick film of slime across most of the surface.
+
+Garden plateaus surround the lake, and each one holds a narrow staircase down.
+The crack in the plateaus where the stairs descend is very narrow.
+Characters with Strength +1 can only enter the staircase by removing all armour and squeezing through.
+Anyone with a higher Strength Bonus cannot enter.
+
+Each time the troupe arrive at the lake,
+they see 2D6-2 giant snails bathing, and 1D6-3 elves collecting water.
+
+The elves purify the water with spells when they can, but this requires MP, which are in scarce supply in the area.
 

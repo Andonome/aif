@@ -35,3 +35,9 @@ Characters arrive because,
 
 1. twelve oathkeeper goblins caught them in the forest, along with a bear and a griffin.  The goblins take their prizes - all tied to poles - back to share with the rest.
 1. the local overseer sent the character with a letter for MindElder.  It contains a generic proposal for mutual aid in killing beasts.
+
+# Fall of an Ecosystem
+
+If LifeQueen stops producing food for the snails, they will leave the area, and provide huge amounts of food for the goblins, who will all feast and grow rapidly.
+
+
