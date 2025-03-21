@@ -1,20 +1,3 @@
-(Garden) Interview with the Tao Mistress
------
-{LifeQueen wanders the canals, all answers seem strange}
-
-> Possessions are just _things_, man.  Don't let your things control you - be free!
-
-> Everything comes, if you wait the right way.
-
-> Endings have nothing to do with what happens, an ending is ultimately a manifestation of values.
-
-> If it never rained, the plants wouldn't grow.
-
-> Order to the woodspy is chaos to the fey.
-
-> You have this obsession with 'good' and 'bad', but where is this 'good'? What colour is 'bad'?
-
-
 (Canals) The Picnic Choir
 -----
 {Elven songs descend from the plateau above}
@@ -26,6 +9,40 @@ If someone sings well, they will lower the vines of a broken bridge to help them
 If they sing poorly, the elves leave silently.
 
 Singing PCs should roll Intelligence + Performance to understand the elven song, and imitate it.
+
+(Garden) Interview with the Tao Mistress
+-----
+{LifeQueen wanders the canals, all answers seem strange}
+
+LifeQueen wanders, and sometimes sings.
+She stops to ponder a flower, then alters a seed so the flower will grow purple.
+
+While the PCs are in the garden plateau, they see a small, red-haired elf below, wandering naked and humming to herself.
+Other elves may identify her as the source of all the change in the landscape, but will not give her a name (except to say 'hi').
+
+She speaks quickly, and cryptically, and gives deep thought to every word someone says, but quickly tires of conversation.
+
+> Endings have nothing to do with what happens, an ending is ultimately a manifestation of values.
+
+> If it never rained, the plants wouldn't grow.
+
+> Possessions are just _things_, man.  Don't let your things control you - be free!
+
+> Everything comes, if you wait the right way.
+
+> Order to the woodspy is chaos to the fey.
+
+> You have this obsession with 'good' and 'bad', but where is this 'good'? What colour is 'bad'?
+
+She will not stop mutating snails, or casting spells as she pleases.
+But if any PC seems upset by anything, she will help them with another spell.
+
+(Causeway) Misty Way
+-----
+{The mists fill the causeway}
+
+The PCs can see nothing in the causeway, as mist hangs low.
+They may have to make a navigation roll just to move about, and projectiles suffer double the normal range penalties.
 
 (Garden) Mist Below
 -----
@@ -45,12 +62,12 @@ Longer journeys require an Intelligence + Survival roll (TN 10).
 
 The mists fade after an Interval.
 
-(Causeway) Misty Way
+(Causeway) A Voice from on Hi
 -----
-{The mists fill the causeway}
+{LifeQueen looks down at the party, ready to converse again}
 
-The PCs can see nothing in the causeway, as mist hangs low.
-They may have to make a navigation roll just to move about, and projectiles suffer double the normal range penalties.
+This time the PCS see LifeQueen standing far above from her garden plateau.
+She asks them about what they've eaten, and what their favourite kind of rain is.
 
 # The Ranger
 
@@ -108,7 +125,6 @@ A tie means they succeed, but only after an Interval (and another Segment).
 
 The troupe see the last of the ranger's clothing, discarded just before entering the forest.
 Following him further will not be easy; the TN rises to 14.
-
 
 # The Movements of Monsters
 
