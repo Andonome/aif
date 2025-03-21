@@ -1,21 +1,24 @@
 # The Emerging Landscape
 
-When the story's camera moves West, we see a detailed garden.
-If the camera moves South, it may find a shining lake, surrounded by giant snails.
+When the story's camera moves North, we see a stone ziggurat.
+If the camera moves West, it may find a quarry, surrounded by giant snails.
 When the camera zooms in, it finds the mottled texture of discarded shells and small elven footprints.
 But the camera has been tricked; the landscape is not really full of life, it seems that way because the turf is laid before the camera moves.
 
-Each Segment of this Side Quest shows an area within the garden plateaus, and the segment 'continues' as long as the troupe remain in the Area.
+Each Segment of this Side Quest shows an area within the garden plateaus, and the Segment 'continues' as long as the troupe remain in the Area.
 You should note each piece on the map, so that when the troupe return, they find the same place again.
 
 (Garden) Disgnome Blooms
 -----
-{The mind-rending plant hides with the tomatoes}
+{The mind-rending yellow thickets hides within the tomatoes}
 
 A tiny prick from the needle-tips can slow someone's mental capacity, making them feel like everyone around them is babbling fast-paced nonsense, and makes the day seem to last an hour.
 A number of the elves have been affected, but they blame their headaches and confusion on enchantments or don't even consider the cause.
 
-If the troupe destroy the plants, SnailTamer soon returns to his natural human-paced thinking (not great, but better than most elves).
+The yellow, spiky plants hide among a bed of tomato plants, ready to prick anyone who wanders by.
+
+If the troupe destroy the plants,
+SnailTamer soon returns to his natural human-paced thinking (not great, but better than most elves).
 
 (Canals) The Watering Hole
 -----
@@ -47,7 +50,6 @@ Doing so reduces their Weight by 5.
 A bed of bright-red flowers, with long petals like the floppy ears on a dog.
 It looks like someone made space for them, and spent a lot of time on their soil bed.
 >>>
-
 
 (Garden) Disgnome Blooms
 -----
