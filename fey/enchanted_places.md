@@ -2,7 +2,6 @@
 
 When the troupe travels, you can put these places on the map.
 
-
 (Oathtower) Groaning Ziggurats
 -----
 {The troupe must walk quietly and avoid the groaning ziggurats}
@@ -31,13 +30,45 @@ In order to avoid waking the ogres, MindElder has told the goblins to slay anyon
 Farting is also banned, as it makes the goblins giggle, which then wakes the ogres.
 
 
-(Quarry) Builderz
+(Ravencops) Goblins in the Quarry
 -----
-{Romeo asks the troupe to deliver a letter}
+{Romeo should be working, but needs to complete the perfect poem}
+
+MindElder has sent his son Romeo to oversee the goblins, excavating rock at the quarry, and cutting long slabs to construct more ziggurats.
+But Romeo can't think of anything but the poem he needs to write, to tell Juliet how he feels.
+Unfortunately, his father raised him to be a perfectionist, which means he can't write perfect poetry, or good poetry, or bad poetry, or any poetry at all.
+
+> What rhymes with snail?  Mail, sail, bail...hay-bail?  Are hay-bails a thing?  But 'hey' is too informal.  Better to say 'hello'.  'Hello-bail'...no it sounds non-committal.
+
+So he stands looking at a blank sheet of paper, while twenty goblins ignore him, and bicker about pick-axes and the proper way to use a cart.
+
+>>>
+In the near-distance, around this corner (or possibly two), someone, or something, is hitting metal on rocks.
+The metal sounds strange, butt probably iron.
+The rocks give that satisfying crack that rocks give with a long, clean cut.
+>>>
+
+If the PCs help him with the poem,
+then he perks up and starts doing his job.
+First, he stops the goblins bickering.
+Second, he helps them lift the rocks with Force magic (while muttering 'light as a feather, stiff as a board').
+This Segment tells the PCs that Romeo understands the Force Sphere, which indicates the potential they both have as ritual casters to work together.
+
+If the PCs ask about the poem's recipient,
+Romeo becomes evasive.
+His father doesn't approve of the 'oathless' types, and he feels ashamed of loving such an 'air-headed' person, despite all she's taught him.
+
+If the PCs do nothing,
+Romeo remains at the quarry, thinking of the perfect words.
+
+If the troupe commit crimes,
+the goblins will ignore them as long as they can.
+They have taken an oath to dig rocks, and they will continue to dig until something shakes them from their oath.
 
 (Causeway) Hidden Stairs
 ----------
 {Hidden stairs lead to a garden plateau above}
+
 
 (Ravencops) The Icebox House
 ----------
