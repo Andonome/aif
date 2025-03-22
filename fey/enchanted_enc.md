@@ -66,6 +66,12 @@ The Abjad (the goblin) observes and insists on the following local laws:
 -----
 {A goblin aims her bow at a starling for the crime of high-pitched song}
 
+>>>
+When MindElder banned high-pitched voices, this included most birds, because bird-song can wake the sleeping ogres.
+The ecosystem has become strange since then, as it has very few birds, except ravens, crows, and magpies.
+This is why people call the local forest 'Ravencops'.
+>>>
+
 Mora has heard a starling sing, and thought to herself 'that's illegal!', then readied her little bow.
 A moment later, the arrow hits, and she finishes the job with a rock, and sucks out the starling's brains.
 

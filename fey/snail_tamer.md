@@ -67,6 +67,13 @@ he says he has a letter for LifeQueen, from MindElder, and must deliver it at on
 SnailTamer has missed a turn-off in the maze of canyons, and can't remember which direction he's going.
 However, he's more concerned with the question of what kind of soup to make.
 
+>>>
+A voice in the distance sounds like it's practising Elvish vocabulary, and you recognize the word for 'parsnip'.
+Around the corner, SnailTamer appears, as naked as the Sun, then stops and stares, as if trying to recognize you.
+>>>
+
+> So, like.  Guys?  Yea, you guys.  Okay then.  So we don't make people do things here, no laws about fabrics over your body - you just walk about however you like, okay?
+
 > Potatoes are always great, but you can't eat potatoes all day.  It's been ages since I had parsnip soup actually.  But the parsnips are fresher...I don't want the potatoes to go bad.  That would be a waste.
 
 SnailTamer continues meandering and mumbling until someone snaps him out of it.
