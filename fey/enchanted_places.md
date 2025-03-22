@@ -8,6 +8,37 @@ But the camera has been tricked; the landscape is not really full of life, it se
 Each Segment of this Side Quest shows an area within the MindElder's domain.
 Every time you use a Segment here, place it on the map so the PCs will find the same place if they return.
 
+## The Oathtower
+
+The Oathtower stands in a lake, with reeds growing from it.
+The local elves use the reeds to make paper.
+
+>>>
+The tall, wooden, door has an identical shade of grim-brown to stone walls of the tall tower.
+The tower stands a stone's throw away, at the centre of a lake, brimming with leaves.
+A single tall figure in a green tunic stands in a boat by the tower.
+Her ears are long, her skin maggoty-white, and her eyes full of suspicion.
+>>>
+
+The door inside leads to a hall with a staircase and three doors.
+Each floor is identical, so if the PCs enter a door, roll to determine what's inside the first three floors:
+
+1. 1D6 hobgoblins with a deck of cards, debating the importance of rules in games.
+1. 1D6 hobgoblins mending a boat for the lake around the Oathtower.
+1. Hobgoblin weapon storage.
+1. A kitchen with 1D6 elves.  They debate politely, but their words hide fierce insinuations about how the others once burnt an egg, or used the wrong type of wood for cooking snail meat.
+1. Light supplies, with 1D6x3 torches, and 1D6x4 candles.
+1. Meat storage, with 1D6 meals' of chitincrawler eggs in salt, 1D6 meals of snail-meat, 1D6 meals' worth of vegetables (half of them gigantic and stolen by goblins from the garden plateaus), and 1D6 meals of auroch meat.
+
+Storeys 3, 4 and 5 have different contents:
+
+1. A small study, with books on poetry, and fantastical erotica where rabbits ride foxes to battle snakes.
+1. A cupboard of Ingredients, including 1D6-3 woodspy beaks (Water Ingredients), 1D6-3 chitincrawler spinnerets (Fate Ingredients), and 1D6-3 phials of human blood (also Fate Ingredients).
+1. A lounge, with 1D6-3 elves lounging.  These elves have taken so many oaths concerning good behaviour that they are practically incapable of action, and need goblins to tend to them daily.
+1. A toilet which empties into the lake below.
+1. Romeo's bedroom (with three books on poetry placed randomly around the room).
+1. MindElder's bedroom (with a balcony, a bed, and nothing else).
+
 (Oathtower) Groaning Ziggurats
 -----
 {The troupe must walk quietly and avoid the groaning ziggurats}
@@ -34,7 +65,6 @@ The chances increase by 1 for loud noises, or noises closer to the ziggurats.
 
 In order to avoid waking the ogres, MindElder has told the goblins to slay anyone making high-pitched noises, such as whistling or laughing.
 Farting is also banned, as it makes the goblins giggle, which then wakes the ogres.
-
 
 (Ravencops) Goblins in the Quarry
 -----
