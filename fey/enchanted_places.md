@@ -75,6 +75,13 @@ They have taken an oath to dig rocks, and they will continue to dig until someth
 ----------
 {Hidden stairs lead to a garden plateau above}
 
+In the causeway between the Ravencops forest and the plateau gardens, a single plateau has a hidden stairway, going up.
+Chitincrawlers cannot make much use of the narrow stairs, with occasional hand-holds for little fingers.
+People who don't know about the stairs cannot usually see them, as every step blends into the tall rock-face from below.
+But once someone notices the first step, they see the next, and then the next, and so on.
+
+Spotting the rocks requires a Wits + Vigilance roll, TN 12.
+The TN increases by +1 in the rain, and by +3 at night.
 
 (Ravencops) The Icebox House
 ----------
@@ -100,6 +107,13 @@ The elves will have something cooked for him by the time he wakes, and then he m
 
 Perfect elves tell perfect stories of perfect people.
 The stories rhyme in a precise pattern, and follow the hero's journey exactly.
-However, the characters do no wrong, and have no fights, because fighting hurts people, and they never think about hurting people.
+The characters in the stories do no wrong, and have no fights, because fighting hurts people, and the storytellers never think about hurting people.
 
+The elven home has three chambers, for three elves, and a central area for cooking.
+Goblins occasionally visit, bringing supplies of snail-meat and stolen vegetables.
+The various cupboards also have 1D6-3 of the following items:
+
+- Smoked meats (usable as a day's rations).
+- Stormy moonlight from a storm, captured in a large, glass, phial (usable as a Water Ingredient).
+- Auroch hooves (usable as an Earth Ingredient)
 
