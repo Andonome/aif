@@ -1,6 +1,12 @@
 # Must-See Locations in the Enchanted Lands
 
-When the troupe travels, you can put these places on the map.
+When the story's camera moves North, we see a stone ziggurat.
+If the camera moves West, it may find a quarry, surrounded by giant snails.
+When the camera zooms in, it finds the mottled texture of discarded shells and small elven footprints.
+But the camera has been tricked; the landscape is not really full of life, it seems that way because the turf is laid before the camera moves.
+
+Each Segment of this Side Quest shows an area within the MindElder's domain.
+Every time you use a Segment here, place it on the map so the PCs will find the same place if they return.
 
 (Oathtower) Groaning Ziggurats
 -----
