@@ -1,0 +1,59 @@
+\documentclass[a4paper,openany]{book}
+
+\usepackage{config/bind}
+
+\input{glossary.tex}
+\input{commands.tex}
+
+\declareSQareas{Town,Roads,Forest}
+
+\title{Untitled Module}
+
+\hypersetup{pdfinfo={
+Title={Untitled Module},
+Subject={TTRPG},
+Keywords={TTRPG,RPG,roleplaying}
+}}
+
+\settoggle{verbose}{true}
+\newtoggle{players}
+\settoggle{players}{false}
+\externalReferent{core}
+\externalReferent{judgement}
+\externalReferent{stories}
+
+\iftoggle{core}{\input{../core/commands.tex}}{}
+
+\begin{document}
+\frontpage[The Goblin Hole]%
+  {A Claustrophobic Nightmare with Dice}%
+
+\glsunsetall
+\include{introduction}
+
+\label{mainGlossary}
+\printglossary[
+  style=topicmcols,
+  nonumberlist,
+  ]
+
+\needspace{18\baselineskip}
+\label{mechanicsGlossary}
+\printglossary[
+  type=mech,
+  style=topicmcols,
+  nonumberlist,
+  ]
+
+\mainmatter
+\glsresetall
+
+\chapter{Feylands}
+
+\input{fey/conclusion.tex}
+
+\backmatter
+
+\cleardoublepage
+
+\end{document}
