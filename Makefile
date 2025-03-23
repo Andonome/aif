@@ -18,12 +18,16 @@ $(DROSS)/$(BOOK)_characters.pdf: $(DEPS) ex_cs/
 $(DROSS)/$(GOBLINS).pdf: $(DEPS) qr.tex
 	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
 
-$(DROSS)/$(ELVES).pdf: $(DEPS) qr.tex
-	$(COMPILER) -jobname=$(ELVES) fey/main.tex
-
 .PHONY: oneshot
 oneshot: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/$(BOOK)_characters.pdf config/rules.pdf
+	@pdfunite $^ $@
+
+$(DROSS)/$(ELVES).pdf: $(wildcard fey/*.tex) qr.tex
+	$(COMPILER) -jobname=$(ELVES) fey/main.tex
+.PHONY: oneshot
+shellstack: $(ELVES).pdf ## Oneshot cavern-based module
+$(ELVES).pdf: $(DROSS)/$(ELVES).pdf config/rules.pdf
 	@pdfunite $^ $@
 
 $(DBOOK): $(DEPS) $(wildcard *.tex) ex_cs/ config/rules.pdf caves/ | qr.tex
