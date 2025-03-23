@@ -2,6 +2,8 @@ include config/vars
 
 GOBLINS = The_Goblin_Hole
 
+ELVES = Untitled_Elf_Game
+
 config/vars:
 	@git submodule update --init
 
@@ -15,6 +17,9 @@ $(DROSS)/$(BOOK)_characters.pdf: $(DEPS) ex_cs/
 	$(COMPILER) -jobname=$(BOOK)_characters ex_cs/all.tex
 $(DROSS)/$(GOBLINS).pdf: $(DEPS) qr.tex
 	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
+
+$(DROSS)/$(ELVES).pdf: $(DEPS) qr.tex
+	$(COMPILER) -jobname=$(ELVES) fey/main.tex
 
 .PHONY: oneshot
 oneshot: $(GOBLINS).pdf ## Oneshot cavern-based module
