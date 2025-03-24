@@ -44,16 +44,30 @@ Keywords={TTRPG,RPG,roleplaying}
   nonumberlist,
   ]
 
+\printglossary[
+  type=people,
+  style=topicmcols,
+  nonumberlist,
+  ]
+
 \mainmatter
 \glsresetall
 
 \chapter{Feylands}
+
+\section{Introduction}
 
 \begin{multicols}{2}
 
 \input{fey/overview.tex}
 
 \input{fey/snail_tamer.tex}
+
+\end{multicols}
+
+\section{Unrolling the Map}
+
+\begin{multicols}{2}
 
 \input{fey/enchanted_places.tex}
 
@@ -67,7 +81,15 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \stopcontents[sq]
 
+\end{multicols}
+
+\section{Locations}
+
 %\input{fey/mound.tex}
+
+\input{fey/locations.tex}
+
+\begin{multicols}{2}
 
 \input{fey/conclusion.tex}
 
