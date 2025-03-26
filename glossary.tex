@@ -49,18 +49,29 @@
   description={has a big keep to keep}
 }
 
+%%%%%%%%%% Elven Lands %%%%%%%%%%
+
 \longnewglossaryentry{enchantedLands}{
   name={The Enchanted Lands},
   text={the Enchanted Lands},
   type={people},
   category={location},
-  description={have no crime, nor murder, no broken promises, no singing out of keys, and to jokes}
+  description={have no crime, nor murder, no broken promises, no singing out of keys, and no jokes}
+}
+
+\longnewglossaryentry{sunderedForest}{
+  name={The Sundered Forest},
+  text={the Sundered Forest},
+  type={people},
+  category={location},
+  description={when \glsentrytext{LifeElder} shattered the land, creating \glsentrytext{plateauGardens} above, and \glsentrytext{shadepaths} below}
 }
 
 \longnewglossaryentry{plateauGardens}{
   name={The Plateau Gardens},
-  text={the~Gardens},
+  text={the Plateau Gardens},
   plural={the~Plateaus},
+  parent={sunderedForest},
   type={people},
   category={location},
   description={have smooth, stone edges, as high as a fortress wall.
@@ -99,7 +110,7 @@
 \longnewglossaryentry{shadepaths}{
   name={The Shadow Dyke},
   text={the Shadow Dyke},
-  parent={plateauGardens},
+  parent={sunderedForest},
   type={people},
   category={location},
   description={long paths, full of snails}
@@ -127,8 +138,8 @@
 }
 
 \longnewglossaryentry{MindElder}{
-  name={Ungwe},
-  parent={enchantedLands},
+  name={V\'{e}retar},
+  parent={oathtower},
   type={people},
   description={keeps his promises, and your promises, and everyone's promises}
 }
@@ -136,7 +147,7 @@
 \longnewglossaryentry{romeo}{
   name={Ringon},
   type={people},
-  parent={enchantedLands},
+  parent={oathtower},
   description={is young, frustrated, and on the verge of rebellion.
   He just needs the right nod from \glsentrytext{juliet}}
 }
