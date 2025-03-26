@@ -1,3 +1,12 @@
+\makeindex[name=history,title={Chronological Events},columns=2]
+
+\newcommand\histEvent[3]{%
+    \setcounter{track}{\value{fenestraYear}}%
+    \setcounter{diceNo}{#1}%
+    \addtocounter{track}{-\value{diceNo}}%
+  \index[history]{{\titleFont C. \Large\arabic{track}}!{\scshape\showCycle[#2]}\nobreak\\~{#3}|textbf~page~}%
+}
+
 \newcommand\caveIn{
   \sidebox[18]{
     \setcounter{track}{3}
