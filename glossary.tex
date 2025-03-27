@@ -53,6 +53,7 @@
 \longnewglossaryentry{enchantedLands}{
   name={The Enchanted Lands},
   text={the Enchanted Lands},
+  sort={Enchanted Lands},
   type={people},
   category={location},
   description={have no crime, nor murder, no broken promises, no singing out of keys, and no jokes}
@@ -61,6 +62,7 @@
 \longnewglossaryentry{sunderedForest}{
   name={The Sundered Forest},
   text={the Sundered Forest},
+  sort={Sundered Forest},
   type={people},
   category={location},
   description={when \glsentrytext{LifeElder} shattered the land, creating \glsentrytext{plateauGardens} above, and \glsentrytext{shadepaths} below}
@@ -68,7 +70,8 @@
 
 \longnewglossaryentry{plateauGardens}{
   name={The Plateau Gardens},
-  text={the Plateau Gardens},
+  text={the~Plateau Gardens},
+  sort={Plateau Gardens},
   plural={the~Plateaus},
   parent={sunderedForest},
   type={people},
@@ -79,7 +82,8 @@
 
 \longnewglossaryentry{oathtower}{
   name={The Oathtower},
-  text={the Oathtower},
+  text={the~Oathtower},
+  sort={Oathtower},
   parent={enchantedLands},
   type={people},
   category={location},
@@ -96,7 +100,9 @@
 }
 
 \longnewglossaryentry{sunway}{
-  name={Sunway},
+  name={The Sunway},
+  text={the~Sunway},
+  sort={Sunway},
   parent={enchantedLands},
   type={people},
   category={location},
@@ -115,53 +121,178 @@
   description={long paths, full of snails}
 }
 
+\newcommand{\SnailTamer}{
+  \Person{\NPC{\glsentrysymbol{SnailTamer}}{\Glsentrytext{SnailTamer}}{Neon-red hair, under a giant primrose hat}{duck-face}{to arrange the perfect nap}}%
+    {{0}{1}{-1}}% BODY
+    {{0}{-3}{2}}% MIND
+    {
+        \set{Performance}{1}
+        \set{Crafts}{2}
+        \set{Empathy}{3}
+        \set{Medicine}{2}
+        \set{Water}{1}
+    }% SKILLS
+    {\specialist{slugs}, \lucky}% KNACKS
+    {massive primrose-hat and courier satchel}% EQUIPMENT
+    {}% ABILITIES
+}
+
 \longnewglossaryentry{SnailTamer}{
   name={Sint\"e},
+  symbol={\El},
   type={people},
   parent={plateauGardens},
   description={is a fearless snail-tamer, who needs a nap}
 }
 
-% Neon-red hair, under a giant primrose hat.
+\newcommand{\LifeElder}{
+  \Person{\NPC{\glsentrysymbol{LifeElder}}{\Glsentrytext{LifeElder}}{Grey shoulder-length hair, which moves on an invisible wind}{Sudden examination of tiny details}{to stop wanting}}%
+    {{-2}{2}{2}}% BODY
+    {{3}{4}{3}}% MIND
+    {
+        \set{Performance}{2}
+        \set{Seafaring}{3}
+        \set{Crafts}{2}
+        \set{Empathy}{3}
+        \set{Stealth}{2}
+        \set{Air}{2}
+        \set{Fate}{1}
+        \set{Earth}{3}
+        \set{Water}{3}
+        \set{spentMP}{10}
+    }% SKILLS
+    {\specialist{slugs}, \specialist{morning dew}, \manaWell, \laststand, \lucky}% KNACKS
+    {}% EQUIPMENT
+    {}% ABILITIES
+}
 
 \longnewglossaryentry{LifeElder}{
   name={Hi},
   type={people},
+  symbol={\F\El},
   parent={plateauGardens},
   description={she says, happily, but rejects your labels}
 }
 
-% grey shoulder-length hair, which moves on an invisible wind
+\newcommand{\juliet}{
+  \Person{\NPC{\glsentrysymbol{juliet}}{\Glsentrytext{juliet}}{short, yellow hair, with wide eyes, like a daffodil struck by lightning.}{Flat palms}{to daydream, uninterrupted}}%
+    {{-1}{0}{1}}% BODY
+    {{2}{2}{0}}% MIND
+    {
+        \setcounter{Melee}{1}
+        \set{Academics}{1}
+        \set{Cultivation}{2}
+        \set{Performance}{3}
+        \set{Seafaring}{1}
+        \set{Vigilance}{2}
+        \set{Survival}{2}
+        \rapier
+        \set{Fire}{2}
+        \set{Earth}{2}
+        \set{Water}{1}
+        \set{spentMP}{5}
+    }% SKILLS
+    {\ritualcaster, \snapcaster, \manaWell}% KNACKS
+    {with a scabbard held by a long silver chain (worth 4~\glspl{gp})}% EQUIPMENT
+    {}% ABILITIES
+}
 
 \longnewglossaryentry{juliet}{
   name={Y\'ula},
   type={people},
+  symbol={\F\El},
   parent={plateauGardens},
   description={has been teaching herself the Force Sphere, and passing her knowledge on to \glsentrytext{romeo}}
 }
 
-% short, yellow hair, with wide eyes, like a daffodil struck by lightning.
+\newcommand{\MindElder}{
+  \Person{\NPC{\glsentrysymbol{MindElder}}{\Glsentrytext{MindElder}}{Grey shoulder-length hair, which moves on an invisible wind}{Sudden examination of tiny details}{to stop wanting}}%
+    {{-2}{3}{1}}% BODY
+    {{1}{4}{3}}% MIND
+    {
+        \set{Performance}{3}
+        \set{Seafaring}{3}
+        \set{Crafts}{1}
+        \set{Deceit}{1}
+        \set{Stealth}{2}
+        \rapier
+        \set{Fate}{3}
+        \set{Water}{3}
+        \set{Air}{2}
+        \set{Earth}{1}
+        \set{spentMP}{10}
+        \addtocounter{equipmentWeight}{-2}
+    }% SKILLS
+    {\specialist{fortress architecture}, \manaWell, \laststand}% KNACKS
+    {writing equipment and red, samite robes}% EQUIPMENT
+    {}% ABILITIES
+}
 
 \longnewglossaryentry{MindElder}{
   name={V\'{e}retar},
   parent={oathtower},
+  symbol={\M\El},
   type={people},
   description={keeps his promises, and your promises, and everyone's promises}
+}
+
+\newcommand{\romeo}{
+  \Person{\NPC{\glsentrysymbol{romeo}}{\Glsentrytext{romeo}}{long green-black hair, held tight in elaborate pleats.}{Stands so straight he arches back}{to finally meet with \glsentrytext{juliet}}}%
+    {{0}{0}{1}}% BODY
+    {{3}{1}{1}}% MIND
+    {
+        \set{Academics}{2}
+        \set{Performance}{1}
+        \set{Seafaring}{1}
+        \set{Crafts}{2}
+        \set{Empathy}{3}
+        \set{Stealth}{2}
+        \Dagger
+        \set{Fire}{2}
+        \set{Earth}{2}
+        \set{Fate}{1}
+        \set{spentMP}{5}
+    }% SKILLS
+    {\ritualcaster, \specialist{ziggurats}}% KNACKS
+    {writing equipment in a satchel}% EQUIPMENT
+    {}% ABILITIES
 }
 
 \longnewglossaryentry{romeo}{
   name={Ringon},
   type={people},
+  symbol={\M\El},
   parent={oathtower},
   description={is young, frustrated, and on the verge of rebellion.
   He just needs the right nod from \glsentrytext{juliet}}
 }
 
-% long green-black hair, held tight in elaborate pleats.
+
+\newcommand{\dickhead}{
+  \Person{\NPC{\glsentrysymbol{dickhead}}{\Glsentrytext{dickhead}}{loose pony-tail, fur coat, with muddy base}{picks teeth with old bone}{to retire}}%
+    {{3}{2}{0}}% BODY
+    {{-1}{1}{-2}}% MIND
+    {
+        \setcounter{Melee}{2}
+        \setcounter{Projectiles}{2}
+        \setcounter{Brawl}{1}
+        \set{Cultivation}{2}
+        \set{Vigilance}{1}
+        \set{Stealth}{1}
+        \set{Survival}{2}
+        \longsword
+        \addtocounter{equipmentWeight}{-2}
+    }% SKILLS
+    {\charge, \unstoppable}% KNACKS
+    {tinderbox, \lootJewellery, \rations, \rations and \rations}% EQUIPMENT
+    {}% ABILITIES
+}
+
 
 \longnewglossaryentry{dickhead}{
   name={Scabrag},
   type={people},
+  symbol={\M\Hu\glssymbol{sylf}},
   prefix={\glsentrytext{ranger}\space},
   parent={sunway},
   description={has the killer instinct, the focus, and the brains of a hawk.

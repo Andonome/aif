@@ -42,3 +42,19 @@
 	\stateArea{#2}.%
 }
 
+
+\newcommand{\giantSnail}[1][Giant Snail]{
+  \Animal{\npc{\A\R}{#1}}%
+  {{5}{rn1t0}{-3}}% BODY
+  {-4}% WITS
+  {%
+    \set{Projectiles}{r3c}%
+    \ifodd\value{r4}%
+      \setcounter{Vigilance}{\value{r2c}}%
+    \fi%
+    \addAbility{Rubbery (\gls{dr}~5 remains, even on \pgls{vitalShot})}
+  }% SKILLS
+  {}% KNACKS
+  {\acidSpray \viscid \hide{10}}% ABILITIES
+}
+

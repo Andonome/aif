@@ -49,14 +49,16 @@ they will intermittently see the eyestalks rise again above the canopy, and soon
 \paragraph{If the troupe warn the \gls{village},}
 the farmers let them in, then cover the wall in archers -- 20 in total.
 
-Once the troupe see the snail,
-\gls{SnailTamer} call down to them, with his standard sloth and naïveté.
+\paragraph{Once the troupe see the snail,}
+\gls{SnailTamer} calls down to them, with his standard sloth and na\"ivet\'e.
 
 \begin{boxtext}
   The wind dies down, leaving a distant crashing noise which becomes louder, and sounds like crushed bushes and snapped branches, mixed with  retching.
   A rock-like surface emerges, the size of a cottage, with a smooth, brown neck hovering above, which tapers to a point above with two tentacles pointed straight in the air.
   An elf sits on the rock-like surface above, waving slowly.
 \end{boxtext}
+
+\SnailTamer
 
 If the snail sees the troupe (or anyone) it begins projectile-vomiting acid while \gls{SnailTamer} -- the elf on the snail's enormous shell -- begins to explain himself:
 
@@ -79,6 +81,15 @@ If the snail sees the troupe (or anyone) it begins projectile-vomiting acid whil
   I mean no judgement, I just wondered, because\ldots wait, Nettlerash really is not looking good.
   Okay, this is serious, we really need to discuss the use of swords and how to respect differences, and\ldots
 \end{description}
+
+\iftoggle{verbose}{
+  The troupe should find this fight strange.
+  On the one hand, anyone with a Speed~Bonus at~-3 can only act every second \gls{round}.
+  But on the other hand, the \glspl{pc} can only Damage it by getting \pgls{vitalShot}, and \emph{even then} \gls{dr}~5 remains;
+  so if they can't deal massive Damage, the fight will take a few \glspl{round}.
+}{}
+
+\giantSnail
 
 \paragraph{If the \glspl{pc} attempt a peaceful resolution,}
 they can manipulate the snail easily.
