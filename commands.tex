@@ -58,3 +58,78 @@
   {\acidSpray \viscid \hide{10}}% ABILITIES
 }
 
+
+\newcommand{\enchantedGoblin}[1][\npc{\T[\arabic{r4t6}]\N}{\arabic{noAppearing} Goblins}]{
+  \Person{#1}%
+    {{r3}{r2b}{rn1t2}}% BODY
+    {{rn1t0}{rn3t3}{rn4tn1}}% MIND
+    {%
+      \addtocounter{Strength}{-3}
+      \ifodd\value{r4}
+        \set{Melee}{1}
+      \else
+        \set{Projectiles}{1}
+      \fi
+      \set{Brawl}{rn1t2}
+      \set{Empathy}{r2}
+      \addtocounter{Empathy}{-2}
+      \set{Stealth}{r2c}
+      \ifnum\value{Strength}>-2
+        \javelin
+      \else
+        \Dagger
+      \fi
+    }% SKILLS
+    {}% KNACKS
+    {licence for \weaponName, %
+    \ifnum\value{noAppearing}<3%
+      \ifnum\value{r3c}=3%
+        dried snail meat%
+      \else%
+        enormous carrot%
+      \fi%
+    \else%
+      \rock%
+    \fi}% EQUIPMENT
+    {\ifnum\value{noAppearing}<3%
+      \ifodd\value{r2}%
+        \mutation{r4b}%
+      \fi%
+    \fi}% ABILITIES
+}
+
+\newcommand{\enchantedHobgoblin}[1][\npc{\T[\arabic{r4t5}]\N}{\arabic{noAppearing} Hobgoblins}]{
+  \Person{#1}%
+    {{r3}{rn1t2}{r2}}% BODY
+    {{rn1t0}{rn1t0}{rn4tn1}}% MIND
+    {%
+      \set{Melee}{r2c}
+      \set{Brawl}{rn1t2}
+      \set{Empathy}{r3}
+      \addtocounter{Empathy}{-2}
+      \set{Stealth}{r2b}
+      \set{Vigilance}{rn1t2}
+      \ifcase\value{Strength}
+        \Dagger
+      \or
+        \javelin
+      \or
+        \glaive
+      \else
+        \greatsword
+      \fi
+      \partiallisk
+    }% SKILLS
+    {}% KNACKS
+    {licence for \weaponName, %
+      \ifodd\value{r4b}%
+        \lootGoblin%
+      \else%
+        \goblinLight%
+      \fi%
+    }% EQUIPMENT
+    {\ifnum\value{noAppearing}=1%
+      \mutation{r4}%
+    \fi}% ABILITIES
+}
+
