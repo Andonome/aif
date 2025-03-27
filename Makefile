@@ -12,6 +12,7 @@ config/rules.pdf:
 
 DEPS += $(wildcard caves/*.tex)
 DEPS += $(wildcard ex_cs/*.tex)
+DEPS += commands.tex
 
 $(DROSS)/$(BOOK)_characters.pdf: $(DEPS) ex_cs/
 	$(COMPILER) -jobname=$(BOOK)_characters ex_cs/all.tex
@@ -23,7 +24,7 @@ oneshot: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/$(BOOK)_characters.pdf config/rules.pdf
 	@pdfunite $^ $@
 
-$(DROSS)/$(ELVES).pdf: $(wildcard fey/*.tex) qr.tex
+$(DROSS)/$(ELVES).pdf: $(DEPS) $(wildcard fey/*.tex) qr.tex
 	$(COMPILER) -jobname=$(ELVES) fey/main.tex
 .PHONY: oneshot
 shellstack: $(ELVES).pdf ## Oneshot cavern-based module
