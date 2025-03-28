@@ -133,3 +133,23 @@
     \fi}% ABILITIES
 }
 
+\newcommand{\enchantedOgre}[1][\npc{\N}{Ogre}]{
+  \Person{#1}%
+    {{r4t6}{rn1t2}{r3}}% BODY
+    {{rn4tn1}{rn3t3}{r3c}}% MIND
+    {%
+      \addtocounter{Charisma}{-5}
+      \ifodd\value{r3}
+        \set{Melee}{rn1t2}
+      \else
+        \set{Projectiles}{rn1t2}
+      \fi
+      \set{Brawl}{rn3t3}
+    }% SKILLS
+    {}% KNACKS
+    {}% EQUIPMENT
+    {\ifnum\value{noAppearing}=1
+      \mutation{r4}%
+    \fi}% ABILITIES
+}
+
