@@ -31,6 +31,8 @@ shellstack: $(ELVES).pdf ## Oneshot cavern-based module
 $(ELVES).pdf: $(DROSS)/$(ELVES).pdf config/rules.pdf
 	@pdfunite $^ $@
 
+targets += $(ELVES).pdf
+
 $(DBOOK): $(DEPS) $(wildcard *.tex) ex_cs/ config/rules.pdf caves/ | qr.tex
 	@$(COMPILER) main.tex
 	@pdfunite $(DBOOK) config/rules.pdf /tmp/out.pdf
