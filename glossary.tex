@@ -285,6 +285,9 @@
     {{3}{2}{0}}% BODY
     {{-1}{1}{-2}}% MIND
     {
+      \npcQuote{%
+        This ain't no job for \glspl{fodder}%
+      }
         \setcounter{Melee}{2}
         \setcounter{Projectiles}{2}
         \setcounter{Brawl}{1}
@@ -298,6 +301,29 @@
     {\charge, \unstoppable}% KNACKS
     {tinderbox, \lootJewellery, \rations, \rations and \rations}% EQUIPMENT
     {}% ABILITIES
+}
+
+\newcommand{\dickheadReborn}[1]{
+  \Person{\NPC{\glsentrysymbol{dickhead}}{\Glsentrytext{dickhead}}{human head inside messy tentacles, sprawled about the floor like dropped noodles}{picks teeth with old fish-bone}{to retire}}%
+    {{3}{2}{0}}% BODY
+    {{-1}{1}{-2}}% MIND
+    {
+      \npcQuote{%
+        I like it here.
+        I finally got my retirement.
+        \Gls{MindElder} is amazing.
+        He's so powerful, and he feeds me fish sometimes%
+      }
+      \setcounter{Projectiles}{2}
+      \setcounter{Brawl}{1}
+      \set{Cultivation}{2}
+      \set{Vigilance}{1}
+      \set{Stealth}{1}
+      \set{Survival}{2}
+    }% SKILLS
+    {\charge, \unstoppable}% KNACKS
+    {}% EQUIPMENT
+    {\setcounter{track}{8}\tentacles}% ABILITIES
 }
 
 
