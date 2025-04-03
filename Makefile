@@ -1,3 +1,5 @@
+EXTERNAL_REFERENTS = core stories judgement
+
 include config/vars
 
 GOBLINS = The_Goblin_Hole
@@ -11,14 +13,14 @@ config/rules.pdf:
 DEPS += $(wildcard caves/*.tex)
 DEPS += $(wildcard ex_cs/*.tex)
 
-$(DROSS)/$(BOOK)_characters.pdf: $(DEPS) ex_cs/
-	$(COMPILER) -jobname=$(BOOK)_characters ex_cs/all.tex
+$(DROSS)/characters.pdf: $(wildcard ex_cs/*)
+	$(COMPILER) -jobname=characters ex_cs/all.tex
 $(DROSS)/$(GOBLINS).pdf: $(DEPS) qr.tex
 	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
 
 .PHONY: oneshot
 oneshot: $(GOBLINS).pdf ## Oneshot cavern-based module
-$(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/$(BOOK)_characters.pdf config/rules.pdf
+$(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/characters.pdf config/rules.pdf
 	@pdfunite $^ $@
 
 $(DBOOK): $(DEPS) $(wildcard *.tex) ex_cs/ config/rules.pdf caves/ | qr.tex
