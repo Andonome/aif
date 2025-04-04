@@ -7,7 +7,7 @@
 \input{glossary.tex}
 \input{commands.tex}
 
-\declareSQareas{enchantedLands,plateauGardens,Broch,shadepaths,sunway,oathtower,ravencops}
+\declareSQareas{coppernut,plateauGardens,shadepaths,sunway,oathtower,ravencops}
 
 \title{Untitled Elf Game}
 
@@ -55,81 +55,13 @@ Keywords={TTRPG,RPG,roleplaying}
 \glsresetall
 \glsunset{susjot}
 \glsunset{coppernut}
+\input{fey/all.tex}
 
-\chapter{Call to Adventure}
-\epigraph{
-  There was an old lady who swallowed a fly,
-
-  I don't know why she swallowed a fly – perhaps she'll die!
-}
-
-\input{fey/overview.tex}
-
-\input{fey/snails_attack.tex}
-
-\chapter{Elven Forests}
-\epigraph{
-  There was an old lady who swallowed a goat;
-
-  Just opened her throat and swallowed a goat!
-
-  She swallowed the goat to catch the dog,
-
-  She swallowed the dog to catch the cat,
-
-  She swallowed the cat to catch the bird,
-
-  She swallowed the bird to catch the spider
-
-  That wriggled and jiggled and tickled inside her,
-
-  She swallowed the spider to catch the fly;
-
-  I don't know why she swallowed a fly – perhaps she'll die!
-}
-
-\input{fey/ravencops.tex}
-
-\input{fey/oathtower.tex}
-
-\input{fey/sunway.tex}
-
-\input{fey/shadepaths.tex}
-
-\begin{multicols}{2}
-\input{fey/snail_tamer.tex}
-\end{multicols}
-
-\input{fey/plateaus.tex}
-
-\chapter{Loose Threads}
-
-\epigraph{
-  Can you name the nameless one?
-
-  Can you shoe a snail?
-}
-
-
-\section{Meandering Tails}
-
-\begin{multicols}{2}
-
-\input{fey/rnj.tex}
-
-\input{fey/ranger.tex}
-
-\input{fey/enchanted_enc.tex}
-
-\input{fey/garden_enc.tex}
-
-\stopcontents[sq]
-
-\end{multicols}
-
-%\input{fey/mound.tex}
-
-\input{fey/conclusion.tex}
+\printglossary[
+  title={Factions},
+  type=people,
+  style=topicmcols,
+  ]
 
 \backmatter
 
