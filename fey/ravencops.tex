@@ -6,7 +6,8 @@ Despite being a verdant forest, it feels bleak, and has little edible food.
 All attempts at \gls{foraging} are at \gls{tn}~14.
 
 \Gls{oathtower} sucks up most of the \glspl{mp} in the surrounding \gls{region}, which makes the air feel thin.
-Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\glspl{mp} at the end of \pgls{interval}.
+Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\glspl{mp} at the end of \pgls{interval}.%
+\exRef{core}{Core Rules}{manaVacuum}
 
 \printSideQuestsInRegion{ravencops}
 
@@ -22,7 +23,7 @@ Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\gl
   When the eye of the story moves North, it finds a stone sepulchre.
   Then it moves West and finds a quarry, surrounded by giant snails.
   The land seems full of life, because the \glspl{sq} below play a trick.
-  The map had only five locations, but every time the \glspl{pc} move, another \gls{segment} in the story places another location on the map.
+  The elven lands have only five locations, but every time the \glspl{pc} move, another \gls{segment} in the story places another location on the map.
 
   Every \gls{interval}, scan down the list of readied \glspl{segment} in the \gls{region} (marked `\gls{sqr}'), and make it happen.
   Once the \gls{segment} ends, mark the \emph{next \gls{segment} in the \gls{sq} as ready} (not the next \gls{segment} in the list).
@@ -32,12 +33,12 @@ Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\gl
 
   \begin{itemize}
     \item
-    The players enter \gls{ravencops}, and the \gls{gm} runs the first two available \glspl{segment}.
+    The players enter \gls{ravencops}, and the \gls{gm} runs the first two available \glspl{segment} (check them \vpageref{ravencops}).
     \item
     The players decide to investigate \gls{oathtower}, so the \gls{gm} finds that location \vpageref{oathtower}\ldots
     \item
     As the \gls{gm} runs \gls{oathtower}'s only available \gls{segment}, the \glspl{pc} get into a lot of trouble and have to flee.
-    The \gls{gm} finds no more \glspl{segment} marked as ready in that \gls{region}, so nothing more happens.
+    The \gls{gm} finds no more \glspl{segment} marked as ready in that \gls{region}, so nothing more happens in that \gls{region}, until more \glspl{segment} become ready.
     \item
     The \glspl{pc} want to investigate \gls{plateauGardens}, but they have to journey through \gls{ravencops} again to reach it.
     A new \gls{segment} has been made available after journeying to the \gls{oathtower}.
@@ -50,7 +51,7 @@ Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\gl
 \sidequest[ravencops,oathtower,sunway]{\Glsfmttext{enchantedLands}}
 
 \sqpart{oathtower}% AREA
-{Groaning Ziggurats}% NAME
+{Groaning Sepulchres}% NAME
 {The troupe must walk quietly and avoid the groaning sepulchres}% SUMMARY
 
 \histEvent{20}{2}{%
@@ -63,9 +64,9 @@ Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\gl
   Goblins have no natural height limits, so when they eat too much, they just grow and grow, until one day, without any clear cut-off point, people call them a `hobgoblin', and soon after, `\gls{ogre}'.
 
   When the goblins become \glspl{ogre}, \gls{MindElder} puts them into an enchanted sleep, and tells the goblins their big brothers will awaken when the time of grand feasting comes.
-
   The goblins must see the sleeping \glspl{ogre} from time to time, or they will suspect murder and betrayal, and even their oaths will not keep them passive.
-  Hunger and murder can break even the \gls{MindElder}'s enchanted oaths, and high-pitched noises will wake the sleeping \glspl{ogre}.
+
+  So the forest around \gls{oathtower} has slowly filled up with snoring sepulchres, and everyone must tread quietly, lest they wake and ask for breakfast\ldots
 \end{exampletext}
 
 \begin{boxtext}
@@ -82,11 +83,20 @@ have a 1 in 6 chance of waking \pgls{ogre}.
 The chances increase by 1 for loud noises, or noises closer to the sepulchres.
 
 In order to avoid waking the \glspl{ogre}, \gls{MindElder} has told the goblins to slay anyone making high-pitched noises, such as whistling or laughing.
-Farting is also banned, as it makes the goblins giggle, which then wakes the \glspl{ogre}.
+Farting at any pitch is also banned, as it makes the goblins giggle, which then wakes the \glspl{ogre}.
 
-\enchantedOgre[\npc{\M\N}{`The Grave'}]
+\enchantedOgre[\NPC{\M\N}{`The Grave'}%
+  {slate-coloured skin, with bright-blue eyes}%
+  {stretches calves}%
+  {deer with cheese}%
+  \npcQuote{only asking, only asking\ldots}]
 
-\enchantedOgre[\npc{\F\N}{Kerning}]
+\enchantedOgre[\NPC{\F\N}{Kerning}%
+  {bra made from human faces (it helps with running, not modesty)}%
+  {chews leaves, then spits them out}%
+  {\gls{crawler} soup}%
+  \npcQuote{the road goes ever on, until it doesn't.
+  `Dead end', they call it}]
 
 \sqpart{ravencops}% AREA
 {Goblins in the Quarry}% NAME
@@ -219,7 +229,7 @@ the elves answer happily.
 They know most of the history of the area (find the summary \vpageref{chronologicalEvents}).
 
 \sqpart{ravencops}% AREA
-{\squash~Subtle Ziggurats}% NAME
+{\squash~Subtle Sepulchres}% NAME
 {Most goblins have forgotten about these \glsfmtplural{ogre}}% SUMMARY
 
 \Gls{MindElder} ordered this sepulchre made before he understood how easily the dreams of \glspl{ogre} break.
