@@ -5,7 +5,7 @@
 \input{glossary.tex}
 \input{commands.tex}
 
-\declareSQareas{Town,Roads,Forest,Mountain}
+\declareSQareas{Town,Roads,Forest,Mountain,coppernut,plateauGardens,shadepaths,sunway,oathtower,ravencops}
 
 \title{The Goblin Hole}
 
@@ -47,36 +47,45 @@ Keywords={TTRPG,RPG,roleplaying}
 \mainmatter
 \glsresetall
 
-\chapter{Side Quests}
+\chapter{\Glsfmtplural{sq}}
 
 \begin{multicols}{2}
-
-\input{caves/sq.tex}
-
-\stopcontents[sq]
+  \input{caves/sq.tex}
 \end{multicols}
 
-\input{fridge/melt.tex}
+\input{shrooms/segments.tex}
+
+\stopcontents[sq]
+
+\input{caves/all.tex}
 
 \input{caves/ascent.tex}
 
 \input{caves/goblin_caves.tex}
 
-%\startappendix
-%
-%\backmatter
+\chapter{Random Town}
 
-%\printglossary[
-%  type=people,
-%  nonumberlist,
-%]
+\input{fridge/melt.tex}
 
-%\printindex
+\input{shrooms/keep.tex}
+
+\input{fey/all.tex}
+
+\startappendix
 
 \backmatter
 
+\indexprologue{\label{chronologicalEvents}%
+  \noindent
+  By \gls{gmt}, the current year is \arabic{fenestraYear}, and the \gls{cycle} is \showCycle.
+}
+
+\printindex[history]
+
 \cleardoublepage
 
-\input{config/GS.tex}
+\input{caves/goblins.tex}
+
+\cleardoublepage
 
 \end{document}
