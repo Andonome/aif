@@ -46,46 +46,59 @@ Every door opens at a push, but the only chests contain bottles of brandy or hob
 
 \subsubsection{The entrance door}
 leads to a hall with a staircase and three doors.
-Each storey is identical, so if the \glspl{pc} enter a door, roll to determine what's inside the first three storeys:
 
-\begin{dlist}
-  \item
-  $1D6$ hobgoblins with a deck of cards, debating the importance of rules in games.
-  \item
-  $1D6$ hobgoblins mending a boat for the lake around \Glsfmttext{oathtower}.
-  \item
-  Hobgoblin weapon storage, with $1D6 \times 2$ shortswords.
-  \item
-  A kitchen with $1D6$ elves.
-  They debate politely, but their words hide fierce insinuations about how the others once burnt an egg, or used the wrong type of wood for cooking snail meat.
-  \item
-  Light supplies, with $1D6 \times 3$ torches, and $1D6 \times 4$ candles.
-  \item
-  Meat storage, with $1D6$ meals' of \gls{crawler} eggs in salt, $1D6$ meals of snail-meat, $1D6$ meals' worth of vegetables (half of them gigantic and stolen by goblins from the garden plateaus), and $1D6$ meals of auroch meat.
-\end{dlist}
+\begin{description}
+  \item[The ground floor]
+  has a grand hall with two doors and a spiral staircase.
 
-\enchantedHobgoblin
-
-The hobgoblin guards have \gls{armour} made from \pgls{basilisk}'s hide \gls{covering} their torso, and a mottled-brown helmet made from the shell of a giant snail.
-
-Storeys 3, 4 and 5 have different contents:
-
-%!\null
-\begin{dlist}
-  \item
-  A small study, with books on poetry, and fantastical erotica where rabbits ride foxes to battle snakes.
-  \item
-  A cupboard of \glspl{ingredient}, including $1D6-3$ woodspy beaks (Water \glspl{ingredient}), $1D6-3$ \gls{crawler} spinnerets (Fate \glspl{ingredient}), and $1D6-3$ phials of human blood (also Fate \glspl{ingredient}).
-  \item
-  A lounge, with $1D6-3$ elves lounging.
+  In the centre of the hall, $1D6$ hobgoblins sit with a deck of cards, debating the importance of rules in games.
+  The hobgoblin guards have \gls{armour} made from \pgls{basilisk}'s hide \gls{covering} their torso, and a mottled-brown helmet made from the shell of a giant snail.
+  \begin{enumerate}
+    \item
+    $1D6$ hobgoblins mending a boat for the lake around \glsfmttext{oathtower}.
+    \item
+    Hobgoblin weapon storage, with $1D6 \times 2$ shortswords.
+  \end{enumerate}
+  \item[The first floor]
+  has a massive kitchen with two storage rooms at opposite sides.
+  $1D6$ elves debate politely, but their words hide fierce insinuations about how the others once burnt an egg, or used the wrong type of wood for cooking snail meat.
+  \begin{enumerate}
+    \item
+    Light supplies, with $1D6 \times 3$ torches, and $1D6 \times 4$ candles.
+    \item
+    Meat storage, with $1D6$ meals' of \gls{crawler} eggs in salt, $1D6$ meals of snail-meat, $1D6$ meals' worth of vegetables (half of them gigantic and stolen by goblins from the garden plateaus), and $1D6$ meals of auroch meat.
+  \end{enumerate}
+  \item[The second floor]
+  has an open room, full of cushions, with $1D6-3$ elves lounging.
   These elves have taken so many oaths that they are practically incapable of action, and need goblins to tend to them daily.
-  \item
-  An in-house outhouse which empties into the lake below.
-  \item
-  \gls{romeo}'s bedroom (with three books on poetry placed randomly around the room).
-  \item
-  \gls{MindElder}'s bedroom (with a balcony, a bed, and nothing else).
-\end{dlist}
+
+  The spiral staircase ends here.
+  One door and two entrances sit behind the elves -- both open but gloomy.
+  \begin{enumerate}
+    \item
+    Behind the door, an in-house outhouse which empties into the lake below.
+    \item
+    The first alcove houses a small study, with books on poetry, and fantastical erotica where rabbits ride foxes to battle snakes.
+
+    The bookcase serves as a ladder to room \ref{MindElderRoom}, above.
+    \item
+    A cupboard of \glspl{ingredient}, including $1D6-3$ \gls{woodspy} beaks (Water \glspl{ingredient}), $1D6-3$ \gls{crawler} spinnerets (Fate \glspl{ingredient}), and $1D6-3$ phials of human blood (also Fate \glspl{ingredient}).
+
+    The cupboard lifts back to reveal stairs up to room \ref{RomeoRoom}, above.
+  \end{enumerate}
+  \item[The third floor]
+  has two rooms, accessible only from hidden entrances, below.
+  \begin{enumerate}
+    \item
+    \Gls{MindElder}'s bedroom has a balcony, a bed with white sheets, and nothing else.\label{MindElderRoom}
+    \item
+    \Gls{romeo}'s bedroom has three books on poetry placed randomly around the room; each of them discuss the importance of a Mathematical underpinning.\label{RomeoRoom}
+  \end{enumerate}
+\end{description}
+
+\enchantedHobgoblin[\npc{\T[3]\N}{Hobgoblins}]
+
+\enchantedHobgoblin[\npc{\T[3]\N}{Hobgoblins}]
 
 \subsubsection{\Glsfmttext{MindElder}'s Routine}
 begins at dawn, as he casts spells to learn about the kinds of minds wander his domain (`\textit{does anyone have hurtful plans?  Does anyone think about theft?}').
