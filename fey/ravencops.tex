@@ -5,6 +5,10 @@
 Despite being a verdant forest, it feels bleak, and has little edible food.
 All attempts at \gls{foraging} are at \gls{tn}~14.
 
+\Gls{navigation} through the snail paths is risky -- various paths go nowhere, while others loop pointlessly.
+Characters should roll \roll{Intelligence}{Survival} (\tn[10]) to head in the right direction.
+Each Failure Margin increases the journey by one mile.
+
 \Gls{oathtower} sucks up most of the \glspl{mp} in the surrounding \gls{region}, which makes the air feel thin.
 Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\glspl{mp} at the end of \pgls{interval}.%
 \exRef{core}{Core Rules}{manaVacuum}
@@ -71,9 +75,11 @@ Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\gl
   But making a small pause to show how to use something makes it \emph{relevant}.
 }
 
+\noindent
+The first \gls{segment} only starts once the \glspl{pc} approach the \gls{oathtower}, after which new places arrive on the map fast.
+Until then, the \gls{region} introduces itself through the eclectic scenes in \nameref{ravencopsIntro}, \vpageref{ravencopsIntro}.
 
-
-\sidequest[ravencops,oathtower,sunway]{\Glsfmttext{enchantedLands}}
+\sidequest[ravencops,oathtower]{Places to See in \glsfmttext{enchantedLands}}
 
 \sqpart[\gls{vlg}]{oathtower}% AREA
 {Groaning \Glsfmtplural{sepulchre}}% NAME
@@ -101,14 +107,19 @@ Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\gl
 
 \Gls{oathtower} has a lot of sepulchres dotted around it, often hidden by trees, and always with little paths leading towards them.
 Each one has three \glspl{ogre}, cramped in together.
-They stand as wide as a cottage, but not as tall, and the sound of snoring emanates for a few hours each day.
+The sound of snoring emanates for a few hours each day.
+
+\iftoggle{verbose}{
+  \gls{vlg}~Once the \glspl{pc} approach \gls{oathtower}, place \pgls{sepulchre} on the map on \vpageref{feylands}.
+  It should be inside the forest, not far from the \glspl{pc}.
+}{}
 
 \paragraph{High-pitched noises near \gls{oathtower}}
 have a 1 in 6 chance of waking \pgls{ogre}.
-The chances increase by 1 for loud noises, or noises closer to the \glspl{sepulchre}.
+The chances increase by~1 for loud noises, or noises closer to the \glspl{sepulchre}.
 
 In order to avoid waking the \glspl{ogre}, \gls{MindElder} has told the goblins to slay anyone making high-pitched noises, such as whistling or laughing.
-Farting at any pitch is also banned, as it makes the goblins giggle, which then wakes the \glspl{ogre}.
+Farting is also banned, as it makes the goblins giggle, which then wakes the \glspl{ogre}.
 
 \enchantedOgre[\NPC{\M\N}{`The Grave'}%
   {slate-coloured skin, with bright-blue eyes}% DESCRIPTION
@@ -120,7 +131,7 @@ Farting at any pitch is also banned, as it makes the goblins giggle, which then 
   {bra made from human faces (it helps with running, not modesty)}% DESCRIPTION
   {chews leaves, then spits them out}% MANNERISM
   {\gls{crawler} soup}% WANTS
-  \npcQuote{the road goes ever on, until it doesn't.
+  \npcQuote{the road goes ever on, unless it doesn't.
   `Dead end', they call it}]
 
 \sqpart[\gls{vlg}]{ravencops}% AREA
@@ -171,8 +182,8 @@ So he stands looking at a blank sheet of paper, while twenty goblins ignore him,
 
 \end{speechtext}
 
-\gls{romeo} does not know whom it's for, and explains he learned from his teacher by reading, and fell in love utterly.
-His father doesn't approve of the `oathless' types, and he feels ashamed of loving such an `air-headed' person, despite all she's taught him.
+\Gls{romeo} does not know whom it's for, and explains he learned from his teacher by reading, and fell in love utterly.
+His father doesn't approve of the `oathless' types, and he feels ashamed of loving such a lawless person, despite all she's taught him.
 
 \paragraph{If the \glspl{pc} help him with the poem,}
 then he perks up and quickly finishes it, then asks them if they might try to find the recipient.
@@ -193,21 +204,55 @@ they notice \gls{romeo} using the Force \gls{sphere} to make the goblins' rocks 
 \footnote{This tells the \glspl{pc} that \gls{romeo} understands the Force \gls{sphere}, which indicates a link to \gls{juliet}.
 This becomes important later, in \nameref{oathlessLovers}, \vpageref{oathlessLovers}.}
 
-\sqpart[\gls{vlg}]{sunway}% AREA
-{Elven Steps}% NAME
-{A hidden path leads to \glsfmttext{plateauGardens} above}% SUMMARY
-\label{hiddenStairs}
-
-In the causeway between the \gls{ravencops} forest and the \gls{plateauGardens}, a single plateau has a hidden stairway, going up.
-\Glspl{crawler} cannot make much use of the narrow stairs, with occasional hand-holds for little fingers.
-People who don't know about the stairs cannot usually see them, as every step blends into the tall rock-face from below.
-But once someone notices the first step, they see the next, and then the next, and so on.
-
-\paragraph{Spotting the rocks}
-requires a \roll{Wits}{Vigilance} roll at \tn[12].
-The \gls{tn} increases by~+1 in the rain, and by~+3 at night.
-
 \sqpart[\gls{vlg}]{ravencops}% AREA
+{The House of Grand Stories}% NAME
+{Underground elves tell painless stories in perfect rhythm}% SUMMARY
+
+Beehives buzz around a flowery garden.
+Three large boulders (which look quite out of place) hide stairs down to a long hall, where perfect elves tell perfect stories of perfect people.
+The stories rhyme in a precise pattern, and follow the hero's journey exactly.
+The characters in the stories do no wrong, and have no fights, because fighting hurts people, and the storytellers never think about hurting people.
+
+\begin{boxtext}
+  Ahead, a tree glows in the dark, lit from below, but you see no fire.
+
+  \ldots
+
+  Closer now, the rock is \pgls{step} wide, made of glass, and covers something below.
+  The rock is a roof, and under the earth there is a room with a fire, and people.
+  The people have stopped to look up, and stare at you.
+\end{boxtext}
+
+This elven home has three chambers, for three elves, and a central area for cooking.
+Goblins occasionally visit, bringing supplies of snail-meat and stolen vegetables.
+The various cupboards also have $1D6-3$ of the following items:
+
+\begin{itemize}
+  \item
+  Smoked meats (usable as a day's \glspl{ration}).
+  \item
+  Stormy moonlight from a storm, captured in a large, glass, phial (usable as a Water \gls{ingredient}).
+  \item
+  Auroch hooves (usable as an Earth \gls{ingredient}).
+\end{itemize}
+
+\elf[\npc{\F\El}{Estel}]
+
+\elf[\npc{\M\El}{Luston \& Silmon}]
+
+\enchantedGoblin[\npc{\F\N}{Sillaberry}]%
+
+\sqpart[\squash\gls{vlg}]{ravencops}% AREA
+{Subtle \Glsfmtplural{sepulchre}}% NAME
+{Most goblins have forgotten about these \glsfmtplural{ogre}}% SUMMARY
+
+\begin{exampletext}
+  \Gls{MindElder} requested the first \gls{sepulchre} before he understood how fragile the dreams of \glspl{ogre} are.
+\end{exampletext}
+\Gls{MindElder} ordered this \gls{sepulchre} made before he understood how easily the dreams of \glspl{ogre} break.
+It houses three, who snore quietly.
+
+\sqpart[\gls{vlg}]{oathtower}% AREA
 {The Icebox House}% NAME
 {Underground elves live to guard food packed in ice}% SUMMARY
 \label{iceboxHouse}
@@ -252,37 +297,6 @@ they receive it, as long as they make small, reasonable requests.
 \paragraph{If they ask questions,}
 the elves answer happily.
 They know most of the history of the area (find the summary \vpageref{chronologicalEvents}).
-
-\sqpart[\squash\gls{vlg}]{ravencops}% AREA
-{Subtle \Glsfmtplural{sepulchre}}% NAME
-{Most goblins have forgotten about these \glsfmtplural{ogre}}% SUMMARY
-
-\Gls{MindElder} ordered this sepulchre made before he understood how easily the dreams of \glspl{ogre} break.
-It houses three, who snore quietly.
-
-\sqpart[\gls{vlg}]{ravencops}% AREA
-{The House of Grand Stories}% NAME
-{Underground elves tell painless stories in perfect rhythm}% SUMMARY
-
-Beehives buzz around a flowery garden.
-Three large boulders (which look quite out of place) hide stairs down to a long hall, where perfect elves tell perfect stories of perfect people.
-The stories rhyme in a precise pattern, and follow the hero's journey exactly.
-The characters in the stories do no wrong, and have no fights, because fighting hurts people, and the storytellers never think about hurting people.
-
-The elven home has three chambers, for three elves, and a central area for cooking.
-Goblins occasionally visit, bringing supplies of snail-meat and stolen vegetables.
-The various cupboards also have $1D6-3$ of the following items:
-
-\begin{itemize}
-  \item
-  Smoked meats (usable as a day's \glspl{ration}).
-  \item
-  Stormy moonlight from a storm, captured in a large, glass, phial (usable as a Water \gls{ingredient}).
-  \item
-  Auroch hooves (usable as an Earth \gls{ingredient}).
-\end{itemize}
-
-\elf
 
 \sqpart[\gls{vlg}]{ravencops}% AREA
 {Lake Rancid}% NAME
