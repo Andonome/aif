@@ -1,12 +1,13 @@
 \sidequest[oathtower,sunway,shadepaths,plateauGardens,ravencops]{The \Glsfmttext{ranger}}
 
-If the troupe tarry too long, the \gls{jotter} will send \gls{dickhead} out to find out what's happening.
+\noindent
+Soon after the troupe left their \gls{broch} to find the source of the giant snail, \gls{susjot} sent \gls{dickhead} out on the same mission, alone, because nobody at the \gls{broch} likes \gls{dickhead}.
 
 \sqpart{sunway}% AREA
 {An Old Acquaintance}% NAME
 {\Glsfmttext{dickhead} arrives to scope out the situation}% SUMMARY
 
-The troupe find him in the woods, hunting \pgls{griffin} nest.
+The troupe find him in the woods, searching for \pgls{griffin} nest he thinks lies nearby.
 He moves towards them quietly, hoping to get the jump on them, just to show off his superior stealth \glspl{skill}.
 
 Once out, \gls{dickhead} speaks haughtily of his ability to survive in the forest, and moves with confidence.
@@ -18,9 +19,16 @@ He asks the troupe what they've seen, but does not give their stories much impor
   You may not succeed, but it makes for good practice.
 \end{speechtext}
 
-\Gls{dickhead} soon leaves, telling everyone not to follow him, as they'll just make noise.
-
 \dickhead
+
+\paragraph{Spotting \gls{dickhead}}
+as he sneaks up needs a \roll{Wits}{Vigilance} roll
+\set{track}{7}%
+\addtocounter{track}{\value{Dexterity}}%
+\addtocounter{track}{\value{Stealth}}%
+at \gls{tn}~\arabic{track}.
+
+\Gls{dickhead} soon leaves, telling everyone not to follow him, as they'll just make noise.
 
 \sqpart{shadepaths}% AREA
 {Peeping Woodsman}% NAME
@@ -29,9 +37,8 @@ He asks the troupe what they've seen, but does not give their stories much impor
 \Gls{dickhead} has observed the area for some time, noticed the \gls{disgnome} plants, and believes that the giant snails all stem from a single source: a powerful spellcaster.
 
 \begin{speechtext}
-  The plan is simple, I kill the \gls{witch}.
-  Elves are always wrapped up in their own thing; they never pay attention, and they're probably drowsy from all the \gls{disgnome} in the area.
-  So I'll set \pgls{ambush} then loose an arrow on whoever crafts these giant snails.
+  The plan is simple, I find the elf who makes the snails, and \emph{kill him}.
+  So I'll set \pgls{ambush} then loose an arrow on whatever gardener grows these giant snails.
 
   Elves are small.
   I'll just need one arrow.
@@ -50,18 +57,21 @@ He asks the troupe what they've seen, but does not give their stories much impor
   He slithered away as the spell took hold, confused and dismayed, dropping pieces of his equipment along the way.
 \end{exampletext}
 
-The find his \gls{crossbow} and twelve quarrels on the ground, but carrying it sends a clear signal to the elves that they approve of his methods, and makes them dangerous.
+The \glspl{pc} find \gls{dickhead}'s possessions, including his \gls{crossbow} and twelve quarrels on the ground, but carrying it sends a clear signal to the elves that they approve of his methods, and makes them dangerous.
 They will suffer a -3~Penalty to social rolls with the elves while the \gls{crossbow} is visible.
 
-If the \glspl{pc} follow the trail, have them roll \roll{Wits}{Survival} (\tn[10]).
-Success means you can skip to the next \gls{segment}, below.
-A tie means they succeed, but only after \pgls{interval} (and another \gls{segment}).
+\paragraph{If the \glspl{pc} follow the trail,}
+have them roll \roll{Wits}{Survival} (\tn[10]).
+If they succeed, they can follow him to \gls{ravencops}, and you can jump to the next \gls{segment}, below immediately (skipping any that might have been before it).
+If they fail, they lose \pgls{interval} searching, and find nothing (discard the next \gls{segment}).
+
+A tie means they lose \pgls{interval} from constantly missing tracks, but confirm that they go to \gls{ravencops}.
 
 \sqpart[\squash]{ravencops}% AREA
 {Wandering Hood}% NAME
 {\Glsfmttext{dickhead}'s clothes lie discarded on the ground}% SUMMARY
 
-The troupe see the last of the ranger's clothing, discarded just before entering the forest.
+The troupe see the last of \glsfmtname{dickhead}'s clothing, discarded just before entering the forest.
 Following him further will not be easy; the \gls{tn} rises to~14.
 
 \sqpart[\squash\R]{oathtower}% AREA

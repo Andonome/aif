@@ -196,7 +196,7 @@
 }
 
 \newcommand{\juliet}{
-  \Person{\NPC{\glsentrysymbol{juliet}}{\Glsentrytext{juliet}}{short, yellow hair, with wide eyes, like a daffodil struck by lightning.}{Flat palms}{to daydream, uninterrupted}}%
+  \Person{\NPC{\glsentrysymbol{juliet}}{\Glsentrytext{juliet}}{short, yellow hair, with wide eyes, like a daffodil struck by lightning}{Flat palms}{to daydream, uninterrupted}}%
     {{-1}{0}{1}}% BODY
     {{2}{2}{0}}% MIND
     {
@@ -292,8 +292,8 @@
 
 
 \newcommand{\dickhead}{
-  \Person{\NPC{\glsentrysymbol{dickhead}}{\Glsentrytext{dickhead}}{loose pony-tail, fur coat, with muddy base}{picks teeth with old bone}{to retire}}%
-    {{3}{2}{0}}% BODY
+  \Person{\NPC{\glsentrysymbol{dickhead}}{\Glsentrytext{dickhead}}{loose pony-tail, fur coat, with muddy base}{picks teeth with old bone}{to get rich and retire}}%
+    {{1}{2}{2}}% BODY
     {{-1}{1}{-2}}% MIND
     {
       \npcQuote{%
@@ -304,18 +304,18 @@
         \setcounter{Brawl}{1}
         \set{Cultivation}{2}
         \set{Vigilance}{1}
-        \set{Stealth}{1}
+        \set{Stealth}{2}
         \set{Survival}{2}
         \longsword
         \addtocounter{equipmentWeight}{-2}
     }% SKILLS
     {\charge, \unstoppable}% KNACKS
-    {tinderbox, \lootJewellery, \rations, \rations and \rations}% EQUIPMENT
+    {\smolCrossBow, quarrels, tinderbox, \lootJewellery, \rations, \rations and \rations}% EQUIPMENT
     {}% ABILITIES
 }
 
 \newcommand{\dickheadReborn}[1]{
-  \Person{\NPC{\glsentrysymbol{dickhead}}{\Glsentrytext{dickhead}}{human head inside messy tentacles, sprawled about the floor like dropped noodles}{picks teeth with old fish-bone}{to retire}}%
+  \Person{\NPC{\R\M}{\Glsentrytext{dickhead}}{human head inside messy tentacles, sprawled about the floor like dropped noodles}{picks teeth with old fish-bone}{to retire}}%
     {{3}{2}{0}}% BODY
     {{-1}{1}{-2}}% MIND
     {
