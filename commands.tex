@@ -155,7 +155,13 @@
 
 \newcommand\enchantedMap[1][b]{
   \renewcommand\csComments{
-    \draw[very thick,gray] (12,0.6) -- (13,0.6) node[anchor=north]{\outline{1 Mile}} -- (17,0.6) node[anchor=north]{\outline{5 Miles}} ;
+    \draw[very thick,gray, dash dot] (9,0.6)
+    node[anchor=north]{\outline{Miles}} -- (10,0.6)
+    node[anchor=north]{\outline{1}} -- (11,0.6)
+    node[anchor=north]{\outline{2}} -- (12,0.6)
+    node[anchor=north]{\outline{3}} -- (13,0.6)
+    node[anchor=north]{\outline{4}} -- (14,0.6)
+    node[anchor=north]{\outline{5}} ;
   }
 
   \mapNotes{
