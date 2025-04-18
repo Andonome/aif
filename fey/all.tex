@@ -1,7 +1,5 @@
 \input{fey/intro.tex}
 
-\input{fey/overview.tex}
-
 \input{fey/snails_attack.tex}
 
 \input{fey/forest_intro.tex}
@@ -36,8 +34,12 @@
 
 %\input{fey/mound.tex}
 
+% Best to keep the oneshot version snappy, with a small glossary.
+\iftoggle{verbose}{%
+  \glsunsetall
+}{}
+
 \input{fey/conclusion.tex}
 
 \input{fey/appendix.tex}
-
 

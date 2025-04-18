@@ -26,11 +26,17 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \iftoggle{core}{\input{../core/commands.tex}}{}
 
+\set{cycle}{4}
+\set{temperature}{3}
+
 \begin{document}
-\frontpage[Untitled Elf Game]%
-  {An unbalanced stack of spells}%
 
 \glsunsetall
+
+\frontpage[On the Trail of the Snail Lords]%
+  {A daring quest of paperwork, ecological concerns, and goblin-cops}%
+
+\input{fey/overview.tex}
 
 \label{mainGlossary}
 \printglossary[
