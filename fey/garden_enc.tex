@@ -1,16 +1,34 @@
 \sidequest[shadepaths,plateauGardens]{Events in \glsfmttext{sunderedForest}}
 
-\sqpart[\gls{morning}]{shadepaths}% AREA
-{The Picnic Choir}% NAME
-{Elven songs descend from the plateau above}% SUMMARY
+\sqpart{shadepaths}% AREA
+{Light Ascent}% NAME
+{Elves fetch water below, and climb up delicate roots}% SUMMARY
+\label{shadeAscent}
 
-A little group of elves sing a love-song to the clear-blue skies, but don't respond to shouts or calls.
-They will, however, respond to someone singing with them.
+\Glspl{plateauGardens} can become very dry, due to the lack of rivers.
+Elves often have to descend with snail-shell buckets, fetch filthy water from the rivulets in \gls{shadepaths}, then purify it with spells (or just use it as fertilizer for the gardens).
 
-If someone sings well, they will lower the vines of a broken bridge to help them up.
-If they sing poorly, the elves leave silently.
+\begin{boxtext}
+  Round the next squelching corner, a skinny silhouette collects the mucky water in a bucket.
+  A second figure is climbing down roots on the tall walls, completely naked, except for the bucket on a rope.
+\end{boxtext}
 
-Singing \glspl{pc} should roll \roll{Intelligence}{Performance} (\tn[10]) to understand the elven song, and imitate it.
+\paragraph{When the \glspl{pc} approach}
+the elves flee up to their plateau, unless the troupe present themselves as \emph{very} non-threatening (\roll{Charisma}{Empathy} at \tn[10]).
+Success means that Fanwa and Henton will chat with them, and invite them to discard their possession and climb up the roots.
+
+\paragraph{Climbing the walls}
+means hanging onto the \gls{disgnome} roots, and those spiky roots will inflict a mild poison, removing $1D3$ Wits.
+
+The roots only hold up to \pgls{weight} of~9, so most characters will have to discard their equipment in order to ascend.
+Anyone with a Strength~Bonus of +4 would have 10~\glspl{hp}, so their \gls{weight} would be~10, meaning they cannot climb.
+
+\stupifiedElf[\npc{\T[2]\F\M\El}{Fanwa \& Henton}%
+  \set{spentMP}{6}%
+  \renewcommand\Equipment{XYZ}
+]
+
+\showStdSpells
 
 \sqpart{plateauGardens}% AREA
 {Mist Below}% NAME
@@ -29,6 +47,13 @@ Fast movements require a \roll{Wits}{Survival} roll (\tn[8]) to avoid falling in
 Longer journeys require an \roll{Intelligence}{Survival} roll (\tn[10]).
 
 The mists fade after \pgls{interval}.
+
+\sqpart[\squash]{shadepaths}% AREA
+{Another Treacherous Ascent}% NAME
+{More roots on the wall allow light climbers a way up}% SUMMARY
+
+Further \gls{disgnome} roots allow anyone here to climb up to \pgls{plateauGardens} above, just like the previous \gls{segment} (\vpageref{shadeAscent}).
+These roots can hold up to \pgls{weight} of~12.
 
 \sidequest[shadepaths,sunway,plateauGardens]{Grumbling Gardens}
 
@@ -52,7 +77,7 @@ Elves watch from a garden plateau as aurochs stampede through the causeway.
 Behind them, \pgls{crawler} chases, but it's losing steam, and soon retreats into the forest.
 
 \sqpart{plateauGardens}% AREA
-{Uninvited Guests}% NAME
+{Uninvited Guest}% NAME
 {A rare \glsfmttext{woodspy} stalks the garden}% SUMMARY
 
 Most large animals have trouble reaching up the tall walls to \gls{plateauGardens}, but \glspl{woodspy} are clever, and sometimes manage to pull themselves up using a snail, or finding a piece of vine hanging down.
@@ -107,4 +132,16 @@ they object.
 
 \paragraph{If the \glspl{pc} ask the elves,}
 the elves say they don't feel happy with goblins taking their food, but refuse to acknowledge the concept of property.
+
+\sqpart[\gls{morning}]{shadepaths}% AREA
+{The Picnic Choir}% NAME
+{Elven songs descend from the plateau above}% SUMMARY
+
+A little group of elves sing a love-song to the clear-blue skies, but don't respond to shouts or calls.
+They will, however, respond to someone singing with them.
+
+If someone sings well, they will lower the vines of a broken bridge to help them up.
+If they sing poorly, the elves leave silently.
+
+Singing \glspl{pc} should roll \roll{Intelligence}{Performance} (\tn[10]) to understand the elven song, and imitate it.
 
