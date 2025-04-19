@@ -2,11 +2,11 @@
 
 | Links                          | Related Books                  |
 |:-------------------------------|:-------------------------------|
-| [Download][goblin hole]        | [Core book][core]              |
+| [The Goblin Hole][goblin hole] | [Players book][stories]        |
+| [Snail Trails][feylands]       | [Extended Core Rules][core]    |
 | [Email an idea][issues email]  | [Oneshot Adventure][oneshot]   |
 
-*Adventures in Fenestra* will be a collection of modules for the BIND RPG.
-Currently, only one module is complete: [the Goblin Hole][goblin hole].
+*Adventures in Fenestra* is a collection of modules for the BIND RPG.
 
 ## Getting the Book
 
@@ -24,9 +24,28 @@ For full setup instructions, see the [wiki][compiling].
 
 Or just click [download][goblin hole].
 
+# Modules
+
+## The Goblin Hole
+
+A dozen goblins, in a normal cave.
+No problem, right?
+
+[Download][goblin hole]
+
+## On the Trail of the Snail Lords
+
+Elves fix their problems with spells.
+And when those spells create more problems, they just 'patch it' with more spells.
+
+[Download][feylands]
+
+## On the Trail of the Snail Lords
+
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [core]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Core_Rules.pdf?job=build
 [aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Adventures_in_Fenestra.pdf?job=build
 [goblin hole]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/The_Goblin_Hole.pdf?job=build
+[feylands]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Snail_Trails.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-aif-16324948-issue-@incoming.gitlab.com

@@ -4,7 +4,7 @@ targets += $(ELVES).pdf
 targets += $(GOBLINS).pdf
 
 GOBLINS = The_Goblin_Hole
-ELVES = Untitled_Elf_Game
+ELVES = Snail_Trails
 
 DEPS += $(wildcard caves/*.tex)
 DEPS += $(wildcard ex_cs/*.tex)
@@ -24,7 +24,7 @@ $(DROSS)/$(GOBLINS).pdf: $(DEPS) qr.tex
 	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
 
 .PHONY: oneshot
-oneshot: $(GOBLINS).pdf ## Oneshot cavern-based module
+caves: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/characters.pdf config/rules.pdf
 	@pdfunite $^ $@
 
