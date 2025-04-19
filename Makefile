@@ -10,6 +10,8 @@ DEPS += $(wildcard caves/*.tex)
 DEPS += $(wildcard ex_cs/*.tex)
 DEPS += commands.tex
 
+dependencies += magick
+
 include config/vars
 
 config/vars:
@@ -28,12 +30,22 @@ caves: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/characters.pdf config/rules.pdf
 	@pdfunite $^ $@
 
-$(DROSS)/$(ELVES).pdf: $(DEPS) $(wildcard fey/*.tex) qr.tex
+$(DROSS)/$(ELVES).pdf: $(DEPS) $(wildcard fey/*.tex) qr.tex images/extracted/sundered.jpg images/extracted/enchanted.jpg
 	$(COMPILER) -jobname=$(ELVES) fey/main.tex
 .PHONY: oneshot
 shellstack: $(ELVES).pdf ## Oneshot cavern-based module
 $(ELVES).pdf: $(DROSS)/$(ELVES).pdf config/rules.pdf
 	@pdfunite $^ $@
+
+images/extracted/sundered.jpg: images/feylands.svg images/extracted/
+	cat $< | \
+	inkscape --pipe --export-type=png --export-area=230:30:470:150 -d 600 |\
+	magick - -fill white -channel-fx '| gray=>alpha' $@
+
+images/extracted/enchanted.jpg: images/feylands.svg images/extracted/
+	cat $< | \
+	inkscape --pipe --export-type=png --export-area=430:30:670:150 -d 600 |\
+	magick - -fill white -channel-fx '| gray=>alpha' $@
 
 $(DBOOK): $(DEPS) $(wildcard *.tex) ex_cs/ config/rules.pdf $(DROSS)/characters.pdf | qr.tex
 	@$(COMPILER) main.tex
