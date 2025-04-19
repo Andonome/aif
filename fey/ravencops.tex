@@ -80,309 +80,114 @@ Unless \pgls{witch} is missing 6~\glspl{mp} or more, they can only receive 2~\gl
 The first \gls{segment} only starts once the \glspl{pc} approach the \gls{oathtower}, after which new places arrive on the map fast.
 Until then, the \gls{region} introduces itself through the eclectic scenes in \nameref{ravencopsIntro}, \vpageref{ravencopsIntro}.
 
-\sidequest[ravencops,oathtower]{Locations in \glsfmttext{enchantedLands}}
+\sidequest[ravencops]{Snails \& Goblins}
+\label{ravencopsIntro}
 
-\sqpart[\gls{vlg}]{oathtower}% AREA
-{Groaning \Glsfmtplural{sepulchre}}% NAME
-{The troupe must walk quietly and avoid the groaning sepulchres}% SUMMARY
-
-\histEvent{20}{2}{%
-  \Glsentrytext{MindElder} finds the goblins overpopulating the area, and fears the day they run out of food; even the most powerful enchantments cannot withstand goblin hunger.
-  He rewards loyal goblins with obscene amounts of food, which lets them grow and grow, into hobgoblins, and eventually into \glsfmtplural{ogre}.
-  Trials include service in \glsfmttext{oathtower}, hunting dangerous creatures, and plenty of duels (which really helps reduce the population).
-  Once the goblins ascend, \glsentrytext{MindElder} places them in an enchanted sleep inside a stone sepulchre (where the goblins can check on them)}
+\sqpart{ravencops}% AREA
+{The Square of Life}% NAME
+{Giant snail devours \gls{crawler} in acid attack}% SUMMARY
 
 \begin{exampletext}
-  Goblins have no natural height limits, so when they eat too much, they just grow and grow, until one day, without any clear cut-off point, people call them a `hobgoblin', and soon after, `\gls{ogre}'.
-
-  When the goblins become \glspl{ogre}, \gls{MindElder} puts them into an enchanted sleep, and tells the goblins their big brothers will awaken when the time of grand feasting comes.
-  The goblins must see the sleeping \glspl{ogre} from time to time, or they will suspect murder and betrayal, and even their oaths will not keep them passive.
-
-  So the forest around \gls{oathtower} has slowly filled up with snoring sepulchres, and everyone must tread quietly, lest they wake and ask for breakfast\ldots
+  \Gls{MindElder} has taken to twisting the `minds' of snails to make them crave flesh.
+  Most snails do not hunt well, but the acidic spray, and disarming appearance, means they regularly consume \glspl{crawler}.
+  This helps keep the \gls{crawler} population low, as the goblins would otherwise feed on the \glspl{crawler}.
 \end{exampletext}
 
 \begin{boxtext}
-  Past the trees, an arrow's flight away, a mossy tower stands as tall as a feasting hall turns on its end.
-  A low groaning noise, like a distant earthquake, floods through the trees, surrounding you.
+  The echo of a distant crow's cry reaches you, just before fading to nothing.
+  The trees look a kind of uniform-brown, without any mottling or variation.
+  And the road feels as smooth as pond-scum.
 \end{boxtext}
 
-\Gls{oathtower} has a lot of sepulchres dotted around it, often hidden by trees, and always with little paths leading towards them.
-Each one has three \glspl{ogre}, cramped in together.
-The sound of snoring emanates for a few hours each day.
+\Gls{running} now requires a \roll{Dexterity}{Athletics} roll at \tn[7] to avoid slipping face-first into the slime, and going prone.%
+\exRef{core}{Core}{prone}
+\Glspl{pc} can avoid the actual roll by walking slowly (i.e. `\pgls{restingaction}'), or locking arms (`\pgls{bandAct}'), but the moment they need to move fast, they'll have to start with \pgls{natural}, and make individual rolls afterwards.
 
-\iftoggle{verbose}{
-  \gls{vlg}~Once the \glspl{pc} approach \gls{oathtower}, place \pgls{sepulchre} on the map on \vpageref{feylands}.
-  It should be inside the forest, not far from the \glspl{pc}.
-}{}
-
-\paragraph{High-pitched noises near \gls{oathtower}}
-have a 1 in 6 chance of waking \pgls{ogre}.
-The chances increase by~1 for loud noises, or noises closer to the \glspl{sepulchre}.
-
-In order to avoid waking the \glspl{ogre}, \gls{MindElder} has told the goblins to slay anyone making high-pitched noises, such as whistling or laughing.
-Farting is also banned, as it makes the goblins giggle, which then wakes the \glspl{ogre}.
-
-\enchantedOgre[\NPC{\M\N}{`The Grave'}%
-  {slate-coloured skin, with bright-blue eyes}% DESCRIPTION
-  {stretches calves}% MANNERISM
-  {deer with cheese}% WANTS
-  \npcQuote{only asking, only asking\ldots}]
-
-\enchantedOgre[\NPC{\F\N}{Kerning}%
-  {bra made from human faces (it helps with running, not modesty)}% DESCRIPTION
-  {chews leaves, then spits them out}% MANNERISM
-  {\gls{crawler} soup}% WANTS
-  \npcQuote{the road goes ever on, unless it doesn't.
-  `Dead end', they call it}]
-
-\sqpart[\gls{vlg}]{ravencops}% AREA
-{Goblins in the Quarry}% NAME
-{\Glsfmttext{romeo} should be working, but needs to complete the perfect poem}% SUMMARY
-\label{goblinQuarry}
-
-\Gls{MindElder} has sent his son \gls{romeo} to oversee the goblins, excavating rock at the quarry, and cutting long slabs to construct more sepulchres.
-But \gls{romeo} can't think of anything but the poem he needs to write, to tell his beloved how he feels.
-Unfortunately, his father raised him to be a perfectionist, which means he can't write perfect poetry, or good poetry, or bad poetry, or any poetry at all.
-
-\begin{speechtext}
-  What rhymes with snail?
-  Mail, sail, bail\ldots hay-bail?
-  Are hey-bails a thing?
-  But `hey' is too informal.
-  Better to say `hello'.
-  `Hello-bail'\ldots no it sounds non-committal.
-\end{speechtext}
-
-So he stands looking at a blank sheet of paper, while twenty goblins ignore him, and bicker about pick-axes and the proper way to use a cart.
+Failing a \roll{Dexterity}{Athletics} roll (\tn[7]) inflicts 1~\gls{ep}.
 
 \begin{boxtext}
-  In the near-distance, around this corner (or possibly two), someone, or something, is hitting metal on rocks.
-  The metal sounds strange, butt probably iron.
-  The rocks give that satisfying crack that rocks give with a long, clean cut.
+  You find a cross-roads, as the path splits left and right.
+  The road to the left looks older, and less slimy, but has \pgls{crawler} running towards you.
+  The road to the right also looks old, until the giant snail, approaching silently.
 \end{boxtext}
 
-\paragraph{If the \glspl{pc} ask about the poem's recipient,}
-\gls{romeo} explains he has no idea whom he loves, so he can only describe their mind.
-
-\begin{speechtext}
-  A quick wit, and very insightful in material matters -- able to tell the weight of a stone, bird, or an entire tree just by looking at it.
-  And a deep critical thinker, not in any malicious sense, but nevertheless with cutting questions, whenever the need arises.
-  This someone has wisdom beyond their years, though I don't know how old they might be, but still I'm sure of it\ldots
-
-  I read their writing, and learned so much.
-  They taught me how to move, and how things move.
-  We write back and forth, we know each other so well.
-
-  \ldots and yet, I cannot describe a face.
-  But what's a face?
-  Who cares?
-  I just want to explain how I feel, and marriage to seal the deal.
-
-  `Seal the deal'\\
-  `An oath would make me less morose\ldots'
-
-\end{speechtext}
-
-\Gls{romeo} does not know whom it's for, and explains he learned from his teacher by reading, and fell in love utterly.
-His father doesn't approve of the `oathless' types, and he feels ashamed of loving such a lawless person, despite all she's taught him.
-
-\paragraph{If the \glspl{pc} help him with the poem,}
-then he perks up and quickly finishes it, then asks them if they might try to find the recipient.
-
-\paragraph{If the \glspl{pc} do nothing,}
-\gls{romeo} remains at the quarry, thinking of the perfect words.
-
-\paragraph{If the troupe commit crimes,}
-the goblins will ignore them as long as they can.
-They have taken an oath to dig rocks, and they will continue to dig until something shakes them from their oath.
-
-\romeo
-
-\showStdSpells
-
-\paragraph{As the troupe leave,}
-they notice \gls{romeo} using the Force \gls{sphere} to make the goblins' rocks lighter.%
-\footnote{This tells the \glspl{pc} that \gls{romeo} understands the Force \gls{sphere}, which indicates a link to \gls{juliet}.
-This becomes important later, in \nameref{oathlessLovers}, \vpageref{oathlessLovers}.}
-
-\sqpart[\gls{vlg}]{ravencops}% AREA
-{The House of Grand Stories}% NAME
-{Underground elves tell painless stories in perfect rhythm}% SUMMARY
-
-Beehives buzz around a flowery garden.
-Three large boulders (which look quite out of place) hide stairs down to a long hall, where perfect elves tell perfect stories of perfect people.
-The stories rhyme in a precise pattern, and follow the hero's journey exactly.
-The characters in the stories do no wrong, and have no fights, because fighting hurts people, and the storytellers never think about hurting people.
+If the \glspl{pc} are near the giant snail when it sprays acid, they can roll \roll{Wits}{Survival} (\tn[7]) to leap into the woods as the snail prepares to spray.
 
 \begin{boxtext}
-  Ahead, a tree glows in the dark, lit from below, but you see no fire.
-
-  \ldots
-
-  Closer now, the rock is \pgls{step} wide, made of glass, and covers something below.
-  The rock is a roof, and under the earth there is a room with a fire, and people.
-  The people have stopped to look up, and stare at you.
+  As the snail-spittle hits the trees and bushes in a messy gush, it lets off a tiny hiss and the plants wilt fast.
+  Leaves wither and bark turns black.
+  Behind, the \gls{crawler} turns to flee into the woods with two left-legs melded together by the acid.
 \end{boxtext}
 
-This elven home has three chambers, for three elves, and a central area for cooking.
-Goblins occasionally visit, bringing supplies of snail-meat and stolen vegetables.
-The various cupboards also have $1D6-3$ of the following items:
+\giantSnail
+
+\chitincrawler
+
+If the troupe let the situation unfold, the giant snail ignores them, and chases the wounded \gls{crawler} up a tree.
+
+\sqpart[\gls{afternoon}]{ravencops}% AREA
+{Got a Permit, Mate?}% NAME
+{An oathkeeper goblin wants to check troupe's weapon licences}% SUMMARY
+
+\histEvent{55}{3}{%
+  Goblins approached \glsfmttext{enchantedLands}, looking for food.
+  However, \gls{MindElder} forced them to swear oaths to uphold the myriad laws of the land.
+  They remains, and multiplied, and soon the land held an army of goblins%
+}
+
+\begin{exampletext}
+  The lack of \glspl{crawler} and plentiful giant snails soon brought a lot of goblins to the area.
+  \Gls{MindElder} also turned this problem to his advantage by making the goblins swear to capture or kill anyone disturbing the peace.
+
+  The goblins responded with sarcasm, but the spell worked anyway, soon all the goblins lay dead or agreed to take oaths of good behaviour, which work fine as long as the goblins eat regularly.
+\end{exampletext}
+
+\begin{boxtext}
+  The sky rumbles with thunder, but the air feels thin.
+  In the distance, a small person in a long, green cloak walks towards you, carrying a potato so large that it cannot see you.
+  A long nose points up, just above the top of the potato, and pasty-white ears flop at shoulder-length.
+\end{boxtext}
+
+If the goblin (Abjad) sees the troop, it switches the potato to a one-arm hold and points accusingly at the troupe, then speaks in an unusually deep voice.
+
+%!
+\null
+\begin{speechtext}
+  I hope you got a licence for those weapons!
+  Show me!
+  Show me the licence, lanky scum!
+\end{speechtext}
+
+Abjad (the goblin) observes and insists on the following local laws:
 
 \begin{itemize}
   \item
-  Smoked meats (usable as a day's \glspl{ration}).
+  No high-pitched noises.
   \item
-  Stormy moonlight from a storm, captured in a large, glass, phial (usable as a Water \gls{ingredient}).
+  No jokes, nor words which move to laughter.
   \item
-  Auroch hooves (usable as an Earth \gls{ingredient}).
+  No unlicensed weapons.
+  \item
+  No wandering without clothes on.
+  \item
+  No singing out-of-lock.
 \end{itemize}
 
-\elf[\npc{\F\El}{Estel}]
+\enchantedGoblin[\npc{\M\N}{Abjad}]
 
-\elf[\npc{\M\El}{Luston \& Silmon}]
+\paragraph{Dealing with Abjad}
+requires a \roll{Charisma}{Empathy} roll at \tn[9].
+Failure means he will insist on them going to \gls{oathtower} to admit their criminal behaviour, while giving him all of their \glspl{weapon}.
 
-\enchantedGoblin[\npc{\F\N}{Sillaberry}]%
+If the \glspl{pc} calm Abjad successfully, then he won't insist on accompanying them to the tower, but they \emph{will} have to promise to go there while he finds some elves to cook his potato.
 
-\sqpart[\squash\gls{vlg}]{ravencops}% AREA
-{Subtle \Glsfmtplural{sepulchre}}% NAME
-{Most goblins have forgotten about these \glsfmtplural{ogre}}% SUMMARY
+\paragraph{At the slightest hint of aggression,}
+Abjad flees and tries to find reinforcements.
+The goblins will try to track them down, using their \roll{Intelligence}{Athletics}, so the \glspl{pc} will roll at \tn, however they handle it (perhaps \roll{Speed}{Athletics} to simply run from \gls{ravencops}, or \roll{Intelligence}{Stealth} to hide where goblins won't find them).
 
-\begin{exampletext}
-  \Gls{MindElder} requested the first \gls{sepulchre} before he understood how fragile the dreams of \glspl{ogre} are.
-\end{exampletext}
-\Gls{MindElder} ordered this \gls{sepulchre} made before he understood how easily the dreams of \glspl{ogre} break.
-It houses three, who snore quietly.
+\paragraph{At the end of the \gls{interval},}
+the troupe receive an additional \gls{mp}, as the thunder above releases more mana.
 
-\sqpart[\gls{vlg}]{oathtower}% AREA
-{The Icebox House}% NAME
-{Underground elves live to guard food packed in ice}% SUMMARY
-\label{iceboxHouse}
-
-\histEvent{130}{3}{%
-  With the old lich killed, \glsfmttext{MindElder} decided to settle down, build the perfect tower, and raise perfect children in a perfect land.
-  Unfortunately, the children stole, fought, and disobeyed his orders to stay at home and keep safe.
-  He made them all swear oaths to uphold the law, never harming any elf, nor taking property, nor singing out of key.
-  Without the ability to sing out of key, none have learnt to sing, but this turned out to be an improvement, as \glsfmttext{MindElder} always enjoyed silence more than song%
-}
-
-Thick, glass tiles, a full step wide, pepper the land; these tiles are the roof-windows of elven houses.%
-\exRef{stories}{Stories}{elvenGlades}
-Smoke rises from a chimney, which juts out through a tree.
-Three tall trees surround and hide a stone stairway, leading down to a little door.
-Three short taps permits entry.
-
-\begin{boxtext}
-  One elf takes water, and whispers gently until the water sleeps, and turns to ice.
-  Another prepares a little food, using a rapier's broken-off tip as a knife.
-  The rest of the rapier remains mounted on the wall, above the fire; but these elves have no use for weapons.
-  Harming people causes pain, and they have promised not to harm anyone.
-\end{boxtext}
-
-A little goblin sleeps in a hammock, muttering in his sleep.
-`\textit{Carapace pies, tentacle-fry\ldots}'
-The elves will have something cooked for him by the time he wakes, and then he must fetch more water, using the ornate bucket, carved from carapace, with an abstract map of the land chiselled around its side.
-
-\elf
-
-\paragraph{If the \glspl{pc} ignore the smoking chimney,}
-that's fine.
-This \gls{segment} does not advance any plot, and there is nothing the \glspl{pc} need to do.
-This \gls{segment} exists simply because elves live in \gls{enchantedLands}, and they will greet guests who knock on their door in a friendly manner, and start telling long, boring stories.
-
-\paragraph{If the \glspl{pc} inspect the bucket-map}
-they receive a +2~Bonus to all \gls{navigation} checks within the surrounding \glspl{area}.
-
-\paragraph{If they ask for help,}
-they receive it, as long as they make small, reasonable requests.
-
-\paragraph{If they ask questions,}
-the elves answer happily.
-They know most of the history of the area (find the summary \vpageref{chronologicalEvents}).
-
-\sqpart[\gls{vlg}]{ravencops}% AREA
-{Grey Borders}% NAME
-{The subtle marsh is hard to spot}% SUMMARY
-
-The snail road widens here, and the trees grow thin where the giant snails swarmed around in little knots, eating and bathing any time they passed this location.
-
-\begin{boxtext}
-  The trees are thin, Sunlight floods in.
-  It looks like the snails made a hundred little detours around the trees here, clearing bushes and thinning trees.
-  You can see over twenty \glspl{step} in most directions.
-  Despite the long shadows of the remaining, towering trees, an ambush seems almost impossible.
-\end{boxtext}
-
-Soon their knots became a marsh, but slowly -- the ground looks normal for some time.
-
-\begin{boxtext}
-  The ground squelches, but does not feel slippery -- it's just muddy, not slimy.
-  The centre of the road lets you see for twenty or forty \glspl{step} all around, making a sudden ambush almost impossible, despite the long shadows from the towering trees.
-
-  Unfortunately, the middle of the road makes loud squelching noises, while the roadside -- closer to the shadows -- looks dry and quiet.
-\end{boxtext}
-
-The marsh has \pgls{tn} of 10 for all rolls, and the \glspl{trait} depend on the approach.
-
-\paragraph{Walking along the centre}
-uses \roll{Strength}{Survival} to wade through.
-Failure means the character has been forced off the centre and found a sudden, watery, cavity, and sunk right in.
-
-In this case, others in the troupe will have to rescue them, with \roll{Speed}{Survival} (again, at \tn[10]).
-Each Failure Margin means \pgls{ration} lost to the mud, or \pgls{ep} as the character struggles to breathe (player's choice).
-
-\paragraph{Walking near the shadowy tree-roots and along raised, dry, paths}
-uses \roll{Wits}{Survival} to spot continuous paths, without becoming tricked.
-
-\paragraph{Finding the way back}
-proves difficult, as everywhere looks a little damp and barren.
-Every patch of brown earth may be part of the road back, or may be a deep hole, filled with thin mud.
-
-\paragraph{If the troupe remain out here at night,}
-they cannot rest properly.
-
-\paragraph{If the troupe find a way through,}
-the \gls{tn} reduces by~2 each time (some of the goblins know how to move through it easily).
 
 \end{multicols}
-
-\stopcontents[sq]
-
-\playCommentary{
-  \begin{description}
-  \item[\gls{gm}:]
-  Some miles on, and the Sun's high.
-  You keep walking with that `squelch, squelch, squelch' along the snail-path, and spot a potato on the path ahead, held in someone's arms.
-  \item[Player 3:]
-  (Cleftbarb)
-  Hide!
-  \item[\gls{gm}:]
-  That's \roll{Wits}{Stealth}, \glsentrylong{tn}~6.
-  \item[Player 2:]
-  (Mildrain)
-  Scared of a potato-wielding marauder?
-  Okay then\ldots\dicef{6}.
-  \item[\gls{gm}:]
-  Hiding in the thick darkness which surrounds the road, you wait until the small figure passes, grumbling to himself in the \gls{tradeTongue} about `the sleeping ones'.
-  Once silence returns, the march continues, through hours of nearly-identical woodland.
-  By the time you approach the tower, it's nearly night, but the dusk's light highlights a stone structure in the forest.
-  A long cube, a rumbling stone box.
-  \item[Player 2:]
-  (Mildrain)
-  Ignore!
-  \item[Player 1:]
-  (Sinkmaul)
-  Right, `tower'.
-  \item[Player 3:]
-  What if it's treasure?
-  \item[\gls{gm}:]
-  The road opens, revealing a shining lake, with the tower in the centre\ldots
-  \end{description}
-}{
-  The pacing sped up suddenly as the players hopped through three \glspl{segment} within a couple of minutes.
-  The players still received information (giant snails reduce the \gls{monster} population), gained questions (though nobody has actively asked about the source of the giant potato), and have a new location on the map which they might return to.
-
-  That last \gls{segment} with the `stone box' (\gls{sepulchre}) has the `\gls{vlg}' symbol listed next to it.
-  This indicates it should go onto the map, with the assumption it's always been there.
-}
-
 
