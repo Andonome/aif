@@ -44,7 +44,7 @@ images/extracted/sundered.jpg: images/feylands.svg images/extracted/
 
 images/extracted/enchanted.jpg: images/feylands.svg images/extracted/
 	cat $< | \
-	inkscape --pipe --export-type=png --export-area=430:30:670:150 -d 600 |\
+	inkscape --pipe --export-type=png --export-area=430:30:670:145 -d 600 |\
 	magick - -fill white -channel-fx '| gray=>alpha' $@
 
 $(DBOOK): $(DEPS) $(wildcard *.tex) ex_cs/ config/rules.pdf $(DROSS)/characters.pdf | qr.tex
