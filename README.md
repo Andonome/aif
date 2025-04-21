@@ -40,8 +40,6 @@ And when those spells create more problems, they just 'patch it' with more spell
 
 [Download][feylands]
 
-## On the Trail of the Snail Lords
-
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [core]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Core_Rules.pdf?job=build
