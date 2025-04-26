@@ -208,6 +208,55 @@ If the \glspl{pc} notice the problem, they might return back to the \nameref{fir
 
 \wayOut{The passage soon becomes more stable, and half a mile later, emerges at the}{cliffDive}
 
+\playCommentary{
+  The troupe have arrived at the \nameref{waterMaze}.
+
+  \begin{description}
+    \item[Player 2:]
+    Okay, I'll jump in the puddle.
+    \item[\Glsentrytext{gm}:]
+    Do you take your backpack off?
+    \item[Player 2:]
+    Yes.
+    What do I see?
+    \item[\Glsentrytext{gm}:]
+    One moment\ldots
+
+    Okay, guys!
+    You hear the splash as he goes in.
+    The \ifcase\value{temperature}%
+      freezing
+    \or%
+      cold
+    \else%
+    \fi
+    water ripples against your shins, then the cavern returns to the feint noise of the nearby river.
+
+    What do you do?
+    \item[Player 1:]
+    Aren't we going in?
+    \item[\Glsentrytext{gm}:]
+    Yes, if you want.
+    Are you going into the water?
+    \item[Player 3:]
+    The goblin must be on the other side, so doesn't that mean he'll have to fight alone?
+    \item[\Glsentrytext{gm}:]
+    What is your character doing?
+    \item[Player 1:]
+    If there's another ambush like the last one, someone else could die.
+    We should all go in quickly.
+    \item[\Glsentrytext{gm}:]
+    You've spent a moment talking already, but you can still go in now, if you want to.
+    \item[Player 3:]
+    Okay, I'll go.
+    I'm going in now.
+  \end{description}
+}{
+  For some extra tension, let a character enter the water and then focus on the other players.
+  Let the troupe decide how long they will wait, in the darkness, before someone else enters.
+  Of course, if the others say `one hour', once you resolve the first character's actions (the one in the black waters), you may find that the troupe did not in fact wait for an hour, as the first character may return after a few minutes to tell everyone how to move through.
+}
+
 \mapentry[cliffDive]{Cliff Dive}
 
 This passage ends abruptly with a cliff-ledge, with a river a stone's throw below.
@@ -242,7 +291,7 @@ The river's rapids and rocks demand a \roll{Strength}{Athletics} roll to hold on
 
 \begin{exampletext}
   This passage was once a nice, wide area, with a simple passage downward, to a series of small tunnels, one of which leads out to the `\nameref{hungryHall}'.
-  Since then, it has flooded, which complicates the situation.
+  Since then, a minor earthquake has changed the ground just enough to let the river drip into the tunnel, leaving it completely underwater.
 \end{exampletext}
 
 Imagine getting from your front door to your cooker in complete darkness.
@@ -254,95 +303,67 @@ The players will have to map the passage, in one way or another.
 
 Whoever enters the frigid waters instantly gains \pgls{ep}, and the exertion of swimming (as usual) inflicts another.
 
-%!
-\null
-\iftoggle{verbose}{
-  The scene might go like this:
-  \begin{itemize}%
-    \bf%
-    \item
-    `Okay, I'll jump in the puddle.'
-    \begin{itemize}
-      \it%
-      \item
-      `Do you take your backpack off?'
-    \end{itemize}
-    \item
-    `Yes.
-    What do I see?'
-    \begin{itemize}
-      \it%
-      \item
-      `The water has a metallic cold, which pulls heat from your skin.'
-      \item
-      `You feel the hard, slippery rocks around, and have to descend a little before finding a passage.
-      This seems to be the only passage.
-      It's about the height of a crouching child.'
-    \end{itemize}
-    `Okay, so I'll go through, carefully.'
-    \begin{itemize}
-      \item
-      \it
-      `Going carefully, you have 3~\glspl{ap}, so you cover 3 steps this round.'
-      \item
-      `Put down a temporary \gls{ep} (you can remove it once you can breathe again).'
-      \item
-      `Swimming onward, you cover another 3~\glspl{step} and find a side tunnel on the left.'
-      \item
-      `Above, the tunnel opens upwards.'
-      \item
-      `Put down another \gls{ep}'
-      \item
-      `Which way do you go?'
-    \end{itemize}
-    `I'll move up.'
-    \begin{itemize}
-      \it
-      \item
-      `You find a sharp, spiky ceiling as you swim up and round.
-      You think the tunnel moves horizontally from here, but you can't be sure of which way is up or down in the freezing, dark waters.'
-      \item
-      `Take another \gls{ep}.'
-      \item
-      `Do you continue?'
-    \end{itemize}
-    \item
-    `So if I have 3 slots without \pgls{ep}, that means I can go another 3 rounds\ldots so then how far have I come?'
-    \begin{itemize}
-      \item
-      \it
-      `You're unsure.'
-      \item
-      `Take \pgls{ep}.'
-    \end{itemize}
-    \item
-    `Again?
-    Okay, I'm going back!'
-  \end{itemize}
+Remember to ask about the backpacks every time a character enters.
+Their \glspl{ration} almost certainly do not have waterproof coverings, nor do their tinder boxes.
 
-  This process might take a while.
+The torches will still light fine, even after becoming wet.
+However, the water in the torch's wood will mean that torch creates a constant hiss from the water turning to steam.
+This will prevent the troupe moving silently while they carry those torches.
+
+\playCommentary{
+  \Pgls{pc} has entered the \nameref{waterMaze}.
+
+  \begin{description}
+    \item[Player 2:]
+    Okay, so what do I see?
+    \item[\Glsentrytext{gm}:]
+    Nothing -- you need to feel.
+    The water has a metallic cold, which pulls heat from your skin.
+    You feel the hard, slippery rocks around, and have to descend a little before finding a passage.
+    This seems to be the only passage.
+    It's about the height of a crouching child.
+    \item[Player 2:]
+    Okay, so I'll go through, carefully.
+    \item[\Glsentrytext{gm}:]
+    Going carefully, you have 4~\glspl{ap}, so you cover 3~\glspl{step} this \gls{round}.
+    Put down a temporary \gls{ep} (you can remove it once you can breathe again).
+    Swimming onward, you cover another 4~\glspl{step} and find a side tunnel on the left.
+
+    Above, the tunnel opens upwards.
+    Put down another \gls{ep}.
+    Which way do you go?
+    \item[Player 2:]
+    I'll move up.
+
+    You find a sharp, spiky ceiling as you swim up and round.
+    You think the tunnel moves horizontally from here, but you can't be sure of which way is up or down in the freezing, dark waters.
+    Take another \gls{ep}.
+    Do you continue?
+    \item[Player 2:]
+    So if I have 3 slots without \pgls{ep}, that means I can go another 3~\glspl{round}\ldots so then how far have I come?'
+    \item[\Glsentrytext{gm}:]
+    You're unsure.
+    Take \pgls{ep}.
+    \item[Player 2:]
+    Again?
+    Okay, I'm going back!
+    \item[\Glsentrytext{gm}:]
+    Turning round, your head knocks into something new, something hard and floating in the dark.
+    \item[Player 2:]
+    I'll push it aside, and go back to the air.
+    \item[\Glsentrytext{gm}:]
+    Roll Strength plus Brawl, \glsentrylong{tn}\ldots what's \underline{your} Strength and Brawl?
+    \item[Player 3:]
+    Oh, it's me?
+    Okay, it's {\ldots\footnotesize one and one\ldots} two.
+    \item[\Glsentrytext{gm}:]
+    \Glsentrylong{tn} 9.
+  \end{description}
+}{
+  This simple maze is the same shape as the letter `H', but in the frozen darkness, it provides a nasty enemy.
   The player will have to decide who goes next, and plan their routes ahead.
   Each one will enter blind, and have to remember where they should scout next.
-
-  Remember to ask about the backpacks every time a character enters.
-  Their \glspl{ration} almost certainly do not have waterproof coverings, nor do their tinder boxes.
-
-  The torches will still light fine, even after becoming wet.
-  However, the water in the torch's wood will mean that torch creates a constant hiss from the water turning to steam.
-  This will prevent the troupe moving silently while they carry those torches.
-
-  \paragraph{For some extra tension,}
-  let a character enter the water and then focus on the other characters.
-
-  \begin{speechtext}
-    Okay, Ratcull entered the water.
-    Everyone else waits for some time, and the water feels quiet.
-    What do you do now?
-  \end{speechtext}
-
-  Let the troupe decide how long they will wait, in the darkness, before someone else enters.
-  Of course, if the others say `one hour', once you resolve the first character's actions (the one in the black waters), you may find that the troupe did not in fact wait for an hour, as the first character may return after a few minutes to confirm that everything's fine.
-}{}
+}
 
 \paragraph{If multiple \glspl{pc} enter the tunnels,}
 this spells trouble.
