@@ -1,210 +1,324 @@
 \section{The Ascent}
 \label{goblinsBegin}
 
-\mapPic{b}{unknown/bothy_river}{
-  Stoatfen \Glsentrytext{bothy}/75/90,
-}
-
 \begin{multicols}{2}
-\renewcommand\npcsymbol{\glsfmttext{afternoon}}
+\renewcommand\npcsymbol{\glsfmttext{morning}}
 
-\subsection[The Hanging Procession]{The Hanging Procession}
-
-\begin{boxtext}
-  This morning, Stoatfen \gls{bothy} hosts two traders, \gls{susjot} (a visiting \gls{jotter}), six prisoners, eight \glspl{sunGuard}, and (of course) the \glspl{pc}.
-  The \glspl{sunGuard} have travelled from a town's \gls{court},
-  \ifnum\value{temperature}=0%
-    through the \gls{snow}
-  \else
-    all the way here
-  \fi%
-  to collect the prisoners for hanging for dereliction of duty.
-  You can hear the guards complaining bitterly about all the muck on their white tabards.
-
-  A shutter on the \gls{bothy}'s upper floor opens, and the \gls{jotter} shouts to you to come up for orders.
-  The rest of the recruits start lazily making their way into the \gls{bothy}.
-\end{boxtext}
-
-\Pgls{susjot} explains the mission:
-
-\begin{exampletext}
-  Your mission is to clear out a goblin-warren, half-way up Failpeak Mountain.
-  Make sure you kill all of them.
-
-  Everyone can pick up \ifnum\value{temperature}=0 four \else three \fi days' \glspl{ration}, and a torch.
-\end{exampletext}
+\sidequest[Mountain]{Busy Morning}
 
 \noindent
-As he explains all this, the \glspl{sunGuard} take the doomed prisoners down, and prepare to leave.
-The \glspl{pc} hear all this from \gls{susjot}'s office, and witness the rope-bound prisoners from the window.
+\iftoggle{verbose}{
+  Run these three \glspl{segment} in rapid succession.
+  They establish the links between the goblin-infested mine and the outside world.
+}{
+  Goblins banish their criminals to the world above, which has earned them a bad reputation.
+  One such group clambers skyward, and soon begin stealing from nearby \glspl{village}.
+  The behaviour escalates until they kill a human, and everyone demands the \gls{guard} ascend to slay the lot.
+  However, goblins can be extremely dangerous on their home turf.
 
-\paragraph{If the \glspl{pc} argue,}
-\gls{susjot} will have none of it.
-He's busy, and wants the \glspl{pc} to get going, quickly.
+  \sqpart{Mountain}% AREA
+  {Little by Little}% NAME
+  {Goblins steal milk from \glsfmtplural{village}}% SUMMARY
 
-\paragraph{If the \glspl{pc} try to plead for the lives of the ex-\gls{guard} prisoners,}
-nobody will listen.
+  By the mountain's side (in \pgls{village} or on the road), one farmer shouts about her stolen milk, while the other tries to stop her making accusations.
 
-\humansoldier[\npc{\T[8]\glssymbol{paik}\Hu}{\glsentrytext{sunGuard}}]
+  \begin{speechtext}
+    What kind of monster steals milk left outside a house?
+    No kind!
+    Not a single \gls{monster} which walks, crawls, or flies takes milk.
 
-\paragraph{Asking the prisoners about what happened}
-requires a \roll{Charisma}{Empathy} roll at \tn[8] (or whatever Skill seems appropriate), to convince the \glspl{sunGuard} to allow the conversation.
+    Cows?  Yes
+    Babies? Absolutely!
+    But never \emph{milk}!
+  \end{speechtext}
 
-Scarstain (a bulky, Sunburnt man in his forties) can tell the \glspl{pc} the following:
+  \paragraph{Examining the area}
+  with a \roll{Wits}{Survival} roll at \tn[12] show goblin footprints going up to the mountain.
+  A Margin of 2 (i.e. \tn[14]) means the \glspl{pc} can trace the goblins back through the forest, and eventually to their mountainous entrance (\vpageref{goblinCaveEntrance}: `\nameref{goblinCaveEntrance}').
+
+  \sqpart{Town}% AREA
+  {\squash~Cooked Innards}% NAME
+  {\Glsfmttext{smuggler} speaks about the deer bones found in the forest, covered with goblin tracks}% SUMMARY
+
+  The \glspl{pc} overhear \gls{smuggler}, shouting about goblin tracks around some half-digested deer bones, close to the mountain.
+  Everyone in the market wants to know what the \glspl{pc} intend to do about it.
+
+  \sqpart{Mountain}% AREA
+  {\Glsentrytext{afternoon}~Dead Horses}% NAME
+  {Goblins drop rocks on traders' horses}% SUMMARY
+
+  \begin{exampletext}
+    The goblins have discovered a foolproof way to hunt for food.
+    They haul large rocks up trees, then along a branch close to the road, and drop the rocks on a trader's horse.
+
+    If one horse dies, the caravan moves on, leaving the goblins a dead horse to eat.
+    If more horses die, the caravan never has enough horse-power to pull all the wagons, and has to leave one behind.
+  \end{exampletext}
+
+  As the troupe travel close to the mountain, goblins stand on the treetops, ready and waiting with boulders.
+  If the \glspl{pc} are with a caravan, the goblins drop rocks on the horses, otherwise, they remain in the shadowy treetops, silently.
+
+  Spotting the goblins requires a \roll{Wits}{Vigilance} roll (\tn[10]).
+  But doing something about the problem requires a plan, because hitting the goblins won't be easy.
+
+  If the \glspl{pc} have \glspl{projectile}, one goblin can drop their big rock and take cover each \gls{round}.
+  On the treetops, 10~\glspl{step} in the air, is \tn[9], but once they take cover the players will have to roll at \tn[11].
+
+  \goblin
+
+  \goblin
+
+  In addition to the listed rocks, three goblins have a boulder which deals $2D6$ Damage.
+  However, they can only drop it on someone directly below them.
+
+  \sqpart{Mountain}% AREA
+  {Over the Line}% NAME
+  {Goblins kill a shepherd}% SUMMARY
+
+  \begin{exampletext}
+    A shepherd saw goblins trying to disturb his cows, and rushed in to stop them.
+    The goblins killed him quickly, then fled.
+  \end{exampletext}
+
+  Every \glspl{village} round the mountain talks about \composeHumanName's death, and all agree the \gls{guard} must sort the problem immediately.
+
+  One group of \glspl{fodder} have already gone up the mountain, but haven't returned.
+  The next session should begin with \nameref{goblinsBegin}, \vpageref{goblinsBegin}.
+}
+
+\sqpart[\gls{vlg}\gls{morning}]{Mountain}% AREA
+{The Trader's Tragedy}% NAME
+{``I was the lone survivor when goblins attacked, and took everyone's money''}% SUMMARY
+
+Veklash, \gls{notary} at the \gls{weaversGuild}, is heading North with a few other traders.
+He has an appointment to take valuables from \pgls{village}'s \gls{warden} for safe keeping, as everyone fears goblins taking their valuables.
+
+On the road, he tells the characters his tragic story.
+
+\begin{speechtext}
+  Awful things, goblins.
+  I was in a caravan, on the way to start helping with a new \gls{village}, not far from here.
+  The goblins managed to haul some rocks up the trees, and as we passed by, they dropped the rocks on the horses' heads.
+  Then came those javelins\ldots
+
+  I fell out the wagon and fled.
+  Lost my life savings, but at least left alive, unlike the others.
+\end{speechtext}
+
+\humantrader[\NPC{\glsentrysymbol{abderian}\M\Hu}{Veklash}%
+  {wide hat, kind smile}% DESCRIPTION
+  {shakes head mournfully}% MANNERISM
+  {to tell his tale of woe}% WANTS
+  \npcQuote{Travel straight, never curious}]% QUOTE
+
+\begin{speechtext}
+  Here we are at last -- Stoatfen \Gls{bothy}.
+  \Pgls{susjot} will be along soon, I expect.
+  He works around here.
+\end{speechtext}
+
+Soon the caravan reaches Stoatfen~\Gls{bothy}.
+The traders get out and ask the characters to perform the traditional \gls{guard} duties:
 
 \begin{itemize}
   \item
-  The entrance is easy.
-  It's a hole in the ground, so bring something to get down with -- a rope, a stake, and a mallet.
+  Check the perimeter for \glspl{monster}.
   \item
-  The goblins won't fight, they just run away.
-  \item
-  The darkness in caves isn't like the darkness at night.
-  At night, the sky is dark, but in a cave, the darkness stands right next to you.
-  \item
-  The ground is rough -- you can't run anywhere.
-  That means the goblins can stand back and throw things at you.
-  \item
-  And if you carry a torch, they can see you, but you can't see them.
-  And when you put it out, they can hear you, and you still get hit by rocks.
-  \item
-  Better to die in a town, than down some horrible cave.
-  I swear I heard \gls{yonder}'s bell down there.
+  Check inside the \gls{bothy} for \glspl{monster}.
+  \ifnum\value{temperature}<2
+    \item
+    Check the \gls{bothy} has firewood (it does not).
+  \fi
 \end{itemize}
 
-\sidebox{
-  \begin{boxtable}[lX]
-    \textbf{\glsentrytext{tn}} & \textbf{Equipment} \\
-    \hline
-    \tn[4] & 50' of rope (only 2 available) \\
-    \ifnum\value{temperature}=0
-      \tn[5] & Warm clothes \\
-    \fi
-    \tn[6] & Mallet \\
-    \tn[7] & 2 more torches \\
-    \tn[9] & One extra day's \glspl{ration} \\
-    \tn[10] & partial leather armour \\
-    \tn[11] & 2 more torches \\
-    \tn[12] & shortsword \\
-    \tn[13] & partial chainmail armour \\
-  \end{boxtable}
-}
+\paragraph{Once the \glspl{pc} check the \gls{bothy},}
+\ifnum\value{temperature}<2
+  they'll have to collect firewood while the traders tend to their horses.
+\else
+  everyone settles in and tends to their horses.
+\fi
+\iftoggle{verbose}{
+  This makes a good opportunity to introduce new players to the system, by making a few rolls.
+}{}
+
+\paragraph{Shortly after,}
+the wagon moves on.
+
+\sqpart[\gls{morning}]{Mountain}% AREA
+{The Innocent Man in the Shadows}% NAME
+{The \glsfmttext{guard} \glsfmttext{fodder} fled from the goblin caves, and wants to know if he can return}% SUMMARY
+
+\begin{exampletext}
+  Last week, Scarstain entered the \gls{guard} after smuggling swords into a town for a friend, so they didn't have to pay tax (or explain the \glspl{weapon}).
+  Four days ago, \pgls{susjot} ordered him and all the new \glspl{fodder} to enter an abandoned mine, kill the goblins, and return with the treasure they stole from Veklash and the rest of that caravan.
+
+  The goblins killed most of the new \glspl{guard}.
+  Only Scarstain made it out alive.
+\end{exampletext}
+
+Scarstain knows he should have returned with goblin heads, and doesn't want to report mission failure.
+He waits near the \gls{bothy}, in the shadows of the forest, for the right moment to talk with someone who might be sympathetic.
+
+\begin{boxtext}
+  Snapping twigs.
+  Gentle footsteps approach.
+\end{boxtext}
+
+\humanthief[\NPC{\glsentrysymbol{sylf}\M\Hu}{\Glsfmttext{fodder}~Scarstain}%
+  {mid-forties, sunburnt face, and flustered}% DESCRIPTION
+  {grimaced-smile}% MANNERISM
+  {to tell everyone he's not a criminal}]% WANTS
+
+\begin{boxtext}
+  A sunburnt man steps into a ray of Sunlight, mostly bald and half-grey on what remains, wearing a black cassock just like yours.
+
+  \begin{speechtext}
+    Hi.
+    My name is Scarstain.
+    \Gls{fodder}~Scarstain.
+
+    \ldots
+
+    \Pgls{susjot} sent us to the old mine, to kill the goblins and return with the treasure they stole.
+    But we didn't get the treasure, we died.
+    Then I ran away.
+    A trader told me they're looking for me, and I should run away.
+    So can you check if it's safe for me to come back?
+  \end{speechtext}
+
+  The sunburnt man pulls a smiling grimace, as if forcing himself to stay hopeful.
+\end{boxtext}
+
+\paragraph{If anyone asks about the details at the mines,}
+Scarstain explains a little, but won't give more details until someone reassures him that nobody thinks he's guilty.
+
+\begin{speechtext}
+  \begin{itemize}
+    \item
+    The entrance is easy.
+    It's a hole in the ground, so bring something to get down with -- a rope, a stake, and a mallet.
+    \item
+    The goblins won't fight, they just run away.
+    \item
+    The darkness in caves isn't like the darkness at night.
+    At night, the sky is dark, but in a cave, the darkness stands right next to you.
+    \item
+    The ground is rough -- you can't run anywhere.
+    That means the goblins can stand back and throw things at you.
+    \item
+    And if you carry \pgls{torch}, they can see you, but you can't see them.
+    And when you put it out, they can hear you, and you still get hit by rocks.
+    \item
+    I swear I heard \gls{yonder}'s bell down there, calling everyone downwards into the dark.
+  \end{itemize}
+\end{speechtext}
+
+\paragraph{Reassuring Scarstain}
+requires a \roll{Charisma}{Empathy} roll at \tn[10].
+If that succeeds, he offers more details.
+
+\begin{speechtext}
+  \begin{itemize}
+    \item
+    \composeHumanName\ died falling through a rotten bridge that the miner's left.
+    Look out for a hole in the ground, and tread carefully around it, one at a time.
+    
+    \hint{\autopageref{firstBridge}, area \ref{firstBridge}}
+    \item
+    The goblins left a rope for us to get down.
+    We thought it was a trap, but it's not.
+    
+    \hint{\autopageref{ropeDown}, area \ref{ropeDown}}
+    \item
+    We went down a tunnel with a dead goblin, then Tukala died.
+    He was my little gnome-buddy, and he just lay down and died.
+    I didn't see anything happen to him, he just died.
+    
+    \hint{\autopageref{standingTunnel}, area \ref{standingTunnel}}
+    \item
+    The next bit, we had to crawl under a narrow pass.
+    They were waiting for us at the other side, throwing rocks and javelins as we came up.
+    That's when I ran back up.
+    
+    \hint{\autopageref{hungryHall}, area \ref{hungryHall}}
+    \item
+    I waited a while, but nobody else came back up.
+    \item
+    I'm never going back there again!
+  \end{itemize}
+\end{speechtext}
+
+\sqpart[\gls{afternoon}]{Mountain}% AREA
+{Gold in the Mines}% NAME
+{The \glsfmttext{jotter} demands the troupe go to the mines and kill the goblins}% SUMMARY
+
+\begin{exampletext}
+  Two days ago, Veklash informed \gls{susjot} that three \glspl{guard} were walking down the road, near the mine, carrying a heavy chest.
+  \Gls{susjot} has figured they saw the chest of \glsentrylongpl{gp} and turned to banditry.
+\end{exampletext}
+
+\begin{boxtext}
+  Hooves and wheels smash through the
+  \ifnum\value{temperature}=0%
+    frost
+  \else%
+    mud
+  \fi.
+  The coachman has an angry scowl, and drives the horses faster as he enters the clearing around the \gls{bothy}.
+  The \glspl{guard} he leaves behind, to walk at their own pace.
+\end{boxtext}
+
+\Pgls{susjot} alights, and asks about the logs.
+
+\begin{speechtext}
+  \begin{itemize}
+    \item
+    Are you the new \glspl{fodder}?
+    \item
+    Did you restock the logs for the \gls{bothy}?
+    \item
+    Well it's time to go up the mine, and kill some goblins!
+  \end{itemize}
+
+  Listen, it's an easy job.
+  Just go and kill the goblins, and take any remaining \gls{coin} they might have.
+  It's just like stealing from an ugly baby, okay?
+
+  The last lot of \glspl{fodder} who went up stole some \glsentrylongpl{gp}, and didn't even kill the goblins.
+  So now it's no more mister nice \gls{jotter}.
+  Now anyone who comes back without a goblin head gets sent back to the \gls{court} for a good neck-stretch, okay?
+\end{speechtext}
 
 \paragraph{If the \glspl{pc} ask for more supplies,}
-\gls{susjot} will give them the following items, with a successful \roll{Charisma}{Survival} roll.
+they can make a \roll{Charisma}{Survival} check to convince \gls{susjot} to give them some of the equipment from his cart.
 
-You can use a single roll, rather than having the \glspl{pc} making loads of dice-rolls, so the party will be able to ask for anything on their roll, plus anything beneath that \glsentrylong{tn} (including all of those torches), and everyone who makes the roll receives the item.
-However, they will have to ask for an item by name in order to get it.
+\begin{boxtable}[l|L]
+  \textbf{\glsentrytext{tn}} & \textbf{Equipment} \\
+  \hline
+  4 & 50' of rope (only 2 available) \\
+  \ifnum\value{temperature}=0
+    5 & Warm clothes \\
+  \fi
+  6 & Mallet \\
+  7 & two more \glspl{torch} \\
+  9 & One extra day's \glsfmtplural{ration} (\rations, or \rations) \\
+  10 & Leather armour (\glsfmttext{dr}~3, \glsfmttext{covering}~3, fits anyone with 6-8~\glsfmtplural{hp}) \\
+  11 & One more \glsfmttext{torch} \\
+  12 & Shortsword (2 available) \\
+  13 & Chainmail (\glsfmttext{dr}~4, \glsfmttext{covering}~3, fits anyone with 7-9~\glsfmtplural{hp}) \\
+\end{boxtable}
 
-Inform the players that each torch burns for an hour.
+\paragraph{If the \glspl{pc} ask about the missing \glspl{fodder},}
+\gls{susjot} mentions a reward for bringing in the deserters: 5~\glspl{gp} dead, 20~\glspl{gp} alive.
 
 \susjot
 
-Once \gls{susjot} has given the mission, he joins the \glspl{sunGuard} as far as the nearest \gls{broch}.
+\stopcontents[sq]
 
-\subsection{History}
-\label{caves_history}
-
-If anyone asks about the history of the area, let roll \roll{Intelligence}{Academics}.
-
-\begin{boxtable}
-  11 & Fifty years ago, humans tried to mine this mountain, but found nothing of value, and left.
-    A couple of wooden bridges remain.
-  \\
-  8 & Last year, goblins climbed up from the \gls{deep}.
-    They have stolen milk, rustled pigs, and even killed a few people and nobody knew where in the mountains they came from, until recently.
-  \\
-  7 & \Pgls{guard} ranger discovered a cave entrance, some miles up a mountain.
-    In fact, the goblins know of a tunnel which exits much closer to local \glspl{village}, but as the goblins keep their secrets, the \glspl{pc} will have to enter via the mountainside.
-  \\
-  5 & \Pgls{susjot} has already dispatched two groups of \glspl{guard} have to enter the mountainside tunnel.
-    The first group entered and died two weeks ago.
-    The second group went a little into the darkness, lost two men, then returned terrified.
-  The \pgls{jotter} has ordered their execution, so \glspl{sunGuard} have arrived to take them away from Stoatfen \gls{bothy}.
-  \\
-  3 & Each \glsentrytext{bothy} is named after someone who died on the road.
-  Stoatfen died in the many tentacles of some \glsentrytext{woodspy}.
-  \\
-\end{boxtable}
-
-\renewcommand\npcsymbol{\glsfmttext{evening}}
-\subsection[the Road Up]{The Road Up}
-The \glspl{pc} will start their journey by the afternoon (i.e. the second \gls{interval}).
-The foot of the mountain is 4 miles away, and the goblin-hole is 1~mile beyond that.
-
-The troupe can make the journey by night, but may prefer not to enter the tunnel in the dark (thought it makes little difference, once they're inside).
-
-\subsubsection{Camping}
-means someone should keep \pgls{vigil}.
-Two \glspl{pc} must volunteer and each receives \pgls{ep} for staying up part of the night.
-
-In the distance, the \glspl{pc} hear \pgls{broch}'s pipers, calling the local \glspl{monster} to fight.
-
-\subsubsection{The Mountain}
-forces them to move slower than before, going only 2~miles per \gls{interval}.
-As they stop for a rest, part-way up the mountain,
-\ifcase\value{temperature}%
-  the skies are clear and the air feels fresh.
-  Snow covers everything.
-  They should each take \pgls{ep}, but no other dangers will emerge.
-\or%
-  warm rain falls, and new streams have formed down the mountain.
-  The troupe will know that this means flooding all across the land, but they won't suffer from it at this altitude.
-
-  Unfortunately, all the floods have agitated a nearby hive of stirges.
-  These vicious flying insects, the size of a man's fist, will swarm
-  and sting the party, inflicting \glspl{ep}.%
-  \exRef{judgement}{Book of Judgement}{stirge}
-
-  \stirgeSwarm
-\else%
-  a hurricane blows fiercely.
-  And in the distance, an umber hulk has already passed by the goblins (and eaten a few), exited the cave, and now stalks the mountainside.
-  The \glspl{pc} will see it coming a long way off.
-  It flees once struck.
-
-  \umberhulk
-\fi%
-
-If the troupe are still active the next afternoon, roll yet another encounter.%
-\exRef{judgement}{the book of Judgement}{encounters}
-
-Remember to have the players apply \glspl{ep}, even if they will just mark them off again a moment later due to resting.
-
-\subsection{The Cave Mouth}
-
-The directions on the map don't make for easy navigation, but the \glspl{pc} will find their destination eventually.
-
-\begin{exampletext}
-  Past boulder leaning on rock.
-  By rotten tree.
-  Up to rock-line.
-  The hole has
-  \ifnum\value{temperature}=0
-    a spiky bush, frozen solid.
-  \else
-    ferns.
-  \fi
-\end{exampletext}
-
-\ifnum\value{temperature}=0
-  \subsubsection{Frosty Bushes}
-\else
-  \subsubsection{Ferns}
-\fi
-give the players two false-starts.
-Tell them they see the plant in the distance, and ask what they do.
-The third time really does indicate the cave-mouth.
-
-\begin{boxtext}
-  Pushing back the
-  \ifnum\value{temperature}=0%
-    mess of ice and spikes,
-  \else%
-    ferns,
-  \fi%
-  you see a hole, and a rock flies at your face.
-\end{boxtext}
+\iftoggle{verbose}{
+  \subsection[the Road Up]{The Road Up}
+  The opening to the old mine is 5 miles away, which the troupe can walk in \pgls{interval}.
+}{}
 
 \subsubsection{The Rock}
 is a common goblin pet and \gls{impromptuThrownWeapons}.
