@@ -218,3 +218,131 @@
     That's the kind of detail which the characters must find obvious, but the players might not.
   }
 }
+
+\newcommand\playCommentaryPuddle{
+  \playCommentary{
+    The troupe have arrived at the \nameref{waterMaze}.
+
+    \begin{description}
+      \item[Player 2:]
+      Okay, I'll jump in the puddle.
+      \item[\Glsentrytext{gm}:]
+      Do you take your backpack off?
+      \item[Player 2:]
+      Yes.
+      What do I see?
+      \item[\Glsentrytext{gm}:]
+      One moment\ldots
+
+      Okay, guys!
+      You hear the splash as he goes in.
+      The \ifcase\value{temperature}%
+        freezing
+      \or%
+        cold
+      \else%
+      \fi
+      water ripples against your shins, then the cavern returns to the feint noise of the nearby river.
+
+      What do you do?
+      \item[Player 1:]
+      Aren't we going in?
+      \item[\Glsentrytext{gm}:]
+      Yes, if you want.
+      Are you going into the water?
+      \item[Player 3:]
+      The goblin must be on the other side, so doesn't that mean he'll have to fight alone?
+      \item[\Glsentrytext{gm}:]
+      What is your character doing?
+      \item[Player 1:]
+      If there's another ambush like the last one, someone else could die.
+      We should all go in quickly.
+      \item[\Glsentrytext{gm}:]
+      You've spent a moment talking already, but you can still go in now, if you want to.
+      \item[Player 3:]
+      Okay, I'll go.
+      I'm going in now.
+    \end{description}
+  }{
+    For some extra tension, let a character enter the water and then focus on the other players.
+    Let the troupe decide how long they will wait, in the darkness, before someone else enters.
+    Of course, if the others say `one hour', once you resolve the first character's actions (the one in the black waters), you may find that the troupe did not in fact wait for an hour, as the first character may return after a few minutes to tell everyone how to move through.
+  }
+
+}
+
+\newcommand\playCommentaryDrowning{
+  \playCommentary{
+    \Pgls{pc} has entered the \nameref{waterMaze} (\vpageref{waterMaze}).
+
+    \begin{description}
+      \item[Player 2:]
+      Okay, so what do I see?
+      \item[\Glsentrytext{gm}:]
+      Nothing -- you need to feel.
+      The water has a metallic cold, which pulls heat from your skin.
+      You feel the hard, slippery rocks around, and have to descend a little before finding a passage.
+      This seems to be the only passage.
+      It's about the height of a crouching child.
+      \item[Player 2:]
+      Okay, so I'll go through, carefully.
+      \item[\Glsentrytext{gm}:]
+      Going carefully, you have 4~\glspl{ap}, so you cover 3~\glspl{step} this \gls{round}.
+      Put down a temporary \gls{ep} (you can remove it once you can breathe again).
+      Swimming onward, you cover another 4~\glspl{step} and find a side tunnel on the left.
+
+      Above, the tunnel opens upwards.
+      Put down another \gls{ep}.
+      Which way do you go?
+      \item[Player 2:]
+      I'll move up.
+
+      You find a sharp, spiky ceiling as you swim up and round.
+      You think the tunnel moves horizontally from here, but you can't be sure of which way is up or down in the freezing, dark waters.
+      Take another \gls{ep}.
+      Do you continue?
+      \item[Player 2:]
+      So if I have 3 slots without \pgls{ep}, that means I can go another 3~\glspl{round}\ldots so then how far have I come?'
+      \item[\Glsentrytext{gm}:]
+      You're unsure.
+      Take \pgls{ep}.
+      \item[Player 2:]
+      Again?
+      Okay, I'm going back!
+      \item[\Glsentrytext{gm}:]
+      Turning round, your head knocks into something new, something hard and floating in the dark.
+      \item[Player 2:]
+      I'll push it aside, and go back to the air.
+      \item[\Glsentrytext{gm}:]
+      Roll Strength plus Brawl, \glsentrylong{tn}\ldots what's \underline{your} Strength and Brawl?
+      \item[Player 3:]
+      Oh, it's me?
+      Okay, it's {\ldots\footnotesize one and one\ldots} two.
+      \item[\Glsentrytext{gm}:]
+      \Glsentrylong{tn} 9.
+    \end{description}
+  }{
+    This simple maze is the same shape as the letter `H', but in the frozen darkness, it provides a nasty enemy.
+    The player will have to decide who goes next, and plan their routes ahead.
+    Each one will enter blind, and have to remember where they should scout next.
+  }
+
+  \paragraph{If multiple \glspl{pc} enter the tunnels,}
+  this spells trouble.
+  The passage only has enough space for one person, so if they run into trouble, they cannot back up without bumping into everyone behind them.
+
+  \paragraph{Once out of the water and rested,}
+  the character can remove all \glspl{ep} from holding their breath in the water, but not the \gls{ep} gained for swimming\ifnum\value{temperature}=2\else, or the \glspl{ep} for entering freezing waters\fi.
+
+  \wayOut{Once out the other side, the troupe have entered the}{hungryHall}
+
+  \mapPic{b}{cave_7}{
+    \ref{hungryHall}/38/93,
+    \ref{gas}/28/69,
+    \ref{darkTunnel}/02/70,
+    \ref{umberHulk}/64/11,
+    \ref{smokePassage}/58/68,
+    \ref{blindFish}/76/80,
+    \ref{stalagmites}/90/19,
+  }
+}
