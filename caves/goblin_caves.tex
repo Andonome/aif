@@ -352,7 +352,7 @@ If they ask about the odd phrasing, tell them what they're having trouble rememb
 \mapentry[umberHulk]{Umber Hulk}
 
 \begin{exampletext}
-  This giant, beetle-like creature%
+  The great umber hulk%
   \exRef{judgement}{Judgement}{umber_hulk}
   \ifnum\value{temperature}=0
     lies in hibernation, dreaming of laying eggs and eating goblins.
@@ -440,7 +440,7 @@ allows the character to feel ever-stronger water-pressure as they near an underg
 
 \begin{itemize}
   \item
-  Once the troupe enter, they will see the corpse of the \gls{guard}, and may think he's an undead creature.
+  Once the troupe enter, they will see the corpse of the \gls{guard} waving its arms, and may think he's an undead creature.
   \item
   The goblins will then begin to drop massive rocks on the \glspl{pc}' heads (\dmg{7} Damage).
   \item
@@ -476,7 +476,7 @@ Each one gives off light when disturbed in anyway.
 
 A pile of them can be used as lantern light, though the light will die after \pgls{interval} someone picks them, so they cannot provide a long-term torch.
 
-\wayOut{The tunnel continues for a mile, to the}{sunRoof}
+\wayOut{The tunnel continues for a mile, to}{sunRoof}
 
 \wayOut{Another tunnel leads down through miles of darkness, until it hits the}{goblinHole}
 
@@ -583,32 +583,32 @@ Unfortunately, it will only admit creatures with a Strength Bonus of 0 or less.
 
 \mapentry[windyPassage]{Windy Passage}
 
-The wind coming through this tunnel indicates its invitation to the outside world.
-The troupe can finally move out, and be free of the goblin warren.
+The wind coming through this tunnel invites the troupe out of the caverns, and back to \gls{fenestra}'s usual dangers.
 
-\subsection{Returning Home}
+\end{multicols}
 
-The troupe is now free, and only have the small task of navigating back home, through the
-\ifnum\value{temperature}=0
+\section{Returning Home}
+
+\begin{multicols}{2}
+
+\noindent
+The troupe emerge into a
+\ifcase\value{temperature}%
   snowy
-\else
+\or%
   dense 
-\fi
+\else%
+  verdant, noisy 
+\fi%
 forest, and a final encounter.
 
-\iftoggle{verbose}{
-  \begin{itemize}
-    \item
-    Is it light outside?
-    \item
-    How many \glspl{ration} do they have left?
-  \end{itemize}
-}{}
+Each morning and evening, the local \gls{broch} sounds their pipes, which will let the \glspl{pc} know where to go.
+At any other time of day, the troupe can hear a nearby river, which will eventually lead to \pgls{village}, not far from Stoatfen~\Gls{bothy}.
 
 \ifcase\value{temperature}
-  A refreshing breeze blows, but in the distance, they can hear howling wolves.
+  A vicious breeze blows, and in the distance, wolves howl.
 
-  The wolves arrive after \pgls{interval}, and stalk the troupe for an interval, hoping to steal some food.
+  The wolves arrive after \pgls{interval}, and stalk the troupe for \pgls{interval} more, hoping to steal some food.
 
   \wolf
   \or
@@ -620,13 +620,11 @@ forest, and a final encounter.
   Within \pgls{interval}, it will break, inflicting an additional \gls{ep} while travelling.
 
   Meanwhile, \pgls{crawler} watches them from above (they spot it immediately).
-  If they retreat until the storm breaks, it leaves.
-  But if they wander in the open, it attacks.
+  If they retreat, it leaves them.
+  But if they remain visible, it attacks.
 
   \chitincrawler
 \fi
-
-If the troupe follow the sound of the river, they will eventually find a nearby \gls{village}.
 
 \subsection{Back at Stoatfen \Glsfmttext{bothy}}
 
