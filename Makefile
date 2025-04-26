@@ -30,7 +30,9 @@ caves: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/characters.pdf config/rules.pdf
 	@pdfunite $^ $@
 
-$(DROSS)/$(ELVES).pdf: $(DEPS) $(wildcard fey/*.tex) qr.tex images/extracted/sundered.jpg images/extracted/enchanted.jpg
+DEPS += images/extracted/sundered.jpg images/extracted/enchanted.jpg
+
+$(DROSS)/$(ELVES).pdf: $(DEPS) $(wildcard fey/*.tex) qr.tex
 	$(COMPILER) -jobname=$(ELVES) fey/main.tex
 .PHONY: oneshot
 shellstack: $(ELVES).pdf ## Oneshot cavern-based module
