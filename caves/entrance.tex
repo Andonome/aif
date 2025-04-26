@@ -1,0 +1,138 @@
+\section{Ascending to the Pit}
+
+\begin{multicols}{2}
+
+\subsection{Getting There}
+
+The opening to the old mine is 5 miles away, which the troupe can walk in \pgls{interval}.
+However, if they don't walk extra-fast (and gain \pgls{ep}) then they will have to hunt for the cave-mouth by twilight.
+But either way, a goblin scout will notice them walking in the open, and summon more.
+
+\begin{boxtext}
+  Ascending up the \ifnum\value{temperature}=0 snowy \fi mountain, the \showTemperature\ breeze clears lumps of low-lying cloud, leaving the face barren except for patches of pine trees.
+\end{boxtext}
+
+
+Finding the entrance requires a \roll{Wits}{Caving} roll at \tn[6] during the day, 8 in the twilight, and 10 at night.
+
+\paragraph{If the troupe camp overnight,}
+the goblins come, one every hour, to throw a javelin or rock at them.%
+\footnote{All goblin statblocks appear \vpageref{goblinBlocks}.}
+They stand well back from the camp, and suffer a -4~Penalty to the throw, but the point is not to kill the \glspl{pc}; the point is to stop them sleeping.
+
+\subsection{The Mouth}
+
+The cave-mouth is a muddy hole, sloping mostly down, like a reed in the wind.
+The drop to the ground is 4~\glspl{step} down, and not easy to climb up.%
+\footnote{The goblins emerge by sending one with claws to climb, and then helping the others with a rope.}
+
+\end{multicols}
+
+\needspace{15em}
+\section{A Small Hole in the Ground}
+\label{goblinCaveEntrance}
+
+\begin{multicols}{2}
+\renewcommand\npcsymbol{\gls{night}}
+
+\subsection{Last of the Sunlight}
+
+\begin{boxtext}
+  You stand in a shaft of Sunlight.
+  Darkness surrounds.
+  The sound of your landing echoes back to you.
+  High-pitched, mocking, giggling noises follow it.
+  More rocks follow.
+\end{boxtext}
+
+The first \gls{pc} down receives 5 rocks thrown at them, and will have to make a \roll{Dexterity}{Athletics} roll (\tn[10]) or receive \dmg{6} Damage.
+
+The \glspl{pc} can only enter one at a time, and the rocks will keep on coming.%
+\footnote{The goblins spend 1~\gls{ap} to pick up a rock, and 1~\gls{ap} to throw.
+\Glspl{pc} spend 1~\gls{ap} to move, as usual.}
+The players will have to decide, one at a time, who goes next into the dark hole.
+
+\subsubsection{Screams Above}
+
+Once most of the \glspl{pc} enter the dark hole, two skinny goblins crawl out of a tiny side-tunnel, and cause trouble at the top.
+They can only squeeze through the tunnel, as they have a Strength Penalty of -1.
+Anything larger than this cannot fit through the narrow tunnel.
+
+\playCommentaryCaveIn
+
+\subsection{The Cave-In}
+
+The second after two characters get down the hole, the goblins flee.
+If the \glspl{pc} don't give chase, they have failed in their mission.
+The goblins will not return to this area for two days, so the \glspl{pc} will eventually have to follow.
+
+\paragraph{If the \glspl{pc} have lit a torch,}
+they will spot dry rocks.
+
+\begin{boxtext}
+  The flickering torch illuminates a soaking wet cave, littered with bone-dry rocks of every size.
+  The air is thick with rocky dust.
+\end{boxtext}
+
+The dry rocks on the ground have fallen from the ceiling recently.
+The shouts and \ifnum\value{temperature}=1 flooding \else stomps \fi in the cavern have begun a cave-in.
+
+\playCommentaryAftermath
+
+\subsubsection{Rocks Fall}
+once the troupe have gone 60~\glspl{step} into the cavern.
+They will have to keep running forward to survive, and they are 20~\glspl{step} from the next, safer cavern \gls{area}, where the rocks won't fall on them.
+\label{caveIn}
+
+\begin{itemize}
+  \item
+  Each \gls{round}, have each player roll $1D6$ for each of their characters.
+  On the roll of a 1, a rock lands on the character, inflicting $1D6$ Damage.
+  \item
+  Any \gls{pc} hit by a rock stops, stunned, and loses all movement for the \gls{round}.
+  \item
+  Each \gls{round}, the Damage and threshold increase~by~1.
+\end{itemize}
+
+\caveIn
+
+\paragraph{If any \glspl{pc} flees the 60~\glspl{step} back to the entrance,}
+they will find themselves alone, at night, with a couple of goblins waiting nearby.
+Those goblins will wait for \pgls{interval} for a moment of weakness, but if that does not arrive, they become bored, and head down to the other cave entrance, far down the mountain.
+
+\label{pcRunaways}
+You can leave these \glspl{pc} as wildcards, until the end of the session, then try to fill in their day with a couple of rolls, just as the troupe begin to exit the mountain, far below (assuming anyone survives).
+
+Fleeing \glspl{pc} who go follow the goblin%
+\ifnum\value{temperature}=0%
+ -footprints in the snow
+\else%
+  s
+\fi%
+will be able to chase them to `\nameref{sunRoof}' (\vpageref{sunRoof}).
+
+\pic{cave_1}
+
+\paragraph{Once the cavern collapses,}
+the dust thrown up inflicts \pgls{ep} each \gls{round}, until the \glspl{pc} leave the \gls{area}.
+
+\paragraph{Leaving this area}
+means they must find the exit.
+It looks like any other shadow among shadows, so the troupe must roll \roll{Wits}{Caving} (\tn[10], +2~Bonus for having \pgls{torch}).
+They can use \pgls{bandAct}, so they will succeed eventually, as long as enough people help.
+
+\paragraph{The passage out}
+becomes smaller and smaller, until the head of the troupe must crawl.
+Whoever went first must roll \roll{Dexterity}{Caving}, against \gls{tn} 8, plus their own Strength Bonus (larger people will struggle more).
+
+Every character must make this roll, and every time they fail, every character behind them takes \pgls{ep} due to the dust.
+
+\paragraph{Digging their way out}
+only leads to \glsentrylongpl{ep}.
+
+\paragraph{If any characters remain above,}
+just leave that \gls{pc}, and focus on those down the goblin hole.
+The troupe can find out what happens to them later.
+
+\end{multicols}
+
