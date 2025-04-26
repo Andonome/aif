@@ -2,21 +2,21 @@
   name={Weft},
   text={Weft},
   type={people},
-  prefix={Warden},
-  description={leader of the world of fasion among the \glsfmtplural{warden}}
+  prefix={\protect\Glsfmttext{warden}~},
+  description={leader of the world of fasion among the \glsfmtplural{keeper}}
 }
 
 \longnewglossaryentry{susjot}{
   name={\Glsentrytext{jotter}~Clenchcaul},
   text={Clenchcaul},
   type={people},
-  symbol={\M\Hu\glsentrytext{sylf}},
-  prefix={\glsentrytext{jotter}\space},
+  symbol={\M\Hu\glsentrysymbol{sylf}},
+  prefix={\protect\Glsentrytext{jotter}\space},
   description={hurries around every nearby \glsentrytext{bothy}, and impatiently micromanages every \glsentrytext{guard}}
 }
 
 \newcommand\susjot[1][]{
-  \Person{\NPC{\glssymbol{susjot}}{\Glsfmttext{susjot}}{greasy}{rotates rings}{to hurry up, and finish}#1}%
+  \Person{\NPC{\glssymbol{susjot}}{\Glsfmtname{susjot}}{greasy}{rotates rings}{to hurry up, and finish}#1}%
     {{2}{1}{2}}% BODY
     {{1}{0}{1}}% MIND
     {
@@ -343,8 +343,8 @@
   name={\Glsfmttext{ranger} Scabrag},
   text={Scabrag},
   type={people},
-  symbol={\M\Hu\glsentrytext{sylf}},
-  prefix={\glsentrytext{ranger}\space},
+  symbol={\M\Hu\glsentrysymbol{sylf}},
+  prefix={\protect\Glsfmttext{ranger}\space},
   parent={sunway},
   description={has the killer instinct, the focus, and the brains of a hawk.
   He plans to kill \glsentrytext{LifeElder}, and receive a promotion to \glsentrytext{thane}}
