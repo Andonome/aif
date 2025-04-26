@@ -6,6 +6,23 @@
   description={leader of the world of fasion among the \glsfmtplural{keeper}}
 }
 
+\longnewglossaryentry{woetide}{
+  name={\Glsentrytext{notary}~Veklash},
+  text={Veklash},
+  type={people},
+  symbol={\glsentrysymbol{sable}\F\Hu},
+  prefix={\protect\Glsentrytext{notary}\space},
+  description={needs everyone to hear her story of woe}
+}
+
+\newcommand\woetide[1][]{
+  \humantrader[\NPC{\glsentrysymbol{woetide}}{woetide}%
+    {wide hat, kind smile, deep, dark, eye-bags}% DESCRIPTION
+    {shakes head mournfully}% MANNERISM
+    {to tell her tale of woe}% WANTS
+    \npcQuote{#1}]% QUOTE
+}
+
 \longnewglossaryentry{susjot}{
   name={\Glsentrytext{jotter}~Barkrust},
   text={Barkrust},
