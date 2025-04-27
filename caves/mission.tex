@@ -118,12 +118,12 @@ The traders get out and ask the characters to perform the traditional \gls{guard
 
 \begin{itemize}
   \item
-  Check the perimeter for \glspl{monster}.
-  \item
   Check inside the \gls{bothy} for \glspl{monster}.
+  \item
+  Check the perimeter for \glspl{monster}.
   \ifnum\value{temperature}<2
     \item
-    Check the \gls{bothy} has firewood (it does not).
+    Check the \gls{bothy} has firewood (it does not, but does have an axe).
   \fi
 \end{itemize}
 
@@ -287,6 +287,9 @@ If that succeeds, he offers more details.
 
 \paragraph{If the \glspl{pc} ask for more supplies,}
 they can make a \roll{Charisma}{Survival} check to convince \gls{susjot} to give them some of the equipment from his cart.
+\iftoggle{verbose}{%
+  Everyone uses the same \gls{natural}.
+}{}
 
 \begin{boxtable}[l|L]
   \textbf{\glsentrytext{tn}} & \textbf{Equipment} \\
