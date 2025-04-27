@@ -127,12 +127,8 @@ The traders get out and ask the characters to perform the traditional \gls{guard
   \fi
 \end{itemize}
 
-\paragraph{Once the \glspl{pc} check the \gls{bothy},}
-\ifnum\value{temperature}<2
-  they'll have to collect firewood while the traders tend to their horses.
-\else
-  everyone settles in and tends to their horses.
-\fi
+\Gls{woetide} stretches her legs while the \glspl{soldier} tend to her three horses while the \glspl{pc} attend to their duties.
+
 \iftoggle{verbose}{
   This makes a good opportunity to introduce new players to the system, by making a few rolls.
 }{}
@@ -142,7 +138,7 @@ the wagon moves on.
 
 \sqpart[\gls{morning}]{Mountain}% AREA
 {The Innocent Man in the Shadows}% NAME
-{The \glsfmttext{guard} \glsfmttext{fodder} fled from the goblin caves, and wants to know if he can return}% SUMMARY
+{\Glsfmttext{fodder} Scarstain fled from the goblin caves, and wants to know if he can return}% SUMMARY
 
 \begin{exampletext}
   Last week, Scarstain entered the \gls{guard} after smuggling swords into a town for a friend, so they didn't have to pay tax (or explain the \glspl{weapon}).
@@ -175,15 +171,20 @@ He waits near the \gls{bothy}, in the shadows of the forest, for the right momen
 
     \ldots
 
-    \Pgls{susjot} sent us to the old mine, to kill the goblins and return with the treasure they stole.
-    But we didn't get the treasure, we died.
+    \Pgls{susjot} sent the five of us into the old mine, to kill the goblins and return with the treasure they stole.
+    But we didn't get the treasure.
+    We died.
     Then I ran away.
-    A trader told me they're looking for me, and I should run away.
-    So can you check if it's safe for me to come back?
+    A trader told me they're looking for me.
+    She said I should run away.
+    Can you check if it's safe for me to come back?
   \end{speechtext}
 
   The sunburnt man pulls a smiling grimace, as if forcing himself to stay hopeful.
 \end{boxtext}
+
+The `trader' who told Scarstain that he's a wanted fugitive is \gls{woetide}.
+Scarstain does not know anything about her, but can describe her big eye-bags.
 
 \paragraph{If anyone asks about the details at the mines,}
 Scarstain explains a little, but won't give more details until someone reassures him that nobody thinks he's guilty.
@@ -239,6 +240,8 @@ If that succeeds, he offers more details.
     \hint{\autopageref{hungryHall}, area \ref{hungryHall}}
     \item
     I waited a while, but nobody else came back up.
+    Five of us went in.
+    All four, dead.
     \item
     I'm never going back there again!
   \end{itemize}
@@ -250,7 +253,7 @@ If that succeeds, he offers more details.
 
 \begin{exampletext}
   Two days ago, \gls{woetide} informed \gls{susjot} that three \glspl{guard} were walking down the road, near the mine, carrying a heavy chest.
-  \Gls{susjot} has figured they saw the chest of \glsentrylongpl{gp} and turned to banditry.
+  \Gls{susjot} has figured they took the chest of \glsentrylongpl{gp} and decided to take it, and live beyond the \gls{edge} (effectively making them bandits).
 \end{exampletext}
 
 \begin{boxtext}
@@ -260,30 +263,35 @@ If that succeeds, he offers more details.
   \else%
     mud
   \fi.
-  The coachman has an angry scowl, and drives the horses faster as he enters the clearing around the \gls{bothy}.
-  The \glspl{guard} he leaves behind, to walk at their own pace.
+  Behind, six \glspl{guard}, all in black, struggle to keep up.
+  The coachman arrives with a writing tablet under his arms and an angry scowl.
+  \begin{speechtext}
+    \begin{itemize}
+      \item
+      Are you the new \glspl{fodder}?
+      \item
+      Did you restock the logs for the \gls{bothy}?
+    \end{itemize}
+  \end{speechtext}
 \end{boxtext}
 
-\Pgls{susjot} alights, and asks about the logs.
+Once \gls{susjot} feels satisfied with the state of Stoatfen~\Gls{bothy}, he gives the troupe their first real mission.
 
-\begin{speechtext}
-  \begin{itemize}
-    \item
-    Are you the new \glspl{fodder}?
-    \item
-    Did you restock the logs for the \gls{bothy}?
-    \item
-    Well it's time to go up the mine, and kill some goblins!
-  \end{itemize}
+\begin{boxtext}
+  \begin{speechtext}
+    It's time to go up the mine, and kill some goblins!
 
-  Listen, it's an easy job.
-  Just go and kill the goblins, and take any remaining \gls{coin} they might have.
-  It's just like stealing from an ugly baby, okay?
+    Listen, it's an easy job.
+    Just go and kill the goblins, and take any remaining \gls{coin} they might have.
+    It's just like stealing from an ugly baby, okay?
 
-  The last lot of \glspl{fodder} who went up stole some \glsentrylongpl{gp}, and didn't even kill the goblins.
-  So now it's no more mister nice \gls{jotter}.
-  Now anyone who comes back without a goblin head gets sent back to the \gls{court} for a good neck-stretch, okay?
-\end{speechtext}
+    You may keep one \glsentrylong{sp} for each goblin head you return with.
+
+    The last lot of \glspl{fodder} who went up just left with the gold, and didn't even kill the goblins.
+    So now it's no more mister nice-\gls{jotter}.
+    Now anyone who comes back without a goblin head gets sent back to the \gls{court} for a good neck-stretch, okay?
+  \end{speechtext}
+\end{boxtext}
 
 \paragraph{If the \glspl{pc} ask for more supplies,}
 they can make a \roll{Charisma}{Survival} check to convince \gls{susjot} to give them some of the equipment from his cart.
@@ -308,14 +316,11 @@ they can make a \roll{Charisma}{Survival} check to convince \gls{susjot} to give
 \end{boxtable}
 
 \paragraph{If the \glspl{pc} ask about the missing \glspl{fodder},}
-\gls{susjot} mentions a reward for bringing in the deserters: 5~\glspl{gp} dead, 20~\glspl{gp} alive.
+\gls{susjot} questions them about what they know.
+
+\Gls{soldier}~\composeHumanName\ happily mentions the reward for bringing in the deserters: 5~\glspl{gp} dead, 20~\glspl{gp} alive.
 
 \susjot
-
-\begin{boxtext}
-  You look towards the mountain, and try to remember the shape of the patch you need to find.
-  \Pgls{susjot} and the others stare with impatience, and note that sunset comes in five hours.
-\end{boxtext}
 
 \stopcontents[sq]
 
