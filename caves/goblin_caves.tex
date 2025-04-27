@@ -602,26 +602,46 @@ The troupe emerge into a
 \fi%
 forest, and a final encounter.
 
-Each morning and evening, the local \gls{broch} sounds their pipes, which will let the \glspl{pc} know where to go.
-At any other time of day, the troupe can hear a nearby river, which will eventually lead to \pgls{village}, not far from Stoatfen~\Gls{bothy}.
+\paragraph{If the troupe emerge during the morning or evening,}
+the local \gls{broch} sounds their pipes (as usual), which lets the \glspl{pc} know where to go.
+At any other time of day, the troupe can hear a nearby river, which travels 5~miles to \pgls{village}, not far from Stoatfen~\Gls{bothy}.
+
+\begin{boxtext}
+  \ifcase\value{temperature}
+    A vicious breeze blows through the frozen forest, and in the distance, wolves howl.
+
+    \or
+    Mist covers the forest, making navigation difficult.
+    \else
+    A storm is brewing above.
+    It looks set to break before long.
+
+    In the trees, far above but not far along, \pgls{crawler} hangs upside-down and motionless.
+
+    \chitincrawler
+  \fi
+\end{boxtext}
 
 \ifcase\value{temperature}
-  A vicious breeze blows, and in the distance, wolves howl.
-
   The wolves arrive after \pgls{interval}, and stalk the troupe for \pgls{interval} more, hoping to steal some food.
 
   \wolf
   \or
-  Mist covers the forest, making it nearly impossible to spot the \gls{woodspy} waiting for them to come out of the \nameref{windyPassage}.
+  The mist makes it nearly impossible to spot the \gls{woodspy} waiting for them to come out of the \nameref{windyPassage}.
 
   \woodspy
-  \else
-  A storm is brewing above them.
-  Within \pgls{interval}, it will break, inflicting an additional \gls{ep} while travelling.
 
-  Meanwhile, \pgls{crawler} watches them from above (they spot it immediately).
-  If they retreat, it leaves them.
-  But if they remain visible, it attacks.
+  \set{tn}{7}
+  \addtocounter{tn}{\value{Dexterity}}
+  \addtocounter{tn}{\value{Stealth}}
+  The troupe rolls \roll{Wits}{Vigilance} at \gls{tn}~\arabic{tn} to avoid being surprised.
+  Failure means the \gls{woodspy} gains a +2 Attack Bonus, and (if successful) pulls one character up a tree.
+  All subsequent attacks deal Damage and the other characters can do nothing, unless they can climb or have ranged weapons.
+
+  \else
+  Within \pgls{interval}, the storm breaks, inflicting an additional \gls{ep} while travelling.
+
+  The \gls{crawler} waits for a while before attacking, but if they leave immediately, it forgets about them.
 
   \chitincrawler
 \fi
