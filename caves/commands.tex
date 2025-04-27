@@ -95,88 +95,22 @@
       \else%
         a broken biscuit.
       \fi%
-      Everyone roll a $D6$ -- if you roll a 1, a rock hits you.
+      Make a \roll{Speed}{Athletics} roll at \tn[3],\ldots
       \item[Player 1:]
-      Where did the goblins go?
+      Why even roll for that?
       \item[\Gls{gm}:]
-      There's only one passage -- they ran just ahead of you, but nobody lit \pgls{torch}, so you can't see them.
-      \item[Player 1:]
-      How far back?
-      \item[\Gls{gm}:]
-      Sixty \glspl{step}.
-      \item[Player 1:]
-      I'll run after the goblins!
-      \dicef{1}
-      Wait, I got hit by a rock!
-      \item[Player 2:]
-      I'm running back\ldots
-      \dicef{1}
-      or not.
-      I got hit too.
-      \item[Player 3:]
-      \dicef{5}
-      No rocks for me.
-      \item[\Gls{gm}:]
-      \dicef{5}
-      That first rock nearly hit you on the head for 5~Damage,
-      \dicef{3}
-      the next one was 3~Damage.
-      \item[Player 2:]
-      Near miss?
-      Oh right, the \glsentrylongpl{fp}.
-      \item[\Gls{gm}:]
-      The rock still gives you a shunt, and you lose all \glsentrylongpl{ap}.
-      \item[Player 3:]
-      How far can I run after the goblins?
-      \item[\Gls{gm}:]
-      Spend \pgls{ap} to run 3~\glspl{step} plus your Athletics.
-      \item[Player 3:]
-      So just 4~\glspl{step}?
-      But I have 4~\glspl{ap}, so that's 4 times 4, so 16~\glspl{step}?
-      \item[\Gls{gm}:]
-      That's good sprinting!
-      Next \gls{round}!
-      Everyone roll a $D6$ -- you get hit on a 1 or 2.
-      \item[Player 1:]
-      \dicef{4} -- running\ldots
-      3 plus Athletics times 3 plus Speed.
-      That's 12 \glspl{step}.
-      \item[Player 2:]
-      \dicef{3}
-      I'm clear, but what's my movement?
-      \item[Player 3:]
-      It's 6\ldots
-      you are going to die.
-      Can I help her move?
-      \item[\Gls{gm}:]
-      Only if you want to spend \pgls{round} running back.
-      \item[Player 1:]
-      \dicef{4}
-      I can help her.
-      \item[\Gls{gm}:]
-      Spend \pgls{ap} each \gls{round} and she'll run at your pace.
-      That's 9~\glspl{step} you can go together.
+      \tn[4] for you,
 
-      Next \gls{round}!
-      You get hit on a 3 or more.
-      \item[Player 1:]
-      \dicef{6}
-      All good, that's another 16~\glspl{step}.
+      \tn[5] for you,\ldots
       \item[Player 2:]
-      \dicef{2}
-      I'm hit again!
-      \item[Player 3:]
-      \dicef{4}
-      I'll keep carrying you.
-      That's 9 more \glspl{step}, right?
+      Ah, okay.
+      \twoDice{4}
+      I do not make it with the first character, and the next\ldots
+      \twoDice{9}
+      yes!
       \item[\Gls{gm}:]
-      That's everyone over 20~\glspl{step} -- you're out, and collapse on the cold cavern floor.
-
-      The cave pushes \showTemperature\ dust into your lungs.
-      The cavern doesn't have a speck of light.
-      Oh, and I almost forgot\ldots
-      $\dicef{5} + 2$\ldots
-      that's 7~Damage.
+      \twoDice{12}
+      A rock falls on his helmet, for 12~Damage.
       \item[Player 2:]
       I think I'm dead\ldots
     \end{description}
@@ -185,20 +119,65 @@
   }
 }
 
+\newcommand\playCommentaryDust{
+  \playCommentary{
+    \begin{description}
+      \item[\Gls{gm}:]
+      The sound of coughing takes over the cave as dust fills the air.
+      Everyone gain \pgls{ep}!
+
+      \item[Player 1:]
+      Can't I just hold my breath.
+
+      \item[\Gls{gm}:]
+      After sprinting, and the shock of the ceiling collapsing?
+      Maybe?
+      \roll{Strength}{Athletics}, \glsentrylong{tn}~10.
+
+      What do you do\ldots in the darkness?
+      \item[Player 1:]
+      $\twoDice{8} + 2$\ldots
+      hold my breath, apparently.
+      \item[Player 2:]
+      Time to get out of here.
+      \twoDice{6}
+      \item[\Gls{gm}:]
+      The passage out is quite narrow.
+      Roll \roll{Dexterity}{Caving}, \glsentrylong{tn}~8 plus your Strength.
+      \item[Player 1:]
+      So \glsentrylong{tn}~10?
+      Okay, \twoDice{5}.
+      That's a `no'.
+      \item[Player 2:]
+      Okay, I'll go out.
+      \item[\Gls{gm}:]
+      I'm afraid you can't while someone is struggling to squeeze through.
+      Spend \pgls{ap} to try again if you like, or spend \pgls{ap} to crawl back.
+      \item[Player 1:]
+      Okay, I'll go back.
+      \item[Player 2:]
+      Good,
+      \twoDice{10}
+      looks like I'm out.
+      And the other character\ldots
+      \twoDice{2}
+      \ldots not so much?
+      \item[\Gls{gm}:]
+      That's the end of the \gls{round}, so everyone holds their breath at \glsentrylong{tn}~10, or gain another \glsentrylong{ep}.
+    \end{description}
+  }{
+    If players spend a while discussing the pros and cons of the optimal order to exit the cavern, remember that speech during \pgls{round} costs \pgls{ap}.
+  }
+}
+
 \newcommand\playCommentaryAftermath{
   \playCommentary{
     \begin{description}
       \item[\Gls{gm}:]
-      The sound of coughing takes over the cave.
-      Everyone gain \pgls{ep}!
-
-      What do you do\ldots in the darkness?
+      Who had \pgls{torch} lit?
+      I don't think anyone did?
       \item[Player 1:]
-      Uh\ldots light \pgls{torch}?
-      \item[\Gls{gm}:]
-      C'mon, say it like you mean it!
-      \item[Player 1:]
-      I light \pgls{torch}!
+      No, but I'll light one now.
       \item[\Gls{gm}:]
       Pulling a nice, dry, tinder-box from your bag, you get to work.
       Soon the \gls{torch}-light illuminates a low ceiling -- darkness hangs around the edges.
@@ -210,8 +189,7 @@
       \item[Player 2:]
       How long are we going to be in here?
       \item[\Gls{gm}:]
-      Well it's not for me to say.
-      Just checking\ldots
+      Well it's not for me to say, really.
     \end{description}
   }{
     Noting that the tinder-box is `dry' helps remind people that it needs to be dry, and won't work as well if the character holding it goes underwater.

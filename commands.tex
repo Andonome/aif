@@ -7,21 +7,6 @@
   \index[history]{{\titleFont C. \Large\arabic{track}}!{\scshape\showCycle[#2]}\nobreak\\~{#3}|textbf~page~}%
 }
 
-\newcommand\caveIn{
-  \sidebox[18]{
-    \setcounter{track}{3}
-    \begin{boxtable}
-    \textbf{Roll} & \textbf{Damage} \\
-    \hline
-    1 in 6 & \stepcounter{track} \dmg{track} \\
-    2 in 6 & \stepcounter{track} \dmg{track} \\
-    3 in 6 & \stepcounter{track} \dmg{track} \\
-    4 in 6 & \stepcounter{track} \dmg{track} \\
-    5 in 6 & \stepcounter{track} \dmg{track} \\
-    \end{boxtable}
-  }
-}
-
 \newcommand\fireFuel{%
   \ifnum\value{temperature}=0%
     dry leaves%
