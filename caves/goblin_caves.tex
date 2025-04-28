@@ -14,13 +14,13 @@ The air smells dusty, but fresh enough to rest.
   Large, damp, rocks litter the ground in every direction.
 \end{boxtext}
 
-\smolMapPic{cave_2}{
-  \ref{falseExit}/85/10,
-}
-
 \wayOut{A path winds slowly up half a mile, to}{falseExit}
 
 \wayOut{Another leads 1 mile to}{firstBridge}
+
+\smolMapPic{cave_2}{
+  \ref{falseExit}/85/10,
+}
 
 \mapentry[falseExit]{False Exit}
 
@@ -54,16 +54,16 @@ A tie means the bridge collapses, but the character has crossed safely.
 
 Anyone falling into the hole receives $1D6$ Damage plus their own Strength Bonus (bigger creatures suffer more from falling).
 
-\paragraph{Entering the hole}
-requires an \roll{Intelligence}{Caving} roll (\tn[10]), to understand a safe route down.
-Ascending requires \tn[12].
-
 The corpse is dry, and not very rotten.
 His satchel still contains two bees-wax candles which can burn for an hour each, a tinder-box, \lootMedium, and slightly-expired \rations.
 
 \wayOut{Past the bridge, after a mile of fairly smooth cavern floor, the troupe find}{ropeDown}
 
 \wayOut{Inside the hole under the bridge, a crack reveals}{gentlePassage}
+
+Entering the hole requires an \roll{Intelligence}{Caving} roll (\tn[7]) to understand a safe route down.
+Once \pgls{pc} explains the hand-holds and where to place the legs, anyone can descend safely.
+Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribute}.
 
 \smolMapPic{cave_3}{
   {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
@@ -91,28 +91,21 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 \end{exampletext}
 
 \begin{boxtext}
-  The torchlight no longer hits the far wall -- you have come to a cliff-face, which overlooks a massive drop.
-  Right ahead, you see a boulder with rope tied around it.
-  The rope droops down the cliff-face.
-
-  The echoes of your footsteps return from the other side of the cavern.
+  The cavern seems to end in a wall, but as the torchlight approaches, you can see the darkness of a sheer drop ahead.
+  A boulder stands next to the drop with a rope tied around it.
+  The rope descends into the edge.
 \end{boxtext}
 
-This may look like a trap, but it isn't.
+This may look like a trap, but it isn't; the goblins simply use the rope to climb up and down.
+The boulder can take up to \pgls{weight} of 11 before it falls, and the rope can take up to \pgls{weight} of 14 before it snaps (this includes items, as usual).
+
+\wayOut{The wide cavern at the bottom leads to the}{secondBridge}
 
 \smolMapPic{cave_4}{
   {\large\glsfmttext{weight}~11: fall}/71/80,
   \rotatebox{-90}{\large\glsfmttext{weight}~14: fall}/20/50,
   \ref{ropeDown}/42/92,
 }
-
-\paragraph{If the rope takes a combined \gls{weight} of 11 or more,}
-the rope will pull the boulder down on their head.
-
-\paragraph{If the rope takes a combined \gls{weight} of 14 or more,}
-(presumably due to multiple characters climbing down) it will snap.
-
-\wayOut{The wide cavern at the bottom leads to the}{secondBridge}
 
 \mapentry[secondBridge]{Last Bridge}
 
@@ -151,10 +144,10 @@ lays in the low parts of the tunnel, around waist-height to a human.
 It won't do any harm to walking humans, but if a gnome or dwarf enter, they will start to feel sleepy, then die.
 The same goes for anyone sitting down to rest.
 
-The first sign of carbon monoxide poisoning is usually death, but in this case the first sign is a dead goblin.
-It died recently, but has no marks -- no cuts or bruises.
+The first sign of carbon monoxide poisoning is usually death, but in this case the first sign is a dead goblin (10~\glspl{step} down the passage).
+It died weeks ago, but has no marks -- no cuts or bruises -- and the corpse has not decayed much, due to the infertile conditions in the cave.
 
-The second warning sign is a dead gnome (10~\glspl{step} down the passage).
+The second warning sign is a dead gnome (20~\glspl{step} down the passage).
 He has no items, as his companions picked up his bag before moving on.
 
 If the players fail to heed the warning signs, any short characters will die first.
@@ -535,14 +528,13 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
 
   \basilisk[\npc{\T[3]\A}{\arabic{noAppearing} \Glsfmttext{basilisk}}]
 \else
-  \Glspl{basilisk} hibernate here over \gls{cTwo}.
+  \Glspl{basilisk} hibernate here over \glsentrytext{cTwo}.
   Last snowfall, one \gls{basilisk} did not wake up, and so provided food for the entire caving system.
 
   \Pgls{swarm} of skein currently feast on the remains of the \gls{basilisk} corpse.
   As before, if the \glspl{pc} carry any source of light, they will attack; otherwise, they ignore them.
 
   \skeinSwarm
-
 \fi
 
 \begin{boxtext}
@@ -672,6 +664,6 @@ The chest remains there, in a bush, with \arabic{r12}0~\glspl{gp}, and
 \randomize\arabic{r12}00~\glspl{sp}.
 Finding the chest requires knowing where that attack took place, and an \roll{Intelligence}{Empathy} roll at \gls{tn}~14.
 
-\Gls{woetide} will take the chest to a safe location by the end of \showCycle.
+\Gls{woetide} will take the chest to a safe location by the end of the \glsentrytext{cycle}.
 
 \end{multicols}
