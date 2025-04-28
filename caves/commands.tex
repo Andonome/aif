@@ -83,8 +83,8 @@
   \widePic[#1]{Irina/metro_cave}
 }
 
-\newcommand\playCommentaryCaveIn{
-  \playCommentary{
+\newcommand\playCommentaryCaveIn[1][b]{
+  \playCommentary[#1]{
     \begin{description}
       \item[\Gls{gm}:]
       The ceiling falls apart, like
@@ -119,8 +119,8 @@
   }
 }
 
-\newcommand\playCommentaryDust{
-  \playCommentary{
+\newcommand\playCommentaryDust[1][b]{
+  \playCommentary[#1]{
     \begin{description}
       \item[\Gls{gm}:]
       The sound of coughing takes over the cave as dust fills the air.
@@ -170,8 +170,8 @@
   }
 }
 
-\newcommand\playCommentaryAftermath{
-  \playCommentary{
+\newcommand\playCommentaryAftermath[1][b]{
+  \playCommentary[#1]{
     \begin{description}
       \item[\Gls{gm}:]
       Who had \pgls{torch} lit?
@@ -197,9 +197,9 @@
   }
 }
 
-\newcommand\playCommentaryPuddle{
-  \playCommentary{
-    The troupe have arrived at the \nameref{waterMaze}.
+\newcommand\playCommentaryPuddle[1][b]{
+  \playCommentary[#1]{
+    The troupe have emerged at the \nameref{waterMaze} (\vpageref{waterMaze}).
 
     \begin{description}
       \item[Player 2:]
@@ -249,8 +249,8 @@
 
 }
 
-\newcommand\playCommentaryDrowning{
-  \playCommentary{
+\newcommand\playCommentaryDrowning[1][b]{
+  \playCommentary[#1]{
     \Pgls{pc} has entered the \nameref{waterMaze} (\vpageref{waterMaze}).
 
     \begin{description}

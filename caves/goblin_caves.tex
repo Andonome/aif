@@ -22,6 +22,8 @@ The air smells dusty, but fresh enough to rest.
   \ref{falseExit}/85/10,
 }
 
+\playCommentaryAftermath[t]
+
 \mapentry[falseExit]{False Exit}
 
 The path travels upwards until opening on the mountain's side.
@@ -99,7 +101,7 @@ Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribut
 This may look like a trap, but it isn't; the goblins simply use the rope to climb up and down.
 The boulder can take up to \pgls{weight} of 11 before it falls, and the rope can take up to \pgls{weight} of 14 before it snaps (this includes items, as usual).
 
-\wayOut{The wide cavern at the bottom leads to the}{secondBridge}
+\wayOut{The wide cavern leads to the}{secondBridge}
 
 \smolMapPic{cave_4}{
   {\large\glsfmttext{weight}~11: fall}/71/80,
@@ -188,6 +190,8 @@ The only clue about the danger, is the gentle sound of the nearby river.
 \wayOut{The goblin stands in the open, in the same room as the}{waterMaze}
 If a single \glspl{pc} approaches while upright and ready for him, he flees towards the exit there.
 
+\playCommentaryPuddle[t]
+
 \mapentry[gentlePassage]{Soft Passage}
 
 This path, like the entrance, has had a little cave-in, and will have more if anyone large walks through it.
@@ -205,8 +209,6 @@ Again, the cavern stretches across 20~\glspl{step} before the troupe find a safe
 If the \glspl{pc} notice the problem, they might return back to the \nameref{firstBridge}, or continue gingerly, trying to disturb nothing.
 
 \wayOut{The passage soon becomes more stable, and half a mile later, emerges at the}{cliffDive}
-
-\playCommentaryPuddle
 
 \mapentry[cliffDive]{Cliff Dive}
 
@@ -261,7 +263,7 @@ The torches will still light fine, even after becoming wet.
 However, the water in the torch's wood will mean that torch creates a constant hiss from the water turning to steam.
 This will prevent the troupe moving silently while they carry those torches.
 
-\playCommentaryDrowning
+\playCommentaryDrowning[t]
 
 \mapentry[hungryHall]{Hungry Hall}
 
@@ -510,6 +512,8 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
 
 \wayOut{The tunnel continues for a mile, to the}{basiliskCave}
 
+\metroMapDistances[b]
+
 \mapentry[basiliskCave]{\Glsfmttext{basilisk} Cave}
 
 \ifnum\value{temperature}=0
@@ -559,7 +563,7 @@ A failed roll means the character falls 8~\glspl{step}.%
 
 \paragraph{If any of the \glspl{pc} fled before the initial cave-in,}
 now is a good time to see if they survived.%
-\footnote{Check \vpageref{pcRunaways} for notes on \glspl{pc} fleeing early.}
+\footnote{Check \vpageref{pcRunaways} for notes on \glspl{pc} who fled.}
 
 \wayOut{A nasty stench wafts out of the}{basiliskCave}
 

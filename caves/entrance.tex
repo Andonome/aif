@@ -8,11 +8,11 @@ The opening to the old mine is 5 miles away, which the troupe can walk in \pgls{
 However, if they don't walk extra-fast (and gain \pgls{ep}) then they will have to hunt for the cave-mouth by twilight.
 But either way, a goblin scout will notice them walking in the open, and call for more goblins to wait in ambush.
 
+Finding the entrance requires a \roll{Wits}{Caving} roll at \tn[6] during the day, 8 in the twilight, and 10 at night.
+
 \begin{boxtext}
   Ascending up the \ifnum\value{temperature}=0 snowy \fi slope, the \showTemperature\ breeze clears lumps of low-lying cloud, leaving the face barren except for patches of pine trees.
 \end{boxtext}
-
-Finding the entrance requires a \roll{Wits}{Caving} roll at \tn[6] during the day, 8 in the twilight, and 10 at night.
 
 \paragraph{If the troupe camp overnight,}
 the goblins come, one every hour, to throw a javelin or rock at them.%
@@ -23,7 +23,7 @@ They stand well back from the camp, and suffer a -4~Penalty to the throw, but th
   Of course, they will need a fire to stay warm, so staying out of sight is not an option.
 \fi
 
-\playCommentaryCaveIn
+\playCommentaryCaveIn[t]
 
 \subsection{The Mouth}
 
@@ -36,13 +36,8 @@ Failure means the \gls{pc} falls prone%
 \exRef{core}{Core Rules}{prone}
 and receives 2~Damage plus their Strength~\gls{attribute},
 
-\end{multicols}
-
-\needspace{15em}
-\section{A Small Hole in the Ground}
 \label{goblinCaveEntrance}
 
-\begin{multicols}{2}
 \renewcommand\npcsymbol{\gls{night}}
 
 \subsection{Last of the Sunlight}
@@ -62,7 +57,7 @@ The \glspl{pc} can only enter one at a time, and the rocks will keep on coming.%
 \Glspl{pc} spend 1~\gls{ap} to move, as usual.}
 The players will have to decide, one at a time, who goes next into the dark hole.
 
-\playCommentaryDust
+\playCommentaryDust[t]
 
 \subsubsection{Screams Above}
 
@@ -88,7 +83,10 @@ they will spot dry rocks.
 The dry rocks on the ground have fallen from the ceiling recently.
 The shouting and \ifnum\value{temperature}=1 recent flooding \else stomping \fi in the cavern have begun a cave-in.
 
-\playCommentaryAftermath
+\smolMapPic[\normalsize]{cave_1}{
+  \rotatebox{-40}{\roll{Dexterity}{Caving} (8)}/22/54,
+  {\roll{Speed}{Athletics} (3, 4, 5,\ldots)}/71/27,
+}
 
 \subsubsection{The Cavern Collapses}
 once the troupe follow the goblins down.
@@ -123,10 +121,5 @@ becomes smaller and smaller, until the head of the troupe must crawl.
 They roll \roll{Dexterity}{Caving} at \gls{tn} 8, plus their own Strength Bonus (larger people will struggle more).
 
 Each \gls{pc} can re-roll by spending another \gls{ap}, but each \gls{round} will inflict another \gls{ep} on everyone still stuck inside.
-
-\smolMapPic[\normalsize]{cave_1}{
-  \rotatebox{-40}{\roll{Dexterity}{Caving} (8)}/22/54,
-  {\roll{Speed}{Athletics} (3, 4, 5,\ldots)}/71/27,
-}
 
 \end{multicols}
