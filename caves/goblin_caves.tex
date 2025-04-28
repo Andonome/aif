@@ -66,15 +66,22 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 \wayOut{Inside the hole under the bridge, a crack reveals}{gentlePassage}
 
 \smolMapPic{cave_3}{
-  \ref{firstBridge}/50/75,
-  \ref{gentlePassage}/92/15,
+  {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
+  {\normalsize\glsfmttext{weight}~13: collapse}/57/75,
+  \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
+  \ref{firstBridge}/49/57,
+  \ref{gentlePassage}/92/05,
 }
 
 \mapPic{b}{cave_5}{
+  {\normalsize\glsfmttext{weight}~10: collapse}/67/24,
   \ref{secondBridge}/80/40,
   \ref{cliffDive}/60/85,
+  {\normalsize\roll{Speed}{Athletics}}/65/94,
+  {\normalsize Dive (6)}/28/45,
+  {\normalsize Climb (10)}/43/70,
   \ref{wormTunnel}/58/02,
-  \ref{standingTunnel}/00/04,
+  \ref{standingTunnel}/00/05,
 }
 
 \mapentry[ropeDown]{Rope \& Cliff}
@@ -94,6 +101,8 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 This may look like a trap, but it isn't.
 
 \smolMapPic{cave_4}{
+  {\large\glsfmttext{weight}~11: fall}/71/80,
+  \rotatebox{-90}{\large\glsfmttext{weight}~14: fall}/20/50,
   \ref{ropeDown}/42/92,
 }
 
