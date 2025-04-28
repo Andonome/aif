@@ -33,9 +33,12 @@
 }
 
 \newcommand\susjot[1][]{
-  \Person{\NPC{\glssymbol{susjot}}{\Glsfmtname{susjot}}{greasy}{rotates rings}{to hurry up, and finish}#1}%
-    {{2}{1}{2}}% BODY
-    {{1}{0}{1}}% MIND
+  \Person{\NPC{\glssymbol{susjot}}{\Glsfmtname{susjot}}% Name
+  {greasy hair, with eyes too far apart, like a toad}% Description
+  {rotates rings}% Mannerism
+  {to hurry up, and finish}#1}%
+    {{2}{1}{-2}}% BODY
+    {{1}{0}{-2}}% MIND
     {
         \set{Athletics}{2}
         \set{Deceit}{1}
