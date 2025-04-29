@@ -22,7 +22,7 @@ config/rules.pdf:
 
 $(DROSS)/characters.pdf: $(wildcard ex_cs/*) config/CS.tex
 	$(COMPILER) -jobname=characters ex_cs/all.tex
-$(DROSS)/$(GOBLINS).pdf: $(DEPS) qr.tex
+$(DROSS)/$(GOBLINS).pdf: $(DEPS) qr.tex glossary.tex
 	$(COMPILER) -jobname=$(GOBLINS) caves/main.tex
 
 .PHONY: oneshot

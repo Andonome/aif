@@ -27,6 +27,7 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \begin{document}
 
+\glsunsetall
 \frontpage[The Goblin Hole]%
   {A Claustrophobic Nightmare with Dice}%
 
@@ -34,6 +35,7 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \clearpage
 
+\glsresetall
 \input{caves/play1.tex}
 
 \glsunsetall
@@ -51,10 +53,20 @@ Keywords={TTRPG,RPG,roleplaying}
   nonumberlist,
   ]
 
+\printglossary[
+  type=symbols,
+  nonumberlist,
+  ]
+
 \glsresetall
 \mainmatter
 
 \chapter{Welcome to the \Glsfmttext{guard}}
+
+\glsadd{morning}
+\glsadd{afternoon}
+\glsadd{evening}
+\glsadd{night}
 
 \input{caves/mission.tex}
 
