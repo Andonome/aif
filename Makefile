@@ -28,7 +28,10 @@ $(DROSS)/$(GOBLINS).pdf: $(DEPS) qr.tex glossary.tex
 .PHONY: oneshot
 caves: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(GOBLINS).pdf: $(DROSS)/$(GOBLINS).pdf $(DROSS)/characters.pdf config/rules.pdf
-	@pdfunite $^ $@
+	pdfjam --pdftitle $(GOBLINS) --pdfsubject "BIND RPG" \
+	--pdfkeywords "RPG,TTRPG,roleplaying" \
+	$^ \
+	--outfile $@
 
 DEPS += images/extracted/sundered.jpg images/extracted/enchanted.jpg
 
