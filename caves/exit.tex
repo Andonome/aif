@@ -1,0 +1,88 @@
+\section{Returning Home}
+
+\begin{multicols}{2}
+\renewcommand\npcsymbol{\gls{evening}}
+
+\noindent
+The troupe emerge into a
+\ifcase\value{temperature}%
+  snowy
+\or%
+  dense 
+\else%
+  verdant, noisy 
+\fi%
+forest, and a final encounter.
+
+\paragraph{If the troupe emerge during the morning or evening,}
+the local \gls{broch} sounds their pipes (as usual), which lets the \glspl{pc} know where to go.
+At any other time of day, the troupe can hear a nearby river, which travels 5~miles to \pgls{village}, not far from Stoatfen~\Gls{bothy}.
+
+\begin{boxtext}
+  \ifcase\value{temperature}
+    A vicious breeze blows through the frozen forest, and in the distance, wolves howl.
+
+    \or
+    Mist covers the forest, making navigation difficult.
+    \else
+    A storm is brewing above.
+    It looks set to break before long.
+
+    In the trees, far above but not far along, \pgls{crawler} hangs upside-down and motionless.
+
+    \chitincrawler
+  \fi
+\end{boxtext}
+
+\ifcase\value{temperature}
+  The wolves arrive after \pgls{interval}, and stalk the troupe for \pgls{interval} more, hoping to steal some food.
+
+  \wolf
+  \or
+  The mist makes it nearly impossible to spot the \gls{woodspy} waiting for them to come out of the \nameref{windyPassage}.
+
+  \woodspy
+
+  \set{tn}{7}
+  \addtocounter{tn}{\value{Dexterity}}
+  \addtocounter{tn}{\value{Stealth}}
+  The troupe rolls \roll{Wits}{Vigilance} at \gls{tn}~\arabic{tn} to avoid being surprised.
+  Failure means the \gls{woodspy} gains a +2 Attack Bonus, and (if successful) pulls one character up a tree.
+  All subsequent attacks deal Damage and the other characters can do nothing, unless they can climb or have ranged weapons.
+
+  \else
+  Within \pgls{interval}, the storm breaks, inflicting an additional \gls{ep} while travelling.
+
+  The \gls{crawler} waits for a while before attacking, but if they leave immediately, it forgets about them.
+
+  \chitincrawler
+\fi
+
+\subsection{Back at Stoatfen \Glsfmttext{bothy}}
+
+Once the troupe return from their harrowing journey past the \gls{edge}, \gls{susjot} immediately asks how many goblin heads the troupe have obtained.
+If the troupe have none, one of them will need to roll \roll{Charisma}{Caving} to explain the difficulties (\tn[8]).
+If the roll fails, \gls{susjot} sends them all to the local \gls{court}, while arranging for more \gls{fodder} to go up the mountain\ldots
+
+\ifnum\value{temperature}=0
+  \paragraph{If the troupe report the hibernating \glspl{basilisk},}
+  \gls{susjot} makes a deal with \pgls{ranger} to have them gutted and sold.
+  He later states the \glspl{basilisk} had `just gone, like all the gold in that mine'.
+\fi
+
+\subsubsection{The Chest of Gold}
+\label{goldConspiracy}
+never entered the mines with the goblins.
+The \glspl{pc} will probably notice the fact that the dead \glspl{guard} had \glspl{coin} near them, untouched.
+They may also notice that those goblins do not engage in trading with nearby settlements, so they have no reason to pick up any \glspl{coin}.
+
+In truth, \gls{woetide} lied.
+When goblins raided the caravan she travelled with, she ran away, then returned and took the chest of gold, then left it nearby in the forest.
+
+The chest remains there, in a bush, with \arabic{r12}0~\glspl{gp}, and 
+\randomize\arabic{r12}00~\glspl{sp}.
+Finding the chest requires knowing where that attack took place, and an \roll{Intelligence}{Empathy} roll at \gls{tn}~14.
+
+\Gls{woetide} will take the chest to a safe location by the end of the \glsentrytext{cycle}.
+
+\end{multicols}
