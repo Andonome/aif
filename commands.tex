@@ -20,10 +20,15 @@
 }
 
 \newcommand\wayOut[2]{
-  \hspace{1em}
+  \ifnum\value{diceNo}=3%
+    \renewcommand\npcsymbol{\glsentrysymbol{yonder}}%
+  \else%
+    \stepcounter{diceNo}%
+  \fi%
+  \hspace{.8em}
   \par
   \noindent
-  \adforn{2}\quad#1
+  {\large\adforn{2}}\quad#1
 	\stateArea{#2}.%
 }
 

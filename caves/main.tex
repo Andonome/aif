@@ -27,7 +27,6 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \begin{document}
 
-\glsunsetall
 \frontpage[The Goblin Hole]%
   {A Claustrophobic Nightmare with Dice}%
 
@@ -38,6 +37,11 @@ Keywords={TTRPG,RPG,roleplaying}
 \glsresetall
 \input{caves/play1.tex}
 
+\printglossary[
+  type=symbols,
+  nonumberlist,
+  ]
+
 \glsunsetall
 \printglossary[
   style=topicmcols,
@@ -46,15 +50,10 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \input{caves/play2.tex}
 
-\needspace{18\baselineskip}
+\needspace{24\baselineskip}
 \printglossary[
   type=mech,
   style=topicmcols,
-  nonumberlist,
-  ]
-
-\printglossary[
-  type=symbols,
   nonumberlist,
   ]
 
