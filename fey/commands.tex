@@ -207,6 +207,11 @@
 
 \newcommand\enchantedMap[1][b]{
   \renewcommand\csComments{
+    \mapCircle[-3.1]{74}{73}{2}{shadows/tower}
+    \mapCircle[-1]{15}{30}{1.5}{shadows/bailey}
+    \mapCircle[-0.7]{20}{17}{1.5}{shadows/broch}
+    \mapCircle[15]{65}{50}{2.8}{shadows/ravencops}
+    \mapCircle[8]{47}{80}{2}{shadows/sunway}
     \draw[very thick,gray, dash dot] (9,0.6)
     node[anchor=north]{\outline{Miles}} -- (10,0.6)
     node[anchor=north]{\outline{1}} -- (11,0.6)
@@ -218,16 +223,15 @@
 
   \mapNotes{
     \normalsize Civilization/08/01,
-    \Hu~\Glsfmttext{broch}/22/08,
-    \Hu~\Glsfmttext{coppernut} \Glsfmttext{village}/20/30,
+    \Hu~\Glsfmttext{broch}/23/24,
+    \Hu~\Glsfmttext{coppernut} \Glsfmttext{village}/24/37,
     \huge\Glsfmttext{sunderedForest}/35/99,
     \huge\Glsfmttext{enchantedLands}/80/99,
     \rotatebox{40}{\Large\nameref{plateauGardens}}/40/70,
     \rotatebox{40}{\El\R}/45/65,
     \rotatebox{40}{\Large\nameref{ravencops}}/55/45,
     \rotatebox{40}{\N}/58/40,
-    \nameref{oathtower}/86/75,
-    \El/85/65,
+    \El~\Glsfmttext{oathtower}/82/82,
     \rotatebox{40}{\Large\nameref{sunway}}/50/60,
   }
 
