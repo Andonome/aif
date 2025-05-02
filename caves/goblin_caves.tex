@@ -188,7 +188,9 @@ Failure means the troupe waste \pgls{interval} trying to relax and eat.
 \paragraph{Once they near the exit,}
 they must shuffle out slowly, with their head poking out.
 At this point, a goblin lying in wait attacks with an automatic \gls{vitalShot}.
-The only clue about the danger, is the gentle sound of the nearby river.
+\ifnum\value{temperature}=3%
+  The only clue about the danger, is the gentle sound of the nearby river.
+\fi%
 
 \wayOut{The goblin stands in the open, in the same room as the}{waterMaze}
 If a single \glspl{pc} approaches while upright and ready for him, he flees towards the exit there.
@@ -221,35 +223,58 @@ Failure means the roof starts collapsing, and each player rolls \roll{Speed}{Ath
 
 \mapentry[cliffDive]{Cliff Dive}
 
-This passage ends abruptly with a cliff-ledge, with a river a stone's throw below.
-The river has enough depth to let anyone land safely.
+This passage ends abruptly with a cliff, overlooking an underground lake.
+The only way down is a rocky climb, and the water below is 5 degrees.
+Luckily, the lake is deep, and nobody will hit the ground.
+
+\begin{boxtext}
+  The cave widens, then halts at a cliff, the height of two men.
+  \ifnum\value{temperature}>1%
+    The darkness below looks perfectly smooth -- a flat, black, surface.
+  \else%
+    The black waters below show very little movement, but the echoes of running water suggest a strong undercurrent.
+  \fi%
+\end{boxtext}
 
 The \glspl{pc} will have a difficult decision, since they can't tell if the dive will kill them.
 
-\paragraph{Climbing down}
-demands a \roll{Speed}{Athletics} roll (\tn[9]).%
+\paragraph{Climbing or diving down}
+demands a \roll{Dexterity}{Athletics} roll at \tn[8].%
 \footnote{Planning cannot help with this roll -- the characters cannot see below well enough to plan.}
-Failure inflicts $1D3$ Damage as they crash against jagged rocks on the way down.
-
-\paragraph{Diving down}
-requires a \roll{Dexterity}{Athletics} roll (\tn[10]), but failure only inflicts 2~\glspl{ep} from a flopped landing.
+Failure inflicts $1D3$ Damage as they crash against jagged rocks on the cliff-face or a wall.
 
 \paragraph{Once in the water,}
-the river pushes everyone naturally towards a riverbank.
-Characters float gently downstream.
-One side of the river ends in a wall, the other has a little ledge to grab onto, some distance down.
+\ifnum\value{temperature}>1%
+  the \glspl{pc} begin to feel a slow current.
+  They can swim upstream, or downstream.
+\else%
+  \set{track}{5}%
+  \ifnum\value{temperature}=3%
+    \addtocounter{track}{2}%
+  \fi%
+  the river's current pushes the \glspl{pc} downstream unless they resist with \roll{Speed}{Athletics} (\gls{tn}~\arabic{track}).
+\fi%
 
 \playCommentaryDrowning[t]
 
-\paragraph{Swimming upstream}
-requires a \roll{Strength}{Athletics} check (\tn[14]), and inflicts \pgls{ep}.
-Before long, the character meets the \nameref{secondBridge} (\vpageref{secondBridge}).
+\wayOut{Swimming upstream leads to the}{secondBridge}
 
-\wayOut{The river pushes characters gently to the riverbank, close to the}{waterMaze}
+\wayOut{The currents carry characters gently to the riverbank, by the}{waterMaze}
 
-\wayOut{Characters who continue down-river receive a harsh ride down an underwater stream to the}{blindFish}
+\wayOut{Characters who continue down-river eventually reach the}{lakeStop}
 
-The river's rapids and rocks demand a \roll{Strength}{Athletics} roll to hold one's breath, (\tn[10]) or receive 4~\glspl{ep}; then a \roll{Dexterity}{Caving} roll to avoid $1D6+2$ Damage (\tn[16] if the character is in the dark, which they almost certainly are).
+\mapentry[lakeStop]{Bone Scraper}
+
+\Glspl{pc} who remain in the water float gently towards a deadly drop.
+They can feel what's coming with a \roll{Wits}{Caving} at \tn[7] (or \tn[10] in the dark, which they probably will be, if floating down river).
+
+\paragraph{On a tie,}
+the character falls a short way onto a large rock.
+Climbing back requires a \roll{Speed}{Athletics} roll (\tn[10]).
+
+\wayOut{Falling inflicts $\dmg{14}$ plus the character's Strength \gls{attribute}, then on to the}{blindFish}
+
+\wayOut{Turning back can only lead towards the}{waterMaze}
 
 \mapentry[waterMaze]{Drowned Pass}
 
@@ -273,6 +298,22 @@ Their \glspl{ration} almost certainly do not have waterproof coverings, nor do t
 The torches will still light fine, even after becoming wet.
 However, the water in the torch's wood will mean that torch creates a constant hiss from the water turning to steam.
 This will prevent the troupe moving silently while they carry those torches.
+
+
+\paragraph{Once out of the water and rested,}
+the character can remove all \glspl{ep} from holding their breath in the water, but not the \gls{ep} gained for swimming\ifnum\value{temperature}=2\else, or the \glspl{ep} for entering freezing waters\fi.
+
+\wayOut{Once out the other side, the troupe have entered the}{hungryHall}
+
+\mapPic{b}{cave_7}{
+  \ref{hungryHall}/38/93,
+  \ref{gas}/28/69,
+  \ref{darkTunnel}/02/70,
+  \ref{umberHulk}/64/11,
+  \ref{smokePassage}/58/68,
+  \ref{blindFish}/76/80,
+  \ref{stalagmites}/90/19,
+}
 
 \mapentry[hungryHall]{Hungry Hall}
 
@@ -385,7 +426,7 @@ If they ask about the odd phrasing, tell them what they're having trouble rememb
   the umber hulk will begin sniffing silently and shuffling loudly around the tiny entrance.
 
   \begin{boxtext}
-    You hear the sound of disturbed rocks ahead, like someone shuffling a cart around a pile of rocks.
+    You hear crunching ahead, like someone shuffling a cart around a pile of rocks.
     Something stinks like a tanner's.
   \end{boxtext}
 \fi
