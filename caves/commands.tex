@@ -308,3 +308,87 @@
     Each one will enter blind, and have to remember where they should scout next.
   }
 }
+
+
+\newcommand\playCommentaryRestI[1][t]{
+  \playCommentary[#1]{
+    \begin{description}
+      \item[\Glsentrytext{gm}:]
+      The \gls{torch} sputters and grows dim.
+      That's another three miles travelled, and the end of the \gls{interval}.
+      There's one \gls{mp} available\ldots wait nobody needs \glspl{mp} here\ldots
+      And everyone regain
+      \dicef{\arabic{r6}}
+      \arabic{r6}~\glspl{fp}.
+      \item[Player 1:]
+      Fabulous.
+      \item[Player 2:]
+      That's the third \gls{interval} in here.
+      You said they're six hours, so it'll be dark outside again.
+      I don't have any food left.
+      \item[Player 3:]
+      I don't either.
+      We should hurry it up a bit.
+      \item[\Glsentrytext{gm}:]
+      That was the last \gls{torch}, wasn't it?
+      If you're in the dark, how will you find your way?
+      \item[Player 1:]
+      Use the sword-scabbard as a walking stick?
+      \item[\Gls{gm}:]
+      Okay, but everyone will still slow down to feel the next footstep carefully, and travel just a mile over the \gls{interval}.
+      \item[Player 1:]
+      One?
+      No way!
+      We're going at least another three.
+      \item[\Gls{gm}:]
+      Okay, if you're leading then that's a \roll{Dexterity}{Caving} at \glsentrylong{tn}~9, but you should add +1 for the walking stick.
+      \item[Player 1:]
+      Okay -- I knew the sword would come in handy.
+      \twoDice{7} + 2 means a tie.
+      What happens?
+      \item[\Gls{gm}:]
+      For now?
+      You press on.
+      And after a mile, you hear movement ahead, small and indistinct, but real\ldots
+    \end{description}
+  }{
+    If you're not walking all the time, are you even in a fantasy land?
+
+    Every \gls{interval}, the troupe gamble time against safety.
+  }
+}
+
+
+\newcommand\playCommentaryRestII[1][t]{
+  %%%%%%%%
+  \playCommentary[#1]{
+    \begin{description}
+      \item[\Gls{gm}:]
+      The passage out smells less retched.
+      It has a glimmer of light.
+      It's about the end of the \gls{interval}\ldots what am I forgetting?
+      \item[Player 1:]
+      \Glsentrylongpl{fp}?
+      \item[\Gls{gm}:]
+      No, before that -- the \gls{blackWalking}.
+      $\dicef{6} + 1$
+      Rushing towards the light, you miss a rock and bang your head for seven damage.
+      \item[Player 1:]
+      Seven?
+      I'm down to my last two \glsentrylongpl{hp}, and I have four \glsentrylongpl{ep}, and three items.
+      \item[\Gls{gm}:]
+      That's a minus five penalty to everything.
+      That's a pretty bad state.
+      Can't move or think properly.
+      Killer migraine.
+      \item[Player 2:]
+      You'll be fine.
+      There's the Sun.
+      We're out, right?
+      \item[\Gls{gm}:]
+      Stepping out into the light, you're at the bottom of a deep shaft\ldots
+    \end{description}
+  }{
+    The players may have forgotten about the goblin heads at this point, but best not to tell them.
+  }
+}
