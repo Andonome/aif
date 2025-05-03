@@ -1,24 +1,31 @@
 
 \begin{filledCS}%
-  {Tsod}% NAME
-  {Gnoll}% RACE
-  {Tubby Thief}% CONCEPT
-  {Noble}% CODE
-  {{1}{0}{-1}}% BODY
-  {{-1}{1}{-2}}% MIND
+  {Finill\"e}% NAME
+  {Elf}% RACE
+  {Happy-Go-Lucky Outcast}% CONCEPT
+  {Chronicler}% CODE
+  {{-1}{0}{0}}% BODY
+  {{0}{-2}{2}}% MIND
   {%
     \setcounter{Empathy}{1}
-    \setcounter{Larceny}{2}
-    \setcounter{Stealth}{1}
     \setcounter{Survival}{1}
-    \setcounter{Melee}{1}
-    \setcounter{Brawl}{1}
-    \renewcommand\rank{Fodder}
-    \renewcommand\characterDebt{100 \glspl{sp}}
-    \spear
+    \setcounter{Fire}{1}
+    \setcounter{Air}{2}
+    \Dagger
   }% SKILLS
   {}% KNACKS
-  {Bag of shiny rocks, \rations}% EQUIPMENT
+  {Five-leafed clover}% EQUIPMENT
+  \renewcommand\rank{Fodder}
+  \renewcommand\characterDebt{100 \glspl{sp}}
+
+  \renewcommand\charSpells{
+    \showSpells{Air2}
+    \showSpells{Air1}
+    \showSpells{Air1}
+    \showSpells{Fire1}
+    \showSpells{Light1}
+    \showSpells{Light1}
+  }
 
 \end{filledCS}
 
