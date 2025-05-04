@@ -1,3 +1,16 @@
+\newcommand\enchantedRations{%
+      \ifcase\value{r4}\relax%
+      \or%
+        dried snail meat%
+      \or%
+        incredible cabbage%
+      \or%
+        fried eye-stalks (`freye-stalks')%
+      \else%
+        enormous carrot%
+      \fi%
+}
+
 \newcommand{\giantSnail}[1][Giant Snail]{
   \Animal{\npc{\A\R}{#1}}%
   {{5}{rn1t0}{-3}}% BODY
@@ -38,11 +51,7 @@
     {}% KNACKS
     {licence for \weaponName, %
     \ifnum\value{noAppearing}<3%
-      \ifnum\value{r3c}=3%
-        dried snail meat%
-      \else%
-        enormous carrot%
-      \fi%
+      \enchantedRations%
     \else%
       pet \rock%
     \fi}% EQUIPMENT
