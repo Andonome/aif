@@ -28,6 +28,7 @@ the goblin population will decrease, and you can mark \pgls{segment} from \namer
 
 \sidequest[ravencops,oathtower]{Waking the \Glsfmtplural{ogre}}
 
+\noindent
 Every high-pitched noise around \gls{enchantedLands} activates another \gls{segment}, below.
 This may occur, for example, if goblins raid \gls{plateauGardens} and take some of the beans from the bean-vine bridges, which makes them fart (which then makes other goblins giggle like a rusty gate).
 
@@ -58,6 +59,7 @@ leads them to food (perhaps in \gls{oathtower}, or the Icebox House \vpageref{ic
 \sqpart[\squash]{ravencops}% AREA
 {Hunting for the Ice Box}% NAME
 {Three \glsfmtplural{ogre} hunt for the ice box house}% SUMMARY
+\label{ogresEatIcebox}
 
 Three \glspl{ogre} have awakened, and hunt for the Icebox House, where \gls{MindElder} has food packed in ice, below the ground.
 If you have that house on the map already, the \glspl{ogre} head there, quickly.
@@ -122,10 +124,12 @@ Hiding requires a \roll{Wits}{Stealth} roll at
 
 \stopcontents[sq]
 
-\subsection{\Glsfmtname{MindElder}'s Death}
+\subsubsection{\Glsfmtname{MindElder}'s Death}
 would be disastrous.
 Goblin oaths would start to break, little by little, while the elves in \gls{enchantedLands} would lose their enchantments much more slowly.
 The goblins would awaken the \glspl{ogre} with screeches and wails held in for half of their lives.
+
+\index{\expandafter\Glsfmtname{MindElder}'s Death}
 
 \begin{itemize}
   \item
@@ -135,6 +139,119 @@ The goblins would awaken the \glspl{ogre} with screeches and wails held in for h
   \item
   The ninth day would begin with a siege upon \gls{coppernut}.
 \end{itemize}
+
+\sidequest[ravencops,plateauGardens]{Goblins Rise}
+\label{goblinsRise}
+
+\renewcommand\enchantedRations{empty bowl}
+
+If the giant snail population decreases, mark one of the \glspl{segment} as ready (`\sqr') after a week.
+If the goblins become agitated by finding \pgls{sepulchre} destroyed, mark \pgls{segment} as ready immediately.
+
+\sqpart[\squash]{ravencops}% AREA
+{Goblins Don't Share}% NAME
+{Goblins eat animal, root, and berry in \glsfmttext{ravencops}}% SUMMARY
+
+\Gls{foraging} in \gls{ravencops} rises to \tn[16] as the goblins pick the forest bare and hunt everything that moves.
+
+\sqpart[\squash]{ravencops}% AREA
+{Husk}% NAME
+{A starving goblin demands food}% SUMMARY
+
+Pica hasn't eaten in two days, and hasn't eaten well in four.
+
+\begin{boxtext}
+  A goblin approaches ahead.
+  Its robes are slipping from the shoulders
+\end{boxtext}
+
+\begin{speechtext}
+  I know you got something nice.
+  I smell it.
+  Give me a bite.
+
+  Make it legal -- make it a gift!
+\end{speechtext}
+
+\set{r3}{3}
+\enchantedGoblin[\npc{\F\N}{Pica}]%
+
+If the \glspl{pc} don't `gift' her some food, her strained oath snaps, and she becomes stupefied.
+She attacks with the \weaponName, but the first attack automatically fails, as she receives the crushing weight of a -5~Penalty to thinking straight.
+
+\sqpart{ravencops}% AREA
+{Rebalancing Grass}% NAME
+{Growths along the snail paths shows the declining snail population}% SUMMARY
+
+Without the snails, grass and bushes begin to grow across the snail paths.
+In the first week, the new growth is subtle, but still possible to notice with a \roll{Wits}{Survival} roll (\tn[12]).
+
+\sqpart[\squash]{shadepaths}% AREA
+{Hunting by Shadow}% NAME
+{Hungry goblins hunt for a snail, then eat until they become hobgoblins}% SUMMARY
+
+This band feel starving, so they hunt through \gls{shadepaths} for a snail to feast on.
+The snails here may have acidic vomit, but they don't attack people.
+
+Once a snail is found (which won't be long) they kill it, and take two \glspl{interval} to eat through the corpse, belching and groaning loudly the entire time.
+
+If the elves remain affected by the \glspl{disgnome}, they watch and slowly talk about potential solutions.
+But any who awakened will think about safe methods of attack, from the high vantage point of \gls{plateauGardens}.
+
+\sqpart{plateauGardens}% AREA
+{Night Raids}% NAME
+{Goblins come to remove the foods of \glsfmttext{plateauGardens}}% SUMMARY
+
+The goblins arrive and try to take food.
+If the elves have shaken off their sleep from the \gls{disgnome}, they object to the goblins taking food and may turn violent.
+The situation is tense, so however the \glspl{pc} approach it, set the \gls{tn} to 10 or more.
+
+\enchantedGoblin[\npc{\T[12]\M\F\N}{Grotesk, Gadzook, \& c.}]
+
+\begin{boxtext}
+  Put some clothes on, filthy elf!
+  Take a hike!
+\end{boxtext}
+
+\sqpart{ravencops}% AREA
+{Chewing Ice}% NAME
+{Goblins raid the Icebox house}% SUMMARY
+
+A dozen famished goblins try to find the Icebox house%
+\footnote{Find the location \vpageref{iceboxHouse}.}
+to take the food.
+However, this breaks their oaths to uphold the law, which gives them a -4~Penalty to all Mental~\glspl{attribute}.
+
+\begin{boxtext}
+  A quiet \textit{thck-thck-thck} sound signals feed moving across the snail path.
+  A dozen goblins approach, with an animalistic look to them -- vacant, unfocussed, but full of purpose.
+\end{boxtext}
+
+The goblins do not speak, except to say `Icebox elves', and `food'.
+
+\paragraph{If the \glspl{pc} lead them to the Icebox house,}
+they follow.
+However, they remember enough to know if they're going the wrong way.
+
+Of course, once they arrive they must eat.
+If \glspl{ogre} ate through the Icebox food stores (\gls{segment}~\vref{ogresEatIcebox}) then the goblins become feral instantly.
+
+\enchantedGoblin[\npc{\T[12]\M\F\N}{Ligature, Spur, \& c.}]
+
+\paragraph{If they don't arrive within \pgls{interval},}
+they attack.
+
+\paragraph{If the goblins receive \pgls{ration} each}
+they calm down, get back to \gls{oathtower}, and renew their oaths.
+
+
+\sqpart{ravencops}% AREA
+{The Horde Rises}% NAME
+{Everyone bands together to feed}% SUMMARY
+
+The goblins have broken their oaths, and begun to wake the \glspl{ogre} who sleep an enchanted sleep in the \glspl{sepulchre} near \gls{oathtower}.
+
+\goblin
 
 \sidequest[plateauGardens]{Removing the \Glsfmtplural{disgnome}}
 
