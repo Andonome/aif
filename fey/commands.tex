@@ -88,7 +88,7 @@
     \fi}% ABILITIES
 }
 
-\newcommand{\enchantedOgre}[1][\npc{\N}{Ogre}]{
+\newcommand{\enchantedOgre}[1][\npc{\N\M}{\Glsfmttext{ogre}}]{
   \Person{#1}%
     {{r4t6}{rn1t2}{r3}}% BODY
     {{rn4tn1}{rn3t3}{r3c}}% MIND
@@ -100,6 +100,12 @@
         \set{Projectiles}{rn1t2}
       \fi
       \set{Brawl}{rn3t3}
+      \set{Vigilance}{rn1t2}
+      \ifodd\value{r6}
+        \set{Deceit}{r2b}
+      \else
+        \set{Survival}{1}
+      \fi
     }% SKILLS
     {}% KNACKS
     {}% EQUIPMENT
