@@ -24,7 +24,8 @@ And like any unbalanced thing, if it falls wrong, then it can fall on people nea
 The players will need to understand the ecosystem and all its parts in order to make it fall down in the right way.
 
 The following \glspl{sq} do not begin ready-to-go.
-You can mark them ready (`\sqr') as the eco-system begins to collapse.
+You can mark the \glspl{segment} each ready (`\sqr') as the eco-system begins to collapse.
+Most have the `\squash' symbol, meaning they should be run at the same time as the part below.
 
 \subsubsection{Messing with the Goblins}
 proves easy.
@@ -55,9 +56,11 @@ Mark one \gls{segment} below as ready (as they begin to wake \glspl{ogre} to pro
 Once the \glspl{pc} destroy \ref{lastOgreSegment} \glspl{sepulchre}, you can start marking the \glspl{segment} below as unavailable, scoring them out (starting with the last).
 However, \glspl{segment} from \nameref{goblinsRise} remain active.
 
+\setcounter{sqNo}{-1}
 \sqpart[\squash]{ravencops}% AREA
 {Breakfast to Go}% NAME
 {Three \glsfmtplural{ogre} awaken and need food}% SUMMARY
+\stepcounter{sqNo}
 
 When the \glspl{ogre} awaken initially, they feel hungry, but still bound by their oaths.
 They ask the troupe for food, and will follow them anywhere, or go anywhere they point to.
@@ -160,9 +163,11 @@ The goblins would awaken the \glspl{ogre} with screeches and wails held in for h
 If the giant snail population decreases, mark one of the \glspl{segment} as ready (`\sqr') after a week.
 If the goblins become agitated by finding \pgls{sepulchre} destroyed, mark \pgls{segment} as ready immediately.
 
+\setcounter{sqNo}{-1}
 \sqpart[\squash]{ravencops}% AREA
 {Goblins Don't Share}% NAME
 {Goblins eat animal, root, and berry in \glsfmttext{ravencops}}% SUMMARY
+\stepcounter{sqNo}
 
 \Gls{foraging} in \gls{ravencops} rises to \tn[16] as the goblins pick the forest bare and hunt everything that moves.
 
@@ -185,11 +190,11 @@ Pica hasn't eaten in two days, and hasn't eaten well in four.
   Make it legal -- make it a gift!
 \end{speechtext}
 
-\set{r3}{3}
-\enchantedGoblin[\npc{\F\N}{Pica}]%
-
 If the \glspl{pc} don't `gift' her some food, her strained oath snaps, and she becomes stupefied.
 She attacks with the \weaponName, but the first attack automatically fails, as she receives the crushing weight of a -5~Penalty to thinking straight.
+
+\set{r3}{3}
+\enchantedGoblin[\npc{\F\N}{Pica}]%
 
 \sqpart{ravencops}% AREA
 {Rebalancing Grass}% NAME
