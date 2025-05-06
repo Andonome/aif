@@ -9,7 +9,7 @@ Whenever the \glspl{pc} approach, \pgls{segment} activates; they do not have to 
 Nobody near \gls{oathtower} can breathe a wisp of mana, because mana always heads towards the largest vacuum.
 And since \gls{MindElder} spends so many \glsentrylongpl{mp} each day, he usually has the most missing by the end; so everything flocks towards him, leaving the air feeling stagnant even in a storm.
 
-\printSideQuestsInRegion{oathtower}
+\printThreadsInRegion{oathtower}
 
 \begin{multicols}{2}
 
@@ -175,7 +175,7 @@ If the \glspl{pc} give him a good reason to speak, he speaks with one alone, in 
   \input{config/spells/Mind2.tex}
 ]
 
-\sidequest[plateauGardens,ravencops,oathtower,sunway]{Oathless Lovers}
+\thread[plateauGardens,ravencops,oathtower,sunway]{Oathless Lovers}
 \label{oathlessLovers}
 
 \noindent
@@ -194,13 +194,13 @@ They need sixteen in total:
 \null
 \begin{itemize}
   \item
-  \Repeat{4}{\sqn}\quad 4 Earth \glspl{ingredient}
+  \Repeat{4}{\sgn}\quad 4 Earth \glspl{ingredient}
   \item
-  \Repeat{4}{\sqn}\quad 4 Fire \glspl{ingredient}
+  \Repeat{4}{\sgn}\quad 4 Fire \glspl{ingredient}
   \item
-  \Repeat{4}{\sqn}\quad 4 Water \glspl{ingredient}
+  \Repeat{4}{\sgn}\quad 4 Water \glspl{ingredient}
   \item
-  \Repeat{4}{\sqn}\quad 4 Fate \glspl{ingredient}
+  \Repeat{4}{\sgn}\quad 4 Fate \glspl{ingredient}
 \end{itemize}
 
 \begin{exampletext}
@@ -211,7 +211,7 @@ They need sixteen in total:
 The couple won't be able to explain the \gls{spell}, except in abstract terms (`united, entirely', `the grand crossing of perspective').
 See `\nameref{grandSpell}' \vpageref{grandSpell} for the complete description.
 
-\sqpart[\gls{vlg}]{oathtower}% AREA
+\segment[\gls{vlg}]{oathtower}% AREA
 {Groaning \Glsfmtplural{sepulchre}}% NAME
 {The troupe must walk quietly and avoid the groaning sepulchres}% SUMMARY
 
@@ -265,7 +265,7 @@ Farting is also banned, as it makes the goblins giggle, which then wakes the \gl
   \npcQuote{the road goes ever on, unless it doesn't.
   `Dead end', they call it}]
 
-\sqpart[\gls{vlg}]{ravencops}% AREA
+\segment[\gls{vlg}]{ravencops}% AREA
 {Goblins in the Quarry}% NAME
 {\Glsfmttext{romeo} should be working, but needs to complete the perfect poem}% SUMMARY
 \label{goblinQuarry}
@@ -334,7 +334,7 @@ They have taken an oath to dig rocks, and they will continue to dig until someth
 they notice \gls{romeo} using the Force \gls{sphere} to make the goblins' rocks lighter.%
 \footnote{This tells the \glspl{pc} that \gls{romeo} understands the Force \gls{sphere}, which indicates a link to \gls{juliet}.}
 
-\sqpart[\gls{vlg}]{sunway}% AREA
+\segment[\gls{vlg}]{sunway}% AREA
 {Sunlit Glyphs}% NAME
 {Elven glyphs, carved in wood, describe a song of ritual magic}% SUMMARY
 \label{sunwayGlyphs}
@@ -390,7 +390,7 @@ requires an \roll{Intelligence}{Academics} roll.
 \end{boxtable}
 
 
-\sqpart{plateauGardens}% AREA
+\segment{plateauGardens}% AREA
 {\Glsfmttext{juliet}'s Flowers}% NAME
 {Once dry, each works as a Force \glsfmttext{talisman}}% SUMMARY
 
@@ -419,7 +419,7 @@ Check the details \vpageref{flowerOfEnlightenment}.
 (and potentially deliver a poem, written \vpageref{goblinQuarry}) she asks them to deliver a message back to \gls{romeo} (although she does not know his name).
 
 
-\sqpart{oathtower}% AREA
+\segment{oathtower}% AREA
 {Wherefore Not?}% NAME
 {\Glsfmttext{MindElder} tells \glsentrytext{romeo}, `there is no love without an oath'}% SUMMARY
 
@@ -455,7 +455,7 @@ The \glspl{pc} may try to change his mind, but it won't be easy.
 \Gls{romeo} reveals he has collected one \gls{ingredient} of each type required (Earth, Fire, Water, and Fate) from a storage room in \gls{oathtower}.
 The plan requires twelve more \glspl{ingredient} in total.
 
-\sqpart{sunway}% AREA
+\segment{sunway}% AREA
 {Insider Knowledge}% NAME
 {\Glsfmttext{romeo} gathers \glsfmtplural{ingredient}, while talking about the problems with goblins}% SUMMARY
 
@@ -479,7 +479,7 @@ Otherwise, he hides.
   We do not want to see the goblins abandoned, in great number, to their own hunger.
 \end{speechtext}
 
-\sqpart{sunway}% AREA
+\segment{sunway}% AREA
 {Change of Plan}% NAME
 {\Glsfmttext{juliet} has figured out the spell will not work unless the troupe engineer an artificial \gls{flood}}% SUMMARY
 
@@ -491,7 +491,7 @@ and engineer \pgls{flood}, perhaps with a damn.
 How the \glspl{pc} engineer \pgls{flood} depends on them, but \gls{shadepaths}'s high walls, and secret streams allows them more opportunities than most locations.
 Whatever their plan, it should be abstracted to \pgls{natural}; and if the roll fails, they will simply have to change their methods and tools to provide bigger bonuses.
 
-\sqpart[\squash]{ravencops}% AREA
+\segment[\squash]{ravencops}% AREA
 {The Goblin Hunting Party}% NAME
 {A dozen goblins hunt for \glsfmttext{romeo}}% SUMMARY
 
@@ -505,7 +505,7 @@ The goblins speak frankly with the troupe about their mission, and will not devi
 \paragraph{If the grand plan has begun,}
 then \gls{romeo} will have used this time to collect one more \gls{ingredient} of each type required.
 
-\sqpart{sunway}% AREA
+\segment{sunway}% AREA
 {The Grand Spell}% NAME
 {The two unite the elves, goblins, \glsfmtplural{pc}, and snails as one}% SUMMARY
 \label{grandSpell}
