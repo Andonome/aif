@@ -134,6 +134,13 @@ inflicts \pgls{ep}
 
 \wayOut{The slender crack leads immediately to the}{wormTunnel}
 
+\begin{boxtext}
+  Once off the bridge, the smell of goblin-shit haunts your noses.
+  It covers the ground, and drips off the tall pile of stones to the side, then stops suddenly; the passage beyond seems clear.
+
+  Leaning on the wall, you discover a gap in the wall the size of a window.
+\end{boxtext}
+
 \mapentry[standingTunnel]{Standing Tunnel}
 
 \begin{exampletext}
@@ -146,11 +153,6 @@ inflicts \pgls{ep}
   Since then, they use the tunnel only as a toilet.
 \end{exampletext}
 
-\begin{boxtext}
-  Once off the bridge, the smell of goblin-shit haunts your noses.
-  It covers the ground, and drips off the tall pile of stones to the side, then stops suddenly; the passage beyond seems clear.
-\end{boxtext}
-
 \paragraph{Carbon monoxide}
 lays in the low parts of the tunnel, around waist-height to a human.
 It won't do any harm to walking humans, but if a gnome or dwarf enter, they will start to feel sleepy, then die.
@@ -162,7 +164,14 @@ It died weeks ago, but has no marks -- no cuts or bruises -- and the corpse has 
 The second warning sign is a dead gnome (20~\glspl{step} down the passage).
 He has no items, as his companions picked up his bag before moving on.
 
-If the players fail to heed the warning signs, any short characters will die first.
+\paragraph{If the players fail to heed the warning signs,}
+\glspl{pc} familiar with caves might get a strange feeling.
+The troupe can roll \roll{Intelligence}{Caving} (\tn[13]) to at least get the impression that they should not linger.
+
+\paragraph{Failure}
+means gnomes, dwarves, and anyone who rests will accrue invisible \glspl{ep} -- you should note the \glspl{ep} without telling them, just apply any Penalty secretly by adding it to every \gls{tn}.
+Soon after the \glsentrylongpl{ep} begin, the character dies, suddenly, and quietly.
+Then anyone kneeling down to inspect them dies too.
 
 \paragraph{After a mile,}
 the passage ascends.
@@ -189,15 +198,18 @@ One a failure, they also become stuck, and others will have to take time to help
 }
 
 \paragraph{Resting}
-requires an \roll{Intelligence}{Caving} roll (\tn[10]).
-Failure means the troupe waste \pgls{interval} as dust messes up their food.
+requires an \roll{Intelligence}{Caving} roll (\tn[8]).
+Failure means the character does not manage to remove \pgls{ep} after the rest.
 
 \begin{boxtext}
-  Everyone at the back finds they're on sharp rocks and can't lie down properly, and has to move.
+  Everyone at the back finds the sharp rocks stop them resting, and they have to move.
   Those in the middle try to clear the fist-sized rocks, but more keep falling down from little crevices all around, so you try further down the tunnel, but then everyone at the front contracts a headache from lying with their legs above their heads on a downward slope.
   The group repacks half-eaten \glspl{ration} and moves further into the tunnel, but the next stretch is somehow worse.
-  Hours have passed without rest.
+  Over an hour has passed, and nobody has managed to rest.
 \end{boxtext}
+
+The \gls{natural} may let some rest, but not others.
+In this case, the troupe can push on (without wasting \pgls{interval}), or remain, and let some rest while the rest fail to find a comfy spot.
 
 \paragraph{Once they near the exit,}
 they must shuffle out slowly, with their head poking out.
@@ -206,8 +218,11 @@ At this point, a goblin lying in wait attacks with an automatic \gls{vitalShot}.
   The only clue about the danger, is the gentle sound of the nearby river.
 \fi%
 
-\wayOut{The goblin stands in the open, in the same room as the}{waterMaze}
-If a single \glspl{pc} approaches while upright and ready for him, he flees towards the exit there.
+\wayOut{The goblin stands in the open, next to}{waterMaze}
+If the \glspl{pc} made not attempt to remain quiet, he flees (and they will hear the splash).
+\iftoggle{verbose}{%
+  If they want to exit silently (and have no light), they can roll \roll{Dexterity}{Stealth} at \tn[10] plus the goblin's \roll{Wits}{Vigilance}.
+}{}
 
 \playCommentaryPuddle
 
