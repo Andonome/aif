@@ -115,14 +115,10 @@ The boulder can take up to \pgls{weight} of 11 before it falls, and the rope can
 \mapentry[secondBridge]{Last Bridge}
 
 \begin{exampletext}
-  The second old mining bridge has degraded almost as much as the first, and covers a wider area -- a full four \glspl{step} across, and one \gls{step} high.
+  The second old mining bridge has degraded almost as much as the first, so the goblins walk across carefully, and one at a time.
 \end{exampletext}
 
-Anyone stepping on the bridge with \pgls{weight} of 10 or more will make it break, and fall into the water below.
-Goblins walk across it, one at a time, without damaging it.
-
-On the other side, the tunnel continues, and a crack appears in the wall.
-
+Anyone stepping on the bridge with a total \gls{weight} of 10 or more will break it.
 
 \paragraph{Falling into the river's frigid water}
 inflicts \pgls{ap}
@@ -179,22 +175,29 @@ The \glspl{pc} will probably have a difficult time here, and the goblins know it
 The narrow tunnel extends a full mile before the troupe can stretch their arms again, and it counts as two miles due to the cramped conditions.
 
 \paragraph{To squeeze through,}
-each player rolls \roll{Dexterity}{Caving}, at \tn[7] plus double their character's Strength Bonus, plus 2 if wearing armour.
+each player rolls \roll{Dexterity}{Caving}.
+The \gls{tn} equals 5 plus the character's Strength and \gls{dr}; so characters with Strength~-1 roll at \tn[4], while those with Strength~+2 and armour with \gls{dr}~3 roll at \tn[10].
 
 On a tie, characters gain 2~\glspl{ep} from the shuffling and scrapes.
-One a failure, they also become stuck, and others will have to help them.
-
-Setting up a rope to help them requires another character to make their roll for them again, with +1 to the \glsentrylong{tn}.
+One a failure, they also become stuck, and others will have to take time to help.
 
 \mapPic{t}{cave_6}{
   \ref{standingTunnel}/95/64,
   \ref{wormTunnel}/95/21,
+  {\normalsize \roll{Dexterity}{Caving} (\tn[5] + Strength + \glsfmttext{dr})}/75/09,
   \ref{waterMaze}/05/18,
 }
 
 \paragraph{Resting}
-requires an \roll{Intelligence}{Caving} roll (\tn[10]), because getting people to a comfortable spot where they can rest, without standing, while clearing the rocks away, won't work.
-Failure means the troupe waste \pgls{interval} trying to relax and eat.
+requires an \roll{Intelligence}{Caving} roll (\tn[10]).
+Failure means the troupe waste \pgls{interval} as dust messes up their food.
+
+\begin{boxtext}
+  Everyone at the back finds they're on sharp rocks and can't lie down properly, and has to move.
+  Those in the middle try to clear the fist-sized rocks, but more keep falling down from little crevices all around, so you try further down the tunnel, but then everyone at the front contracts a headache from lying with their legs above their heads on a downward slope.
+  The group repacks half-eaten \glspl{ration} and moves further into the tunnel, but the next stretch is somehow worse.
+  Hours have passed without rest.
+\end{boxtext}
 
 \paragraph{Once they near the exit,}
 they must shuffle out slowly, with their head poking out.
@@ -290,7 +293,7 @@ Climbing back requires a \roll{Speed}{Athletics} roll (\tn[10]).
 \mapentry[waterMaze]{Drowned Pass}
 
 \begin{exampletext}
-  This passage was once a nice, wide area, with a simple passage downward, to a series of small tunnels, one of which leads out to the `\nameref{hungryHall}'.
+  This passage was once a normal, downward incline, to a series of small tunnels, one of which leads out to the `\nameref{hungryHall}'.
   Since then, a minor earthquake has changed the ground just enough to let the river drip into the tunnel, leaving it completely underwater.
 \end{exampletext}
 
@@ -305,11 +308,7 @@ Whoever enters the frigid waters instantly gains \pgls{ep}, and the exertion of 
 
 Remember to ask about the backpacks every time a character enters.
 Their \glspl{ration} almost certainly do not have waterproof coverings, nor do their tinder boxes.
-
-The torches will still light fine, even after becoming wet.
-However, the water in the torch's wood will mean that torch creates a constant hiss from the water turning to steam.
-This will prevent the troupe moving silently while they carry those torches.
-
+The \glspl{torch}, however, still light fine, even while soaking.
 
 \paragraph{Once out of the water and rested,}
 the character can remove all \glspl{ep} from holding their breath in the water, but not the \gls{ep} gained for swimming\ifnum\value{temperature}=2\else, or the \glspl{ep} for entering freezing waters\fi.
