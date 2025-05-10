@@ -65,10 +65,6 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 
 \wayOut{Inside the hole under the bridge, a crack reveals}{gentlePassage}
 
-Entering the hole requires an \roll{Intelligence}{Caving} roll (\tn[7]) to understand a safe route down.
-Once \pgls{pc} explains the hand-holds and where to place the legs, anyone can descend safely.
-Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribute}.
-
 \smolMapPic{cave_3}{
   {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
   {\normalsize\glsfmttext{weight}~13: collapse}/57/75,
@@ -76,6 +72,10 @@ Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribut
   \ref{firstBridge}/49/57,
   \ref{gentlePassage}/92/05,
 }
+
+Entering the hole requires an \roll{Intelligence}{Caving} roll (\tn[7]) to understand a safe route down.
+Once \pgls{pc} explains the hand-holds and where to place the legs, anyone can descend safely.
+Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribute}.
 
 \mapPic{b}{cave_5}{
   {\normalsize\glsfmttext{weight}~10: collapse}/67/24,
@@ -86,6 +86,12 @@ Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribut
   {\normalsize Climb (10)}/43/70,
   \ref{wormTunnel}/58/02,
   \ref{standingTunnel}/00/05,
+}
+
+\smolMapPic{cave_4}{
+  {\large\glsfmttext{weight}~11: fall}/71/80,
+  \rotatebox{-90}{\large\glsfmttext{weight}~14: snap!}/20/50,
+  \ref{ropeDown}/42/92,
 }
 
 \mapentry[ropeDown]{Rope \& Cliff}
@@ -104,12 +110,6 @@ This may look like a trap, but it isn't; the goblins simply use the rope to clim
 The boulder can take up to \pgls{weight} of 11 before it falls, and the rope can take up to \pgls{weight} of 14 before it snaps (this includes items, as usual).
 
 \wayOut{The wide cavern leads to}{secondBridge}
-
-\smolMapPic{cave_4}{
-  {\large\glsfmttext{weight}~11: fall}/71/80,
-  \rotatebox{-90}{\large\glsfmttext{weight}~14: snap!}/20/50,
-  \ref{ropeDown}/42/92,
-}
 
 \mapentry[secondBridge]{Last Bridge}
 
@@ -228,6 +228,7 @@ If the \glspl{pc} made not attempt to remain quiet, he flees (and they will hear
   If they want to exit silently (and have no light), they can roll \roll{Dexterity}{Stealth} at \tn[10] plus the goblin's \roll{Wits}{Vigilance}.
 }{}
 
+\Needspace{5\baselineskip}
 \mapentry[gentlePassage]{Soft Passage}
 
 This path, like the entrance, has had a little cave-in, and will have more if anyone large walks through it.
@@ -332,7 +333,7 @@ the character can remove all \glspl{ep} from holding their breath in the water, 
 
 \wayOut{Once out the other side, the troupe have entered}{hungryHall}
 
-\mapPic{b}{cave_7}{
+\mapPic{t}{cave_7}{
   \ref{hungryHall}/38/93,
   {\normalsize\roll{Speed}{Caving} (\tn[9])}/10/97,
   \ref{gas}/28/69,
@@ -347,8 +348,6 @@ the character can remove all \glspl{ep} from holding their breath in the water, 
   {\normalsize\roll{Speed}{Vigilance}}/85/05,
   \ref{stalagmites}/90/19,
 }
-
-\vspace{14em}
 
 \mapentry[hungryHall]{Hungry Hall}
 
@@ -418,7 +417,7 @@ The goblins abandoned this narrow, meandering maze when \pgls{hulk} blocked the 
 
 Finding that exit needs an \roll{Intelligence}{Caving} roll at \tn[10].
 Each failure adds a pointless mile to the journey, but decreases the \gls{tn} by~1 for the next roll.%
-\footnote{The players don't need to stick with the same \gls{natural}, because each time, the situation and location has changed.}
+%\footnote{The players don't need to stick with the same \gls{natural}, because each time, the situation and location has changed.}
 
 \begin{boxtext}
   A tunnel cuts across the current one, letting you divert left or right.
@@ -434,7 +433,7 @@ the oxygen in the tunnels will deplete, causing \gls{hypoxia}.
 This will leave the party with a real problem -- tiredness, and hallucinations can follow.
 
 If the troupe avoid lighting any torch in the narrow tunnel, they will have to try \gls{blackWalking}.%
-\footnote{This \glsentrydesc{blackWalking}.}
+%\footnote{This \glsentrydesc{blackWalking}.}
 
 \begin{boxtext}
   You stop for a small breather, and smell the stuffy air, then notice little goblinoid silhouettes up ahead or behind.
@@ -450,7 +449,6 @@ If they ask about the odd phrasing, tell them what they're having trouble rememb
 
 \begin{exampletext}
   The great \gls{hulk}%
-  \exRef{judgement}{Judgement}{umber_hulk}
   \ifnum\value{temperature}=0
     lies in hibernation, dreaming of laying eggs and eating goblins.
   \else
@@ -460,7 +458,7 @@ If they ask about the odd phrasing, tell them what they're having trouble rememb
 \end{exampletext}
 
 \paragraph{If the troupe approach from \stateArea{darkTunnel},}
-\ifnum\value{temperature}=0
+\ifnum\value{temperature}=0%
   they will encounter the \gls{hulk} by touch.
 
   \begin{boxtext}
@@ -469,8 +467,8 @@ If they ask about the odd phrasing, tell them what they're having trouble rememb
   \end{boxtext}
 
   The \gls{hulk} wakes within a couple of \glspl{round}.
-\else
-  the \gls{hulk} will begin sniffing silently and shuffling loudly around the tiny entrance.
+\else%
+  the \gls{hulk} sniffs silently and shuffles loudly around the tiny entrance.
 
   \begin{boxtext}
     You hear crunching ahead, like someone shuffling a cart around a pile of rocks.
