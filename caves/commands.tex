@@ -252,7 +252,7 @@
 
 }
 
-\newcommand\playCommentaryDrowning[1][b]{
+\newcommand\playCommentaryDrowning[1][t]{
   \playCommentary[#1]{
     \Pgls{pc} has entered the \nameref{waterMaze} (\vpageref{waterMaze}).
 
@@ -306,6 +306,58 @@
     This simple maze is the same shape as the letter `H', but in the frozen darkness, it provides a nasty enemy.
     The player will have to decide who goes next, and plan their routes ahead.
     Each one will enter blind, and have to remember where they should scout next.
+    \par
+    \vfill\null
+  }
+}
+
+\newcommand\playCommentaryTeamwork[1][b]{
+  \playCommentary[#1]{
+    The troupe want to find an exit in the `\nameref{hungryHall}' (\vpageref{hungryHall}), but first, they want to rest.
+    \begin{description}
+      \item[\Gls{gm}:]
+      Sitting by the fire feels nice, and soon everything feels dry again, though you do feel light-headed.
+      \dicef{\value{r6}}
+      Everyone remove \pgls{ep} and regain \arabic{r6}~\glspl{fp}.
+
+      You search together for a way out in the darkness, feeling dizzy as you stand.
+      Roll \roll{Speed}{Caving} at \glsentrylong{tn}~nine.
+      \item[Player 1:]
+      \twoDice{3}
+      I have minus one Speed, so the total is `two'.
+      \item[Player 2:]
+      I have plus four in total so\ldots
+      \twoDice{10}
+      Got it!
+      \item[\Gls{gm}:]
+      I'm afraid we just use the same \gls{natural} for everyone, so your total is seven.
+      \item[Player 3:]
+      I'm going to put out the fire before we suffocate.
+      \item[\Gls{gm}:]
+      Searching in the dark is \glsentrylong{tn}~fourteen.
+      \item[Player 1:]
+      Okay, so let's not do that.
+      What if we split up and look?
+      \item[\Gls{gm}:]
+      Splitting up means you're working together, so that's \pgls{bandAct}.
+      The next character adds half their score to the total.
+      \item[Player 3:]
+      I have a plus one in total.
+      \item[\Gls{gm}:]
+      Round it up to plus one.
+      \item[Player 4:]
+      I have a plus two.
+      \item[\Gls{gm}:]
+      The next person adds a quarter of their bonus, so that's another plus one.
+      That's a tie.
+      \item[Player 3:]
+      I'm putting the fire out by handing everyone a flaming log.
+      We've all take our armour off, so we can carry them in the armour.
+      \item[\Gls{gm}:]
+      It's only embers, but it's worth another plus one, so that beats the \glsentrylong{tn}.
+    \end{description}
+  }{
+    \Glspl{bandAct} can be ordered any way the players like, which often lets them pull out another `plus one', if they work together.
   }
 }
 
