@@ -32,6 +32,14 @@ Climbing down requires a \roll{Dexterity}{Athletics} at \tn[14].%
 \footnote{If a player insists on attempting this check, you should roll for them, and tell them if they succeed or fail.  The other players will only find out if their characters can climb down later -- they should not know their chances of success by looking at the \gls{natural}.}
 Failure means death.
 
+\smolMapPic{cave_3}{
+  {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
+  {\normalsize\glsfmttext{weight}~13: collapse}/57/75,
+  \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
+  \ref{firstBridge}/49/57,
+  \ref{gentlePassage}/92/05,
+}
+
 \mapentry[firstBridge]{First Bridge}
 
 \begin{exampletext}
@@ -64,14 +72,6 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 \wayOut{Past the bridge, after a mile of fairly smooth cavern floor, the troupe find}{ropeDown}
 
 \wayOut{Inside the hole under the bridge, a crack reveals}{gentlePassage}
-
-\smolMapPic{cave_3}{
-  {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
-  {\normalsize\glsfmttext{weight}~13: collapse}/57/75,
-  \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
-  \ref{firstBridge}/49/57,
-  \ref{gentlePassage}/92/05,
-}
 
 Entering the hole requires an \roll{Intelligence}{Caving} roll (\tn[7]) to understand a safe route down.
 Once \pgls{pc} explains the hand-holds and where to place the legs, anyone can descend safely.
@@ -178,7 +178,6 @@ Various twists mean it continues longer than its neighbouring tunnel, making it 
 
 \playCommentaryAftermath[t]
 \playCommentaryPuddle[t]
-\playCommentaryDrowning[t]
 
 \mapentry[wormTunnel]{Worm Tunnel}
 
@@ -228,7 +227,8 @@ If the \glspl{pc} made not attempt to remain quiet, he flees (and they will hear
   If they want to exit silently (and have no light), they can roll \roll{Dexterity}{Stealth} at \tn[10] plus the goblin's \roll{Wits}{Vigilance}.
 }{}
 
-\Needspace{5\baselineskip}
+\playCommentaryDrowning[t]
+\Needspace{7\baselineskip}
 \mapentry[gentlePassage]{Soft Passage}
 
 This path, like the entrance, has had a little cave-in, and will have more if anyone large walks through it.
