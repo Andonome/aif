@@ -220,21 +220,21 @@
 }
 
 
-\newcommand\enchantedMapExample[1][b]{
+\newcommand\enchantedMapExampleI[1][b]{
   \renewcommand\csComments{
-    \draw[thick, dashed, black] (3.6,1.1)
+    \draw[densely dotted, dashed, gray] (3.6,1.1)
     -- (3.1,2.5) node[anchor=east]{\outline{\Glsfmttext{village}}}
     -- (4,3.5) node[anchor=south]{\outline{Follow that snail!}}
     -- (8,3) node[anchor=north]{\gls{night} \outline{Another big snail\ldots}}
     -- (9,4) node[anchor=south]{\gls{morning} \outline{Who's this goblin?}}
-    -- (11,3) node[anchor=north]{\outline{Are we lost?}}
+    -- (11,4) node[anchor=north]{\outline{Are we lost?}}
     -- (13,5.3) node[anchor=west]{\gls{afternoon} \outline{\Glsfmttext{sepulchre}}}
     -- (13.2,6.2) node[anchor=west]{\outline{\Glsfmttext{oathtower}}}
     -- (12,6.8) node[anchor=south]{\gls{evening} \outline{Quarry}}
     -- (11.2,6) node[anchor=north]{\outline{Dead starling}}
     -- (10.7,6.1) node[anchor=south]{\gls{night} \outline{Hi, \Glsfmttext{dickhead}\ldots}}
     -- (8.7,5.5) node[anchor=south]{\outline{Stairs!}}
-    -- (8,5.5) node[anchor=north]{\outline{Hi, \Glsfmttext{LifeElder}}}
+    -- (8,5.5) node[anchor=north]{\outline{Hello, \Glsfmttext{LifeElder}!}}
     ;
   }
 
