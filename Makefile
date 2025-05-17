@@ -14,6 +14,7 @@ DEPS += commands.tex
 dependencies += magick
 
 DEPS += images/extracted/sundered.jpg images/extracted/enchanted.jpg $(wildcard caves/*.tex) $(wildcard fey/*.tex) $(wildcard *.tex)
+DEPS += qr.tex 
 
 include config/vars
 
@@ -25,6 +26,7 @@ config/rules.pdf:
 
 .PHONY: goblins
 goblins: $(GOBLINS).pdf ## Oneshot cavern-based module
+$(DROSS)/caves.pdf: $(DEPS)
 $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/ex_cs.pdf config/rules.pdf
 	pdfjam --pdftitle $(GOBLINS) --pdfsubject "BIND RPG" \
 	--pdfkeywords "RPG,TTRPG,roleplaying" \
@@ -33,7 +35,7 @@ $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/ex_cs.pdf config/rules.pdf
 
 .PHONY: shellstack
 shellstack: $(ELVES).pdf ## Elven mayhem
-$(DROSS)/fey.pdf: qr.tex $(DEPS)
+$(DROSS)/fey.pdf: $(DEPS)
 $(ELVES).pdf: $(DROSS)/fey.pdf config/rules.pdf
 	pdfunite $^ $@
 
