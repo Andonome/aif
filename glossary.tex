@@ -314,7 +314,7 @@
 
 \newcommand{\dickhead}{
   \Person{\NPC{\glsentrysymbol{dickhead}}{\Glsentrytext{dickhead}}{loose pony-tail, fur coat, with muddy base}{picks teeth with old bone}{to get rich and retire}}%
-    {{1}{2}{2}}% BODY
+    {{2}{2}{2}}% BODY
     {{-1}{1}{-2}}% MIND
     {
       \npcQuote{%
@@ -331,20 +331,20 @@
         \addtocounter{equipmentWeight}{2}
     }% SKILLS
     {\charge, \unstoppable}% KNACKS
-    {\smolCrossBow, quarrels, tinderbox, \lootJewellery, \rations, \rations and \rations}% EQUIPMENT
+    {\smolCrossBow, 12~quarrels, tinderbox, \lootJewellery, \rations, \rations, and \rations}% EQUIPMENT
     {}% ABILITIES
 }
 
 \newcommand{\dickheadReborn}[1]{
   \Person{\NPC{\M\R\Hu}{\Glsentrytext{dickhead}}{human head inside messy tentacles, sprawled about the floor like dropped noodles}{picks teeth with old fish-bone}{to enjoy retirement}}%
-    {{3}{2}{0}}% BODY
+    {{3}{2}{2}}% BODY
     {{-1}{1}{-2}}% MIND
     {
       \npcQuote{%
         I like it here.
         I finally got my retirement.
         \Gls{MindElder} is amazing.
-        He's so powerful, and he feeds me fish sometimes%
+        He's \emph{so} powerful, and he feeds me fish sometimes%
       }
       \setcounter{Projectiles}{2}
       \setcounter{Brawl}{1}
