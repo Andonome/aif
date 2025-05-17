@@ -60,13 +60,24 @@ However, \glspl{segment} from \nameref{goblinsRise} remain active.
 \setcounter{segNo}{-1}
 \segment[\squash]{ravencops}% AREA
 {Breakfast to Go}% NAME
-{Three \glsfmtplural{ogre} awaken and need food}% SUMMARY
+{Two \glsfmtplural{ogre} awaken and need food}% SUMMARY
 \stepcounter{segNo}
 
 When the \glspl{ogre} awaken initially, they feel hungry, but still bound by their oaths.
 They ask the troupe for food, and will follow them anywhere, or go anywhere they point to.
 
-\enchantedOgre[\npc{\T[3]\M\F\N}{\Glsfmtplural{ogre}}]
+\enchantedOgre[\NPC{\M\N}{`The Grave'}%
+  {slate-coloured skin, with bright-blue eyes}% DESCRIPTION
+  {stretches calves}% MANNERISM
+  {deer with cheese}% WANTS
+  \npcQuote{only asking, only asking\ldots}]
+
+\enchantedOgre[\NPC{\F\N}{Kerning}%
+  {bra made from human faces (it helps with running, not modesty)}% DESCRIPTION
+  {chews leaves, then spits them out}% MANNERISM
+  {\gls{crawler} soup}% WANTS
+  \npcQuote{the road goes ever on, unless it doesn't.
+  `Dead end', they call it}]
 
 \paragraph{Any goblin present}
 leads them to food (perhaps in \gls{oathtower}, or the Icebox House \vpageref{iceboxHouse}).
