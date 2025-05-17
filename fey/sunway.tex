@@ -38,7 +38,7 @@ and everyone standing close receives the die just rolled as Damage too.
 \noindent
 Soon after the troupe left their \gls{broch} to find the source of the giant snail, \gls{susjot} sent \gls{dickhead} out on the same mission, alone, because nobody at the \gls{broch} likes \gls{dickhead}.
 
-\segment{sunway}% AREA
+\segment[\gls{vlg}]{sunway}% AREA
 {An Old Acquaintance}% NAME
 {\Glsfmttext{dickhead} arrives to scope out the situation}% SUMMARY
 
@@ -64,6 +64,27 @@ as he sneaks up needs a \roll{Wits}{Vigilance} roll
 at \gls{tn}~\arabic{track}.
 
 \Gls{dickhead} soon leaves, telling everyone not to follow him, as they'll just make noise.
+
+\label{sunwayAirIngredients}
+\paragraph{Searching for the \gls{griffin} nest}
+requires a \roll{Wits}{Survival} roll at \tn[12].
+\ifcase\value{temperature}%
+  It's empty, since \glspl{griffin} don't build nests in snow, but \pgls{griffin} remains.
+
+  \griffin[\npc{\A}{Hungry \Glsfmttext{griffin}}]
+\or%
+  It lies half a mile South, with a single \gls{griffin}.
+
+  \griffin[\npc{\A}{Lonely \Glsfmttext{griffin}}]
+\or
+  It lies half a mile North, with two \glspl{griffin}.
+
+  \griffin[\npc{\T[2]\A}{\Glsfmtplural{griffin}}]
+\else
+  It lies half a mile North, with two \glspl{griffin} and three babies.
+
+  \griffin[\npc{\T[2]\A}{\Glsfmtplural{griffin}}]
+\fi
 
 \segment{shadepaths}% AREA
 {Peeping Woodsman}% NAME
