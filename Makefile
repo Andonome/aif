@@ -35,7 +35,7 @@ $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/ex_cs.pdf config/rules.pdf
 
 .PHONY: shellstack
 shellstack: $(ELVES).pdf ## Elven mayhem
-$(DROSS)/fey.pdf: qr.tex $(DEPS)
+$(DROSS)/fey.pdf: qr.tex $(DEPS) $(wildcard fey/*.tex) glossary.tex
 $(ELVES).pdf: $(DROSS)/fey.pdf config/rules.pdf
 	pdfunite $^ $@
 
