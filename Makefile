@@ -13,7 +13,7 @@ DEPS += commands.tex
 
 dependencies += magick
 
-DEPS += images/extracted/sundered.jpg images/extracted/enchanted.jpg
+DEPS += images/extracted/sundered.jpg images/extracted/enchanted.jpg $(wildcard caves/*.tex) $(wildcard fey/*.tex) $(wildcard *.tex)
 
 include config/vars
 
@@ -22,8 +22,6 @@ config/vars:
 
 config/rules.pdf:
 	make -C $(@D) $(@F)
-
-$(DROSS)/caves.pdf: qr.tex
 
 .PHONY: goblins
 goblins: $(GOBLINS).pdf ## Oneshot cavern-based module
@@ -35,7 +33,7 @@ $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/ex_cs.pdf config/rules.pdf
 
 .PHONY: shellstack
 shellstack: $(ELVES).pdf ## Elven mayhem
-$(DROSS)/fey.pdf: qr.tex $(DEPS) $(wildcard fey/*.tex) glossary.tex
+$(DROSS)/fey.pdf: qr.tex $(DEPS)
 $(ELVES).pdf: $(DROSS)/fey.pdf config/rules.pdf
 	pdfunite $^ $@
 
