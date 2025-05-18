@@ -8,7 +8,7 @@ ELVES = Snail_Trails
 
 DEPS += $(wildcard caves/*.tex)
 DEPS += $(wildcard fey/*.tex)
-DEPS += $(wildcard ex_cs/*.tex)
+DEPS += $(wildcard characters/*.tex)
 DEPS += commands.tex
 
 dependencies += magick
@@ -27,7 +27,7 @@ config/rules.pdf:
 .PHONY: goblins
 goblins: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(DROSS)/caves.pdf: $(DEPS)
-$(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/ex_cs.pdf config/rules.pdf
+$(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/characters.pdf config/rules.pdf
 	pdfjam --pdftitle $(GOBLINS) --pdfsubject "BIND RPG" \
 	--pdfkeywords "RPG,TTRPG,roleplaying" \
 	$^ \
