@@ -38,7 +38,11 @@
       \else
         \set{Projectiles}{1}
       \fi
-      \set{Brawl}{rn1t2}
+      \ifodd\value{r6}
+        \set{Brawl}{r2}
+      \else
+        \set{Athletics}{r2}
+      \fi
       \set{Empathy}{r2}
       \addtocounter{Empathy}{-1}
       \set{Stealth}{r2c}
@@ -55,11 +59,7 @@
     \else%
       pet \rock%
     \fi}% EQUIPMENT
-    {\ifnum\value{noAppearing}<3%
-      \ifodd\value{r2}%
-        \mutation{r4b}%
-      \fi%
-    \fi}% ABILITIES
+    {}% ABILITIES
 }
 
 \newcommand{\enchantedHobgoblin}[1][\npc{\T[\arabic{r4t5}]\N}{\arabic{noAppearing} Hobgoblins}]{
@@ -92,9 +92,7 @@
         \goblinLight%
       \fi%
     }% EQUIPMENT
-    {\ifnum\value{noAppearing}=1%
-      \mutation{r4}%
-    \fi}% ABILITIES
+    {}% ABILITIES
 }
 
 \newcommand{\enchantedOgre}[1][\npc{\N\M}{\Glsfmttext{ogre}}]{
@@ -118,9 +116,7 @@
     }% SKILLS
     {}% KNACKS
     {}% EQUIPMENT
-    {\ifnum\value{noAppearing}=1
-      \mutation{r4}%
-    \fi}% ABILITIES
+    {}% ABILITIES
 }
 
 \newcommand{\stupifiedElf}[1][\npc{\T[\value{r2t4}]\El}{\arabic{noAppearing} Elves}]{
