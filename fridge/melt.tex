@@ -19,40 +19,207 @@ Just about every \gls{temple} in the city holds something down there, and none o
 
 \mapentry[fStairs]{Stairs}
 
-\mapentry[fWell]{Well}
+Descending these long stairs turns the noisy streets above into silence, and replaces the
+\ifnum\value{temperature}>2%
+  warm air with cold%
+\else%
+  \showTemperature\ winds with stagnant air%
+\fi.
 
-\mapentry[fBread]{Bread Storage}
+\mapentry[fHallStore]{Barrels in the Hallway}
+\begin{exampletext}
+  \Pgls{wheatGuild} \gls{landlord} has been experimenting with brewing larger, but has moved the barrels into the warm hallway too early.
+\end{exampletext}
+
+\begin{boxtext}
+  Creaks are coming from the left.
+  An alcove has two dozen barrels.
+  Wood occasionally creaks but nothing is moving.
+\end{boxtext}
+
+\mapentry[fLift]{Crank Shaft}
+
+\begin{exampletext}
+  The \gls{weaversGuild} lies directly above this room, so the \gls{templeOfFrost} commissioned a lift here.
+  They don't need a lift, but the \gls{templeOfPoison} \emph{really} need a lift for their barrels, so they can avoid the stairs.
+\end{exampletext}
+
+\begin{boxtext}
+  This circular room has nothing inside but a tapestry depicting a naked man with a peaceful smile and a black nose, sleeping in the snow.
+  It stretches from the ceiling down to a wheel on the wall.
+  The wheel has four metal rods sticking out, and one wedged into a hole in the ground.
+\end{boxtext}
+
+\paragraph{If the \glspl{pc} look behind the depiction of \gls{sable},}
+they find two chains reaching from the crank through the ceiling.
+
+\paragraph{Removing the rod and turning the crank}
+lowers a circular segment of the ceiling, and exposes the \gls{weaversGuild} above.
+
+\begin{boxtext}
+  The wheel spins with a rusty squeal, and light floods down from behind a circular segment of the ceiling.
+  Four chains lower the wooden disk gently.
+  A fire crackles above as six women look down, with stitches in their hand.
+  A dozen voices from above ask `who's that?', and `where are you going?', `is it cold down there?', `do you need a jumper?'.
+\end{boxtext}
+
+\paragraph{If the \glspl{pc} stop to chat,}
+they can gain useful information and free \gls{equipment} but lose time chatting.
+People who work in the \gls{weaversGuild} take in facts like a river drinks.
+Every day, everyone in the town needs their clothes washed, mended, adjusted or more clothes created.
+The \glspl{weaver} now think it's normal to recite recipes, while memorizing a weave pattern, by listening to an argument about how to start it.
+
+\begin{speechtext}
+  \rotatebox{-3}{Do you need \pgls{torch}?
+  We've got one here somewhere!}
+
+  Do you know about the barrels?
+  Very important, they said.
+  Dwarvish `special ale', they said.
+  Should be good.
+
+  {\small
+    Is that you, `\composeHumanName'?
+    I don't see so well now.
+  }
+
+  \vspace{-.5em}
+  {\large
+    Mind the dragon!
+    We don't want you to get \emph{too} roasty-toasty.
+  }
+
+  That dragon's not real!
+  Did you lot hunt any \gls{griffin} recently?
+  It's just that we could use some parts soon.
+  I got this new preservation technique\ldots
+
+  \vspace{-.3em}
+  \rotatebox{5}{Mind ye shut that hatch!}
+\end{speechtext}
+
+The \glspl{weaver} happily gift the \glspl{pc} anything they might reasonably have to-hand.
+Each item costs $1D6$~\glspl{ap} while someone locates it and passes it down to the troupe.
+
+\paragraph{Before the \glspl{pc} leave}
+the \glspl{weaver} \emph{demand} that they crank the floor back up so they don't have to worry about any \glspl{monster} coming up.
+
+\begin{speechtext}
+  We're not light the fire to listen to it, okay?
+
+  \vspace{-.4em}
+  \rotatebox{4}{Is that cunt with the silly hat down there?}
+
+  \vspace{-.4em}
+  \rotatebox{5}{\large I hope there is a dragon, so it eats him.}
+
+  \vspace{-.3em}
+  \rotatebox{-5}{\small That the one that called your one a `hussy'?}
+
+  \rotatebox{3}{\slshape I put some sugar in his caskets, that'll teach him\ldots}
+
+  Too right!
+  He puts his aprons in here again and I know the stitches I'll fray.
+
+  \vspace{-.3em}
+  \rotatebox{3}{\slshape Sootmill!  That's dirty.}
+
+  \vspace{-.3em}
+  \rotatebox{-2}{\sl Tell Cuspid I kept his tea warm!}
+
+\end{speechtext}
+
+\mapentry[fWheat]{Flour Drying Room}
+
+\Glspl{server} scatter dusty chalk in this room so it can absorb the moisture, and let the flour dry.
+The flour rests in wide-open trays, stacked on shelves.
+
+The room has no brush, so if \pgls{pc} enters, they cannot help their chalky footprints.
 
 \mapentry[fIngStore]{\Glsfmtplural{ingredient} Storage}
 
+The \gls{templeOfFrost} keeps \glspl{ingredient} for preservation \gls{alchemy} in here,
+\footnote{Fate and Air \glsfmtplural{ingredient}}
+along with steel cauldrons, glass tubes, books on \gls{alchemy} and other rare materials.
+Each one has \pgls{weight}~1 and could fetch around 5~\glspl{sp}.
+
+\paragraph{Opening the door}
+requires an \roll{Intelligence}{Crafts} check.
+
+\begin{boxtable}
+  \Gls{tn}~12 & The \gls{pc} slides the inner bolt across, cracks the door, then gently pulls it upward to avoid any squeak as it opens. \\
+  \Gls{tn}~10 & They open the door, and the rusting hinges squeal so loud that the \glspl{weaver} above \vref{fLift} hear the intrusion, and decide that the \glspl{pc} are the `wrong sort'. \\
+  \Gls{tn}~9 & They break the lock-mechanism while slamming the door open, which breaks a mirror and some half-prepared Fate~\glspl{ingredient}. \\
+\end{boxtable}
+
 \mapentry[fOffice]{Office}
 
-Stacks of catalogues hold information on every item within the Fridge, including the books in the giftschrank (room \vref{fGiftschrank}).
+The \gls{templeOfHate} have secured rights to record everything which passes through here to stop the other \glspl{temple} fighting.
+Stacks of catalogues hold information on every item within the fridge, including the books in the giftschrank (room \vref{fGiftschrank}).
 A ledger notes everyone who has passed in or out over the last five years.
 
 However, nothing contains any information on the hidden door in room \vref{fBarrels}.
 
+Finding specific information in the \nameref{fOffice} means sorting through the \gls{temple}'s peculiar style of record-keeping, and their own brand of short-hand notes.
+This isn't intentional encryption, which somehow makes it feel even worse.
+
+A player can roll \roll{Wits}{Academics} at \tn[14].
+A tie means they find something interesting, while beating the \gls{tn} means finding what they went looking for.
+
+\mapentry[fDip]{Chasm Barrels}
+
+\begin{exampletext}
+  These little runways, down to a natural cavity and back up again, make the worst part of anyone's day if they have to transport barrels through here.
+  Unfortunately, the \gls{wheatGuild} refuse to pay for a small bridge.
+\end{exampletext}
+
+The cavity has two-dozen barrels of cooking oil.
+If the oil ever spills and receives 8~Damage from fire, it combusts, inflicting $\dmg{-2}$~Damage.
+The fire continues to inflict the same Damage rolled, minus one, each \gls{round}.
+So `3~Damage' continues to burn for another 2~Damage on the second \gls{round}, then 1~Damage before dying down.
+\Gls{dr} only counts for the first \gls{round} as the oil seeps into the cracks while heating the armour.
+\iftoggle{verbose}{
+  \Glspl{fp} which mitigate the Damage reduce the Damage on subsequent \glspl{round}.
+}{}
+
+\mapentry[fSide]{Side Store}
+
+% What behind this secret door?  I don't know.  Perhaps it's a tragedy of the
+% commons, waiting to flood.  Perhaps everyone wants to leave 'substance X'
+% alone, with the secret door closed, so water does not Damage it.  But they all
+% know they can rescue a little of substance X if they open the door and grab
+% what they can.
+
+%%%%%%%%%%%%
+
+\mapentry[fBoat]{Boat by the Shore}
+
+Any \gls{pc} with at least 2 points in \roll{Wits}{Vigilance} spots a little boat, tethered to the shore.
+It can take a total \gls{weight} of~50.
+\iftoggle{verbose}{
+  \footnote{Characters have \pglsxtrshort{weight} equal to their maximum \glsfmtlongpl{hp} plus their items' \glsfmttext{weight}.}
+}{}
+
+\begin{boxtext}
+  The \gls{torch}-light shines on a canopy of stone pillars, standing in an underground lake.
+  The shore has no tide.
+  The water lies like a mirror.
+\end{boxtext}
+
+
 \mapentry[fGuardDoor]{Guard Post}
+
+\begin{exampletext}
+  When the cavern's thaw began, Renchkolt asked 
+\end{exampletext}
 
 In the distance, a man flails his arms, hoping to get someone's attention.
 
-\mapentry[fFuneraryVault]{Funerary Vault}
+\mapentry[fCrossbow]{Funerary Vault}
 
-Two massive marble doors slide to either side to retain the cold.
-The dead may rest in cold solace, the natural chill of this chamber keeping them inert.
-Several cold metal slabs and marble containers line the walls and sides of the chamber. 
+Fuckin' massive crossbow.
 
-The dead stir as the chamber thaws. 
-
-\mapentry[fBarrels]{Wine Barrels}
-
-Not all barrels contain wine.
-Once barrel lays stuck on its side (held down by stone pillars, embedded in its underside), and covers a small tunnel to the next room.
-
-\mapentry[fGnomePassages]{Narrow Rooms}
-
-Nobody bothered to scrape off the snow here, so these rooms collected frost.
-The hall is now so narrow that nobody can fit through if their Strength is above -1.
+\mapentry[fWeaponStore]{Weapon Storage}
 
 \mapentry[fHibernation]{Hibernation Cells}
 
@@ -71,6 +238,20 @@ In total, the chamber contains:
   \item
   Ksha, the dragon.
 \end{itemize}
+
+%%%%%%%%%%%%
+
+\mapentry[fBarrels]{Wine Barrels}
+
+Not all barrels contain wine.
+Once barrel lays stuck on its side (held down by stone pillars, embedded in its underside), and covers a small tunnel to the next room.
+
+\mapentry[fCheeseStorage]{Hall of Cheese}
+
+The entrace hall looks like someone carved the walls into a perfect pattern of repeating cylinder-sides.
+But in fact the walls just have shelves which bulge with cheese wheels.
+
+%%%%%%%%%%%%%%%%%%%
 
 \mapentry[fLibrarians]{Wolf, Goat, and Librarian}
 
@@ -92,7 +273,7 @@ Banned but well-worn books and pamphlets remain here, where uneducated people wo
   \item
   \textit{Tsog's Vile Verses, Volume VIII} (2 sp)
   \item
-  \textit{An Abridged History of Warfare} (1 \gls{gp})
+  \textit{Wars of \Glsentrytext{fenestra}, Vol. II} (1 \gls{gp})
   \item
   \textit{Life in an Elven Stronghold} (2 \glspl{sp})
   \item
