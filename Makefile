@@ -6,14 +6,17 @@ pdfs += $(GOBLINS).pdf
 GOBLINS = The_Goblin_Hole
 ELVES = Snail_Trails
 
+DEPS += $(wildcard fridge/*.tex)
+DEPS += $(wildcard shrooms/*.tex)
 DEPS += $(wildcard caves/*.tex)
 DEPS += $(wildcard fey/*.tex)
+DEPS += images/extracted/sundered.jpg images/extracted/enchanted.jpg
+
 DEPS += $(wildcard characters/*.tex)
 DEPS += commands.tex
 
 dependencies += magick
 
-DEPS += images/extracted/sundered.jpg images/extracted/enchanted.jpg $(wildcard caves/*.tex) $(wildcard fey/*.tex) $(wildcard *.tex)
 DEPS += qr.tex 
 
 include config/vars
@@ -26,7 +29,7 @@ config/rules.pdf:
 
 .PHONY: goblins
 goblins: $(GOBLINS).pdf ## Oneshot cavern-based module
-$(DROSS)/caves.pdf: $(DEPS)
+$(DROSS)/caves.pdf: glossary.tex $(DEPS)
 $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/characters.pdf config/rules.pdf
 	pdfjam --pdftitle $(GOBLINS) --pdfsubject "BIND RPG" \
 	--pdfkeywords "RPG,TTRPG,roleplaying" \
