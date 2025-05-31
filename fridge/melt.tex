@@ -10,18 +10,20 @@ Just about every \gls{temple} in the city holds something down there, and none o
 \renewcommand\csComments{
   \callout{12,21}{0,0}{\ref{fStairs}:~\nameref{fStairs}}{}
   \callout[12]{12,18}{0,0.5}{\ref{fHallStore}:~\nameref{fHallStore}}{}
-  \callout[10]{18,5}{-2,-2}{\ref{fCheeseStorage}:~\nameref{fCheeseStorage}}{}
   \callout[10]{10,15}{0,0}{\ref{fLift}:~\nameref{fLift}}{}
-  \callout[10]{17,20}{-1,0}{\ref{fWheat}:~\nameref{fWheat}}{}
+  \callout[10]{17,20}{-1,0}{\ref{fWheat}:~\nameref{fWheat}}{chalk lines the ground}
   \callout[10]{17,18}{-1,0}{\ref{fIngStore}:~\nameref{fIngStore}}{}
   \callout[10]{1,22}{2,-1}{\ref{fOffice}:~\nameref{fOffice}}{Everything entered must be registered}
   \callout[14]{2,17}{2,0}{\ref{fDip}:~\nameref{fDip}}{with oil barrels}
   \callout[10]{1,14}{2,-1}{\ref{fSide}:~\nameref{fSide}}{}
   \callout{12,16}{1,0}{Secrets}{}
   \callout{6,11}{4,0}{\ref{fBoat}:~\nameref{fBoat}}{there's a boat}
-  \callout[10]{7,0}{0,2.5}{\ref{fGuardDoor}/ \ref{fCrossbow}:~\nameref{fGuardDoor}}{}
+  \callout{8,0}{0,2.5}{\ref{fCrossbow}:~\nameref{fCrossbow}}{}
   \callout[10]{5,1}{0,0}{\ref{fHibernation}:~\nameref{fHibernation}}{}
-  \callout[10]{12,1}{0,0}{\ref{fWeaponStore}:~\nameref{fWeaponStore}}{}
+  \callout[10]{11,1}{0,0}{\ref{fWeaponStore}:~\nameref{fWeaponStore}}{}
+  \callout{17,7}{-1.8,-2.3}{\ref{fFabrics}:~\nameref{fFabrics}}{}
+  \callout[10]{17,4}{-1,-2}{\ref{fGrain}:~\nameref{fGrain}}{}
+  \callout[10]{16,1}{0,0}{\ref{fSpirits}:~\nameref{fSpirits}}{}
   %\mapFeature{15,3}{\rotatebox{45}{\Huge S}}
 }
 
@@ -48,6 +50,15 @@ Descending these long stairs turns the noisy streets above into silence, and rep
   An alcove has two dozen barrels.
   Wood occasionally creaks but nothing is moving.
 \end{boxtext}
+
+\begin{nametable}{Barrel Roll}
+  \dicef{1} & Ale: inert \\
+  \dicef{2} & Ale: inert \\
+  \dicef{3} & Wine: safe. \\
+  \dicef{4} & Flour: safe, but enough fire and shaking makes it explode for \dmg{4} \\
+  \dicef{5} & Larger: pushing makes it explode for \dmg{0}~Damage. \\
+  \dicef{6} & Oil: receiving 8 or more Damage makes it burst everywhere for \dmg{0}~Damage. \\
+\end{nametable}
 
 \mapentry[fLift]{Crank Shaft}
 
@@ -146,12 +157,14 @@ the \glspl{weaver} \emph{demand} that they crank the floor back up so they don't
 \Glspl{server} scatter dusty chalk in this room so it can absorb the moisture, and let the flour dry.
 The flour rests in wide-open trays, stacked on shelves.
 
-The room has no brush, so if \pgls{pc} enters, they cannot help their chalky footprints.
+The room has no brooms,%
+\footnote{The brooms are all in room \vref{fSide}.}
+so if \pgls{pc} enters, they cannot help their chalky footprints.
 
 \mapentry[fIngStore]{\Glsfmtplural{ingredient} Storage}
 
 The \gls{templeOfFrost} keeps \glspl{ingredient} for preservation \gls{alchemy} in here,
-\footnote{Fate and Air \glsfmtplural{ingredient}}
+\footnote{Technically, this uses the `Death' \glsfmttext{sphere} (composed of Fate and Air) to stop rot.}
 along with steel cauldrons, glass tubes, books on \gls{alchemy} and other rare materials.
 Each one has \pgls{weight}~1 and could fetch around 5~\glspl{sp}.
 
@@ -170,13 +183,11 @@ The \gls{templeOfHate} have secured rights to record everything which passes thr
 Stacks of catalogues hold information on every item within the fridge, including the books in the giftschrank (room \vref{fGiftschrank}).
 A ledger notes everyone who has passed in or out over the last five years.
 
-However, nothing contains any information on the hidden door in room \vref{fBarrels}.
-
-Finding specific information in the \nameref{fOffice} means sorting through the \gls{temple}'s peculiar style of record-keeping, and their own brand of short-hand notes.
+\paragraph{Finding specific information in the \nameref{fOffice}}
+means sorting through the \gls{temple}'s peculiar style of record-keeping, and their own brand of short-hand notes.
 This isn't intentional encryption, which somehow makes it feel even worse.
-
-A player can roll \roll{Wits}{Academics} at \tn[14].
-A tie means they find something interesting, while beating the \gls{tn} means finding what they went looking for.
+The roll is \roll{Wits}{Academics} at \tn[14].
+Rolling a tie means the characters finds something random; roll $3D6$ and tell the player the contents of the room with that number.
 
 \mapentry[fDip]{Chasm Barrels}
 
@@ -196,7 +207,7 @@ So `3~Damage' continues to burn for another 2~Damage on the second \gls{round}, 
 
 \mapentry[fSide]{Side Store}
 
-Pickaxes, ropes, shortswords, and barrels of salt.
+Pickaxes, chalk, brooms, ropes, shortswords, and barrels of salt.
 
 %%%%%%%%%%%%
 
@@ -211,51 +222,66 @@ It can take a total \gls{weight} of~50.
 \begin{boxtext}
   The \gls{torch}-light shines on a canopy of stone pillars, standing in an underground lake.
   The shore has no tide.
-  The water lies like a mirror.
+  The water's surface almost looks like a massive mirror.
 \end{boxtext}
 
 
 \mapentry[fGuardDoor]{Guard Post}
 
-\begin{exampletext}
-  When the cavern's thaw began, Renchkolt asked 
-\end{exampletext}
+In the distance, Renchkolt flails his arms, hoping to get the \glspl{pc}' attention.
+He knows the \glspl{monster} will awaken soon, and wants someone to kill them.
 
-In the distance, a man flails his arms, hoping to get someone's attention.
+\humansoldier[\NPC{\glsentrysymbol{sylf}\M\Hu}{Renchkolt}%
+  {droopy eyes, unkempt hair}% DESCRIPTION
+  {wheels about, clanking sword}% MANNERISM
+  {to get out alive}% WANTS
+  \npcQuote{Can you go and poke something for me?  Don't worry, the dragon's just a legend}]% QUOTE
+
+\paragraph{If someone locks the door,}
+then the \glspl{monster} cannot escape\ldots for a while.
+However, a collection of hungry and terrified creatures, with a Strength Bonus of~+5 or more, will not stay contained for long.
 
 \mapentry[fCrossbow]{Siege Crossbow}
 
-Fuckin' massive crossbow.
+It's a fucking massive crossbow, pointed right at the \nameref{fWeaponStore} (\vpageref[next]{fWeaponStore} room).
+It takes an age to reload, but it'll deal \dmg{8}~Damage to anything
 
 \mapentry[fWeaponStore]{Weapon Storage}
 
-Empty.
-No weapons at all!
+\begin{exampletext}
+  Whenever \pgls{guard} asks about \glspl{weapon}, \pgls{jotter} tells them about the great store of swords, spears, and shields, saved up for a coming raid which will solve all the problems, and make everyone in the land much, much, safer.
+  This room holds that grand store of weapons for the up-coming, legendary push-back against the forest, to expand civilization.
+\end{exampletext}
+
+\paragraph{Opening the door}
+requires an \roll{Intelligence}{Crafts} roll at \tn[12].
+
+But once the door opens, they find nothing.
+\emph{The room lies empty.}
 
 \mapentry[fHibernation]{Hibernation Cells}
 
-When umberhulks feel cold, they hibernate.
+When \glspl{hulk} feel cold, they hibernate.
 And if they remain cold, they can hibernate for decades before waking up.
-
 \Glspl{crawler} cannot survive so long, but can still remain alive for a few years.
 
 In total, the chamber contains:
 
-\begin{itemize}
-  \item
-  2 \glspl{crawler}
-  \item
-  4 \glspl{hulk}
-  \item
-  Ksha, the dragon.
-\end{itemize}
+\chitincrawler
+
+\chitincrawler
+
+\umberhulk[\npc{\T[2]\A}{\arabic{noAppearing} \Glspl{hulk}}]
+
+\umberhulk[\npc{\T[2]\A}{\arabic{noAppearing} \Glspl{hulk}}]
+
+\basilisk
+
+\dragon
+
+\showStdSpells
 
 %%%%%%%%%%%%
-
-\mapentry[fBarrels]{Wine Barrels}
-
-Not all barrels contain wine.
-Once barrel lays stuck on its side (held down by stone pillars, embedded in its underside), and covers a small tunnel to the next room.
 
 \mapentry[fCheeseStorage]{Hall of Cheese}
 
@@ -271,23 +297,55 @@ Once barrel lays stuck on its side (held down by stone pillars, embedded in its 
   An entire wheel of cheese?
 \end{exampletext}
 
-The entrace hall looks like someone carved the walls into a perfect pattern of repeating cylinder-sides.
+The entrance hall looks like someone carved the walls into a perfect pattern of repeating cylinder-sides.
 But in fact the walls just have shelves which bulge with cheese wheels.
 
-\mapentry[fGrain]{Grain Store}
+\mapentry[fFabrics]{Fabric Room}
 
+The \gls{templeOfFrost} owns one room, in addition to the \nameref{fCheeseStorage} (\vpageref[next][last]{fCheeseStorage} room).
+This place is littered with every type of fabric imaginable, a few barrels of wine, and a few more snowmen dotted around the walls (mostly clothed, other anatomically exaggerated).
+
+\mapentry[fGrain]{Flour Store}
+
+Barrels of flour line the room.
+They go on and on forever.
+
+\paragraph{Setting fire to the barrels}
+doesn't work, as the small room does not have enough life in its air.
+But if the barrels move outside, and \emph{then} catch fire, the dust-fire could leap across the great hall in half \pgls{ap}.
 
 \mapentry[fSpirits]{Spirit Store}
 
-The ominous-looking sign says `spirit containment'.
+An ominous sign says `\textsc{Spirit Containment}'.
+Of course, this means whiskey in every barrel.
 
 %%%%%%%%%%%%%%%%%%%
 
-\mapentry[fLibrarians]{Wolf, Goat, and Librarian}
+\mapentry[fLibrarians]{Wolf, Goat, and Three Librarians}
 
-The three \glspl{seeker} who had their books here have not dressed appropriately for prolonged contact with the freezing cold, and have become so cold they can barely move.
-All three want to save the most valuable books, and none of them want to let either of the other two walk out with those books.
+Three \glspl{seeker} each have a pile of their most precious books, and none will let them go.
 
+\begin{boxtext}
+  A tubby man, in green robes, steps back as your boat hits the stairs; he holds a pile of books like a baby.
+  A tall woman steps back with him, holding her own precious pile.
+  The last is a frightened-looking man, with a pointed hat and cubic sack.
+  ``\textit{Looks like they're staying!}'', he says.
+  ``\textit{Let me hop on\ldots}''
+  But the tubby man shouts, ``\textit{No, ladies first!
+  Or just let the lady on too!}''.
+
+  But you haven't the room, for books, him and you.
+\end{boxtext}
+
+A boat can hold \pgls{seeker} and their books, or two \glspl{seeker} without any books.
+But if two \glspl{seeker}, and the \glspl{pc} return for the third, then the boat \emph{will} have room for \pgls{seeker} and their books.
+Therefore, all \glspl{seeker} will not enter the boat on the first run, without their books.
+
+\humandiplomat[\npc{\glsentrysymbol{yonder}\M\Hu}{Tubby \composeHumanName}]
+
+\humanalchemist[\npc{\glsentrysymbol{yonder}\F\Hu}{Tall \composeHumanName}]
+
+\humandiplomat[\npc{\glsentrysymbol{yonder}\M\Hu}{Timid \composeHumanName}]
 
 \mapentry[fGiftschrank]{Giftschrank}
 
@@ -310,24 +368,21 @@ Banned but well-worn books and pamphlets remain here, where uneducated people wo
   \textit{The Daring Adventures of Scrib the Dullard} (3 \glspl{cp})
 \end{itemize}
 
+\paragraph{Unlocking the door}
+requires an \roll{Intelligence}{Crafts} roll at \tn[13].
+
 \mapentry[fBrack]{Tat Cupboard}
 
 This place has everything nobody wanted to buy.
 Gnomish lanterns, a barrel of gnomish lantern oil, \glspl{torch} made from \gls{basilisk}-fat, soap, tinder boxes (plenty), chalk, magnifying globes (heavy), and one copper bell.
 
+\paragraph{Unlocking the door}
+requires an \roll{Intelligence}{Crafts} roll at \tn[13].
+
 \mapentry[fLibrary]{Treasured Library}
 
-
-\begin{itemize}
-  \item
-  Lots of \glspl{spell}.
-  \item
-  Four reading lanterns.
-  \item
-  A barrel of lantern oil.
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%
+This library has the lot, including four smokeless reading lanterns and five small barrels of paraffin.
+The books are so fancy that they have jewels in the cover, and contents so valuable that this only \emph{doubles} their price.
 
 
 \end{multicols}
