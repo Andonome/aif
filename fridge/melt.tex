@@ -8,22 +8,21 @@ The \gls{templeOfFrost} holds a massive, underground fridge, used by the entire 
 Just about every \gls{temple} in the city holds something down there, and none of them trust the others enough to go down and fetch anything, for fear they'll place the items in their own area.
 
 \renewcommand\csComments{
-  \callout[10]{11,21}{0,0}{\ref{fStairs}:~\nameref{fStairs}}{}
+  \callout{12,21}{0,0}{\ref{fStairs}:~\nameref{fStairs}}{}
+  \callout[12]{12,18}{0,0.5}{\ref{fHallStore}:~\nameref{fHallStore}}{}
   \callout[10]{18,5}{-2,-2}{\ref{fCheeseStorage}:~\nameref{fCheeseStorage}}{}
   \callout[10]{10,15}{0,0}{\ref{fLift}:~\nameref{fLift}}{}
   \callout[10]{17,20}{-1,0}{\ref{fWheat}:~\nameref{fWheat}}{}
   \callout[10]{17,18}{-1,0}{\ref{fIngStore}:~\nameref{fIngStore}}{}
-  \callout[12]{12,21}{0,1}{\ref{fStairs}:~\nameref{fStairs}}{}
-  \callout[10]{1,16}{2,-1}{\ref{fOffice}:~\nameref{fOffice}}{}
+  \callout[10]{1,22}{2,-1}{\ref{fOffice}:~\nameref{fOffice}}{Everything entered must be registered}
   \callout[14]{2,17}{2,0}{\ref{fDip}:~\nameref{fDip}}{with oil barrels}
   \callout[10]{1,14}{2,-1}{\ref{fSide}:~\nameref{fSide}}{}
   \callout{12,16}{1,0}{Secrets}{}
-  \callout[10]{16,9}{0,1}{Grains}{and its by-products}
   \callout{6,11}{4,0}{\ref{fBoat}:~\nameref{fBoat}}{there's a boat}
   \callout[10]{7,0}{0,2.5}{\ref{fGuardDoor}/ \ref{fCrossbow}:~\nameref{fGuardDoor}}{}
   \callout[10]{5,1}{0,0}{\ref{fHibernation}:~\nameref{fHibernation}}{}
   \callout[10]{12,1}{0,0}{\ref{fWeaponStore}:~\nameref{fWeaponStore}}{}
-  \mapFeature{15,3}{\rotatebox{45}{\Huge S}}
+  %\mapFeature{15,3}{\rotatebox{45}{\Huge S}}
 }
 
 \widePic[t]{Dyson_Logos/bowels}
@@ -197,11 +196,7 @@ So `3~Damage' continues to burn for another 2~Damage on the second \gls{round}, 
 
 \mapentry[fSide]{Side Store}
 
-% What behind this secret door?  I don't know.  Perhaps it's a tragedy of the
-% commons, waiting to flood.  Perhaps everyone wants to leave 'substance X'
-% alone, with the secret door closed, so water does not Damage it.  But they all
-% know they can rescue a little of substance X if they open the door and grab
-% what they can.
+Pickaxes, ropes, shortswords, and barrels of salt.
 
 %%%%%%%%%%%%
 
@@ -228,11 +223,14 @@ It can take a total \gls{weight} of~50.
 
 In the distance, a man flails his arms, hoping to get someone's attention.
 
-\mapentry[fCrossbow]{Funerary Vault}
+\mapentry[fCrossbow]{Siege Crossbow}
 
 Fuckin' massive crossbow.
 
 \mapentry[fWeaponStore]{Weapon Storage}
+
+Empty.
+No weapons at all!
 
 \mapentry[fHibernation]{Hibernation Cells}
 
@@ -261,16 +259,35 @@ Once barrel lays stuck on its side (held down by stone pillars, embedded in its 
 
 \mapentry[fCheeseStorage]{Hall of Cheese}
 
+\begin{exampletext}
+  The other \glspl{temple} guard their possessions with locked doors.
+  The \gls{templeOfFrost} guards their goods a snowman and a lot of lies.
+  They tell everyone that the snowman can see them; he's magical, and speaks when nobody's looking.
+  And nobody believed them until someone stole some cheese, and they found out by the end of the day.
+
+  To identify the thief, they relied on their standard gossip network, and the fact that it is impossible to come home with a wheel of cheese without anyone noticing.
+  What could anyone even do with it in secret?
+  Eat it?
+  An entire wheel of cheese?
+\end{exampletext}
+
 The entrace hall looks like someone carved the walls into a perfect pattern of repeating cylinder-sides.
 But in fact the walls just have shelves which bulge with cheese wheels.
+
+\mapentry[fGrain]{Grain Store}
+
+
+\mapentry[fSpirits]{Spirit Store}
+
+The ominous-looking sign says `spirit containment'.
 
 %%%%%%%%%%%%%%%%%%%
 
 \mapentry[fLibrarians]{Wolf, Goat, and Librarian}
 
 The three \glspl{seeker} who had their books here have not dressed appropriately for prolonged contact with the freezing cold, and have become so cold they can barely move.
-
 All three want to save the most valuable books, and none of them want to let either of the other two walk out with those books.
+
 
 \mapentry[fGiftschrank]{Giftschrank}
 
@@ -292,5 +309,25 @@ Banned but well-worn books and pamphlets remain here, where uneducated people wo
   \item
   \textit{The Daring Adventures of Scrib the Dullard} (3 \glspl{cp})
 \end{itemize}
+
+\mapentry[fBrack]{Tat Cupboard}
+
+This place has everything nobody wanted to buy.
+Gnomish lanterns, a barrel of gnomish lantern oil, \glspl{torch} made from \gls{basilisk}-fat, soap, tinder boxes (plenty), chalk, magnifying globes (heavy), and one copper bell.
+
+\mapentry[fLibrary]{Treasured Library}
+
+
+\begin{itemize}
+  \item
+  Lots of \glspl{spell}.
+  \item
+  Four reading lanterns.
+  \item
+  A barrel of lantern oil.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%
+
 
 \end{multicols}
