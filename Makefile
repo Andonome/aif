@@ -52,3 +52,10 @@ images/extracted/enchanted.jpg: images/feylands.svg images/extracted/
 	inkscape --pipe --export-type=png --export-area=430:30:670:145 -d 600 |\
 	magick - -fill white -channel-fx '| gray=>alpha' $@
 
+images/extracted/fridge.jpg: images/Dyson_Logos/bowels.svg images/extracted/
+	cat $< | inkscape --pipe \
+	--select=layer1 --actions=delete \
+	--export-type=png | \
+	magick - -fill white -channel-fx '| gray=>alpha' \
+	$@
+
