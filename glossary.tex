@@ -1,3 +1,55 @@
+%%%%%%%%%% Mechanics %%%%%%%%%%
+
+\longnewglossaryentry{boxes}{
+  name={Boxes},
+  text={box},
+  plural={boxes},
+  prefix={a\space},
+  type={mech},
+  nonumberlist,
+  parent={equipment},
+  description={typically stand around weist-height.
+  When empty, their \glsfmttext{weight} is~2.
+  When full, the \glsfmttext{weight} is~7},
+}
+
+\longnewglossaryentry{flour}{
+  name={Flour},
+  text={flour},
+  plural={crates of flour},
+  prefix={some\space},
+  type={mech},
+  nonumberlist,
+  parent={boxes},
+  description={is not flammable, but it is explosive.
+  Whenever flour scatters, it has a 1 in 6 chance to bursts into flame, dealing \dmg{0}~Damage.
+  Ever \glsfmttext{step} away from the flour reduces the Damage by~1.
+  Every extra barrel of flour increases the chance of an explosion by 1, and every barrel which joins the explosion increases the Damage by~1},
+}
+
+\longnewglossaryentry{lagerCasket}{
+  name={Caskets of Lager},
+  text={lager casket},
+  first={casket of lager},
+  firstplural={caskets of lager},
+  prefix={a\space},
+  type={mech},
+  nonumberlist,
+  parent={boxes},
+  description={like to ferment slowly, below room temperature.
+  Heating them up too quickly produces a gas, and builds up pressure, until they start to creak.
+  At that point, rough handling can cause them to burst, sending wood-splinters and metal-banding flying across the room.
+  
+  The ambient gas has a 1 in 6 chance to explode near any torchlight, inflicting \dmg{-2}~Damage.
+  Moving unstable caskets requires a \roll{Dexterity}{Cultivation} roll at \glsfmttext{tn}~8.
+  Lifting the lid decreases the \glsfmttext{tn} by 1 and increases the chance of the gas igniting on any nearby flames by~1.
+
+  If a casket explodes, characters can try to dodge with \roll{Speed}{Vigilance} at \glsfmttext{tn}~10, and each \glsfmttext{step} away reduces the \glsfmttext{tn} by~1.
+  Failure inflicts \dmg{0}~Damage},
+}
+
+%%%%%%%%%% General People %%%%%%%%%%
+
 \newglossaryentry{fashionista}{
   name={Weft},
   text={Weft},
