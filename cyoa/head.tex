@@ -1,0 +1,109 @@
+\documentclass[10pt,twoside]{book}
+
+\usepackage{config/bind}
+
+\input{glossary.tex}
+
+\geometry{%
+  includefoot,
+  %showframe,
+  margin=5mm,
+  marginparsep=10pt,
+  marginparwidth=10pt,
+  paperwidth=74mm,
+  paperheight=105mm,
+  footskip=3mm,
+}
+
+\AddToHook{shipout/background}{%
+  \ifodd\value{page}
+    \def\BGpageanchor{current page.south east}
+    \def\BGadjust{-5mm, 5mm}
+  \else
+    \def\BGpageanchor{current page.south west}
+    \def\BGadjust{5mm, 5mm}
+  \fi
+  \begin{tikzpicture}[overlay,remember picture]
+    \ifnum\value{page}=10
+      \draw[gray, dotted] (-0.15,0) -- (-0.15,-10);
+    \fi
+    \ifnum\value{page}=14
+      \draw[gray, dotted] (-0.15,0) -- (-0.15,-10);
+      \draw[gray, dotted] (0,0) -- (5,0);
+    \fi
+    \path 
+      ++(\BGpageanchor)
+      +(\BGadjust)
+      node[
+        text centered,
+        text=black,
+        font=\titleFont,
+      ] {\thepage};
+  \end{tikzpicture}%
+}%
+
+\newcommand*\goTo[1]{({\scshape\ifnum\value{list}<3 turn to \fi part \vref{#1}})}
+
+\begin{document}
+
+\frontmatter
+\pagenumbering{gobble}
+
+\begin{center}
+  \includesvg[width=.8\textwidth]{config/logo}
+  \par
+  \vspace{3\baselineskip}
+  {\Large\scshape A Choose-Your-Own Adventure Zine$^{*}$}
+  \vfill\null
+  \ast\tiny Incorrect choices mean death.
+\end{center}
+
+\pagebreak
+
+\pagenumbering{arabic}
+
+\setcounter{page}{1}
+\pagestyle{plain}
+\small
+
+\noindent
+Grab a pencil, a fistful of dice, and \pgls{pc} for \gls{bind}.
+
+\mapentry[dayOne]{A pregnant woman leans on her spear}
+while rubbing her own lower back.
+A man stands by her side, with a massive hood covering his head, and a wooden staff in his hands.
+The smaller figure is an elf who claims to be a `normal human child' and then insists on showing people one of the rag-dolls stitched into his cloak.
+Now finally, you see the \gls{jotter} climb the ladder to give everyone their first mission.
+
+\begin{speechtext}
+  Welcome to the \gls{templeOfBeasts}, where everyone dies a hero!
+  Today's glorious (and profitable) quest involves \pgls{basilisk} whom we call `Bino', because she's white, and because `Al' would make a ridiculous name for \pgls{basilisk}.
+
+  Bino has been spotted lying by the crossroads at the other side of the bog, where she likes to eat traders and their horses.
+  You should be able to cross the bog before nightfall if you hurry, so get moving!
+  Just remember to avoid the \gls{bogwitch} at all costs.
+\end{speechtext}
+
+Once out the door, the hooded man says he thinks everyone should take the road round the bog, while the pregnant woman insists on going `the proper way'.
+
+\paragraph{Do as you're told,}
+go through the bog.
+\goTo{toBog}
+
+\paragraph{Take the main road.}
+\goTo{toRoad}
+
+\mapentry[toBog]{Bogs nurture nothing but rot}
+so anything that lives inside tends to grow small.
+Bogs are infertile places, where very little grows, and what grows tends to be small.
+They cannot even fester, they can barely rot.
+So when someone troubles themselves to build a house in a bog, they must have an excellent reason.
+However, you can't imagine what the reason might be for the hut, or tall roof.
+
+\paragraph{Go to the hut on the hill}
+and ask questions.
+\goTo{toHut}
+
+\paragraph{Stay the hell away from strange houses,}
+continue walking the bog!
+\goTo{moreBog}

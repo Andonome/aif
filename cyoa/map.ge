@@ -1,0 +1,44 @@
+[ I ]{label: "Time to fight\na basilisk!";}
+
+[ II ]{label: "You see a hut in the bog's twilight";}
+[ III ]{label: "Sun guard want\nto buy parts";}
+
+[ IV ]{label: "Promise the head\nand she blesses you";}
+[ V ]{label: "Woodspy attack!";}
+[ VI ]{label: "Night guard\ngroup overtakes";}
+
+[ VII ]{label: "You see a cave and\nsunguard in the distance";}
+[ VIII ]{label: "Bino attacks the sunguard";}
+[ IX ]{label: "Bino tramples\nthe sunguard";}
+[ X ]{label: "Fight to death\nwith sunguard";}
+
+[ XI ]{label: "You find baslisk skulls in the cave";}
+[ XII ]{label: "Bino eats you\nand sunguard";}
+[ XIII ]{label: "Arrow fired\nat sunguard";}
+[ XIV ]{label: "night guard take\nBino's body";}
+[ XV ]{label: "Skulk back\nin the dark";}
+
+###################
+
+[ I ] -- via bog --> [ II ]
+[ I ] -- via road --> [ III ]
+
+[ II ] -- approach --> [ IV ]
+[ II ] -- avoid --> [ V ]
+[ III ] -- no --> [ V ]
+[ III ] -- yes --> [ VI ]
+
+[ IV ] -- agree --> [ VII ]
+[ IV ] -- refuse --> [ VIII ]
+[ V ] -- win fight --> [ VIII ]
+[ V ] -- sacrifice --> [ VIII ]
+[ VI ] -- catch up --> [ IX ]
+[ VI ] -- chill --> [ VIII ]
+
+[ VII ] -- sneak into cave --> [ XI ]
+[ VII ] -- join fight --> [ XII ]
+[ VIII ] -- join fight --> [ X ]
+[ VIII ] -- sunguard! --> [ XIII ]
+[ VIII ] -- to woods --> [ XV ]
+[ IX ] -- hide --> [ XV ]
+[ IX ] -- join --> [ XIV ]
