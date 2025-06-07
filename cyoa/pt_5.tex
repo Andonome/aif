@@ -11,14 +11,16 @@ The mockery stops as four figures in black fast-march along the road, catch up, 
 
 You can only guess they want to kill Bino.
 
-\paragraph{Tell him the truth}
-and chase after those \glspl{guard}.
+\begin{selectPath}
+  \willYe{Tell him the truth}%
+  {and chase after those \glspl{guard}.
+  ``\textit{If you want that head, we'd better run and overtake them.
+  Back soon!}''
+  }%
+  {chaseGuards}
 
-``\textit{If you want that head, we'd better run and overtake them.
-Back soon!}''
-\goTo{chaseGuards}
-
-\paragraph{Stick to the deal.}
-``\textit{I can't imagine what those people are doing.
-We're just going to stick with you lot, as we promised!}''
-\goTo{fightWithGuards}
+  \willYe{Stick to the deal.}%
+  {``\textit{I can't imagine what those people are doing.
+  We're just going to stick with you lot, as we promised!}''}%
+  {fightWithGuards}
+\end{selectPath}

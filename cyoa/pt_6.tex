@@ -11,12 +11,12 @@ Ahead of them, a great white head breaches the canopy and looks around silently.
 The \glspl{sunGuard} haven't seen Bino.
 The wind blows towards her, so they can't smell her either.
 
-\begin{itemize}
-  \item
-  Quietly enter the cave.
-  \goTo{skullCave}
-  \item
-  Shout a warning cry to the \glspl{sunGuard}.
-  \goTo{shoutWarning}
-\end{itemize}
+\begin{selectPath}
+  \willYe{Quietly enter the cave.}%
+  {}%
+  {skullCave}
+  \willYe{Shout a warning cry to the \glspl{sunGuard}.}
+  {}%
+  {shoutWarning}
+\end{selectPath}
 

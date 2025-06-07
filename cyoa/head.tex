@@ -44,6 +44,20 @@
 
 \newcommand*\goTo[1]{({\scshape\ifnum\value{list}<3 turn to \fi part \vref{#1}})}
 
+\newenvironment{selectPath}%
+  {%
+    \begin{description}%
+    \setlength\itemsep{.2em}
+    \raggedright
+  }%
+  { \end{description} }
+
+\newcommand\willYe[3]{%
+  \item[#1]
+  #2
+  ({\scshape\ifnum\value{list}<3 turn to \fi part~\vref{#3}})
+}
+
 \begin{document}
 
 \frontmatter
@@ -60,14 +74,14 @@
 
 \pagebreak
 
-\pagenumbering{arabic}
-
-\setcounter{page}{1}
-\pagestyle{plain}
 \small
 
 \noindent
 Grab a pencil, a fistful of dice, and \pgls{pc} for \gls{bind}.
+
+\clearpage
+\setcounter{page}{1}
+\pagestyle{plain}
 
 \mapentry[dayOne]{A pregnant woman leans on her spear}
 while rubbing her own lower back.

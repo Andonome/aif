@@ -5,8 +5,11 @@ A giant, chalk-white head rears above the distant canopy, under the pink sky.
 
 A moment later, the \glspl{sunGuard} march round the corner, apparently unaware of the \gls{basilisk}.
 
-\paragraph{Warn the \glspl{sunGuard}.}
-\goTo{shoutWarning}
-
-\paragraph{Ready the \gls{bow} to kill Bino.}
-\goTo{readyBow}
+\begin{selectPath}
+  \willYe{Warn the \glspl{sunGuard}.}%
+  {}%
+  {shoutWarning}
+  \willYe{Ready the \gls{bow} to kill Bino.}%
+  {}%
+  {readyBow}
+\end{selectPath}

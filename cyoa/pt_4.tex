@@ -11,10 +11,11 @@ and leave the elf to die.
 \paragraph{Attack the tentacles,}
 roll $2D6$ + {\scshape Att} at \glsentrylong{tn}~10.
 
-\begin{description}
-  \item[If you roll 10]
-  you stab the creature, and it flees.
-  \item[Rolling under 10]
-  and the creature pulls you under and bites through your leg with its beak.
-  {\scshape Cause of Death:} \gls{woodspy}
-\end{description}
+\begin{selectPath}
+  \willYe{If you roll 10}%
+  {you stab the creature, and it flees.}%
+  {bogAtDusk}
+  \willYe{Roll under 10}%
+  {and the creature pulls you under.}%
+  {spyDeath} \gls{woodspy}
+\end{selectPath}

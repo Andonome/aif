@@ -12,11 +12,12 @@ And once she hears the word `Bino', her eyes widen.
   Promise me a white \gls{basilisk} head, and I shall bless thee with a rare blessing.
 \end{speechtext}
 
-\paragraph{Promise the head}
-and receive the blessing.
-\goTo{withBlessing}
+\begin{selectPath}
+  \willYe{Promise the head}%
+  {and receive the blessing.}%
+  {withBlessing}
 
-\paragraph{Refuse politely}
-and get back to the road.
-\goTo{bogAtDusk}
-
+  \willYe{Refuse politely}%
+  {and get back to the road.}%
+  {bogAtDusk}
+\end{selectPath}

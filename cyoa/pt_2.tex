@@ -25,9 +25,12 @@ Before you can interject, the hooded man tells them, and the fakeness disappears
 
 The \gls{sunGuard}'s enormous mouth widens without an actual smile as he tries to press the coins into your hands.
 
-\paragraph{Take the money.}
-\goTo{takeCoin}
+\begin{selectPath}
+  \willYe{Take the money.}%
+  {}%
+  {takeCoin}
 
-\paragraph{Refuse,}
-and flee to the bog before the \glspl{sunGuard} become violent.
-\goTo{bogAtDusk}
+  \willYe{Refuse,}%
+  {and flee to the bog before the \glspl{sunGuard} become violent.}%
+  {bogAtDusk}
+\end{selectPath}
