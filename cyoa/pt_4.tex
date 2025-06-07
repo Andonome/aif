@@ -4,18 +4,12 @@ As the cold water goes up to your boots, then drains into the boots, everyone re
 
 Tentacles emerge, each as tall as a man, to grab you and the elf.
 
-\paragraph{Flee,}
-and leave the elf to die.
-\goTo{bogAtDusk}
-
-\paragraph{Attack the tentacles,}
-roll $2D6$ + {\scshape Att} at \glsentrylong{tn}~10.
-
 \begin{selectPath}
-  \willYe{If you roll 10}%
-  {you stab the creature, and it flees.}%
+  \willYe{Flee,}%
+  {and leave the elf to die.}%
   {bogAtDusk}
-  \willYe{Roll under 10}%
-  {and the creature pulls you under.}%
-  {spyDeath} \gls{woodspy}
+
+  \willYe{Stab the tentacles.}%
+  {}%
+  {stabSpy}
 \end{selectPath}

@@ -42,8 +42,6 @@
   \end{tikzpicture}%
 }%
 
-\newcommand*\goTo[1]{({\scshape\ifnum\value{list}<3 turn to \fi part \vref{#1}})}
-
 \newenvironment{selectPath}%
   {%
     \begin{description}%
@@ -100,10 +98,12 @@ Now finally, you see the \gls{jotter} climb the ladder to give everyone their fi
 
 Once out the door, the hooded man says he thinks everyone should take the road round the bog, while the pregnant woman insists on going `the proper way'.
 
-\paragraph{Do as you're told,}
-go through the bog.
-\goTo{toBog}
+\begin{selectPath}
+  \willYe{Do as you're told,}%
+  {go through the bog.}%
+  {toBog}
 
-\paragraph{Take the main road.}
-\goTo{toRoad}
-
+  \willYe{Take the main road.}%
+  {}%
+  {toRoad}
+\end{selectPath}
