@@ -2,7 +2,7 @@ EXTERNAL_REFERENTS = core stories judgement
 
 pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
-pdfs += minizine.pdf
+targets += minizine.pdf
 
 GOBLINS = The_Goblin_Hole
 ELVES = Snail_Trails
