@@ -48,6 +48,36 @@
   Failure inflicts \dmg{0}~Damage},
 }
 
+\longnewglossaryentry{bagHole}{
+  name={Bag of Hole},
+  type={people},
+  description={A rough, brown, lether bag, with twine drawstrings.
+    It can open as wide as a man's head, but inside is only darkness and the \emph{feeling} of a series of flat, wooden, planks to lay items upon.
+
+    The hole in fact goes to a gnome's cupboard, which a Light \glsfmttext{spell} keeps eternally dark.
+    The Bag of Hole does not want any harm to come to its master, so it won't allow dangerous objects inside.
+    If someone attempts to place something dangerous (like an unsheathed sword) then it destroys the Gateway \glsfmttext{spell} using a \textit{Close the Gate} \glsfmttext{spell}.
+
+    Whenever someone looks into the bag, roll $2D6$.
+    On the roll of \twoDice{2}, a gnome sits at the bottom, recasting the darkness \glsfmttext{spell}},
+}
+
+\newcommand\bagOfHole{
+  \artefact[0]{bagHole}% Name
+    {\glsentrydesc{bagHole}.}% Body
+    {-1}% Intelligence
+    {0}% Wits
+    {2}% Charisma
+    {keep the master safe}% Mission
+    {Gateway}% Base Spell
+    {
+      \setcounter{Earth}{3}
+      \setcounter{Fire}{3}
+      \setcounter{Crafts}{1}
+      \setcounter{Cultivation}{1}
+    }% Spheres
+}
+
 %%%%%%%%%% General People %%%%%%%%%%
 
 \newglossaryentry{fashionista}{
