@@ -18,9 +18,10 @@ Keywords={TTRPG,RPG,roleplaying}
 \externalReferent{judgement}
 \externalReferent{stories}
 
+\declareRegions{Forest,Town}
 
 \begin{document}
-\frontpage[The Town Fridge]%
+\frontpage{The Town Fridge}%
   {Time is Running Out}%
 
 \glsunsetall
@@ -40,7 +41,11 @@ Keywords={TTRPG,RPG,roleplaying}
 
 \chapter{The Fridge}
 
-\input{fridge/threads.tex}
+\section{Foreshadows}
+
+\begin{multicols}{2}
+  \input{fridge/threads.tex}
+\end{multicols}
 
 \input{fridge/melt.tex}
 
