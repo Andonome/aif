@@ -8,11 +8,7 @@
 
 *Adventures in Fenestra* is a collection of modules for the BIND RPG.
 
-## Getting the Book
-
-Or just click [download][goblin hole].
-
-# Modules
+# Playtested Modules
 
 ## The Goblin Hole
 
@@ -20,6 +16,8 @@ A dozen goblins, in a normal cave.
 No problem, right?
 
 [Download][goblin hole]
+
+# Untested Modules
 
 ## On the Trail of the Snail Lords
 
