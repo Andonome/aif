@@ -40,6 +40,8 @@ Failure means death.
   \ref{gentlePassage}/92/05,
 }
 
+\playCommentaryAftermath[t]
+
 \mapentry[firstBridge]{First Bridge}
 
 \begin{exampletext}
@@ -88,11 +90,7 @@ Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribut
   \ref{standingTunnel}/00/05,
 }
 
-\smolMapPic{cave_4}{
-  {\large\glsfmttext{weight}~11: fall}/71/80,
-  \rotatebox{-90}{\large\glsfmttext{weight}~14: snap!}/20/50,
-  \ref{ropeDown}/42/92,
-}
+\null
 
 \mapentry[ropeDown]{Rope \& Cliff}
 
@@ -101,15 +99,21 @@ Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribut
 \end{exampletext}
 
 \begin{boxtext}
-  The cavern seems to end in a wall, but as the torchlight approaches, you can see the darkness of a sheer drop ahead.
+  The cavern seems to end in a wall, but the shadows at the bottom indicate a dark drop.
   A boulder stands next to the drop with a rope tied around it.
-  The rope descends into the edge.
+  The rope droops down towards whatever waits at the bottom.
 \end{boxtext}
 
 This may look like a trap, but it isn't; the goblins simply use the rope to climb up and down.
 The boulder can take up to \pgls{weight} of 11 before it falls, and the rope can take up to \pgls{weight} of 14 before it snaps (this includes items, as usual).
 
 \wayOut{The wide cavern leads to}{secondBridge}
+
+\smolMapPic{cave_4}{
+  {\large\glsfmttext{weight}~11: fall}/71/80,
+  \rotatebox{-90}{\large\glsfmttext{weight}~14: snap!}/20/50,
+  \ref{ropeDown}/42/92,
+}
 
 \mapentry[secondBridge]{Last Bridge}
 
@@ -176,7 +180,6 @@ Then anyone kneeling down to inspect them dies too.
 the passage ascends.
 Various twists mean it continues longer than its neighbouring tunnel, making it 2 miles long.
 
-\playCommentaryAftermath[t]
 \playCommentaryPuddle[t]
 
 \mapentry[wormTunnel]{Worm Tunnel}
@@ -225,7 +228,8 @@ Hearing a motionless goblin is extremely unlikely, but you might ask for a \roll
 \wayOut{The goblin stands in the open, next to}{waterMaze}
 
 \playCommentaryDrowning[t]
-\Needspace{7\baselineskip}
+
+%\Needspace{7\baselineskip}
 \mapentry[gentlePassage]{Soft Passage}
 
 This path, like the entrance, has had a little cave-in, and will have more if anyone large walks through it.
