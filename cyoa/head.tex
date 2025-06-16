@@ -1,85 +1,21 @@
 \documentclass[10pt,twoside]{book}
 
 \usepackage{config/bind}
+\usepackage{config/booklet}
 
 \input{glossary.tex}
 
-\geometry{%
-  includefoot,
-  %showframe,
-  margin=5mm,
-  marginparsep=10pt,
-  marginparwidth=10pt,
-  paperwidth=74mm,
-  paperheight=105mm,
-  footskip=3mm,
-}
-
-\AddToHook{shipout/background}{%
-  \ifodd\value{page}
-    \def\BGpageanchor{current page.south east}
-    \def\BGadjust{-5mm, 5mm}
-  \else
-    \def\BGpageanchor{current page.south west}
-    \def\BGadjust{5mm, 5mm}
-  \fi
-  \begin{tikzpicture}[overlay,remember picture]
-    \ifnum\value{page}=10
-      \draw[gray, dotted] (-0.15,0) -- (-0.15,-10);
-    \fi
-    \ifnum\value{page}=14
-      \draw[gray, dotted] (-0.15,0) -- (-0.15,-10);
-      \draw[gray, dotted] (0,0) -- (5,0);
-    \fi
-    \path 
-      ++(\BGpageanchor)
-      +(\BGadjust)
-      node[
-        text centered,
-        text=black,
-        font=\titleFont,
-      ] {\thepage};
-  \end{tikzpicture}%
-}%
-
-\newenvironment{selectPath}%
-  {%
-    \begin{description}%
-    \setlength\itemsep{.2em}
-    \raggedright
-  }%
-  { \end{description} }
-
-\newcommand\willYe[3]{%
-  \item[#1]
-  #2
-  ({\scshape\ifnum\value{list}<3 turn to \fi part~\vref{#3}})
-}
-
 \begin{document}
 
-\frontmatter
-\pagenumbering{gobble}
+\miniCover{A Choose-Your-Own Adventure Zine}{}
 
-\begin{center}
-  \includesvg[width=.8\textwidth]{config/logo}
-  \par
-  \vspace{3\baselineskip}
-  {\Large\scshape A Choose-Your-Own Adventure Zine$^{*}$}
-  \vfill\null
-  \ast\tiny Incorrect choices mean death.
-\end{center}
-
-\clearpage
-
-\small
+\pagebreak
 
 \noindent
 Grab a pencil, a fistful of dice, and \pgls{pc} for \gls{bind}.
 
-\clearpage
-\setcounter{page}{1}
-\pagestyle{plain}
+\pagebreak
+\pagestyle{minizine}
 
 \mapentry[dayOne]{A pregnant woman leans on her spear}
 while rubbing her own lower back.
