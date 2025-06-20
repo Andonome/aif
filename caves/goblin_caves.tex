@@ -447,7 +447,8 @@ If they ask about the odd phrasing, tell them what they're having trouble rememb
 \wayOut{The only exit is blocked by}{umberHulk}
 
 \playCommentaryRestI
-\playCommentaryRestII
+
+\playCommentaryRestII[b]
 
 \mapentry[umberHulk]{\Glsfmttext{hulk}}
 
@@ -520,18 +521,6 @@ Any reasonable plan to catch them might work, although placing \pgls{caveFire} s
 \paragraph{Jumping over}
 demands a \roll{Speed}{Athletics} roll (\tn[12]).
 
-\mapPic{b}{cave_8}{
-  \ref{skeinSwarm}/14/31,
-  \ref{mushroomsTunnel}/25/60,
-  \ref{basiliskCave}/40/30,
-  \ref{goblinHole}/25/90,
-  \ref{sunRoof}/62/55,
-  \ref{crackExit}/80/60,
-  \ref{windyPassage}/90/60,
-  \ifnum\value{temperature}=0{\normalsize\roll{Dexterity}{Stealth} (\tn[12])}\fi/50/05,
-  \ifcase\value{temperature} Wolves\or\Glsentrytext{woodspy}\else\Glsentrytext{crawler}\fi/85/05,
-}
-
 \paragraph{Going down-river}
 means death in a black abyss.
 
@@ -576,6 +565,8 @@ Failure means they block the passage -- just for \pgls{round} -- and nobody else
 \wayOut{This lower passage continues for 1~mile to}{skeinSwarm}
 
 \wayOut{If the troupe run up the little ledge the goblins stand on, they find a cavern full of large rocks at the top, which goes along for a mile to}{mushroomsTunnel}
+
+\caveMapOut
 
 \mapentry[mushroomsTunnel]{Glowing Chamber}
 

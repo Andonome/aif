@@ -1,3 +1,19 @@
+%%% Maps %%%
+
+\newcommand\caveMapOut[1][b]{
+  \mapPic{#1}{cave_8}{
+    \ref{skeinSwarm}/14/31,
+    \ref{mushroomsTunnel}/25/60,
+    \ref{basiliskCave}/40/30,
+    \ref{goblinHole}/25/90,
+    \ref{sunRoof}/62/55,
+    \ref{crackExit}/80/60,
+    \ref{windyPassage}/90/60,
+    \ifnum\value{temperature}=0{\normalsize\roll{Dexterity}{Stealth} (\tn[12])}\fi/50/05,
+    \ifcase\value{temperature} Wolves\or\Glsentrytext{woodspy}\else\Glsentrytext{crawler}\fi/85/05,
+  }
+}
+
 
 \newcommand\metroMapNames[1][b]{
   \mapNotes[\normalsize]{
@@ -83,6 +99,8 @@
 
   \widePic[#1]{Irina/metro_cave}
 }
+
+%%% Commentaries %%%
 
 \newcommand\playCommentaryCaveIn[1][b]{
   \playCommentary[#1]{
