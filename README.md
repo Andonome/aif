@@ -32,5 +32,5 @@ And when those spells create more problems, they just 'patch it' with more spell
 [aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Adventures_in_Fenestra.pdf?job=build
 [goblin hole]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/The_Goblin_Hole.pdf?job=build
 [feylands]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Snail_Trails.pdf?job=build
-[minizine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/minizine.pdf?job=build
+[minizine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/cyoa_bino.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-aif-16324948-issue-@incoming.gitlab.com

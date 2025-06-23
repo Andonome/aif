@@ -2,8 +2,8 @@ EXTERNAL_REFERENTS = core stories judgement
 
 pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
-targets += minizine.pdf
-output += a7_minizine
+targets += cyoa_bino.pdf
+output += booklets
 
 GOBLINS = The_Goblin_Hole
 ELVES = Snail_Trails
@@ -21,9 +21,9 @@ dependencies += magick
 
 DEPS += qr.tex 
 
-include config/vars
+include config/common.mk
 
-config/vars:
+config/common.mk:
 	@git submodule update --init
 
 config/rules.pdf:
@@ -63,9 +63,9 @@ images/extracted/fridge.jpg: images/Dyson_Logos/bowels.svg | images/extracted/
 
 ##########
 
-a7_minizine.pdf: ## CYOA but scren readable
+a7_cyoa_bino.pdf: ## CYOA but scren readable
 
-minizine.pdf: ## CYOA for printing
+cyoa_bino.pdf: ## CYOA for printing
 
 number_of_parts != ls cyoa/pt_* | wc -l
 
@@ -75,6 +75,6 @@ zine_batch_three != seq 3 3 $(number_of_parts) | sort -R | tr '\n' ' '
 zine_part_nums = $(zine_batch_three) $(zine_batch_two) $(zine_batch_one)
 zine_part_names = $(patsubst %, cyoa/pt_%.tex, $(zine_part_nums))
 
-a7_minizine/main.tex: cyoa/head.tex $(zine_part_names) | a7_minizine/
+booklets/a7_cyoa_bino.tex: cyoa/head.tex $(zine_part_names) | booklets/
 	cat $^ > $@
 	printf '%s\n' '\end{document}' >> $@
