@@ -3,7 +3,6 @@ EXTERNAL_REFERENTS = core stories judgement
 pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
 targets += cyoa_bino.pdf
-targets += one_hour.pdf
 output += booklets
 
 GOBLINS = The_Goblin_Hole
@@ -80,5 +79,5 @@ booklets/a7_cyoa_bino.tex: cyoa/head.tex $(zine_part_names) | booklets/
 	cat $^ > $@
 	printf '%s\n' '\end{document}' >> $@
 
-booklets/a7_one_hour.tex: enc/one_hour.tex
+booklets/a7_%.tex: enc/%.tex | booklets/
 	$(CP) $< $@
