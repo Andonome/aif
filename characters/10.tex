@@ -1,4 +1,4 @@
-\begin{filledCS}%
+\filledCS%
   {\composeHumanName}% NAME
   {Human}% RACE
   {Impulsive thief}% CONCEPT
@@ -6,6 +6,8 @@
   {{0}{1}{-1}}% BODY
   {{-1}{0}{-3}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
     \setcounter{Larceny}{2}
     \setcounter{Stealth}{1}
     \setcounter{Brawl}{1}
@@ -16,8 +18,4 @@
   {\unstoppable}% KNACKS
   {hidden dagger}% EQUIPMENT
 
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-\end{filledCS}
 

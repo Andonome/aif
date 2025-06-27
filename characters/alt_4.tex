@@ -1,5 +1,4 @@
-
-\begin{filledCS}%
+\filledCS%
   {Finill\"e}% NAME
   {Elf}% RACE
   {Happy-Go-Lucky Outcast}% CONCEPT
@@ -7,6 +6,16 @@
   {{-1}{0}{0}}% BODY
   {{0}{-2}{2}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
+    \renewcommand\charSpells{
+      \showSpells{Air2}
+      \showSpells{Air1}
+      \showSpells{Air1}
+      \showSpells{Fire1}
+      \showSpells{Light1}
+      \showSpells{Light1}
+    }
     \setcounter{Empathy}{1}
     \setcounter{Survival}{1}
     \setcounter{Fire}{1}
@@ -15,17 +24,3 @@
   }% SKILLS
   {}% KNACKS
   {Five-leafed clover}% EQUIPMENT
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-  \renewcommand\charSpells{
-    \showSpells{Air2}
-    \showSpells{Air1}
-    \showSpells{Air1}
-    \showSpells{Fire1}
-    \showSpells{Light1}
-    \showSpells{Light1}
-  }
-
-\end{filledCS}
-

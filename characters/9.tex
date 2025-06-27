@@ -1,4 +1,4 @@
-\begin{filledCS}%
+\filledCS%
   {\composeHumanName}% NAME
   {Human}% RACE
   {Lazy Watchman}% CONCEPT
@@ -6,6 +6,8 @@
   {{1}{-1}{-2}}% BODY
   {{0}{-1}{0}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
     \setcounter{Cultivation}{1}
     \setcounter{Deceit}{2}
     \setcounter{Projectiles}{2}
@@ -14,8 +16,4 @@
   }% SKILLS
   {\unstoppable}% KNACKS
   {}% EQUIPMENT
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-\end{filledCS}
 

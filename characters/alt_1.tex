@@ -1,5 +1,5 @@
 
-\begin{filledCS}%
+\filledCS%
   {Dell Countant}% NAME
   {Dwarf}% RACE
   {Unwelcome Oracle}% CONCEPT
@@ -7,6 +7,17 @@
   {{0}{-1}{-2}}% BODY
   {{1}{-2}{-1}}% MIND
   {%
+    \renewcommand\characterDebt{100 \glspl{sp}}
+    \renewcommand\rank{Fodder}
+    \renewcommand\charSpells{
+      \showSpells{Fate3}
+
+      \showSpells{Fate2}
+
+      \showSpells{Fate1}
+
+      \showSpells{Fate1}
+    }
     \setcounter{Academics}{1}
     \setcounter{Caving}{1}
     \setcounter{Performance}{1}
@@ -17,17 +28,4 @@
   {\ritualcaster}% KNACKS
   {Small book of dark prophecies}% EQUIPMENT
 
-  \renewcommand\characterDebt{100 \glspl{sp}}
-  \renewcommand\rank{Fodder}
-  \renewcommand\charSpells{
-    \showSpells{Fate3}
-
-    \showSpells{Fate2}
-
-    \showSpells{Fate1}
-
-    \showSpells{Fate1}
-  }
-
-\end{filledCS}
 

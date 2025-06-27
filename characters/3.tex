@@ -1,4 +1,4 @@
-\begin{filledCS}%
+\filledCS%
   {\composeHumanName}% NAME
   {Human}% RACE
   {Wannabe Soldier}% CONCEPT
@@ -6,6 +6,8 @@
   {{1}{0}{-1}}% BODY
   {{-3}{-2}{0}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
     \setcounter{Athletics}{1}
     \setcounter{Cultivation}{1}
     \setcounter{Deceit}{1}
@@ -18,8 +20,4 @@
   }% SKILLS
   {}% KNACKS
   {Helmet worn by \composeHumanName, famed \glsentrytext{guard} \gls{thane}}% EQUIPMENT
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-\end{filledCS}
 

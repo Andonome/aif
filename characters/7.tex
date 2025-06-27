@@ -1,4 +1,4 @@
-\begin{filledCS}%
+\filledCS%
   {\composeHumanName}% NAME
   {Human}% RACE
   {Sheep Rustler}% CONCEPT
@@ -6,6 +6,8 @@
   {{1}{1}{0}}% BODY
   {{0}{0}{1}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
     \setcounter{Athletics}{2}
     \setcounter{Cultivation}{1}
     \setcounter{Deceit}{1}
@@ -15,8 +17,4 @@
   }% SKILLS
   {\charge}% KNACKS
   {}% EQUIPMENT
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-\end{filledCS}
 

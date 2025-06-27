@@ -1,4 +1,4 @@
-\begin{filledCS}%
+\filledCS%
   {\composeHumanName}% NAME
   {Human}% RACE
   {Last Survivor}% CONCEPT
@@ -6,6 +6,8 @@
   {{1}{2}{0}}% BODY
   {{0}{-3}{-1}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
     \setcounter{Cultivation}{2}
     \setcounter{Performance}{1}
     \setcounter{Stealth}{1}
@@ -17,8 +19,4 @@
   {\unstoppable}% KNACKS
   {longbow {\footnotesize(\roll{Dexterity}{Projectiles} vs \roll{Speed}{Vigilance} for \dmg{Strength} Damage)}, 20 arrows, sketches of bandits who raised his \gls{village}}% EQUIPMENT
 
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-\end{filledCS}
 

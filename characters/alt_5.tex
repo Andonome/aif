@@ -1,5 +1,4 @@
-
-\begin{filledCS}%
+\filledCS%
   {Atar\'ot\"e}% NAME
   {Elf}% RACE
   {Thrill Seeker}% CONCEPT
@@ -7,6 +6,16 @@
   {{0}{0}{1}}% BODY
   {{0}{3}{-1}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
+    \renewcommand\charSpells{
+      \showSpells{Air1}
+
+      \showSpells{Fire1}
+
+      \showSpells{Light1}
+      \showSpells{Light1}
+    }
     \setcounter{Academics}{1}
     \setcounter{Vigilance}{1}
     \setcounter{Survival}{1}
@@ -17,16 +26,3 @@
   }% SKILLS
   {\snapcaster}% KNACKS
   {}% EQUIPMENT
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-  \renewcommand\charSpells{
-    \showSpells{Air1}
-
-    \showSpells{Fire1}
-
-    \showSpells{Light1}
-    \showSpells{Light1}
-  }
-
-\end{filledCS}
-

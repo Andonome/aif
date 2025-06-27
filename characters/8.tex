@@ -1,4 +1,5 @@
-\begin{filledCS}%
+
+\filledCS%
   {\composeHumanName}% NAME
   {Human}% RACE
   {World's Wost Alchemist}% CONCEPT
@@ -6,6 +7,24 @@
   {{1}{-3}{1}}% BODY
   {{0}{-1}{-1}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
+
+    \renewcommand\charSpells{
+      \showSpells{Air1}
+      \showSpells{Air1}
+
+      \vspace{\baselineskip}
+      \bigLine
+      \vspace{\baselineskip}
+
+      These higher level spells may only be cast by using an Air \gls{boon} to raise the Air \gls{sphere} by 1~level.
+
+      \bigLine
+
+      \showSpells{Air2}
+      \showSpells{Air3}
+    }
     \setcounter{Academics}{2}
     \setcounter{Cultivation}{1}
     \setcounter{Empathy}{1}
@@ -18,23 +37,3 @@
   }% SKILLS
   {\ritualcaster}% KNACKS
   {writing equipment, 2~Air \glsfmtplural{ingredient}, \rations, \arabic{r12}0~\glspl{cp}}% EQUIPMENT
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-  \renewcommand\charSpells{
-    \showSpells{Air1}
-    \showSpells{Air1}
-
-    \vspace{\baselineskip}
-    \bigLine
-    \vspace{\baselineskip}
-
-    These higher level spells may only be cast by using an Air \gls{boon} to raise the Air \gls{sphere} by 1~level.
-
-    \bigLine
-
-    \showSpells{Air2}
-    \showSpells{Air3}
-  }
-\end{filledCS}
-

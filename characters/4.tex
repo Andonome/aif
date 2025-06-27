@@ -1,4 +1,4 @@
-\begin{filledCS}%
+\filledCS%
   {\composeHumanName}% NAME
   {Human}% RACE
   {Wannabe Minstrel}% CONCEPT
@@ -6,6 +6,8 @@
   {{0}{0}{0}}% BODY
   {{0}{-1}{-1}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
     \setcounter{Academics}{1}
     \setcounter{Cultivation}{1}
     \setcounter{Performance}{1}
@@ -19,8 +21,4 @@
   {\unstoppable}% KNACKS
   {}% EQUIPMENT
 
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-\end{filledCS}
 

@@ -1,5 +1,5 @@
 
-\begin{filledCS}%
+\filledCS%
   {Morgaine Binder}% NAME
   {Dwarf}% RACE
   {Dispossessed Noble}% CONCEPT
@@ -7,6 +7,12 @@
   {{1}{0}{0}}% BODY
   {{0}{2}{1}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
+    \renewcommand\charSpells{
+      \showSpells{Fate1}
+      \showSpells{Fate1}
+    }
     \shortsword
     \partialleather
     \setcounter{Academics}{1}
@@ -17,13 +23,4 @@
   }% SKILLS
   {}% KNACKS
   {Chalk, 50' of rope, \rations\ and \rations}% EQUIPMENT
-
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-  \renewcommand\charSpells{
-    \showSpells{Fate1}
-    \showSpells{Fate1}
-  }
-
-\end{filledCS}
 

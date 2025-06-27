@@ -1,6 +1,4 @@
-
-\renewcommand\charSpellList{}
-\begin{filledCS}%
+\filledCS%
   {\composeHumanName}% NAME
   {Human}% RACE
   {Dishonoured Trader}% CONCEPT
@@ -8,6 +6,8 @@
   {{1}{2}{-2}}% BODY
   {{2}{-1}{-2}}% MIND
   {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
     \setcounter{Academics}{1}
     \setcounter{Empathy}{1}
     \setcounter{Larceny}{2}
@@ -20,8 +20,4 @@
   }% SKILLS
   {\adrenalinesurge}% KNACKS
   {(\textit{Take the first item of the character on your right})}% EQUIPMENT
-  \renewcommand\rank{Fodder}
-  \renewcommand\characterDebt{100 \glspl{sp}}
-
-\end{filledCS}
 
