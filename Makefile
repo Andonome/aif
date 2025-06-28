@@ -3,6 +3,7 @@ EXTERNAL_REFERENTS = core stories judgement
 pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
 targets += cyoa_bino.pdf
+targets += $(halfshots)
 output += booklets
 
 GOBLINS = The_Goblin_Hole
@@ -79,5 +80,12 @@ booklets/a7_cyoa_bino.tex: cyoa/head.tex $(zine_part_names) | booklets/
 	cat $^ > $@
 	printf '%s\n' '\end{document}' >> $@
 
+booklet_files = $(wildcard enc/*.tex)
+booklet_list = $(patsubst enc/%.tex, booklets/a7_%.tex, $(booklet_files) )
+halfshots = $(patsubst enc/%.tex, %.pdf, $(booklet_files) )
+
+$(halfshots): $(booklet_list)
+
 booklets/a7_%.tex: enc/%.tex | booklets/
 	$(CP) $< $@
+

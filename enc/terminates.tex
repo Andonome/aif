@@ -1,0 +1,412 @@
+\documentclass[10pt,twoside]{book}
+
+\usepackage{config/bind}
+\usepackage{config/booklet}
+\input{glossary.tex}
+
+\declareRegions{broch,village,lonelyRoad,lonelyTavern}
+
+\begin{document}
+
+\miniCover{Where the Caravan Terminates}{}
+
+\bookletThreads{broch}
+
+\bookletThreads{lonelyRoad}
+
+\bookletThreads{lonelyTavern}
+
+\bookletThreads{village}
+
+\thread{Where You Last Saw It}
+
+\pagestyle{minizine}%
+
+\segment[\gls{morning}]{lonelyRoad}% AREA
+{Weaver's Warnings}% NAME
+{\Pgls{notary} travels to confront \pgls{tender}}% SUMMARY
+
+\Gls{woetide} travels with a crew of traders (selling ropes and \glspl{ration}) to settle a dispute between the \gls{tender}~Greetfall and \gls{proctor}~Shrewlame.
+
+\begin{speechtext}
+  Greetfall thinks that if he's far from town, he's far from the law.
+  He thinks he can lie about anything he wants, and now he's contesting borrowing 100~\glsentrylongpl{gp}.
+\end{speechtext}
+
+\humansoldier[\npc{\glsentrysymbol{wrecan}\M\Hu}{\Glsentrytext{proctor}~Shrewlame}]
+
+\segment[\gls{afternoon}]{lonelyTavern}% AREA
+{Guardian of Ale}% NAME
+{The first little shit drinks alone on the roof}% SUMMARY
+
+Stoopcraw and Gaulbloat are a pair of little shits, and barely seventeen years old.
+They love archery, but hate all other work.
+So when they shot \pgls{woodspy}, they sold it as the nearest \gls{lonelyTavern} for 12~\glspl{sp} and started drinking.
+
+\mapPic[\large]{t}{Dyson_Logos/lonely_tavern_0}{
+  Vegetable Garden/24/98,
+  Four horses/75/17,
+  \ref{lt:latrines}/43/42,
+  Well/88/46,
+  \ref{lt:pantry}/50/64,
+  \ref{lt:fire}/48/77,
+  Kitchen/55/73,
+  \ref{lt:wagons}/90/80,
+}
+
+\begin{boxtext}
+  A tuneless song assaults your ears, theorizing about how \glspl{woodspy} mate.
+  Ahead, the singer stands on the third storey of \pgls{lonelyTavern}.
+  As the rest of the building comes into view, it shows more wall, but not a single window.
+  Even the side-building with double-doors --- presumably for horses --- shuts itself off from the intrusion of Sunlight.
+\end{boxtext}
+
+\sideMap{Dyson_Logos/lonely_tavern_1}{
+  \ref{lt:notary}/85/26,
+  \ref{lt:runway}/50/05,
+  \ref{lt:proctor}/70/26,
+  \ref{lt:woodspy}/86/85,
+  \ref{lt:chimney}/48/50,
+}{}
+
+Once inside, they find Gaulbloat, telling everyone in the tavern how much he's drunk, but he keeps losing count half-way through the `story'.
+
+Gaulbloat has no intention of giving the \gls{templeOfBeasts} their 50\% cut of the money.
+If \pgls{pc} pushes the matter, he argues, tells them to take the matter up with \gls{tender} Greetfall, threatens to kill them, vomits on them, then falls over.
+
+The tavern patrons complain about how long \gls{tender} Greetfall has been upstairs.
+Nobody can get a drink, so \gls{server} Gobvore --- a young waitress with eyes as vacant as a pigeon --- attempts to take the initiative and take payments from everyone while refilling from the pantry (room \vref{lt:pantry}).
+
+\begin{speechtext}
+  \Gls{tender} Greetfall?
+  He went upstairs, \gls{harvesting} the \gls{woodspy} I suppose.
+\end{speechtext}
+
+%\Gls{harvesting} \glsentrydesc{harvesting}
+
+\begin{enumerate}\itemsep0em
+  \item
+  The troupe can use the latrine on the left.
+  The other latrine is for good people, like high-ranking guild members.
+
+  Picking the lock needs a \roll{Intelligence}{Larceny} roll at \tn[10].
+  \label{lt:latrines}
+  \item
+  Four wagons stand outside.
+  \label{lt:wagons}
+  \item
+  Fireplace, with a cauldron of potatoes.
+  \label{lt:fire}
+  \item
+  Kitchen.
+  \label{lt:kitchen}
+  \item
+  Pantry, with warm ale, cheeses, and salted \gls{basilisk}.
+  \label{lt:pantry}
+  \item
+  These outer stairs are the only way to rooms \ref{lt:server} and \ref{lt:notary}
+  \label{lt:runway}
+  \item
+  \Gls{woetide} waits to resolve her dispute with Greetfall.
+  \label{lt:notary}
+  \item
+  \Gls{proctor} Shrewlame, en route to sort some stupid dispute between \glspl{warden}.
+  Three \glspl{armourer} accompany him.
+  \label{lt:proctor}
+  \item
+  Stoopcraw sings on the roof.
+  \label{lt:singer}
+  \item
+  The \gls{woodspy} fled from room \vref{lt:tenderRoom} through this chimney\ldots
+  \label{lt:chimney}
+  \item
+  \ldots and hid inside the chest in this room.
+  \label{lt:woodspy}
+  \item
+  The stairway creaks at the tiniest step.
+  \label{lt:stairs}
+  \item
+  Vacant guest rooms.
+  The \glspl{pc} can take one of these.
+  \label{lt:guests}
+  \item
+  Gobvore's room.
+  \label{lt:server}
+  \item
+  \Gls{harvesting} room, with knives and alcohol lanterns (still lit).
+  A pool of blood lies on the floor, as the \gls{woodspy} ate much of  Greetfall here.
+  \label{lt:cutting}
+  \item
+  Greetfall's room, where his body lies under the bed.
+  The \gls{woodspy} took him here, after feeding for a while.
+  It left no blood-streaks, as the corpse had already hardened by the time the \gls{woodspy} moved it.
+  \label{lt:tenderRoom}
+  \item
+  Two \gls{crawler} spinnerets and three \gls{woodspy} beaks --- none of these \glspl{ingredient} have given proper taxes to the \gls{templeOfBeasts}.
+  \label{lt:ingStore}
+\end{enumerate}
+
+\sideMap[4]{Dyson_Logos/lonely_tavern_2_b}%
+  {%
+    \ref{lt:cutting}/38/82,
+    \ref{lt:tenderRoom}/76/82,
+    \ref{lt:stairs}/80/45,
+    \ref{lt:singer}/07/05,
+  }%
+  {Creaking stairs and smell of copper.
+  }
+
+\paragraph{If the \glspl{pc} hunt upstairs}
+they won't find Gaulbloat easily, because the \gls{woodspy} he bought was not dead, merely wounded.
+It held his throat until he died, and ate his face.
+
+Searching every room reveals the pool of blood in room \vref{lt:cutting}.
+The \gls{woodspy} remains hidden in room \vref{lt:woodspy}, inside an empty chest of old linens.
+Searching the place requires a \roll{Wits}{Vigilance} roll at \tn[12] as \pgls{bandAct}.
+A tie indicates \pgls{pc} find the \gls{woodspy} while the others are spread apart, $1D6 \times 10$~\glspl{step} away each.
+
+\sideMap{Dyson_Logos/lonely_tavern_stable_1}%
+  {%
+    \rotatebox{90}{Extra feed}/85/50,%
+    \ref{lt:ingStore}/15/75,
+  }%
+  {Above the stables.\par}
+
+Shrewlame storms out of his room, with a scowl which somehow penetrates the beard.
+The patrons panic.
+
+\Gls{woetide} accuses Shrewlame of murder, because she heard someone coming downstairs while she was in her room.
+Shrewlame says that Greetfall has killed someone, removed their face, and run away into the forest.
+Gobvore wants everyone to check on the horses but won't go outside after dark.
+
+Shrewlame also heard someone coming down the stairs, but made nothing of it.
+
+\segment[\gls{night}]{lonelyTavern}% AREA
+{Creaking Stairs}% NAME
+{The first is a human, the next \pgls{monster}}% SUMMARY
+
+Once the tavern dies down, and everyone sleeps, \gls{woetide} goes down the creaking stairs (room \ref{lt:stairs}) to the latrines, outside (area \ref{lt:latrines}).
+Any \gls{pc} on \pgls{vigil} will hear her, otherwise they can roll \roll{Wits}{Vigilance} at \tn[12].
+
+\sideMap[3]{Dyson_Logos/lonely_tavern_2_a}%
+  {%
+    \ref{lt:guests}/25/70,
+    \ref{lt:guests}/77/70,
+  }%
+  {}
+
+Soon after, the \gls{woodspy} comes down, and climbs out the stairs (room \ref{lt:runway}) then \emph{up} onto the roof.
+From this vantage point, it can rest, and nothing can see it, except for Gaulbloat (who fell asleep after singing on the roof).
+It kills Gaulbloat, then slowly feeds on him.
+But this time, the blood drips down --- \textit{tap, tap, tap} --- onto the stairs.
+The moment the \gls{woodspy} notices this, it leaves, and enters the well (noted \vpageref{Dyson_Logos/lonely_tavern_0}).
+
+Tracking the \gls{woodspy} requires a \roll{Wits}{Survival} roll at \tn[10].
+Meanwhile, the \gls{lonelyTavern} fills with accusations and theories.
+Shrewlame demands that the troupe go into the forest with \pgls{torch} to search for Greetfall.
+\Gls{woetide} wants to get statements from everyone, and tells Shrewlame he can't take the money he's owed from a dead man.
+
+\segment[\gls{morning}]{lonelyTavern}% AREA
+{Well Again}% NAME
+{After a little time healing, the \gls{woodspy} has returned}% SUMMARY
+
+The \gls{woodspy} crawls a little up the well, grabs Gobvore, and retreats back down, leaving no clue except the fact that the bucket is missing.
+
+\setcounter{wounds}{3}
+\woodspy
+\setcounter{wounds}{0}
+
+Soon after, the \gls{lonelyTavern} gets a new \gls{tender}, who buys a lot of guard dogs.
+The \gls{woodspy} eats all of them.
+This cycle continues until someone finds and kills the \gls{woodspy}.
+
+\thread{What You Said}
+
+\segment[\gls{night}]{broch}% AREA
+{The Voiceless Roc}% NAME
+{The \glsfmttext{jotter} needs someone to kill a local \glsfmttext{griffin}}% SUMMARY
+
+Thunder threatens, as \glspl{guard} talk business in Rankvore \gls{broch}.
+``\textit{The farmers say the \gls{griffin}'s as big as a house.
+They say it picked up a sheep and just flew away.''}
+
+After the pipes at dusk, \gls{jotter} \composeHumanName\ gives the \glspl{pc} the privilege of going to Tallbow \gls{village} to kill that \gls{griffin}, and bring it back, for a 50\% cut of the value of the corpse.
+
+\segment{lonelyRoad}% AREA
+{What Lies in the Forest}% NAME
+{\Pgls{griffin} mimics a dog's bark from the forest}% SUMMARY
+
+Passing the forest, the troupe hear endless barking noises, each one a perfect repetition of the last.
+The noise comes from \pgls{griffin}, imitating the sound that it associates with sheep.
+
+The \gls{griffin} soon goes silent, but the troupe can find the tree it stands on with a \roll{Intelligence}{Survival} roll at \tn[8].
+If they talk or make noises as they approach, it imitates them perfectly, then jumps from the treetop and flies somewhere nearby, and repeats.
+
+\begin{figure}[t]
+  \griffin[\npc{\A}{Massive \Glsfmttext{griffin}}\setcounter{r2}{3}]
+\end{figure}%
+
+\segment[\gls{vlg}]{village}% AREA
+{Competition}% NAME
+{Other \glsfmtplural{guard} hack at the bushes, but wish they could kill the \gls{griffin}}% SUMMARY
+
+As the skies clear, \glspl{pc} arrive in Tallbow \gls{village}, which has two giant \glspl{crossbow} along its massive wooden wall.
+The giant \glspl{crossbow} have a -2~Penalty to aim, but inflict \dmg{4}~Damage.
+
+Three \glspl{guard} \glspl{gDigger} --- \composeHumanName, \composeHumanName, and \composeHumanName\ --- have the unhappy duty of cutting down the bushes and trees around the farmland outside the walls, this gives the local archers more space to see danger coming towards people in the fields.
+They hate the menial chore, and accuse the \glspl{pc} of nepotism.
+
+\begin{itemize}\it
+  \item
+  Hey \gls{jotter}'s pet!
+  How much you giving him to get the profitable missions?
+  \item
+  What's your rank?
+  I'm \pgls{gDigger}, why can't I get this job?
+\end{itemize}
+
+If the \glspl{pc} agree to split the profits from the \gls{griffin}'s corpse, the \glspl{gDigger} help happily.
+The farmers have sided with the \glspl{gDigger}, and ask the \glspl{pc} to sleep outside the walls.
+However, they will help \gls{harvesting} the \gls{griffin}'s corpse once it's dead.
+
+\begin{figure}[ht]
+  \humansoldier[\npc{\T[3]\F\M\M\Hu}{\Glsfmtplural{gDigger}}]
+\end{figure}%
+
+\segment[\gls{evening}]{village}% AREA
+{Echoes}% NAME
+{The \glsfmttext{griffin} mimics \pgls{pc}}% SUMMARY
+The \gls{griffin} mimics \pgls{pc}, but won't attack until someone stands away from the rest (and outside the \gls{village}).
+One they leave, the \gls{griffin} swoop-attacks, attempting to grab any character with \pgls{weight} under 6.
+If it receives Damage, it's forced to land; once down it cannot fly without climbing a tree.
+
+After one swoop the \gls{griffin} leaves for $1D6$ days.
+The farmers of Tallbow suggest the \glspl{pc} go into the forest and hunt for it immediately.
+
+The \glspl{gDigger} finish their work after three days and leave.
+
+%\thread{What You Want}
+%
+%\segment[\gls{morning}]{lonelyRoad}% AREA
+%{Great Deals}% NAME
+%{Traders arrive with \glspl{ration} for sale}% SUMMARY
+%
+%A caravan of three wagons trundles through the misty morning.
+%The \glspl{guard} \glspl{soldier} --- \composeHumanName\ and \composeHumanName\ --- keep them safe.
+%
+%\begin{description}
+%  \item[\composeHumanName]
+%  has \glspl{torch} (\mkPrice[cp]{7}), and speaks with endless positivity.
+%  \item[\composeHumanName]
+%  has \rations, \rations, and \rations\ -- \mkPrice[cp]{10} each.
+%  He disapproves of everything, and everyone.
+%  \item[Cindercough]
+%  adjusts her hat until the \glspl{soldier} are distracted and talks to \pgls{pc} alone.
+%  She wants to know if the troupe have found anything `\emph{interesting}', that they haven't shared with the \glspl{jotter}.
+%  She can get a good price\ldots
+%\end{description}
+%
+%\begin{figure}[t]
+%  \chitincrawler
+%\end{figure}%
+%
+%\segment[\gls{morning}]{lonelyRoad}% AREA
+%{Patience}% NAME
+%{\Pgls{crawler} observes patiently}% SUMMARY
+%
+%The air is calm; the troupe receive only 2~\glspl{mp} this day.
+%\Pgls{crawler} observes the \glspl{pc} from a tall tree, over 200~\glspl{step} away.
+%If confronted, it flees.
+%
+%\segment[\gls{night}]{village}% AREA
+%{Payment}% NAME
+%{\Pgls{crawler} attacks at night}% SUMMARY
+%
+%Rain beats the ground, and the \gls{crawler} from earlier comes to visit the \gls{village}.
+%If the \glspl{pc} make any noise (or have any light) it attacks them.
+%Otherwise, it enters the \gls{village}, climbing the wall, and then begins to feel around the houses for an opening.
+%The \glspl{pc} may hear the sound of crying children over the rain, but they won't hear the \gls{crawler}.
+%
+%
+%\segment[\gls{afternoon}]{lonelyRoad}% AREA
+%{Greater Deals}% NAME
+%{Cindercough returns}% SUMMARY
+%
+%A lightning storm builds.
+%By evening, it will break, and each \gls{round} has a 1 in 6 chance of lightning providing light for the \glspl{pc} to see by.
+%The energy provides 4~\glspl{mp} throughout the \gls{interval}.
+%
+%But for now, a wagon approaches.
+%
+%\begin{description}
+%  \item[\composeHumanName]
+%  has eight longswords for \mkPrice{10} each.
+%  \item[\composeHumanName]
+%  has \rations, \rations, and \rations\ -- \mkPrice[cp]{10} each.
+%  \item[Cindercough]
+%  Cindercough returns to ask if the troupe have anything to sell.
+%  ``\textit{Maybe the spinneret from \pgls{crawler}?  Or some \gls{griffin} wings?}''.
+%
+%  She can pay \mkPrice{8} for any useable \glspl{ingredient}.
+%\end{description}
+%
+%\thread{What He Needs}
+%
+%\begin{figure}[t]
+%  \chitincrawler
+%  \setcounter{gold}{\value{xp}}
+%\end{figure}%
+%
+%\segment[\gls{morning}]{broch}% AREA
+%{Carrying the Fallen}% NAME
+%{\Gls{ranger} Cainboak needs urgent medical care}% SUMMARY
+%
+%The piper drones as the Sun rises slowly.
+%The muddy-orange light shines down on a crawling shape the size of a wagon, approaching the \gls{broch} at a gallop.
+%
+%The \gls{broch} has \glspl{bow} for everyone's use, so the \glspl{pc} can aim from the balcony.
+%Once the \gls{crawler} approaches, the \glspl{pc} can aim at \tn[12], but need to hit \tn[17] for \pgls{vitalShot}.
+%
+%If the \glspl{pc} kill the \gls{crawler}, \gls{jotter} Carndug values the corpse at \arabic{gold}~\glspl{sp}, takes
+%\roundUp{gold}
+%\arabic{gold}~\glspl{sp} for the \gls{templeOfBeasts}, divides
+%\set{gold}{xp}\divide\value{gold} by 2%
+%\addtocounter{gold}{0}%
+%\arabic{gold}~\glspl{sp} among the \glspl{pc}, then takes back the \glsentrylongpl{sp} to repay their debt.
+%
+%Finally, he hands them a `town-pass', stating they may enter town for a day.
+%Their mission is to approach a nearby \gls{bothy}, where \gls{ranger} Cainboak lies on the ground, badly wounded.
+%They must take him back to town, unharmed.
+%
+%The \gls{bothy} lies four miles away, and a cart waits for them outside (they will have to push it by hand).
+%Inside, Cainboak is clutches his sides.
+%\Pgls{basilisk} trampled over him, breaking an arm, a leg, and most of his ribs.
+%He won't be able to say much, or do anything.
+%
+%\segment{lonelyRoad}% AREA
+%{Unfriendly Faces}% NAME
+%{\Glspl{guard} ahead carry a dangerous prisoner}% SUMMARY
+%
+%\begin{exampletext}
+%  Yesterday, six \glspl{guard} attacked a bandit camp.
+%  Three survivors fled with their captured leader --- \pgls{witch} called Guilter.
+%\end{exampletext}
+%
+%As the troupe trundle slowly onwards, another wagon joins them from another road.
+%The back has a man, shackled to the ground, his arms held painfully outstretched.
+%He stares at the \glspl{pc} with pain and malice.
+%
+%The \glspl{pc} may wish to overtake, the wagon in front, but they cannot move fast without damagine Cainboak.
+%Or they may wish to hang back, but this will make them very late to get to town.
+%
+%\humanalchemist[\NPC{\M\Hu}{Guilter}%
+%  {eyes burning with hatred}% DESCRIPTION
+%  {always mouthing words, mostly silent}% MANNERISM
+%  {freedom}% WANTS
+%  \npcQuote{Jesters, all of you}]
+%
+%\showStdSpells
+%
+%If the \glspl{pc} do nothing about the \gls{witch} staring at them, Guilter looks for the worst possible moments to cast spells on them.
+%
+\end{document}
