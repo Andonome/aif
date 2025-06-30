@@ -16,32 +16,7 @@
 
 \bookletThreads{village}
 
-\thread{What You Want}
-
-\pagestyle{minizine}%
-
-\segment[\gls{morning}]{lonelyRoad}% AREA
-{Great Deals}% NAME
-{Traders arrive with \glspl{ration} for sale}% SUMMARY
-
-A caravan of three wagons trundles through the misty morning.
-The \gls{guard} \glspl{soldier} --- \composeHumanName\ and \composeHumanName\ --- keep them safe.
-
-\begin{description}
-  \item[\composeHumanName]
-  has \glspl{torch} (\mkPrice[cp]{7}), and speaks with endless positivity.
-  \item[\composeHumanName]
-  has \rations, \rations, and \rations\ -- \mkPrice[cp]{10} each.
-  He disapproves of everything, and everyone.
-  \item[Cindercough]
-  adjusts her hat until the \glspl{soldier} are distracted and talks to \pgls{pc} alone.
-  She wants to know if the troupe have found anything `\emph{interesting}', that they haven't shared with the \glspl{jotter}.
-  She can get a good price\ldots
-\end{description}
-
-\begin{figure}[t]
-  \chitincrawler
-\end{figure}%
+\chitincrawler
 
 \segment[\gls{morning}]{lonelyRoad}% AREA
 {Patience}% NAME
@@ -60,35 +35,10 @@ If the \glspl{pc} make any noise (or have any light) it attacks them.
 Otherwise, it enters the \gls{village}, climbing the wall, and then begins to feel around the houses for an opening.
 The \glspl{pc} may hear the sound of crying children over the rain, but they won't hear the \gls{crawler}.
 
-
-\segment[\gls{afternoon}]{lonelyRoad}% AREA
-{Greater Deals}% NAME
-{Cindercough returns}% SUMMARY
-
-A lightning storm builds.
-By evening, it will break, and each \gls{round} has a 1 in 6 chance of lightning providing light for the \glspl{pc} to see by.
-The energy provides 4~\glspl{mp} throughout the \gls{interval}.
-
-But for now, a wagon approaches.
-
-\begin{description}
-  \item[\composeHumanName]
-  has eight longswords for \mkPrice{10} each.
-  \item[\composeHumanName]
-  has \rations, \rations, and \rations\ -- \mkPrice[cp]{10} each.
-  \item[Cindercough]
-  Cindercough returns to ask if the troupe have anything to sell.
-  ``\textit{Maybe the spinneret from \pgls{crawler}?  Or some \gls{griffin} wings?}''.
-
-  She can pay \mkPrice{8} for any useable \glspl{ingredient}.
-\end{description}
-
 \thread{What He Needs}
 
-\begin{figure}[t]
-  \chitincrawler
-  \setcounter{gold}{\value{xp}}
-\end{figure}%
+\chitincrawler
+\setcounter{gold}{\value{xp}}
 
 \segment[\gls{morning}]{broch}% AREA
 {Carrying the Fallen}% NAME
@@ -141,5 +91,67 @@ Or they may wish to hang back, but this will make them very late to get to town.
 \showStdSpells
 
 If the \glspl{pc} do nothing about the \gls{witch} staring at them, Guilter looks for the worst possible moments to cast spells on them.
+
+\thread{What You Said}
+
+\segment[\gls{night}]{broch}% AREA
+{The Voiceless Roc}% NAME
+{The \glsfmttext{jotter} needs someone to kill a local \glsfmttext{griffin}}% SUMMARY
+
+Thunder threatens, as \glspl{guard} talk business in Rankvore \gls{broch}.
+``\textit{The farmers say the \gls{griffin}'s as big as a house.
+They say it picked up a sheep and just flew away.''}
+
+After the pipes at dusk, \gls{jotter} \composeHumanName\ gives the \glspl{pc} the privilege of going to Tallbow \gls{village} to kill that \gls{griffin}, and bring it back, for a 50\% cut of the value of the corpse.
+
+\griffin[\npc{\A}{Massive \Glsfmttext{griffin}}\setcounter{r2}{3}]
+
+\segment{lonelyRoad}% AREA
+{What Lies in the Forest}% NAME
+{\Pgls{griffin} mimics a dog's bark from the forest}% SUMMARY
+
+Passing the forest, the troupe hear endless barking noises, each one a perfect repetition of the last.
+The noise comes from \pgls{griffin}, imitating the sound that it associates with sheep.
+
+The \gls{griffin} soon goes silent, but the troupe can find the tree it stands on with a \roll{Intelligence}{Survival} roll at \tn[8].
+If they talk or make noises as they approach, it imitates them perfectly, then jumps from the treetop and flies somewhere nearby, and repeats.
+
+\segment[\gls{vlg}]{village}% AREA
+{Competition}% NAME
+{Other \glsfmtplural{guard} hack at the bushes, but wish they could kill the \gls{griffin}}% SUMMARY
+
+As the skies clear, \glspl{pc} arrive in Tallbow \gls{village}, which has two giant \glspl{crossbow} along its massive wooden wall.
+The giant \glspl{crossbow} have a -2~Penalty to aim, but inflict \dmg{4}~Damage.
+
+Three \glspl{guard} \glspl{gDigger} --- \composeHumanName, \composeHumanName, and \composeHumanName\ --- have the unhappy duty of cutting down the bushes and trees around the farmland outside the walls, this gives the local archers more space to see danger coming towards people in the fields.
+They hate the menial chore, and accuse the \glspl{pc} of nepotism.
+
+\begin{itemize}\it
+  \item
+  Hey \gls{jotter}'s pet!
+  How much you giving him to get the profitable missions?
+  \item
+  What's your rank?
+  I'm \pgls{gDigger}, why can't I get this job?
+\end{itemize}
+
+If the \glspl{pc} agree to split the profits from the \gls{griffin}'s corpse, the \glspl{gDigger} help happily.
+The farmers have sided with the \glspl{gDigger}, and ask the \glspl{pc} to sleep outside the walls.
+However, they will help \gls{harvesting} the \gls{griffin}'s corpse once it's dead.
+
+\humansoldier[\npc{\T[3]\F\M\M\Hu}{\Glsfmtplural{gDigger}}]
+
+\segment[\gls{evening}]{village}% AREA
+{Echoes}% NAME
+{The \glsfmttext{griffin} mimics \pgls{pc}}% SUMMARY
+The \gls{griffin} mimics \pgls{pc}, but won't attack until someone stands away from the rest (and outside the \gls{village}).
+One they leave, the \gls{griffin} swoop-attacks, attempting to grab any character with \pgls{weight} under 6.
+If it receives Damage, it's forced to land; once down it cannot fly without climbing a tree.
+
+After one swoop the \gls{griffin} leaves for $1D6$ days.
+The farmers of Tallbow suggest the \glspl{pc} go into the forest and hunt for it immediately.
+
+The \glspl{gDigger} finish their work after three days and leave.
+
 
 \end{document}
