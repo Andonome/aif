@@ -4,6 +4,7 @@ pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
 targets += cyoa_bino.pdf
 targets += $(halfshots)
+targets += a7l_characters.pdf
 output += booklets
 
 GOBLINS = The_Goblin_Hole
@@ -21,6 +22,8 @@ DEPS += commands.tex
 dependencies += magick
 
 DEPS += qr.tex 
+
+vpath a7%.tex characters
 
 include config/common.mk
 
@@ -85,6 +88,8 @@ booklet_list = $(patsubst enc/%.tex, booklets/a7_%.tex, $(booklet_files) )
 halfshots = $(patsubst enc/%.tex, %.pdf, $(booklet_files) )
 
 $(halfshots): $(booklet_list)
+
+a7l_characters.pdf: ## A7 example characters
 
 booklets/a7_%.tex: enc/%.tex | booklets/
 	$(CP) $< $@

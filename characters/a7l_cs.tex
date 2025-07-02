@@ -1,0 +1,41 @@
+\documentclass[10pt,landscape]{book}
+
+\usepackage{config/bind}
+\usepackage{config/booklet}
+
+\geometry{%
+  paperwidth=105mm,
+  paperheight=74mm,
+}
+
+\begin{document}
+
+\input{characters/1.tex}
+\input{characters/2.tex}
+\input{characters/3.tex}
+\input{characters/4.tex}
+\input{characters/5.tex}
+\input{characters/6.tex}
+\input{characters/7.tex}
+\input{characters/8.tex}
+\input{characters/9.tex}
+
+
+\ifcase\month\relax
+\or
+  \input{characters/alt_1.tex}
+\or
+  \input{characters/alt_2.tex}
+\or
+  \input{characters/alt_3.tex}
+\or
+  \input{characters/alt_4.tex}
+\or
+  \input{characters/alt_5.tex}
+\else
+  \input{characters/10.tex}
+\fi
+
+
+
+\end{document}
