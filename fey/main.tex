@@ -61,6 +61,64 @@ Keywords={TTRPG,RPG,roleplaying}
 \glsresetall
 \glsunset{susjot}
 \glsunset{coppernut}
-\input{fey/all.tex}
+
+\input{fey/call.tex}
+
+% Chapter 1: Hook
+\input{fey/snails_attack.tex}
+
+%\feyCommentaryBailey
+
+% Chapter 2: The Path
+\input{fey/forest_intro.tex}
+
+% Introducing snails and goblins.
+\input{fey/ravencops.tex}
+
+% Introducing the oathless lovers, with Sunway walk.
+\input{fey/oathtower.tex}
+
+%\feyCommentaryRoads
+
+% Introducing the ranger.
+\input{fey/sunway.tex}
+
+% Introducing the plateaus, their gardens, bridges, roots, and Hi.
+\input{fey/plateaus.tex}
+
+% Introducing the messenger.
+\input{fey/shadepaths.tex}
+\stopcontents[segments]
+
+% Chapter 3: Wrap-Up
+\input{fey/conclusion.tex}
+
+% Daily events as random encounters
+\input{fey/enc_intro.tex}
+
+\begin{multicols}{2}
+  \input{fey/enchanted_enc.tex}
+  %\feyCommentaryLocations
+  \input{fey/garden_enc.tex}
+\end{multicols}
+
+% Later Locations
+\input{fey/locations_head.tex}
+
+\begin{multicols}{2}
+  \input{fey/enchanted_locations.tex}
+  \input{fey/sundered_locations.tex}
+  \input{fey/plateau_locations.tex}
+\end{multicols}
+\stopcontents[segments]
+
+%\input{fey/mound.tex}
+
+% Best to keep the oneshot version snappy, with a small glossary.
+\iftoggle{intro}{%
+  \glsunsetall
+}{}
+
+\input{fey/appendix.tex}
 
 \end{document}
