@@ -29,6 +29,7 @@ And when those spells create more problems, they just 'patch it' with more spell
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [core]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Core_Rules.pdf?job=build
+[stories]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Stories.pdf?job=build
 [aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Adventures_in_Fenestra.pdf?job=build
 [goblin hole]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/The_Goblin_Hole.pdf?job=build
 [feylands]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Snail_Trails.pdf?job=build
