@@ -4,7 +4,7 @@ pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
 targets += cyoa_bino.pdf
 targets += $(halfshots)
-targets += a7l_characters.pdf
+targets += a7l_cs.pdf
 output += booklets
 
 GOBLINS = The_Goblin_Hole
@@ -89,7 +89,7 @@ halfshots = $(patsubst enc/%.tex, %.pdf, $(booklet_files) )
 
 $(halfshots): $(booklet_list)
 
-a7l_characters.pdf: ## A7 example characters
+a7l_cs.pdf: ## A7 example characters
 
 booklets/a7_%.tex: enc/%.tex | booklets/
 	$(CP) $< $@
