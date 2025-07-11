@@ -9,8 +9,36 @@
 
 \miniCover{A Choose-Your-Own Adventure Zine}{}
 
-\noindent
-Grab a pencil, a fistful of dice, and \pgls{pc} for \gls{bind}.
+{
+  \toggletrue{allyCharacter}
+  \small
+  \shortsword
+  \noindent
+  Grab a pencil, and a fistful of dice.
+  Your \gls{pc} sits above.
+
+  If the \gls{pc} takes Damage, mark off that many \glspl{fp}.
+  If you run out of \glspl{fp}, mark off \glspl{hp}.
+  When you run out of \glspl{hp}, the character dies.
+
+  The \weaponName\ grants a \absNum{weaponBonus}~Bonus to hit, and \absNum{weaponDamage}~Damage.
+
+  \randomCYOAcharacter{\gls{bow}, quarrel}
+
+  \begin{description}
+    \item[\Glspl{fp}]
+    \fpStat
+    \item[\Glspl{hp}]
+    \hpStat
+    \item[Cause of Death I:]
+    \bigLine
+    \item[Cause of Death II:]
+    \bigLine
+    \item[Cause of Death III:]
+    \bigLine
+  \end{description}
+
+}
 
 \pagebreak
 \pagestyle{minizine}
