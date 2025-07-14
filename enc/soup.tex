@@ -67,8 +67,8 @@ If they cut wood, they can restock the \gls{bothy} and nothing attacks.
 {Mission Report}% NAME
 {Two \glspl{ranger} ask the troupe how their mission with the box went}% SUMMARY
 
-After the troupe have left Granny Carnpox's place, they meet three \glspl{ranger} on the road, riding horses.
-The rangers ask them how the mission went.
+After the troupe leave Granny Carnpox's place, they meet three \glspl{ranger} on the road, riding horses.
+The \glspl{ranger} ask them how the mission went.
 
 \humansoldier[\npc{\T[3]\Hu\M\F}{\composeHumanName, \composeHumanName, \& \composeHumanName}]
 
@@ -80,8 +80,8 @@ However, they are willing to wait for a day at \pgls{broch} instead.
 If the troupe can kill Granny Carnpox and bring her head to the \gls{broch}, the \glspl{ranger} make the report to \pgls{jotter}, and make sure they receive a good payment.
 If the troupe don't manage to return, they will face prosecution in \pgls{court}, and probable hanging.
 
-If the troupe attack the \glspl{ranger}, the \glspl{ranger} turn their horses and flee.%
-\footnote{The horses spend \pgls{ap} to turn, and one more to move.}
+If the troupe attack the \glspl{ranger}, the \glspl{ranger} turn their horses and flee.
+The horses spend \pgls{ap} to turn, and one more to move.
 
 \subsection{Granny's House}
 
@@ -135,11 +135,12 @@ Now it goes everywhere with Rentfold, lifting him up as they travel.
 Baxter lies nearby, camouflaged perfectly into the forest.
 
 \paragraph{Three miles from the cottage}
-the troupe meet a hairy creature, prowling for mushrooms.
-Her naked, perfectly human mouth speaks normally, but the rest of the face has hair all over it.
-She has no clothes -- just thick, brown and white hair covering her whole body, except where humans normally have hair.%
+the troupe meet a hairy creature, prowling for mushrooms.%
 \footnote{Coinfilch and her crew came to kill Granny in her sleep.
 Granny inverted their hair, then left them to catch fire while moving through her cottage's cramped kitchen.}
+Her naked, perfectly human mouth speaks normally, but the rest of the face has hair all over it.
+She has no clothes -- just thick, brown and white hair covering her whole body, except where humans normally have hair.
+\togglefalse{examplecharacter}
 
 \Person{%
   \NPC{\F\Hu}{Coinfilch}
@@ -150,16 +151,19 @@ Granny inverted their hair, then left them to catch fire while moving through he
   {{1}{1}{1}}% BODY
   {{-4}{0}{1}}% MIND
   {%
-    \set{Brawl}{2}
+    \set{Melee}{2}
     \set{Cultivation}{1}
     \set{Projectiles}{1}
     \set{Survival}{1}
     \set{Academics}{2}
     \set{Stealth}{1}
     \set{Larceny}{1}
+    \rapier
+    \renewcommand\weaponName{rapier (hidden in fur)}
+    \set{xpbonus}{3}
   }% SKILLS
   {}% KNACKS
-  {Satchel of mushrooms}% EQUIPMENT
+  {satchel of mushrooms}% EQUIPMENT
   {}% ABILITIES
 
 Coinfilch asks the troupe if they have come for the evening soup.
@@ -203,7 +207,7 @@ He can tell them what happened to Coinfilch and Rentfold, if the \glspl{pc} ask.
 However, he can't think very clearly, as he relates every sentence to letters he once wrote, and has a lot of trouble speaking about anything not concerned with writing.
 
 \paragraph{One mile from the cottage}
-the forest opens, revealing a grand ring of decay, with an outer ring of verdant plants.
+the forest opens, revealing the cottage, and Carnpox' garden.
 
 \begin{boxtext}
   The forest ends suddenly.
