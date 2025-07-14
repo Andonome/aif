@@ -12,6 +12,8 @@
 
 \bookletThreads{broch}
 
+\bookletThreads{bothy}
+
 \bookletThreads{lonelyRoad}
 
 \thread{What's in the Box}
@@ -19,8 +21,9 @@
 \Pgls{doula} has retired to a little cottage a few decades ago.
 She should be dead by now, but she's not playing by the rules.
 
-\Gls{susjot} decided to mount a surprise attack, before she becomes a problem, but the \glspl{ranger} he sent to kill her haven't returned.
+\Pgls{susjot} decided to mount a surprise attack, before she becomes a problem, but the \glspl{ranger} he sent to kill her haven't returned.
 So he felt worried, and did something desperate: he contacted a gnomish trap-maker, who made him a box to deliver to Granny Carnpox.
+Find the contents \vpageref{insideTheBox}.
 
 \segment[\gls{morning}]{broch}% AREA
 {The Parcel}% NAME
@@ -30,19 +33,19 @@ So he felt worried, and did something desperate: he contacted a gnomish trap-mak
 
 Every dawn, a piper stands at the top of the \gls{broch} and blows his pipes.
 Any \gls{pc} capable of using \pgls{bow} can (and must) stand at the top, waiting for any \gls{monster} which comes from the forest.
-No \glspl{monster} come today, but \pgls{susjot} has a mission for them -- to deliver a box, and not open it.
+No \glspl{monster} come today, but \pgls{susjot} has a mission for them:
 
 \begin{speechtext}
   Got a special parcel to deliver here.
   Simple mission, and the temple's happy to pay two silver each (taken off your debt).
   Just deliver this wooden box to old Carnpox, unopened.
-  You understand about keeping the box shut, and delivering the box to her, still shut, and not opened.
+  You understand about keeping the box shut, and delivering the box to her, still shut, and \emph{not} opened.
   Am I making sense?
 \end{speechtext}
 
 \Gls{susjot} quizzes the troupe about the mission, to make sure they understand how to not open a box.
-If a player says they're opening the box, \gls{susjot} hears the \gls{pc}, and tells them they're no longer on the mission.
-The player must select or make another \gls{pc}.
+If a player says they're opening the box, \gls{susjot} hears the \gls{pc}, and tells them they're no longer on the mission
+(the player must select another \gls{pc}).
 
 The path to Carnpox' house lies eight miles away, close to \pgls{bothy}.
 
@@ -70,7 +73,7 @@ The rangers ask them how the mission went.
 \horse[\npc{\T[3]\A}{Horses}]
 
 If the troupe have opened the box themselves, the \glspl{ranger} explain the horrible situation they are in.
-The \glspl{ranger} should --- by law --- take the to a town for prosecution.
+The \glspl{ranger} should --- by law --- take them to town for prosecution.
 However, they are willing to wait for a day at \pgls{broch} instead.
 If the troupe can kill Granny Carnpox and bring her head to the \gls{broch}, the \glspl{ranger} make the report to \pgls{jotter}, and make sure they receive a good payment.
 If the troupe don't manage to return, they will face prosecution in \pgls{court}, and probable hanging.
@@ -88,7 +91,7 @@ If the troupe attack the \glspl{ranger}, the \glspl{ranger} turn their horses an
 
 The voice is Rentfold.
 He has no arms, and no legs, just a stylish moustache.%
-\footnote{Rentfold worked as \pgls{ranger}, but when he tried to kill Granny Carnpox, her chef cut open his legs, then cut into his legs, and arms, and kept on hacking.}
+\footnote{Rentfold worked as \pgls{ranger}, but when he tried to kill Granny Carnpox, chef Gorflake cut his legs open, then cut them off, then the arms.}
 
 \begin{itemize}
   \item\bf
@@ -101,11 +104,16 @@ He has no arms, and no legs, just a stylish moustache.%
   Who did your moustache?
   \item\it
   My elf-girlfriend.
-  What's your intentions here?
   Who sent you?
 \end{itemize}
 
-\Person{\npc{\M\Hu}{Rentfold \& Baxter}}%
+\Person{%
+  \NPC{\M\Hu}{Rentfold \& Baxter}
+  {chad jawline, glorious moustache, limbless}% DESCRIPTION
+  {raised eyebrow}% MANNERISM
+  {to be free of Carnpox' control}% WANTS
+  \npcQuote{Baxter, stand!}
+  }%
   {{3}{2}{1}}% BODY
   {{0}{-1}{0}}% MIND
   {%
@@ -119,8 +127,9 @@ He has no arms, and no legs, just a stylish moustache.%
   {\tentacles}% ABILITIES
 
 
-Rentfold has a symbiotic relationship with \pgls{woodspy} called `Baxter', who lost its beak.%
-\footnote{Granny used the beak as \pgls{ingredient}, but kept the \gls{woodspy} alive.  Now it goes everywhere with Rentfold, lifting him up as they travel.}
+Rentfold has a symbiotic relationship with \pgls{woodspy} called `Baxter', who lost its beak.
+Granny used Baxter's beak as \pgls{ingredient}, but kept the \gls{woodspy} alive.
+Now it goes everywhere with Rentfold, lifting him up as they travel.
 Baxter lies nearby, camouflaged perfectly into the forest.
 
 \paragraph{Three miles from the hut}
@@ -130,7 +139,12 @@ She has no clothes -- just thick, brown and white hair covering her whole body, 
 \footnote{Coinfilch and her crew came to kill Granny in her sleep.
 Granny inverted their hair, then left them to catch fire while moving through her hut's cramped kitchen.}
 
-\Person{\npc{\F\Hu}{Coinfilch}}%
+\Person{%
+  \NPC{\F\Hu}{Coinfilch}
+  {complete body-hair, except the scalp and mouth}% DESCRIPTION
+  {looks about for mushrooms}% MANNERISM
+  {to find enough mushrooms to complete the soup}% WANTS
+  \npcQuote{The key to soup is mushrooms, and soup is the key to everything}}%
   {{1}{1}{1}}% BODY
   {{-4}{0}{1}}% MIND
   {%
@@ -143,18 +157,22 @@ Granny inverted their hair, then left them to catch fire while moving through he
     \set{Larceny}{1}
   }% SKILLS
   {}% KNACKS
-  {}% EQUIPMENT
-  {\tentacles}% ABILITIES
+  {Satchel of mushrooms}% EQUIPMENT
+  {}% ABILITIES
 
 Coinfilch asks the troupe if they have come for the evening soup.
 
 \paragraph{Two miles from the hut}
-a man with no hands approaches.
-His oily beard is covered in red and blue ink-stains.
-Bony-quills replace his hands.%
-\footnote{The `ink' comes from a \gls{crawler} spinneret, embedded in his abdomen.}
+a man with bone-quills instead of his hands, which drip.
+The `ink' comes from a \gls{crawler} spinneret, embedded in his abdomen.
 
-\Person{\npc{\M\Hu}{Nettlepike}}%
+\Person{%
+  \NPC{\M\Hu}{Nettlepike}
+  {oily beard covered in red and blue ink-stains, light-grey ink dripping from quill-bones}% DESCRIPTION
+  {wipes pen clean}% MANNERISM
+  {to be useful}% WANTS
+  \npcQuote{the pen is mightier than the sword, you know?
+So I'm actually stronger than when I had hands}}%
   {{1}{0}{0}}% BODY
   {{-4}{-1}{-2}}% MIND
   {%
@@ -168,7 +186,7 @@ Bony-quills replace his hands.%
   }% SKILLS
   {}% KNACKS
   {}% EQUIPMENT
-  {Quill-bones for hand, which produce translucent ink}% ABILITIES
+  {\addAbility{Quill-bones for hand, which produce translucent ink}}% ABILITIES
 
 \begin{speechtext}
   What's in the box?
@@ -179,10 +197,7 @@ Bony-quills replace his hands.%
 \end{speechtext}
 
 Nettlepike happily explains that he's a bad man because he tried to stab Granny.
-But `\textit{the pen is mightier than the sword, you know?
-So I'm actually stronger than when I had hands'}.
-
-Nettlepike will happily explain what happened to Coinfilch and Rentfold, if the \glspl{pc} ask.
+He can tell them what happened to Coinfilch and Rentfold, if the \glspl{pc} ask.
 However, he can't think very clearly, as he relates every sentence to letters he once wrote, and has a lot of trouble speaking about anything not concerned with writing.
 
 \paragraph{One mile from the hut}
@@ -205,7 +220,9 @@ And if they do, she rallies the troupes, secretively, and quietly, while leaving
 
 \paragraph{At the hut}
 Rentfold sits on the roof (his symbiotic \gls{woodspy} lies camouflaged into the wattle beside him).
-He does not reveal how he got on the roof, he simply eyes the troupe suspiciously, as they knock upon (or enter) the gnome-sized door of the hut.
+He points (by pursing his lips) to the weapons rack by the gnome-sized door; it holds a single, rusted, greatsword.
+He tells the \glspl{pc} to place their weapons upon it.
+He does not reveal how he got on the roof.
 
 \subsubsection{Inside the hut}
 chef Gorflake cooks for granny.%
@@ -213,7 +230,12 @@ chef Gorflake cooks for granny.%
 He has a special procedure to turn around without his fat stomach throwing everything off the table, and another procedure to get to the shelves on the other side of the room (it begins with putting his stomach on the table, and pulling it inwards, then shuffling round the side of the room).
 Gorflake cannot leave the hut through the front door.
 
-\Person{\npc{\M\Hu}{Gorflake}}%
+\Person{%
+  \NPC{\M\Hu}{Gorflake}
+  {sweating and flustered}% DESCRIPTION
+  {wipes running nose on sleeve}% MANNERISM
+  {to make everyone eat}% WANTS
+  \npcQuote{could you move aside!?  I need the big spoon!}}%
   {{3}{2}{-2}}% BODY
   {{-4}{-3}{-2}}% MIND
   {%
@@ -225,12 +247,17 @@ Gorflake cannot leave the hut through the front door.
   }% SKILLS
   {}% KNACKS
   {}% EQUIPMENT
-  {Quill-bones for hand, which produce translucent ink}% ABILITIES
+  {}% ABILITIES
 
 The shelves above chef Gorflake hold flour, oils, rice, and beer.
 The shelves at the other side of the room hold three jars of dried \gls{basilisk} skin, ink-dye suppositories for Nettlepike's pen-arms.
 
-\Person{\npc{\M\Hu}{The Whittler}}%
+\Person{%
+  \NPC{\M\Hu}{The Whittler}
+  {gangly man with rust-coloured beard}% DESCRIPTION
+  {chip-chip-chip-chip}% MANNERISM
+  {to whittle, and remember his name}% WANTS
+  \npcQuote{}}%
   {{1}{3}{0}}% BODY
   {{-4}{-3}{-2}}% MIND
   {%
@@ -239,16 +266,82 @@ The shelves at the other side of the room hold three jars of dried \gls{basilisk
     \set{Crafts}{3}
     \set{Cultivation}{1}
     \set{Deceit}{1}
+    \Dagger
   }% SKILLS
-  {\specialist{whittling}}% KNACKS
-  {}% EQUIPMENT
-  {Quill-bones for hand, which produce translucent ink}% ABILITIES
+  {\specialist{whittling bowls}, \weaponmaster}% KNACKS
+  {sandpaper}% EQUIPMENT
+  {}% ABILITIES
 
 By the fire, `the Whittler' whittles.%
 \footnote{He tried to stab granny, so now he has to carve her new bowls and cutlery.}
 He can't remember his own name, he just knows he has to make Granny a complete set of bowls and cutlery for Granny Carnpox before he leaves.
 But every time someone has soup, they throw the bowl and spoon into the fire.
 
+Over the fire, a massive pot simmers with eternal soup.
+The chef adds ingredients, people drink, he adds some more.
+It changes a little bit every day.
+
+Movement inside the room demands a \roll{Dexterity}{Athletics} check at \tn[8].
+Failure will knock something off a shelf, inflicting \dmg{-2}~Damage.
+
+The next room is where Granny Carnpox stays.
+
+\subsubsection{At Sundown}
+everyone arrives to eat the soup, and every new person raises the \gls{tn} to move.
+Coinfilch leaves hair everywhere.
+Nettlepike complains that the wrong food will make his ink-gland produce weird colours.
+Rentfold chews up chunks of meat, and spits them into Baxter's beakless maw.
+The Whittler eats, then cries quietly as everyone burns their bowls after the meal.
+Two cats arrive and meow loudly outside, but Granny won't let them eat until everyone else has finished.
+These are Granny's `special little boys', modified with spells to grow big and strong.
+
+\morphcat[\npc{\T[2]\A\R}{Cats: Gorgeous \& Rainfall}]
+
+Finishing the soup requires \pgls{bandAct} roll of \roll{Strength}{Athletics} at \tn[10].
+Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attribute} Penalties vanish and they may help the troupe.
+
+\Person{%
+  \NPC{\F\Hu}{Granny Carnpox}
+  {blue headscarf, sunken eyes}% DESCRIPTION
+  {touches people's cheeks}% MANNERISM
+  {to care for the house}% WANTS
+  \npcQuote{Granny has what you need}}%
+  {{-1}{1}{-2}}% BODY
+  {{2}{0}{2}}% MIND
+  {%
+    \set{Brawl}{1}
+    \set{Academics}{2}
+    \set{Crafts}{1}
+    \set{Cultivation}{3}
+    \set{Deceit}{1}
+    \set{Empathy}{2}
+    \set{Fate}{2}
+    \set{Water}{2}
+    \set{Earth}{2}
+    \Dagger
+  }% SKILLS
+  {\specialist{growing peaches}}% KNACKS
+  {}% EQUIPMENT
+  {}% ABILITIES
+
+\setcounter{diceNo}{0}
+\showStdSpells
+
+\subsubsection{Opening the box}\label{insideTheBox}
+requires untying the complex knot at the front: \roll{Intelligence}{Seafaring} (\tn[10]).
+Inside, \pgls{crossbow} waits, loaded.
+The steel bow stays rigid, dwarven beard makes an unbreakable string.
+The white arrowheads gleam, all three made from quartz.
+
+The arrow inflicts \dmg{6}~Damage.
+A helmet has a 3-in-6 chance of negating all Damage.
+
+Inside, a letter:
+
+\begin{speechtext}
+  Find any valuables and place them inside the box.
+  Hide it in the forest, ten steps from the path.
+\end{speechtext}
 
 
 \end{document}
