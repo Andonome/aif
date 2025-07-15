@@ -1,10 +1,11 @@
 # Adventures in Fenestra
 
-| Links                          | Related Books                  |
+| Links                          | Minizines                      |
 |:-------------------------------|:-------------------------------|
-| [The Goblin Hole][goblin hole] | [Players book][stories]        |
-| [Snail Trails][feylands]       | [Extended Core Rules][core]    |
-| [Email an idea][issues email]  | [Oneshot Adventure][oneshot]   |
+| [The Goblin Hole][goblin hole] | [Rules][rules]                 |
+| [Snail Trails][feylands]       | [Example Characters][cs_zine]  |
+| [Email an idea][issues email]  | [Spy in the Tavern][spy_zine]  |
+| [The Fridge][fridge]           | [Granny's Soup][soup_zine]     |
 
 *Adventures in Fenestra* is a collection of modules for the BIND RPG.
 
@@ -29,9 +30,14 @@ And when those spells create more problems, they just 'patch it' with more spell
 [compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [core]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Core_Rules.pdf?job=build
+[rules]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/rules.pdf?job=build
 [stories]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Stories.pdf?job=build
 [aif]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Adventures_in_Fenestra.pdf?job=build
 [goblin hole]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/The_Goblin_Hole.pdf?job=build
 [feylands]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Snail_Trails.pdf?job=build
-[minizine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/cyoa_bino.pdf?job=build
+[fridge]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/fridge.pdf?job=build
+[cs_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/cs.pdf?job=build
+[bino_cyoa]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/cyoa_bino.pdf?job=build
+[spy_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/spy.pdf?job=build
+[soup_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/soup.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-aif-16324948-issue-@incoming.gitlab.com

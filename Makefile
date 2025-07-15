@@ -6,6 +6,7 @@ halfshots = $(patsubst enc/%.tex, %.pdf, $(booklet_files) )
 
 pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
+pdfs += fridge.pdf
 targets += cyoa_bino.pdf
 targets += $(halfshots)
 targets += a7l_cs.pdf
