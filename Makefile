@@ -1,5 +1,9 @@
 EXTERNAL_REFERENTS = core stories judgement
 
+booklet_files = $(wildcard enc/*.tex)
+booklet_list = $(patsubst enc/%.tex, booklets/a7_%.tex, $(booklet_files) )
+halfshots = $(patsubst enc/%.tex, %.pdf, $(booklet_files) )
+
 pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
 targets += cyoa_bino.pdf
@@ -83,10 +87,6 @@ booklets/a7_cyoa_bino.tex: cyoa/head.tex $(zine_part_names) | booklets/
 	cat $^ > $@
 	printf '%s\n' '\ifnum\thepage<14\pagebreak\null\fi' >> $@
 	printf '%s\n' '\end{document}' >> $@
-
-booklet_files = $(wildcard enc/*.tex)
-booklet_list = $(patsubst enc/%.tex, booklets/a7_%.tex, $(booklet_files) )
-halfshots = $(patsubst enc/%.tex, %.pdf, $(booklet_files) )
 
 $(halfshots): $(booklet_list)
 
