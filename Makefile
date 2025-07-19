@@ -9,7 +9,7 @@ pdfs += $(GOBLINS).pdf
 pdfs += fridge.pdf
 targets += cyoa_bino.pdf
 targets += $(halfshots)
-targets += a7l_cs.pdf
+targets += cs_zine
 output += booklets
 
 GOBLINS = The_Goblin_Hole
@@ -95,4 +95,11 @@ a7l_cs.pdf: ## A7 example characters
 
 booklets/a7_%.tex: enc/%.tex | booklets/
 	$(CP) $< $@
+
+.PHONY: cs_zine
+cs_zine: cs.pdf ## Make A7 zine example characters
+	make zine_characters.pdf
+
+zine_characters.pdf: cs.pdf $(mini_spell_pdf)
+	pdfunite $^ $@
 

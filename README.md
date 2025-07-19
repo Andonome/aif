@@ -36,7 +36,7 @@ And when those spells create more problems, they just 'patch it' with more spell
 [goblin hole]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/The_Goblin_Hole.pdf?job=build
 [feylands]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/Snail_Trails.pdf?job=build
 [fridge]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/fridge.pdf?job=build
-[cs_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/cs.pdf?job=build
+[cs_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/zine_characters.pdf?job=build
 [bino_cyoa]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/cyoa_bino.pdf?job=build
 [spy_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/spy.pdf?job=build
 [soup_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/soup.pdf?job=build
