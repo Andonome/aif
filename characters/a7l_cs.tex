@@ -10,15 +10,19 @@
 
 \begin{document}
 
-\input{characters/1.tex}
-\input{characters/2.tex}
-\input{characters/3.tex}
-\input{characters/4.tex}
-\input{characters/5.tex}
-\input{characters/6.tex}
-\input{characters/7.tex}
-\input{characters/8.tex}
-\input{characters/9.tex}
+\ifodd\day
+  \input{characters/1.tex}
+  \input{characters/2.tex}
+  \input{characters/3.tex}
+  \input{characters/4.tex}
+  \input{characters/5.tex}
+\else
+  \input{characters/6.tex}
+  \input{characters/7.tex}
+  \input{characters/8.tex}
+  \input{characters/9.tex}
+  \input{characters/10.tex}
+\fi
 
 
 \ifcase\month\relax
@@ -30,10 +34,8 @@
   \input{characters/alt_3.tex}
 \or
   \input{characters/alt_4.tex}
-\or
-  \input{characters/alt_5.tex}
 \else
-  \input{characters/10.tex}
+  \input{characters/alt_5.tex}
 \fi
 
 
