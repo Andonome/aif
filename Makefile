@@ -7,8 +7,8 @@ halfshots = $(patsubst enc/%.tex, %.pdf, $(booklet_files) )
 pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
 pdfs += fridge.pdf
-targets += cyoa_bino.pdf
-targets += $(halfshots)
+zines += cyoa_bino.pdf
+zines += $(halfshots)
 targets += cs_zine
 output += booklets
 
