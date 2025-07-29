@@ -124,18 +124,29 @@
 \fi
 
 \genBailey
+\addtocounter{r6}{\value{r2}}
 \genBailey
 
+\appto{\baileymarkets}{%
+  \baileyServices\par%
+  \baileyHospitality\par%
+  \baileySalvage\par%
+}
 % Baileys without a river should have a well.
 \ifodd\thediceNo
   \appto{\baileymarkets}{\baileyWell}
 \else
   \ifodd\value{r4b}
-    \appto{\baileydesc}{Men are fix boats by the shallow river.  One introduces himself as `\marketBoatman'.  }
+    \appto{\baileydesc}{Men are fixing boats by the shallow river.  One introduces himself as `\marketBoatman'.  }
   \else
     \appto{\baileydesc}{A deep river run through a wicker fence in the wall.  }
   \fi
 \fi
+
+\appto{\baileymarkets}{%
+  \baileyWeaver\par%
+  \butcherStall\par%
+}
 
 \edef\baileyname{\expandafter\MakeUppercase\name}
 
