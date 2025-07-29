@@ -10,6 +10,7 @@ pdfs += fridge.pdf
 zines += cyoa_bino.pdf
 zines += $(halfshots)
 targets += cs_zine
+targets += daily_bailey.pdf
 output += booklets
 
 GOBLINS = The_Goblin_Hole
@@ -92,6 +93,7 @@ booklets/a7_cyoa_bino.tex: cyoa/head.tex $(zine_part_names) | booklets/
 $(halfshots): $(booklet_list)
 
 a7l_cs.pdf: ## A7 example characters
+daily_bailey.pdf: config/markets/commands.tex config/market.sty ## Standard bailey market.
 
 booklets/a7_%.tex: enc/%.tex | booklets/
 	$(CP) $< $@
