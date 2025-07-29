@@ -1,0 +1,156 @@
+\documentclass[a4paper,openany]{book}
+
+\usepackage{config/bind}
+\input{config/markets/commands.tex}
+
+\newcommand\baileyWell{
+  \noindent
+  \begin{minipage}{\linewidth}
+  \begin{speechtext}
+    Proper \showTemperature\ today.
+    \rotatebox{\value{rn1t2}}{Remember and buy some rope.}
+    \rotatebox{\value{rn1t2}}{If you don' have it, you'll need it.}
+
+    {\small
+      Why don't the \glspl{guard} make weapons?
+      Why do they have to buy them from the \glspl{sunGuard}?
+    }
+    \par
+    \hspace{3em}\flourish~{\scshape\Large Well}~\flourish
+    \par
+    {\sl
+    \ifcase\thecycle
+      Last week, out with the traders, I heard this little bell from the forest.
+      Want to know where it was?
+    \or
+      \Gls{sable} can go fuck an icicle.
+      What kind of god makes snow and just lies in it?
+      `Lazy', that's what he is.
+    \or
+      Warming up, yes, indeed.
+      Listen well and you can almost hear the \glspl{basilisk} waking from hibernation.
+    \or
+      Do you think the water tastes funny?
+      Once my ale's done, it'll taste bloody hilarious!
+    \or
+      I know exactly why \gls{sylf} hates everyone.
+      I'm three \glspl{cycle} pregnant, and not up for nothing.
+      What do you think of `\composeHumanName' as a name?
+    \else
+      Another year comes to an end.
+      Good bloody riddance!
+      \thefenestraYear\ was bad for \ifodd\year carrots\else barley\fi, and bad for \ifodd\thefenestraDay wine\else beets\fi.
+    \fi
+    }
+  \end{speechtext}
+  \end{minipage}
+}
+
+
+\newcommand\baileydesc{}
+\newcommand\baileymarkets{%
+  \baileyServices\par%
+  \baileyHospitality\par%
+  \baileySalvage\par%
+  \baileyWeaver\par%
+}
+\newcommand\baileymarketsWide{}
+\newcommand\baileyback{}
+
+\newcommand\genBailey{%
+  \ifcase\value{r6}\relax\or%
+    \appto{\name}{copper}%
+    \appto{\baileydesc}{Copper spikes crown the outer wall.  }%
+    \appto{\baileymarketsWide}{\baileyArms}%
+  \or%
+    \appto{\name}{stank}%
+    \appto{\baileydesc}{You can smell the local peatbog from a mile away.  }%
+    \appto{\baileymarketsWide}{\baileyTanner}%
+  \or%
+    \appto{\name}{what}%
+    \appto{\baileydesc}{The local \gls{doula} did not appreciate the old name, so people changed it to `what'.  }%
+    \appto{\baileymarkets}{\doulaCottage}%
+  \or%
+    \appto{\name}{nut}%
+    \appto{\baileydesc}{Walnut tree grow around the farmland in a grand circle.
+    They say walnuts keep the \gls{edge} at bay.  }%
+    \renewcommand\rations{walnut cake}
+    \appto{\baileymarketsWide}{\baileyFletcher\par}
+  \or%
+    \appto{\name}{trapper}%
+    \appto{\baileydesc}{The farmers remind everyone not to `skulk', as the outer fields have bear-traps hidden where you least expect them.  Every farmer here has a good memory.  }%
+    \appto{\baileymarketsWide}{\baileyFletcher\par}
+  \or%
+    \appto{\name}{broch}%
+    \appto{\baileydesc}{The \gls{village} retains the \gls{broch} which founded the area, though nowadays a retired \gls{ranger} lives there.  }%
+    \appto{\baileymarketsWide}{\baileyRanger\par}
+  \else%
+    \appto{\name}{quarry}%
+    \appto{\baileydesc}{Half of the settlement is made from stone.  }%
+    \appto{\baileymarketsWide}{\baileySmith}%
+  \fi%
+  \appto{\baileymarkets}{\par}%
+  \addtocounter{r6}{\value{r2}}
+}
+
+%%%%% Make the Random Bailey %%%%%
+
+\randomize
+\randomize
+\randomize
+
+\ifodd\value{r12}
+  \stepcounter{diceNo}
+\fi
+
+\genBailey
+\genBailey
+
+% Baileys without a river should have a well.
+\ifodd\thediceNo
+  \appto{\baileymarkets}{\baileyWell}
+\else
+  \ifodd\value{r4b}
+    \appto{\baileydesc}{Men are fix boats by the shallow river.  One introduces himself as `\marketBoatman'.  }
+  \else
+    \appto{\baileydesc}{A deep river run through a wicker fence in the wall.  }
+  \fi
+\fi
+
+\edef\baileyname{\expandafter\MakeUppercase\name}
+
+\begin{document}
+
+\frontmatter
+
+\pagestyle{empty}
+
+\section*{\baileyname}
+
+\baileydesc
+
+All purchases require a full morning or afternoon.
+Farmers chat, then barter, and finally refer the buyer to a neighbour.
+
+\begin{multicols}{3}
+
+\baileymarkets
+
+\end{multicols}
+
+\begin{multicols*}{2}
+
+\baileymarketsWide
+
+\end{multicols*}
+
+
+\clearpage
+
+\begin{multicols}{2}
+
+\baileyback
+
+\end{multicols}
+
+\end{document}
