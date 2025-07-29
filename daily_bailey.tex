@@ -7,16 +7,23 @@
   \noindent
   \begin{minipage}{\linewidth}
   \begin{speechtext}
-    Proper \showTemperature\ today.
-    \rotatebox{\value{rn1t2}}{Remember and buy some rope.}
-    \rotatebox{\value{rn1t2}}{If you don' have it, you'll need it.}
+    \hspace{3em}\flourish~{\scshape\Large Well}~\flourish
+    \par
+    \ifodd\value{r12}
+      Proper \showTemperature\ today.
+    \fi
+    \ifodd\value{r3}
+    \else
+      \rotatebox{\value{rn1t2}}{Remember and buy some rope.}
+      \rotatebox{\value{rn1t2}}{If you don' have it, you'll need it.}
+    \fi
 
-    {\small
+    \ifodd\day
+      \small
       Why don't the \glspl{guard} make weapons?
       Why do they have to buy them from the \glspl{sunGuard}?
-    }
-    \par
-    \hspace{3em}\flourish~{\scshape\Large Well}~\flourish
+    \fi
+    \normalsize
     \par
     {\sl
     \ifcase\thecycle
@@ -33,28 +40,31 @@
       Do you think the water tastes funny?
       Once my ale's done, it'll taste bloody hilarious!
     \or
-      I know exactly why \gls{sylf} hates everyone.
-      I'm three \glspl{cycle} pregnant, and not up for nothing.
-      What do you think of `\composeHumanName' as a name?
+      \ifodd\thefenestraDay
+        Don't bump the watermelons with the bucket, or they'll go bad.
+        Come back tonight, and you can have one.
+      \else
+        I know exactly why \gls{sylf} hates everyone.
+        I'm three \glspl{cycle} pregnant, and not up for nothing.
+        What do you think of `\composeHumanName' as a name?
+      \fi
     \else
       Another year comes to an end.
       Good bloody riddance!
       \thefenestraYear\ was bad for \ifodd\year carrots\else barley\fi, and bad for \ifodd\thefenestraDay wine\else beets\fi.
     \fi
     }
+    \ifodd\thefenestraDay%
+      {\tiny When I grow up, I'll be \pgls{guard}.}
+    \fi
   \end{speechtext}
   \end{minipage}
 }
 
 
 \newcommand\baileydesc{}
-\newcommand\baileymarkets{%
-  \baileyServices\par%
-  \baileyHospitality\par%
-  \baileySalvage\par%
-  \baileyWeaver\par%
-}
-\newcommand\baileymarketsWide{}
+\newcommand\baileymarkets{}
+\newcommand\baileymarketsWide{\baileyFletcher\par}
 \newcommand\baileyback{}
 
 \newcommand\genBailey{%
@@ -67,23 +77,33 @@
     \appto{\baileydesc}{You can smell the local peatbog from a mile away.  }%
     \appto{\baileymarketsWide}{\baileyTanner}%
   \or%
+    \appto{\name}{broch}%
+    \appto{\baileydesc}{The \gls{village} retains the \gls{broch} which founded the area, though nowadays a retired \gls{ranger} lives there.  }%
+    \appto{\baileymarketsWide}{\baileyRanger\par}
+  \or%
     \appto{\name}{what}%
-    \appto{\baileydesc}{The local \gls{doula} did not appreciate the old name, so people changed it to `what'.  }%
+    \appto{\baileydesc}{The local \gls{doula} did not appreciate the \gls{village}'s original name, so people changed it to `what'.  }%
     \appto{\baileymarkets}{\doulaCottage}%
   \or%
     \appto{\name}{nut}%
     \appto{\baileydesc}{Walnut tree grow around the farmland in a grand circle.
     They say walnuts keep the \gls{edge} at bay.  }%
     \renewcommand\rations{walnut cake}
-    \appto{\baileymarketsWide}{\baileyFletcher\par}
+    \appto{\baileymarketsWide}{}
   \or%
     \appto{\name}{trapper}%
     \appto{\baileydesc}{The farmers remind everyone not to `skulk', as the outer fields have bear-traps hidden where you least expect them.  Every farmer here has a good memory.  }%
-    \appto{\baileymarketsWide}{\baileyFletcher\par}
-  \or%
-    \appto{\name}{broch}%
-    \appto{\baileydesc}{The \gls{village} retains the \gls{broch} which founded the area, though nowadays a retired \gls{ranger} lives there.  }%
     \appto{\baileymarketsWide}{\baileyRanger\par}
+  \or%
+    \appto{\name}{mill}%
+    \appto{\baileydesc}{%
+      \ifodd\thediceNo%
+        A windmill stands at the side, with an old woman watching your approach from a window.
+      \else%
+        A small watermill turns gently in the river.
+      \fi%
+    }%
+    \appto{\baileymarketsWide}{}
   \else%
     \appto{\name}{quarry}%
     \appto{\baileydesc}{Half of the settlement is made from stone.  }%
@@ -143,7 +163,6 @@ Farmers chat, then barter, and finally refer the buyer to a neighbour.
 \baileymarketsWide
 
 \end{multicols*}
-
 
 \clearpage
 
