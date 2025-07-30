@@ -18,12 +18,16 @@
       \rotatebox{\value{rn1t2}}{If you don' have it, you'll need it.}
     \fi
 
+    \flushright
     \ifodd\day
-      \small
+      \footnotesize
       Why don't the \glspl{guard} make weapons?
       Why do they have to buy them from the \glspl{sunGuard}?
+    \else
+      My son's in the \gls{guard}.
+      He kills \pgls{basilisk} a week, but never sends money home.
     \fi
-    \normalsize
+    \normalsize\rm\centering
     \par
     {\sl
     \ifcase\thecycle
@@ -73,14 +77,6 @@
     \appto{\baileydesc}{Copper spikes crown the outer wall.  }%
     \appto{\baileymarketsWide}{\baileyArms}%
   \or%
-    \appto{\name}{stank}%
-    \appto{\baileydesc}{You can smell the local peatbog from a mile away.  }%
-    \appto{\baileymarketsWide}{\baileyTanner}%
-  \or%
-    \appto{\name}{broch}%
-    \appto{\baileydesc}{The \gls{village} retains the \gls{broch} which founded the area, though nowadays a retired \gls{ranger} lives there.  }%
-    \appto{\baileymarketsWide}{\baileyRanger\par}
-  \or%
     \appto{\name}{what}%
     \appto{\baileydesc}{The local \gls{doula} did not appreciate the \gls{village}'s original name, so people changed it to `what'.  }%
     \appto{\baileymarkets}{\doulaCottage}%
@@ -91,8 +87,12 @@
     \renewcommand\rations{walnut cake}
     \appto{\baileymarketsWide}{}
   \or%
-    \appto{\name}{trapper}%
-    \appto{\baileydesc}{The farmers remind everyone not to `skulk', as the outer fields have bear-traps hidden where you least expect them.  Every farmer here has a good memory.  }%
+    \appto{\name}{stank}%
+    \appto{\baileydesc}{You can smell the local peatbog from a mile away.  }%
+    \appto{\baileymarketsWide}{\baileyTanner}%
+  \or%
+    \appto{\name}{broch}%
+    \appto{\baileydesc}{The \gls{village} retains the \gls{broch} which founded the area, though nowadays a retired \gls{ranger} lives there.  }%
     \appto{\baileymarketsWide}{\baileyRanger\par}
   \or%
     \appto{\name}{mill}%
@@ -104,6 +104,10 @@
       \fi%
     }%
     \appto{\baileymarketsWide}{}
+  \or%
+    \appto{\name}{trapper}%
+    \appto{\baileydesc}{The farmers remind everyone not to `skulk', as the outer fields have bear-traps hidden where you least expect them.  Every farmer here has a good memory.  }%
+    \appto{\baileymarketsWide}{\baileyRanger\par}
   \else%
     \appto{\name}{quarry}%
     \appto{\baileydesc}{Half of the settlement is made from stone.  }%
@@ -144,8 +148,8 @@
 \fi
 
 \appto{\baileymarkets}{%
-  \baileyWeaver\par%
   \butcherStall\par%
+  \baileyWeaver\par%
 }
 
 \edef\baileyname{\expandafter\MakeUppercase\name}
