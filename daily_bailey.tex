@@ -77,8 +77,13 @@
     \appto{\baileydesc}{Copper spikes crown the outer wall.  }%
     \appto{\baileymarketsWide}{\baileyArms}%
   \or%
-    \appto{\name}{what}%
-    \appto{\baileydesc}{The local \gls{doula} did not appreciate the \gls{village}'s original name, so people changed it to `what'.  }%
+    \ifodd\thefenestraDay
+      \appto{\name}{what}%
+      \appto{\baileydesc}{The local \gls{doula} did not appreciate the \gls{village}'s original name, so people changed it to `what'.  }%
+    \else
+      \appto{\name}{kettle}%
+      \appto{\baileydesc}{A wattle cottage stands awkwardly far from \baileyname's walls, beyond the farmland, in a sea of \ifnum\thecycle>3 daffodils\else thorns\fi.  }%
+    \fi
     \appto{\baileymarkets}{\doulaCottage}%
   \or%
     \appto{\name}{nut}%
