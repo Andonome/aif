@@ -108,7 +108,24 @@
         A small watermill turns gently in the river.
       \fi%
     }%
-    \appto{\baileymarketsWide}{}
+    \ifnum\value{r12}=9
+      \appto{\baileyback}{%
+        The mill screams in the darkness.
+
+        \paragraph{Rush through the dark while the miller family remains safe behind their bedroom door,}
+        with \roll{Wits}{Athletics} at \tn[9].
+
+        \paragraph{If the creature enters the door,}
+        it kills, then retreats with the corpse.
+        Chasing it down requires a \roll{Speed}{Athletics} check at \tn[10].
+
+        \ifnum\thetemperature>1
+          \chitincrawler
+        \else
+          \woodspy
+        \fi
+      }
+    \fi
   \or%
     \appto{\name}{trapper}%
     \appto{\baileydesc}{The farmers remind everyone not to `skulk', as the outer fields have bear-traps hidden where you least expect them.  Every farmer here has a good memory.  }%
@@ -120,6 +137,107 @@
   \fi%
   \appto{\baileymarkets}{\par}%
   \addtocounter{r6}{\value{r2}}
+}
+
+%%%% The daily bailey  must have text on both sides of the page, so people can
+%    orient themselves by it when printing booklets.
+
+\newcommand\afterBaileyEvent{%
+  \ifcase\value{r6}\relax%
+  \or% 1
+    \appto{\baileyback}{%
+      The next evening, people with long, pointed ears arrive from beyond the \gls{edge} to sell.
+
+      \gnollSellers
+
+      \gnollDogShow
+    }%
+  \or% 2
+    \ifnum\thetemperature>1
+      \appto{\baileyback}{%
+        That night, \pgls{crawler} arrives, climbs over the wall, and feels around the houses for an opening.
+        Everyone remains still, and by the morning, it leaves.
+
+        \chitincrawler
+      }%
+    \else%
+      \appto{\baileyback}{%
+        That night, \pgls{woodspy} arrives, climbs over the wall, and feels around the houses for an opening.
+        \ifodd\thefenestraDay
+          It leaves soon after, silently, but \baileyname\ remains worried the entire morning.
+        \else
+          It camouflages into a roof, silently, and waits for the right moment to strike.
+        \fi
+        \woodspy
+      }%
+    \fi
+  \or% 3
+    \appto{\baileyback}{%
+      The night passes peacefully.
+      Morning arrives with a \showTemperature\ wind.
+      A small caravan arrive soon after.
+      \composeHumanName\ sells \rations, \rations, and clothes.
+      And \composeHumanName\ is happy to buy any \gls{ingredient} for \mkPrice{7}.
+    }%
+  \or% 4
+    \appto{\baileyback}{%
+      In the dark, two little lights pass quietly between houses; two young people have crept out to meet each other in secret, and everyone in \baileyname\ pretends not to hear them.
+    }%
+  \or% 5
+    \appto{\baileyback}{%
+      The next afternoon, bandits arrive at \baileyname, with \pgls{woodspy} corpse, claiming to be \glspl{guard}.
+      This group began as \glspl{fodder} recently, then fled their post, killed their \gls{jotter}, gathered more, and marched a long way here hoping to go unnoticed.
+      They still have their black clothing, but know nothing about the local \glspl{guard}.
+
+      If the troupe push their claim, they become irritable, then leave and plan \pgls{ambush} (they don't want the \glspl{pc} telling everyone where they are).
+
+      \humansoldier[\npc{\T[\arabic{r12}]\Hu}{\arabic{noAppearing}~`\Glspl{gDigger}'}]
+
+      \composeHumanName\ speaks for the group, with her
+      \ifodd\value{r4b}%
+        high-pitched voice%
+      \else%
+        habit of stamping her feet for immediate attention%
+      \fi, and
+      \ifodd\value{r4}%
+        acne-scarred nose.
+      \else%
+        weird milky-white eye.
+      \fi%
+
+      \humanarcher[\npc{\T[\arabic{r12}]\Hu}{\arabic{noAppearing}~Hiding Bandits}]
+
+      \composeHumanName\ does the planning, from the back, while the rest constantly undermine his decisions.
+    }%
+  \else% 6
+    \ifnum\thefenestraDay>50
+      \appto{\baileyback}{%
+        The next day, everyone in \baileyname\ begins fussing about the impending \gls{storm}.
+        They discuss the rooves, possible flooding, and the possibility of placing buckets of water to prepare for lightning strikes setting something on fire.
+
+        Attempting any further business takes two \glspl{interval}.
+      }%
+    \else
+      \appto{\baileyback}{%
+        Long after Sunset, a trader's voice booms out prices for ropes and meats, then stops half-way through the sentence.
+        Another shouts their prices for clothes.
+        The voices repeat their clipped phrases, always identically.
+
+        \griffin[\npc{\T[\value{r2t4}]\A}{\arabic{r2t4}~\Glspl{griffin}}]
+
+        If more then two people attack the \glspl{griffin}, they fly away.
+        Otherwise, they attack.
+
+        Everyone in \baileyname\ knows that \glspl{griffin} mimic human voices.
+        The next day everyone has theories about which trader's voice they heard last night, and what has happened to them now.%
+        \ifodd\value{r3b}%
+          \footnote{The traders are fine.}%
+        \else%
+          \footnote{The traders lie dead \arabic{r12} miles up the \glsentrytext{lonelyRoad}.}%
+        \fi%
+      }%
+    \fi
+  \fi%
 }
 
 %%%%% Make the Random Bailey %%%%%
@@ -159,6 +277,8 @@
 
 \edef\baileyname{\expandafter\MakeUppercase\name}
 
+\afterBaileyEvent
+
 \begin{document}
 
 \frontmatter
@@ -178,11 +298,14 @@ Farmers chat, then barter, and finally refer the buyer to a neighbour.
 
 \end{multicols}
 
-\begin{multicols*}{2}
+\begin{multicols}{2}
 
 \baileymarketsWide
 
-\end{multicols*}
+\end{multicols}
+
+\vfill
+{\hfill\sffamily After the night falls\ldots}
 
 \clearpage
 
