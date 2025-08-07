@@ -65,7 +65,6 @@
   \end{minipage}
 }
 
-
 \newcommand\baileydesc{}
 \newcommand\baileymarkets{}
 \newcommand\baileymarketsWide{\baileyFletcher\par}
@@ -205,7 +204,11 @@
         weird milky-white eye.
       \fi%
 
-      \humanarcher[\npc{\T[\arabic{r12}]\Hu}{\arabic{noAppearing}~Hiding Bandits}]
+      \ifodd\thefenestraYear
+        \humanarcher[\npc{\T[\arabic{r12}]\Hu}{\arabic{noAppearing}~Hiding Bandits}]
+      \else
+        \humanthief[\npc{\T[\value{r12}]\Hu}{\arabic{noAppearing}~Hiding Bandits}]
+      \fi
 
       \composeHumanName\ does the planning, from the back, while the rest constantly undermine his decisions.
     }%
@@ -219,14 +222,15 @@
       }%
     \else
       \appto{\baileyback}{%
-        Long after Sunset, a trader's voice booms out prices for ropes and meats, then stops half-way through the sentence.
-        Another shouts their prices for clothes.
-        The voices repeat their clipped phrases, always identically.
+        \begin{boxtext}
+          Long after Sunset, a trader's voice booms out from beyond the wall.
+          He states his prices for ropes and meats, then stops half-way through the sentence.
+          Another shouts their prices for clothes.
+          The voices repeat their clipped phrases, always identically.
+        \end{boxtext}
 
-        \griffin[\npc{\T[\value{r2t4}]\A}{\arabic{r2t4}~\Glspl{griffin}}]
-
-        If more then two people attack the \glspl{griffin}, they fly away.
-        Otherwise, they attack.
+        If the \glspl{griffin} see one or two people out, they attack.
+        Otherwise, they fly away.
 
         Everyone in \baileyname\ knows that \glspl{griffin} mimic human voices.
         The next day everyone has theories about which trader's voice they heard last night, and what has happened to them now.%
@@ -235,6 +239,8 @@
         \else%
           \footnote{The traders lie dead \arabic{r12} miles up the \glsentrytext{lonelyRoad}.}%
         \fi%
+
+        \griffin[\npc{\T[\value{r2t4}]\A}{\arabic{r2t4}~\Glspl{griffin}}]
       }%
     \fi
   \fi%
