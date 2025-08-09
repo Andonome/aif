@@ -9,6 +9,7 @@ pdfs += $(GOBLINS).pdf
 pdfs += fridge.pdf
 zines += cyoa_bino.pdf
 zines += $(halfshots)
+targets += a7l_cs.pdf
 targets += cs_zine
 targets += daily_bailey.pdf
 output += booklets
