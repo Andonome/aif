@@ -50,12 +50,13 @@ and receives 2~Damage plus their Strength~\gls{attribute},
   Then come the rocks.
 \end{boxtext}
 
-The first \gls{pc} down receives 5 rocks thrown at them, and will have to make a \roll{Dexterity}{Athletics} roll (\tn[10]) or receive \dmg{6} Damage.
+Once \pgls{pc} drops down, the goblins start throwing rocks at them; the player roll's their characters \roll{Speed}{Vigilance} (see the goblin \glspl{statblock} for the \gls{tn} and Damage).
+A successful roll means the \gls{pc} can dodge the rocks by \gls{running}.
+A failed roll means Damage, and a tie means the player dodges without \gls{running} anywhere, and any \gls{pc} behind them may be hit by a rock.
 
-The \glspl{pc} can only enter one at a time, and the rocks will keep on coming.%
-\footnote{The goblins spend 1~\gls{ap} to pick up a rock, and 1~\gls{ap} to throw.
-\Glspl{pc} spend 1~\gls{ap} to move, as usual.}
-The players will have to decide, one at a time, who goes next into the dark hole.
+\iftoggle{intro}{
+  Keep  careful track of the \glspl{ap}, for both goblins and \glspl{pc} --- each time \pgls{pc} decides where to run or whether or not to enter the hole, they spend a little more time, until the \gls{round} resets.
+}{}
 
 \playCommentaryDust[t]
 
