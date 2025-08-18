@@ -60,12 +60,12 @@ images/extracted/sundered.jpg: images/feylands.svg | images/extracted/
 	inkscape --pipe --export-type=png --export-area=230:30:470:150 -d 600 |\
 	magick - -fill white -channel-fx '| gray=>alpha' $@
 
-images/extracted/enchanted.jpg: images/feylands.svg | images/extracted/
+images/extracted/enchanted.jpg: images/feylands.svg | images/extracted/ images/extracted/sundered.jpg
 	cat $< | \
 	inkscape --pipe --export-type=png --export-area=430:30:670:145 -d 600 |\
 	magick - -fill white -channel-fx '| gray=>alpha' $@
 
-images/extracted/fridge.jpg: images/Dyson_Logos/bowels.svg | images/extracted/
+images/extracted/fridge.jpg: images/Dyson_Logos/bowels.svg | images/extracted/ images/extracted/fridge.jpg
 	cat $< | inkscape --pipe \
 	--select=layer1 --actions=delete \
 	--export-type=png | \
