@@ -74,7 +74,7 @@ images/extracted/fridge.jpg: images/Dyson_Logos/bowels.svg | images/extracted/ i
 
 ##########
 
-a7_cyoa_bino.pdf: ## CYOA but scren readable
+a7_cyoa_bino.pdf: ## CYOA but screen readable
 
 cyoa_bino.pdf: ## CYOA for printing
 
