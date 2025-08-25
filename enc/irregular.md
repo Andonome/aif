@@ -1,0 +1,114 @@
+\documentclass[10pt,twoside]{book}
+
+\usepackage{config/bind}
+\usepackage{config/booklet}
+\setcounter{bookLevel}{2}
+\input{glossary.tex}
+
+\declareRegions{broch,lonelyRoad,village,deep}
+
+\begin{document}
+
+\miniCover{Irregularities}{}
+
+\bookletThreads{broch}
+\bookletThreads{lonelyRoad}
+\bookletThreads{village}
+\bookletThreads{deep}
+
+
+% ## Background
+% - Each time the dragon tries and fails to burp or fart, the pressure builds in his abdomen, then he belches fire.
+
+\thread{By Any Other Name}
+
+\segment[\gls{morning}]{broch}% AREA
+{Easy Job}% NAME
+{\Pgls{jotter} needs the troupe to kill \pgls{basilisk}}% SUMMARY
+
+\pagestyle{minizine}%
+
+\begin{exampletext}
+  Farmers have found claw-marks in the earth, showing something tearing up the soil, not far from their \gls{village}.
+  Working in the field around the \gls{village}, a stench came on the wind so bad that many buckled.
+  At night, they hear roaring noises.
+\end{exampletext}
+
+The \gls{jotter} congratulates the troupe on their mission, and mentions that \gls{basilisk} bodies can fetch a good price, and reminds them that half of the sale goes to the \gls{templeOfBeasts}.
+The \gls{village} in question is fifteen miles down the road, so they'd best get moving.
+
+\iftoggle{intro}{
+  \paragraph{If \pgls{pc} asks for better \glspl{weapon},}
+  they can roll \roll{Charisma}{Empathy} at \tn[10].
+  Success means the \emph{player} should interpret how the character might ask for free equipment.
+
+  \paragraph{If \pgls{pc} chats to other \glspl{guard} in the \gls{broch},}
+  \gls{gDigger}~\composeHumanName\ laughs at the notion of \pgls{basilisk} roaring.
+
+  \begin{speechtext}
+    \Glspl{monster} don't roar.
+    That's why people call them `the voiceless'.
+  \end{speechtext}
+}{}
+
+
+\segment[\gls{afternoon}]{lonelyRoad}% AREA
+{The Dry Valley}% NAME
+{A trader asks the troupe to stay the night}% SUMMARY
+
+The dry valley never floods, even during \pgls{storm}.
+Caverns down to the \gls{deep} swallow the water before it can rise too high.
+
+\begin{boxtext}
+  Two plumes of smoke rise over the tall trees in the distance.
+  After a mile, the road descends into the Dry Valley, and the trees open for a blessed moment.
+  The distant smoke comes from \pgls{village}, over five miles away.
+  The second comes from \pgls{bothy}, a little down the road, where two men push a donkey into a cart.
+
+  Going down the road, the trees crowd around again, obscuring everything.
+\end{boxtext}
+
+Ten traders stay in the \gls{bothy}, with three carts.
+They have no \glspl{guard} with them, so once they see the \glspl{pc} they begin asking a thousand questions, and speaking in a friendly manner, hoping the \glspl{pc} will stay and watch their animals overnight.
+The \gls{bothy} barely has enough room for the ten traders, so they have to take all the vegetables from the \gls{village} out to make room for their horses and donkeys to sleep in some safety.
+
+\iftoggle{intro}{
+  If the \glspl{pc} have \pgls{torch}, they can press on and make the \gls{village} that night.
+  However, any light they have (or noise they make) may attract nearby \glspl{monster} ($\frac{1}{\dicef{6}}$ chance).
+}{}
+
+Traders \composeHumanName\ and \composeHumanName\ have little to sell, but if the troupe need food, they can offer \rations, \rations, or \rations\ for \mkPrice[cp]{21} each.
+
+\segment[\gls{night}]{lonelyRoad}% AREA
+{Dark Stench}% NAME
+{Something wanders the forest, and it reeks}% SUMMARY
+
+Whether the \glspl{pc} sleep in the \gls{bothy} or not, a stench comes during the night.
+The smell upsets the stomach, and inflicts \pgls{ep} on each character.
+Nearby animals begin to panic.
+The troupe will not sleep well, so they must take another \gls{ep} due to the dreamless night.
+
+
+
+\end{document}
+
+
+### 1) Strange Noises (Bailey)
+- People hear noises sounding...
+  - like an asthmatic motorbike.
+  - like a newborn thundercloud, squealing.
+  - like bedsheets being torn open.
+- A jotter orders the PCs to get rid of the noises.
+
+### 2) Murmurs in the Deep (Woods)
+- Getting in the direction of the noises and moving against the wind inflicts 1 EP per interval, because the PCs need to move through a dense cloud of toxic and malodour cloud of dragon sickness-farts.
+- The roars and farts echo through the cavern. Finding the entrance requires good auditory orientation (maybe multiple entrances exist?) 
+
+### 3) Double Shot (Cavern)
+- The dragon suffers from constipations. He can barely move and his only way to release some of the pressure is through uncontrolled belches and farts.
+- The lair is filled with a mix of stomach-twisting body gases.
+- The dragons ask the PCs to gather laxative mushrooms growing further down the cavern.
+
+### 4) Laxative Mushrooms (Cavern)
+- The dragon farts enrich flammable methane inside the cavern.
+- The mushrooms are sentient (which effects do they have?)
