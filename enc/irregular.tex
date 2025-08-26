@@ -13,18 +13,16 @@
 
 \bookletThreads{broch}
 \bookletThreads{lonelyRoad}
-\bookletThreads{village}
-\bookletThreads{deep}
 \bookletThreads{Forest}
-
+\bookletThreads{deep}
 
 \thread{By Any Other Name}
+
+\pagestyle{minizine}%
 
 \segment[\gls{morning}]{broch}% AREA
 {Easy Job}% NAME
 {\Pgls{jotter} needs the troupe to kill \pgls{basilisk}}% SUMMARY
-
-\pagestyle{minizine}%
 
 \begin{exampletext}
   Farmers have found claw-marks in the earth, showing something tearing up the soil, not far from their \gls{village}.
@@ -89,22 +87,62 @@ The smell upsets the stomach, and inflicts \pgls{ep} on each character.
 Nearby animals begin to panic.
 The troupe will not sleep well, so they must take another \gls{ep} due to the dreamless night.
 
-If the \glspl{pc} rush out to find the source of the smell, find it \vref{irregularDragon}.
+If the \glspl{pc} rush out to find the source of the smell, find it on \gls{segment}~\vref{irregularDragon}.
 
-\segment{village}% AREA
-{Back Up}% NAME
-{The farmers don't want the troupe to stay}% SUMMARY
-
-The local residents don't want a bunch of \glspl{guard} hanging around, and they're not shy about saying so.
-They think the troupe should head into the forest as soon as possible, kill whatever's making those noises, and leave.
+\thread{The Condition}
 
 \segment{Forest}% AREA
-{The Grounded Dragon}% NAME
+{Wyrmsign}% NAME
+{The troupe find patches of torn-up earth}% SUMMARY
+
+Patches of earth have been torn up by massive claws.
+An \roll{Intelligence}{Medicine} at \tn[12] tells \pgls{pc} that someone's looking for mushrooms to make \pgls{elixir}.
+
+The troupe can follow the claw-marks to the maker, five miles away.%
+\footnote{See \vref{irregularDragon}.}
+They roll \roll{Wits}{Survival} at \tn[6], but failure means they become lost.
+
+\segment{Forest}% AREA
+{Grounded Dragon}% NAME
 {He will not leave until someone makes \pgls{elixir}}% SUMMARY
 
-% Labyrinth entrance
-% Cavern entrance
-% Long, dark, cave.
+\label{irregularDragon}
+
+Approaching the dragon, the troupe may see flame-marks on trees --- as the dragon tries to alleviate himself, he often lets out a little flame.
+
+\begin{boxtext}
+  Ahead, nestled among the trees, a mass of green scales writhe around its own bloated stomach.
+  Claws caress and push into the ballooned abdomen.
+  The shoulders and tail twitch.
+  The \gls{fiend} stares hatefully, with bright-yellow eyes.
+\end{boxtext}
+
+\begin{speechtext}
+  Do not flee.
+  I will not harm you.
+  I have needs.
+
+  There is a cave-mouth, not too far from here.
+  Willow trees surround it, but keep their distance, making the shape of an eye.
+
+  I can no longer fit inside, my stomach has become so heavy.
+  Go there, to the cave mouth, and descend until the smell of lilacs.
+  This smell comes from a mushroom.
+  Cut that mushroom down, and return with a barrel's worth of the cap.
+
+  I must have \pgls{elixir} from that mushroom's cap, so I can fly again.
+\end{speechtext}
+
+\dragon
+
+\paragraph{Any rude speech}
+results in a single shot of flame from the dragon.
+
+\segment{deep}% AREA
+{A Long Way to Mushrooms}% NAME
+{The troupe descend, next to a growing river}% SUMMARY
+
+
 % Mushroom meeting
 
 \end{document}
