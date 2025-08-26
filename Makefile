@@ -11,7 +11,6 @@ zines += cyoa_bino.pdf
 zines += $(halfshots)
 targets += a7l_cs.pdf
 targets += cs_zine
-targets += daily_bailey.pdf
 output += booklets
 
 GOBLINS = The_Goblin_Hole
@@ -80,9 +79,9 @@ cyoa_bino.pdf: ## CYOA for printing
 
 number_of_parts != ls cyoa/pt_* | wc -l
 
-zine_batch_one != seq 1 3 $(number_of_parts) | sort -R | tr '\n' ' '
-zine_batch_two != seq 2 3 $(number_of_parts) | sort -R | tr '\n' ' '
-zine_batch_three != seq 3 3 $(number_of_parts) | sort -R | tr '\n' ' '
+zine_batch_one != seq 1 3 $(number_of_parts) | shuf | tr '\n' ' '
+zine_batch_two != seq 2 3 $(number_of_parts) | shuf | tr '\n' ' '
+zine_batch_three != seq 3 3 $(number_of_parts) | shuf | tr '\n' ' '
 zine_part_nums = $(zine_batch_three) $(zine_batch_two) $(zine_batch_one)
 zine_part_names = $(patsubst %, cyoa/pt_%.tex, $(zine_part_nums))
 
@@ -94,7 +93,6 @@ booklets/a7_cyoa_bino.tex: cyoa/head.tex $(zine_part_names) | booklets/
 $(halfshots): $(booklet_list)
 
 a7l_cs.pdf: ## A7 example characters
-daily_bailey.pdf: config/markets/commands.tex config/market.sty ## Standard bailey market.
 
 booklets/a7_%.tex: enc/%.tex | booklets/
 	$(CP) $< $@
