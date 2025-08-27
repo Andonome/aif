@@ -5,16 +5,21 @@
 \setcounter{bookLevel}{2}
 \input{glossary.tex}
 
-\declareRegions{broch,lonelyRoad,Forest,deep}
+\declareRegions{broch,village,lonelyRoad,Forest}
 
 \begin{document}
 
 \miniCover{Irregularities}{}
 
-\bookletThreads{broch}
-\bookletThreads{lonelyRoad}
-\bookletThreads{Forest}
-\bookletThreads{deep}
+{
+  \footnotesize
+  \bookletThreads{broch}
+  \bookletThreads{lonelyRoad}
+  \bookletThreads{Forest}
+  \bookletThreads{village}
+}
+
+\clearpage
 
 \thread{By Any Other Name}
 
@@ -46,7 +51,6 @@ The \gls{village} in question is fifteen miles down the road, so they'd best get
     That's why people call them `the voiceless'.
   \end{speechtext}
 }{}
-
 
 \segment[\gls{afternoon}]{lonelyRoad}% AREA
 {The Dry Valley}% NAME
@@ -82,14 +86,15 @@ He ran into the forest, shouting something about `wyrmsign', and nobody heard of
 {Dank Night}% NAME
 {Something wanders the forest, and it reeks}% SUMMARY
 
-Whether the \glspl{pc} sleep in the \gls{bothy} or not, a stench comes during the night.
+Whether the \glspl{pc} sleep in the \gls{bothy} or not, they hear a sound in the night like bedsheets being torn apart.
+Soon after, a stench comes.
 The smell upsets the stomach, and inflicts \pgls{ep} on each character.
 Nearby animals begin to panic.
 The troupe will not sleep well, so they must take another \gls{ep} due to the dreamless night.
 
 If the \glspl{pc} rush out to find the source of the smell, find it on \gls{segment}~\vref{irregularDragon}.
 
-\thread{The Condition}
+%\thread{The Condition}
 
 \segment{Forest}% AREA
 {Wyrmsign}% NAME
@@ -164,8 +169,8 @@ They think the troupe should head into the forest as soon as possible, kill what
 
 \begin{speechtext}
   Shame you couldn't get proper equipment, like that dwarf --- what was his name? --- shiny plate armour, head-to-toe.
-  Axe with golden inlay.
-  Said his mum was a librarian.
+  %Axe with golden inlay.
+  %Said his mum was a librarian.
 \end{speechtext}
 
 \paragraph{If the troupe ask about the `\gls{basilisk}',}
@@ -176,7 +181,7 @@ Then there's the stench.
 the farmers can give them vague directions (which adds +2 to any roll to find them).
 Any local guides can guide the \glspl{pc} straight there, without a roll.
 
-\subsubsection{The Cave Mouth}
+\subsubsection{The Cave Mouth}\label{caveMouth}
 can be found down-hill with a \roll{Intelligence}{Survival} roll at \tn[12].
 It lies five miles from the \gls{village}.
 
