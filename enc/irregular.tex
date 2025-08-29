@@ -6,6 +6,8 @@
 \input{glossary.tex}
 \toggletrue{intro}
 
+\externalReferent{core}
+
 \declareRegions{broch,village,lonelyRoad,Forest}
 
 \begin{document}
@@ -60,7 +62,7 @@ The \gls{village} in question is fifteen miles down the road, so they'd best get
 {A trader asks the troupe to stay the night}% SUMMARY
 
 The dry valley never floods, even during \pgls{storm}.
-Caverns down to the \gls{deep} swallow the water before it can rise too high.
+Caverns swallow the water before it can rise too high.
 
 \begin{boxtext}
   Two plumes of smoke rise over the tall trees in the distance.
@@ -189,16 +191,14 @@ can be found down-hill with a \roll{Intelligence}{Survival} roll at \tn[12].
 It lies five miles from the \gls{village}.
 
 \begin{boxtext}
-  A small river trickles down with a little burble.
-  Sometimes it spreads across the path, making everything slippery.
-  Sometimes it keeps itself politely to one side.
+  A small river trickles through a patch of willow trees, then into the open, and down a hole the size of a portcullis.
 \end{boxtext}
 
-\paragraph{The first two miles}
-requires a \roll{Dexterity}{Caving} at \tn[8].
-Failure inflicts \dmg{0}~Damage.
+The hole begins with a drop, two~\glspl{step} \emph{down}.%
+\exRef{core}{Core Rules}{falling}
 
 \begin{boxtext}
+  Over the first mile, the river keeps politely to one side of the cavern, but occasionally spreads out, making the ground-rocks slippery.
   About a mile down, caverns open up around, staring downward, and letting out their own little rivers.
   The river soon picks up, becoming wider, and stronger.
 \end{boxtext}
@@ -226,7 +226,8 @@ Roll to find the contents of each island:
   \footnotesize
   \begin{dlist}
     \item
-    Whatwas Fungus --- the Spore-Folk children.
+    The water becomes suddenly deep.
+    The \gls{pc} cannot wade, but might swim.
     \item
     \Glspl{glowshroom} \glsentrydesc{glowshroom}.
     \item
