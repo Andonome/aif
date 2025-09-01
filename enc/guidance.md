@@ -4,11 +4,34 @@
 
 ## Broch
 
-Before dusk, as one of the PCs blows the evening pipes, and others line the top of the broch to shoot at any monster that comes from the woods, they spot a man entering the bailey half a mile away. He seems to have with him two half-naked, child-sized figures, pulling them by a leash tied around their necks, but any more details than that are hard to spot at this distance.
+The troupe's first mission would be an easy one, but the broch's jotter is not good at conveying information.
 
-If PCs report this to the jotter, he sends them out immediately to investigate, in the dark, with all the monsters possibly out, summoned by the pipes. Otherwise, a messenger arrives first thing in the morning, informing the jotter that a wounded ranger barely made it to the bailey last night, dragging with him two goblins on a leash. His leg is badly hurt, and he request urgent assistance, and the jotter sends PCs to investigate.
+> The pipes blow from the top of the broch, to summon monsters, at dawn and dusk.
+> But the piper's on holiday, and the rangers left on a special mission, so it's up to one of you to go up and play.
+> Or if you can't play, shout.
 
-## Bailey
+The jotter fails to mention that someone should be at every window of the broch, waiting with a bow.
+
+A Strength + Performance roll at TN 12 means a raknid approaches the broch.
+
+Whether or not the pipes succeed, anyone on the top can see a figure before dusk:
+
+> On the high hill, on top of a tower, feels like being on top of the world.
+> A sea of green stretches out in every direction.
+> Small openings let you see patches of the Lonely Road, heading towards open farmland.
+> The farmland huddles around a distant town.
+> 
+> Not far below, a bailey's high walls stand defiantly against the Edge.
+> And a man approaches the bailey, with two child-sized figures on a leash, both pale and naked.
+
+If PCs report this to the jotter,
+he sends them out immediately to investigate.
+
+Otherwise,
+a messenger arrives first thing in the morning, informing the jotter that a wounded ranger barely made it to the bailey last night, dragging with him two goblins on a leash.
+His leg is badly hurt, and he request urgent assistance, and the jotter sends PCs to investigate.
+
+## At the Bailey
 
 At the bailey, ranger Spittlespite lays groaning in bed, festering wound in his leg, loaded crossbow at the ready, and a couple of scared farmers with pitchforks watching over two goblins in the corner.
 
