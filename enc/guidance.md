@@ -43,7 +43,6 @@ If the goblin is well fed (no EP, and has eaten this interval):
 1. Leads the troupe through mud, then tries to trip the clumsiest PC, who resists with Dexterity + Athletics against goblin's Dexterity + Brawl. If it succeeds, it cackles at its victim, as they struggle in deep mud.
 1. Attempts to steal from a PC. It will prioritize whatever useful thing it can destroy, or secretly drop in a bush, or anything sharp or easily flammable it can use to cause harm.
 
-
 If the goblin is reasonably fed (at least one EP, or hasn't eaten this interval):
 
 1. Excitedly pulls in a new direction: on the ground, there are fresh tracks of a large boar. The goblin points towards them, and then towards troupe's weapons. Going after the boar will send the troupe one mile away from their goal, and successfully tracking it down will require a Wits + Survival at TN 12.
@@ -53,7 +52,6 @@ If the goblin is reasonably fed (at least one EP, or hasn't eaten this interval)
 1. Spots that stitching is loose on one of the PCs bags, then bites into it, tearing a hole. All the items in it spill to the ground, and the bag becomes unusable. The PC without a bag can carry items only in its hands.
 1. Feels spiteful, and leads the troupe through a Thorny Thicket.[^thicket] Being almost naked, it wants to be carried through the spiky growths, but if the PC carrying it has any food, it will try to steal and immediately eat some. It has +2 to this roll due to surprise and terrain.
 
-
 If the goblin is hungry (more then one EP, but less EP then HP):
 
 1. Leads the troupe into a cave, but there is only a stash of dried nuts (worth one ration) hidden under a rock there. This moves the troupe one mile further from the lair.
@@ -61,7 +59,7 @@ If the goblin is hungry (more then one EP, but less EP then HP):
 1. Hungrily screams during night, waking everyone up. All PCs will have one more EP in the morning, due to a sleepless night.
 1. Jumps on a nearby PCs backpack, trying to steal and immediately eat food. If the PCs manage to tear it off the backpack before it succeeds, it will grab a random item instead, preferably something small, and fling it into woods. Wits + Vigilance at TN 10 to find the item fast, or the troupe will have to spend more time looking for it, moving one less mile this interval.
 1. It forages as it goes, and eats everything the moment it picks it up. It rolls a Wits + Survival at TN 14, and on success, will only find enough for one ration during the whole interval. Stopping, and slightly deviating from the path all the time means that the troupe travels two miles less this interval.
-6 - When PCs are about to eat, it spits on their food, making sure it's seen. A big, nasty ball of spit, with a glob of something foul in it, that the goblin picked up and chewed along the way. Is that earwax? The goblin hopes no one will want to eat this now, so it can have it all. Anyone eating this food has to roll Strength + Survival at TN 12, or they develop a random disease[^disease] on the start of the next day.
+1. When PCs are about to eat, it spits on their food, making sure it's seen. A big, nasty ball of spit, with a glob of something foul in it, that the goblin picked up and chewed along the way. Is that earwax? The goblin hopes no one will want to eat this now, so it can have it all. Anyone eating this food has to roll Strength + Survival at TN 12, or they develop a random disease[^disease] on the start of the next day.
 
 If the goblin is starving (more EP than HP):
 
