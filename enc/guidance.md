@@ -1,7 +1,5 @@
 # A Short Guide
 
-> Goblins ambushed the Warden's son and his entourage, and took them captive. A group of rangers tracked them down, and after a bloody fight, one returned with two goblins on a leash, who are now to guide the PCs to their lair.
-
 ## Broch
 
 The troupe's first mission would be an easy one, but the broch's jotter is not good at conveying information.
@@ -36,14 +34,16 @@ His leg is badly hurt, and he request urgent assistance, and the jotter sends PC
 At the bailey, ranger Spittlespite lays groaning in bed, festering wound in his leg, loaded crossbow at the ready, and a couple of scared farmers with pitchforks watching over two goblins in the corner.
 
 > A bloodied servant of the warden's son told us that their caravan has been ambushed by goblins, so naturally, we had to move immediately, or the warden would have our heads if he hears we hesitated...
-
-He explains that his group of rangers caught up to the goblins, who ate the caravan's horses on the spot, and took the men captive, to save for later. The battle took a high toll, and none of the rangers survived, save for Spittlespite, who managed to take two goblins captive.
-
+> Goblins ambushed the Warden's son and his entourage, and took them captive, then ate all their horses.
+> We tracked them down, and after a bloody fight, I got away with two goblins on a leash.
+> The rest died, or were taken.
+> Dead either way...
+> 
 > But we killed a lot of those Sylph's sucklings, too. No more than four goblins survived, and ushered bound prisoners in the direction of, what I believe, must be their lair. But those will grow hungry soon, and I fear you have no more than a couple of days before all those men are goblin feed.
 
 Pointing towards two goblins, he continues:
 
-> Take one with you; two are too much trouble, as you can see by my leg. They seem to only understand blade and food, but that should be enough for them to take you to where others are.
+> Take one with you; two are too much trouble, as you can see by my leg.  They seem to only understand blade and food, but that should be enough for them to take you to where others are.
 
 The farmers are willing to sell some food to PCs, at a somewhat higher price than usual: 'You get your food at the broch, if mine's too pricey. I've got mouths to feed, and taxes to pay'.
 
