@@ -1,18 +1,20 @@
+# A Short Guide
+
 > Goblins ambushed the Warden's son and his entourage, and took them captive. A group of rangers tracked them down, and after a bloody fight, one returned with two goblins on a leash, who are now to guide the PCs to their lair.
 
-# Broch
+## Broch
 
 Before dusk, as one of the PCs blows the evening pipes, and others line the top of the broch to shoot at any monster that comes from the woods, they spot a man entering the bailey half a mile away. He seems to have with him two half-naked, child-sized figures, pulling them by a leash tied around their necks, but any more details than that are hard to spot at this distance.
 
 If PCs report this to the jotter, he sends them out immediately to investigate, in the dark, with all the monsters possibly out, summoned by the pipes. Otherwise, a messenger arrives first thing in the morning, informing the jotter that a wounded ranger barely made it to the bailey last night, dragging with him two goblins on a leash. His leg is badly hurt, and he request urgent assistance, and the jotter sends PCs to investigate.
 
-# Bailey
+## Bailey
 
 At the bailey, ranger Spittlespite lays groaning in bed, festering wound in his leg, loaded crossbow at the ready, and a couple of scared farmers with pitchforks watching over two goblins in the corner.
 
 > A bloodied servant of the warden's son told us that their caravan has been ambushed by goblins, so naturally, we had to move immediately, or the warden would have our heads if he hears we hesitated...
 
-He explains that his group of rangers caught up to the goblins, who ate the caravan horses on the spot, and took the men captive, to save for later. The battle took a high toll, and none of the rangers survived, save for Spittlespite, who managed to take two goblins captive.
+He explains that his group of rangers caught up to the goblins, who ate the caravan's horses on the spot, and took the men captive, to save for later. The battle took a high toll, and none of the rangers survived, save for Spittlespite, who managed to take two goblins captive.
 
 > But we killed a lot of those Sylph's sucklings, too. No more than four goblins survived, and ushered bound prisoners in the direction of, what I believe, must be their lair. But those will grow hungry soon, and I fear you have no more than a couple of days before all those men are goblin feed.
 
@@ -20,9 +22,9 @@ Pointing towards two goblins, he continues:
 
 > Take one with you; two are too much trouble, as you can see by my leg. They seem to only understand blade and food, but that should be enough for them to take you to where others are.
 
-The villagers are willing to sell some food to PCs, at a somewhat higher price than usual: 'You get your food at the broch, if mine's too pricey. I've got mouths to feed, and taxes to pay'.
+The farmers are willing to sell some food to PCs, at a somewhat higher price than usual: 'You get your food at the broch, if mine's too pricey. I've got mouths to feed, and taxes to pay'.
 
-# The Woods
+## The Woods
 
 The goblin's lair is 20 miles away, in the part of the woods seldom traversed. Only the goblin knows where exactly, but is unable to say. Dense forest terrain limits the travel to 4 miles per interval. The missing troupe numbers 9 men, plus the warden's son, and goblins will eat one person per interval, on average. Warden's son is not above manipulating and sacrificing his men to save his own hide, so he will ensure that he is the last one to go.
 
@@ -70,7 +72,7 @@ If the goblin is starving (more EP than HP):
 1. To check if anything is edible. Digs through the dirt, rummages through bushes, chews grass, but finds no food. The troupe moves one less mile this interval.
 1. Goes delirious, bites off one of its fingers, and eats it. Loses one HP.
 
-# The Goblin Lair
+## The Goblin Lair
 
 ![the map](https://dysonlogos.blog/2022/09/16/the-idol-pit/)
 
