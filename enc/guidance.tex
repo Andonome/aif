@@ -204,33 +204,39 @@ If the goblin is starving (more \glspl{ep} than \glspl{hp}):
   Goes delirious, bites off one of its fingers, and eats it and loses \pgls{hp}.
 \end{dlist}
 
-\mapPic[\large]{t}{Dyson_Logos/winding_cave}{
-  Goblins!/54/58,
-}
-
-\subsubsection{At the Goblin Lair}
-the entrance smells of burnt meat, and is covered with a tangle of stacked branches and leaves, masking it from the outside.
+\subsection{At the Goblin Lair}
+The entrance smells of burnt meat, and is covered with a tangle of stacked branches and leaves, masking it from the outside.
 If the barrier is disturbed, a human skull, loosely hanging on the inside of it, rolls down the cave mouth, alerting the lone goblin in the lower right cave.
-Carefully examining the branches reveals the skull, otherwise it's \roll{Wits}{Vigilance} at \gls{tn}~8 to notice, for the \gls{pc} who moves them.
-Any loud noises will echo through the caves and alert all the goblins.
-
-\sideMap[5]{Dyson_Logos/winding_overview}%
+\sideMap[4]{Dyson_Logos/winding_overview}%
   {%
-    Entrance/90/90,%
+    \ref{lair:right}/75/34,
+    \ref{lair:left}/10/54,
+    \ref{lair:lower}/27/26,
   }%
 {Cavern side view.\par\null}
 
-\goblin
+Carefully examining the branches reveals the skull, otherwise it's \roll{Wits}{Vigilance} at \gls{tn}~8 to notice, for the \gls{pc} who moves them.
+Any loud noises will echo through the caves and alert all the goblins.
 
 \goblin
 
-\goblin
+\mapentry[lair:right]{Gnawing Dark}
+One goblin gnawing on a leg bone, guarding the captives.
 
-Lower right cave --- One goblin gnawing on a leg bone, guarding the captives.
+\mapentry[lair:left]{Crack and Smoke}
+A small fire dimly lights the floor littered with bones, one goblin eating badly cooked human remains, and two more asleep.
 
-Upper left cave --- A small fire dimly lights the floor littered with bones, one goblin eating badly cooked human remains, and two more asleep.
-
-Lower left cave --- human captives, if any remain at this time.
+\mapentry[lair:lower]{Gentle Weeping}
+Human captives, if any remain at this time.
 Their arms and legs are bound with their own torn clothes, and each has 2~\glspl{ep} for every day since they were abducted.
+
+\hobgoblin
+
+\mapPic[\large]{b}{Dyson_Logos/winding_cave}{
+  Goblins!/54/58,
+  \ref{lair:right}/77/40,
+  \ref{lair:left}/30/65,
+  \ref{lair:lower}/15/22,
+}
 
 \end{document}
