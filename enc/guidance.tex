@@ -14,7 +14,53 @@
 
 \miniCover{A Short Guide}{}
 
-With thanks to Dyson Logos for the maps \vpagerefrange{Dyson_Logos/winding_overview}{Dyson_Logos/winding_cave} (\texttt{CC-BY}).
+\randomize
+\Person{%
+  \NPC{\N\F}% Symbol
+    {Goblin}% Name
+    {lanky}% Description
+    {eerie stare}% Mannerism
+    {meaty food}% Wants
+  }%
+  {{-1}{1}{1}}% BODY
+  {{-1}{2}{-3}}% MIND
+  {%
+      \set{Projectiles}{2}
+    \set{Caving}{2}
+    \set{Stealth}{1}
+  }% SKILLS
+  {}% KNACKS
+  {}% EQUIPMENT
+  {\ifodd\value{r3}\else\mutation{r4}\fi}% ABILITIES
+
+\randomize
+\randomize
+\randomize
+\Person{%
+  \NPC{\N\M}% Symbol
+    {Goblin}% Name
+    {veiny ears}% Description
+    {clicks tongue}% Mannerism
+    {sugary food}% Wants
+  }%
+  {{0}{1}{0}}% BODY
+  {{0}{-1}{-2}}% MIND
+  {%
+    \set{Melee}{1}
+    \set{Brawl}{2}
+    \set{Deceit}{1}
+    \set{Stealth}{2}
+  }% SKILLS
+  {}% KNACKS
+  {}% EQUIPMENT
+  {\ifodd\value{r3}\else\mutation{r4}\fi}% ABILITIES
+
+\vfill
+{
+  \footnotesize\sffamily
+  \noindent
+  With thanks to Dyson Logos for the maps \vpagerefrange{Dyson_Logos/winding_overview}{Dyson_Logos/winding_cave} (\texttt{CC-BY}).
+}
 
 \clearpage
 
