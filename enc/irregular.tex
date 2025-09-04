@@ -1,0 +1,335 @@
+\documentclass[10pt,twoside]{book}
+
+\usepackage{config/bind}
+\usepackage{config/booklet}
+\setcounter{bookLevel}{2}
+\input{glossary.tex}
+%\toggletrue{intro}
+
+\externalReferent{core}
+
+\declareRegions{broch,village,lonelyRoad,Forest}
+
+\begin{document}
+
+\miniCover{Irregularities}{}
+
+{
+  \footnotesize
+  \bookletThreads{broch}
+  \bookletThreads{lonelyRoad}
+  \bookletThreads{Forest}
+  \bookletThreads{village}
+}
+
+\clearpage
+
+\thread{By Any Other Name}
+
+\pagestyle{minizine}%
+
+\begin{exampletext}
+  Fifteen farmers carry spears past the \gls{edge}.
+  Great claws have torn up the ground and scarred the trees.
+  Not far away, a deep roar, and a screech, like a newborn thundercloud, squealing;
+  then a stench so bad the farmers buckle, and boke.
+  \marketBoatman\ cries ``\textit{\gls{basilisk}, scarper!}''.
+  So they scarper.
+
+  Back at the \gls{village}, huddled by a cauldron of soup, the farmers discuss the noises.
+
+  ``\textit{\Glsfmtplural{basilisk} have no voice.
+  I don't know what that was}'', says \marketBoatman.
+  ``\textit{All the same\ldots we'd best ask \marketFence\ to summon the \gls{guard}.}''
+\end{exampletext}
+
+\segment[\gls{night}]{broch}% AREA
+{Easy Job}% NAME
+{\Pgls{jotter} needs the troupe to kill \pgls{basilisk}}% SUMMARY
+
+Trader \marketFence\ arrives at the \gls{broch} that night, and requests aid from \gls{jotter}~Filchvore.
+Filchvore congratulates the troupe on their mission, and mentions that \gls{basilisk} bodies can fetch a good price, then reminds them that half of the sale goes to the \gls{templeOfBeasts}.
+The \gls{village} in question is fifteen miles down the road, so they should leave at dawn.
+
+\iftoggle{intro}{
+  %!
+  \paragraph{If \pgls{pc} asks for better \glspl{weapon},}
+  they can roll \roll{Charisma}{Empathy} at \tn[10].
+  Success means the \emph{player} should interpret how the character might ask for free equipment.
+
+  \paragraph{If \pgls{pc} chats to other \glspl{guard} in the \gls{broch},}
+  \gls{gDigger}~\composeHumanName\ laughs at the notion of \pgls{basilisk} roaring.
+
+  \begin{speechtext}
+    \Glspl{monster} don't roar.
+    That's why people call them `the voiceless'.
+  \end{speechtext}
+}{}
+
+\segment[\gls{afternoon}]{lonelyRoad}% AREA
+{The Dry Valley}% NAME
+{A trader asks the troupe to stay the night}% SUMMARY
+
+The dry valley never floods, even during \pgls{storm}.
+Caverns swallow the water before it can rise too high.
+
+\begin{boxtext}
+  Two plumes of smoke rise over the tall trees in the distance.
+  After a mile, the road descends into the Dry Valley, and the trees open for a blessed moment.
+  The distant smoke comes from \pgls{village}, over five miles away.
+  The other comes from \pgls{bothy}, a little down the road, where two men push a donkey into a cart.
+
+  Going down the road, the trees crowd around again, obscuring everything.
+\end{boxtext}
+
+Ten traders with three carts stay in the \gls{bothy}.
+They take their barrels and boxes out the wagons, and place them underneath, to make room for their horses and donkeys to sleep in some safety.
+They have no \glspl{guard} with them, so once they see the \glspl{pc} they begin asking a thousand questions, and speaking in a friendly manner, hoping the \glspl{pc} will stay outside and watch their animals overnight.
+
+\composeHumanName\ offers a free meal of \rations\ to each \gls{pc}.
+\composeHumanName\ refuses to sell them \glspl{torch} until morning.%
+\footnote{Any noise or light has a $\frac{1}{\dicef{6}}$ chance of summoning \pgls{monster}.}
+
+\currentName\ mourns her old dwarf-friend --- Ben --- who protected her and her caravan five days ago, just outside the \gls{village}.
+He ran into the forest, shouting something about `wyrm-sign', and nobody heard of him since.
+
+\segment[\gls{night}]{lonelyRoad}% AREA
+{Dank Night}% NAME
+{Something wanders the forest, and it reeks}% SUMMARY
+\label{dankNight}
+
+Whether the \glspl{pc} sleep in the \gls{bothy} or not, they hear a sound in the night like bedsheets being torn apart.
+Soon after, the stench!
+It can curdle yesterday's dinneer, and inflicts \pgls{ep} on each character.
+Nearby animals begin to panic.
+The troupe will not sleep well, so they must take another \gls{ep} due to the dreamless night.
+
+\segment{Forest}% AREA
+{Wyrmsign}% NAME
+{The troupe find patches of torn-up earth}% SUMMARY
+
+Patches of earth have been torn up by massive claws.
+The troupe can follow them to their source with a \roll{Wits}{Survival} roll at \tn[6].
+Failure means they become lost.
+
+If the troupe chased after the noises immediately, in \gls{segment}~\vpageref{dankNight}, they find soon after.
+But if they waited, the claw-mark tracks lead them five miles away.
+An \roll{Intelligence}{Medicine} roll at \tn[12] tells them the claws were digging for mushrooms to make \pgls{elixir}.
+
+\segment{Forest}% AREA
+{Grounded}% NAME
+{The \glsfmttext{fiend} demands a fungal \gls{elixir}}% SUMMARY
+\label{irregularDragon}
+
+Approaching closer, the trees show black, charred, patches where the flames have licked them.
+Then the growls begin, deep and full of anguish.
+
+\begin{boxtext}
+  Ahead, nestled among the trees, a mass of green scales writhe around its own bloated stomach.
+  Claws caress and push into the ballooned abdomen.
+  The shoulders and tail twitch.
+  The \gls{fiend} stares hatefully, with bright-yellow eyes.
+\end{boxtext}
+
+\Person{\NPC{\glsentrysymbol{vlg}\E}{the Dragon}{Coiled and bloated}{scratches at ground}{to find a laxative}%
+  \npcQuote{Eat you?  No, I wouldn't.  In fact, couldn't}}%
+  {{5}{3}{3}}% BODY
+  {{1}{2}{2}}% MIND
+  {
+      \set{Brawl}{4}
+      \set{Academics}{3}
+      \set{Deceit}{2}
+      \set{Cultivation}{2}
+      \set{Flight}{2}
+      \set{Fire}{2}
+      \set{Fate}{2}
+  }% SKILLS
+  {\lucky}% KNACKS
+  {}% EQUIPMENT
+  {\flight \quadruped \hide{r4t5}}% ABILITIES
+
+\label{irregularWyrm}
+
+\begin{speechtext}
+  Do not flee.
+  I will not harm you.
+  I have needs.
+
+  There is a cave-mouth, not too far from here.
+  Willow trees surround it, from a distance, making the shape of an eye.
+
+  I can no longer fit inside, my stomach has become so heavy.
+  Go there, to the cave mouth, and descend into the fungus lakes.
+  Find the tallest one you can, and cut it down.
+
+  I must have \pgls{elixir} from that mushroom's cap, so I can fly again.
+\end{speechtext}
+
+Find the cave \vpageref{caveMouth}.
+
+\paragraph{Any rude speech}
+results in a single, flaming, belch.
+
+\setcounter{diceNo}{1}
+\showStdSpells[\stepcounter{enc}]
+
+\vspace{-2em}
+\segment[\gls{night}]{village}% AREA
+{Hurry Up}% NAME
+{The dragon lets the troupe know that it waits for them}% SUMMARY
+
+The dragon approaches the \gls{village} at night, just to let the troupe know it still waits for that fungus.
+The troupe will hear its irritated, painful, scratchings across nearby trees.
+Then the smell comes as it farts.
+Everyone in the \gls{village} gains \pgls{ep}.
+
+\segment{Forest}% AREA
+{How Long?}% NAME
+{The dragon wants the fungus, fast}% SUMMARY
+
+The dragon has run out of patience.
+If the \glspl{pc} entered the cave, it waits for them at the mouth.
+If not, it hounds them down, like a dog herding sheep.
+
+\subsection{Locations}
+
+\subsubsection{At the \Glsfmttext{village}}\label{wyrmBailey}
+the locals don't want a bunch of \glspl{guard} hanging around, and they're not shy about saying so.
+They think the troupe should head into the forest as soon as possible, kill whatever's making those noises, and leave.
+
+\begin{speechtext}
+  Shame you couldn't get proper equipment, like that dwarf --- what was his name? --- shiny plate armour, head-to-toe.
+  %Axe with golden inlay.
+  %Said his mum was a librarian.
+\end{speechtext}
+
+\paragraph{If the troupe ask about local caverns,}
+the farmers can give them vague directions (which adds +2 to any roll to find them).
+Any local guides can guide the \glspl{pc} straight there, without a roll.
+
+\subsubsection{The Cave Mouth}\label{caveMouth}
+lies five miles from the \gls{village}.
+The \glspl{pc} can find it with an \roll{Intelligence}{Survival} roll at \tn[12].
+
+%!
+% Need to save space.  When 'intro' is false, the boxtext no longer has the
+% 'What do you do?' ending.
+\togglefalse{intro}
+
+\begin{boxtext}
+  A small river trickles through a patch of willow trees, then into the open, and down a hole the size of a portcullis.
+\end{boxtext}
+
+The hole begins with a drop, two~\glspl{step} \emph{down}.%
+\exRef{core}{Core Rules}{falling}
+
+\begin{boxtext}
+  Over the first mile, the river keeps politely to one side of the cavern, but occasionally spreads out, making the ground-rocks slippery.
+  About a mile down, caverns open up around, staring downward, and letting out their own little rivers.
+  The river soon picks up, becoming wider, and stronger.
+\end{boxtext}
+
+\paragraph{Wading down further}
+requires a \roll{Strength}{Caving} roll at \tn[8].
+Failure pulls the character down-river to the mushroom fields below (and inflicts \dmg{4}~Damage).
+
+\paragraph{At the mushroom fields}
+the troupe find a grand underground lake, full of islands.
+
+
+\begin{boxtext}
+  The cavern looks like a starry night-sky, flattened onto the ground.
+  The pricks of feint light and little sparkling reflections don't look like much.
+  They have no obvious distance.
+
+  At your feet, cold water.
+\end{boxtext}
+
+If the troupe wade into the water, they find it knee-height.
+Roll to find the contents of each island:
+
+{
+  \footnotesize
+  \begin{dlist}
+    \item
+    The water becomes suddenly deep.
+    The \gls{pc} cannot wade, but might swim.
+    \item
+    \Glspl{glowshroom} \glsentrydesc{glowshroom}.
+    \item
+    \Glspl{marchingMushroom} \glsentrydesc{marchingMushroom}.
+    \item
+    \Glspl{bedshroom} \glsentrydesc{bedshroom}.
+    \item
+    A spore-folk, which retreats to watch the \glspl{pc} from afar.
+    \item
+    Whatwas Fungus --- the spore-folk's children, which function as \pgls{talisman}.
+  \end{dlist}
+}
+
+\randomize
+
+\sporeFolk
+
+\ifnum\value{Charisma}>0
+  {\small\showStdSpells[\stepcounter{enc}]}
+\fi
+
+\noindent
+The `spore-folk' are sentient fungi.
+They cannot speak or hear, but in time they learn to speak with each other.
+They view the \glspl{pc} with suspicion, but may be helpful if \pgls{pc} does not look incompetent (which they interpret as having bad intentions).
+
+\sporeFolk
+
+\ifnum\value{Charisma}>0
+  {\small\showStdSpells[\stepcounter{enc}]}
+\fi
+
+\wotWosFungus
+
+\noindent
+If the \glspl{pc} try to trade, the spore-folk offer their own `children' --- Whatwas Fungus.
+However, the \glspl{pc} need to have the body of a spore-folk adult to make \pgls{elixir}.
+They must murder, or face the dragon.
+
+\showTalisman
+
+%\sporeFolk
+
+\paragraph{Ascending}
+presents a new challenge: the other cave-mouths, with their own rivers present alternative routes.
+If the troupe did not mark the correct route, they will have to try to figure out which way they came down with an \roll{Intelligence}{Caving} roll at \tn[10].
+Each Failure Margin means they are lost for another \gls{interval}.
+
+\paragraph{If the \glspl{pc} retreive the fungus,}
+the dragon takes a concave stone to simmer water, creates a delicate fire underneath, and chews nearby herbs.
+As the \gls{elixir} brews, it may grant the troupe the blessing of its company, and may teach any spellcaster present \pgls{spell}, if they speak politely.
+
+\Pgls{interval} later, the dragon roars, then its eyes turn silently upwards in relief.
+A half-digested dwarf emerges, with full plate armour, \lootBig, a golden axe, and beard still intact.
+
+\end{document}
+
+## Background
+- Each time the dragon tries and fails to burp or fart, the pressure builds in his abdomen, then he belches fire.
+
+### 1) Strange Noises (Bailey)
+- People hear noises sounding...
+  - like an asthmatic motorbike.
+  - like a newborn thundercloud, squealing.
+  - like bedsheets being torn open.
+- A jotter orders the PCs to get rid of the noises.
+
+### 2) Murmurs in the Deep (Woods)
+- Getting in the direction of the noises and moving against the wind inflicts 1 EP per interval, because the PCs need to move through a dense cloud of toxic and malodour cloud of dragon sickness-farts.
+- The roars and farts echo through the cavern. Finding the entrance requires good auditory orientation (maybe multiple entrances exist?) 
+
+### 3) Double Shot (Cavern)
+- The dragon suffers from constipations. He can barely move and his only way to release some of the pressure is through uncontrolled belches and farts.
+- The lair is filled with a mix of stomach-twisting body gases.
+- The dragons ask the PCs to gather laxative mushrooms growing further down the cavern.
+
+### 4) Laxative Mushrooms (Cavern)
+- The dragon farts enrich flammable methane inside the cavern.
+- The mushrooms are sentient (which effects do they have?)
