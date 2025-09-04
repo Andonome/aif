@@ -12,13 +12,3 @@ build:
   artifacts:
     paths:
       - "*.pdf"
-
-build:
-  image: $LATEX_IMAGE
-  script:
-    - make a7_guidance.pdf
-  rules:
-    - if: $CI_COMMIT_BRANCH == "GoblinGuide"
-  artifacts:
-    paths:
-      - "*.pdf"
