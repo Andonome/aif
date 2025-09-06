@@ -1,39 +1,22 @@
 
 \filledCS%
-  {\currentName}% NAME
-  {Human}% RACE
-  {World's Wost Alchemist}% CONCEPT
+  {Tsod}% NAME
+  {Gnoll}% RACE
+  {Tubby Thief}% CONCEPT
   {Noble}% CODE
-  {{1}{-3}{1}}% BODY
-  {{0}{-1}{-1}}% MIND
+  {{1}{0}{-1}}% BODY
+  {{-1}{1}{-2}}% MIND
   {%
+    \setcounter{Empathy}{1}
+    \setcounter{Larceny}{2}
+    \setcounter{Stealth}{1}
+    \setcounter{Survival}{1}
+    \setcounter{Melee}{1}
+    \setcounter{Brawl}{1}
     \renewcommand\rank{Fodder}
     \renewcommand\characterDebt{100 \glspl{sp}}
-
-    \renewcommand\charSpells{
-      \showSpells{Air1}
-      \showSpells{Air1}
-
-      \vspace{\baselineskip}
-      \bigLine
-      \vspace{\baselineskip}
-
-      These higher level spells may only be cast by using an Air \gls{boon} to raise the Air \gls{sphere} by 1~level.
-
-      \bigLine
-
-      \showSpells{Air2}
-      \showSpells{Air3}
-    }
-    \setcounter{Academics}{2}
-    \setcounter{Cultivation}{1}
-    \setcounter{Empathy}{1}
-    \setcounter{Vigilance}{1}
-    \setcounter{Deceit}{1}
-
-    \setcounter{Air}{1}
-    \Dagger
-    \addtocounter{equipmentWeight}{3}
+    \spear
   }% SKILLS
-  {\ritualcaster}% KNACKS
-  {writing equipment, Air \glsfmttext{boon}, Air \glsfmttext{boon}, 50~\glsfmtplural{cp} and \rations}% EQUIPMENT
+  {}% KNACKS
+  {Bag of shiny rocks, \rations}% EQUIPMENT
+
