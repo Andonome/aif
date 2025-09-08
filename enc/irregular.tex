@@ -31,7 +31,12 @@
 
 \begin{exampletext}
   Fifteen farmers carry spears past the \gls{edge}.
-  Great claws have torn up the ground and scarred the trees.
+  Great claws have torn
+  \ifnum\thetemperature=0%
+    the frozen earth apart.
+  \else%
+  up the ground and scarred the trees.
+  \fi%
   Not far away, a deep roar, and a screech, like a newborn thundercloud, squealing;
   then a stench so bad the farmers buckle, and boke.
   \marketBoatman\ cries ``\textit{\gls{basilisk}, scarper!}''.
@@ -39,7 +44,11 @@
 
   Back at the \gls{village}, huddled by a cauldron of soup, the farmers discuss the noises.
 
-  ``\textit{\Glsfmtplural{basilisk} have no voice.
+  ``\textit{\ifnum\thetemperature=0
+    \Glsfmtplural{basilisk} hibernate throughout \gls{cTwo}.
+  \else%
+    \Glsfmtplural{basilisk} have no voice.
+  \fi%
   I don't know what that was}'', says \marketBoatman.
   ``\textit{All the same\ldots we'd best ask \marketFence\ to summon the \gls{guard}.}''
 \end{exampletext}
