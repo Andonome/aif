@@ -1,0 +1,334 @@
+\documentclass[10pt,twoside]{book}
+
+\usepackage{config/bind}
+\usepackage{config/booklet}
+\setcounter{bookLevel}{2}
+\input{glossary.tex}
+\toggletrue{intro}
+
+\declareRegions{bothy,Valley,lonelyRoad,Mountain}
+
+\begin{document}
+
+\miniCover{Gong Bandits}{
+  \par
+  \begin{tikzpicture}
+      %\resizebox{1\textwidth}{\textwidth}{%
+      \coordinate (start) at (0,-0.5);
+      \coordinate (fork) at (0,0.3);
+      \coordinate (broch) at (0.7,0);
+      \coordinate (bothy1) at (0.1,2);
+      \coordinate (bothy2) at (2.3,2.2);
+      \coordinate (mid) at (2.9,3);
+      \coordinate (griffins) at (0.4,3.9);
+      \coordinate (bandits) at (3.3,4);
+      \coordinate (bailey) at (1.5,4.5);
+      \coordinate (out) at (4,5);
+      \foreach \x in {0,...,2}{
+        \draw (-1+\x*2,3) -- ++(1,1) -- ++ (1,-1);
+      }
+      \draw [background, dashed] (fork) -- (broch) ;
+      \draw [background, dashed] (start) -- (fork) -- (bothy1) -- (bothy2) -- (mid) -- (bandits) -- (bailey) -- (out) ;
+      \node at (griffins) {\A} ;
+      \draw [dotted, fill=white] (bailey) circle (1.2em) node {\normalsize \Hu } ;
+      \draw [dotted, fill=white] (broch) circle (1em) node { \glsentrysymbol{sylf} } ;
+      \draw [dotted, fill=white] (bothy1) circle (0.7em) node { \gls{evening} } ;
+      \draw [dotted, fill=white] (bothy2) circle (0.7em) node { \gls{evening} } ;
+  \end{tikzpicture}
+}
+
+{
+  \small
+  \bookletThreads{lonelyRoad}
+
+  \bookletThreads{bothy}
+
+  \bookletThreads{Mountain}
+
+  \bookletThreads{Valley}
+}
+
+\clearpage
+
+\pagestyle{minizine}
+
+\thread{\Glsfmtplural{bothy} \& Bandits}
+
+\begin{speechtext}
+  I have books on \emph{history}, and tomes on \emph{preservation}.
+  I have \glspl{boon} --- powdered and potted --- and signet rings forged by dwarves who haven't taken a holiday in twenty years.
+  I have paid five \glsentrylongpl{gp} \underline{up-front} to \pgls{jotter} at the \gls{templeOfBeasts} for guardianship across the valley, over the mountain-pass, and down to the open plains which lead to Dragonfell, to sell my goods.
+  In Dragonfell, I know buyers who would sell their own children's teeth for a \underline{chance} to see my wares.
+
+  Day one: the \glspl{ranger} I paid up-front disappear on an `urgent mission'.
+  Am I not `urgent'?
+  Do I not seem `urgent' to you?
+
+  Join me from here till the outer \gls{village}, across the mountain pass.
+  If any \gls{monster} attacks, I will sell the corpse for you, after \gls{harvesting}, completely tax-free.
+  If my cargo and donkeys arrive safely, I will pay three \glsentrylongpl{gp} to divide between you.
+  So your journey will be \emph{easy}, or \emph{profitable}.
+\end{speechtext}
+
+\begin{table}
+  \begin{tabular}{rl}
+    Donkeys: &
+    \setcounter{weight}{3}%
+    \setcounter{freeHP}{4}%
+    \hpStat \\
+    & \hpStat \\
+    & \hpStat \\
+    \Glspl{ration}: &
+    \setcounter{weight}{0}%
+    \setcounter{freeHP}{5}%
+    \hpStat \\
+    & \hpStat \\
+    & \hpStat \\
+    \Glspl{torch}: &
+    \setcounter{freeHP}{7}%
+    \hpStat \\
+  \end{tabular}
+  \footnotesize
+  \begin{minipage}{.3\linewidth}
+    Keep track of donkey \glspl{ep} here.
+    Pulling a cart for \pgls{interval} inflicts 3~\glspl{ep}, and no less than three can pull it.
+  \end{minipage}
+\end{table}
+
+\needspace{2\baselineskip}%
+\marketFence\ will negotiate up to eight \glspl{gp}.
+If that does not work, she continues on her own.
+
+\humantrader[\NPC{\Hu\F}% Symbol
+  {\marketFence}% Name
+  {pear-shaped, with short hair}% Description
+  {long drag from long pipe}% Mannerism
+  {a consistent, reliable life}% Wants
+  \setcounter{fp}{5}
+]
+
+\marketFence's wagon is a donkey troika.
+In addition to the supplies above, it holds \glspl{ration} and \glspl{torch}.
+Mark off \pgls{ration} per head each day (including the donkeys).
+
+\segment[\gls{afternoon}]{lonelyRoad}% AREA
+{A Friendly Face}% NAME
+{\Pgls{guard} joins, determined to do everything by the book}% SUMMARY
+
+\Gls{soldier} Perspic does things by the book.
+He pays the full 50\% tax to the \gls{templeOfBeasts} every time he kills \pgls{monster}, and believes everyone else should do the same, or he will report them to the nearest \gls{jotter}.
+
+\begin{boxtext}
+  Ahead, four people in black leather armour sit around a stinking mass of tentacles.
+  One stands, waving enthusiastically, then rushes over to introduce himself as `\Gls{soldier} Perspic'.
+  He explains that he and the three \glspl{gDigger} with him have killed \pgls{woodspy}, and they've almost finished \gls{harvesting} the corpse.
+  He asks you to help him carry it to the nearby \gls{broch}, just a mile out of your way.
+\end{boxtext}
+
+\humansoldier[%
+\NPC{\M\Hu\glsentrysymbol{sylf}}{\Glsfmttext{soldier}~Perspic}%
+  {clean-shaven, braided hair}% DESCRIPTION
+  {hands on hips}% MANNERISM
+  {to make you do the right thing}% WANTS
+  \npcQuote{If nobody pays into the system, new \glsfmtplural{guard} won't get weapons, and the whole system falls apart}%
+  \renewcommand\rations{6 days' hard biscuit rations}
+  ]
+
+\paragraph{Once Perspic delivers the \gls{woodspy},}
+the \gls{broch}'s \gls{jotter} tells him to join the \glspl{pc}, as they `might need help'.
+He salutes with an extra hand-twirl, and chases after the cart.
+
+Whether or not the \glspl{pc} invite or help Perspic, he will join them.
+And he will make sure that nothing dubious or `un-guildly' happens.
+And every night he shares his biscuits and tells stories, like the time he killed \pgls{crawler}, or the time he killed two of the `gong bandits' by Dragonfell,%
+\footnote{If anyone asks why they're called `the gong bandits', he says `I don't remember, it doesn't matter'.}
+or the time he helped \Gls{warden}~Fell host a socially tenuous dinner-party with \pgls{chef} and \pgls{seneschal}.
+
+The troupe will arrive at \composeHumanName\ \gls{bothy} before Sundown.
+
+\segment[\gls{morning}]{lonelyRoad}% AREA
+{Uncivilized Smoke}% NAME
+{Someone has made camp in the forest}% SUMMARY
+
+\begin{exampletext}
+  The \glspl{ranger} who once helped \marketFence\ went to raid a bandit camp.
+  They stopped in the forest last night, cooked over a fire-pit, and left some items to avoid being weighed down during the fight.
+  They also left the fire smouldering, just enough to give off smoke until a few minutes after Sunrise.
+\end{exampletext}
+
+\begin{boxtext}
+  Out the \gls{bothy} door, by the dawn's red light, you see a single plume of smoke rising from the forest, half a mile away.
+  By the time \marketFence\ wakes up and prepares, the smoke has gone.
+
+  ``\textit{Let's get moving}'', she says.
+\end{boxtext}
+
+The \glspl{ranger} left a bag with \lootBig, two sleeping bags, three \glspl{torch}, 50' of rope, \rations, \rations, and \rations.
+
+\vspace{-1\baselineskip}
+
+\segment[\gls{afternoon}]{bothy}% AREA
+{Surprise Guest}% NAME
+{\Pgls{woodspy} waits in the \gls{bothy}}% SUMMARY
+
+Unlike most \glspl{bothy}, \composeHumanName\ \gls{bothy} has a separate room with a chamberpot.
+An `in-door toilet'.
+And unlike most toilets, this one has \pgls{woodspy} on the ceiling.
+
+\begin{boxtext}[How does everyone rest?]
+  Slidy-tracks lead up to \currentName\ \gls{bothy} --- one of the largest in the land.
+  The donkeys stop automatically, knowing they will rest soon.
+\end{boxtext}
+
+If the troupe don't notice the `slidy' (\gls{woodspy}) tracks, the character with the highest Speed \gls{attribute} encounters the \gls{woodspy} from above, once they've shut the door.
+Tentacles wrap around their throat, trying to silence them.%
+\footnote{At this point, ask the other players, `if someone doesn't come out of the toilet for a long time, what would you do?'.
+Remember their answer, then resolve the attack.}
+
+\woodspy
+
+If the troupe kill the \gls{woodspy}, the body has \pgls{weight} of \arabic{hp} after \gls{harvesting}, and a well-preserved beak has \pgls{weight} of 1.%
+\ifcase\thetemperature\relax\or
+  \footnote{The parts rot after \arabic{r2t4}~days.}
+\else%
+  \footnote{The remains rot after \arabic{r2t3}~days.}
+\fi
+
+\segment[\gls{afternoon}]{Mountain}% AREA
+{Unfriendly Faces}% NAME
+{\Glspl{guard} ahead carry a dangerous prisoner}% SUMMARY
+
+\begin{exampletext}
+  The \glspl{ranger} rased the bandit camp as the bandits fled.
+  Half the \glspl{ranger} lay dead.
+  But they managed to capture the bandit's leader --- \pgls{witch} known as `Guilter'.
+\end{exampletext}
+
+\begin{boxtext}[]
+  As the forest thins, mountains rise ahead.
+  A small wagon
+  \ifnum\thetemperature=0%
+    crunches through the mountain's snow-cloak,
+  \else%
+    trundles along the little path that winds up the mountain,
+  \fi%
+  pulled by two men and a horse.
+\end{boxtext}
+
+High up the infertile mountains, you can skip all normal encounters.
+The \glspl{ranger} travel slowly, and the troop will catch up to them soon.
+
+\humansoldier[\NPC{\T[2]\M\Hu\glsentrysymbol{sylf}}{Rotbulge \& Wiltcull}%
+  {wide shoulders, hanging gut}% DESCRIPTION
+  {pleating beard}% MANNERISM
+  {to take Guilter to town}% WANTS
+  \npcQuote{hey relax, guys!}]
+
+\begin{boxtext}[]
+  Approaching the cart, you see it holds a man with a long beard and bald head, tied with his arms pulled outwards.
+  Behind him, a pile of sacks.
+
+  The path has barely enough room for one wagon, and you clearly cannot pass with the donkey troika.
+\end{boxtext}
+
+\Gls{ranger} Rotbulge doesn't want the \glspl{pc} investigating his sacks.
+They contain fourteen longswords, taken from the bandits, and he has no intention of paying tax on any of them.
+
+\begin{speechtext}
+  Look, I'm sorry about slowing you down, but it's great having yous back there.
+  We know old Guilter's going nowhere with you watching him.
+  If you want to help, you can push from behind, and give Wiltcull and the horse a breather.
+\end{speechtext}
+
+\paragraph{If the troupe find out about the swords,}
+the \glspl{ranger} become defensive.
+
+\begin{speechtext}
+  When it comes to selling longswords, bandits fall under the purview of the \gls{templeOfJustice}.
+  When it comes to killing bandits, they fall under the \gls{templeOfBeasts}.
+  How the fuck is that fair?
+\end{speechtext}
+
+\paragraph{Perspic demands to do everything by the book,}
+and if the \glspl{pc} stop him demanding and threatening to report the \glspl{ranger}, then the \glspl{ranger} will not be inclined to help them, or let them pass.
+
+\humanalchemist[\NPC{\M\Hu}{Guilter}%
+  {eyes burning with hatred}% DESCRIPTION
+  {always mouthing words, mostly silent}% MANNERISM
+  {freedom}% WANTS
+  \npcQuote{Jesters, all of you}%
+  \setcounter{wounds}{2}%
+  \setcounter{weight}{3}%
+  ]
+
+\showStdSpells
+
+If the \glspl{pc} do nothing about the \gls{witch} staring at them, Guilter looks for the worst possible moments to cast spells on them.
+If he escapes, he grabs his backpack (sitting next to him on the cart) and 
+
+\segment{Mountain}% AREA
+{Passing Places}% NAME
+{The troupe decide whether or not to overtake}% SUMMARY
+
+Soon the \glspl{ranger}'s wagon reaches a wider spot on the road, where two wagons can pass each other.
+They don't want the troupe to overtake them, so they speed up suddenly.
+The troupe can out-pace them
+\ifnum\thetemperature=0
+  with a \roll{Strength}{Empathy} (\tn[8]) roll to push the cart with the donkies.
+  Failure means the cart slips on the ice, and plummets, and smashes into $1D6$ pieces.
+\else%
+  if they try.
+\fi
+
+If the troupe overtake, they can reach the mountain pass after \pgls{interval}.
+If not, they need two.
+
+\segment{Mountain}% AREA
+{Eirie}% NAME
+{Any noise summons \glspl{griffin}}% SUMMARY
+
+\griffin[\npc{\T[2]\A}{\Glsfmtplural{griffin}}]
+
+Any loud noises or lights in the dark attracts two \glspl{griffin}.
+They find a distant, craggy perch and wait for someone to pass by a precarious spot.
+Then they swoop-and-grab, and try to pull their prey off the cliff-side.
+
+\segment{Valley}% AREA
+{The Gong Bandits}% NAME
+{A wooden \gls{crawler} has a gong hidden inside}% SUMMARY
+
+\humanarcher[%
+  \npc{\ifnum\thepage>12\T[8]\else\T[10]\fi\Hu}%
+  {\arabic{noAppearing}~Gong Bandits}%
+]
+
+The troupe spot \pgls{crawler}, hanging in the forest.
+A \roll{Wits}{Survival} roll at \tn[14] will tell them that someone made this `\gls{crawler}' out of wood.
+And if anyone says that it's made out of wood to the \glspl{ranger}, then the \glspl{ranger} can tell the \glspl{pc} that the facsimile has a gong hidden inside it, because that is how the gong bandits --- who live on this side of the mountain --- find out that \glspl{guard} have arrived.
+
+But all that probably won't happen.
+What is more likely, is that the troupe ignore the `\gls{crawler}', or they shoot an arrow at it.
+And if \emph{that} happens, then the gong bandits prepare \pgls{ambush} with \glspl{bow}.
+
+\bigLine
+
+\begin{boxtext}[]
+  Over a hill, you see a vast, 
+  \ifcase\thetemperature%
+    snowy-white plain.
+  \or%
+  squelching-wet plain.
+  \or%
+  verdant, plain.
+  \else%
+    dry plain, ripe for \pgls{burn}.
+  \fi%
+  At the far edge, dozens of aurochs graze.
+  Closer, \pgls{village} waits for you at the end of the \gls{lonelyRoad}.
+  And half a mile below, the trees begin to thin, as the forest melts into the open land.
+\end{boxtext}
+
+After five more miles, the troupe arrive at that first \gls{village}, where \marketFence\ leaves them to sell her wares in Dragonfell.
+Although if they \emph{need} to go to town, she can organize for a `\gls{fodder}-pass' for only 2~\glspl{sp} each.
+
+\end{document}
