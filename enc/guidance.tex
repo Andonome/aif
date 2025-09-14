@@ -184,14 +184,11 @@ If the goblin is reasonably fed (at least one \gls{ep}, or hasn't eaten this \gl
   All the items in it spill to the ground, and the bag becomes unusable.
   The \gls{pc} without a bag can carry items only in its hands.
   \item
-  Feels spiteful, and leads the troupe through a Thorny Thicket.%
+  Feels spiteful, and leads the troupe through a thorny thicket.%
 \exRef{judgement}{Judgement}{thorny_thickets}
-Being almost naked, it wants to be carried through the spiky growths, but if the \gls{pc} carrying it has any food, it will try to steal and immediately eat some.
-It has +2 to this roll due to surprise and terrain.
-
-
+  Being almost naked, it wants to be carried through the spiky growths, but if the \gls{pc} carrying it has any food, it will try to steal and immediately eat some.
+  It has +2 to this roll due to surprise and terrain.
 \end{dlist}
-
 
 If the goblin is hungry (more then one \gls{ep}, but fewer \glspl{ep} than \glspl{hp}):
 
@@ -210,7 +207,14 @@ If the goblin is hungry (more then one \gls{ep}, but fewer \glspl{ep} than \glsp
   \roll{Wits}{Vigilance} at \gls{tn}~10 to find the item fast, or the troupe will have to spend more time looking for it, moving one less mile this \gls{interval}.
   \item
   It forages as it goes, and eats everything the moment it picks it up.
-  It rolls a \roll{Wits}{Survival} at \gls{tn}~14, and on success, will only find enough for one \gls{ration} during the whole \gls{interval}.
+  It rolls a \roll{Wits}{Survival} at \gls{tn}
+  \ifcase\thetemperature%
+    14%
+  \or%
+    12%
+  \else%
+    10%
+  \fi, and on success, will only find enough for one \gls{ration} during the whole \gls{interval}.
   Stopping, and slightly deviating from the path all the time means that the troupe travels two miles less this \gls{interval}.
   \item
   When the troupe are about to eat, it spits on their food, making sure it's seen.
