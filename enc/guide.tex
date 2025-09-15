@@ -4,6 +4,7 @@
 \usepackage{config/booklet}
 \setcounter{bookLevel}{2}
 \input{glossary.tex}
+\externalReferent{core}
 \externalReferent{judgement}
 
 \declareRegions{broch,bothy,lonelyRoad}
@@ -263,37 +264,56 @@ If the goblin is starving (more \glspl{ep} than \glspl{hp}):
 
 \subsection{At the Goblin Lair}
 The entrance smells of burnt meat, and is covered with a tangle of stacked branches and leaves, masking it from the outside.
-If the barrier is disturbed, a human skull, loosely hanging on the inside of it, rolls down the cave mouth, alerting the lone goblin in the lower right cave.
 \sideMap[4]{Dyson_Logos/winding_overview}%
   {%
-    \ref{lair:right}/75/34,
-    \ref{lair:left}/10/54,
-    \ref{lair:lower}/27/26,
+    \ref{lair:tunnel}/77/74,
+    \ref{lair:right}/86/44,
+    \ref{lair:left}/11/67,
+    \ref{lair:lower}/32/15,
   }%
 {Cavern side view.\par\null}
 
-Carefully examining the branches reveals the skull, otherwise it's \roll{Wits}{Vigilance} at \gls{tn}~8 to notice, for the \gls{pc} who moves them.
+If the barrier is disturbed, a human skull, loosely hanging on the inside of it, rolls down the cave mouth, alerting the lone goblin in the lower right cave.
+Carefully examining the branches reveals the skull, otherwise it's \roll{Wits}{Vigilance} at \tn[8] to notice, for the \gls{pc} who moves them.
 Any loud noises will echo through the caves and alert all the goblins.
 
-\goblin
+\mapPic[\large]{b}{Dyson_Logos/winding_cave}{
+  Goblins!/54/58,
+  \ref{lair:tunnel}/91/67,
+  \ref{lair:right}/94/33,
+  \ref{lair:left}/28/80,
+  \ref{lair:lower}/04/12,
+}
 
-\mapentry[lair:right]{Gnawing Dark}
-One goblin gnawing on a leg bone, guarding the captives.
+\mapentry[lair:tunnel]{Slipdown}
+The muddy slope descends fast.
+\roll{Dexterity}{Caving} at \tn[8] to avoid a fast slide, and falling 8~\glspl{step} down to \gls{area}~\ref{lair:right}.%
+\exRef{core}{Core Rules}{falling}
+
+\ifnum\thepage<14
+  \goblin[\npc{\T[2]\N}{\arabic{noAppearing}~Goblins}]
+\fi
+
+\hobgoblin[\npc{\M\N}{Hobgoblin}]
 
 \mapentry[lair:left]{Crack and Smoke}
 A small fire dimly lights the floor littered with bones, one goblin eating badly cooked human remains, and another goblin, and a hobgoblin, asleep.
+If the goblins hear the \glspl{pc} coming, they throw two dried \gls{griffin} wings on the fire.
+Within 3~\glspl{round} they make a rancid smoke, which rises up the tunnel, inflicting 4~\glspl{ep} on anyone who breathes it in.%
+\exRef{core}{Core Rules}{holdingBreath}
+
+\mapentry[lair:right]{Gnawing Dark}
+Four goblins gnawing on a leg bone, guarding the captives.
+Climbing up the ceiling-hole to \gls{area}~\ref{lair:tunnel} requires a \roll{Speed}{Athletics} roll at \tn[12].
+
+\goblin[\npc{\T[2]\N}{\arabic{noAppearing}~Goblins}]
 
 \mapentry[lair:lower]{Gentle Weeping}
 Human captives, if any remain at this time.
 Their arms and legs are bound with their own torn clothes, and each has 2~\glspl{ep} for every day since they were abducted.
 
-\hobgoblin
-
-\mapPic[\large]{b}{Dyson_Logos/winding_cave}{
-  Goblins!/54/58,
-  \ref{lair:right}/77/40,
-  \ref{lair:left}/30/65,
-  \ref{lair:lower}/15/22,
-}
+When only \composeHumanName\ and Artix (the \gls{warden}'s son) remain alive, \currentName\ decides nobody will save him, they will only save Artix.
+So he pretends to be Artix.
+If the \glspl{pc} rescue \currentName, he will flee just before reaching town.
 
 \end{document}
