@@ -2,8 +2,8 @@
 
 | Links                          | Minizines                      |
 |:-------------------------------|:-------------------------------|
-| [The Goblin Hole][goblin hole] | [Rules][rules]                 |
-| [Snail Trails][feylands]       | [Example Characters][cs_zine]  |
+| [The Goblin Hole][goblin hole] | [Irregular][irregular_zine]    |
+| [Snail Trails][feylands]       | [A Short Guide][guide_zine]    |
 | [Email an idea][issues email]  | [Spy in the Tavern][spy_zine]  |
 | [The Fridge][fridge]           | [Granny's Soup][soup_zine]     |
 
@@ -39,5 +39,7 @@ And when those spells create more problems, they just 'patch it' with more spell
 [cs_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/zine_characters.pdf?job=build
 [bino_cyoa]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/cyoa_bino.pdf?job=build
 [spy_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/spy.pdf?job=build
+[guide_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/guide.pdf?job=build
+[irregular_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/irregular.pdf?job=build
 [soup_zine]: https://gitlab.com/bindrpg/aif/-/jobs/artifacts/master/raw/soup.pdf?job=build
 [issues email]: mailto:contact-project+bindrpg-aif-16324948-issue-@incoming.gitlab.com
