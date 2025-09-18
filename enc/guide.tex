@@ -58,31 +58,32 @@
 
 \vspace{-1.3em}
 \noindent
-\underline{Miles}
-
-\noindent
-\boxStat{20}
-
-\vspace{.5em}
-\noindent
 \underline{Men}
 
 {
-  \setcounter{track}{3}
+  \setcounter{track}{2}
   \noindent
   \setlength\tabcolsep{1.5pt}
-  \begin{tabular}{c|cccc|cccc|cccc|}
+  \begin{tabular}{cc|cccc|cccc|cccc|}
     \showInterval{\thetrack}
-    \Repeat{12}{%
+    \Repeat{13}{%
       & \ifnum\value{track}>2\setcounter{track}{0}\else\stepcounter{track}\fi%
       \showInterval{\thetrack}%
     }
     \\
     \Square
-    \Repeat{12}{& \Square}
+    \Repeat{13}{& \Square}
     \\
+    \Repeat{12}{ & }
+    \tiny A & \\
   \end{tabular}
 }
+
+\noindent
+\underline{Miles}
+
+\noindent
+\boxStat{20}
 
 \vfill
 {
@@ -173,8 +174,6 @@ Each \gls{interval} a number of things happen:
 \end{itemize}
 
 The horde began eating last night, so go mark some men as dead on the opening page, then give each goblin 3~\glspl{ep}.
-
-The \gls{warden}'s son is not above manipulating and sacrificing his men to save his own hide, so he will ensure that he is the last one to go.
 
 The goblin doesn't speak the same language as the \glspl{pc}, but it understands the offers of food, and threats of violence.
 It will help the troupe with foraging, or spotting any danger, but it's only interested in food it can eat, and danger that threatens it directly.
@@ -351,8 +350,18 @@ Climbing up the ceiling-hole to \gls{area}~\ref{lair:tunnel} requires a \roll{Sp
 Human captives, if any remain at this time.
 Their arms and legs are bound with their own torn clothes, and each has 2~\glspl{ep} for every day since they were abducted.
 
-When only \composeHumanName\ and Artix (the \gls{warden}'s son) remain alive, \currentName\ decides nobody will save him, they will only save Artix.
-So he pretends to be Artix.
+\ifnum\thepage<14
+  \begin{speechtext}
+    Help!
+    My daddy is very rich, you must help!
+  \end{speechtext}
+\fi
+
+Artix (the \gls{warden}'s son) has manipulated and sacrificed his entourage until the last man --- \composeHumanName.
+But \currentName\ does not want to die.
+So if people come to save Artix, then to live he must \emph{become} Artix.
+So if only \currentName\ remains alive, he claims to be Artix; and if Artix also remains alive, both of them claim to be Artix, and \currentName\ mimicks every statement.
+
 If the \glspl{pc} rescue \currentName, he will flee just before reaching town.
 
 \end{document}
