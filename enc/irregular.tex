@@ -280,12 +280,14 @@ Roll to find the contents of each island:
   \end{dlist}
 }
 
+
 \randomize
 
 \sporeFolk
 
 \ifnum\value{Charisma}>0
   {\small\showStdSpells[\stepcounter{enc}]}
+  \stepcounter{age}%
 \fi
 
 \noindent
@@ -297,7 +299,9 @@ They view the \glspl{pc} with suspicion, but may be helpful if \pgls{pc} does no
 \sporeFolk
 
 \ifnum\value{Charisma}>0
-  {\small\showStdSpells[\stepcounter{enc}]}
+  \ifnum\theage>0%
+    {\small\showStdSpells[\stepcounter{enc}]}
+  \fi%
 \fi
 
 \wotWosFungus
@@ -309,7 +313,9 @@ They must murder, or face the dragon.
 
 \showTalisman
 
-%\sporeFolk
+\ifnum\thepage<14
+  \sporeFolk
+\fi
 
 \paragraph{Ascending}
 presents a new challenge: the other cave-mouths, with their own rivers present alternative routes.
@@ -320,7 +326,7 @@ Each Failure Margin means they are lost for another \gls{interval}.
 the dragon takes a concave stone to simmer water, creates a delicate fire underneath, and chews nearby herbs.
 As the \gls{elixir} brews, it may grant the troupe the blessing of its company, and may teach any spellcaster present \pgls{spell}, if they speak politely.
 
-\Pgls{interval} later, the dragon roars, then its eyes turn silently upwards in relief.
+\Pgls{interval} later, the dragon roars, then its eyes turn upwards in relief.
 A half-digested dwarf emerges, with full plate armour, \lootBig, a golden axe, and beard still intact.
 
 \end{document}
