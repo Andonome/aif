@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\miniCover{Granny's Soup}{}
+\miniCover{Granny's Soup}{\vfill\pic{Unknown/cottage}}
 
 %\small
 
@@ -58,10 +58,11 @@ The path to Carnpox' cottage lies eight miles away, close to \pgls{bothy}.
 
 The troupe find \composeHumanName~\gls{bothy} has no firewood, just an axe.
 Nobody joins them, so they have a simple decision -- go cut wood (and make noise) in the night, or don't.
-If they cut wood, they can restock the \gls{bothy} and nothing attacks.
-
+If they cut wood, they can restock the \gls{bothy}%
 \ifnum\value{temperature}=0
-  If the \glspl{pc} don't cut any wood, and sleep in the cold, they wake with \pgls{ep}.
+  , otherwise they sleep in the cold, and take \pgls{ep}.
+\else%
+  .\footnote{Check for random encounters in the \textit{Almanac}.}
 \fi
 
 \segment{lonelyRoad}% AREA
@@ -279,7 +280,7 @@ The shelves at the other side of the room hold three jars of dried \gls{basilisk
   {sandpaper}% EQUIPMENT
   {}% ABILITIES
 
-By the fire, `the Whittler' whittles.%
+By the fire, `the Whittler' whittles.
 He can't remember his own name, or what he did wrong, he just knows he has to make Granny a complete set of bowls and cutlery for Granny Carnpox before he leaves.
 But every time someone has soup, they throw the bowl and spoon into the fire.
 If he ever finishes this task, the enchantment \gls{spell} wears off, and he will leave.

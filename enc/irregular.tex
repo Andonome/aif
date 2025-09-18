@@ -7,6 +7,7 @@
 %\toggletrue{intro}
 
 \externalReferent{core}
+\externalReferent{judgement}
 
 \declareRegions{broch,village,lonelyRoad,Forest}
 
@@ -20,6 +21,9 @@
   \bookletThreads{lonelyRoad}
   \bookletThreads{Forest}
   \bookletThreads{village}
+
+  \vfill
+  {\sffamily With thanks to Ruckerworks for the concept.}
 }
 
 \clearpage
@@ -30,7 +34,12 @@
 
 \begin{exampletext}
   Fifteen farmers carry spears past the \gls{edge}.
-  Great claws have torn up the ground and scarred the trees.
+  Great claws have torn
+  \ifnum\thetemperature=0%
+    the frozen earth apart.
+  \else%
+  up the ground and scarred the trees.
+  \fi%
   Not far away, a deep roar, and a screech, like a newborn thundercloud, squealing;
   then a stench so bad the farmers buckle, and boke.
   \marketBoatman\ cries ``\textit{\gls{basilisk}, scarper!}''.
@@ -38,7 +47,11 @@
 
   Back at the \gls{village}, huddled by a cauldron of soup, the farmers discuss the noises.
 
-  ``\textit{\Glsfmtplural{basilisk} have no voice.
+  ``\textit{\ifnum\thetemperature=0
+    \Glsfmtplural{basilisk} hibernate throughout \gls{cTwo}.
+  \else%
+    \Glsfmtplural{basilisk} have no voice.
+  \fi%
   I don't know what that was}'', says \marketBoatman.
   ``\textit{All the same\ldots we'd best ask \marketFence\ to summon the \gls{guard}.}''
 \end{exampletext}
@@ -261,9 +274,9 @@ Roll to find the contents of each island:
     \item
     \Glspl{bedshroom} \glsentrydesc{bedshroom}.
     \item
-    A spore-folk, which retreats to watch the \glspl{pc} from afar.
+    \Pgls{sporefolk}, which retreats to watch the \glspl{pc} from afar.
     \item
-    Whatwas Fungus --- the spore-folk's children, which function as \pgls{talisman}.
+    Whatwas Fungus --- the \gls{sporefolk} children, which function as \pgls{talisman}.
   \end{dlist}
 }
 
@@ -276,7 +289,8 @@ Roll to find the contents of each island:
 \fi
 
 \noindent
-The `spore-folk' are sentient fungi.
+The `\glspl{sporefolk}' are sentient fungi.%
+\exRef{judgement}{Judgement}{spore_folk}
 They cannot speak or hear, but in time they learn to speak with each other.
 They view the \glspl{pc} with suspicion, but may be helpful if \pgls{pc} does not look incompetent (which they interpret as having bad intentions).
 
@@ -289,8 +303,8 @@ They view the \glspl{pc} with suspicion, but may be helpful if \pgls{pc} does no
 \wotWosFungus
 
 \noindent
-If the \glspl{pc} try to trade, the spore-folk offer their own `children' --- Whatwas Fungus.
-However, the \glspl{pc} need to have the body of a spore-folk adult to make \pgls{elixir}.
+If the \glspl{pc} try to trade, the \glspl{sporefolk} offer their own `children' --- Whatwas Fungus.
+However, the \glspl{pc} need to have the body of \pgls{sporefolk} adult to make \pgls{elixir}.
 They must murder, or face the dragon.
 
 \showTalisman
@@ -311,25 +325,3 @@ A half-digested dwarf emerges, with full plate armour, \lootBig, a golden axe, a
 
 \end{document}
 
-## Background
-- Each time the dragon tries and fails to burp or fart, the pressure builds in his abdomen, then he belches fire.
-
-### 1) Strange Noises (Bailey)
-- People hear noises sounding...
-  - like an asthmatic motorbike.
-  - like a newborn thundercloud, squealing.
-  - like bedsheets being torn open.
-- A jotter orders the PCs to get rid of the noises.
-
-### 2) Murmurs in the Deep (Woods)
-- Getting in the direction of the noises and moving against the wind inflicts 1 EP per interval, because the PCs need to move through a dense cloud of toxic and malodour cloud of dragon sickness-farts.
-- The roars and farts echo through the cavern. Finding the entrance requires good auditory orientation (maybe multiple entrances exist?) 
-
-### 3) Double Shot (Cavern)
-- The dragon suffers from constipations. He can barely move and his only way to release some of the pressure is through uncontrolled belches and farts.
-- The lair is filled with a mix of stomach-twisting body gases.
-- The dragons ask the PCs to gather laxative mushrooms growing further down the cavern.
-
-### 4) Laxative Mushrooms (Cavern)
-- The dragon farts enrich flammable methane inside the cavern.
-- The mushrooms are sentient (which effects do they have?)

@@ -9,29 +9,41 @@ The \gls{templeOfFrost} holds a massive, underground fridge, used by the entire 
 Just about every \gls{temple} in the city holds something down there, and none of them trust the others enough to go down and fetch anything, for fear they'll place the items in their own area.
 
 \renewcommand\csComments{
-  \callout{12,21}{0,0}{\ref{fStairs}:~\nameref{fStairs}}{}
-  \callout[12]{12,18}{0,0.5}{\ref{fHallStore}:~\nameref{fHallStore}}{}
-  \callout[10]{10,15}{0,0}{\ref{fLift}:~\nameref{fLift}}{}
-  \callout[10]{17,20}{-1,0}{\ref{fWheat}:~\nameref{fWheat}}{chalk lines the ground}
-  \callout[10]{17,18}{-1,0}{\ref{fIngStore}:~\nameref{fIngStore}}{}
-  \callout[10]{1,22}{2,-1}{\ref{fOffice}:~\nameref{fOffice}}{Everything entered must be registered}
-  \callout[14]{2,17}{2,0}{\ref{fDip}:~\nameref{fDip}}{with oil barrels}
-  \callout[10]{1,14}{2,-1}{\ref{fSide}:~\nameref{fSide}}{}
-  \callout{12,16}{1,0}{Secrets}{}
-  \callout{6,11}{4,0}{\ref{fBoat}:~\nameref{fBoat}}{there's a boat}
-  \callout{8,0}{0,2.5}{\ref{fCrossbow}:~\nameref{fCrossbow}}{}
-  \callout[10]{5,1}{0,0}{\ref{fHibernation}:~\nameref{fHibernation}}{}
-  \callout[10]{11,1}{0,0}{\ref{fWeaponStore}:~\nameref{fWeaponStore}}{}
-  \callout{17,7}{-1.8,-2.3}{\ref{fFabrics}:~\nameref{fFabrics}}{}
-  \callout[10]{17,4}{-1,-2}{\ref{fGrain}:~\nameref{fGrain}}{}
-  \callout[10]{16,1}{0,0}{\ref{fSpirits}:~\nameref{fSpirits}}{}
   \mapFeature{15,2}{\Huge \glssymbol{abderian}}
   \mapFeature{16,9}{\Huge \glssymbol{wrecan}}
   \mapFeature{3,6}{\Huge \glssymbol{sylf}}
-  \mapFeature{2,1}{\Huge \glssymbol{sable}}
+  \mapFeature{0.3,1}{\Huge \glssymbol{sable}}
   \mapFeature{13,6}{\Huge \glssymbol{sable}}
   \mapFeature{12,3.6}{\Huge \glssymbol{paik}}
   \mapFeature{8,12}{\Huge \glssymbol{yonder}}
+  \colorlet{background}{white!10!black!90}%
+  \callout{17,5.7}{0,0}{\ref{fStairs}:~\nameref{fStairs}}{}
+  \callout[7]{17.5,4}{-0.5,0}{\ref{fHallStore}:~\nameref{fHallStore}}{}
+  \callout[8]{13,4.8}{0,0}{\ref{fLift}:~\nameref{fLift}}{}
+  \callout[9]{17,1}{-0.5,0.5}{\ref{fWheat}:~\nameref{fWheat}}{}
+  \callout[9]{13.2,1}{0.5,0.3}{\ref{fIngStore}:~\nameref{fIngStore}}{}
+  \callout[10]{17,10.5}{-0.5,-0.5}{\ref{fOffice}:~\nameref{fOffice}}{Everything entered must be registered}
+  \callout[12]{15,12}{-0.7,-3}{\ref{fDip}:~\nameref{fDip}}{with oil barrels}
+  \callout{11,9.8}{0.8,0}{\ref{fSide}:~\nameref{fSide}}{}
+  \colorlet{background}{white!10!black!80}%
+  \callout[9]{7,5.8}{0.8,-0.3}{\ref{fBoat}:~\nameref{fBoat}}{}
+  \callout[6]{0,6.5}{0.6,-1}{\ref{fWeaponStore}:~\nameref{fWeaponStore}}{}
+  \callout[6]{0,8}{0.3,0}{\ref{fCrossbow}:~\nameref{fCrossbow}}{}
+  \callout[8]{1,11}{0,-1}{\ref{fHibernation}:~\nameref{fHibernation}}{}
+  \colorlet{background}{white!10!black!70}%
+  \callout[10]{4.5,2.8}{-1.1,-0.3}{\ref{fCheeseStorage}:~\nameref{fCheeseStorage}}{}
+  \callout[8]{3.4,1}{-0,0.4}{\ref{fFabrics}:~\nameref{fFabrics}}{}
+  \callout[10]{2,0}{-0.4,0.5}{\ref{fGrain}:~\nameref{fGrain}}{}
+  \callout[6]{0,3.6}{0.2,-0.3}{\ref{fSpirits}:~\nameref{fSpirits}}{}
+  \colorlet{background}{white!10!black!60}%
+  \callout[10]{2,14}{4,-1}{\ref{fLibrarians}:~\nameref{fLibrarians}}{}
+  \callout[8]{9.8,10.8}{0,0.7}{\ref{fGiftschrank}:~\nameref{fGiftschrank}}{}
+  \callout[9]{9.9,13.8}{0,-0.8}{\ref{fBrack}:~\nameref{fBrack}}{}
+  \callout[12]{14.3,13.5}{-2,-0.9}{\ref{fLibrary}:~\nameref{fLibrary}}{}
+  \colorlet{background}{white!10!black!50}%
+  \callout[7]{6,0}{1,1.2}{\ref{fDoor}:~\nameref{fDoor}}{}
+  \callout[8]{10,0}{-0.6,1.3}{\ref{fWaiting}:~\nameref{fWaiting}}{}
+  \callout[9]{12,2.2}{0,0}{\ref{fCourt}:~\nameref{fCourt}}{}
 }
 
 \widePic[t]{Dyson_Logos/bowels}
@@ -94,7 +106,7 @@ lowers a circular segment of the ceiling, and exposes the \gls{weaversGuild} abo
 \paragraph{If the \glspl{pc} stop to chat,}
 they can gain useful information and free \gls{equipment} but lose time chatting.
 People who work in the \gls{weaversGuild} take in facts like a river drinks.
-Every day, everyone in the town needs their clothes washed, mended, adjusted or more clothes created.
+Every day, everyone in \gls{ftown} needs their clothes washed, mended, adjusted or more clothes created.
 The \glspl{weaver} now think it's normal to recite recipes, while memorizing a weave pattern, by listening to an argument about how to start it.
 
 \begin{speechtext}
@@ -257,7 +269,9 @@ However, a collection of hungry and terrified creatures, with a Strength Bonus o
 \mapentry[fCrossbow]{Siege Crossbow}
 
 It's a fucking massive crossbow, pointed right at the \nameref{fWeaponStore} (\vpageref[next]{fWeaponStore} room).
-It takes an age to reload, but it'll deal \dmg{8}~Damage to anything
+It takes an age to reload, but it'll deal \dmg{11}~Damage to anything it hits.
+
+To one side sits a barrel of \glspl{torch}.
 
 \mapentry[fWeaponStore]{Weapon Storage}
 
@@ -273,9 +287,9 @@ But once the door opens, they find nothing.
 
 \mapentry[fHibernation]{Hibernation Cells}
 
-When \glspl{hulk} feel cold, they hibernate.
-And if they remain cold, they can hibernate for decades before waking up.
-\Glspl{crawler} cannot survive so long, but can still remain alive for a few years.
+The \gls{templeOfBeasts} keep hibernating \glspl{monster} in here, and the cold keeps them in hibernation.
+The \gls{templeOfBeasts} do not believe they are responsible for maintenance, so they have not fixed the door, which is currently hanging on by a single hinge.
+Any vigorous pushing against the door will make it topple.
 
 In total, the chamber contains:
 
@@ -407,6 +421,14 @@ The books are so fancy that they have jewels in the cover, and contents so valua
   Before the thaw, the \glspl{sunGuard} would fetch frozen beasts, and pull them gently up wooden planks, into this room, and shunt them into the \nameref{fWaiting}.
   Once the beasts woke, it only had one place to go: into the \gls{court}, to amuse the crowds.
 \end{exampletext}
+
+\paragraph{Ascending the smooth, slate, stairs}
+demands a \roll{Dexterity}{Athletics} roll at \tn[2].
+\emph{Every time} that someone walks up with their wet feet, the \gls{tn} increases by~1, to a maximum of 10.
+
+\setcounter{weight}{2}
+\setcounter{freeHP}{8}
+\Gls{tn}: \hpStat
 
 \paragraph{To lift the wooden bar blocking the double-doors,}
 the roll is \roll{Strength}{Crafts} at \tn[7].

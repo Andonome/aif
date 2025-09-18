@@ -619,7 +619,26 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
 
 \mapentry[basiliskCave]{\Glsfmttext{basilisk} Cave}
 
-\ifnum\value{temperature}=0
+\ifcase\thecycle%
+  \ifnum\thefenestraDay>40%
+    \Pgls{basilisk} has curled up to hibernate here before the snow hits during \gls{cTwo}.
+    It has begun to sleep deep enough that its breath does not fill the cave with the usual stench, but any noise will waken it.
+    If the troupe move carefully, they can sneak past the bones with a \roll{Dexterity}{Stealth} roll at \tn[9].
+    If they have no light, they will awaken it by bumping into the bones.
+
+    \begin{boxtext}
+      The second-hand Sunlight, entering through the long cave-gullet shows bones.
+      Thousands of long bones.
+      And a motionless \gls{basilisk}.
+    \end{boxtext}
+
+    \basilisk
+  \else%
+    This cave contains ten thousand giant bones.
+    Each \gls{cTwo}, \glspl{basilisk} hibernate here, and they will arrive in the coming weeks.
+    But for now, they cave remains lifeless and safe.
+  \fi%
+\or
   Three \glspl{basilisk} have curled up here to hibernate.
   The stench signals to everyone around that the creatures lie nearby, and every breath when wandering near this alcove will inflict 3~\glspl{ep}.
 
@@ -635,7 +654,7 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
   The troupe will be aware that \gls{basilisk} hides make some of the best armour, and the entire corpse can fetch a lot of money (although the \gls{templeOfBeasts} will ask them to use the funds to repay their debt).
 
   \basilisk[\npc{\T[3]\A}{\arabic{noAppearing} \Glsfmttext{basilisk}}]
-\else
+\or%
   \Glspl{basilisk} hibernate here over \glsentrytext{cTwo}.
   Last snowfall, one \gls{basilisk} did not wake up, and so provided food for the entire caving system.
 
@@ -643,12 +662,20 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
   As before, if the \glspl{pc} carry any source of light, they will attack; otherwise, they ignore them.
 
   \skeinSwarm
+\else
+  This crunchy cave has ten thousand giant bones.
+  Each year, the local \glspl{basilisk} hibernate here.
+  But for now, it has nothing but a few more skein, poking about at night, and sleeping under the bones during the daylight.
+
+  \skeinSwarm
 \fi
 
-\begin{boxtext}
-  Around the next corner, you see a speck of light in the distance.
-  It looks incredibly bright and brings a fresh wind\ldots
-\end{boxtext}
+\ifnum\thecycle=0\else
+  \begin{boxtext}
+    Around the next corner, you see a speck of light in the distance.
+    It looks incredibly bright and brings a fresh wind\ldots
+  \end{boxtext}
+\fi
 
 \wayOut{The not-so-distant light comes from}{sunRoof}
 
@@ -658,7 +685,7 @@ This passage has had a cave-in, letting Sunlight \ifnum\value{temperature}=0 and
 Unfortunately it still sits farther underground than a castle.
 
 Climbing the ragged walls begins with an \roll{Intelligence}{Athletics} roll (\tn[10]), to understand the best route up.
-A successful roll gives a further +2 Bonus to the main event: a \roll{Speed}{Athletics} check, \tn[14].
+A successful roll gives a further +2~Bonus to the main event: a \roll{Speed}{Athletics} check, \tn[14].
 It also lets the player know the \gls{tn}.
 
 A tie means the character figures out this climb will only hurt them before they climb.
