@@ -56,15 +56,33 @@
   {}% EQUIPMENT
   {\ifodd\value{r3}\else\mutation{r4}\fi}% ABILITIES
 
+\vspace{-1.3em}
+\noindent
 \underline{Miles}
 
 \noindent
 \boxStat{20}
 
+\vspace{.5em}
+\noindent
 \underline{Men}
 
-\noindent
-\boxStat{10}
+{
+  \setcounter{track}{3}
+  \noindent
+  \setlength\tabcolsep{1.5pt}
+  \begin{tabular}{c|cccc|cccc|cccc|}
+    \showInterval{\thetrack}
+    \Repeat{12}{%
+      & \ifnum\value{track}>2\setcounter{track}{0}\else\stepcounter{track}\fi%
+      \showInterval{\thetrack}%
+    }
+    \\
+    \Square
+    \Repeat{12}{& \Square}
+    \\
+  \end{tabular}
+}
 
 \vfill
 {
