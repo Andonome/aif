@@ -132,8 +132,8 @@ he sends them out immediately to investigate.
 \fjot\ allows each \gls{pc} to take \rations, or a halberd with them, if they request either.
 
 \paragraph{Otherwise,}
-everyone in the \gls{village} stands on their rooves, waving their arms at the \gls{broch}.
-If the \glspl{pc} don't respond to that, five men with spears approach the \gls{broch} to inform \Gls{jotter}~\fjot\ of the situation, and \fjot\ sends the \glspl{pc}.
+the \gls{village} sends a group of farmers with spears, first thing in the morning.
+They inform \Gls{jotter}~\fjot\ of the situation, who then sends the \glspl{pc}. 
 
 \subsubsection{At the \Glsfmttext{village}}
 \gls{ranger} Spittlespite lays groaning in bed, festering wound in his leg, loaded crossbow at the ready, and a couple of scared farmers with pitchforks watching over two goblins in the corner.
@@ -200,16 +200,7 @@ it attempts to eat as much food as possible, and destroy any equipment.
 
 \subsubsection{When the goblin co\"operates}
 then it leads the troupe to its home, where the captives lie.
-But it only co\"operates when:
-
-\begin{itemize}
-  \item
-  It has eaten and slept enough.
-  \item
-  It has fewer \glspl{ep} than \glspl{hp}.
-  \item
-  Its limbs are not bound.
-\end{itemize}
+But it only co\"operates when it has \textbf{eaten} and \textbf{slept}, has \textbf{fewer \glspl{ep} than \glspl{hp}}, and \textbf{unbound limbs}.
 
 It still enacts mischief each \gls{interval}:
 
@@ -244,7 +235,9 @@ If it succeeds, it cackles at its victim, as they struggle in deep mud.
 %  Throws a tantrum if not fed.
 %\end{dlist}
 
-\boar
+\ifnum\thepage<8
+  \boar
+\fi
 
 \paragraph{\Square~Finding boar tracks,}
 it points towards them, and then towards troupe's \glspl{weapon}.
@@ -338,8 +331,9 @@ bites off one of its fingers, and eats it and loses \pgls{hp}.
 %  Keeps stopping to check if anything is edible.
 %  Digs through the dirt, rummages through bushes, chews grass, but finds no food.
 %  The troupe moves one less mile this \gls{interval}.
-%\end{dlist}
+%\end{deist}
 
+\needspace{8\baselineskip}%
 \subsection{At the Goblin Lair}
 \sideMap[4]{Dyson_Logos/winding_overview}%
   {%
@@ -355,7 +349,7 @@ If the barrier is disturbed, a human skull, loosely hanging on the inside of it,
 Carefully examining the branches reveals the skull, otherwise it's \roll{Wits}{Vigilance} at \tn[8] to notice, for the \gls{pc} who moves them.
 Any loud noises will echo through the caves and alert all the goblins.
 
-\mapPic[\large]{b}{Dyson_Logos/winding_cave}{
+\mapPic[\large]{t}{Dyson_Logos/winding_cave}{
   Goblins!/54/58,
   \ref{lair:tunnel}/91/67,
   \ref{lair:right}/94/33,
@@ -419,12 +413,13 @@ nor Artix means a trip to the \gls{court}, and probable execution.%
 \exRef{judgement}{Judgement}{pitOfJustice}
 
 \paragraph{Returning with Artix}
-means that \Gls{warden} \gls{ftown} will reinterpret \emph{one} \gls{guard} as the `hero', and reward the hero by removing all debts, recommending them for a promotion, and the gift of 200~\glspl{sp} in an ornate box.
-The `hero's helpers' receive
+means that \Gls{warden} \gls{ftown} will reinterpret the \gls{pc} with the highest \roll{Charisma}{Melee} as the `hero', and reward the hero by removing all debts, recommending them for a promotion, and the gift of 200~\glspl{sp} in an ornate box.
+The `hero's little helpers' receive
 \ifnum\thepage<14%
   any \gls{weapon} of their choice from the \gls{sunGuard} shop, 10~\glspl{sp}, and a gift certificate for 10~\glspl{sp} for the \gls{templeOfCuriosity}.
+  \clearpage
 \else%
-  10~\glspl{sp}.
+  5~\glspl{sp}.
 \fi%
 
 \end{document}
