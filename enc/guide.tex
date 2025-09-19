@@ -68,12 +68,12 @@
       & \ifnum\value{track}>2\setcounter{track}{0}\else\stepcounter{track}\fi%
       \showInterval{\thetrack}%
     }
+    \\\hline
+    & \Square
+    \Repeat{6}{& & \Square}
     \\
-    \Square
-    \Repeat{13}{& \Square}
-    \\
-    \Repeat{12}{ & }
-    \tiny A & \\
+    \Repeat{11}{ & }
+    \tiny A & & \\
   \end{tabular}
 }
 
@@ -178,7 +178,7 @@ Each \gls{interval} a number of things happen:
   When the goblin sleeps and eats, it heals 3~\glspl{ep}.
   A full day of healthy-living means it heals a quarter of its missing \glspl{hp}.
   \item
-  The goblin horde eat another prisoner.
+  The goblin horde eat another prisoner every afternoon and night.
 \end{itemize}
 
 The horde began eating last night, so go mark some men as dead on the opening page, then give each goblin 3~\glspl{ep}.
