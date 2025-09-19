@@ -370,7 +370,13 @@ The muddy slope descends fast.
   \goblin[\npc{\T[2]\N}{\arabic{noAppearing}~Goblins}]
 \fi
 
-\hobgoblin[\npc{\M\N}{Hobgoblin}]
+\hobgoblin[%
+  \NPC{\N\M}% Symbol
+    {Hobgoblin}% Name
+    {like an albino gorilla}% Description
+    {pretends to throw rocks}% Mannerism
+    {one last bite}% Wants
+  ]
 
 \mapentry[lair:left]{Crack and Smoke}
 A small fire dimly lights the floor littered with bones, one goblin eating badly cooked human remains, and another goblin, and a hobgoblin, asleep.
