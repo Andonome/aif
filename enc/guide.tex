@@ -19,14 +19,14 @@
 \Person{%
   \NPC{\N\F}% Symbol
     {Goblin}% Name
-    {lanky}% Description
-    {eerie stare}% Mannerism
+    {lanky, with mottled-marble skin}% Description
+    {licks lips}% Mannerism
     {meaty food}% Wants
   }%
   {{-1}{1}{1}}% BODY
   {{-1}{2}{-3}}% MIND
   {%
-      \set{Projectiles}{2}
+    \set{Projectiles}{2}
     \set{Caving}{2}
     \set{Stealth}{1}
   }% SKILLS
@@ -35,12 +35,10 @@
   {\ifodd\value{r3}\else\mutation{r4}\fi}% ABILITIES
 
 \randomize
-\randomize
-\randomize
 \Person{%
   \NPC{\N\M}% Symbol
     {Goblin}% Name
-    {veiny ears}% Description
+    {black veins on milk-white body}% Description
     {clicks tongue}% Mannerism
     {sugary food}% Wants
   }%
@@ -56,7 +54,7 @@
   {}% EQUIPMENT
   {\ifodd\value{r3}\else\mutation{r4}\fi}% ABILITIES
 
-\vspace{-1.3em}
+\vspace{-1.6em}
 \noindent
 \underline{Men}
 
@@ -248,8 +246,7 @@ If \pgls{pc} climbs up after it, then the goblin shits on their face.
 its antics become progressively nastier.
 
 \paragraph{\Square~Feels spiteful,}
-and leads the troupe through a thorny thicket.%
-\exRef{judgement}{Judgement}{thorny_thickets}
+and leads the troupe through \pgls{thornyThicket}.
 Being almost naked, it wants to be carried through the spiky growths, but if the \gls{pc} carrying it has any food, it will try to steal and immediately eat some.
 It has +2 to this roll due to surprise and terrain.
 
