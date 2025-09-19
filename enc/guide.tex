@@ -196,10 +196,20 @@ It might also occasionally trip on purpose, and then struggle to get up, making 
 \paragraph{If left unsupervised,}
 it attempts to eat as much food as possible, and destroy any equipment.
 
-\subsubsection{While the goblin is well fed}
-(no \glspl{ep} Penalty, and has eaten enough)
+\subsubsection{When the goblin co\"operates}
 then it leads the troupe to its home, where the captives lie.
-But it also enacts mischief:
+But it only co\"operates when:
+
+\begin{itemize}
+  \item
+  It has eaten and slept enough.
+  \item
+  It has fewer \glspl{ep} than \glspl{hp}.
+  \item
+  Its limbs are not bound.
+\end{itemize}
+
+It still enacts mischief each \gls{interval}:
 
 \paragraph{\Square~Attempts to steal from \pgls{pc}.}
 It will prioritize whatever useful thing it can destroy, or secretly drop in a bush, or anything sharp or easily flammable it can use to cause harm.
@@ -251,21 +261,21 @@ Through these mimes, it tries to indicate that it has lost its way, and must cli
 If the \glspl{pc} let it climb a tree, it stands on the top, admiring the view, for the rest of the \gls{interval}, then tries to escape.
 If \pgls{pc} climbs up after it, then the goblin shits on their face.
 
+\paragraph{\Square~Screeches loudly}
+enough to attract an encounter (1 / \epsdice{6} chance).
+
 \subsubsection{While the goblin remains unsated}
-(either gaining \glspl{ep} or has \pgls{ep} Penalty)
-its antics become progressively nastier.
+it does not help with \gls{navigation} and its antics become progressively nastier.
 
 \paragraph{\Square~Feels spiteful,}
-and leads the troupe through \pgls{thornyThicket}.
-Being almost naked, it wants to be carried through the spiky growths, but if the \gls{pc} carrying it has any food, it will try to steal and immediately eat some.
+and leads the troupe through \pgls{thornyThicket}, and they roll \roll{Dexterity}{Survival} (\tn[10]) or gain \pgls{ep} from the spikes.
+Being almost naked, the goblin wants to be carried through the spiky growths, but if the \gls{pc} carrying it has any food, it will try to steal and immediately eat some.
 It has +2 to this roll due to surprise and terrain.
 
 % \begin{dlist}
 %   \item
 %   Picks up a fistful of dirt, and throws it in the face of the closest \gls{pc}, blinding them on a hit.
 %   Then it tries to escape.
-%   \item
-%   Screeches loudly enough to attract an encounter.
 % \end{dlist}
 
 \paragraph{\Square~Drools,}
@@ -290,9 +300,6 @@ but falls to the ground, tired, after \pgls{round}.
 
 \paragraph{\Square~Goes delirious,}
 bites off one of its fingers, and eats it and loses \pgls{hp}.
-
-\paragraph{\Square~Delirium progresses,}
-as it bites into its own tongue, and loses another \gls{hp}.
 
 %\begin{dlist}
 %  \item
@@ -376,7 +383,7 @@ Within 3~\glspl{round} they make a rancid smoke, which rises up the tunnel, infl
 Four goblins gnawing on a leg bone, guarding the captives.
 Climbing up the ceiling-hole to \gls{area}~\ref{lair:tunnel} requires a \roll{Speed}{Athletics} roll at \tn[12].
 
-\goblin[\npc{\T[2]\N}{\arabic{noAppearing}~Goblins}]
+\goblin[\npc{\T[4]\N}{\arabic{noAppearing}~Goblins}]
 
 \mapentry[lair:lower]{Gentle Weeping}
 Human captives, if any remain at this time.
