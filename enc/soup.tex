@@ -11,22 +11,26 @@
 
 \miniCover{Granny's Soup}{\vfill\pic{Unknown/cottage}}
 
-%\small
-
-\vspace{-1em}
 \bookletThreads{broch}
 
 \bookletThreads{bothy}
 
 \bookletThreads{lonelyRoad}
 
-\noindent
-\Pgls{doula} has retired to a little cottage a few decades ago.
-She should be dead by now, but she's not playing by the rules.
+\begin{speechtext}
+  Old Carnpox was old when I was young, and she's still old.
+  \Pgls{witch} is one thing, but she's something else.
+  She doesn't buy or sell.
+  No need for civilization.
+  She's dangerous.
 
-\Pgls{susjot} decided to mount a surprise attack, before she becomes a problem, but the \glspl{ranger} he sent to kill her haven't returned.
-So he felt worried, and did something desperate: he contacted a gnomish trap-maker, who made him a box to deliver to Granny Carnpox.
-Find the box on \autopageref{insideTheBox}.
+  I sent two \glspl{ranger} to deal with her, but they never returned.
+  She must know that I sent them.
+  She would never let them die without knowing, so she knows.
+
+  But I got this plan.
+  I know a gnome, and he sent me this box\ldots
+\end{speechtext}
 
 \segment[\gls{morning}]{broch}% AREA
 {The Parcel}% NAME
@@ -34,20 +38,18 @@ Find the box on \autopageref{insideTheBox}.
 
 \pagestyle{minizine}%
 
-Every dawn, a piper stands at the top of the \gls{broch} and blows his pipes.
-Any \gls{pc} capable of using \pgls{bow} can (and must) stand at the top, waiting for any \gls{monster} which comes from the forest.
-No \glspl{monster} come today, but \pgls{susjot} has a mission for them:
+\Gls{susjot} figures that Granny Carnpox can detect murderous intent, so he finds the most clueless and unassuming people in the \gls{broch} to deliver the box.
 
 \begin{speechtext}
-  Got a special parcel to deliver here.
-  Simple mission, and the temple's happy to pay two silver each (taken off your debt).
+  Got a special parcel to deliver.
+  Simple mission, and the temple's happy to pay two \glsentrylongpl{sp} each (taken off your debt).
   Just deliver this wooden box to old Carnpox, unopened.
   You understand about keeping the box shut, and delivering the box to her, still shut, and \emph{not} opened.
   Am I making sense?
 \end{speechtext}
 
 \Gls{susjot} quizzes the troupe about the mission, to make sure they understand how to not open a box.
-If a player says they're opening the box, \gls{susjot} hears the \gls{pc}, and tells them they're no longer on the mission
+If a \underline{player} says they will open the box, \gls{susjot} hears the \gls{pc}, and declares they're no longer on the mission
 (the player must select another \gls{pc}).
 
 The path to Carnpox' cottage lies eight miles away, close to \pgls{bothy}.
@@ -324,7 +326,7 @@ Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attri
     \set{Cultivation}{3}
     \set{Deceit}{1}
     \set{Empathy}{2}
-    \set{Seafaring}{1}
+    \set{Seafaring}{2}
     \set{Fate}{2}
     \set{Water}{2}
     \set{Earth}{2}
@@ -341,17 +343,18 @@ Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attri
 requires untying the complex knot at the front: \roll{Intelligence}{Seafaring} (\tn[10]).
 Inside, \pgls{crossbow} waits, loaded.
 The steel bow stays rigid, dwarven beard makes an unbreakable string.
-The white arrowheads gleam, all three made from quartz.
+The white arrowheads gleam, all three made from quartz which shatters on impact.
 
-The arrows inflicts \dmg{6}~Damage.
-A helmet has a 3-in-6 chance of negating all Damage.
-
-Inside, a letter from \gls{susjot}.
+The arrows inflicts \dmg{6}~Damage (helmets have a $\frac{2}{\dicef{6}}$ chance to negate all Damage).
+Once the bolts fly, a scroll unfurls across the box's open lid:
 
 \begin{speechtext}
-  Find any valuables and place them inside the box.
-  Hide it in the forest, ten steps from the path.
+  \scriptsize
+  This device was manufactured by Nanpa.
+  Nanpa is remains \gls{temple}-neutral, and is not responsible for the use or misuse of her devices.
+  If you would like to purchase a similar device for the return address, or any other address, send a detailed letter to Nanpa via the \gls{paperGuild} in \gls{ftown}.
 \end{speechtext}
 
+Resetting the box-\gls{crossbow} requires an \roll{Intelligence}{Crafts} roll at \tn[12].
 
 \end{document}
