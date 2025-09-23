@@ -65,49 +65,50 @@
 \thread{\Glsfmtplural{bothy} \& Bandits}
 
 \begin{speechtext}
-  I have books on \emph{history}, and tomes on \emph{preservation}.
-  I have \glspl{boon} --- powdered and potted --- and signet rings forged by dwarves who haven't taken a holiday in twenty years.
-  I have paid five \glsentrylongpl{gp} \underline{up-front} to \pgls{jotter} at the \gls{templeOfBeasts} for guardianship across the valley, over the mountain-pass, and down to the open plains which lead to Dragonfell, to sell my goods.
-  In Dragonfell, I know buyers who would sell their own children's teeth for a \underline{chance} to see my wares.
+  I have books on \emph{history}, \emph{preservation}, and \emph{secretive cures} for breathrot and meat grippes.
+  I have \glspl{boon} made from sentient mushrooms in the \gls{deep}, and signet rings forged by dwarves who haven't taken a holiday in twenty years.
+  I know buyers in \gls{ftown} who would sell their own children's teeth for a \underline{chance} to see my wares.
+  I have paid five \glsentrylongpl{gp} \underline{up-front} to \pgls{jotter} at the \gls{templeOfBeasts} for guardianship to the mountain-pass, and down the open plains which lead to \gls{ftown}, to sell my goods.
 
   Day one: the \glspl{ranger} I paid up-front disappear on an `urgent mission'.
   Am I not `urgent'?
-  Do I not seem `urgent' to you?
+  Do I not seem `\underline{urgent}' to you?
 
-  Join me from here till the outer \gls{village}, across the mountain pass.
-  If any \gls{monster} attacks, I will sell the corpse for you, after \gls{harvesting}, completely tax-free.
-  If my cargo and donkeys arrive safely, I will pay three \glsentrylongpl{gp} to divide between you.
+  Join me from here untill the first \gls{village}.
+  If my cargo and donkeys arrive safely, I will pay three \glsentrylongpl{gp},%
+  \footnote{She negotiates up to 8~\glspl{gp}.}
+  and will sell any \gls{monster}-corpse after \gls{harvesting}, completely \underline{tax-free} (and the \gls{templeOfBeasts} can eat \gls{sylf}-shit).
   So your journey will be \emph{easy}, or \emph{profitable}.
 \end{speechtext}
 
 \begin{table}
   \begin{tabular}{rl}
-    Donkeys: &
-    \setcounter{weight}{3}%
-    \setcounter{freeHP}{4}%
-    \hpStat \\
-    & \hpStat \\
-    & \hpStat \\
+    \setcounter{freeHP}{7}%
+    & \scshape Donkeys \\
+    \footnotesize Charmer: & \hpStat \\
+    \footnotesize Vagrant: & \hpStat \\
+    \footnotesize Sid: & \hpStat \\
+    \hline
     \Glspl{ration}: &
     \setcounter{weight}{0}%
     \setcounter{freeHP}{5}%
     \hpStat \\
     & \hpStat \\
     & \hpStat \\
+    \hline
     \Glspl{torch}: &
     \setcounter{freeHP}{7}%
     \hpStat \\
   \end{tabular}
+  \label{donkeyTracker}
   \footnotesize
   \begin{minipage}{.3\linewidth}
-    Keep track of donkey \glspl{ep} here.
-    Pulling a cart for \pgls{interval} inflicts 3~\glspl{ep}, and no less than three can pull it.
+    Mark off \pgls{ration} per head each day (including the donkeys).
+
+    \Pgls{interval} of travel adds 3~\glspl{ep} to each donkey.
+    \Pgls{interval} of rest removes \pgls{ep}.
   \end{minipage}
 \end{table}
-
-\needspace{2\baselineskip}%
-\marketFence\ will negotiate up to eight \glspl{gp}.
-If that does not work, she continues on her own.
 
 \humantrader[\NPC{\Hu\F}% Symbol
   {\marketFence}% Name
@@ -117,9 +118,9 @@ If that does not work, she continues on her own.
   \setcounter{fp}{5}
 ]
 
-\marketFence's wagon is a donkey troika.
-In addition to the supplies above, it holds \glspl{ration} and \glspl{torch}.
-Mark off \pgls{ration} per head each day (including the donkeys).
+\clearpage
+\marketFence's wagon is a well-stocked donkey troika.
+Track the \glspl{torch}, \glspl{ration}, and donkeys' \glspl{ep} \vpageref{donkeyTracker}.
 
 \segment[\gls{afternoon}]{lonelyRoad}% AREA
 {A Friendly Face}% NAME
@@ -150,12 +151,13 @@ He salutes with an extra hand-twirl, and chases after the cart.
 
 Whether or not the \glspl{pc} invite or help Perspic, he will join them.
 And he will make sure that nothing dubious or `un-guildly' happens.
-And every night he shares his biscuits and tells stories, like the time he killed \pgls{crawler}, or the time he killed two of the `gong bandits' by Dragonfell,%
+And every night he shares his biscuits and tells stories, like the time he killed \pgls{crawler}, or the time he killed two of the `gong bandits' by \gls{ftown},%
 \footnote{If anyone asks why they're called `the gong bandits', he says `I don't remember, it doesn't matter'.}
 or the time he helped \Gls{warden}~Fell host a socially tenuous dinner-party with \pgls{chef} and \pgls{seneschal}.
 
 The troupe will arrive at \bothyOne\ before Sundown.
 
+\vspace{-1\baselineskip}
 \segment[\gls{morning}]{lonelyRoad}% AREA
 {Uncivilized Smoke}% NAME
 {Someone has made camp in the forest}% SUMMARY
@@ -173,7 +175,7 @@ The troupe will arrive at \bothyOne\ before Sundown.
   ``\textit{Let's get moving}'', she says.
 \end{boxtext}
 
-The \glspl{ranger} left a bag with \lootBig, two sleeping bags, three \glspl{torch}, 50' of rope, \rations, \rations, and \rations.
+The \glspl{ranger} left a bag with \lootBig, two sleeping bags, three \glspl{torch}, rope (15~\glspl{step} long), \rations, \rations, and \rations.
 
 \vspace{-1\baselineskip}
 
@@ -181,8 +183,8 @@ The \glspl{ranger} left a bag with \lootBig, two sleeping bags, three \glspl{tor
 {Surprise Guest}% NAME
 {\Pgls{woodspy} waits in the \gls{bothy}}% SUMMARY
 
-Unlike most \glspl{bothy}, \bothyTwo\ has a separate room with a chamberpot.
-An `in-door out-house'.
+Unlike most \glspl{bothy}, \bothyTwo\ has a separate room with a chamberpot
+(an `in-door out-house').
 And unlike most out-houses, this one has \pgls{woodspy} on the ceiling.
 
 \begin{boxtext}[How does everyone rest?]
@@ -190,10 +192,12 @@ And unlike most out-houses, this one has \pgls{woodspy} on the ceiling.
   The donkeys stop automatically, knowing they will rest soon.
 \end{boxtext}
 
-If the troupe don't notice the `slidy' (\gls{woodspy}) tracks, the character with the highest Speed \gls{attribute} encounters the \gls{woodspy} from above, once they've shut the door.
-Tentacles wrap around their throat, trying to silence them.%
+If the troupe don't notice the `slidy' (\gls{woodspy}) tracks, the \gls{woodspy} ambushes the first to use the indoor-outhouse (pick the \glspl{pc} with the highest Speed \gls{attribute}).
+Once the door shuts, the \gls{woodspy} descends from above;
+tentacles wrap around their throat, trying to silence them.%
 \footnote{At this point, ask the other players, `if someone doesn't come out of the toilet for a long time, what would you do?'.
 Remember their answer, then resolve the attack.}
+Once the \gls{woodspy} kills, it holds the door shut and begins to feed.
 
 \woodspy
 
@@ -336,7 +340,7 @@ If anyone fires and arrow, and sounds the gong, then the gong bandits prepare \p
   And half a mile below, the trees begin to thin, as the forest melts into the open land.
 \end{boxtext}
 
-After five more miles, the troupe arrive at that first \gls{village}, where \marketFence\ leaves them to sell her wares in Dragonfell.
+After five more miles, the troupe arrive at that first \gls{village}, where \marketFence\ leaves them to sell her wares in \gls{ftown}.
 Although if they \emph{need} to go to town, she can organize for a `\gls{fodder}-pass' for only 2~\glspl{sp} each.
 
 \end{document}
