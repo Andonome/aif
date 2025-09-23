@@ -74,7 +74,7 @@
 
 \pagestyle{minizine}
 
-\thread{\Glsfmtplural{bothy} \& Bandits}
+\thread{\marketFence's Proposal}
 
 \begin{speechtext}
   I have books on \emph{history}, \emph{preservation}, and \emph{secretive cures} for breathrot and meat grippes.
@@ -172,7 +172,8 @@ The troupe will arrive at \bothyOne\ before Sundown.
 \vspace{-1\baselineskip}
 \segment[\gls{morning}]{lonelyRoad}% AREA
 {Uncivilized Smoke}% NAME
-{Someone has made camp in the forest}% SUMMARY
+{Someone left their possessions unguarded in the forest}% SUMMARY
+\label{rangerCamp}
 
 \begin{exampletext}
   The \glspl{ranger} who once helped \marketFence\ went to raid a bandit camp.
@@ -248,7 +249,8 @@ The \glspl{ranger} travel slowly, and the troop will catch up to them soon.
   {wide shoulders, hanging gut}% DESCRIPTION
   {pleating beard}% MANNERISM
   {to take Guilter to town}% WANTS
-  \npcQuote{hey relax, guys!}]
+  \npcQuote{hey relax, guys!}%
+  \label{vicRangers}]
 
 \begin{boxtext}[]
   Approaching the cart, you see it holds a man with a long beard and bald head, tied with his arms pulled outwards.
@@ -332,7 +334,18 @@ The troupe spot \pgls{crawler}, hanging in the forest.
 A \roll{Wits}{Survival} roll at \tn[12] will tell them that someone made this `\gls{crawler}' out of wood.
 And if anyone says that it's made out of wood to the \glspl{ranger}, then the \glspl{ranger} can tell the \glspl{pc} that the facsimile has a gong hidden inside it, because that is how the gong bandits --- who live on this side of the mountain --- find out that \glspl{guard} have arrived.
 
-If anyone fires and arrow, and sounds the gong, then the gong bandits prepare \pgls{ambush} with \glspl{bow} two miles down the road.
+\paragraph{If an arrow hits,}
+the gong sounds, and the bandits prepare \pgls{ambush}.
+Two miles down the road, the bandits wait silently with their \glspl{bow} strung, 20~\glspl{step} into the forest's shadows.
+
+\ifnum\thepage<14
+  \paragraph{If the \glspl{pc} left the \glspl{ranger} camp untouched}
+  (\gls{segment}~\vref{rangerCamp})
+  then two \glspl{ranger} have made it across the mountains, via the secret bandit-path.
+  They hear the gong, and stalk through the forest to investigate.
+  They join the fight after \pgls{round}, behind the gong bandits.
+  Use the same \gls{statblock} as the others, \vpageref{vicRangers}.
+\fi
 
 \bigLine
 
