@@ -12,35 +12,47 @@
 \setcounter{humanNameNo}{8}
 \assignHumanName[\bothyTwo]
 \newcommand\brochOne{Blowtop}
+\newcommand\brochTwo{Mossdown}
 
 \begin{document}
 
 \miniCover{Gong Bandits}{
   \par
   \begin{tikzpicture}
-      \coordinate (start) at (0,-0.5);
+      \coordinate (start) at (-0.7,-0.7);
       \coordinate (fork) at (0,0.3);
       \coordinate (broch) at (0.7,0);
       \coordinate (bothy1) at (0.1,2);
       \coordinate (bothy2) at (2.3,2.2);
       \coordinate (mid) at (2.9,3);
-      \coordinate (griffins) at (0.4,3.9);
+      \coordinate (griffins) at (3.5,4);
       \coordinate (bandits) at (3.3,4);
       \coordinate (bailey) at (1.5,4.5);
+      \coordinate (broch2) at (0.03,4.6);
+      \coordinate (westroad) at (-1.2,5.3);
       \coordinate (out) at (4,5);
       \foreach \x in {0,...,2}{
         \draw (-1+\x*2,3) -- ++(1,1) -- ++ (1,-1);
       }
       \draw [gray, dashed] (fork) -- (broch) ;
       \draw [gray, dashed] (start) -- (fork) -- (bothy1) -- (bothy2) -- (mid) -- (bandits) -- (bailey) -- (out) ;
+      \draw [gray, dashed] (bailey) -- (broch2) -- (westroad) ;
       \node at (griffins) {\A} ;
-      \draw [dotted, fill=white] (bailey) circle (1.2em) node {\normalsize \Hu } ;
-      \draw [dotted, fill=white] (broch) circle (1em) node { \glsentrysymbol{sylf} } ;
+      \draw [dotted] (broch2) circle (1.6em) ;
+      \draw [dotted] (broch2) circle (2.4em) ;
+      \draw [dotted] (broch2) circle (3.2em) ;
+      \draw [dotted, fill=white] (broch2) circle (0.8em)  node { \glsentrysymbol{sylf} } ;
+      \draw [dotted] (broch) circle (1.6em) ;
+      \draw [dotted] (broch) circle (2.4em) ;
+      \draw [dotted] (broch) circle (3.2em) ;
+      \draw [dotted, fill=white] (broch) circle (0.8em) node { \glsentrysymbol{sylf} } ;
       \draw [dotted, fill=white] (bothy1) circle (0.7em) node { \gls{evening} } ;
       \draw [dotted, fill=white] (bothy2) circle (0.7em) node { \gls{evening} } ;
       \node[anchor=north east] at (bothy1) {\scshape\bothyOne};
+      \draw [dotted, fill=white] (bailey) circle (1.2em) node {\normalsize \Hu } ;
       \node[anchor=north] at (bothy2) {\scshape\bothyTwo};
       \node[anchor=north] at (broch) {\scshape\brochOne};
+      \node[anchor=north] at (broch2) {\scshape\brochTwo};
   \end{tikzpicture}
 }
 
