@@ -61,6 +61,9 @@
 \appto{\brochOne}{~\Glsentrytext{broch}}
 
 {
+  \noindent
+  The \glspl{pc} must guard a trader over the mountains, past \glspl{monster}, bandits, and an honest man who wants them to pay their taxes.
+
   \bookletThreads{lonelyRoad}
 
   \bookletThreads{bothy}
@@ -78,17 +81,18 @@
 
 \begin{speechtext}
   I have books on \emph{history}, \emph{preservation}, and \emph{secretive cures} for breathrot and meat grippes.
-  I have \glspl{boon} made from sentient mushrooms in the \gls{deep}, and signet rings forged by dwarves who haven't taken a holiday in twenty years.
-  I know buyers in \gls{ftown} who would sell their own children's teeth for a \underline{chance} to see my wares.
-  I have paid five \glsentrylongpl{gp} \underline{up-front} to \pgls{jotter} at the \gls{templeOfBeasts} for guardianship to the mountain-pass, and down the open plains which lead to \gls{ftown}, to sell my goods.
+  \Glspl{boon} made from sentient mushrooms in the \gls{deep}, and signet rings forged by dwarves who haven't taken a holiday in \emph{twenty years}.
 
-  Day one: the \glspl{ranger} I paid up-front disappear on an `urgent mission'.
+  Buyers in \gls{ftown} who would sell their own children's teeth for a \underline{chance} to see my wares.
+  I have paid five \glsentrylongpl{gp} \underline{up-front} to the \gls{templeOfBeasts} for guardianship to the mountain-pass, and down the open plains which lead to \gls{ftown}, to sell my goods.
+
+  Day one: the \glspl{ranger} disappear on an `urgent mission'.
   Am I not `urgent'?
   Do I not seem `\underline{urgent}' to you?
 
-  Join me from here untill the first \gls{village}.
-  If my cargo and donkeys arrive safely, I will pay three \glsentrylongpl{gp},%
-  \footnote{She negotiates up to 8~\glspl{gp}.}
+  Join me from here until the first \gls{village}.
+  Keep my cargo and donkeys safe, and I will pay three \glsentrylongpl{gp},%
+  \footnote{If the \glspl{pc} ask for more, she adds concessions.}
   and will sell any \gls{monster}-corpse after \gls{harvesting}, completely \underline{tax-free} (and the \gls{templeOfBeasts} can eat \gls{sylf}-shit).
   So your journey will be \emph{easy}, or \emph{profitable}.
 \end{speechtext}
@@ -96,14 +100,14 @@
 \begin{table}
   \begin{tabular}{rl}
     \setcounter{freeHP}{7}%
-    & \scshape Donkeys \\
-    \footnotesize Charmer: & \hpStat \\
-    \footnotesize Vagrant: & \hpStat \\
-    \footnotesize Sid: & \hpStat \\
+    \scshape Donkeys & \\
+    \footnotesize Charming: & \hpStat \\
+    \footnotesize Candid: & \hpStat \\
+    \footnotesize Bard: & \hpStat \\
     \hline
     \Glspl{ration}: &
     \setcounter{weight}{0}%
-    \setcounter{freeHP}{5}%
+    \setcounter{freeHP}{6}%
     \hpStat \\
     & \hpStat \\
     & \hpStat \\
@@ -135,7 +139,7 @@
 Track the \glspl{torch}, \glspl{ration}, and donkeys' \glspl{ep} \vpageref{donkeyTracker}.
 
 \segment[\gls{afternoon}]{lonelyRoad}% AREA
-{A Friendly Face}% NAME
+{An Honest Man}% NAME
 {\Pgls{guard} joins, determined to do everything by the book}% SUMMARY
 
 \Gls{soldier} Perspic does things by the book.
@@ -177,7 +181,7 @@ The troupe will arrive at \bothyOne\ before Sundown.
 
 \begin{exampletext}
   The \glspl{ranger} who once helped \marketFence\ went to raid a bandit camp.
-  They stopped in the forest last night, cooked over a fire-pit, and left some items to avoid being weighed down during the fight.
+  They made camp in the forest last night, and left some items to avoid being weighed down during the fight.
   They also left the fire smouldering, just enough to give off smoke until a few minutes after Sunrise.
 \end{exampletext}
 
@@ -188,21 +192,22 @@ The troupe will arrive at \bothyOne\ before Sundown.
   ``\textit{Let's get moving}'', she says.
 \end{boxtext}
 
-The \glspl{ranger} left a bag with \lootBig, two sleeping bags, three \glspl{torch}, rope (15~\glspl{step} long), \rations, \rations, and \rations.
+\paragraph{If the \glspl{pc} investigate,}
+they find the \glspl{ranger} left \lootMedium, two sleeping bags, three \glspl{torch}, rope (15~\glspl{step} long), \rations, and \rations.
 
 \vspace{-1\baselineskip}
 
 \segment[\gls{afternoon}]{bothy}% AREA
-{Surprise Guest}% NAME
+{Above the Chamberpot}% NAME
 {\Pgls{woodspy} waits in the \gls{bothy}}% SUMMARY
 
-Unlike most \glspl{bothy}, \bothyTwo\ has a separate room with a chamberpot
+Unlike most \glspl{bothy}, \bothyTwo\ has a separate room with a chamberpot and a hatch to empty it.
 (an `in-door out-house').
 And unlike most out-houses, this one has \pgls{woodspy} on the ceiling.
 
 \begin{boxtext}[How does everyone rest?]
   Slidy-tracks lead up to \bothyTwo\ --- one of the largest in the land.
-  The donkeys stop automatically, knowing they will rest soon.
+  The donkeys stop by the door, and wait to be unbridled.
 \end{boxtext}
 
 If the troupe don't notice the `slidy' (\gls{woodspy}) tracks, the \gls{woodspy} ambushes the first to use the indoor-outhouse (pick the \glspl{pc} with the highest Speed \gls{attribute}).
@@ -210,11 +215,15 @@ Once the door shuts, the \gls{woodspy} descends from above;
 tentacles wrap around their throat, trying to silence them.%
 \footnote{At this point, ask the other players, `if someone doesn't come out of the toilet for a long time, what would you do?'.
 Remember their answer, then resolve the attack.}
-Once the \gls{woodspy} kills, it holds the door shut and begins to feed.
+Once the \gls{woodspy} kills, it holds the door shut and begins to feed, then leaves through the hatch.
 
 \woodspy
 
-If the troupe kill the \gls{woodspy}, the body has \pgls{weight} of \arabic{hp} after \gls{harvesting}, and a well-preserved beak has \pgls{weight} of 1.%
+\ifnum\thepage<6%
+  If the troupe kill the \gls{woodspy}, the body has \pgls{weight} of \arabic{hp} after \gls{harvesting}, and a well-preserved beak has \pgls{weight} of 1.%
+\else%
+  \Pgls{woodspy} corpse is valuable, but it has \pgls{weight} of \arabic{hp}.
+\fi%
 \ifcase\thetemperature\relax\or
   The parts rot after \arabic{r2t4}~days.
 \else%
@@ -222,14 +231,15 @@ If the troupe kill the \gls{woodspy}, the body has \pgls{weight} of \arabic{hp} 
 \fi
 
 \segment[\gls{afternoon}]{Mountain}% AREA
-{Unfriendly Faces}% NAME
+{Two-Faced Wagon}% NAME
 {\Glspl{guard} ahead carry a dangerous prisoner}% SUMMARY
 
 \begin{exampletext}
-  The \glspl{ranger} rased the bandit camp as the bandits fled.
-  Half the \glspl{ranger} lay dead.
-  But they managed to capture the bandit's leader --- \pgls{witch} known as `Guilter'.
+  The \glspl{ranger} rased the bandit camp and tied the bandits' leader to a wagon, along with sacks of plunder (mostly longswords).
+  The surviving bandits fled across a secret mountain pass, and the surviving \glspl{ranger} still stalk them.
 \end{exampletext}
+
+The troupe find their path blocked by the two \glspl{ranger} carrying the bandit leader --- `Guilter' --- on a wagon.
 
 \begin{boxtext}[]
   As the forest thins, mountains rise ahead.
@@ -242,8 +252,8 @@ If the troupe kill the \gls{woodspy}, the body has \pgls{weight} of \arabic{hp} 
   pulled by two men and a horse.
 \end{boxtext}
 
-High up the infertile mountains, you can skip all normal encounters.
-The \glspl{ranger} travel slowly, and the troop will catch up to them soon.
+The \glspl{ranger} travel slowly, as they feel tired, and don't have to worry about wandering \glspl{monster} this high up the infertile mountains.
+The troop will catch up to them soon.
 
 \humansoldier[\NPC{\T[2]\M\Hu\glsentrysymbol{sylf}}{Rotbulge \& Wiltcull}%
   {wide shoulders, hanging gut}% DESCRIPTION
@@ -253,53 +263,64 @@ The \glspl{ranger} travel slowly, and the troop will catch up to them soon.
   \label{vicRangers}]
 
 \begin{boxtext}[]
-  Approaching the cart, you see it holds a man with a long beard and bald head, tied with his arms pulled outwards.
-  Behind him, a pile of sacks.
+  Approaching the wagon, you see it holds a pile of sacks, all full, and a man with a long beard and bald head.
+  The man's wrists are tied to the side, pulling his arms wide open.
 
   The path has barely enough room for one wagon, and you clearly cannot pass with the donkey troika.
 \end{boxtext}
 
-\Gls{ranger} Rotbulge doesn't want the \glspl{pc} investigating his sacks.
-They contain fourteen longswords, taken from the bandits, and he has no intention of paying tax on any of them.
+The sacks have fourteen longswords, taken from the bandits, and Rotbulge wants to sell them tax-free.
+Guilter uses this to set everyone against each other:
 
-\begin{speechtext}
+\begin{description}
+  \item[Rotbulge]\it
   Look, I'm sorry about slowing you down, but it's great having yous back there.
   We know old Guilter's going nowhere with you watching him.
-  If you want to help, you can push from behind, and give Wiltcull and the horse a breather.
-\end{speechtext}
-
-\paragraph{If the troupe find out about the swords,}
-the \glspl{ranger} become defensive.
-
-\begin{speechtext}
-  When it comes to selling longswords, bandits fall under the purview of the \gls{templeOfJustice}.
-  When it comes to killing bandits, they fall under the \gls{templeOfBeasts}.
-  How the fuck is that fair?
-\end{speechtext}
-
-\paragraph{Perspic demands to do everything by the book,}
-and if the \glspl{pc} stop him demanding and threatening to report the \glspl{ranger}, then the \glspl{ranger} will not be inclined to help them, or let them pass.
+  Could you maybe give us a push from the back, and we'll get up faster?
+  \item[Guilter]\sc
+  Come closer.
+  {\small
+    I have a secret to tell you\ldots
+    The \glspl{ranger} have a wealth of swords in these sacks, and they plan to keep it all.
+  }
+  \item[Perspic]\rm
+  They can't do that.
+  Bandit weapons become the property of the \gls{templeOfJustice}.
+  \item[Rotbulge]\it
+  So the \gls{guard} get to kill bandits, and the \gls{warden}'s job is `selling bandit weapons and keeping the money'.
+  How is that fair?
+  \item[Guilter]\sc
+  Fools!
+  {\small
+    Now the \glspl{ranger} have no choice but to cut your sleeping throats.
+  }
+\end{description}
 
 \humanalchemist[\NPC{\M\Hu}{Guilter}%
   {eyes burning with hatred}% DESCRIPTION
   {always mouthing words, mostly silent}% MANNERISM
-  {freedom}% WANTS
-  \npcQuote{Jesters, all of you}%
+  {to find the perfect moment}% WANTS
+  \npcQuote{mind your step}%
   \setcounter{wounds}{2}%
   \setcounter{weight}{3}%
   ]
 
-\showStdSpells
+{\footnotesize
+  \setcounter{diceNo}{1}
+  \showStdSpells
+}
 
-If the \glspl{pc} do nothing about the \gls{witch} staring at them, Guilter looks for the worst possible moments to cast spells on them.
-If he escapes, he grabs his backpack (sitting next to him on the cart) and 
+\paragraph{If the troupe remain behind Guilter,}
+he looks for the worst possible moments to cast \glspl{spell} on them, and escape.
+\ifnum\thepage<10%
+  If he escapes, he grabs his backpack (sitting next to him on the wagon) and threatens to stab a donkey unless someone throws him food.
+\fi
 
 \segment{Mountain}% AREA
-{Passing Places}% NAME
+{Passing Place}% NAME
 {The troupe decide whether or not to overtake}% SUMMARY
 
-Soon the \glspl{ranger}'s wagon reaches a wider spot on the road, where two wagons can pass each other.
-They don't want the troupe to overtake them, so they speed up suddenly.
+The path ahead becomes wide enough for two wagons, but Rotbulge and Wiltcull don't want the troupe to pass, so they speed up to avoid the troupe overtaking them.
 The troupe can out-pace them
 \ifnum\thetemperature=0
   with a \roll{Strength}{Empathy} (\tn[8]) roll to push the cart with the donkies.
@@ -308,7 +329,7 @@ The troupe can out-pace them
   if they try.
 \fi
 
-If the troupe overtake, they can reach the mountain pass after \pgls{interval}.
+If the troupe overtake, they can reach the top after \pgls{interval}.
 If not, they need two.
 
 \segment{Mountain}% AREA
@@ -366,6 +387,5 @@ Two miles down the road, the bandits wait silently with their \glspl{bow} strung
 \end{boxtext}
 
 After five more miles, the troupe arrive at that first \gls{village}, where \marketFence\ leaves them to sell her wares in \gls{ftown}.
-Although if they \emph{need} to go to town, she can organize for a `\gls{fodder}-pass' for only 2~\glspl{sp} each.
 
 \end{document}
