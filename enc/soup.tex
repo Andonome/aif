@@ -241,13 +241,14 @@ the forest opens, revealing the cottage, and Carnpox' garden.
 \end{boxtext}
 
 \begin{exampletext}
-  As Granny makes plants grow with witchcraft, it decreases the soil's fertility, so she must grow further away.
-  Her magical gardens push out a ring of death, which becomes wider each year.
+  Granny grows plants with \gls{witchcraft}, which decreases the soil's fertility until it becomes completely barren.
+  Her garden forms an expanding ring around the infertile centre.
 \end{exampletext}
 
 \paragraph{Half a mile away}
-Granny Carnpox spies the crew, and casts her usual \gls{spell}, which detects if someone has murderous intent.
+Granny Carnpox spies the crew, and casts \textit{Hospitable Inquiry}, which detects if someone has murderous intent.
 And if they do, she rallies the troupes, secretively, and quietly, while leaving through the back door.
+Otherwise, she tells Gorflake to prepare for guests.
 
 \paragraph{At the cottage}
 Rentfold sits on the roof (his symbiotic \gls{woodspy} lies camouflaged into the wattle beside him).
@@ -314,13 +315,15 @@ Over the fire, a massive pot simmers with eternal soup.
 \Gls{chef}~Carnpox adds ingredients, people drink, he adds some more.
 It changes a little bit every day.
 
-Movement inside the room demands a \roll{Dexterity}{Athletics} check (\gls{tn} equals the character's \glspl{hp} $+3$).
+Movement inside the room demands a \roll{Dexterity}{Athletics} check with \pgls{tn} equal to the character's \glspl{hp}.
+Every movement deserves a claustrophobic description, and every second person entering the room adds +1 to the \gls{tn}.
 Failure will knock something off a shelf, inflicting \dmg{-2}~Damage.
 
-The next room is where Granny Carnpox stays.
+The next room has straw for sleeping, and a door to Granny Carnpox' room, where she sleeps with her cats.
+This end-room has a barred exit-door.
 
 \subsubsection{At Sundown}
-everyone arrives to eat the soup, and every second person raises the \gls{tn} to move.
+everyone arrives to eat the soup.
 Coinfilch leaves hair everywhere.
 Nettlepike complains that the wrong food will make his ink-gland produce weird colours.
 Rentfold chews up chunks of meat, and spits them into Baxter's beakless maw.
@@ -338,7 +341,7 @@ Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attri
   {blue headscarf, sunken eyes}% DESCRIPTION
   {touches people's cheeks}% MANNERISM
   {to care for the cottage}% WANTS
-  \npcQuote{Granny has what you need}}%
+  \npcQuote{Death is such an awful waste}}%
   {{-1}{1}{-2}}% BODY
   {{2}{0}{2}}% MIND
   {%
@@ -355,11 +358,18 @@ Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attri
     \Dagger
   }% SKILLS
   {\specialist{growing peaches}}% KNACKS
-  {}% EQUIPMENT
+  {Water \glsentrytext{boon}}% EQUIPMENT
   {}% ABILITIES
 
-\setcounter{diceNo}{0}
-\showStdSpells
+\showStdSpells[%
+  \stepcounter{Water}
+]
+
+\ifnum\thepage<14
+  \subsubsection{Defeated Characters}
+  become \glspl{npc}.
+  \Pgls{cycle} later, the new \glspl{pc} may hear \pgls{doula} in a nearby \gls{village} telling children the chilling tale of `the curious \gls{guard}', or `the man who kept his hat on, while accepting hospitality'.
+\fi
 
 \subsubsection{Opening the box}\label{insideTheBox}
 requires untying the complex knot at the front: \roll{Intelligence}{Seafaring} (\tn[10]).
