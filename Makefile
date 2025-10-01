@@ -41,7 +41,7 @@ config/rules.pdf:
 
 .PHONY: goblins
 goblins: $(GOBLINS).pdf ## Oneshot cavern-based module
-$(DROSS)/caves.pdf: glossary.tex $(DEPS)
+$(DROSS)/caves.pdf: glossary.tex $(DEPS) $(DROSS)/caves-switch-gls
 $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/characters.pdf config/rules.pdf
 	pdfjam --pdftitle $(GOBLINS) --pdfsubject "BIND RPG" \
 	--pdfkeywords "RPG,TTRPG,roleplaying" \
@@ -50,7 +50,7 @@ $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/characters.pdf config/rules.pdf
 
 .PHONY: shellstack
 shellstack: $(ELVES).pdf ## Elven mayhem
-$(DROSS)/fey.pdf: $(DEPS)
+$(DROSS)/fey.pdf: $(DEPS) $(DROSS)/fey-switch-gls
 $(ELVES).pdf: $(DROSS)/fey.pdf config/rules.pdf
 	pdfunite $^ $@
 
