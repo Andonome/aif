@@ -16,13 +16,6 @@ output += booklets
 GOBLINS = The_Goblin_Hole
 ELVES = Snail_Trails
 
-DEPS += $(wildcard fridge/*.tex)
-DEPS += $(wildcard shrooms/*.tex)
-DEPS += $(wildcard caves/*.tex)
-DEPS += $(wildcard fey/*.tex)
-DEPS += images/extracted/sundered.jpg images/extracted/enchanted.jpg
-
-DEPS += $(wildcard characters/*.tex)
 DEPS += commands.tex
 
 dependencies += magick
@@ -50,7 +43,7 @@ $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/characters.pdf config/rules.pdf
 
 .PHONY: shellstack
 shellstack: $(ELVES).pdf ## Elven mayhem
-$(DROSS)/fey.pdf: $(DEPS) $(DROSS)/fey-switch-gls
+$(DROSS)/fey.pdf: $(DEPS) $(DROSS)/fey-switch-gls images/extracted/sundered.jpg images/extracted/enchanted.jpg
 $(ELVES).pdf: $(DROSS)/fey.pdf config/rules.pdf
 	pdfunite $^ $@
 
