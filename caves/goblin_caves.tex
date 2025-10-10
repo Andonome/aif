@@ -22,7 +22,6 @@ The air smells dusty, but fresh enough to rest.
   \ref{falseExit}/85/10,
 }
 
-
 \mapentry[falseExit]{False Exit}
 
 The path travels upwards until opening on the mountain's side.
@@ -31,16 +30,6 @@ Unfortunately, the path also exits onto the side of a cliff, so the troupe canno
 Climbing down requires a \roll{Dexterity}{Athletics} at \tn[14].%
 \footnote{If a player insists on attempting this check, you should roll for them, and tell them if they succeed or fail.  The other players will only find out if their characters can climb down later -- they should not know their chances of success by looking at the \gls{natural}.}
 Failure means death.
-
-\smolMapPic{cave_3}{
-  {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
-  {\normalsize\glsfmttext{weight}~25: collapse}/57/75,
-  \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
-  \ref{firstBridge}/49/57,
-  \ref{gentlePassage}/92/05,
-}
-
-\playCommentaryAftermath[t]
 
 \mapentry[firstBridge]{First Bridge}
 
@@ -52,6 +41,8 @@ Failure means death.
   When first group of \glspl{guard} came through here, the bridge collapsed, sending one down to a pit of sharp rocks below.
   He died instantly, and the group moved on.
 \end{exampletext}
+
+\playCommentaryAftermath[t]
 
 If the troupe walk with a light, they instantly see the hole in the ground (but their torch is probably about to go out at this point).
 Otherwise, they should roll \roll{Wits}{Caving} at \tn[8].
@@ -70,6 +61,14 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 \label{caveCoinsI}
 \setcounter{diceNo}{0}%
 \renewcommand\npcsymbol{\currency}%
+
+\smolMapPic{cave_3}{
+  {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
+  {\normalsize\glsfmttext{weight}~25: collapse}/57/75,
+  \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
+  \ref{firstBridge}/49/57,
+  \ref{gentlePassage}/92/05,
+}
 
 \wayOut{Past the bridge, after a mile of fairly smooth cavern floor, the troupe find}{ropeDown}
 
@@ -165,7 +164,8 @@ The first sign of carbon monoxide poisoning is usually death, but in this case t
 It died weeks ago, but has no marks -- no cuts or bruises -- and the corpse has not decayed much, due to the infertile conditions in the cave.
 
 The second warning sign is a dead gnome (20~\glspl{step} down the passage).
-He has no items, as his companions picked up his bag before moving on.
+His companions picked up his items before moving on, except a bag of shells and pebbles.%
+\footnote{This portable \gls{shellGame} has excellent pieces, and any reasonable gnome will a dozen \glsentrylongpl{sp} for it.}
 
 \paragraph{If the players fail to heed the warning signs,}
 \glspl{pc} familiar with caves might get a strange feeling.
@@ -515,7 +515,6 @@ Rolling a failure means the river pulls the character downriver, the \gls{tn} in
 
 \paragraph{Examining the river}
 reveals little fish, about the size of a finger.
-
 Any reasonable plan to catch them might work, although placing \pgls{caveFire} safely can prove very difficult.
 
 \paragraph{Jumping over}
