@@ -81,6 +81,7 @@ zine_part_names = $(patsubst %, cyoa/pt_%.tex, $(zine_part_nums))
 booklets/a7_cyoa_bino.tex: cyoa/head.tex $(zine_part_names) | booklets/
 	cat $^ > $@
 	printf '%s\n' '\ifnum\thepage<14\pagebreak\null\fi' >> $@
+	printf '%s\n' '\ifnum\thepage<14\pagebreak\null\fi' >> $@
 	printf '%s\n' '\end{document}' >> $@
 
 $(halfshots): $(booklet_list)
