@@ -1,30 +1,36 @@
 \thread[ftown]{Before the Thaw}
 
-\begin{exampletext}
+\begin{speechtext}
   \noindent
   They say the fridge began when a dragon attacked, and battled with \pgls{witch} on a rainy day.
   It fell, they say, with enough force to smash \emph{through} the ground and make a hole.
   Then the \gls{witch} froze the rain, trapping it in ice.
   They also say it has a pot of gold somewhere, and has to give you a wish if you answer its riddle.
   `They' are generally full of shit, of course.
+\end{speechtext}
+
+\begin{exampletext}
+  Everyone in \gls{ftown} relies on the fridge, especially the local guilds.
+  It sits underground, accessible from the street, through an open cavity in the ground, down a badly-maintained set of stairs which sometimes slope up, and sometimes slope down.
+  Sometimes would-be thieves enter, then wander down some dark and crooked stairs until the darknes and silence make them turn back.
+  Very few go all the way down, and even fewer come back up.
+  They might c\"oordinate a long passage in the dark, but once into the massive, frosty hall, it's hard to move without a light.
+  And if any thief carries a light then everyone else in the fridge can see them.
+
+  Everyone who has business in the fridge knows everyone else who has business in the fridge.
+  The \glspl{weaver} go down rarely, to store a cheese-wheel or woolly clothes.
+  The \glspl{scribe} sometimes to hide or hunt for dangerous books.
+  The \glspl{guard} enter regularly, to check the frozen beasts don't wake up.
+  The \glspl{server} enter daily, to check their private rooms, where the flour dries.
+  And \pgls{proctor} enters whenever anyone else does, so make sure no more arguments flare up about who owns what, who stole what, and who left a mess.
 \end{exampletext}
 
-Everyone in \gls{ftown} relies on the fridge, especially the local guilds.
-It sits underground, accessible from the street, through an open cavity in the ground, down a badly-maintained set of stairs which sometimes slope up, and sometimes slope down.
-Sometimes would-be thieves enter, then wander down some dark and crooked stairs until the darknes and silence make them turn back.
-Very few go all the way down, and even fewer come back up.
-They might c\"oordinate a long passage in the dark, but once into the massive, frosty hall, it's hard to move without a light.
-And if any thief carries a light then everyone else in the fridge can see them.
+The \glspl{thread} below establish that the \glspl{temple} in \gls{ftown} argue over the fridge, and hint at the contents.
+In \gls{segment}~\ref{meltBegins} (\vpageref{meltBegins}), the fridge begins to melt, the \glspl{temple} stop arguing and unanimously decide that the \gls{templeOfBeasts} has complete responsibility for the fridge, and has to fix the problem immediately.
 
-Everyone who has business in the fridge knows everyone else who has business in the fridge.
-The \glspl{weaver} go down rarely, to store a cheese-wheel or woolly clothes.
-The \glspl{scribe} sometimes to hide or hunt for dangerous books.
-The \glspl{guard} enter regularly, to check the frozen beasts don't wake up.
-The \glspl{server} enter daily, to check their private rooms, where the flour dries.
-And \pgls{proctor} enters whenever anyone else does, so make sure no more arguments flare up about who owns what, who stole what, and who left a mess.
-
-The \glspl{thread} below establish that the town has a fridge, hint at the contents, and then the fridge begins to melt.
-At this point, all the \glspl{temple} stop arguing and unanimously decide that the \gls{templeOfBeasts} has complete responsibility for the fridge, and has to fix the problem immediately.
+\ifnum\value{temperature}=0
+  \hibernationSegment
+\fi
 
 \segment[\squash]{ftown}% AREA
 {Juris Diction}% NAME
@@ -35,46 +41,16 @@ So who owns the honey?
 
 \begin{itemize}
   \item
-  \Gls{cook}~\composeHumanName\ reminds everyong that bees have a poisonous sting, so the \gls{templeOfPoison} -- which protects peoplel from rot by use of \emph{preservatives} -- has a monopoly on the use of honey.
+  \Gls{chef}~Ginshank reminds everyong that bees have a poisonous sting, so the \gls{templeOfPoison} --- which protects peoplel from rot by use of \emph{preservatives} --- has exclusive rights to the use of honey.
   \item
   \Gls{notary}~\composeHumanName\ replies that bees do have poison, but `venom', and that honey preserves food, so the \gls{templeOfFrost} has clear and natural dominion over honey.
   \item
   \Gls{counter}~\composeHumanName\ stamps her crutches at every syllable, stating that if anyone claims rights over honey, the \gls{templeOfSickness} won't help them or their families when the time comes to go with \gls{eldren}.
 \end{itemize}
 
-\ifnum\value{temperature}=0
-  \segment{lonelyRoad}% AREA
-  {Don't Wake the Baby}% NAME
-  {Three \glsfmtplural{ranger} walk quietly with a hibernating \glsfmttext{hulk} in their cart}% SUMMARY
+If \pgls{pc} takes sides, all \glspl{npc} will remember the decision, and ensure they receive good service or no service.
 
-  Three \glspl{ranger} found \pgls{hulk} hibernating in a cave.
-  They trundled a cart into the cavern, loaded the \gls{hulk} onto it, began moving towards \gls{ftown} to sell it to the \gls{court} so people can watch it fight.
-  The \gls{hulk} should fetch 3~\glspl{gp} at least!
-  But first, they must find \pgls{witch}, or anyone who knows enough \gls{alchemy} to ensure the beast remains in hibernation.
-  Because it's starting to wake up\ldots
-
-  \begin{boxtext}
-    A cart appears ahead, coming slowly, and silently.
-    \Pgls{guard} pulls it, while two push from behind, then one stops, and seems to be indicating something to you with his hands.
-    He looks serious, but doesn't say anything.
-  \end{boxtext}
-
-  \paragraph{If the \glspl{pc} help,}
-  they have the \glspl{ranger} thanks.
-  They're tired, and don't have the energy to run to a nearby \gls{village}.
-
-  \humansoldier[\npc{\glsentrysymbol{sylf}\T[3]\F\M\Hu}{\composeHumanName, \composeHumanName, \& \composeHumanName}]
-
-  \paragraph{Any loud noises}
-  could wake the \gls{hulk}; roll $1D6$ and on the roll of \dicef{1}, the \gls{hulk} wakes slowly, but cannot move for for a long time.
-  Anyone may roll \roll{Wits}{Survival} at \tn[12] to understand that the \gls{hulk} has woken, and will be able to move soon.
-
-  \paragraph{If the \gls{hulk} wakes fully,}
-  it attacks.
-
-  \umberhulk
-
-\fi
+Begin the next available \gls{segment} in \gls{ftown} immediately.
 
 \segment[\squash]{ftown}% AREA
 {Even Lager}% NAME
@@ -99,12 +75,24 @@ A bit thin, but very refreshing, and strangely cold.
   {unwanted bear-hugs}% Mannerism
   {to find out how his own ale is made}]% Wants
 
-Unfortunately, Ginshank made the ale by accident after he abandoned it in the fridge, under the town.
+Unfortunately, Ginshank made the ale by accident after he abandoned it in the fridge, under \gls{ftown}.
 Ale doesn't usually ferment in the cold, but this new type ferments very well.
+
+\ifcase\thecycle%
+  \hibernationSegment
+\or%
+\or%
+  \ifnum\thefenestraDay>20%
+    \hibernationSegment
+  \fi%
+\else%
+  \hibernationSegment
+\fi%
 
 \segment{ftown}% AREA
 {The Melt Begins}% NAME
 {Various guild leaders need the troupe to the problems with the fridge post-haste}% SUMMARY
+\label{meltBegins}
 
 The fridge has begun to melt, and the troupe must descend.
 \emph{Best run this \gls{segment} only at the start of a session!}
@@ -146,8 +134,8 @@ The fridge now contains a mixture of flammable gasses, overly-pressurized ale ca
 \end{speechtext}
 
 \paragraph{Just before the entrance,}
-\gls{librarian} Giltvine plants \pgls{gp} in \pgls{pc}' pocket, along with a note.
-The player can roll \roll{Wits}{Vigilance} to notice the plant (at which point Giltvine tells them to be quiet and take the note).
+\gls{librarian} Giltvine plants \pgls{gp} in \pgls{pc}'s pocket, along with a note.
+Only this \gls{pc} is aware of the note.
 
 \begin{speechtext}
   \scshape
