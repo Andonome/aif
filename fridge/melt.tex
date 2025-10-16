@@ -1,6 +1,8 @@
 \section{The Fridge}
 \label{theFridge}
 
+\pacingExample
+
 \begin{multicols}{2}
 
 \noindent
@@ -8,9 +10,70 @@ The \gls{templeOfFrost} holds a massive, underground fridge, used by the entire 
 
 Just about every \gls{temple} in the city holds something down there, and none of them trust the others enough to go down and fetch anything, for fear they'll place the items in their own area.
 
+\subsection{Turns' Relentless March}
+
+The session should track time from start to finish, because the fridge is melting.
+Just measure broad turns with \glspl{ap} as usual, \emph{but} characters spend \pgls{ap} to:
+
+\begin{itemize}
+  \item
+  Move anywhere in line of site.
+  \item
+  Get into a boat.
+  \item
+  Engage in a conversation.
+  \item
+  Open the heavy doors to room \vref{fDoor}.
+  \item
+  Engage in combat (even spending 4 \glspl{round} just counts as one turn).
+\end{itemize}
+
+Whenever the troupe moves, every \gls{pc} must spend \pgls{ap} or they lag behind.
+However, their pace depends on decisions more than the \glspl{pc}' Speed Bonuses (note the example, \vpageref{pacingExample}).
+
+Whenever a new turn begins, chech which events occur.
+
+\subsubsection[Upon Entry]{1: Upon Entry}
+the water has begun to melt.
+The dark centre of the map has waist-high water to a human, and the grey sections of the map (\vpageref{Dyson_Logos/bowels}) have no water yet.
+
+\subsubsection[Water Rises]{4: Water Rises}
+through the grey areas, but stops to fill up the \nameref{fDip} in room~\vref{fDip}.
+
+\subsubsection[Oil Spills]{5: Oil Spills}
+from the barrels in room \ref{fDip}, and water moves through the rest of the grey areas.
+
+\subsubsection[An Escaped Prisoner]{7: An Escaped Prisoner}
+jumps from the \gls{court} and out the doors of room \vref{fDoor}, then heads towards the nearest light (e.g. any \gls{torch} \pgls{pc} carries).
+\Pgls{sunGuard} bolts after him a moment later with his own \gls{torch}, and the prisoner has to swim to safety.
+
+The \glspl{pc} might not want to waste their time on this ruckus, but the \gls{sunGuard} wants their boat (he's not getting into that filthy water with his nice, white, vestige).
+
+\humanthief[\NPC{\M\Hu}{\composeHumanName}%
+  {one eye, bald}% DESCRIPTION
+  {spinning thumbs}% MANNERISM
+  {find valuables, then bolt}% WANTS
+  \npcQuote{Wouldn't want to join you lads, no offence yea?}]% QUOTE
+
+\sunguard[\NPC{\glsentrysymbol{paik}\M\Hu}{\Glsfmttext{sunGuard} \composeHumanName}%
+  {muscular frame, sticky-out ears}% DESCRIPTION
+  {stands uncomfortably close while yelling}% MANNERISM
+  {to catch the criminal}% WANTS
+  \npcQuote{Where is the cretin?
+  Give me that boat!}]% QUOTE
+
+\subsubsection[Waist Height Water]{9: Waist Height Water}
+means everyone has to spend 2~\glspl{ap} to move when not in a boat.
+
+\subsubsection[Water Moves up the Stairs]{11: Water Moves up the Stairs}
+entering the rooms \vpagerefrange{fDoor}{fCourt}, and moves towards the \nameref{fCourt} \vpagerefrange{fGuardDoor}{fHibernation}.
+
+\subsubsection[The \Glsfmtplural{monster} Wake]{12: The \Glsfmtplural{monster} Wake}
+and the first moves to the door at room \vref{fGuardDoor}.
+The \glspl{monster} also spend \glspl{ap} to move.
 \fridgeMap
 
-\subsection{The Roots}
+\subsection{Changing Space}
 
 \mapentry[fStairs]{Stairs}
 
