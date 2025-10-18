@@ -4,23 +4,18 @@
 
 \renewcommand\npcsymbol{\glsentrysymbol{yonder}}
 \mapentry[start]{Fresh Hall}
-
-The troupe will almost certainly want to stop and rest here for \pgls{interval}.
-The air smells dusty, but fresh enough to rest.
-
 \begin{boxtext}
   This fresh hall has an ambient drip of water, and moisture everywhere.
   The ceiling slopes down gently, surrounding the entire passage with a ring of low-hanging darkness.
   Large, damp, rocks litter the ground in every direction.
 \end{boxtext}
 
+The troupe will almost certainly want to stop and rest here for \pgls{interval}.
+The air smells dusty, but fresh enough to rest.
+
 \wayOut{A path winds slowly up half a mile, to}{falseExit}
 
 \wayOut{Another leads 1 mile to}{firstBridge}
-
-\smolMapPic{cave_2}{
-  \ref{falseExit}/85/10,
-}
 
 \mapentry[falseExit]{False Exit}
 
@@ -30,6 +25,10 @@ Unfortunately, the path also exits onto the side of a cliff, so the troupe canno
 Climbing down requires a \roll{Dexterity}{Athletics} at \tn[14].%
 \footnote{If a player insists on attempting this check, you should roll for them, and tell them if they succeed or fail.  The other players will only find out if their characters can climb down later -- they should not know their chances of success by looking at the \gls{natural}.}
 Failure means death.
+
+\smolMapPic{cave_2}{
+  \ref{falseExit}/85/10,
+}
 
 \mapentry[firstBridge]{First Bridge}
 
@@ -93,15 +92,13 @@ Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribut
 
 \mapentry[ropeDown]{Rope \& Cliff}
 
-\begin{exampletext}
-  This cavern has a tall cliff-face, ten \glspl{step} straight down, so the goblins descend with a rope tied to a boulder.
-\end{exampletext}
-
 \begin{boxtext}
   The cavern seems to end in a wall, but the shadows at the bottom indicate a dark drop.
   A boulder stands next to the drop with a rope tied around it.
   The rope droops down towards whatever waits at the bottom.
 \end{boxtext}
+
+This cavern has a tall cliff-face, ten \glspl{step} straight down, so the goblins descend with a rope tied to a boulder.
 
 This may look like a trap, but it isn't; the goblins simply use the rope to climb up and down.
 The boulder can take up to \pgls{weight} of 30 before it falls, and the rope can take up to \pgls{weight} of 40 before it snaps (this includes items, as usual).
@@ -130,8 +127,8 @@ inflicts \pgls{ep}
   and may push the characters downstream if they can't swim against the currents (\roll{Speed}{Athletics}, \tn[5]).
 \fi%
 
+\needspace{6\baselineskip}
 \wayOut{Following the river inflicts another \gls{ep} and quickly leads to banks of}{waterMaze}
-
 \wayOut{Three \glspl{step} later, a small pile of stones and the stench of goblin shit marks the start of}{standingTunnel}
 
 \wayOut{The slender crack leads immediately to}{wormTunnel}
@@ -414,17 +411,17 @@ The goblins leave after setting the fire, and the smoke clears within \pgls{inte
 
 \mapentry[darkTunnel]{Dark Tunnel}
 
+\begin{boxtext}[How will you find the right way?]
+  Cracks line the tunnel, some wide enough to walk or crawl through.
+  The tunnel forks like lightning.
+  Many choices lie ahead.
+\end{boxtext}
+
 The goblins abandoned this narrow, meandering maze when \pgls{hulk} blocked the exit, but their footprints (and claw-prints) remain in places, hinting at the correct route out.
 
 Finding that exit needs an \roll{Intelligence}{Caving} roll at \tn[10].
 Each failure adds a pointless mile to the journey, but decreases the \gls{tn} by~1 for the next roll.%
 \footnote{The players don't need to stick with the same \gls{natural}, because each time, the situation and location has changed.}
-
-\begin{boxtext}[How will you find the right way?]
-  A tunnel cuts across the current one, letting you divert left or right.
-  Ahead, the torchlight barely illuminates another branching passage.
-  Many choices lie ahead.
-\end{boxtext}
 
 Each time a player things of a reasonable way to find the exit path, reduce the \gls{tn} by 1 or~2.
 
@@ -494,17 +491,17 @@ The goblins there will irritate the \gls{hulk}, causing it to chase the goblins,
 
 \mapentry[blindFish]{Blind Fish Rapids}
 
-A long, lazy, river with a wicked undercurrent cuts across this cavern.
+\begin{boxtext}
+  A wide crack in the ground ahead falls away to reveal a river, almost within touching distance.
+  It moves silently, and looks the colour of black tea under the torchlight.
+\end{boxtext}
+
+A wicked undercurrent hides in the river.
 The \glspl{pc} will need to vault it or swim across.
 Once on the other side, they can use the wooden planks goblins have left on the other side to get across.
 
 One wooden plank is stable, the other has a cut across the middle.
 Using the planks without examining them results in \pgls{pc} falling through the water.
-
-\begin{boxtext}
-  A wide crack in the ground ahead falls away to reveal a river, almost within touching distance.
-  It moves silently, and looks the colour of black tea under the torchlight.
-\end{boxtext}
 
 \paragraph{Swimming}
 demands a \roll{Strength}{Seafaring} roll (\tn[10]).
@@ -619,16 +616,16 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
 
 \ifcase\thecycle%
   \ifnum\thefenestraDay>40%
-    \Pgls{basilisk} has curled up to hibernate here before the snow hits during \gls{cTwo}.
-    It has begun to sleep deep enough that its breath does not fill the cave with the usual stench, but any noise will waken it.
-    If the troupe move carefully, they can sneak past the bones with a \roll{Dexterity}{Stealth} roll at \tn[9].
-    If they have no light, they will awaken it by bumping into the bones.
-
     \begin{boxtext}
       The second-hand Sunlight, entering through the long cave-gullet shows bones.
       Thousands of long bones.
       And a motionless \gls{basilisk}.
     \end{boxtext}
+
+    \Pgls{basilisk} has curled up to hibernate here before the snow hits during \gls{cTwo}.
+    It has begun to sleep deep enough that its breath does not fill the cave with the usual stench, but any noise will waken it.
+    If the troupe move carefully, they can sneak past the bones with a \roll{Dexterity}{Stealth} roll at \tn[9].
+    If they have no light, they will awaken it by bumping into the bones.
 
     \basilisk
   \else%
@@ -637,17 +634,17 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
     But for now, they cave remains lifeless and safe.
   \fi%
 \or
+  \begin{boxtext}
+    The matted knot of green flesh ahead sits like so many rocks.
+    You cannot see a head, but you could never mistake that rancid stench -- some number of \glspl{basilisk} lie in a knotted pile.
+  \end{boxtext}
+
   Three \glspl{basilisk} have curled up here to hibernate.
   The stench signals to everyone around that the creatures lie nearby, and every breath when wandering near this alcove will inflict 3~\glspl{ep}.
 
   The \glspl{pc} can sneak past quietly, with a \roll{Dexterity}{Stealth} at \tn[6] (or 9 if they have no light).
   Awakening the \glspl{basilisk} will almost certainly prove fatal.
   However, they take 3 rounds to awaken, so the \glspl{pc} may kill all of them before any consequences.
-
-  \begin{boxtext}
-    The matted knot of green flesh ahead sits like so many rocks.
-    You cannot see a head, but you could never mistake that rancid stench -- some number of \glspl{basilisk} lie in a knotted pile.
-  \end{boxtext}
 
   The troupe will be aware that \gls{basilisk} hides make some of the best armour, and the entire corpse can fetch a lot of money (although the \gls{templeOfBeasts} will ask them to use the funds to repay their debt).
 
@@ -668,16 +665,14 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
   \olmSwarm
 \fi
 
-\ifnum\thecycle=0\else
-  \begin{boxtext}
-    Around the next corner, you see a speck of light in the distance.
-    It looks incredibly bright and brings a fresh wind\ldots
-  \end{boxtext}
-\fi
-
 \wayOut{The not-so-distant light comes from}{sunRoof}
 
 \mapentry[sunRoof]{Sun Roof}
+
+\begin{boxtext}
+  Around the next corner, you see a speck of light in the distance.
+  It looks incredibly bright and brings a fresh wind\ldots
+\end{boxtext}
 
 This passage has had a cave-in, letting Sunlight \ifnum\value{temperature}=0 and snow \fi flood in through the top.
 Unfortunately it still sits farther underground than a castle.
