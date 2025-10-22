@@ -25,6 +25,10 @@ Keywords={TTRPG,RPG,roleplaying}
 \externalReferent{judgement}
 \externalReferent{stories}
 
+\iftoggle{core}{
+  \input{../core/commands.tex}
+}{}
+
 \begin{document}
 
 \frontpage[1]{The Goblin Hole}%
@@ -89,6 +93,14 @@ Keywords={TTRPG,RPG,roleplaying}
 \cleardoublepage
 
 \input{config/character_sheets/GS.tex}
+
+\cleardoublepage
+
+\input{config/share/judge_sheets/manoeuvres.tex}
+
+\cleardoublepage
+
+\input{config/share/judge_sheets/weapons.tex}
 
 \cleardoublepage
 
