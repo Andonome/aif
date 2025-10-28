@@ -473,17 +473,23 @@ If they ask about the odd phrasing, tell them what they're having trouble rememb
   \end{boxtext}
 \fi
 
-The \gls{hulk} cannot fit through the passage to the \stateArea{darkTunnel}, so the \glspl{pc} can stay safely away from it once they know it exists, but will have a hard time getting past it.
+The \gls{hulk} cannot fit through the passage to the \stateArea{darkTunnel}, so the \glspl{pc} can stay safely away from it once they know it exists, but will have a hard time getting past it until the goblins arrive.
 
 \ifnum\value{temperature}=0\else
   \paragraph{Throwing stones past the \gls{hulk}}
   will make it leave the cave and search for the cause of the noise, because \glspl{hulk} are stupid, and always move towards any noises.
 \fi
 
+\set{r2}{2}
 \umberhulk
 
 \wayOut{The only way out leads to the same chamber as}{smokePassage}
-The goblins there will irritate the \gls{hulk}, causing it to chase the goblins, who flee across the river in the \stateArea{blindFish}.
+The goblins arrive soon, and set their fire, which begins to irritate the \gls{hulk}.
+Soon after, the \gls{hulk} attacks, and the goblins flee cross the river in the \stateArea{blindFish}.
+
+\iftoggle{intro}{
+  The \gls{hulk} will stop at the unsteady bridge, but might be coaxed across with the right carrot and stick.
+}{}
 
 \mapentry[blindFish]{Blind Fish Rapids}
 
