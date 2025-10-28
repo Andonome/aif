@@ -118,31 +118,48 @@
       \ifcase\value{temperature}%
         snow falling off a roof.
       \or%
-        Autumn leaves in the breeze.
+        a chestnut tree when it's kicked.
       \else%
         a broken biscuit.
       \fi%
-      Make a \roll{Speed}{Athletics} roll at \tn[3],\ldots
+      \twoDice{\value{r12}}
+
+      The falling rocks will inflict \arabic{r12}~Damage, but you can avoid by rolling \roll{Speed}{Athletics} at \glsfmtlong{tn}~3, \ldots
       \item[Player 1:]
       Why even roll for that?
+      \twoDice{9}
+      I pass.
       \item[\Gls{gm}:]
-      \tn[4] for you,
+      \Glsfmtlong{tn}~4 for you,
+      \randomize\twoDice{12}
+      or take 12~Damage,
 
-      \tn[5] for you,\ldots
+      \glsfmtlong{tn}~5 for you, \ldots
       \item[Player 2:]
       Ah, okay.
-      \twoDice{4}
-      I do not make it with the first character, and the next\ldots
-      \twoDice{9}
-      yes!
+      \twoDice{3}
+      That's a failure from me.
+      \item[Player 3:]
+      \twoDice{5}
+      I hit the \glsfmtlong{tn} exactly.
+      What happens?
       \item[\Gls{gm}:]
-      \twoDice{12}
-      A rock falls on his helmet, for 12~Damage.
+      You see a companion's head crushed by a falling rock for 12~Damage.
+      The skull shatters across the floor.
+      I suppose that explains why your character hesitates, going nowhere.
+      You can roll again at the same \glsfmtlong{tn}.
       \item[Player 2:]
-      I think I'm dead\ldots
+      I'm dead!?
+      Already?
+      \item[\Gls{gm}:]
+      You all have multiple characters, remember?
+      Lets roll for them \ldots \glsfmtlong{tn}~6.
     \end{description}
   }{
-    Hopefully everyone in your group elected to have a second character, because the dice can be fickle.
+    Rolling Damage before \pgls{action} is not in the rules, or against the rules.
+    It just helps to let the players know what's happening.
+
+    Hopefully everyone in your group elects to have a second character, because the dice can be fickle.
   }
 }
 
@@ -153,7 +170,7 @@
       The sound of coughing takes over the cave as dust fills the air.
       Everyone gain one \glsentrylong{ep}!
 
-      \item[Player 1:]
+      \item[Player 2:]
       Can't I just hold my breath?
 
       \item[\Gls{gm}:]
@@ -162,10 +179,10 @@
       \roll{Strength}{Athletics}, \glsentrylong{tn}~10.
 
       What do you do\ldots in the darkness?
-      \item[Player 1:]
+      \item[Player 2:]
       $\twoDice{9} + 2$\ldots
       hold my breath, apparently.
-      \item[Player 2:]
+      \item[Player 3:]
       Time to get out of here, while holding my breath.
       \twoDice{6}
       \item[\Gls{gm}:]
@@ -173,18 +190,18 @@
 
       The passage out is quite narrow.
       Roll \roll{Dexterity}{Caving}, \glsentrylong{tn}~8 plus your Strength.
-      \item[Player 1:]
+      \item[Player 2:]
       So \glsentrylong{tn}~10?
       Okay, \twoDice{5}.
       That's a `no'.
-      \item[Player 2:]
+      \item[Player 3:]
       Okay, I'll go out.
       \item[\Gls{gm}:]
       I'm afraid you can't while someone is struggling to squeeze through.
       The first character in the exit-hole can spend \pgls{ap} to try again if you like, or spend \pgls{ap} to crawl back.
-      \item[Player 1:]
-      Okay, I'll go back.
       \item[Player 2:]
+      Okay, I'll go back.
+      \item[Player 3:]
       Good,
       \twoDice{10}
       looks like I'm out.
