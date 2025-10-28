@@ -3,6 +3,10 @@
 \begin{multicols}{2}
 
 \renewcommand\npcsymbol{\glsentrysymbol{yonder}}
+\smolMapPic{cave_2}{
+  \ref{falseExit}/85/10,
+}
+
 \mapentry[start]{Fresh Hall}
 \begin{boxtext}
   This fresh hall has an ambient drip of water, and moisture everywhere.
@@ -28,22 +32,12 @@ Failure means death.
 
 \mapentry[firstBridge]{First Bridge}
 
-\begin{exampletext}
-  The human miners built two bridges while exploring further into the mountain.
-  Over time, dust, rocks, and other debris covered this first bridge entirely.
-  Then the wood degraded, leaving a natural trap.
-
-  When first group of \glspl{guard} came through here, the bridge collapsed, sending one down to a pit of sharp rocks below.
-  He died instantly, and the group moved on.
-\end{exampletext}
-
-\smolMapPic{cave_2}{
-  \ref{falseExit}/85/10,
-}
-
 \playCommentaryAftermath[b]
 
-If the troupe walk with a light, they instantly see the hole in the ground (but their torch is probably about to go out at this point).
+If the troupe walk with a light, they instantly see the hole in the ground (but their torch is probably about to go out at this point).%
+\footnote{The human miners built two bridges while exploring further into the mountain.
+Over time, dust, rocks, and other debris covered this first bridge entirely.
+Then the wood degraded, leaving a natural trap.}
 Otherwise, they should roll \roll{Wits}{Caving} at \tn[8].
 
 \paragraph{If the troupe go across the wood,}
@@ -55,7 +49,9 @@ A tie means the bridge collapses, but the character has crossed safely.
 
 Anyone falling into the hole receives $1D6$ Damage plus their own Strength Bonus (bigger creatures suffer more from falling).
 
-The corpse is dry, and not very rotten.
+A dry human corpse lies inside the pit.%
+\footnote{When first group of \glspl{guard} came through here, the bridge collapsed, sending one down to a pit of sharp rocks below.
+He died instantly, and the group moved on.}
 His satchel still contains two bees-wax candles which can burn for an hour each, a tinder-box, \lootMedium, and slightly-expired \rations.
 \label{caveCoinsI}
 \setcounter{diceNo}{0}%
