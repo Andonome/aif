@@ -342,31 +342,48 @@ bites off one of its fingers, and eats it and loses \pgls{hp}.
 
 \sideMap[4]{Dyson_Logos/winding_overview}%
   {%
-    \ref{lair:tunnel}/77/74,
+    \ref{lair:entrance}/80/92,
+    \ref{lair:tunnel}/78/72,
     \ref{lair:right}/86/44,
     \ref{lair:left}/11/67,
     \ref{lair:lower}/32/15,
   }%
 {Cavern side view.\par\null}
-If the barrier is disturbed, a human skull, loosely hanging on the inside of it, rolls down the cave mouth, alerting the lone goblin in the lower right cave.
-Carefully examining the branches reveals the skull, otherwise it's \roll{Wits}{Vigilance} at \tn[8] to notice, for the \gls{pc} who moves them.
-Any loud noises will echo through the caves and alert all the goblins.
+Carefully examining the branches reveals a human skull hanging loosely, otherwise the first \gls{pc} in rolls \roll{Wits}{Vigilance} at \tn[8] to notice it, or the skull bounces down to room~\vref{lairRight}, with an echoing `thud-thunk'.
 
 \mapPic[\large]{t}{Dyson_Logos/winding_cave}{
   Goblins!/54/58,
+  \ref{lair:entrance}/92/93,
   \ref{lair:tunnel}/91/67,
   \ref{lair:right}/94/33,
   \ref{lair:left}/28/80,
   \ref{lair:lower}/04/12,
 }
 
-%\vspace{-0.8em}
 \mapentry[lair:tunnel]{Slipdown}
 The muddy slope descends fast, emerging 8~\glspl{step} above \gls{area}~\ref{lair:right}.
 
 \paragraph{Stay balanced}
 with \roll{Dexterity}{Caving} at \tn[8], or slip, then fall 8~\glspl{step} down to \gls{area}~\ref{lair:right}.%
 \exRef{core}{Core~Rules}{falling}
+
+\goblin[\npc{\T[4]\N}{\arabic{noAppearing}~Goblins}]
+
+\mapentry[lair:right]{Gnawing Dark}
+\begin{boxtext}
+  Four goblins gnawing on a leg bone, guarding the captives.
+  Climbing up the ceiling-hole to \gls{area}~\ref{lair:tunnel} requires a \roll{Speed}{Athletics} roll at \tn[12].
+\end{boxtext}
+
+\mapentry[lair:left]{Crack and Smoke}
+\begin{boxtext}
+  Two figures sleep by a fire; one small, one large, and both as pale as the bones littering the floor.
+  A third desperately licks the last red from a skull.
+\end{boxtext}
+
+If the goblins hear the \glspl{pc} coming, they throw two dried \gls{griffin} wings on the fire.
+Within 3~\glspl{round} they make a rancid smoke, which rises up the tunnel, inflicting 4~\glspl{ep} on anyone who breathes it in.%
+\exRef{core}{Core Rules}{holdingBreath}
 
 \ifnum\thepage<14
   \goblin[\npc{\T[2]\N}{\arabic{noAppearing}~Goblins}]
@@ -379,24 +396,6 @@ with \roll{Dexterity}{Caving} at \tn[8], or slip, then fall 8~\glspl{step} down 
     {pretends to throw rocks}% Mannerism
     {one last bite}% Wants
   ]
-
-\mapentry[lair:left]{Crack and Smoke}
-\begin{boxtext}
-  Two figures sleep by a fire; one small, one large, and both as pale as the bones littering the floor.
-  A third desperately licks the last red from a skull.
-\end{boxtext}
-
-If the goblins hear the \glspl{pc} coming, they throw two dried \gls{griffin} wings on the fire.
-Within 3~\glspl{round} they make a rancid smoke, which rises up the tunnel, inflicting 4~\glspl{ep} on anyone who breathes it in.%
-\exRef{core}{Core Rules}{holdingBreath}
-
-\mapentry[lair:right]{Gnawing Dark}
-\begin{boxtext}
-  Four goblins gnawing on a leg bone, guarding the captives.
-  Climbing up the ceiling-hole to \gls{area}~\ref{lair:tunnel} requires a \roll{Speed}{Athletics} roll at \tn[12].
-\end{boxtext}
-
-\goblin[\npc{\T[4]\N}{\arabic{noAppearing}~Goblins}]
 
 \mapentry[lair:lower]{Gentle Weeping}
 \begin{boxtext}
