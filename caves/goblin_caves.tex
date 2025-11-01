@@ -10,8 +10,7 @@
 \mapentry[start]{Fresh Hall}
 \begin{boxtext}
   This fresh hall has an ambient drip of water, and moisture everywhere.
-  The ceiling slopes down gently, surrounding the entire passage with a ring of low-hanging darkness.
-  Large, damp, rocks litter the ground in every direction.
+  Large, damp, rocks on the ground demand walking carefully, while feeling the low, slanted, ceiling above.
 \end{boxtext}
 
 The troupe will almost certainly want to stop and rest here for \pgls{interval}.
@@ -57,21 +56,45 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 \setcounter{diceNo}{0}%
 \renewcommand\npcsymbol{\currency}%
 
-\smolMapPic{cave_3}{
-  {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
-  {\normalsize\glsfmttext{weight}~25: collapse}/57/75,
-  \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
-  \ref{firstBridge}/49/57,
-  \ref{gentlePassage}/92/05,
-}
-
 \wayOut{Past the bridge, after a mile of fairly smooth cavern floor, the troupe find}{ropeDown}
-
 \wayOut{Inside the hole under the bridge, a crack reveals}{gentlePassage}
 
 Entering the hole requires an \roll{Intelligence}{Caving} roll (\tn[7]) to understand a safe route down.
 Once \pgls{pc} explains the hand-holds and where to place the legs, anyone can descend safely.
-Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribute}.
+Failure means falling, and $1D6$~Damage plus the \gls{pc}'s Strength~Bonus.
+
+\boxPair[t]{
+  \smolMapPic{cave_3}{
+    {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
+    {\normalsize\glsfmttext{weight}~25: collapse}/57/75,
+    \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
+    \ref{firstBridge}/49/57,
+    \ref{gentlePassage}/92/05,
+  }
+}{
+  \smolMapPic{cave_4}{
+    {\large\glsfmttext{weight}~30: fall}/71/80,
+    \rotatebox{-90}{\large\glsfmttext{weight}~40: snap!}/20/50,
+    \ref{ropeDown}/42/92,
+  }
+}
+
+\mapentry[ropeDown]{Rope \& Cliff}
+
+\begin{boxtext}
+  The small echoes from your footstep change tone gradually.
+  You feel a large boulder in front, and as you navigate around it by touch, you find a rope on top.
+  The rope goes around the boulder like the bow on a birthday preseent, then hangs down heavily, past the floor.
+\end{boxtext}
+
+The rope is 15~\glspl{step} long, and the cliff 10~\glspl{step} down.%
+\exRef{core}{Core Rules}{falling}
+The boulder can take up to \pgls{weight} of 30 before it falls, and the rope can take up to \pgls{weight} of 40 before it snaps (this includes items, as usual).%
+\footnote{This may look like a trap, but it isn't; the goblins simply use the rope to climb up and down.}
+
+\wayOut{The wide cavern leads to}{secondBridge}
+
+If the \glspl{pc} have \pgls{torch} lit, they see the walls glisten feintly, due to the silver in this section.
 
 \mapPic{b}{cave_5}{
   {\normalsize\glsfmttext{weight}~30: collapse}/67/24,
@@ -84,36 +107,17 @@ Failure means falling, and $1D6$~Damage plus the \gls{pc} Strength \gls{attribut
   \ref{standingTunnel}/00/05,
 }
 
-\null
-
-\mapentry[ropeDown]{Rope \& Cliff}
-
-\begin{boxtext}
-  The cavern seems to end in a wall, but the shadows at the bottom indicate a dark drop.
-  A boulder stands next to the drop with a rope tied around it.
-  The rope droops down towards whatever waits at the bottom.
-\end{boxtext}
-
-This cavern has a tall cliff-face, ten \glspl{step} straight down, so the goblins descend with a rope tied to a boulder.
-
-This may look like a trap, but it isn't; the goblins simply use the rope to climb up and down.
-The boulder can take up to \pgls{weight} of 30 before it falls, and the rope can take up to \pgls{weight} of 40 before it snaps (this includes items, as usual).
-
-\wayOut{The wide cavern leads to}{secondBridge}
-
-\smolMapPic{cave_4}{
-  {\large\glsfmttext{weight}~30: fall}/71/80,
-  \rotatebox{-90}{\large\glsfmttext{weight}~40: snap!}/20/50,
-  \ref{ropeDown}/42/92,
-}
-
 \mapentry[secondBridge]{Last Bridge}
 
-\begin{exampletext}
-  The second old mining bridge has degraded almost as much as the first, so the goblins walk across carefully, and one at a time.
-\end{exampletext}
+\begin{boxtext}
+  The sound of gently moving water comes from ahead.
+  Your hear the passage becoming wider.
+  As the sound of water seems right in front of you, the ground changes.
+  Planks of wood stretch out, over the water.
+\end{boxtext}
 
-Anyone stepping on the bridge with a total \gls{weight} of 30 or more will break it.
+Anyone stepping on the bridge with a total \gls{weight} of 30 or more will break it.%
+\footnote{The second old mining bridge has degraded almost as much as the first, so the goblins walk across carefully, and one at a time.}
 
 \paragraph{Falling into the river's frigid water}
 inflicts \pgls{ep}
@@ -130,23 +134,34 @@ inflicts \pgls{ep}
 \wayOut{The slender crack leads immediately to}{wormTunnel}
 
 \begin{boxtext}
-  Once off the bridge, the smell of goblin-shit haunts your noses.
-  It covers the ground, and drips off the tall pile of stones to the side, then stops suddenly; the passage beyond seems clear.
-
-  Leaning on the wall, you discover a gap in the wall the size of a window.
+  One step off the bridge, your left hand finds the stone wall continues.
+  The smell of goblin-shit haunts your nose from the tunnel ahead, then your left hand touches a crack in the wall, the size of a window.
+  It goes in deep.
 \end{boxtext}
 
 \mapentry[standingTunnel]{Standing Tunnel}
 
-\begin{exampletext}
-  The human miners stopped at this point when their budgies died.%
-  \footnote{Miners use small, sensitive, birds to detect lethal gas.  If the bird dies, it's time to leave.}
+\begin{boxtext}
+  Two steps in, you kick a pebble, and it clatters to the side with an interesting sound --- a chorus of little rocks shifting just to the right.
+\end{boxtext}
 
-  The next time they returned, they came back with a little wooden box, with the budgie's name -- `Happy' -- carved onto the top, and placed it under a little cairn.
+If the character investigates the little rocks, any human will know the shape of a cairn (even a very small one).
+The wide rock on top has the word `Happy' carved on its flat face.
+Underneath, the skeletal remains of a canary.
+\footnote{Miners use small, sensitive, birds to detect lethal gas.  If the bird dies, it's time to leave.
+They returned to look for another route, and brought a box to bury `Happy' properly.}
 
-  When the goblins moved in, they did not understand the significance of the little cairn, so one died in the passage.
-  Since then, they use the tunnel only as a toilet.
-\end{exampletext}
+\paragraph{If the troupe have \pgls{torch} lit}
+they see a human footprint in the goblin shit (the last group of \glspl{guard} came down here).
+
+\paragraph{Further into the passage}
+the ground slops gently downwards.
+\Pgls{pc} might notice with a \roll{Wits}{Vigilance} roll at \tn[8].
+
+\begin{boxtext}
+  You step on something soft.
+  You feel a little hand, and a head with long ears.
+\end{boxtext}
 
 \paragraph{Carbon monoxide}
 lays in the low parts of the tunnel, around waist-height to a human.
@@ -156,16 +171,16 @@ The same goes for anyone sitting down to rest.
 The first sign of carbon monoxide poisoning is usually death, but in this case the first sign is a dead goblin (10~\glspl{step} down the passage).
 It died weeks ago, but has no marks -- no cuts or bruises -- and the corpse has not decayed much, due to the infertile conditions in the cave.
 
-The second warning sign is a dead gnome (20~\glspl{step} down the passage).
+\paragraph{Halfway down the passage}
+a dead gnome lies face-up, with only his black leather \gls{guard} \gls{armour}.
 His companions picked up his items before moving on, except a bag of shells and pebbles.%
 \footnote{This portable \gls{shellGame} has excellent pieces, and any reasonable gnome will a dozen \glsentrylongpl{sp} for it.}
 
 \paragraph{If the players fail to heed the warning signs,}
 \glspl{pc} familiar with caves might get a strange feeling.
-The troupe can roll \roll{Intelligence}{Caving} (\tn[13]) to at least get the impression that they should not linger.
+The troupe can roll \roll{Intelligence}{Caving} (\tn[13]) to at least get the impression that they should run, not walk.
 
-\paragraph{Failure}
-means gnomes, dwarves, and anyone who rests will accrue invisible \glspl{ep} -- you should note the \glspl{ep} without telling them, just apply any Penalty secretly by adding it to every \gls{tn}.
+Failure means gnomes, dwarves, and anyone who rests will accrue invisible \glspl{ep} --- you should note the \glspl{ep} without telling them, just apply any Penalty secretly by adding it to every \gls{tn}.
 Soon after the \glsentrylongpl{ep} begin, the character dies, suddenly, and quietly.
 Then anyone kneeling down to inspect them dies too.
 
@@ -229,9 +244,8 @@ This path, like the entrance, has had a little cave-in, and will have more if an
 The players may spot the danger, or you can give the characters a roll for \gls{gagingCave}.
 
 \begin{boxtext}
-  The path widens, and you can comfortably walk, without ducking.
-  The wet cavern walls stand apart, allowing everyone to walk together, with two or three side-by-side.
-  You step carefully over the little dry stones which cover the floor.
+  The wet cavern walls stand apart, allowing everyone to walk together, with two or three side-by-side, without having to stoop.
+  You tread carefully around the dry stones which cover the floor.
 \end{boxtext}
 
 Just like the entrance cave-in (\vpageref{caveIn}), the ceiling is ready to fall.
@@ -239,9 +253,10 @@ Just like the entrance cave-in (\vpageref{caveIn}), the ceiling is ready to fall
 \paragraph{If they spot the danger}
 (by noticing the dry rocks) and walk carefully, the troupe rolls \roll{Dexterity}{Stealth} at \tn[7].
 
-\paragraph{If nobody notices the danger}
-characters can roll \roll{Wits}{Caving} at \tn[10].
-Failure means the roof starts collapsing, and each player rolls \roll{Speed}{Athletics} (\tn[3] for the first, then 4, 5,\ldots).
+\paragraph{If the players don't notices the danger}
+characters can roll \roll{Wits}{Caving} at \tn[10] to notice the danger.
+Failure means the roof starts collapsing as they irritate the walls by stomping down together and (probably) talking, then each player rolls \roll{Speed}{Athletics} (\tn[3] for the first, then 4, 5,\ldots).
+On a tie, the roof caves in, but the \gls{tn} begins at 1.
 
 \wayOut{If the troupe return before the cave-in, they can go back to}{firstBridge}
 
@@ -249,20 +264,17 @@ Failure means the roof starts collapsing, and each player rolls \roll{Speed}{Ath
 
 \mapentry[cliffDive]{Cliff Dive}
 
+\begin{boxtext}
+  Ahead, the sound of gentle water indicates a wider passage coming up.
+  The air has a razor-sharp cold feeling.
+\end{boxtext}
+
 This passage ends abruptly with a cliff, overlooking an underground lake.
 The only way down is a rocky climb, and the water below is 5 degrees.
 Luckily, the lake is deep, and nobody will hit the ground.
 
-\begin{boxtext}
-  The cave widens, then halts at a cliff, the height of two men.
-  \ifnum\value{temperature}>1%
-    The darkness below looks perfectly smooth -- a flat, black, surface.
-  \else%
-    The black waters below show very little movement, but the echoes of running water suggest a strong undercurrent.
-  \fi%
-\end{boxtext}
-
-The \glspl{pc} will have a difficult decision, since they can't tell if the dive will kill them.
+\paragraph{If the players don't mention taking special care,}
+the troupe should roll \roll{Dexterity}{Caving} (\tn[5]) to avoid the first \gls{pc} stumbling over the cilff and falling into the water as everyone behind bunches up together.
 
 \paragraph{Climbing or diving down}
 demands a \roll{Dexterity}{Athletics} roll at \tn[8].%
