@@ -10,7 +10,13 @@ The opening to the old mine is 5 miles away, which the troupe can walk in \pgls{
 However, if they don't walk extra-fast (and gain \pgls{ep}) then they will have to hunt for the cave-mouth by twilight.
 But either way, a goblin scout will notice them walking in the open, and call for more goblins to wait in ambush.
 
-Finding the entrance requires a \roll{Wits}{Caving} roll at \tn[6] during the day, 8 in the twilight, and 10 at night.
+
+\act[In daylight \glspl{pc}]{find the entrance}{Wits}{Caving}{6}
+In the early evening's twilight, the \gls{tn} is 8, and at night rises to~10.
+\iftoggle{intro}{%
+  If the troupe split up, they can each make a new roll.
+  Otherwise, they all use the same \gls{natural}.
+}{}
 
 \begin{boxtext}
   Ascending up the \ifnum\value{temperature}=0 snowy \fi slope, the \showTemperature\ breeze clears lumps of low-lying cloud, leaving the face barren except for patches of pine trees.
@@ -34,8 +40,9 @@ The cave-mouth is a muddy hole, sloping mostly down, like a reed in the wind.
 The drop to the ground is 4~\glspl{step} directly down, and not easy to climb up.%
 \footnote{The goblins emerge by sending one with claws to climb, and then helping the others with a rope.}
 
+\act{enter without falling over}{Dexterity}{Caving}{6}
 Entering the cave and staying on one's feet requires a \roll{Dexterity}{Caving} roll at \tn[6].
-Failure means the \gls{pc} falls prone%
+Failure means the \gls{pc} lands prone%
 \exRef{core}{Core Rules}{prone}
 and receives 2~Damage plus their Strength~\gls{attribute},
 
@@ -49,9 +56,11 @@ and receives 2~Damage plus their Strength~\gls{attribute},
   Then come the rocks.
 \end{boxtext}
 
-Once \pgls{pc} drops down, the goblins start throwing rocks at them; the player roll's their characters \roll{Speed}{Vigilance} (see the goblin \glspl{statblock} for the \gls{tn} and Damage).
-A successful roll means the \gls{pc} can dodge the rocks by \gls{running}.
-A failed roll means Damage, and a tie means the player dodges without \gls{running} anywhere, and any \gls{pc} behind them may be hit by a rock.
+\act{avoid the goblin rocks}{Speed}{Vigilance}{\roll{Dexterity}{Projectiles}}
+\iftoggle{intro}{%
+  A successful roll means the \gls{pc} can dodge the rocks by \gls{running}.
+  A failed roll means Damage, and a tie means the player dodges by ducking, but does not move anywhere.
+}{}
 
 \iftoggle{intro}{
   Keep  careful track of the \glspl{ap}, for both goblins and \glspl{pc} --- each time \pgls{pc} decides where to run or whether or not to enter the hole, they spend a little more time, until the \gls{round} resets.
@@ -77,9 +86,6 @@ The second after two characters get down the hole, the goblins flee, and the \gl
 
 \paragraph{If the \glspl{pc} decide to wait,}
 the goblins simply don't return.
-
-\paragraph{If the \glspl{pc} have lit a torch,}
-they will spot dry rocks.
 
 \begin{boxtext}
   The flickering torch illuminates a soaking wet cave, littered with bone-dry rocks of every size.
@@ -116,11 +122,7 @@ will be able to chase them to `the \nameref{sunRoof}' (\vpageref{sunRoof}).
 \paragraph{Once the cavern collapses,}
 the dust thrown up inflicts \pgls{ep} each \gls{round}, until the \glspl{pc} leave the \gls{area}.
 
-\paragraph{The passage out}
-becomes smaller and smaller, until the head of the troupe must crawl.
-\Glspl{pc} must spend \pgls{ap} (just like in combat) to crawl through.
-They roll \roll{Dexterity}{Caving} at \gls{tn} 8, plus their own Strength Bonus (larger people will struggle more).
-
-Each \gls{pc} can re-roll by spending another \gls{ap}, but each \gls{round} will inflict another \gls{ep} on everyone still stuck inside.
+\act{squeeze out the narrow exit passage, \glspl{pc} must}{Dexterity}{Caving}{\roll{Strength}{6}}
+Once \pgls{pc} gets out, they can help the others in \pgls{bandAct} (but the \gls{natural} remains).
 
 \end{multicols}

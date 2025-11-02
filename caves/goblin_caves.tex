@@ -25,7 +25,7 @@ The air smells dusty, but fresh enough to rest.
 The path travels upwards until opening on the mountain's side.
 Unfortunately, the path also exits onto the side of a cliff, so the troupe cannot simply walk down.
 
-Climbing down requires a \roll{Dexterity}{Athletics} at \tn[14].%
+\act{wrecklessly climb down}{Dexterity}{Athletics}{14}%
 \footnote{If a player insists on attempting this check, you should roll for them, and tell them if they succeed or fail.  The other players will only find out if their characters can climb down later -- they should not know their chances of success by looking at the \gls{natural}.}
 Failure means death.
 
@@ -42,9 +42,8 @@ Otherwise, they should roll \roll{Wits}{Caving} at \tn[8].
 \paragraph{If the troupe go across the wood,}
 anyone with \pgls{weight} of 25 or more (including their \gls{equipment}) will make the remains of the bridge collapse.
 
-\paragraph{Jumping over the bridge,}
-requires a \roll{Speed}{Athletics} roll (\tn[9]).
-A tie means the bridge collapses, but the character has crossed safely.
+\act{jump over the bridge}{Speed}{Athletics}{9}
+A tie means the character has crossed safely, but the bridge collapses.
 
 Anyone falling into the hole receives $1D6$ Damage plus their own Strength Bonus (bigger creatures suffer more from falling).
 
@@ -59,7 +58,7 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 \wayOut{Past the bridge, after a mile of fairly smooth cavern floor, the troupe find}{ropeDown}
 \wayOut{Inside the hole under the bridge, a crack reveals}{gentlePassage}
 
-Entering the hole requires an \roll{Intelligence}{Caving} roll (\tn[7]) to understand a safe route down.
+\act{guaging a safe route down}{Intelligence}{Caving}{7}
 Once \pgls{pc} explains the hand-holds and where to place the legs, anyone can descend safely.
 Failure means falling, and $1D6$~Damage plus the \gls{pc}'s Strength~Bonus.
 
@@ -196,12 +195,10 @@ The goblins cannot traverse the \nameref{standingTunnel}, so they must crawl thr
 The \glspl{pc} will probably have a difficult time here, and the goblins know it.
 The narrow tunnel extends a full mile before the troupe can stretch their arms again, and it counts as two miles due to the cramped conditions.
 
-\paragraph{To squeeze through,}
-each player rolls \roll{Dexterity}{Caving}.
-The \gls{tn} equals 5 plus the character's Strength and \gls{dr}; so characters with Strength~-1 roll at \tn[4], while those with Strength~+2 and armour with \gls{dr}~3 roll at \tn[10].
-
-On a tie, characters gain 2~\glspl{ep} from the shuffling and scrapes.
-One a failure, they also become stuck, and others will have to take time to help.
+\act[Characters entering]{squeeze through}{Dexterity}{Caving}{\roll[dr]{Strength}{5}}
+Characters with Strength~-1 roll at \tn[4], while those with Strength~+2 and armour with \gls{dr}~3 roll at \tn[10].
+On a failure, they become stuck half way through the tunnel, need an extra \gls{interval} to reach the other side (or to return).
+On a tie, they immediately recognize they will become stuck and can decide to enter, or not.
 
 \mapPic{t}{cave_6}{
   {\normalsize\roll{Intelligence}{Caving} (\tn[13])}/80/76,
@@ -211,8 +208,7 @@ One a failure, they also become stuck, and others will have to take time to help
   \ref{waterMaze}/05/18,
 }
 
-\paragraph{Resting}
-requires an \roll{Intelligence}{Caving} roll (\tn[8]).
+\act{rest}{Intelligence}{Caving}{8}.
 Failure means the character does not manage to remove \pgls{ep} after the rest.
 
 \begin{boxtext}
@@ -253,8 +249,7 @@ Just like the entrance cave-in (\vpageref{caveIn}), the ceiling is ready to fall
 \paragraph{If they spot the danger}
 (by noticing the dry rocks) and walk carefully, the troupe rolls \roll{Dexterity}{Stealth} at \tn[7].
 
-\paragraph{If the players don't notices the danger}
-characters can roll \roll{Wits}{Caving} at \tn[10] to notice the danger.
+\act[If the players don't notices the danger, the \glspl{pc}]{}{Wits}{Caving}{10}
 Failure means the roof starts collapsing as they irritate the walls by stomping down together and (probably) talking, then each player rolls \roll{Speed}{Athletics} (\tn[3] for the first, then 4, 5,\ldots).
 On a tie, the roof caves in, but the \gls{tn} begins at 1.
 
@@ -380,8 +375,8 @@ His coins lie discarded by the fire -- \lootSmall\ in total.%
 \setcounter{diceNo}{0}%
 \renewcommand\npcsymbol{\currency}
 
-\paragraph{Finding the exits}
-requires a \roll{Speed}{Caving} roll at \tn[9] (or \tn[14] if they put out the fire).
+\act{find the exits}{Speed}{Caving}{9}.
+Without the fire, the \gls{tn} increases by~3.
 The troupe can only use \pgls{bandAct} if they split up.
 
 They can also make this \pgls{restingaction} if they are prepared to spend \pgls{interval} doing it carefully.
@@ -527,8 +522,7 @@ Rolling a failure means the river pulls the character downriver, the \gls{tn} in
 reveals little fish, about the size of a finger.
 Any reasonable plan to catch them might work, although placing \pgls{caveFire} safely can prove very difficult.
 
-\paragraph{Jumping over}
-demands a \roll{Speed}{Athletics} roll (\tn[12]).
+\act{jump over the river}{Speed}{Athletics}{10}.
 
 \paragraph{Going down-river}
 means death in a black abyss.
@@ -555,12 +549,27 @@ means death in a black abyss.
   The goblins also need a full two rounds to `reload', as goblins pass rocks from above.
 \end{itemize}
 
-%! Map 2 Handout
-\paragraph{If the \glspl{pc} examine the \gls{guard}'s body,}
-they find \pgls{coin} purse with \lootMedium.
-\label{caveCoinsIII}
-\setcounter{diceNo}{0}%
-\renewcommand\npcsymbol{\currency}
+On closer inspection, the feint, green, light emanates from little mushrooms --- \glspl{glowshroom} --- dropped around the room.
+But closer inspection means closer to the goblins, waiting above with rocks.
+
+\act{avoid the rocks}{Speed}{Vigilance}{\roll{Dexterity}{Projectiles}}
+The goblins have a -4~Penalty to hit, because the rocks are \emph{big}, but a +2~Bonus while in the dark.
+After throwing their rocks, they take 2~\glspl{round} for the goblins above to pass more down along the narrow ledge.
+
+\iftoggle{intro}{
+  \begin{exampletext}
+  Ten goblins remain alive, so five are present with big rocks.
+  \begin{description}
+    \item[On \gls{round} 1]
+    \pgls{pc} dies, as rocks fall on his head.
+    \item[On \gls{round} 2]
+    the troupe hear the goblins passing down more rocks.
+    \Pgls{pc} decides to rush out, pick up \glspl{glowshroom} and throw them up at the goblins.
+    \item[On \gls{round} 3]
+    the goblin by the exit takes another rock, but the next spends her time kicking that \gls{glowshroom} away, so no more goblins have rocks to throw.
+  \end{description}
+  \end{exampletext}
+}{}
 
 \paragraph{Retreat is easy,}
 but the troupe have limited supplies.
@@ -691,13 +700,13 @@ Failure indicates that the resulting rancid mushroom `stew', will not count as a
 This passage has had a cave-in, letting Sunlight \ifnum\value{temperature}=0 and snow \fi flood in through the top.
 Unfortunately it still sits farther underground than a castle.
 
-Climbing the ragged walls begins with an \roll{Intelligence}{Athletics} roll (\tn[10]), to understand the best route up.
-A successful roll gives a further +2~Bonus to the main event: a \roll{Speed}{Athletics} check, \tn[14].
-It also lets the player know the \gls{tn}.
-
-A tie means the character figures out this climb will only hurt them before they climb.
-A failed roll means the character falls 8~\glspl{step}.%
+\act{climb up}{Speed}{Athletics}{12}
+Failure means the character falls 8~\glspl{step}.%
 \exRef{core}{Core Rules}{falling}
+The player should not know the \gls{tn} as the character cannot see enough details high up the wall --- only the lower holds.
+
+\act{spot the best way to climb up}{Intelligence}{Athletics}{8}
+Success means a +2~Bonus to climbing, and reveals the \gls{tn}.
 
 \paragraph{If any of the \glspl{pc} fled before the initial cave-in,}
 now is a good time to see if they survived.%
