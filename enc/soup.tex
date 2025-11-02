@@ -72,7 +72,7 @@ If they cut wood, they can restock the \gls{bothy}.
   Without wood, they sleep in the cold, and take \pgls{ep} in the morning.
 \fi
 
-\needspace{6\baselineskip}%
+\needspace{4\baselineskip}%
 \segment{lonelyRoad}% AREA
 {Mission Report}% NAME
 {Two \glspl{ranger} ask the troupe how their mission with the box went}% SUMMARY
@@ -358,7 +358,7 @@ These are Granny's `special little boys', modified with \glspl{spell} to grow bi
 
 \morphcat[\npc{\T[2]\A\R}{Cats: Gorgeous \& Rainfall}]
 
-Finishing the soup requires \pgls{bandAct} roll of \roll{Strength}{Athletics} at \tn[10].
+\act[Characters working together in \pgls{bandAct}]{finish the soup}{Strength}{Athletics}{10}
 Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attribute} Penalties vanish and they may help the troupe.
 
 \ifnum\thepage<14
@@ -367,8 +367,10 @@ Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attri
   \Pgls{cycle} later, the new \glspl{pc} may hear \pgls{doula} telling children the chilling tale of `the curious \gls{guard}', or `the man who kept his hat on, while accepting hospitality'.
 \fi
 
-\subsubsection{Opening the box}\label{insideTheBox}
-requires untying the complex knot at the front: \roll{Intelligence}{Seafaring} (\tn[10]).
+\subsection{Inside the Box}
+\label{insideTheBox}
+
+\act{open the box}{Intelligence}{Seafaring}{10}
 Inside, \pgls{crossbow} waits, loaded.
 The steel bow stays rigid, dwarven beard makes an unbreakable string.
 The white arrowheads gleam, all three made from quartz which shatters on impact.
@@ -378,10 +380,10 @@ Once the bolts fly, a scroll unfurls across the box's open lid:
 
 \begin{speechtext}
   This device was manufactured by Nanpa.
-  Nanpa is remains \gls{temple}-neutral, and is not responsible for the use, misuse, or consequences of this device.
+  By operating this device, you agree that Nanpa remains \gls{temple}-neutral, and is not responsible for the use, misuse, or consequences of the device.
   If you would like to purchase a similar device for the return address, or any other address, send a detailed letter to Nanpa via the \gls{paperGuild} in \gls{ftown}.
 \end{speechtext}
 
-Resetting the box-\gls{crossbow} requires an \roll{Intelligence}{Crafts} roll at \tn[12].
+\act{reset the box}{Intelligence}{Crafts}{12}
 
 \end{document}
