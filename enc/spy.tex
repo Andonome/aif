@@ -169,31 +169,31 @@ Two candles still burn, but the corpse has gone.
   Maybe five\ldots
   \end{speechtext}
 
-  \humanmaid[\NPC{\F\Hu}{Gobvore}%
-{blue ribbons in her hair}% DESCRIPTION
-{hand feels neck-pulse}% MANNERISM
-{to have a quiet tea alone}% WANTS
-\npcQuote{Oh, my poor heart\ldots}%
-\toggletrue{allyCharacter}]
+\humanmaid[\NPC{\F\Hu}{Gobvore}%
+  {blue ribbons in her hair, smells like blueberries}% DESCRIPTION
+  {hand feels neck-pulse}% MANNERISM
+  {to have a quiet tea alone}% WANTS
+  \npcQuote{Oh, my poor heart\ldots}%
+  \toggletrue{allyCharacter}]
 
 \begin{enumerate}\itemsep0em\setcounter{enumi}{\value{diceNo}}
-\item
-The fire has a cauldron overhead, but it has nasty chunks of black soot inside, dislodged from when the \gls{woodspy} clamoured down the chimney.
-\label{lt:fire}
-\item
-\Gls{mixer}~\composeHumanName\ has come to purchase \glspl{ingredient} for the \gls{templeOfSickness}.
-\label{lt:mixer}
-\item
-\composeHumanName\ (grey beard and confused eyebrows) and his two sons (10 and 21 years old) have come from Tallbow \gls{village} to sell their vegetables in town (they own a horse in the stables).
-\label{lt:farmer}
-\item
-An elf named Quetill\"e is trying to convince everyone that money is a `human construct' so she shouldn't have to pay any money just to sleep on the floor.
-\label{lt:elf}
-\elf[\NPC{\F\El}{Quetill\"e}%
-{cross-eyed and skinny}% DESCRIPTION
-{slow shrug}% MANNERISM
-{to visit her boyfriend}% WANTS
-\npcQuote{I have a boyfriend.
+  \item
+  The fire has a cauldron overhead, but it has nasty chunks of black soot inside, dislodged from when the \gls{woodspy} clamoured down the chimney.
+  \label{lt:fire}
+  \item
+  \Gls{mixer}~\composeHumanName\ has come to purchase \glspl{ingredient} for the \gls{templeOfSickness}.
+  \label{lt:mixer}
+  \item
+  \composeHumanName\ (grey beard and confused eyebrows) and his two sons (10 and 21 years old) have come from Tallbow \gls{village} to sell their vegetables in town (they own a horse in the stables).
+  \label{lt:farmer}
+  \item
+  An elf named Quetill\"e is trying to convince everyone that money is a `human construct' so she shouldn't have to pay any money just to sleep on the floor.
+  \label{lt:elf}
+  \elf[\NPC{\F\El}{Quetill\"e}%
+  {cross-eyed and skinny}% DESCRIPTION
+  {slow shrug}% MANNERISM
+  {to visit her boyfriend}% WANTS
+  \npcQuote{I have a boyfriend.
   He has lots of tentacles and an amazing moustache}]% QUOTE
 
   \item
@@ -232,7 +232,8 @@ and at 12 they find the \gls{woodspy} in room~\vref{lt:woodspy}, inside a chest.
 
 \woetide
 
-\humansoldier[\NPC{\glsentrysymbol{wrecan}\M\Hu}{\Glsentrytext{proctor}~Shrewlame}%
+\humansoldier[\NPC{\glsentrysymbol{wrecan}\M\Hu}%
+{\Glsentrytext{proctor}~Shrewlame}%
   {beard like a badger's arse}% DESCRIPTION
   {shoulders up to ears}% MANNERISM
   {get his loan back from Greetfall}% WANTS
