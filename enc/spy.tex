@@ -78,10 +78,10 @@ Or someone can just cut the mechanism with a thin knife.
 
 \begin{enumerate}\itemsep0em\stepcounter{enumi}
   \item
-  Greetfall has managed to save up \lootBig, which he keeps hidden under the floorboards in his room (\act{find it}{Intelligence}{Empathy}{10}).
+  Greetfall has managed to save up \lootBig, which he keeps hidden under the floorboards in his room (find it with \roll{Intelligence}{Empathy} at \tn[10]).
   \label{lt:tenderRoom}
   \item
-  \Gls{server}~Gobvore sleeps next to the \gls{harvesting} room, but insists on knowing nothing about it (room \vref{lt:cutting}).
+  \Gls{server}~Gobvore sleeps next to the \gls{harvesting} room (\vref{lt:cutting}), but insists on knowing nothing about it.
   \label{lt:server}
   Even thinking about illegal activity may induce a panic-attack.
 
@@ -89,11 +89,11 @@ Or someone can just cut the mechanism with a thin knife.
   One has \lootMedium\ hidden underneath.
   \item
   \label{lt:cutting}
-  After Stoopcraw and Gaulbloat sold the \gls{woodspy} corpse to Greetfall, they helped him carry it up to the \gls{harvesting} room.
-  They left to drink as prepared candles and knives for dissection.
+  After Stoopcraw and Gaulbloat sold the \gls{woodspy} corpse to Greetfall, they helped him carry it up to the \gls{harvesting} room, then left to drink as Greetfall gathered his candles and knives.
   \setcounter{diceNo}{\value{enumi}}
 \end{enumerate}
 
+\begin{exampletext}
 \sideMap[4]{Dyson_Logos/lonely_tavern_2_b}%
 {%
   \ref{lt:chimney}/20/50,
@@ -101,7 +101,7 @@ Or someone can just cut the mechanism with a thin knife.
   \ref{lt:cutting}/38/82,
   \ref{lt:server}/76/82,
   \ref{lt:tenderRoom}/42/22,
-  \ref{lt:singer}/07/05,
+  \Large\ref{lt:singer}/07/05,
 }%
 {}
 %{Creaking stairs and smell of copper.}
@@ -110,7 +110,8 @@ However, the \gls{woodspy} was not dead, merely wounded, then dazed.
 Once Stoopcraw and Gaulbloat ran downstairs to drink, the \gls{woodspy} latched onto Greetfall's head, and chewed through the front of his skull.
 
 The entire floor is covered in blood.
-Two lanterns still burn, but the corpse has gone.
+Two candles still burn, but the corpse has gone.
+\end{exampletext}
 
 \mapPic[\large]{t}{Dyson_Logos/lonely_tavern_1}{
   To ground/60/05,
@@ -125,7 +126,7 @@ Two lanterns still burn, but the corpse has gone.
 
 \begin{enumerate}\itemsep0em\setcounter{enumi}{\value{diceNo}}
   \item
-  Stoopcraw sings on the roof, happy to have made some money, selling \pgls{woodspy} body.
+  Stoopcraw sings on the roof in the \showTemperature, afternoon wind, happy to have made some money, selling \pgls{woodspy} body.
   \label{lt:singer}
   \item
   The \gls{woodspy} found a guest room with a chimney but the grate at the top of the chimney blocked the \gls{woodspy}'s exit, so it went down.
@@ -144,29 +145,36 @@ Two lanterns still burn, but the corpse has gone.
   \item
   \Gls{proctor} Shrewlame has arrived to settle how much Greetfall owes to the \gls{templeOfHate}.
   \label{lt:proctor}
-  He and three other \glspl{armourer} took a single room, and wait for \gls{woetide} to arrive.
+  He and three other \glspl{armourer} took a single room, and waited for \gls{woetide} to arrive.
   \setcounter{diceNo}{\value{enumi}}
 \end{enumerate}
 
 \begin{boxtext}
   A tuneless song assaults your ears, theorizing about how \glspl{woodspy} mate.
-  The singer stands on \pgls{lonelyTavern}'s roof.
+  The singer stands on \pgls{lonelyTavern}'s
+  \ifnum\thetemperature=1 snowy \fi
+  roof.
   As the rest of the building comes into view, it shows more wall, but not a single window in either building.
-\end{boxtext}
+  \end{boxtext}
 
-Once the troupe arrive, they find an overworked \gls{server}, but no proprietor.
-Everyone starts shouting at \gls{server}~Gobvore to get some some ale, but she can't keep up while working alone.
-\Gls{tender}~Greetfall told her that he is not to be disturbed under any circumstances (he wanted solitude and secrecy while \gls{harvesting} the \gls{woodspy} corpse) so she will try to stop the \glspl{pc} from contacting him, and won't go up.
+  Once the troupe arrive, they find an overworked \gls{server}, but no proprietor.
+  Everyone starts shouting at \gls{server}~Gobvore to get some some ale, but she can't keep up while working alone.
+  \Gls{tender}~Greetfall told her that he is not to be disturbed under any circumstances (he wanted solitude and secrecy while \gls{harvesting} the \gls{woodspy} corpse) so she will try to stop the \glspl{pc} from contacting him, and won't go up.
 
-\begin{speechtext}
+  \begin{speechtext}
   %\Gls{tender} Greetfall?
   \Gls{tender} Greetfall is not to be disturbed.
   I'll get you an ale, just a moment.
   Two moments.
   Maybe five\ldots
-\end{speechtext}
+  \end{speechtext}
 
-\humanmaid[\npc{\F\Hu}{Gobvore}\toggletrue{allyCharacter}]
+  \humanmaid[\NPC{\F\Hu}{Gobvore}%
+{blue ribbons in her hair}% DESCRIPTION
+{hand feels neck-pulse}% MANNERISM
+{to have a quiet tea alone}% WANTS
+\npcQuote{Oh, my poor heart\ldots}%
+\toggletrue{allyCharacter}]
 
 \begin{enumerate}\itemsep0em\setcounter{enumi}{\value{diceNo}}
 \item
@@ -192,37 +200,43 @@ An elf named Quetill\"e is trying to convince everyone that money is a `human co
   The \gls{guard} quarters are spacious, but separate from the other guests.
   Once the \glspl{pc} arrive, Gobvore will show them to the \gls{guard} quarters, up the stairs, and separate from the other guests.
   \label{lt:guard}
-\end{enumerate}
+  \end{enumerate}
 
-Gobvore can lead the \glspl{pc} to their quarters (room~\ref{lt:guard} \vpageref{Dyson_Logos/lonely_tavern_2_a} and \ref{Dyson_Logos/lonely_tavern_1}), before she finds the soup is burning in the cauldron.
-The patrons complain bitterly about the black lumps in the soup (see area~\vref{lt:fire}).
+  \subsubsection{Gobvore}
+  can lead the \glspl{pc} to their quarters (room~\ref{lt:guard} \vpageref{Dyson_Logos/lonely_tavern_2_a}, shown \vpageref{Dyson_Logos/lonely_tavern_1}), before she finds the soup is burning in the cauldron.
+  The patrons complain bitterly about the black lumps in the soup (point~\vref{lt:fire}).
 
-\sideMap[4]{Dyson_Logos/lonely_tavern_2_a}%
-  {%
-    \ref{lt:guard}/25/70,
+  \subsubsection{Gaulbloat}
+  tells everyone in the tavern how much he's drunk, but he keeps losing count half-way through the `story'.
+  He has no intention of giving the \gls{templeOfBeasts} their 50\% cut of the money from selling the \gls{woodspy} corpse.
+  If \pgls{pc} pushes the matter, he argues, tells them to `take it up with \Gls{tender} Greetfall', threatens to kill them, vomits on them, then falls over.
+
+  \subsubsection{Upstairs}
+  the parlour slowly fills with smoke, as Greetfall's corpse has blocked the chimney (point~\vref{lt:parlour}).
+  The \glspl{pc} may find the problem and pull him down, or if they enter room~\vref{lt:guestFire} and notice his feet sticking out of the fireplace.
+  Or they may notice nothing, since every room in the \gls{lonelyTavern} lies in shadow, and the little tallow candles people wander with give just enough light to see your own feet.
+
+  \sideMap[4]{Dyson_Logos/lonely_tavern_2_a}%
+{%
+  \ref{lt:guard}/25/70,
     \ref{lt:guard}/77/70,
-  }%
-  {}
-
-Gaulbloat tells everyone in the tavern how much he's drunk, but he keeps losing count half-way through the `story'.
-He has no intention of giving the \gls{templeOfBeasts} their 50\% cut of the money from selling the \gls{woodspy} corpse.
-If \pgls{pc} pushes the matter, he argues, tells them to `take it up with \Gls{tender} Greetfall', threatens to kill them, vomits on them, then falls over.
-
-Upstairs the parlour slowly fills with smoke, as Greetfall's corpse has blocked the chimney (\vref{lt:parlour}).
-The \glspl{pc} may find the problem and pull him down, or if they enter room~\vref{lt:guestFire} and notice his feet sticking out of the fireplace.
-Or they may notice nothing, since every room in the \gls{lonelyTavern} lies in shadow, and the little tallow candles people wander with give just enough light to see your own feet.
-
+}%
+{}
 Noticing the charcoal marks around the parlour, or the feint blood-spatters leading into room~\vref{lt:guestFire}, should not be assumed.
 The \gls{gm} must provide a clear image of the darkness, and the few things the \glspl{pc} \emph{can} see, and the players should ask for details.
 
 If players want to abstract this with a roll, they can roll \roll{Intelligence}{Vigilance} to plan a proper search.
 \Pgls{bandAct} requires splitting up.
+At \tn[6] they find the pool of blood in room~\vref{lt:cutting}, at 10 they find the corpse in the chimney,
+and at 12 they find the \gls{woodspy} in room~\vref{lt:woodspy}, inside a chest.
 
 \woetide
 
-At \tn[6] they find the pool of blood in room~\vref{lt:cutting}.
-At \tn[10] they find the corpse in the chimney.
-And at \tn[12], the \gls{woodspy} in room~\vref{lt:woodspy}, inside an empty chest of old linens.
+\humansoldier[\NPC{\glsentrysymbol{wrecan}\M\Hu}{\Glsentrytext{proctor}~Shrewlame}%
+  {beard like a badger's arse}% DESCRIPTION
+  {shoulders up to ears}% MANNERISM
+  {get his loan back from Greetfall}% WANTS
+  ]% QUOTE
 
 \paragraph{If Greetfall's corpse falls out,}
 \Gls{woetide} accuses Shrewlame of murder, since Greetfall denied owing the money to the \gls{templeOfHate}.
@@ -232,21 +246,23 @@ He demands that the troupe go and search around the forest immediately.
 
 Gobvore wants everyone to check on the horses but won't go outside after dark.
 
-\humansoldier[\NPC{\glsentrysymbol{wrecan}\M\Hu}{\Glsentrytext{proctor}~Shrewlame}%
-  {beard like a badger's arse}% DESCRIPTION
-  {shoulders up to ears}% MANNERISM
-  {get his loan back from Greetfall}% WANTS
-  ]% QUOTE
+The \gls{woodspy} remains, resting quietly, until night, when everyone hides in their own rooms.
 
-The \gls{woodspy} remains, resting quietly, until night, when everyone hides in their own rooms.%
-\footnote{At this point players may slow down to talk about the events.  Don't let them!  Go round the table clockwise and hand a `situation' to each player.  \Gls{woetide} speaks to one, another notices the room getting smokey.  On the second turn, the other patrons retire, and leave the \glspl{pc} to sleep.}
+\paragraph{Don't lose pace}
+by letting players theorize for an hour.
+Make \glspl{npc} join their conversation with their own opinions.
+If the players want privacy, the \glspl{pc} will have to go up to their room.
+
+Soon after, the \glspl{npc} retire, then sleep.
 
 \segment[\gls{night}]{lonelyTavern}% AREA
 {Creaking Stairs}% NAME
 {The first is a human, the next \pgls{monster}}% SUMMARY
 
 Once the tavern dies down, and everyone sleeps, \gls{woetide} goes down the creaking stairs to the latrines outside.
-\act[Anyone on \pgls{vigil}]{hear her descend}{Wits}{Vigilance}{8}
+Anyone on \pgls{vigil} hears her footsteps.
+
+\act{identify the feet}{Intelligence}{Empathy}{9}
 
 \setcounter{wounds}{3}
 \woodspy
@@ -254,10 +270,10 @@ Once the tavern dies down, and everyone sleeps, \gls{woetide} goes down the crea
 Soon after, the \gls{woodspy} comes down, and climbs up the stairs then \emph{up} onto the roof (where Gaulbloat sang).
 If nobody woke Gaulbloat, the \gls{woodspy} eats him, leaving a pool of blood, then enters the well (noted \vpageref{Dyson_Logos/lonely_tavern_0}).
 
-Tracking the \gls{woodspy} requires a \roll{Wits}{Survival} roll at \tn[10].
+\act{track the \gls{woodspy}}{Wits}{Survival}{10}
 Meanwhile, the \gls{lonelyTavern} fills with accusations and theories.
-\Gls{woetide} wants to get statements from everyone, and tells Shrewlame he can't take the money he's owed from a dead man.
 Shrewlame tries to search for any valuables he can soon after, to ``take back what's owed him''.
+\Gls{woetide} wants to get statements from everyone, and tells Shrewlame he can't take the money he's owed from a dead man.
 
 \segment[\gls{morning}]{lonelyTavern}% AREA
 {Well Again}% NAME
@@ -265,58 +281,12 @@ Shrewlame tries to search for any valuables he can soon after, to ``take back wh
 
 The \gls{woodspy} crawls a little up the well, grabs Gobvore, and retreats back down, leaving no clue except the fact that the bucket is missing.
 
-Soon after, the \gls{lonelyTavern} gets a new \gls{tender}, who buys a lot of guard dogs.
-The \gls{woodspy} eats all of them.
+Soon after, the \gls{lonelyTavern} gets a new \gls{tender}, who buys a lot of guard dogs, and the \gls{woodspy} eats all of them.
 This cycle continues until someone finds and kills the \gls{woodspy}.
 
 \clearpage
-
-\thread{What You Want}
-
-\segment[\gls{morning}]{lonelyRoad}% AREA
-{Great Deals}% NAME
-{Traders arrive with \glspl{ration} for sale}% SUMMARY
-
-A caravan of three wagons trundles through the misty morning.
-Two \glspl{soldier} --- \composeHumanName\ and \composeHumanName\ --- remain alive.
-\Pgls{woodspy} killed the third when he took a shit without checking the area.
-They tell the \glspl{pc} `\textit{Don't be like \composeHumanName.  Look before relief!}'.
-
-\begin{description}
-  \item[\composeHumanName]
-  has \glspl{torch} (\mkPrice[cp]{7}), and speaks with endless positivity.
-  \item[\composeHumanName]
-  has \rations, \rations, and \rations\ -- \mkPrice[cp]{10} each.
-  He disapproves of everything, and everyone.
-  \item[Cindercough]
-  adjusts her hat until the \glspl{soldier} are distracted and talks to \pgls{pc} alone.
-  She wants to know if the troupe have found anything `\emph{interesting}', that they haven't shared with the \glspl{jotter}.
-  She can get a good price\ldots
-\end{description}
-
-\segment[\gls{afternoon}]{lonelyRoad}% AREA
-{Greater Deals}% NAME
-{Cindercough returns}% SUMMARY
-
-% A lightning storm builds.
-% By evening, it will break, and each \gls{round} has a 1 in 6 chance of lightning providing light for the \glspl{pc} to see by.
-% The energy provides 4~\glspl{mp} throughout the \gls{interval}.
-
-A caravan approaches, with stone (for cenotaphs); barrels of milled flour, elderflower cordial, alegar (from the \gls{templeOfPoison}, and cheese; purple dyes (made of \gls{woodspy}), and brass pots.
-And of course, some items the \glspl{pc} may want:
-
-\begin{description}
-  \item[\composeHumanName]
-  has eight longswords for \mkPrice{10} each.
-  \item[\composeHumanName]
-  has \rations, \rations, and \rations\ -- \mkPrice[cp]{10} each.
-  \item[Cindercough]
-  Cindercough returns to ask if the troupe have anything to sell.
-  ``\textit{Maybe the spinneret from \pgls{crawler}?  Or some \gls{griffin} wings?}''.
-
-  She can pay \mkPrice{8} for any useable \glspl{ingredient}.
-\end{description}
-
-Four \glspl{gDigger} from the \gls{templeOfBeasts} stand watch with \glspl{bow}.
+\ifnum\thepage<14
+  \pagebreak\null
+\fi
 
 \end{document}
