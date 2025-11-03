@@ -135,8 +135,10 @@ Now it goes everywhere with Rentfold, lifting him up as they travel.
 Baxter lies nearby, camouflaged perfectly into the forest.
 
 \begin{speechtext}
+
   How did you get here?
 
+  \noindent
   \textbf{Magic.
   What's in the box?
   Are you here for the soup?}
@@ -144,6 +146,7 @@ Baxter lies nearby, camouflaged perfectly into the forest.
   What soup?
   Who did your moustache?
 
+  \noindent
   \textbf{My elf-girlfriend.
   Who sent you?}
 \end{speechtext}
@@ -175,11 +178,11 @@ Baxter lies nearby, camouflaged perfectly into the forest.
   {}% ABILITIES
 
 \paragraph{Three miles from the cottage}
-the troupe meet a hairy creature, prowling for mushrooms.%
+the troupe meet a hairy creature, prowling for mushrooms.
+Her naked, perfectly human mouth speaks normally, but the rest of the face has hair all over it.
+She has no clothes -- just thick, brown and white hair covering her whole body, except where humans normally have hair.%
 \footnote{Coinfilch and her crew came to kill Granny in her sleep.
 Granny inverted their hair, then left them to catch fire while moving through her cottage's cramped kitchen.}
-Her naked, perfectly human mouth speaks normally, but the rest of the face has hair all over it.
-She has no clothes -- just thick, brown and white hair covering her whole body, except where humans normally have hair.
 Coinfilch asks the troupe if they have come for the evening soup.
 
 \paragraph{Two miles from the cottage}
@@ -358,8 +361,11 @@ These are Granny's `special little boys', modified with \glspl{spell} to grow bi
 
 \morphcat[\npc{\T[2]\A\R}{Cats: Gorgeous \& Rainfall}]
 
-\act[Characters working together in \pgls{bandAct}]{finish the soup}{Strength}{Athletics}{10}
-Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attribute} Penalties vanish and they may help the troupe.
+\paragraph{To finish the soup}
+the troupe must overeat, gaining 6~\glspl{ep} in total, rolling \roll{Strength}{Athletics} at \tn[8] plus the number of \glspl{ep} taken.
+Failure induces vomiting and ejection from the cottage.
+
+Without the soup, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attribute} Penalties vanish and they may help the troupe.
 
 \ifnum\thepage<14
   \subsubsection{Defeated Characters}
@@ -371,19 +377,20 @@ Once done, Coinfilch and Gorflake are free of their oaths; their Mind \gls{attri
 \label{insideTheBox}
 
 \act{open the box}{Intelligence}{Seafaring}{10}
-Inside, \pgls{crossbow} waits, loaded.
-The steel bow stays rigid, dwarven beard makes an unbreakable string.
-The white arrowheads gleam, all three made from quartz which shatters on impact.
+Inside, \pgls{crossbow} waits with taught string made of dwarven beard, and three gleaming quartz-head bolts which shatter on impact.
 
-The arrows inflicts \dmg{6}~Damage (helmets have a $\frac{2}{\dicef{6}}$ chance to negate all Damage).
-Once the bolts fly, a scroll unfurls across the box's open lid:
+The bolts inflicts \dmg{6}~Damage ({$\frac{2}{D6}$} chance a helmet negates all Damage).
+After the bolts, a (possibly blood-stained) note flutters up:
 
 \begin{speechtext}
-  This device was manufactured by Nanpa.
+  This device was manufactured by Nanpa the Limitless.
   By operating this device, you agree that Nanpa remains \gls{temple}-neutral, and is not responsible for the use, misuse, or consequences of the device.
   If you would like to purchase a similar device for the return address, or any other address, send a detailed letter to Nanpa via the \gls{paperGuild} in \gls{ftown}.
 \end{speechtext}
 
 \act{reset the box}{Intelligence}{Crafts}{12}
+
+\act{cut or smash it open}{Strength}{Crafts}{8}
+Roll for each of the three bolts: each bystander has a $\frac{1}{D6}$ chance to take \dmg{3}~Damage.
 
 \end{document}
