@@ -281,9 +281,6 @@ Gorflake cannot leave the cottage through the front door.
   {}% EQUIPMENT
   {}% ABILITIES
 
-The shelves above chef Gorflake hold flour, oils, rice, and beer.
-The shelves at the other side of the room hold two clay pots of Water \glspl{boon}, three jars of dried \gls{basilisk} skin, and ink-dye suppositories for Nettlepike's pen-arms.
-
 \Person{%
   \NPC{\M\Hu\glsentrysymbol{yonder}}% Symbols
   {The Whittler}% Name
@@ -314,12 +311,41 @@ Over the fire, a massive pot simmers with eternal soup.
 \Gls{chef}~Carnpox adds ingredients, people drink, he adds some more.
 It changes a little bit every day.
 
-Movement inside the room demands a \roll{Dexterity}{Athletics} check with \pgls{tn} equal to the character's \glspl{hp}.
-Every movement deserves a claustrophobic description, and every second person entering the room adds +1 to the \gls{tn}.
-Failure will knock something off a shelf, inflicting \dmg{-2}~Damage.
-
 The next room has straw for sleeping, barrels of brandy, and a door to Granny Carnpox' room, where she sleeps with her cats.
 This end-room has a barred exit-door.
+
+\def\name{}
+\act[Characters entering]{move through the kitchen}{Dexterity}{Athletics}{\roll[total items \glsentrytext{weight}]{Strength}{4}}
+%\paragraph{Movement}
+%inside the room demands a \roll{Dexterity}{Athletics} roll at \tn[3] plus the \gls{weight} of all items.
+Every movement deserves a claustrophobic description, and every second person entering the room adds +1 to the \gls{tn}.
+Failure will knock something off a shelf (roll $1D6$ for the item and Damage).
+
+The shelves above chef Gorflake hold bags and pots with
+\dicef{1} flour,
+\dicef{2} rice,
+\dicef{3} oils,
+\dicef{4} beer,
+\dicef{5} lye,
+and
+\dicef{6} pots.
+The shelves at the other side of the room hold
+\dicef{1} ink-dye suppositories for Nettlepike's pen-arms,
+\dicef{2} three jars of dried \gls{basilisk} skin,
+\dicef{3} brandy,
+\dicef{4} two clay pots of Water \glspl{boon},
+\dicef{5} pans,
+and
+\dicef{6} knives.
+
+\subsubsection{At Sundown}
+everyone arrives to eat the soup.
+Coinfilch leaves hair everywhere.
+Nettlepike complains that the wrong food will make his ink-gland produce weird colours.
+Rentfold chews up chunks of meat, and spits them into Baxter's beakless maw.
+The Whittler eats, then cries quietly as everyone burns their bowls after the meal.
+Two cats arrive and meow loudly outside, but Granny won't let them eat until everyone else has finished.
+These are Granny's `special little boys', modified with \glspl{spell} to grow big and strong.
 
 \Person{%
   \NPC{\F\Hu}{Granny Carnpox}
@@ -349,15 +375,6 @@ This end-room has a barred exit-door.
 \showStdSpells[%
   \stepcounter{Water}
 ]
-
-\subsubsection{At Sundown}
-everyone arrives to eat the soup.
-Coinfilch leaves hair everywhere.
-Nettlepike complains that the wrong food will make his ink-gland produce weird colours.
-Rentfold chews up chunks of meat, and spits them into Baxter's beakless maw.
-The Whittler eats, then cries quietly as everyone burns their bowls after the meal.
-Two cats arrive and meow loudly outside, but Granny won't let them eat until everyone else has finished.
-These are Granny's `special little boys', modified with \glspl{spell} to grow big and strong.
 
 \morphcat[\npc{\T[2]\A\R}{Cats: Gorgeous \& Rainfall}]
 
