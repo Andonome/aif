@@ -66,8 +66,7 @@ If a \underline{player} says they will open the box, \gls{susjot} hears the \gls
 
 \carnBothy\ stands eight miles down the \gls{lonelyRoad}.
 It has no firewood, just an axe.
-Nobody else arrives, so the \glspl{pc} have a simple decision --- go cut wood (and make noise) in the night, or don't.
-If they cut wood, they can restock the \gls{bothy}.
+No travellers arrive, so the \glspl{pc} have a simple decision --- make noise restocking the firewood, or don't.
 \ifnum\value{temperature}=0
   Without wood, they sleep in the cold, and take \pgls{ep} in the morning.
 \fi
@@ -92,11 +91,12 @@ After the troupe leave Granny Carnpox's place, they meet three \glspl{ranger} on
 The \glspl{ranger} ask them how the mission went.
 If the troupe have opened the box, the \glspl{ranger} sigh as they deduce \gls{susjot}'s plan.
 The \glspl{ranger} should --- by law --- take them to town for prosecution.
-%\exRef{judgement}{Judgement}{pitOfJustice}
+\exRef{judgement}{Judgement}{pitOfJustice}
 However, if the \glspl{pc} agree to return to \carnBothy\ with Carnpox' head, the \glspl{ranger} will wait for a day.
 
 If the troupe attack, the \glspl{ranger} turn their horses and flee.
 The horses spend \pgls{ap} to turn, and one more to move.
+From that point on, the troupe will be wanted criminals.
 
 \subsection{The Way to Granny's House}
 
@@ -105,6 +105,14 @@ The horses spend \pgls{ap} to turn, and one more to move.
   A mile from the \gls{bothy}, a narrow foot-path leads through the forest.
   A man's croaky voice comes from the shadows of the forest, asking \textit{`what's in the box?'}.
 \end{boxtext}
+
+The voice is Rentfold,%
+\footnote{Rentfold worked as \pgls{ranger}, but when he tried to kill Granny Carnpox, chef Gorflake cut his legs open, then cut them off, then the arms.}
+who appears to be alone.
+However, Rentfold has a symbiotic relationship with a beakless \gls{woodspy} called `Baxter'.
+Granny cut out Baxter's beak to enhance her \glspl{spell}, but kept the \gls{woodspy} alive.
+Now it goes everywhere with Rentfold, lifting him up as they travel.
+Baxter lies nearby, camouflaged perfectly into the forest.
 
 \Person{%
   \NPC{\footnotesize\T[2](\E)\M\Hu\tiny\glsentrysymbol{sylf}}% Symbols
@@ -126,14 +134,6 @@ The horses spend \pgls{ap} to turn, and one more to move.
   {}% EQUIPMENT
   {\tentacles}% ABILITIES
 
-The voice is Rentfold,%
-\footnote{Rentfold worked as \pgls{ranger}, but when he tried to kill Granny Carnpox, chef Gorflake cut his legs open, then cut them off, then the arms.}
-who appears to be alone.
-However, Rentfold has a symbiotic relationship with a beakless \gls{woodspy} called `Baxter'.
-Granny cut out Baxter's beak to enhance her \glspl{spell}, but kept the \gls{woodspy} alive.
-Now it goes everywhere with Rentfold, lifting him up as they travel.
-Baxter lies nearby, camouflaged perfectly into the forest.
-
 \begin{speechtext}
 
   How did you get here?
@@ -154,7 +154,7 @@ Baxter lies nearby, camouflaged perfectly into the forest.
 \togglefalse{examplecharacter}
 
 \Person{%
-  \NPC{\F\Hu}{Coinfilch\tiny\glsentrysymbol{sylf}}
+  \NPC{\glsentrysymbol{sylf}\F\Hu}{Coinfilch}
   {body-hair covers everything but scalp and mouth}% DESCRIPTION
   {looks about for mushrooms}% MANNERISM
   {to find enough mushrooms to complete the soup}% WANTS
@@ -190,7 +190,7 @@ a man approaches with bone-quills instead of his hands.
 They drip `ink', which comes from \pgls{crawler} spinneret, embedded in his abdomen.
 
 \Person{%
-  \NPC{\M\Hu\tiny\glsentrysymbol{sylf}}%
+  \NPC{\M\Hu\glsentrysymbol{sylf}}%
   {Nettlepike}% Name
   {oily beard covered in red and blue ink-stains, dark-blue ink dripping from quill-bones}% DESCRIPTION
   {wipes pen clean}% MANNERISM
@@ -285,7 +285,7 @@ The shelves above chef Gorflake hold flour, oils, rice, and beer.
 The shelves at the other side of the room hold two clay pots of Water \glspl{boon}, three jars of dried \gls{basilisk} skin, and ink-dye suppositories for Nettlepike's pen-arms.
 
 \Person{%
-  \NPC{\M\Hu\tiny\glsentrysymbol{yonder}}% Symbols
+  \NPC{\M\Hu\glsentrysymbol{yonder}}% Symbols
   {The Whittler}% Name
   {gangly man with rust-coloured beard}% DESCRIPTION
   {chip-chip-chip-chip}% MANNERISM
