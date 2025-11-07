@@ -344,9 +344,13 @@ the character can remove all \glspl{ep} from holding their breath in the water, 
 
 \mapentry[hungryHall]{Hungry Hall}
 
-\begin{boxtext}
-  Emerging from the water, you see a fire burning in the distance.
+\begin{boxtext}[]
+  Your eyeballs sting, perhaps from the nasty water, perhaps from the light.
+  A fire burns brightly in the distance.
+  But the light does not reach you, or the ceiling, or the walls.
   Despite the bright flames, the ceiling and walls lie beyond the wide darkness.
+
+  \smallbreak
   This cavern must be at least as large as \pgls{broch}.
 \end{boxtext}
 
@@ -372,16 +376,28 @@ The troupe can only use \pgls{bandAct} if they split up.
 
 \mapentry[gas]{Fire Cavern}
 
-The passage here leads upwards for half a mile, to a chamber where flammable gas seeps in through little air-vents.
+\begin{boxtext}[]
+  The passage ascends a little, but never too steeply.
+  The centre of the passage constantly shifts with falling pebbles, while the edges have no pebbles or debris.
+\end{boxtext}
 
-The party can make a \roll{Wits}{Caving} roll (\tn[12]) to notice the smell before their torches ignite it, dealing $2D6$ Damage to the first half of the characters, and $1D6$ to the second half.
-\Glspl{pc} with armour can reduce the Damage by an amount equal to its \gls{covering} (so minus 3 in most cases).
+The tunnel continues for half a mile, to a chamber where flammable gas seeps in through little air-vents.
+
+\act{notice the smell}{Wits}{Caving}{12}
+Success means \pgls{pc} knows to hold their breath to avoid taking \pgls{ep}.
+Failure means that anyone holding \pgls{torch} ignites the gas, and everyone in the tunnel takes \dmg{4}~Damage.
 
 \wayOut{After the \nameref{gas}, the tunnel descends to}{smokePassage}
 
 \mapentry[smokePassage]{Smokey Passage}
 
-The goblins wait at the bottom of this long passageway, to light a fire with all their \fireFuel, once the troupe descend.
+\begin{boxtext}[]
+  The passage descends, and smells bad.
+  The air feels thick, like burning fertilizer.
+\end{boxtext}
+
+The goblins wait quietly, ready to light a fire with all their \fireFuel, once the troupe descend.
+Once the smoke billows, the goblins \gls{retreat} across \gls{area}~\ref{blindFish}
 
 \paragraph{If the \glspl{pc} have been creeping quietly,}
 call for \pgls{resistedaction}: \roll{Dexterity}{Stealth}, against the goblins' \roll{Wits}{Vigilance}.
