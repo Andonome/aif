@@ -367,7 +367,7 @@ His coins lie discarded by the fire --- \lootSmall\ in total.%
 \setcounter{diceNo}{0}%
 \renewcommand\npcsymbol{\currency}
 
-\act{find the exits}{Speed}{Caving}{9}.
+\act{find the exits}{Speed}{Caving}{9}
 Without the fire, the \gls{tn} increases by~3.
 The troupe can only use \pgls{bandAct} if they split up.
 
@@ -406,8 +406,8 @@ call for \pgls{resistedaction}: \roll{Dexterity}{Stealth}, against the goblins' 
 they can roll \roll{Speed}{Caving} (\tn[10]) to hold their breath.
 Every Failure Margin inflicts \pgls{ep}, and the same \gls{natural} counts for everyone.
 
-Whether the \glspl{pc} rush up or down makes no difference.
-The goblins leave after setting the fire, and the smoke clears within \pgls{interval}.
+\paragraph{If the troupe flee up hill,}
+the fire goes out and the smoke clears within \pgls{interval}.
 
 \wayOut{This alcove sits at the side of}{blindFish}
 
@@ -425,20 +425,16 @@ Finding that exit needs an \roll{Intelligence}{Caving} roll at \tn[10].
 Each failure adds a pointless mile to the journey, but decreases the \gls{tn} by~1 for the next roll.%
 \footnote{The players don't need to stick with the same \gls{natural}, because each time, the situation and location has changed.}
 
-Each time a player things of a reasonable way to find the exit path, reduce the \gls{tn} by 1 or~2.
+Each time a player thinks of a reasonable way to find the exit path, reduce the \gls{tn} by 1 or~2.
 
-\paragraph{If the troupe have \pgls{torch} lit,}
-the oxygen in the tunnels will deplete, causing \gls{hypoxia}.
-This will leave the party with a real problem -- tiredness, and hallucinations can follow.
-
-If the troupe avoid lighting any torch in the narrow tunnel, they will have to try \gls{blackWalking}.%
-%\footnote{This \glsentrydesc{blackWalking}.}
+\paragraph{Using \pgls{torch}}
+means \gls{hypoxia}, leading to \pgls{ep} per \gls{torch} and hallucinations.
 
 \begin{boxtext}
-  You stop for a small breather, and smell the stuffy air, then notice little goblinoid silhouettes up ahead or behind.
+  Stopping for a small breather to take in that stuffy air, you think a little goblinoid silhouettes up ahead or behind.
 \end{boxtext}
 
-That little verbal slip-up -- `ahead or behind' -- should be given with intention.
+That little verbal slip-up --- `you think a', `ahead or behind' --- should be given with intention.
 The troupe will have trouble remembering which direction they came from and which they were going to.
 If they ask about the odd phrasing, tell them what they're having trouble remembering; otherwise, simply wait until the troupe have dealt with the imaginary goblins, and decide to continue moving.
 
@@ -509,8 +505,7 @@ Once on the other side, they can use the wooden planks goblins have left on the 
 One wooden plank is stable, the other has a cut across the middle.
 Using the planks without examining them results in \pgls{pc} falling through the water.
 
-\paragraph{Swimming}
-demands a \roll{Strength}{Seafaring} roll (\tn[10]).
+\act{swim}{Strength}{Seafaring}{10}
 Rolling a tie means the character can make no progress -- they simply fight against the river's undercurrent, gain \pgls{ep}, and roll again.
 
 Rolling a failure means the river pulls the character downriver, the \gls{tn} increases by +2, and the character gains \pgls{ep} then rolls again.
@@ -520,12 +515,13 @@ reveals little fish, about the size of a finger.
 Any reasonable plan to catch them works, and provides \pgls{ration} once cooked.
 Placing \pgls{caveFire} safely can prove very difficult.
 
-\act{jump over the river}{Speed}{Athletics}{10}.
+\act{jump over the river}{Speed}{Athletics}{10}
 
 \paragraph{Going down-river}
 means death in a black abyss.
 
-\wayOut{This cavern becomes narrower, and quickly meets}{stalagmites}
+\wayOut{Once over the river, the cavern narrows to meet}{stalagmites}
+\wayOut{Following the wall leads to}{umberHulk}
 
 \mapentry[stalagmites]{Stalagmites Point}
 
@@ -599,6 +595,8 @@ It also presents a serious problem for the \glspl{pc}' mission, with very little
 
 Far below, a complete society of goblins lives beside volcanic vents, which grow verdant gardens.
 The \glspl{pc} cannot hope to survive down here, and if they spend \pgls{interval} descending, they should figure out that they are going the wrong way.
+
+\wayOut{The only choice is}{mushroomsTunnel}
 
 \caveMapOut
 
@@ -676,7 +674,7 @@ the \glspl{olm} attack whoever has the light as \pgls{swarm}.
   \olmSwarm
 \fi
 
-\wayOut{The not-so-distant light comes from}{sunRoof}
+\wayOut{A slender ray of light comes from}{sunRoof}
 
 \mapentry[sunRoof]{Sun Roof}
 
@@ -700,7 +698,6 @@ Success means a +2~Bonus to climbing, and reveals the \gls{tn}.
 now is a good time to see if they survived.%
 \footnote{Check \vpageref{pcRunaways} for notes on \glspl{pc} who fled.}
 
-\Needspace{4\baselineskip}
 \wayOut{A nasty stench wafts out of}{basiliskCave}
 \wayOut{The second cavern leads back to}{mushroomsTunnel}
 \wayOut{The third leads to}{crackExit}
