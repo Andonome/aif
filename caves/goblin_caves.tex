@@ -421,14 +421,33 @@ the fire goes out and the smoke clears within \pgls{interval}.
 
 The goblins abandoned this narrow, meandering maze when \pgls{hulk} blocked the exit, but their footprints (and claw-prints) remain in places, hinting at the correct route out.
 
-Finding that exit needs an \roll{Intelligence}{Caving} roll at \tn[10].
-Each failure adds a pointless mile to the journey, but decreases the \gls{tn} by~1 for the next roll.%
+\act{find the exit}{Intelligence}{Caving}{10}
+Each Failure Margin adds a pointless mile to the journey, but decreases the \gls{tn} by~1 for the next roll.%
 \footnote{The players don't need to stick with the same \gls{natural}, because each time, the situation and location has changed.}
+\iftoggle{intro}{%
+  A tie increases the wasted time by a mile, but the troupe still find the exit.
+}{}
 
 Each time a player thinks of a reasonable way to find the exit path, reduce the \gls{tn} by 1 or~2.
 
-\paragraph{Using \pgls{torch}}
-means \gls{hypoxia}, leading to \pgls{ep} per \gls{torch} and hallucinations.
+\paragraph{And somewhere in the darkness}
+\pgls{guard} still lives.
+
+He sometimes hallucinates that people he knows are with him, but he knows he's hallucinating.
+However, when the \glspl{pc} arrive, he still thinks he's hallucinating.
+
+\begin{boxtext}
+  A mutter from the darkness says ``I know you're not real''.
+  You can't hurt me, because you're not real.
+\end{boxtext}
+
+\act{reassure \scaredFodder\ they're real}{Intelligence}{Empathy}{10}
+
+If anyone approaches without reassuring him, he attacks.
+If nobody manages to show they're real, he follows the troupe from a safe distance.
+
+\paragraph{Lighting \pgls{torch}}
+will instantly show \scaredFodder\ that everyone is real and adds a +1~Bonus to finding a way out, but also means \gls{hypoxia}, leading to \pgls{ep} per \gls{torch} and hallucinations.
 
 \begin{boxtext}
   Stopping for a small breather to take in that stuffy air, you think a little goblinoid silhouettes up ahead or behind.
@@ -437,6 +456,44 @@ means \gls{hypoxia}, leading to \pgls{ep} per \gls{torch} and hallucinations.
 That little verbal slip-up --- `you think a', `ahead or behind' --- should be given with intention.
 The troupe will have trouble remembering which direction they came from and which they were going to.
 If they ask about the odd phrasing, tell them what they're having trouble remembering; otherwise, simply wait until the troupe have dealt with the imaginary goblins, and decide to continue moving.
+
+\paragraph{If asked about his journey,}
+\scaredFodder\ tells the troupe everything (even if he thinks they're not real).
+
+\begin{boxtext}[]
+  The ragged voice speaks like it's reciting a prayer.
+  \begin{speechtext}
+    We came in and \composeHumanName\ fell down an old hole.
+    {\sffamily\upshape(\gls{area}~\vref{firstBridge})}
+    Down past a boulder with a rope,
+    {\sffamily\upshape(\gls{area}~\ref{ropeDown})}
+    then a river, and that long passage down and up.
+    {\sffamily\upshape(\gls{area}~\ref{standingTunnel})}
+
+    My little buddy Nilo died.
+    {\sffamily\upshape(\gls{area}~\ref{standingTunnel})}
+
+    When we came up through that water-filled passage,
+    {\sffamily\upshape(\gls{area}~\ref{waterMaze})}
+    they were waiting on us.
+    They killed \composeHumanName.
+    {\sffamily\upshape(\gls{area}~\ref{hungryHall})}
+    I had an argument with \composeHumanName\ about going back.
+    I think they got him.
+    {\sffamily\upshape(they did, \gls{area}~\vref{stalagmites})}
+
+    Now it's just me, and my imagination.
+  \end{speechtext}
+\end{boxtext}
+
+\begin{minipage}{.1\linewidth}
+  \Huge\gls{T}
+\end{minipage}
+Any player without \pgls{pc} can use \scaredFodder.
+
+\renewcommand\rations{pebbles}
+\set{wounds}{3}
+\lostGuard
 
 \wayOut{The only exit is blocked by}{umberHulk}
 
