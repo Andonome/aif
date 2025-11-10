@@ -7,8 +7,130 @@
 \thread[Mountain]{Busy Morning}
 
 \noindent
-Run these three \glspl{segment} in rapid succession.
-They establish the links between the goblin-infested mine and the outside world.
+Run these \glspl{segment} in rapid succession.
+They establish the links between the goblin-hole and the outside world.
+
+\widePic{Unknown/bothy_river}
+
+\segment[\gls{morning}\gls{vlg}]{bothy}% AREA
+{The Stench of Death}% NAME
+{The Goblins have Massacred a Caravan}% SUMMARY
+
+\begin{boxtext}
+  Stoatfen~\Gls{bothy} lies ahead, one of the widest \glspl{bothy} around, though very remote.
+  Around it, the usual fifty~\gls{step} clearing of
+  \ifnum\thetemperature=0%
+    snow
+  \else%
+    dried grass
+  \fi%
+  provides space to see any dangers coming from the tall, surrounding, forest.
+  And something nasty comes on the wind.
+  Rotten meat.
+  Death from up the road.
+\end{boxtext}
+
+\act{check Stoatfen~\Gls{bothy}}{Intelligence}{Vigilance}{8}
+Rolling over means they see that one person stayed the night a couple of days ago (the hay is untouched, and
+\ifnum\thetemperature=0%
+  ash indicating a small fire with one person kneeling in front%
+\else%
+  the chamberpot has been used once%
+\fi).
+Rolling under means time wasted to find nothing.
+
+\paragraph{Up the road}
+the stench comes from two dead \glspl{guard}.
+
+\begin{boxtext}
+  Two wagons and some large rocks block the road.
+  Two men lie dead and rotting, next to bits of broken wood, and old mushrooms.
+\end{boxtext}
+
+\act{investigate the carnage}{Intelligence}{Vigilance}{7}
+
+\begin{boxtable}
+  2 & Yip, they're dead.  Maybe it was bandits? \\
+  3 & These two wagons should have one horse each. \\
+  4 & The men died from the boulders being dropped on their heads. \\
+  5 & Goblin footprints approached. \\
+  6 & A little coin-pouch lies discarded (\lootMedium).\label{discardedCoins} \\
+  7 & The goblins ate a man and carried the horses away. \\
+  8 & No, just one horse; they ate the other on the spot. \\
+  9 & There are rotting mushrooms on the ground. \\
+  10 & These rotting mushrooms are not from around here. \\
+  11 & The goblins carried the boulders up trees. \\
+  12 & Someone carried something heavy, away from the goblins.%
+  \footnote{Find the conspiracy \vpageref{goldConspiracy}.} \\
+\end{boxtable}
+
+\act{identify the mushroom}{Intelligence}{Caving}{10}
+These are \glspl{glowshroom}, which can glow in the dark when agitated.%
+\footnote{See the glossary, \vpageref{glosPreamble}.}
+
+\paragraph{Soon after}
+\gls{susjot} arrives to ensure the \glspl{pc} clear up the wreckage.
+
+\begin{boxtext}[What do you say?]
+  Hooves and wheels smash through the
+  \ifnum\value{temperature}=0%
+    frost
+  \else%
+    mud
+  \fi.
+  Behind, six \glspl{guard}, all in black, struggle to keep up.
+  The coachman arrives with a writing tablet under his arms, an angry scowl, and an wagon behind him.
+  \begin{speechtext}
+      Are you the new \glspl{fodder}?
+      Welcome to the \gls{templeOfBeasts}!
+      Did you restock the logs for the \gls{bothy}?
+  \end{speechtext}
+\end{boxtext}
+
+\iftoggle{intro}{
+  Some of the \glspl{guard} running behind are \glspl{soldier}.
+  Others are new \glspl{fodder} --- and additional characters for the players.
+  Tell the players that they can take another character by spending \pgls{storypoint}, and explaining how they know this person.%
+  \footnote{Spending \pgls{storypoint} also earns 5~\glspl{xp}, but feel free to ignore this if running a oneshot.}
+
+  \begin{boxtext}[]
+    \Gls{susjot} explains the duties in the \gls{templeOfBeasts}:
+
+      \begin{speechtext}
+        I understand people find the first day scary, but not as scary as the first \gls{monster}, eh?
+
+        Don't look so morose.
+        You look like someone took your \gls{dawnDolly}!
+
+        And you don't `have to kill \glspl{monster}', you \underline{get to kill \glspl{monster}}.
+        (But also you have to kill \glspl{monster} or it's back to the \gls{court})
+
+        But first, you can clear the road\ldots
+        Poor, old \composeHumanName\ and \composeHumanName.
+        You can stick the bodies in my cart back there.
+        I'll tell the families they died heroes.
+      \end{speechtext}
+  \end{boxtext}
+
+}{
+  This make a good juncture for players to spend \pgls{storypoint} to introduce an ally%
+  \exRef{stories}{Stories}{oldFriend}
+  from the \glspl{fodder}, because players should have two characters upon entering the mine.
+}
+
+%%%%%%%%%%%%%
+\Pgls{susjot} explains a `goblin raid' has taken place, and they (the \glspl{pc}, not him) need to clear the road.
+
+\paragraph{If the \glspl{pc} ask about the raid,}
+\gls{susjot} has heard about it only yesterday, and immediately sent some \glspl{gDigger} out to kill the goblins, and retrieve the chest of gold they took.
+
+\act{clear the road}{Strength}{Crafts}{10}
+Failure inflicts 3~\glspl{ep}, as wagons become stuck in the
+\ifnum\value{temperature}=0%
+  frost%
+\else%
+  mud%
+\fi, or push up against a tree without enough room for others to move around.
 
 \segment[\gls{afternoon}]{bothy}% AREA
 {What the \Glsfmttext{notary} Saw}% NAME
@@ -25,195 +147,31 @@ They establish the links between the goblin-infested mine and the outside world.
     But they were heading down the mountain, not here.
   \end{speechtext}
 
-  \Pgls{susjot} asks ``\textif{How many?}''.
+  \Pgls{susjot} asks ``\textit{How many?}''.
 
-  \Pgls{woetide} replies ``\textif{Maybe two.  I didn't get a good look}''.
+  \Pgls{woetide} replies ``\textit{Maybe two.  I didn't get a good look}''.
 
   That moment, \gls{susjot} asks the \glspl{soldier} to chase after the \glspl{guard} with the chest, and then turns to you.
 
 \end{boxtext}
 
-\woetide[Travel straight, never curious]
-
-\segment[\gls{morning}]{Mountain}% AREA
-{The Innocent Man in the Shadows}% NAME
-{\Glsfmttext{fodder} \scaredFodder\ fled from the goblin caves, and wants to know if he can return}% SUMMARY
-
-\begin{exampletext}
-  Last week, \scaredFodder\ entered the \gls{guard} after smuggling swords into a town for a friend, so they didn't have to pay tax (or explain the \glspl{weapon}).
-  Four days ago, \pgls{susjot} ordered him and all the new \glspl{fodder} to enter an abandoned mine, kill the goblins, and return with the treasure the goblins stole from \gls{woetide} and the rest of that caravan.
-
-  The goblins killed most of the new \glspl{guard}.
-  Only \scaredFodder\ made it out alive.
-\end{exampletext}
-
-\scaredFodder\ knows he should have returned with goblin heads, and doesn't want to report mission failure.
-He waits near the \gls{bothy}, in the shadows of the forest, for the right moment to talk with someone who might be sympathetic.
-
-\begin{boxtext}
-  Snapping twigs.
-  Gentle footsteps approach.
-\end{boxtext}
-
-\humanthief[\NPC{\glsentrysymbol{sylf}\M\Hu}{\Glsfmttext{fodder}~\scaredFodder}%
-  {mid-forties, sunburnt face, and flustered}% DESCRIPTION
-  {grimaced-smile}% MANNERISM
-  {to tell everyone he's not a criminal}]% WANTS
-
-\begin{boxtext}
-  A sunburnt man steps into a ray of Sunlight, mostly bald and half-grey on what remains, wearing a black cassock just like yours.
+\begin{boxtext}[Who's taking the tinder box?]
+  \Gls{susjot} looks enraged, and orders the \glspl{soldier} to hunt down the `deserters', and bring back the chest.
+  Then he turns to you.
 
   \begin{speechtext}
-    Hi.
-    My name is \scaredFodder.
-    \Gls{fodder}~\scaredFodder.
-
-    \ldots
-
-    \Pgls{susjot} sent the five of us into the old mine, to kill the goblins and return with the treasure they stole.
-    But we didn't get the treasure.
-    We died.
-    Then I ran away.
-    A trader told me they're looking for me.
-    She said I should run away.
-    Can you check if it's safe for me to come back?
-  \end{speechtext}
-
-  The sunburnt man pulls a smiling grimace, as if forcing himself to stay hopeful.
-\end{boxtext}
-
-The `trader' who told \scaredFodder\ that he's a wanted fugitive is \gls{woetide}.
-\scaredFodder\ does not know anything about her, but can describe her big eye-bags.
-
-\paragraph{If anyone asks about the details at the mines,}
-\scaredFodder\ explains a little, but won't give more details until someone reassures him that nobody thinks he's guilty.
-
-\begin{speechtext}
-  \begin{itemize}
-    \item
-    The entrance is easy.
-    It's a hole in the ground, so bring something to get down with -- a rope, a stake, and a mallet.
-    \item
-    The goblins won't fight, they just run away.
-    \item
-    The darkness in caves isn't like the darkness at night.
-    At night, the sky is dark, but in a cave, the darkness stands right next to you.
-    \item
-    The ground is rough -- you can't run anywhere.
-    That means the goblins can stand back and throw things at you.
-    \item
-    And if you carry \pgls{torch}, they can see you, but you can't see them.
-    And when you put it out, they can hear you, and you still get hit by rocks.
-    \item
-    I swear I heard \gls{yonder}'s bell down there, calling everyone downwards into the dark.
-  \end{itemize}
-\end{speechtext}
-
-\act{reassure \scaredFodder}{Charisma}{Empathy}{10}
-If that succeeds, he offers more details.
-
-\begin{speechtext}
-  \begin{itemize}
-    \item
-    \composeHumanName\ died falling through a rotten bridge that the miner's left.
-    Look out for a hole in the ground, and tread carefully around it, one at a time.
-    
-    \hint{\autopageref{firstBridge}, area \ref{firstBridge}}
-    \item
-    The goblins left a rope for us to get down.
-    We thought it was a trap, but it's not.
-    
-    \hint{\autopageref{ropeDown}, area \ref{ropeDown}}
-    \item
-    We went down a tunnel with a dead goblin, then Tukala died.
-    He was my little gnome-buddy, and he just lay down and died.
-    I didn't see anything happen to him, he just died.
-    \iftoggle{intro}{}{He never finished teaching me how to play \gls{shellGame}.}
-    
-    \hint{\autopageref{standingTunnel}, area \ref{standingTunnel}}
-    \item
-    The next bit, we had to crawl under a narrow pass.
-    They were waiting for us at the other side, throwing rocks and javelins as we came up.
-    That's when I ran back up.
-    
-    \hint{\autopageref{hungryHall}, area \ref{hungryHall}}
-    \item
-    I waited a while, but nobody else came back up.
-    Five of us went in.
-    All four, dead.
-    \item
-    I'm never going back there again!
-  \end{itemize}
-\end{speechtext}
-
-\segment[\gls{afternoon}]{Mountain}% AREA
-{Gold in the Mines}% NAME
-{The \glsfmttext{jotter} demands the troupe go to the mines and kill the goblins}% SUMMARY
-
-\begin{exampletext}
-  Two days ago, \gls{woetide} informed \gls{susjot} that she saw three \glspl{guard} coming from the old mine, carrying a heavy chest.
-  \Gls{susjot} has figured those \glspl{guard} took the chest of \glsentrylongpl{gp} and decided to flee, and live beyond the \gls{edge} (effectively making them bandits).
-\end{exampletext}
-
-\begin{boxtext}[What do you say?]
-  Hooves and wheels smash through the
-  \ifnum\value{temperature}=0%
-    frost
-  \else%
-    mud
-  \fi.
-  Behind, six \glspl{guard}, all in black, struggle to keep up.
-  The coachman arrives with a writing tablet under his arms and an angry scowl.
-  \begin{speechtext}
-      Are you the new \glspl{fodder}?
-      Welcome to the \gls{templeOfBeasts}!
-      Did you restock the logs for the \gls{bothy}?
-  \end{speechtext}
-\end{boxtext}
-
-\iftoggle{intro}{
-  Some of the \glspl{guard} running behind are new \glspl{fodder}, and additional characters for the players.
-  Hand them out, and do another round of introductions.
-
-  This also makes a good opportunity to let \gls{susjot} fill in some more details on the \gls{templeOfBeasts}.
-
-  \begin{boxtext}[]
-    \begin{speechtext}
-      I understand people find the first day scary, but not as scary as the first \gls{monster}, eh?
-
-      Don't look so morose.
-      You look like someone took your \gls{dawnDolly}!
-
-      And you don't `have to kill \glspl{monster}', you \underline{get to kill \glspl{monster}}.
-      (But also you have to kill \glspl{monster} or it's back to the \gls{court})
-    \end{speechtext}
-  \end{boxtext}
-
-}{
-  This make a good juncture for players to spend \pgls{storypoint} to introduce an ally, because players should have two characters upon entering the mine.
-}
-
-Once \gls{susjot} feels satisfied with the state of Stoatfen~\Gls{bothy}, he gives the troupe their mission.
-
-\begin{boxtext}[Do you speak, or leave immediately?]
-  \Gls{susjot} tells you:
-
-  \begin{speechtext}
-    It's time to go up the mine, and kill some goblins!
-
-    Listen, it's an easy job.
-    Just go and kill the goblins, and take any remaining \gls{coin} they might have.
+    Good news; you haven an easy job.
+    Go up to the old mine, on the mountain up there, kill the goblins, and take any remaining \gls{coin} they might have.
     It's just like stealing from an ugly baby, okay?
 
-    You may keep one \glsentrylong{sp} for each goblin head you return with.
-
-    The last lot of \glspl{fodder} who went up just left with the gold, and didn't even kill the goblins.
-    So now it's no more mister nice-\gls{jotter}.
-    Now anyone who comes back without a goblin head gets sent back to the \gls{court} for a good neck-stretch, okay?
+    Anyone who returns with a goblin head gets promoted to \gls{gDigger} and \pgls{sp}.
+    If nobody returns with one, it's back to the \gls{court} with the lot of you.
   \end{speechtext}
+
+  \Gls{susjot} orders the \glspl{soldier} to fetch \pgls{torch} for everyone.
 \end{boxtext}
 
-\act{ask \gls{susjot} for more supplies}{Charisma}{Survival}{4}
+\act{request more supplies}{Charisma}{Survival}{4}
 \iftoggle{intro}{%
   Everyone uses the same \gls{natural}.
 }{}
@@ -234,19 +192,42 @@ Once \gls{susjot} feels satisfied with the state of Stoatfen~\Gls{bothy}, he giv
   13 & Chainmail (\glsfmttext{dr}~4, \glsfmttext{covering}~3, fits anyone with 7-9~\glsfmtplural{hp}) \\
 \end{boxtable}
 
-\paragraph{If the \glspl{pc} ask about the missing \glspl{fodder},}
-\gls{susjot} questions them about what they know, and mentions that \pgls{notary} has witnessed three of the \glspl{guard} making off with a `heavy chest', near the entrance to the mines.%
-\footnote{This claim is false.
-See \vpageref{goldConspiracy}.}
-
-\Gls{soldier}~\composeHumanName\ happily mentions the reward for bringing in the deserters: 5~\glspl{gp} dead, 20~\glspl{gp} alive.
+\susjot
 
 \humanarcher[\NPC{\glsentrysymbol{sylf}\T[4]\Hu}{\arabic{noAppearing}~\Glsfmtplural{soldier}}%
   {facial scars, missing ears and fingers}% DESCRIPTION
   {half-toothed smile}% MANNERISM
   {to collect the reward for bringing in deserters}]% WANTS
 
-\susjot
+\paragraph{\Pgls{woetide} moves on soon after,}
+but the \glspl{pc} can ask her some questions before she becomes too upset, and moves on.
+She states:
+
+\begin{itemize}
+  \item
+  She's \pgls{notary} from the \gls{templeOfFrost}, who recorded \pgls{village} who wanted to deposit their communal savings --- a chest of 100~\glspl{gp}.
+
+  \textit{\textbf{False}: the \gls{village} desposited 1,000~\glspl{sp} with \pgls{weight} of 10.}
+  \item
+  Green-glowing goblins arrived, and killed everyone.
+
+  \textit{\textbf{Half-True}: goblins are mostly the colour of bone.
+  But when they eat \glspl{glowshroom}, their stomachs glow green.}
+  \item
+  The goblins stole the chest, and left.
+
+  \textit{\textbf{False}: goblins have no use for \glspl{coin}.}
+  \item
+  She barely survived by running up the road to a nearby \pgls{village}.
+
+  \textit{\textbf{False}: she ran to Stoatfen~\Gls{bothy} to hide, then hid the chest once the goblins left.}
+\end{itemize}
+
+\iftoggle{intro}{%
+  Insensitive questions will demand a \roll{Charisma}{Empathy} roll at \tn[9], or she leaves.
+}{}
+
+\woetide[Travel straight, never curious]
 
 \stopcontents[segments]
 

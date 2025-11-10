@@ -28,11 +28,12 @@ the goblins come, one every hour, to throw a javelin or rock at them.%
 \footnote{All goblin statblocks appear \vpageref{goblinBlocks}.}
 They stand well back from the camp, and suffer a -4~Penalty to the throw, but the point is not to kill the \glspl{pc}; the point is to stop them sleeping.
 
+\playCommentaryCaveIn[t]
+
 \ifnum\value{temperature}<2%
   Of course, they will need a fire to stay warm, so staying out of sight is not an option.
+  \medbreak
 \fi
-
-\playCommentaryCaveIn[t]
 
 \subsection{The Mouth}
 
@@ -56,6 +57,11 @@ and receives 2~Damage plus their Strength~\gls{attribute},
   Then come the rocks.
 \end{boxtext}
 
+\smolMapPic[\normalsize]{cave_1}{
+  \rotatebox{-40}{\roll{Dexterity}{Caving} (8)}/22/54,
+  {\roll{Speed}{Athletics} (3, 4, 5,\ldots)}/71/17,
+}
+
 \act{avoid the goblin rocks}{Speed}{Vigilance}{\roll{Dexterity}{Projectiles}}
 \iftoggle{intro}{%
   A successful roll means the \gls{pc} can dodge the rocks by \gls{running}.
@@ -68,16 +74,10 @@ and receives 2~Damage plus their Strength~\gls{attribute},
 
 \playCommentaryDust[t]
 
-\subsubsection{Screams Above}
-
-Once most of the \glspl{pc} enter the dark hole, two skinny goblins crawl out of a tiny side-tunnel, and cause trouble at the top.
-The tunnel is only big enough for those with Strength~-1 or lower.
+\paragraph{Once inside,}
+two skinny goblins crawl out of a tiny side-tunnel, and cause trouble at the top.
+The tunnel is only big enough for those with \pgls{weight} of 17 or lower.
 Anything larger than this cannot fit through the narrow tunnel.
-
-\smolMapPic[\normalsize]{cave_1}{
-  \rotatebox{-40}{\roll{Dexterity}{Caving} (8)}/22/54,
-  {\roll{Speed}{Athletics} (3, 4, 5,\ldots)}/71/17,
-}
 
 \subsection{The Cave-In}
 \label{caveIn}
