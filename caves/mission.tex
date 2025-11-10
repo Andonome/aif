@@ -30,13 +30,16 @@ They establish the links between the goblin-hole and the outside world.
   Death from up the road.
 \end{boxtext}
 
-\act{check Stoatfen~\Gls{bothy}}{Intelligence}{Vigilance}{8}
-Rolling over means they see that one person stayed the night a couple of days ago (the hay is untouched, and
+\label{missingAxe}
+\act{check Stoatfen~\Gls{bothy}}{Intelligence}{Vigilance}{7}
+Rolling over means understanding that someone stayed the night a couple of days ago;
+the hay is untouched, but the windows are open, and the axe is missing
 \ifnum\thetemperature=0%
-  ash indicating a small fire with one person kneeling in front%
+  but there's plenty of firewood still available.
+  The ash indicating a small fire with one person kneeling in front%
 \else%
-  the chamberpot has been used once%
-\fi).
+  and the chamberpot has been used once%
+\fi.
 Rolling under means time wasted to find nothing.
 
 \paragraph{Up the road}
@@ -79,7 +82,8 @@ These are \glspl{glowshroom}, which can glow in the dark when agitated.%
     mud
   \fi.
   Behind, six \glspl{guard}, all in black, struggle to keep up.
-  The coachman arrives with a writing tablet under his arms, an angry scowl, and an wagon behind him.
+  The wagon stops as his horse pulls back from the sight of the wreckage.
+  He jumps off with a writing tablet under his arms, an angry scowl, and a wagon behind him.
   \begin{speechtext}
       Are you the new \glspl{fodder}?
       Welcome to the \gls{templeOfBeasts}!
@@ -136,7 +140,7 @@ Failure inflicts 3~\glspl{ep}, as wagons become stuck in the
 {What the \Glsfmttext{notary} Saw}% NAME
 {``Two night guards ran away with that chest of gold''}% SUMMARY
 
-\begin{boxtext}[]
+\begin{boxtext}[Who's taking the tinder box?]
   A lightly-armoured wagon rolls down the road (hardened leather surrounds the driver).
   A wide-brimmed hat pops out the side, with sad eyes underneath.
   She looks to the forest with a little fear, then hails \pgls{susjot}.
@@ -153,9 +157,6 @@ Failure inflicts 3~\glspl{ep}, as wagons become stuck in the
 
   That moment, \gls{susjot} asks the \glspl{soldier} to chase after the \glspl{guard} with the chest, and then turns to you.
 
-\end{boxtext}
-
-\begin{boxtext}[Who's taking the tinder box?]
   \Gls{susjot} looks enraged, and orders the \glspl{soldier} to hunt down the `deserters', and bring back the chest.
   Then he turns to you.
 
@@ -201,7 +202,7 @@ Failure inflicts 3~\glspl{ep}, as wagons become stuck in the
 
 \paragraph{\Pgls{woetide} moves on soon after,}
 but the \glspl{pc} can ask her some questions before she becomes too upset, and moves on.
-She states:
+Insensitive questions mean she moves on immediately.
 
 \begin{itemize}
   \item
@@ -223,13 +224,11 @@ She states:
   \textit{\textbf{False}: she ran to Stoatfen~\Gls{bothy} to hide, then hid the chest once the goblins left.}
 \end{itemize}
 
-\iftoggle{intro}{%
-  Insensitive questions will demand a \roll{Charisma}{Empathy} roll at \tn[9], or she leaves.
-}{}
-
 \woetide[Travel straight, never curious]
 
 \stopcontents[segments]
+
+Find the truth behind the chest \vpageref{goldConspiracy}, or just read on.
 
 \end{multicols}
 
