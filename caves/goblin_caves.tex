@@ -28,6 +28,22 @@ Unfortunately, the path also exits onto the side of a cliff, so the troupe canno
 \footnote{If a player insists on attempting this check, you should roll for them, and tell them if they succeed or fail.  The other players will only find out if their characters can climb down later -- they should not know their chances of success by looking at the \gls{natural}.}
 Failure means death.
 
+\boxPair[t]{
+  \smolMapPic{cave_3}{
+    {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
+    {\normalsize\glsfmttext{weight}~25: collapse}/57/75,
+    \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
+    \ref{firstBridge}/49/57,
+    \ref{gentlePassage}/92/05,
+  }
+}{
+  \smolMapPic{cave_4}{
+    {\large\glsfmttext{weight}~30: fall}/71/80,
+    \rotatebox{-90}{\large\glsfmttext{weight}~40: snap!}/20/50,
+    \ref{ropeDown}/42/92,
+  }
+}
+
 \mapentry[firstBridge]{First Bridge}
 
 \playCommentaryAftermath[b]
@@ -61,22 +77,6 @@ His satchel still contains two bees-wax candles which can burn for an hour each,
 \act{gauge a safe route down}{Intelligence}{Caving}{7}
 Once \pgls{pc} explains the hand-holds and where to place the legs, anyone can descend safely.
 Failure means falling, and $1D6$~Damage plus the \gls{pc}'s Strength~Bonus.
-
-\boxPair[t]{
-  \smolMapPic{cave_3}{
-    {\normalsize\roll{Wits}{Caving} (8/ 11)}/17/92,
-    {\normalsize\glsfmttext{weight}~25: collapse}/57/75,
-    \rotatebox{-21}{\normalsize\roll{Intelligence}{Caving} (7)}/71/21,
-    \ref{firstBridge}/49/57,
-    \ref{gentlePassage}/92/05,
-  }
-}{
-  \smolMapPic{cave_4}{
-    {\large\glsfmttext{weight}~30: fall}/71/80,
-    \rotatebox{-90}{\large\glsfmttext{weight}~40: snap!}/20/50,
-    \ref{ropeDown}/42/92,
-  }
-}
 
 \mapentry[ropeDown]{Rope \& Cliff}
 
@@ -296,14 +296,16 @@ Failure inflicts $1D3$ Damage as they crash against jagged rocks on the cliff-fa
 \Glspl{pc} who remain in the water float gently towards a deadly drop.
 They can feel what's coming with a \roll{Wits}{Caving} at \tn[7] (or \tn[10] in the dark, which they probably will be, if floating down river).
 
+\playCommentaryTeamwork[t]
+
 \paragraph{On a tie,}
 the character falls a short way onto a large rock.
 Climbing back requires a \roll{Speed}{Athletics} roll (\tn[10]).
 
+\bigbreak
+
 \wayOut{Falling inflicts $\dmg{14}$~Damage, plus the character's Strength \gls{attribute}, then on to}{blindFish}
 \wayOut{Turning back can only lead towards}{waterMaze}
-
-\playCommentaryTeamwork[t]
 
 \mapentry[waterMaze]{Drowned Pass}
 
