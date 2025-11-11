@@ -181,9 +181,14 @@ Failure means gnomes, dwarves, and anyone who rests will accrue invisible \glspl
 Soon after the \glsentrylongpl{ep} begin, the character dies, suddenly, and quietly.
 Then anyone kneeling down to inspect them dies too.
 
-\paragraph{After a mile,}
-the passage ascends.
-Various twists mean it continues longer than its neighbouring tunnel, making it 2 miles long.
+\wayOut{After 2 miles, the tunnel meets}{waterMaze}
+
+Before the troupe exit, they hear
+\ifnum\thetemperature>2%
+  the gentle noise of the river, and
+\fi%
+`\textit{splt-splt-splt-SPLOOSH}'
+as the goblin guarding \nameref{wormTunnel} flees into \nameref{waterMaze}.
 
 \playCommentaryPuddle[t]
 
@@ -227,7 +232,7 @@ At this point, a goblin lying in wait attacks with an automatic \gls{vitalShot}.
 \ifnum\value{temperature}=3%
   The only clue about the danger, is the gentle sound of the nearby river.
 \fi%
-Hearing a motionless goblin is extremely unlikely, but you might ask for a \roll{Wits}{Vigilance} roll at \tn[16] from the character in the lead, if they have any chance of succeeding at the roll.
+Hearing a motionless goblin is extremely unlikely, but you might ask for a \roll{Wits}{Vigilance} roll at \tn[14] from the character in the lead, if they have any chance of succeeding at the roll.
 
 \wayOut{The goblin stands in the open, next to}{waterMaze}
 
