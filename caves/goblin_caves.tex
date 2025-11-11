@@ -256,7 +256,6 @@ Failure means the roof starts collapsing as they irritate the walls by stomping 
 On a tie, the roof caves in, but the \gls{tn} begins at 1.
 
 \wayOut{If the troupe return before the cave-in, they can go back to}{firstBridge}
-
 \wayOut{The passage soon becomes more stable, and half a mile later, emerges at}{cliffDive}
 
 \mapentry[cliffDive]{Cliff Dive}
@@ -329,7 +328,7 @@ Their \glspl{ration} almost certainly do not have waterproof coverings, nor do t
 The \glspl{torch}, however, still light fine, even while soaking.
 
 \paragraph{Once out of the water and rested,}
-the character can remove all \glspl{ep} from holding their breath in the water, but not the \gls{ep} gained for swimming\ifnum\value{temperature}=2\else, or the \glspl{ep} for entering freezing waters\fi.
+the character can remove all \glspl{ep} from holding their breath in the water, but not the \gls{ep} gained for swimming\ifnum\value{temperature}<2\else, or the \glspl{ep} for entering freezing waters\fi.
 
 \wayOut{Once out the other side, the troupe have entered}{hungryHall}
 
@@ -381,6 +380,8 @@ The troupe can only use \pgls{bandAct} if they split up.
 \wayOut{One passage out smells like farts, and leads to}{gas}
 \wayOut{Another, smaller, tunnel leads down to}{darkTunnel}
 
+\null
+
 \mapentry[gas]{Fire Cavern}
 
 \begin{boxtext}[]
@@ -404,7 +405,7 @@ Failure means that anyone holding \pgls{torch} ignites the gas, and everyone in 
 \end{boxtext}
 
 The goblins wait quietly, ready to light a fire with all their \fireFuel, once the troupe descend.
-Once the smoke billows, the goblins \gls{retreat} across \gls{area}~\ref{blindFish}
+Once the smoke billows, the goblins \gls{retreat} across \gls{area}~\ref{blindFish}.
 
 \paragraph{If the \glspl{pc} have been creeping quietly,}
 call for \pgls{resistedaction}: \roll{Dexterity}{Stealth}, against the goblins' \roll{Wits}{Vigilance}.
@@ -449,7 +450,6 @@ However, when the \glspl{pc} arrive, he still thinks he's hallucinating.
 \end{boxtext}
 
 \act{reassure \scaredFodder\ they're real}{Intelligence}{Empathy}{10}
-
 If anyone approaches without reassuring him, he attacks.
 If nobody manages to show they're real, he follows the troupe from a safe distance.
 
