@@ -32,6 +32,19 @@
   {\acidSpray \viscid \hide{10}}% ABILITIES
 }
 
+\newcommand\politeSpell{
+  \spell{Polite Request}% Name
+    {Detailed, Duplicated}% Enhancements
+    {Warp}% Action
+    {Fate, Water}% Spheres
+    {\roll{Wits}{Academics}}% Resist with
+    {The caster praises the targets' excellent manners, and they become enamoured with their own politeness.
+    Any deviation from proper etiquette inflicts a \arabic{spellPlusOne}~Penalty to all Mind \glspl{attribute} for \pgls{interval}, and each breach adds another}% Description
+    {Breaches of etiquette include swearing, defending oneself without formally accepting the `duel', suggestions of bigotry, correcting others, and expressions of disappointment of any kind.
+
+    The \gls{spell} does not pick up on sarcasm.}
+}
+
 
 \newcommand{\enchantedGoblin}[1][\npc{\T[\arabic{r4t6}]\N}{\arabic{noAppearing} Goblins}]{
   \Person{#1}%
