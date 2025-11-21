@@ -311,8 +311,6 @@ Over the fire, a massive pot simmers with eternal soup.
 \Gls{chef}~Carnpox adds ingredients, people drink, he adds some more.
 It changes a little bit every day.
 
-The next room has straw for sleeping, barrels of brandy, and a door to Granny Carnpox' room, where she sleeps with her cats.
-This end-room has a barred exit-door.
 
 \def\name{}
 \act[Characters entering]{move through the kitchen}{Dexterity}{Athletics}{\roll[total items \glsentrytext{weight}]{Strength}{4}}
@@ -321,7 +319,7 @@ This end-room has a barred exit-door.
 Every movement deserves a claustrophobic description, and every second person entering the room adds +1 to the \gls{tn}.
 Failure will knock something off a shelf (roll $1D6$ for the item and Damage).
 
-The shelves above chef Gorflake hold bags and pots with
+The shelves above chef Gorflake hold
 \dicef{1} flour,
 \dicef{2} rice,
 \dicef{3} oils,
@@ -329,6 +327,7 @@ The shelves above chef Gorflake hold bags and pots with
 \dicef{5} lye,
 and
 \dicef{6} pots.
+
 The shelves at the other side of the room hold
 \dicef{1} ink-dye suppositories for Nettlepike's pen-arms,
 \dicef{2} three jars of dried \gls{basilisk} skin,
@@ -337,6 +336,32 @@ The shelves at the other side of the room hold
 \dicef{5} pans,
 and
 \dicef{6} knives.
+
+\paragraph{The next room}
+has straw for sleeping, barrels of brandy, and a door to\ldots
+
+\paragraph{Granny Carnpox' room}
+has a comfy bed where she sleeps with her cats (\vpageref{grannyCats}), and her book of \glspl{spell} on a table.
+
+\artefact[2]{Granny's Book}% Name
+  {Sturdy sheep-skin book}% Body
+  {2}% Intelligence
+  {1}% Wits
+  {1}% Charisma
+  {Keep the cottage stable}% Mission
+  {Preservation}% Base Spell
+  {
+    \setcounter{Fate}{3}
+    \setcounter{Water}{3}
+    \setcounter{Cultivation}{1}
+    \setcounter{Academics}{1}
+  }% Spheres
+
+\noindent
+Granny made her spell book \pgls{artefact}, so if anyone steals it, it tries to return.
+If it has 3~\glspl{mp} or more, then it casts a random \gls{spell} whenever someone opens it.
+
+A barred exit door leads outside.
 
 \subsubsection{At Sundown}
 everyone arrives to eat the soup.
@@ -372,11 +397,7 @@ These are Granny's `special little boys', modified with \glspl{spell} to grow bi
   {Water \glsentrytext{boon}}% EQUIPMENT
   {}% ABILITIES
 
-\showStdSpells[%
-  \stepcounter{Water}
-]
-
-\morphcat[\npc{\T[2]\A\R}{Cats: Gorgeous \& Rainfall}]
+\morphcat[\npc{\T[2]\A\R}{Cats: Gorgeous \& Rainfall}\label{grannyCats}]
 
 \paragraph{To finish the soup}
 the troupe must overeat, gaining 6~\glspl{ep} in total, rolling \roll{Strength}{Athletics} at \tn[8] plus the number of \glspl{ep} taken.
