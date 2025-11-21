@@ -1,0 +1,55 @@
+\documentclass[10pt,twoside]{book}
+
+\usepackage{config/bind}
+\usepackage{config/booklet}
+\setcounter{bookLevel}{2}
+\setcounter{diceNo}{0}
+
+\renewcommand*{\thefootnote}{\dicef{\value{footnote}}}
+
+\begin{document}
+
+\miniCover{Carnpox'}%
+  {
+  \vfill
+  \it Hands off!}%
+
+\begin{speechtext}
+  \Large
+  Misery awaits those who pilfer pages.
+\end{speechtext}
+
+\pagebreak
+
+\pagestyle{minizine}
+
+\input{config/spells/Fate1.tex}%
+  \input{config/spells/Fate2.tex}%
+\input{config/spells/Fate2.tex}%
+  \stepcounter{footnote}\footnotetext{\textit{Mass Curse}}
+  \input{config/spells/Fate1.tex}%
+  \stepcounter{footnote}\footnotetext{\textit{Curse}}
+\input{config/spells/Mind3.tex}%
+  \stepcounter{footnote}\footnotetext{\textit{Mind's Chatter}: Everyone knows granny will pay 10~\glspl{gp} for her spell book back.}
+  \input{config/spells/Water1.tex}%
+\input{config/spells/Water2.tex}%
+  \input{config/spells/Life2.tex}%
+\input{config/spells/Water4.tex}%
+  \stepcounter{footnote}\footnotetext{\textit{Diorama Flood}}
+  \input{config/spells/Fate4.tex}%
+\input{config/spells/Earth1.tex}%
+  \input{config/spells/Water3.tex}%
+\input{config/spells/Mind2.tex}%
+  \stepcounter{footnote}\footnotetext{\textit{Oath}: what were you saying?}
+  \input{config/spells/Mind2.tex}%
+  \stepcounter{footnote}\footnotetext{\textit{Chaos}.}
+\input{config/spells/Earth2.tex}%
+  \input{config/spells/Earth2.tex}%
+
+
+\foreach \x in {2,3,4,5,6,7,8,9,10,11,12,13}{%
+  \ifnum\thepage<14\clearpage\null\fi
+}
+
+
+\end{document}
