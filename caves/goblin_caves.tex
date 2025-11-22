@@ -504,8 +504,6 @@ Any player without \pgls{pc} can use \scaredFodder.
 
 \wayOut{The only exit is blocked by}{umberHulk}
 
-\playCommentaryRestI
-
 \mapentry[umberHulk]{\Glsfmttext{hulk}}
 
 \ifnum\value{temperature}=0%
@@ -537,6 +535,9 @@ Any player without \pgls{pc} can use \scaredFodder.
 
 The \gls{hulk} cannot fit through the passage to the \stateArea{darkTunnel}, so the \glspl{pc} can stay safely away from it once they know it exists, but will have a hard time getting past it until the goblins arrive.
 
+\set{r2}{2}
+\umberhulk
+
 \ifnum\value{temperature}=0\else
   \paragraph{Throwing stones past the \gls{hulk}}
   will make it leave the cave and search for the cause of the noise, because \glspl{hulk} are stupid, and always move towards any noises.
@@ -550,8 +551,7 @@ Soon after, the \gls{hulk} attacks, and the goblins flee cross the river in the 
   The \gls{hulk} will stop at the unsteady bridge, but might be coaxed across with the right carrot and stick.
 }{}
 
-\set{r2}{2}
-\umberhulk
+\playCommentaryTorches[t]
 
 \mapentry[blindFish]{Blind Fish Rapids}
 
