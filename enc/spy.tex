@@ -26,6 +26,8 @@ Maps by Dyson Logos (CC-BY-SA 4.0)
 {Weaver's Warnings}% NAME
 {\Pgls{woetide} travels to confront Greetfall about his debt}% SUMMARY
 
+\woetide
+
 \Gls{woetide} travels with a crew of traders
 %(selling ropes and \glspl{ration})
 to settle a dispute between the \Gls{tender}~Greetfall and \gls{proctor}~Shrewlame.
@@ -39,12 +41,45 @@ to settle a dispute between the \Gls{tender}~Greetfall and \gls{proctor}~Shrewla
 {Ripe Tales}% NAME
 {\Gls{tender} Greetfall is missing, his faceless corpse is lodged down the chimney}% SUMMARY
 
-Stoopcraw and Gaulbloat are a pair of little shits, barely seventeen years old.
-They love archery, but hate all other work.
-So when they shot \pgls{woodspy}, they sold it as the nearest \gls{lonelyTavern} for 12~\glspl{sp} and started drinking.
+\begin{exampletext}
+\Gls{tender} Greetfall works as a fence, selling the bodies of \glspl{monster}, without paying the usual 50\% tax to the \gls{templeOfBeasts}.
 
-Soon after, the tavern's \gls{tender} died.
-It happened like this:
+\sideMap{Dyson_Logos/lonely_tavern_stable_1}%
+  {%
+    \rotatebox{90}{Horse feed}/85/50,%
+    \ref{lt:ingStore}/15/75,
+  }%
+{Above the stables.\par}
+Stoopcraw and Gaulbloat are a pair of little shits, barely seventeen years old.
+%They love archery, but hate all other work.
+Yesterday they shot \pgls{woodspy}, then decided to drag the corpse at Greetfall's \gls{lonelyTavern}.
+
+\sideMap[4]{Dyson_Logos/lonely_tavern_2_b}%
+{%
+  \ref{lt:chimney}/20/50,
+  \ref{lt:guestFire}/38/50,
+  \ref{lt:cutting}/38/82,
+  \ref{lt:server}/76/82,
+  \ref{lt:tenderRoom}/42/22,
+  \Large\ref{lt:singer}/07/05,
+}%
+{}
+%{Creaking stairs and smell of copper.}
+
+The young archers took it up the stairs, took their 8~\glspl{sp} payment, and started drinking.
+However, the \gls{woodspy} was not dead, just
+\ifcase\thetemperature%
+  lethargic from the cold.
+\else%
+  stunned and playing dead.
+\fi%
+Once Stoopcraw and Gaulbloat ran downstairs to drink, the \gls{woodspy} latched onto Greetfall's head, and chewed through the front of his skull.
+
+The floor is covered in blood.
+Two candles still burn, but his corpse has gone.
+
+Guests continue to arrive, but remain unserved.
+\end{exampletext}
 
 \mapPic[\large]{t}{Dyson_Logos/lonely_tavern_0}{
   Vegetable Garden/24/98,
@@ -61,24 +96,12 @@ It happened like this:
 
 \begin{enumerate}\itemsep0em
   \item
-  Greetfall hid his illegal \glspl{ingredient} above the stables, where traders can pick them up easily, and without him technically handing them anything.
+  Above the stables, a locked room has two \gls{crawler} spinnerets and three \gls{woodspy} beaks encased in small barrels of alegar (worth around 10~\glspl{sp})
+  The door's complex string-mechanism can be opened without a trace with an \roll{Intelligence}{Larceny} roll at \tn[9].
+  Or someone can just cut the mechanism with a thin knife.
   \label{lt:ingStore}
-  If anyone had asked why he didn't pay the \gls{templeOfBeasts} 50\% of the sale as tax, he would have explained that he had in fact been robbed\ldots by someone who also left a ridiculously generous tip.
-\end{enumerate}
-
-\sideMap[5]{Dyson_Logos/lonely_tavern_stable_1}%
-  {%
-    \rotatebox{90}{Horse feed}/85/50,%
-    \ref{lt:ingStore}/15/75,
-  }%
-{Above the stables.\par}
-Currently, the room has two \gls{crawler} spinnerets and three \gls{woodspy} beaks encased in small barrels of alegar.
-The door's complex string-mechanism can be opened without a trace with an \roll{Intelligence}{Larceny} roll at \tn[9].
-Or someone can just cut the mechanism with a thin knife.
-
-\begin{enumerate}\itemsep0em\stepcounter{enumi}
   \item
-  Greetfall has managed to save up \lootBig, which he keeps hidden under the floorboards in his room (find it with \roll{Intelligence}{Empathy} at \tn[10]).
+  Greetfall keeps his savings hidden under the floorboards in his room (\roll{Intelligence}{Empathy} at \tn[10] to find a bag with \lootBig).
   \label{lt:tenderRoom}
   \item
   \Gls{server}~Gobvore sleeps next to the \gls{harvesting} room (\vref{lt:cutting}), but insists on knowing nothing about it.
@@ -92,26 +115,6 @@ Or someone can just cut the mechanism with a thin knife.
   After Stoopcraw and Gaulbloat sold the \gls{woodspy} corpse to Greetfall, they helped him carry it up to the \gls{harvesting} room, then left to drink as Greetfall gathered his candles and knives.
   \setcounter{diceNo}{\value{enumi}}
 \end{enumerate}
-
-\begin{exampletext}
-\sideMap[4]{Dyson_Logos/lonely_tavern_2_b}%
-{%
-  \ref{lt:chimney}/20/50,
-  \ref{lt:guestFire}/38/50,
-  \ref{lt:cutting}/38/82,
-  \ref{lt:server}/76/82,
-  \ref{lt:tenderRoom}/42/22,
-  \Large\ref{lt:singer}/07/05,
-}%
-{}
-%{Creaking stairs and smell of copper.}
-
-However, the \gls{woodspy} was not dead, merely wounded, then dazed.
-Once Stoopcraw and Gaulbloat ran downstairs to drink, the \gls{woodspy} latched onto Greetfall's head, and chewed through the front of his skull.
-
-The entire floor is covered in blood.
-Two candles still burn, but the corpse has gone.
-\end{exampletext}
 
 \mapPic[\large]{t}{Dyson_Logos/lonely_tavern_1}{
   To ground/60/05,
@@ -229,8 +232,6 @@ If players want to abstract this with a roll, they can roll \roll{Intelligence}{
 \Pgls{bandAct} requires splitting up.
 At \tn[6] they find the pool of blood in room~\vref{lt:cutting}, at 10 they find the corpse in the chimney,
 and at 12 they find the \gls{woodspy} in room~\vref{lt:woodspy}, inside a chest.
-
-\woetide
 
 \humansoldier[\NPC{\glsentrysymbol{wrecan}\M\Hu}%
 {\Glsentrytext{proctor}~Shrewlame}%
