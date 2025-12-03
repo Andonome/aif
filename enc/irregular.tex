@@ -282,12 +282,16 @@ Roll to find the contents of each island:
 
 
 \randomize
+\newif\ifSporeSpells
+\SporeSpellstrue
 
 \sporeFolk
 
 \ifnum\value{Charisma}>0
-  {\small\showStdSpells[\stepcounter{enc}]}
-  \stepcounter{age}%
+  \ifSporeSpells
+    {\small\showStdSpells[\stepcounter{enc}]}
+    \SporeSpellsfalse
+  \fi
 \fi
 
 \noindent
@@ -299,7 +303,7 @@ They view the \glspl{pc} with suspicion, but may be helpful if \pgls{pc} does no
 \sporeFolk
 
 \ifnum\value{Charisma}>0
-  \ifnum\theage>0%
+  \ifSporeSpells%
     {\small\showStdSpells[\stepcounter{enc}]}
   \fi%
 \fi
