@@ -1,0 +1,23 @@
+\filledCS%
+  {\currentName}% NAME
+  {Human}% RACE
+  {Earnest Watchman}% CONCEPT
+  {Paladin}% CODE
+  {{1}{1}{0}}% BODY
+  {{0}{2}{0}}% MIND
+  {%
+    \renewcommand\rank{Fodder}
+    \renewcommand\characterDebt{100 \glspl{sp}}
+    \setcounter{Vigilance}{2}
+    \setcounter{Performance}{1}
+    \setcounter{Seafaring}{1}
+    \setcounter{Medicine}{1}
+    \setcounter{Cultivation}{1}
+    \setcounter{Projectiles}{1}
+    \addtocounter{equipmentWeight}{2}
+    \Dagger
+  }% SKILLS
+  {\fasthealer}% KNACKS
+  {longbow {\footnotesize(\roll{Dexterity}{Projectiles} vs \roll{Speed}{Vigilance} for \dmg{Strength} Damage)}, quarrel with 12 arrows}% EQUIPMENT
+
+
