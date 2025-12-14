@@ -56,6 +56,8 @@
   ``\textit{All the same\ldots we'd best ask \marketFence\ to summon the \gls{guard}.}''
 \end{exampletext}
 
+\vspace{-\baselineskip}
+
 \segment[\gls{night}]{broch}% AREA
 {Easy Job}% NAME
 {\Pgls{jotter} needs the troupe to kill \pgls{basilisk}}% SUMMARY
@@ -100,8 +102,8 @@ They take their barrels and boxes out the wagons, and place them underneath, to 
 They have no \glspl{guard} with them, so once they see the \glspl{pc} they begin asking a thousand questions, and speaking in a friendly manner, hoping the \glspl{pc} will stay outside and watch their animals overnight.
 
 \composeHumanName\ offers a free meal of \rations\ to each \gls{pc}.
-\composeHumanName\ refuses to sell them \glspl{torch} until morning.%
-\footnote{Any noise or light has a $\frac{1}{\dicef{6}}$ chance of summoning \pgls{monster}.}
+\composeHumanName\ refuses to sell them \glspl{torch} until morning
+(noise or light has a $\frac{1}{\dicef{6}}$ chance of summoning \pgls{monster}).
 
 \currentName\ mourns her old dwarf-friend --- Ben --- who protected her and her caravan five days ago, just outside the \gls{village}.
 He ran into the forest, shouting something about `wyrm-sign', and nobody heard of him since.
@@ -180,8 +182,9 @@ Then the growls begin, deep and full of anguish.
 
 Find the cave \vpageref{caveMouth}.
 
+\setTN{Charisma}{Fire}
 \paragraph{Any rude speech}
-results in a single, flaming, belch.
+results in a single, flaming, belch (dodge at \tn, or take \dmg{-1}).
 
 \setcounter{diceNo}{1}
 \showStdSpells[\stepcounter{enc}]
@@ -317,14 +320,14 @@ They must murder, or face the dragon.
 
 \showTalisman
 
-\ifnum\thepage<14
-  \sporeFolk
-\fi
-
 \paragraph{Ascending}
 presents a new challenge: the other cave-mouths, with their own rivers present alternative routes.
 If the troupe did not mark the correct route, they will have to try to figure out which way they came down with an \roll{Intelligence}{Caving} roll at \tn[10].
 Each Failure Margin means they are lost for another \gls{interval}.
+
+\ifnum\thepage<14
+  \sporeFolk
+\fi
 
 \paragraph{If the \glspl{pc} retreive the fungus,}
 the dragon takes a concave stone to simmer water, creates a delicate fire underneath, and chews nearby herbs.
