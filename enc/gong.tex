@@ -19,7 +19,11 @@
 \miniCover{Gong Bandits}{
   \par
   \begin{tikzpicture}
-      \coordinate (start) at (-0.7,-0.7);
+      \coordinate (start) at (-0.9,-0.9);
+      \coordinate (tofirst) at (-0.3,0.7);
+      \coordinate (tosecond) at (1.0,2.5);
+      \coordinate (tomountains) at (3.5,3.0);
+      \coordinate (tobailey) at (3.0,4.5);
       \coordinate (fork) at (0,0.3);
       \coordinate (broch) at (0.7,0);
       \coordinate (bothy1) at (0.1,2);
@@ -34,6 +38,10 @@
       \foreach \x in {0,...,2}{
         \draw (-1+\x*2,3) -- ++(1,1) -- ++ (1,-1);
       }
+      \node at (tofirst) {\rotatebox{82}{6 miles}} ;
+      \node at (tosecond) {\rotatebox{7}{6 miles}} ;
+      \node at (tomountains) {\rotatebox{57}{7 miles}} ;
+      \node at (tobailey) {\rotatebox{-12}{7 miles}} ;
       \draw [gray, dashed] (fork) -- (broch) ;
       \draw [gray, dashed] (start) -- (fork) -- (bothy1) -- (bothy2) -- (mid) -- (bandits) -- (bailey) -- (out) ;
       \draw [gray, dashed] (bailey) -- (broch2) -- (westroad) ;
