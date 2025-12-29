@@ -58,3 +58,14 @@ Spd/ Cha: 0
 
 The lord of dreams is one thing, and he stands in the distance.
 
+# Into the Dream
+
+People can move into each others' dreams
+(ask each player what the next dreams of).
+The solution lies in moving into the monster's dreams.
+
+- Fights with Wishmaster.
+- First humans landing in area.
+- Children leaving home.
+- Out of the tower.
+
