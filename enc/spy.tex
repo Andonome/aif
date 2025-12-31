@@ -44,7 +44,7 @@ to settle a dispute between the \Gls{tender}~Greetfall and \gls{proctor}~Shrewla
 \begin{exampletext}
 \Gls{tender} Greetfall works as a fence, selling the bodies of \glspl{monster}, without paying the usual 50\% tax to the \gls{templeOfBeasts}.
 
-\sideMap{Dyson_Logos/lonely_tavern_stable_1}%
+\sideMap[34]{Dyson_Logos/lonely_tavern_stable_1}%
   {%
     \rotatebox{90}{Horse feed}/85/50,%
     \ref{lt:ingStore}/15/75,
@@ -55,7 +55,7 @@ Stoopcraw and Gaulbloat are a pair of little shits, barely seventeen years old.
 %They love archery, but hate all other work.
 Yesterday they shot \pgls{woodspy}, then decided to drag the corpse at Greetfall's \gls{lonelyTavern}.
 
-\sideMap[4]{Dyson_Logos/lonely_tavern_2_b}%
+\sideMap[34]{Dyson_Logos/lonely_tavern_2_b}%
 {%
   \ref{lt:chimney}/20/50,
   \ref{lt:guestFire}/38/50,
@@ -125,10 +125,6 @@ Guests continue to arrive, but remain unserved.
   \item
   \ldots and hid inside a chest, pulling a blanket over itself before camouflaging its skin to match the texture and colour of the linens.
   \label{lt:woodspy}
-  \item
-  \Gls{proctor} Shrewlame has arrived to settle how much Greetfall owes to the \gls{templeOfHate}.
-  \label{lt:proctor}
-  He and three other \glspl{armourer} took a single room, and waited for \gls{woetide} to arrive.
   \setcounter{diceNo}{\value{enumi}}
 \end{enumerate}
 
@@ -143,13 +139,14 @@ Guests continue to arrive, but remain unserved.
   \ref{lt:guard}/20/30,
 }%{Parlour and \glsentrytext{guard} rooms}
 
+
 \begin{boxtext}
   A tuneless song assaults your ears, theorizing about how \glspl{woodspy} mate.
   The singer stands on \pgls{lonelyTavern}'s
   \ifnum\thetemperature=1 snowy \fi
   roof.
   As the rest of the building comes into view, it shows more wall, but not a single window in either building.
-  \end{boxtext}
+\end{boxtext}
 
 Once the troupe arrive, they find an overworked \gls{server}, but no proprietor.
 Everyone starts shouting at \gls{server}~Gobvore to get some some ale, but she can't keep up while working alone.
@@ -168,6 +165,10 @@ Everyone starts shouting at \gls{server}~Gobvore to get some some ale, but she c
   \toggletrue{allyCharacter}]
 
 \begin{enumerate}\itemsep0em\setcounter{enumi}{\value{diceNo}}
+  \item
+  \Gls{proctor} Shrewlame has arrived to settle how much Greetfall owes to the \gls{templeOfHate}.
+  \label{lt:proctor}
+  He and three other \glspl{armourer} took a single room, and waited for \gls{woetide} to arrive.
   \item
   The fire has a cauldron overhead, but it has nasty chunks of black soot inside, dislodged from when the \gls{woodspy} clamoured down the chimney.
   \label{lt:fire}
@@ -216,26 +217,25 @@ Everyone starts shouting at \gls{server}~Gobvore to get some some ale, but she c
   \ref{lt:dwarf}/08/87,
 }
 
-\subsubsection{Gobvore}
+\paragraph{Gobvore}
 can lead the \glspl{pc} to their quarters (room~\ref{lt:guard} \vpageref{Dyson_Logos/lonely_tavern_2_a}, shown \vpageref{Dyson_Logos/lonely_tavern_1}), before she finds the soup is burning in the cauldron.
 The patrons complain bitterly about the black lumps in the soup (point~\vref{lt:fire}).
 
-\subsubsection{Gaulbloat}
-tells everyone in the tavern how much he's drunk, but he keeps losing count half-way through the `story'.
-He has no intention of giving the \gls{templeOfBeasts} their 50\% cut of the money from selling the \gls{woodspy} corpse.
-If \pgls{pc} pushes the matter, he argues, tells them to `take it up with \Gls{tender} Greetfall', threatens to kill them, vomits on them, then falls over.
-
-\subsubsection{Upstairs}
-the parlour slowly fills with smoke, as Greetfall's corpse has blocked the chimney (point~\vref{lt:parlour}).
-The \glspl{pc} may find the problem and pull him down, or if they enter room~\vref{lt:guestFire} and notice his feet sticking out of the fireplace.
-Or they may notice nothing, since every room in the \gls{lonelyTavern} lies in shadow, and the little tallow candles people wander with give just enough light to see your own feet.
-
-\sideMap[35]{Dyson_Logos/lonely_tavern_2_a}%
+\sideMap[34]{Dyson_Logos/lonely_tavern_2_a}%
 {%
   \ref{lt:guard}/25/70,
   \ref{lt:guard}/77/70,
 }%
 {}
+\paragraph{Gaulbloat}
+tells everyone in the tavern how much he's drunk, but he keeps losing count half-way through the `story'.
+He has no intention of giving the \gls{templeOfBeasts} their 50\% cut of the money from selling the \gls{woodspy} corpse.
+If \pgls{pc} pushes the matter, he argues, tells them to `take it up with \Gls{tender} Greetfall', threatens to kill them, vomits on them, then falls over.
+
+\paragraph{Upstairs}
+the parlour slowly fills with smoke, as Greetfall's corpse has blocked the chimney (point~\vref{lt:parlour}).
+The \glspl{pc} may find the problem and pull him down, or if they enter room~\vref{lt:guestFire} and notice his feet sticking out of the fireplace.
+Or they may notice nothing, since every room in the \gls{lonelyTavern} lies in shadow, and the little tallow candles people wander with give just enough light to see your own feet.
 
 Noticing the charcoal marks around the parlour, or the feint blood-spatters leading into room~\vref{lt:guestFire}, should not be assumed.
 The \gls{gm} must provide a clear image of the darkness, and the few things the \glspl{pc} \emph{can} see, and the players should ask for details.
@@ -274,9 +274,7 @@ Soon after, the \glspl{npc} retire, then sleep.
 {The first is a human, the next \pgls{monster}}% SUMMARY
 
 Once the tavern dies down, and everyone sleeps, \gls{woetide} goes down the creaking stairs to the latrines outside.
-Anyone on \pgls{vigil} hears her footsteps.
-
-\act{identify the feet}{Intelligence}{Empathy}{9}
+Anyone on \pgls{vigil} hears her footsteps (characters with \roll{Wits}{Empathy} 2 or more recognize them).
 
 \setcounter{wounds}{3}
 \woodspy
@@ -288,6 +286,13 @@ If nobody woke Gaulbloat, the \gls{woodspy} eats him, leaving a pool of blood, t
 Meanwhile, the \gls{lonelyTavern} fills with accusations and theories.
 Shrewlame tries to search for any valuables he can soon after, to ``take back what's owed him''.
 \Gls{woetide} wants to get statements from everyone, and tells Shrewlame he can't take the money he's owed from a dead man.
+
+\newif\ifgotspace
+\ifnum\thepage<14
+  \gotspacetrue
+\else
+  \gotspacefalse
+\fi
 
 \segment[\gls{night}]{lonelyTavern}% AREA
 {The Sound of Horses}% NAME
@@ -304,14 +309,17 @@ Shrewlame has decided to take the money owed to him, so he's examining everythin
 He finds the secret stash of \glspl{ingredient}, but not the money.
 If anyone else finds the money, he demands it.
 
-\segment[\gls{morning}]{lonelyTavern}% AREA
-{Well Again}% NAME
-{After a little time healing, the \gls{woodspy} has returned}% SUMMARY
+\ifgotspace
+  \segment[\gls{morning}]{lonelyTavern}% AREA
+  {Well Again}% NAME
+  {After a little time healing, the \gls{woodspy} has returned}% SUMMARY
 
-The \gls{woodspy} crawls a little up the well, grabs Gobvore, and retreats back down, leaving no clue except the fact that the bucket is missing.
+  The \gls{woodspy} crawls a little up the well, grabs Gobvore, and retreats back down, leaving no clue except the fact that the bucket is missing.
 
-Soon after, the \gls{lonelyTavern} gets a new \gls{tender}, who buys a lot of guard dogs, and the \gls{woodspy} eats all of them.
-This cycle continues until someone finds and kills the \gls{woodspy}.
+  Soon after, the \gls{lonelyTavern} gets a new \gls{tender}, who buys a lot of guard dogs, and the \gls{woodspy} eats all of them.
+  This cycle continues until someone finds and kills the \gls{woodspy}.
+
+\fi
 
 \ifnum\thepage<14
   \null\pagebreak\null
