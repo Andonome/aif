@@ -159,14 +159,28 @@ He pays the full 50\% tax to the \gls{templeOfBeasts} every time he kills \pgls{
   He asks you to help him carry it to \brochOne, just a mile out of your way.
 \end{boxtext}
 
-\humansoldier[%
+\Person{%
 \NPC{\M\Hu\glsentrysymbol{sylf}}{\Glsfmttext{soldier}~Perspic}%
   {clean-shaven, braided hair}% DESCRIPTION
   {hands on hips}% MANNERISM
   {to make you do the right thing}% WANTS
   \npcQuote{If nobody pays into the system, new \glsfmtplural{guard} won't get weapons, and the whole system falls apart}%
-  \renewcommand\rations{6 days' hard biscuit rations}
-  ]
+  }%
+  {{2}{2}{0}}% BODY
+  {{-1}{0}{-1}}% MIND
+  {
+      \set{Academics}{1}
+      \set{Athletics}{1}
+      \set{Survival}{1}
+      \set{Vigilance}{1}
+      \set{Melee}{1}
+      \partialchain
+      \addtocounter{fp}{5}
+      \glaive
+  }% SKILLS
+  {}% KNACKS
+  {6 days' hard biscuit rations}% EQUIPMENT
+  {}% ABILITIES
 
 \paragraph{Once Perspic delivers the \gls{woodspy},}
 the \gls{broch}'s \gls{jotter} tells him to join the \glspl{pc}, as they `might need help'.
