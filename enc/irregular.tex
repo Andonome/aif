@@ -32,42 +32,39 @@
 
 \pagestyle{minizine}%
 
-\begin{exampletext}
-  Fifteen farmers carry spears past the \gls{edge}.
-  Great claws have torn
-  \ifnum\thetemperature=0%
-    the frozen earth apart.
-  \else%
-  up the ground and scarred the trees.
-  \fi%
-  Not far away, a deep roar, and a screech, like a newborn thundercloud, squealing;
-  then a stench so bad the farmers buckle, and boke.
-  \marketBoatman\ cries ``\textit{\gls{basilisk}, scarper!}''.
-  So they scarper.
-
-  Back at the \gls{village}, huddled by a cauldron of soup, the farmers discuss the noises.
-
-  ``\textit{\ifnum\thetemperature=0
-    \Glsfmtplural{basilisk} hibernate throughout \gls{cTwo}.
-  \else%
-    \Glsfmtplural{basilisk} have no voice.
-  \fi%
-  I don't know what that was}'', says \marketBoatman.
-  ``\textit{All the same\ldots we'd best ask \marketFence\ to summon the \gls{guard}.}''
-\end{exampletext}
-
-\vspace{-\baselineskip}
+%\begin{exampletext}
+%  Not far away, a deep roar, and a screech, like a newborn thundercloud, squealing;
+%\end{exampletext}
 
 \segment[\gls{night}]{broch}% AREA
 {Easy Job}% NAME
 {\Pgls{jotter} needs the troupe to kill \pgls{basilisk}}% SUMMARY
 
-Trader \marketFence\ arrives at the \gls{broch} that night, and requests aid
-from \gls{jotter}~Filchvore, who congratulates the troupe on their mission, and
-mentions that \gls{basilisk} bodies can fetch a good price, then reminds them
-that half of the sale goes to the \gls{templeOfBeasts}.
+\begin{boxtext}
+  A two-horse cart shuffles along the road, towards your \gls{broch}.
+  The driver waves silently, beckoning you to walk down hill and speak.
+\end{boxtext}
 
+Trader \marketFence\ tugs the stress from his long, black beard, and explains that the \gls{village} up the road has smelled \pgls{basilisk} last night, and need \gls{guard} urgently.
+
+\Gls{jotter}~Filchvore refuses to let the \glspl{pc} leave until \marketFence\ drops the dwarf-bomb:
+
+\begin{quotation}
+    That's fine then.
+    I guess the fancy-axe dwarf can take the beast.
+    He said he was a monster-hunter.
+\end{quotation}
+
+At this, \Gls{jotter}~Filchvore goes red with fury, shouting that any sale on \glspl{basilisk} hides, \glspl{crawler} webs, or the like, must be approved by the \gls{templeOfBeasts}.
+
+\begin{quotation}
+    Get out there and find out if that dwarf has been selling hides without giving the temple its due.
+    And kill that \gls{basilisk} while you're at it.
+\end{quotation}
+
+\noindent
 The \gls{village} in question is fifteen miles down the road, so the \glspl{pc} should leave at dawn.
+Find the \gls{village}'s name and details in a market handout.
 
 \iftoggle{intro}{
   %!
@@ -328,6 +325,12 @@ presents a new challenge: the other cave-mouths, with their own rivers present a
 If the troupe did not mark the correct route, they will have to try to figure out which way they came down with an \roll{Intelligence}{Caving} roll at \tn[10].
 Each Failure Margin means they are lost for another \gls{interval}.
 
+\ifnum\value{Charisma}>0
+  \ifSporeSpells%
+    {\small\showStdSpells[\stepcounter{enc}]}
+  \fi%
+\fi
+
 \ifnum\thepage<14
   \sporeFolk
 \fi
@@ -338,6 +341,10 @@ As the \gls{elixir} brews, it may grant the troupe the blessing of its company, 
 
 \Pgls{interval} later, the dragon roars, then its eyes turn upwards in relief.
 A half-digested dwarf emerges, with full plate armour, \lootBig, a golden axe, and beard still intact.
+
+\ifnum\thepage<14
+  \sporeFolk
+\fi
 
 \ifnum\thepage<14
   \clearpage\null
