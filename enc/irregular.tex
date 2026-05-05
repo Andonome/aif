@@ -4,7 +4,6 @@
 \usepackage{config/booklet}
 \setcounter{bookLevel}{2}
 \input{glossary.tex}
-%\toggletrue{intro}
 
 \externalReferent{core}
 \externalReferent{judgement}
@@ -31,10 +30,6 @@
 \thread{By Any Other Name}
 
 \pagestyle{minizine}%
-
-%\begin{exampletext}
-%  Not far away, a deep roar, and a screech, like a newborn thundercloud, squealing;
-%\end{exampletext}
 
 \segment[\gls{night}]{broch}% AREA
 {Easy Job}% NAME
@@ -288,6 +283,7 @@ Roll to find the contents of each island:
 \newif\ifSporeSpells
 \SporeSpellstrue
 
+\ifodd\value{r3}\randomize\fi
 \sporeFolk
 
 \ifnum\value{Charisma}>0
@@ -325,10 +321,13 @@ presents a new challenge: the other cave-mouths, with their own rivers present a
 If the troupe did not mark the correct route, they will have to try to figure out which way they came down with an \roll{Intelligence}{Caving} roll at \tn[10].
 Each Failure Margin means they are lost for another \gls{interval}.
 
-\ifnum\value{Charisma}>0
-  \ifSporeSpells%
-    {\small\showStdSpells[\stepcounter{enc}]}
-  \fi%
+\ifnum\thepage<13{
+  \sporeFolk
+  \ifnum\value{Charisma}>0
+    \ifSporeSpells%
+      {\small\showStdSpells[\stepcounter{enc}]}
+    \fi%
+  \fi}
 \fi
 
 \ifnum\thepage<14
@@ -343,7 +342,7 @@ As the \gls{elixir} brews, it may grant the troupe the blessing of its company, 
 A half-digested dwarf emerges, with full plate armour, \lootBig, a golden axe, and beard still intact.
 
 \ifnum\thepage<14
-  \sporeFolk
+  \clearpage
 \fi
 
 \ifnum\thepage<14
