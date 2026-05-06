@@ -33,10 +33,10 @@
 
 \segment[\gls{night}]{broch}% AREA
 {Easy Job}% NAME
-{\Pgls{jotter} needs the troupe to kill \pgls{basilisk}}% SUMMARY
+{The troupe must hunt down a dwarf accused of failure to pay taxes to the \glsfmttext{templeOfBeasts}}% SUMMARY
 
 \begin{boxtext}
-  A two-horse cart shuffles along the road, towards your \gls{broch}.
+  On this \showTemperature\ afternoon, a two-horse cart shuffles along the distant road, towards your \gls{broch}.
   The driver waves silently, beckoning you to walk down hill and speak.
 \end{boxtext}
 
@@ -53,8 +53,17 @@ Trader \marketFence\ tugs the stress from his long, black beard, and explains th
 At this, \Gls{jotter}~Filchvore goes red with fury, shouting that any sale on \glspl{basilisk} hides, \glspl{crawler} webs, or the like, must be approved by the \gls{templeOfBeasts}.
 
 \begin{quotation}
-    Get out there and find out if that dwarf has been selling hides without giving the temple its due.
-    And kill that \gls{basilisk} while you're at it.
+    \ifnum\thetemperature>0
+      Get out there and find out if that dwarf has been selling hides without giving the temple its due.
+      And kill that \gls{basilisk} while you're at it.
+    \else
+      If \pgls{basilisk} woke from hibernation, it'll be dead by now.
+      But if that dwarf sold the body, the stench will still be on his beard.
+    \fi
+
+    The \gls{village} is fifteen miles away but
+    there's \pgls{bothy} half way.
+    March fast and you can sleep there then see the \gls{village} tomorrow morning.
 \end{quotation}
 
 \noindent
@@ -78,13 +87,19 @@ Find the \gls{village}'s name and details in a market handout.
 
 \segment[\gls{afternoon}]{lonelyRoad}% AREA
 {The Dry Valley}% NAME
-{A trader asks the troupe to stay the night}% SUMMARY
+{Traders have met the dwarf}% SUMMARY
 
 The dry valley never floods, even during \pgls{storm}.
 Caverns swallow the water before it can rise too high.
 
 \begin{boxtext}
-  Two plumes of smoke rise over the tall trees in the distance.
+  Two plumes of smoke rise over the
+  \ifnum\thetemperature=0%
+    white
+  \else
+    tall
+  \fi
+  trees in the distance.
   After a mile, the road descends into the Dry Valley, and the trees open for a blessed moment.
   The distant smoke comes from \pgls{village}, over five miles away.
   The other comes from \pgls{bothy}, a little down the road, where two men push a donkey into a cart.
@@ -110,21 +125,30 @@ He ran into the forest, shouting something about `wyrm-sign', and nobody heard o
 
 Whether the \glspl{pc} sleep in the \gls{bothy} or not, they hear a sound in the night like bedsheets being torn apart.
 Soon after, the stench!
-It can curdle yesterday's dinneer, and inflicts \pgls{ep} on each character.
+It can curdle yesterday's dinner, and inflicts \pgls{ep} on each character.
 Nearby animals begin to panic.
 The troupe will not sleep well, so they must take another \gls{ep} due to the dreamless night.
 
 \segment{Forest}% AREA
 {Wyrmsign}% NAME
-{The troupe find patches of torn-up earth}% SUMMARY
+{Patches of torn-up earth suggest something massive searches the earth}% SUMMARY
 
-Patches of earth have been torn up by massive claws.
-\act{follow the claw-marks}{Wits}{Survival}{6}
-Failure means they become lost.
+Massive claws have torn through the earth
+\ifnum\thetemperature=0
+  and snow.
+  The tracks are easy to follow, but show no feet --- just a slithering body scraping through the snow.
+\else
+  \act{follow the claw-marks}{Wits}{Survival}{6}
+  Failure means they become lost%
+\fi.
 
 If the troupe chased after the noises immediately, in \gls{segment}~\vpageref{dankNight}, they find soon after.
 But if they waited, the claw-mark tracks lead them five miles away.
-An \roll{Intelligence}{Medicine} roll at \tn[12] tells them the claws were digging for mushrooms to make \pgls{elixir}.
+\ifnum\thetemperature=0
+  Patches of melted snow show barren earth with small singe-marks on the dead grasses underneaht.
+\else
+  An \roll{Intelligence}{Medicine} roll at \tn[12] tells them the claws were digging for mushrooms to make \pgls{elixir}.
+\fi
 
 \segment{Forest}% AREA
 {Grounded}% NAME
@@ -231,7 +255,15 @@ begins at the end of a little river, which drops two~\glspl{step} \emph{down}.%
 \exRef{core}{Core Rules}{falling}
 
 \begin{boxtext}
-  A small river trickles through a patch of willow trees, then into the open, and down a hole the size of a portcullis.
+  \ifnum\thetemperature=0
+    A little frozen river leads into a patch of willow trees,
+    then into the open snow.
+    In the centre sits
+  \else
+    A small river trickles through a patch of willow trees,
+    then into the open, and down
+  \fi
+  a hole the size of a portcullis.
 \end{boxtext}
 
 \begin{boxtext}
