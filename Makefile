@@ -30,7 +30,7 @@ config/common.mk:
 	@git submodule update --init
 
 config/rules.pdf:
-	make -C $(@D) $(@F)
+	$(MAKE) -C $(@D) $(@F)
 
 .PHONY: goblins
 goblins: $(GOBLINS).pdf ## Oneshot cavern-based module
@@ -93,7 +93,7 @@ booklets/a7_%.tex: enc/%.tex | booklets/
 
 .PHONY: cs_zine
 cs_zine: cs.pdf ## Make A7 zine example characters
-	make zine_characters.pdf
+	$(MAKE) zine_characters.pdf
 
 zine_characters.pdf: cs.pdf $(mini_spell_pdf)
 	pdfunite $^ $@
