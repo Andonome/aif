@@ -36,7 +36,7 @@ config/rules.pdf:
 goblins: $(GOBLINS).pdf ## Oneshot cavern-based module
 $(DROSS)/caves.pdf: glossary.tex $(DEPS) $(DROSS)/caves-switch-gls
 $(GOBLINS).pdf: $(DROSS)/caves.pdf $(DROSS)/characters.pdf config/rules.pdf
-	pdfjam --pdftitle $(GOBLINS) --pdfsubject "BIND RPG" \
+	pdfjam $(TEX_ARGS) --pdftitle $(GOBLINS) --pdfsubject "BIND RPG" \
 	--pdfkeywords "RPG,TTRPG,roleplaying" \
 	$^ \
 	--outfile $@
