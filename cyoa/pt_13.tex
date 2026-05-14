@@ -2,21 +2,38 @@
 and through the bushes.
 A moment later, the \glspl{guard} say `psst, quiet!', and point behind you.
 
-Bino runs past, and straight towards the \gls{sunGuard}, trampling them down, and ripping arms off with her teeth.
-After a couple of limbs drop to the ground, and the rest of the \gls{sunGuard} have lost their wits completely, you jump out with the other \glspl{guard}.
+Bino runs past, and straight towards the \gls{sunGuard}, trampling them down until rib-cages crack and ripping arms off with her teeth.
+The remaining \glspl{sunGuard} flee.
 
-All together, you rush out with axes and glaives held overhead.
+You and the remaining \glspl{guard} jump out of the bushes and take Bino by surprise.
 The \glspl{guard} stab and thrust, and half of them miss, but every hit breaks a bone or dents her tail.
 
-Roll to attack with $2D6$ plus the Bonuses.
+Roll $$2D6 + Dexterity + Melee$$
 
-$$2D6 + Dexterity + Combat + Weapon~Bonus$$
+Add +1 for every companion you came with.
 
 \begin{selectPath}
-  \willYe{If the total is 10 or more}%
-  {you stab the creature, and it flees.}%
-  {bogAtDusk}
-  \willYe{Roll under 10}%
-  {and the creature pulls you under.}%
-  {spyDeath} \gls{woodspy}
+  \willYe{Roll over 11}%
+  {and Bino falls to your combined blades.}%
+  {}
+  \willYe{Roll 11}%
+  {and you jump to the side, avoiding Bino's charge, but one companion dies (roll again with a -1~Penalty).}%
+  {}%
+  \willYe{Roll under 11}%
+  {and Bino tramples your body into the ground.
+  Take \dmg{4}~Damage and roll again, if you still live.}%
+  {}%
 \end{selectPath}
+
+If you survive, you can try to convince the other \glspl{guard} to let you keep the head.
+Roll \roll{Charisma}{Empathy}.
+
+\begin{selectPath}
+  \willYe{Roll over 9}%
+  {they give you the head}%
+  {}
+  \willYe{Roll 9 exactly}%
+  {and they will sell you the head for five \glsfmtlongpl{sp}.}%
+  {}%
+\end{selectPath}
+
