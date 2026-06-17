@@ -4,6 +4,8 @@ booklet_files = $(wildcard enc/*.tex)
 booklet_list = $(patsubst enc/%.tex, booklets/a7_%.tex, $(booklet_files) )
 halfshots = $(patsubst enc/%.tex, %.pdf, $(booklet_files) )
 
+dependencies += biber
+
 pdfs += $(ELVES).pdf
 pdfs += $(GOBLINS).pdf
 pdfs += fridge.pdf
@@ -17,8 +19,6 @@ GOBLINS = The_Goblin_Hole
 ELVES = Snail_Trails
 
 DEPS += commands.tex
-
-dependencies += magick
 
 DEPS += qr.tex 
 
