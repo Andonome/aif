@@ -38,10 +38,10 @@ the water has begun to melt.
 The dark centre of the map has waist-high water to a human, and the grey sections of the map (\vpageref{Dyson_Logos/bowels}) have no water yet.
 
 \subsubsection[Water Rises]{4: Water Rises}
-through the grey areas, but stops to fill up the \nameref{fDip} in room~\vref{fDip}.
+through the grey \glspl{area}, but stops to fill up the \nameref{fDip} in room~\vref{fDip}.
 
-\subsubsection[Oil Spills]{5: Oil Spills}
-from the barrels in room \ref{fDip}, and water moves through the rest of the grey areas.
+\subsubsection[Floating Barrels]{5: Floating Barrels}
+emerge from room \ref{fDip}, as oil is lighter than water.
 
 \subsubsection[An Escaped Prisoner]{7: An Escaped Prisoner}
 jumps from the \gls{court} and out the doors of room \vref{fDoor}, then heads towards the nearest light (e.g. any \gls{torch} \pgls{pc} carries).
@@ -234,19 +234,24 @@ Rolling a tie means the characters finds something random; roll $3D6$ and tell t
 
 \mapentry[fDip]{Chasm Barrels}
 
-\begin{exampletext}
-  These little runways, down to a natural cavity and back up again, make the worst part of anyone's day if they have to transport barrels through here.
-  Unfortunately, the \gls{wheatGuild} refuse to pay for a small bridge.
-\end{exampletext}
+\begin{boxtext}[Which way do you go?]
+  The left-hand side of the room is a chasm, but just two \glspl{step} deep.
+  The chasm is full of barrels.
+  You walk along the walkway, beside the chasm of barrels.
+
+  To your right, a narrow tunnel goes into a room with a desk and paperwork.
+
+  To your left, a stairway takes you down the chasm and back up the other side and into a dark tunnel.
+\end{boxtext}
 
 The cavity has two-dozen barrels of cooking oil.
+
 If the oil ever spills and receives 8~Damage from fire, it combusts, inflicting $\dmg{-2}$~Damage.
 The fire continues to inflict the same Damage rolled, minus one, each \gls{round}.
 So `3~Damage' continues to burn for another 2~Damage on the second \gls{round}, then 1~Damage before dying down.
 \Gls{dr} only counts for the first \gls{round} as the oil seeps into the cracks while heating the armour.
-\iftoggle{intro}{
-  \Glspl{fp} which mitigate the Damage reduce the Damage on subsequent \glspl{round}.
-}{}
+
+If a few barrels burn, then everyone inside will have to deal with \gls{hypoxia}, as the air becomes too thin to breathe.
 
 \mapentry[fSide]{Side Store}
 
@@ -383,23 +388,33 @@ Of course, this means whiskey in every barrel.
 
 \mapentry[fLibrarians]{Wolf, Goat, and Three Librarians}
 
-Three \glspl{seeker} each have a pile of their most precious books, and none will let them go.
-
-\begin{boxtext}
-  A tubby man, in green robes, steps back as your boat hits the stairs; he holds a pile of books like a baby.
+\begin{boxtext}[What do you say?]
+  A tubby, naked man steps back as your boat hits the stairs; he holds a pile of books, swaddled in his own green clothes, swaddled like a baby.
   A tall woman steps back with him, holding her own precious pile.
-  The last is a frightened-looking man, with a pointed hat and cubic sack.
-  ``\textit{Looks like they're staying!}'', he says.
-  ``\textit{Let me hop on\ldots}''
-  But the tubby man shouts, ``\textit{No, ladies first!
-  Or just let the lady on too!}''.
+  The last man looks frightened, with a pointed hat and cubic sack.
 
-  But you haven't the room, for books, him and you.
+  All three shout `hello', and shuffle around each other to step onto the boat first.
+  But the boat can only hold one person with their books.
 \end{boxtext}
+
+Three \glspl{seeker} each have a pile of their most precious books, and want onto the boat.
+
+\paragraph{If the \pgls{pc} demands they drop their books}
+then two \glspl{seeker} can fit onto the boat, and all three \glspl{seeker} will try to go last.
 
 A boat can hold \pgls{seeker} and their books, or two \glspl{seeker} without any books.
 But if two \glspl{seeker}, and the \glspl{pc} return for the third, then the boat \emph{will} have room for \pgls{seeker} and their books.
 Therefore, all \glspl{seeker} will not enter the boat on the first run, without their books.
+
+\begin{quotation}
+  After you!
+  
+  \vspace{-.4em}
+  \rotatebox{5}{\large No you first, I insist!}
+
+  \vspace{-.3em}
+  \rotatebox{-5}{\sl No room for me, I'll take the next boat!}
+\end{quotation}
 
 \humandiplomat[\npc{\glsentrysymbol{yonder}\M\Hu}{Tubby \composeHumanName}]
 
