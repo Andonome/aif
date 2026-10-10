@@ -80,7 +80,7 @@ The player characters must deal with terrible foes, such as:
 
 [Download][fridge]
 
-[compiling]: https://gitlab.com/bindrpg/core/-/wikis/dev/Compiling
+[compiling]: https://gitlab.com/bindrpg/core/-/wikis/Development/Compiling
 [oneshot]: https://gitlab.com/bindrpg/oneshot/-/jobs/artifacts/master/raw/Escape_from_the_Goblin_Horde.pdf?job=build
 [core]: https://gitlab.com/bindrpg/metabind/-/jobs/artifacts/master/raw/complete/Core_Rules.pdf?job=build
 [rules]: https://gitlab.com/bindrpg/config/-/jobs/artifacts/master/raw/rules.pdf?job=build
