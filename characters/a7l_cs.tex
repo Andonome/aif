@@ -15,6 +15,7 @@
 
 \begin{document}
 
+
 \input{characters/1.tex}
 \input{characters/2.tex}
 \input{characters/3.tex}
@@ -29,17 +30,21 @@
 \input{characters/12.tex}
 \input{characters/13.tex}
 \input{characters/14.tex}
+\input{characters/15.tex}
+\input{characters/16.tex}
 
-\input{characters/alt_1.tex}
-
-\ifcase\thetemperature%
+\ifcase\month\relax
+\or
+  \input{characters/alt_1.tex}
+\or
   \input{characters/alt_2.tex}
 \or
   \input{characters/alt_3.tex}
 \or
-  \input{characters/alt_5.tex}
-\else
   \input{characters/alt_4.tex}
+\else
+  \input{characters/alt_5.tex}
 \fi
+
 
 \end{document}

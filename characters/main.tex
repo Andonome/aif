@@ -13,15 +13,36 @@
 \pagenumbering{gobble}
 \toggletrue{examplecharacter}
 
-\input{characters/1.tex}
-\input{characters/2.tex}
-\input{characters/3.tex}
-\input{characters/4.tex}
-\input{characters/5.tex}
-\input{characters/6.tex}
-\input{characters/7.tex}
-\input{characters/8.tex}
-\input{characters/9.tex}
+
+\ifodd\day
+  \input{characters/11.tex}
+  \input{characters/12.tex}
+  \input{characters/13.tex}
+\else
+  \input{characters/14.tex}
+  \input{characters/15.tex}
+  \input{characters/16.tex}
+\fi
+
+\ifnum\day>15
+  \input{characters/1.tex}
+  \input{characters/2.tex}
+  \input{characters/3.tex}
+\else
+  \input{characters/6.tex}
+  \input{characters/7.tex}
+  \input{characters/8.tex}
+\fi
+
+\ifodd\month
+  \ifodd\year
+    \input{characters/4.tex}
+  \else
+    \input{characters/5.tex}
+  \fi
+\else
+  \input{characters/9.tex}
+\fi
 
 
 \ifcase\month\relax
